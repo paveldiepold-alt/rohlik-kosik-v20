@@ -16,85 +16,85 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
       - name: Install Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-
-      - name: Install browser
+      - name: Install Playwright browser
         run: |
           python -m pip install playwright==1.56.0
-          python -m playwright install chromium
-
-      - name: Test realneho nacteni cen
+          python -m playwright install --with-deps chromium
+      - name: Check real product pages and prices
         shell: bash
         run: |
-          cat > probe.py <<'PYTHON_PROBE'
+          python - <<'PYTHON_PROBE'
           import json
           import os
           import re
           import sys
-          from datetime import datetime
+          import unicodedata
+          from datetime import datetime, timezone
           from pathlib import Path
-          from zoneinfo import ZoneInfo
-
+          from urllib.parse import urlparse
           from playwright.sync_api import sync_playwright
 
-          IDS = [
+          TARGETS = [
               'F_ZEWA_DELUXE_STANDARD_10X10',
               'F_ZEWA_DELUXE_STANDARD_KOSIK',
               'F_STUDENTSKA_PECET_KOSIK',
               'F_SYOSS_INTENSE_POWER_440_ROHLIK',
           ]
+          SHOP_HOSTS = {'www.rohlik.cz', 'www.kosik.cz'}
+          watch = json.loads(Path('watchlist.json').read_text(encoding='utf-8'))
+          index = {p['id']: p for p in watch['specific_products']}
+          missing = [pid for pid in TARGETS if pid not in index]
+          if missing:
+              sys.exit('ERROR - watchlist IDs not found: ' + ', '.join(missing))
 
-          def structured_price(page):
-              values = page.evaluate('''() => {
+          def norm(s):
+              return ''.join(c for c in unicodedata.normalize('NFKD', s.casefold())
+                             if not unicodedata.combining(c))
+
+          def structured_prices(page):
+              # Prices are taken ONLY from product-specific structured data.
+              return page.evaluate('''() => {
                 const out = [];
-                for (const el of document.querySelectorAll('meta[itemprop="price"], meta[property="product:price:amount"]')) {
-                  const price = el.getAttribute('content');
-                  const currency = el.getAttribute('currency') || el.getAttribute('content-currency') || null;
-                  if (price) out.push({price, currency, source: 'meta'});
-                }
-                function visit(item, depth = 0) {
-                  if (depth > 10 || !item) return;
-                  if (Array.isArray(item)) { item.forEach(x => visit(x, depth + 1)); return; }
-                  if (typeof item !== 'object') return;
-                  const types = [].concat(item['@type'] || []);
-                  if (types.includes('Product')) {
-                    const offers = [].concat(item.offers || []);
-                    for (const offer of offers) {
-                      if (offer && (offer.price != null || offer.lowPrice != null)) {
-                        out.push({price: String(offer.price ?? offer.lowPrice), currency: offer.priceCurrency || null, source: 'jsonld'});
-                      }
+                const meta = document.querySelector('meta[itemprop="price"]');
+                const curr = document.querySelector('meta[itemprop="priceCurrency"]');
+                if (meta && meta.content) out.push({value: meta.content,
+                  currency: curr ? curr.content : null, source: 'meta'});
+                const visit = (node, depth=0) => {
+                  if (!node || depth > 8) return;
+                  if (Array.isArray(node)) { node.forEach(x=>visit(x,depth+1)); return; }
+                  if (typeof node !== 'object') return;
+                  const type = node['@type'];
+                  if (type === 'Product' || (Array.isArray(type) && type.includes('Product'))) {
+                    let offers = node.offers || [];
+                    if (!Array.isArray(offers)) offers = [offers];
+                    for (const o of offers) if (o && (o.price != null || o.lowPrice != null)) {
+                      out.push({value: String(o.price ?? o.lowPrice),
+                        currency: o.priceCurrency || null, source:'jsonld'});
                     }
                   }
-                  for (const key of ['@graph', 'mainEntity']) if (item[key]) visit(item[key], depth + 1);
-                }
-                for (const node of document.querySelectorAll('script[type="application/ld+json"]')) {
-                  try { visit(JSON.parse(node.textContent)); } catch (e) {}
+                  for (const k of ['@graph','mainEntity']) if (node[k]) visit(node[k],depth+1);
+                };
+                for (const s of document.querySelectorAll('script[type="application/ld+json"]')) {
+                  try { visit(JSON.parse(s.textContent)); } catch (_) {}
                 }
                 return out;
               }''')
-              clean = []
-              for item in values:
-                  curr = str(item.get('currency') or '').upper().strip()
-                  if curr and curr not in ('CZK', 'KČ'):
-                      continue
-                  raw = re.sub(r'\s+', '', str(item['price'])).replace(',', '.')
-                  if re.fullmatch(r'\d{1,6}(?:\.\d{1,2})?', raw):
-                      val = float(raw)
-                      if val > 0:
-                          clean.append((val, item['source']))
-              unique = sorted(set(v for v, _ in clean))
-              if len(unique) == 1:
-                  return {'czk': unique[0], 'source': clean[0][1], 'postcode_verified': False}
-              return None
 
-          def check(page, entry):
-              result = {
-                  'id': entry['id'], 'shop': entry['store'], 'url': entry['url'],
-                  'title': None, 'price': None, 'http_status': None,
-                  'status': 'error', 'note': ''
-              }
+          def read_price(page):
+              offers = []
+              for item in structured_prices(page):
+                  raw = str(item.get('value', '')).replace('\u00a0','').replace(' ','').replace(',','.')
+                  if not re.fullmatch(r'\d{1,6}(?:\.\d{1,2})?', raw):
+                      continue
+                  price = float(raw)
+                  if price <= 0:
+                      continue
+                  currency = str(item.get('currency') or '').upper().strip()
+                  if currency and currency != 'CZK':
+                      continue
+                  offers.append({'price_czk':price,'currency_verified':currency=='CZK',
 
