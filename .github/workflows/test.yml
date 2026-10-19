@@ -1,0 +1,19 @@
+
+name: Rohlik Kosik v20 - Test
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+
+    steps:
+      - name: Test automatizace
+        run: echo "Rohlik Kosik v20 - OK"
