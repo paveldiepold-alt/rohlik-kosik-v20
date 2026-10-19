@@ -1,0 +1,100 @@
+
+    
+  
+name: Rohlik Kosik v20 - Test produktovych stranek
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  product-probe:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install browser
+        run: |
+          python -m pip install playwright==1.56.0
+          python -m playwright install --with-deps chromium
+      - name: Probe Rohlík and Košík
+        shell: bash
+        run: |
+          cat > probe.py <<'PYTHON_PROBE'
+          """Rohlik x Kosik v20: small, read-only product page accessibility test.
+          
+          Called by the v20 'probe.yml' test workflow. Does not claim catalog completeness
+          or postcode specific prices, and does not edit any repository files.
+          """
+          import json
+          import re
+          from datetime import datetime
+          from pathlib import Path
+          from zoneinfo import ZoneInfo
+          from playwright.sync_api import sync_playwright, TimeoutError as PwTimeout
+          
+          WATCHLIST = Path('watchlist.json')
+          OUT = Path('probe-results.json')
+          CHECK_IDS = [
+              'F_ZEWA_DELUXE_STANDARD_10X10',
+              'F_ZEWA_DELUXE_STANDARD_KOSIK',
+              'F_STUDENTSKA_PECET_KOSIK',
+              'F_SYOSS_INTENSE_POWER_440_ROHLIK',
+          ]
+          
+          
+          def get_structured_price(page):
+              """Only accept a price explicitly presented by product structured data or metadata."""
+              found = page.evaluate("""() => {
+                const out = [];
+                for (const m of document.querySelectorAll('meta[itemprop="price"], meta[property="product:price:amount"]')) {
+                  const v = m.getAttribute('content'); if (v) out.push({price:v, source:'product-meta'});
+                }
+                const visit = (v, d=0) => {
+                  if (d > 7 || v == null) return;
+                  if (Array.isArray(v)) { for (const x of v) visit(x, d+1); return; }
+                  if (typeof v !== 'object') return;
+                  const ty = v['@type'];
+                  if (ty === 'Product' || (Array.isArray(ty) && ty.includes('Product'))) {
+                    const offers = Array.isArray(v.offers) ? v.offers : [v.offers];
+                    for (const o of offers) if (o && (o.price || o.lowPrice)) {
+                      out.push({price: String(o.price || o.lowPrice), source:'product-jsonld'});
+                    }
+                  }
+                  for (const [k,x] of Object.entries(v)) if (['@graph','mainEntity','itemListElement'].includes(k)) visit(x,d+1);
+                };
+                for (const s of document.querySelectorAll('script[type="application/ld+json"]')) {
+                  try { visit(JSON.parse(s.textContent)); } catch(e) {}
+                }
+                return out;
+              }""")
+              for item in found:
+                  raw = str(item.get('price', '')).replace(' ', '').replace(',', '.')
+                  if re.fullmatch(r'\d{1,6}(?:\.\d{1,2})?', raw) and float(raw) > 0:
+                      return {'value_czk': float(raw), 'source': item['source'], 'availability_postcode_verified': False}
+              return None
+          
+          
+          def inspect_product(page, p):
+              result = {'product_id': p['id'], 'shop': p['store'], 'url': p['url'],
+                        'status': 'not_checked', 'title': None, 'price': None,
+                        'note': 'PSČ 149 00 nebylo ověřeno'}
+              try:
+                  response = page.goto(p['url'], wait_until='domcontentloaded', timeout=45000)
+                  page.wait_for_timeout(1800)
+                  code = response.status if response else None
+                  result['http_status'] = code
+                  if code and code >= 400:
+                      result['status'] = 'blocked_or_unavailable'
+                      result['note'] = f'HTTP {code}; cenu neuvádíme'
+                      return result
+                  locator = page.locator('h1')
+                  title = (locator.first.inner_text(timeout=5000).strip() if locator.count() else '')
+
