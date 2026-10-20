@@ -103,7 +103,16 @@ VISIBLE_PRICE_JS = r"""() => {
     if (!r.width || !r.height || dist > 560 || Math.abs(r.left-h.left) > 530) continue;
     const style = getComputedStyle(el);
     if (style.display === 'none' || style.visibility === 'hidden' || Number(style.opacity) === 0) continue;
-    const txt = (el.innerText || el.textContent || '').replace(/\s+/g,' ').trim();
+    let txt = (el.innerText || el.textContent || '').replace(/\s+/g,' ').trim();
+    // A Czech price may render crowns and cents in separate inline nodes.
+    // Some DOM layouts concatenate `63` + `90` into misleading `6390`.
+    const centsEl = el.querySelector('sup');
+    if (centsEl) {
+      const cents = (centsEl.textContent || '').trim();
+      const withoutCents = (el.textContent || '').replace(centsEl.textContent || '', '').trim();
+      const crowns = withoutCents.match(/^\s*(\d{1,3})\s*(?:Kč|CZK)?\s*$/i);
+      if (/^\d{2}$/.test(cents) && crowns) txt = crowns[1] + ',' + cents + ' Kč';
+    }
     if (!txt || txt.length > 75) continue;
     const cls = typeof el.className === 'string' ? el.className : '';
     const hint = [cls, el.getAttribute('data-testid'), el.getAttribute('data-test')].filter(Boolean).join(' ');

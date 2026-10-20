@@ -54,3 +54,40 @@ class VisibleProductPriceTests(unittest.TestCase):
         self.assertIn('return out;',VISIBLE_PRICE_JS)
 
 if __name__=='__main__': unittest.main()
+
+
+from monitor import plausible_pilot_price, sanitize_history, make_report
+
+class TestPriceRegressions(unittest.TestCase):
+    def test_6390_from_tissues_is_not_accepted(self):
+        self.assertFalse(plausible_pilot_price(6390))
+        self.assertTrue(plausible_pilot_price(63.90))
+        self.assertTrue(plausible_pilot_price(169.9))
+
+    def test_suspicious_history_removed_for_pilot_only(self):
+        sample = [{'id':'zewa', 'price_czk':6390, 'store':'Rohlík'},
+                  {'id':'zewa','price_czk':63.9,'store':'Rohlík'},
+                  {'id':'unknown','price_czk':6390,'store':'Rohlík'}]
+        clean, removed = sanitize_history(sample, {'zewa'})
+        self.assertEqual(removed, 1)
+        self.assertEqual([x['price_czk'] for x in clean], [63.9,6390])
+
+    def test_no_discount_from_bad_previous_history(self):
+        previous = {'items':[{'id':'zewa', 'status':'ok', 'price_czk':6390}]}
+        current = [{'id':'zewa','store':'Rohlík','status':'ok','price_czk':63.9}]
+        result = make_report(current,previous,'now')
+        self.assertIsNone(result['items'][0]['previous_observed_price_czk'])
+        self.assertIsNone(result['items'][0]['drop_since_previous_pct'])
+
+    def test_visible_price_avoids_other_product_and_unit(self):
+        rows = [{'text':'63,90 Kč','detail':True,'old':False,'unit':False,'distance':100,'hint':'current price'},
+                {'text':'119,84 Kč/l','detail':True,'old':False,'unit':True,'distance':70,'hint':'unit'},
+                {'text':'9,90 Kč','detail':False,'old':False,'unit':False,'distance':80,'hint':'price'}]
+        price,source,_ = choose_visible_price(rows)
+        self.assertEqual(price,63.9)
+        self.assertEqual(source,'visible-product-detail')
+
+    def test_unit_prices_still_rejected(self):
+        for text in ['99 Kč/kg','12,30 Kč/ks','99 Kč/l']:
+            self.assertIsNone(parse_display_price(text))
+

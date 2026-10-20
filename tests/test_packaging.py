@@ -20,9 +20,19 @@ class PackageTests(unittest.TestCase):
             self.assertIn(urlparse(entry['url']).hostname, ('www.rohlik.cz','www.kosik.cz'))
             self.assertEqual(urlparse(entry['url']).scheme, 'https')
 
-    def test_no_embedded_fake_results(self):
-        self.assertFalse((ROOT/'docs/data/latest.json').exists())
-        self.assertFalse((ROOT/'docs/data/history.json').exists())
+    def test_generated_results_may_exist_after_first_scan(self):
+        # A successful run commits real observations into the branch.
+        # Packaging tests must not block subsequent runs just because
+        # latest.json or history.json now exists.
+        for name in ('latest.json', 'history.json'):
+            file = ROOT / 'docs' / 'data' / name
+            if file.exists():
+                value = json.loads(file.read_text(encoding='utf-8'))
+                if name == 'latest.json':
+                    self.assertIsInstance(value, dict)
+                    self.assertIsInstance(value.get('items'), list)
+                else:
+                    self.assertIsInstance(value, list)
 
     def test_workflow_no_pages_dependency(self):
         yml = (ROOT/'.github/workflows/monitor.yml').read_text(encoding='utf-8')

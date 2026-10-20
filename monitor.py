@@ -19,6 +19,10 @@ ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "docs" / "data"
 WATCHLIST = ROOT / "watchlist.json"
 PRICE_META = {'product:price:amount', 'og:price:amount'}
+# Applies ONLY to this initial set of ten small grocery/household items.
+# Review limits per item before expanding the monitored catalogue.
+PILOT_MAX_PRICE_CZK = 1000.0
+
 
 
 def fold(value: object) -> str:
@@ -37,6 +41,37 @@ def as_money(v: object) -> float | None:
             return None
         n = float(raw)
     return round(n, 2) if 0 < n < 100_000 else None
+
+
+def plausible_pilot_price(value: object, cap: float = PILOT_MAX_PRICE_CZK) -> bool:
+    """Reject candidates outside the price range of this 10-item pilot.
+
+    In particular, `6390 Kč` extracted from superscript `63` and `90`
+    must not be saved as the price of a pack of tissues.
+    """
+    n = as_money(value)
+    return n is not None and n <= cap
+
+
+def sanitize_history(history: object, product_ids: set[str]) -> tuple[list[dict], int]:
+    """Remove invalid/outlying previous observations only for the pilot SKUs.
+
+    The cleanup is conservative: unrelated products are untouched; no
+    missing prices are fabricated; data not shaped as a list is discarded.
+    """
+    if not isinstance(history, list):
+        return [], 0
+    clean = []
+    dropped = 0
+    for row in history:
+        if not isinstance(row, dict):
+            dropped += 1
+            continue
+        if row.get('id') in product_ids and not plausible_pilot_price(row.get('price_czk')):
+            dropped += 1
+            continue
+        clean.append(row)
+    return clean, dropped
 
 
 def choose_price(candidates: list[dict]) -> tuple[float | None, str | None, str]:
@@ -123,6 +158,8 @@ def from_browser_payload(payload: dict) -> tuple[float | None, str | None, str]:
 def browser_extract(page) -> dict:
     payload = page.evaluate("""() => ({
        title: (document.querySelector('h1')?.textContent || '').trim(),
+       document_title: (document.title || '').slice(0,120),
+       og_title: (document.querySelector('meta[property=\"og:title\"]')?.getAttribute('content') || '').slice(0,120),
        jsonld: [...document.querySelectorAll('script[type="application/ld+json"]')].map(e => e.textContent),
        meta: [...document.querySelectorAll('meta[itemprop="price"],meta[property="product:price:amount"],meta[property="og:price:amount"]')]
          .map(m => ({itemprop:m.getAttribute('itemprop'),property:m.getAttribute('property'),content:m.getAttribute('content'),currency:m.getAttribute('data-currency')||'CZK'})),
@@ -151,6 +188,21 @@ def inspect(page, entry: dict, checked_at: str) -> dict:
             return data
         page.wait_for_timeout(1200)
         payload = browser_extract(page)
+        # Diagnostic only: publicly visible product name and price-related
+        # text, never page HTML, cookies, account data or response headers.
+        candidates = payload.get('visible_prices', [])
+        data['diagnostics'] = {
+            'document_title': (payload.get('document_title') or '')[:120],
+            'og_title': (payload.get('og_title') or '')[:120],
+            'visible_candidates_count': len(candidates),
+            'visible_candidates_sample': [
+                {'text': str(x.get('text', ''))[:75], 'hint': str(x.get('hint', ''))[:110],
+                 'distance': x.get('distance'), 'old': bool(x.get('old')), 'unit': bool(x.get('unit'))}
+                for x in candidates[:8] if isinstance(x, dict)
+            ],
+            'jsonld_blocks_count': len(payload.get('jsonld', [])),
+            'price_meta_count': len(payload.get('meta', [])),
+        }
         title = payload.get('title') or ''
         data['title'] = title or None
         if not valid_title(title, entry):
@@ -161,6 +213,13 @@ def inspect(page, entry: dict, checked_at: str) -> dict:
         if price is None:
             data['status'] = 'price_unverified'
             data['note'] = note
+            return data
+        if not plausible_pilot_price(price):
+            data['status'] = 'price_unverified'
+            data['note'] = (
+                f'Podezřelá cena {price:.2f} Kč přesahuje pilotní limit '
+                f'{PILOT_MAX_PRICE_CZK:.0f} Kč; nebude použita ani uložena.'
+            )
             return data
         data.update(status='ok', price_czk=price, source=source, note=note)
     except Exception as exc:
@@ -179,7 +238,7 @@ def load_json(path: Path, default):
 
 
 def make_report(results: list[dict], previous: dict, now: str) -> dict:
-    previous_by_id = {e['id']: e for e in previous.get('items', []) if e.get('status') == 'ok' and as_money(e.get('price_czk'))}
+    previous_by_id = {e['id']: e for e in previous.get('items', []) if e.get('status') == 'ok' and plausible_pilot_price(e.get('price_czk'))}
     enriched = []
     for row in results:
         v = dict(row)
@@ -221,13 +280,24 @@ def run() -> int:
                 row = inspect(page, entry, now)
                 results.append(row)
                 print(f"[{index}/{len(products)}] {entry['store']} {entry['id']}: {row['status']} {row.get('price_czk')}", flush=True)
+                if row['status'] != 'ok':
+                    d = row.get('diagnostics') or {}
+                    print('  DIAG ' + json.dumps({
+                        'note': row.get('note'), 'title': row.get('title'),
+                        'document_title': d.get('document_title'), 'og_title': d.get('og_title'),
+                        'candidate_count': d.get('visible_candidates_count'),
+                        'candidates': d.get('visible_candidates_sample', [])[:5],
+                        'jsonld_blocks': d.get('jsonld_blocks_count'),
+                        'price_meta': d.get('price_meta_count'),
+                    }, ensure_ascii=False), flush=True)
         finally:
             browser.close()
     report = make_report(results, prior, now)
     save_json(DATA / 'latest.json', report)
-    history = load_json(DATA / 'history.json', [])
-    if not isinstance(history, list):
-        history = []
+    history, removed = sanitize_history(
+        load_json(DATA / 'history.json', []), {entry['id'] for entry in products})
+    if removed:
+        print(f'HISTORY CLEANUP: removed {removed} invalid pilot price observations', flush=True)
     history.extend({'id': row['id'], 'store': row['store'], 'checked_at': now, 'price_czk': row['price_czk']}
                    for row in results if row['status'] == 'ok')
     save_json(DATA / 'history.json', history[-10000:])
