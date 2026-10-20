@@ -3,20 +3,26 @@
   "completed": [
     "Košík::aquila",
     "Košík::aquila 1,5 l",
+    "Košík::ariel",
     "Košík::avokádo",
     "Košík::axe",
     "Košík::axe deodorant",
     "Košík::axe sprchový gel",
     "Košík::banány",
     "Košík::borůvky",
+    "Košík::bref",
     "Košík::cherry rajčata",
     "Košík::chodura",
+    "Košík::cif",
     "Košík::citrony",
+    "Košík::clin",
     "Košík::coca-cola",
     "Košík::coca-cola original 1,5 l",
     "Košík::coca-cola original 2 l",
+    "Košík::colgate",
     "Košík::dobrá voda",
     "Košík::dobrá voda 1,5 l",
+    "Košík::domestos",
     "Košík::fidorka",
     "Košík::flora",
     "Košík::galbani",
@@ -27,6 +33,8 @@
     "Košík::hovězí svíčková",
     "Košík::hroznové víno",
     "Košík::hrozny",
+    "Košík::jar",
+    "Košík::jar citron",
     "Košík::kapesníky box 3vrstvé",
     "Košík::kapesníky v krabici",
     "Košík::kmotr",
@@ -42,6 +50,7 @@
     "Košík::le & co",
     "Košík::le co šunka",
     "Košík::leerdammer",
+    "Košík::lenor",
     "Košík::linteo",
     "Košík::lipno tavený sýr",
     "Košík::madeta",
@@ -58,6 +67,8 @@
     "Košík::papriky",
     "Košík::papírové kapesníky box",
     "Košík::papírové utěrky",
+    "Košík::parodontax",
+    "Košík::persil",
     "Košík::ponnath",
     "Košík::president plátkový sýr",
     "Košík::président",
@@ -65,16 +76,22 @@
     "Košík::rajec 1,5 l",
     "Košík::rajčata",
     "Košík::rama",
+    "Košík::savo",
     "Košík::sedlčanský",
     "Košík::signal",
+    "Košík::silan",
     "Košík::smetanito",
     "Košík::studentská pečeť",
     "Košík::syoss",
     "Košík::syoss men intense power",
+    "Košík::vanish",
     "Košík::vepřová krkovice",
     "Košík::vepřová panenka",
     "Košík::veselá kráva",
+    "Košík::wc net",
     "Košík::wein",
+    "Košík::wilkinson",
+    "Košík::wilkinson jednorázová holítka",
     "Košík::zewa",
     "Košík::zewa deluxe standard kapesníky",
     "Košík::zewa kapesníky box",
@@ -84,20 +101,26 @@
     "Košík::želetava",
     "Rohlík::aquila",
     "Rohlík::aquila 1,5 l",
+    "Rohlík::ariel",
     "Rohlík::avokádo",
     "Rohlík::axe",
     "Rohlík::axe deodorant",
     "Rohlík::axe sprchový gel",
     "Rohlík::banány",
     "Rohlík::borůvky",
+    "Rohlík::bref",
     "Rohlík::cherry rajčata",
     "Rohlík::chodura",
+    "Rohlík::cif",
     "Rohlík::citrony",
+    "Rohlík::clin",
     "Rohlík::coca-cola",
     "Rohlík::coca-cola original 1,5 l",
     "Rohlík::coca-cola original 2 l",
+    "Rohlík::colgate",
     "Rohlík::dobrá voda",
     "Rohlík::dobrá voda 1,5 l",
+    "Rohlík::domestos",
     "Rohlík::fidorka",
     "Rohlík::flora",
     "Rohlík::galbani",
@@ -108,6 +131,8 @@
     "Rohlík::hovězí svíčková",
     "Rohlík::hroznové víno",
     "Rohlík::hrozny",
+    "Rohlík::jar",
+    "Rohlík::jar citron",
     "Rohlík::kapesníky box 3vrstvé",
     "Rohlík::kapesníky v krabici",
     "Rohlík::kmotr",
@@ -123,6 +148,7 @@
     "Rohlík::le & co",
     "Rohlík::le co šunka",
     "Rohlík::leerdammer",
+    "Rohlík::lenor",
     "Rohlík::linteo",
     "Rohlík::lipno tavený sýr",
     "Rohlík::madeta",
@@ -139,6 +165,8 @@
     "Rohlík::papriky",
     "Rohlík::papírové kapesníky box",
     "Rohlík::papírové utěrky",
+    "Rohlík::parodontax",
+    "Rohlík::persil",
     "Rohlík::ponnath",
     "Rohlík::president plátkový sýr",
     "Rohlík::président",
@@ -146,16 +174,22 @@
     "Rohlík::rajec 1,5 l",
     "Rohlík::rajčata",
     "Rohlík::rama",
+    "Rohlík::savo",
     "Rohlík::sedlčanský",
     "Rohlík::signal",
+    "Rohlík::silan",
     "Rohlík::smetanito",
     "Rohlík::studentská pečeť",
     "Rohlík::syoss",
     "Rohlík::syoss men intense power",
+    "Rohlík::vanish",
     "Rohlík::vepřová krkovice",
     "Rohlík::vepřová panenka",
     "Rohlík::veselá kráva",
+    "Rohlík::wc net",
     "Rohlík::wein",
+    "Rohlík::wilkinson",
+    "Rohlík::wilkinson jednorázová holítka",
     "Rohlík::zewa",
     "Rohlík::zewa deluxe standard kapesníky",
     "Rohlík::zewa kapesníky box",
@@ -1460,15 +1494,287 @@
       "links": 10,
       "matched": 3,
       "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::colgate": {
+      "query": "Colgate",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 22,
+      "matched": 14,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::colgate": {
+      "query": "Colgate",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 36,
+      "matched": 26,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::parodontax": {
+      "query": "Parodontax",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 9,
+      "matched": 6,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::parodontax": {
+      "query": "Parodontax",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 11,
+      "matched": 4,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::wilkinson": {
+      "query": "Wilkinson",
+      "shop": "Rohlík",
+      "status": "no_cards",
+      "links": 0,
+      "matched": 0,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::wilkinson": {
+      "query": "Wilkinson",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 14,
+      "matched": 4,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::wilkinson jednorázová holítka": {
+      "query": "Wilkinson jednorázová holítka",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 21,
+      "matched": 0,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::wilkinson jednorázová holítka": {
+      "query": "Wilkinson jednorázová holítka",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 14,
+      "matched": 4,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::ariel": {
+      "query": "Ariel",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 37,
+      "matched": 36,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::ariel": {
+      "query": "Ariel",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 38,
+      "matched": 37,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::persil": {
+      "query": "Persil",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 26,
+      "matched": 26,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::persil": {
+      "query": "Persil",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 32,
+      "matched": 28,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::lenor": {
+      "query": "Lenor",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 26,
+      "matched": 21,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::lenor": {
+      "query": "Lenor",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 28,
+      "matched": 21,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::silan": {
+      "query": "Silan",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 15,
+      "matched": 12,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::silan": {
+      "query": "Silan",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 22,
+      "matched": 19,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::vanish": {
+      "query": "Vanish",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 9,
+      "matched": 9,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::vanish": {
+      "query": "Vanish",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 18,
+      "matched": 8,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::bref": {
+      "query": "Bref",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 17,
+      "matched": 17,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::bref": {
+      "query": "Bref",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 21,
+      "matched": 21,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::wc net": {
+      "query": "WC Net",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 2,
+      "matched": 2,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::wc net": {
+      "query": "WC Net",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 15,
+      "matched": 2,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::domestos": {
+      "query": "Domestos",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 9,
+      "matched": 9,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::domestos": {
+      "query": "Domestos",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 3,
+      "matched": 3,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::savo": {
+      "query": "Savo",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 61,
+      "matched": 16,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::savo": {
+      "query": "Savo",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 24,
+      "matched": 18,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::cif": {
+      "query": "Cif",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 15,
+      "matched": 14,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::cif": {
+      "query": "Cif",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 4,
+      "matched": 4,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::clin": {
+      "query": "Clin",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 31,
+      "matched": 5,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::clin": {
+      "query": "Clin",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 17,
+      "matched": 6,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::jar": {
+      "query": "Jar",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 175,
+      "matched": 21,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::jar": {
+      "query": "Jar",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 28,
+      "matched": 8,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::jar citron": {
+      "query": "Jar citron",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 23,
+      "matched": 18,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::jar citron": {
+      "query": "Jar citron",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 8,
+      "matched": 8,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
     }
   },
   "discovered_in_cycle": {
-    "Rohlík": 994,
-    "Košík": 749
+    "Rohlík": 1166,
+    "Košík": 943
   },
   "fresh_verified_by_store": {
-    "Rohlík": 287,
-    "Košík": 747
+    "Rohlík": 406,
+    "Košík": 884
   },
   "cycle": 1,
   "planned_jobs": 196
