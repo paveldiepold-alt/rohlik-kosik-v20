@@ -46,6 +46,63 @@ def has_expression(name: str, expr: str) -> bool:
     return bool(re.search(r'(?<!\w)' + re.escape(folded(expr)).replace(r'\ ',r'\s+') + r'(?!\w)', name))
 
 
+
+# Fresh produce must be the item sold, never merely an ingredient, flavor,
+# fragrance, plant treated by a product or a mention in a baby-food recipe.
+_FRESH_REJECT_STEMS = (
+    'aktimel','actimel','activia','zaky','kefir','jogurt','tvaroh',
+    'smetan','mlec','mlik','puding','dezert','presnidav','vyziv',
+    'detsk','kojeneck','kasi','pyre','smoothie','dzem','marmelad',
+    'kompot','nektar','dzus','sirup','limonad','napoj','stav',
+    'susen','mrazen','lyofiliz','zmrzlin','vafl','oplatk','susenek',
+    'cokolad','bonbon','cukrovink','tycink','lizatk','kolac','muffin',
+    'peciv','chleb','mous','protein','musli','cereal','vitamin',
+    'dopln','tabletk','kapsl','protein', 'sladid', 'neslazen',
+    'hnojiv','substrat','postrik','osivo','semeno','sazenic','pestov',
+    'houbi','myci','mydl','cistic','cistici','praci','prasek','avivaz',
+    'vonn','vuni','vune','osvezov','svick','parfem','aroma',
+    'sampon','sprch','gel','krem','balzam','sera','kosmetik',
+    'prichut','ochucen','koncentrat','mast','peeling','air wick',
+    'krmiv','granul','pamlsk','veterinar','psi','kocici',
+    'protlak','kecup','omack','polivk','instant','hotov','konzerv',
+    'sterilov','nakladan','zavaren','sekan','loupan','drcen',
+    'pecen','grilovan','smaz','vareny','syr','salam','pecivo',
+    'snack','chips','nalozen','marinovan','susena',
+)
+_FRESH_REJECT_PHRASES = (
+    's prichuti', 's vuni', 'detska vyziva', 'detske prikrmy',
+    'pro rajcata', 'pro papriky', 's boruvkami', 's malinami',
+    's bananem', 's banany', 's mrkvi', 's rajcaty', 's okurkami',
+    'se zeleninou', 's ovocem', 'obsahuje ovoce',
+)
+_FRESH_IDENTITIES = {
+    'W037': r'\bavokad(?:o|a|u|e|y)?\b',
+    'W038': r'\bbanan(?:y|u|a|em)?\b',
+    'W039': r'\bboruvk(?:y|a|u|ami|ou)?\b',
+    'W040': r'\bmalin(?:y|a|u|ami|ou)?\b',
+    'W041': r'\bcitron(?:y|u|em|a)?\b',
+    'W042': r'\b(?:hroznov[eay] vino|hrozny|hroznu)\b',
+    'W043': r'\bokurk(?:a|y|u|ou|ove|ovy)?\b',
+    'W044': r'\brajcat(?:a|o|u|y|um)?\b',
+    'W045': r'\b(?:cherry|koktejlova|mini)\s+rajcat(?:a|o|u|y|um)?\b',
+    'W046': r'\b(?:mrkev|mrkve|mrkvi|mrkvick\w*|karotk\w*)\b',
+    'W047': r'\bpaprik(?:a|y|u|ou|am|ach)?\b',
+}
+
+def is_fresh_produce_name(name: str, rule: dict) -> bool:
+    n = folded(name)
+    if not n or rule.get('id') not in _FRESH_IDENTITIES:
+        return False
+    if any(re.search(r'(?<!\w)' + re.escape(stem) + r'\w*', n)
+           for stem in _FRESH_REJECT_STEMS):
+        return False
+    if any(phrase in n for phrase in _FRESH_REJECT_PHRASES):
+        return False
+    # Fruit/vegetable should appear as the product near the start of the title,
+    # not in an ingredient listing or a long multiproduct description.
+    m = re.search(_FRESH_IDENTITIES[rule['id']], n)
+    return bool(m and len(n[:m.start()].split()) <= 4)
+
 def rule_matches(name: str, rule: dict) -> bool:
     """Accept only explicitly specified goods; exclude flavored derivatives."""
     n = folded(name)
@@ -65,6 +122,10 @@ def rule_matches(name: str, rule: dict) -> bool:
             return False
     if rule.get('required_product_state') in ('cerstve_ovoce', 'cerstva_zelenina'):
         if any(has_expression(n, x) for x in ('sušené', 'mražené', 'šťáva', 'sirup', 'ochucený', 'nápoj', 'čaj', 'bonbony', 'chipsy', 'olej')):
+            return False
+    # Do not treat a product mentioning fruit/vegetables as fresh produce.
+    if rule.get('required_product_state') in ('cerstve_ovoce', 'cerstva_zelenina'):
+        if not is_fresh_produce_name(name, rule):
             return False
     if rid in ('W033', 'W034', 'W035', 'W036'):
         # A title alone cannot establish PET unless explicitly marked. Product
@@ -303,6 +364,20 @@ def main() -> int:
 def snapshot(state: dict,items: dict,jobs: list[dict],now: str) -> None:
     overview=progress_overview(jobs,set(state.get('completed',[])),state.get('queries',{}))
     all_items=sorted(items.values(),key=lambda x:(x['store'],x['name'].casefold()))
+    rules_by_id = {r['id']:r for r in load(CONFIG,{}).get('watch_rules',[])}
+    cleaned_items = []
+    for row in all_items:
+        ids = [rid for rid in row.get('rule_ids', [])
+               if rid in rules_by_id and rule_matches(row.get('name',''), rules_by_id[rid])
+               and (rules_by_id[rid].get('required_product_state') not in
+                    ('cerstve_ovoce','cerstva_zelenina')
+                    or not row.get('title')
+                    or rule_matches(row['title'], rules_by_id[rid]))]
+        if ids:
+            row['rule_ids'] = ids
+            cleaned_items.append(row)
+    all_items = cleaned_items
+
     verified_current=sum(x.get('price_status')=='ok' and x.get('cycle')==state.get('cycle') for x in all_items)
     latest={'schema':'rk-v20-catalog-1','generated_at':dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds'),'postcode':'149 00',
             'postcode_verified':False,'complete':False,
