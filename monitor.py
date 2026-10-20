@@ -13,7 +13,7 @@ import unicodedata
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse
-from visible_price import VISIBLE_PRICE_JS, choose_visible_price
+from visible_price import VISIBLE_PRICE_JS, choose_visible_price, choose_kosik_detail_price
 
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "docs" / "data"
@@ -139,10 +139,17 @@ def extract_jsonld_prices(raw: str) -> list[dict]:
     return output
 
 
-def from_browser_payload(payload: dict) -> tuple[float | None, str | None, str]:
+def from_browser_payload(payload: dict, shop: str = "") -> tuple[float | None, str | None, str]:
     visible_price, visible_source, visible_note = choose_visible_price(payload.get('visible_prices', []))
     if visible_price is not None:
         return visible_price, visible_source, visible_note
+    # Košík does not expose price selectors in our Chromium runs. Try a
+    # strictly product-H1-anchored visible text segment, not the whole page.
+    if shop == 'Košík':
+        detail_price, detail_source, detail_note = choose_kosik_detail_price(payload.get('detail_text', ''))
+        if detail_price is not None:
+            return detail_price, detail_source, detail_note
+        visible_note += '; ' + detail_note
     candidates = []
     for raw in payload.get('jsonld', []):
         candidates.extend(extract_jsonld_prices(raw))
@@ -165,6 +172,18 @@ def browser_extract(page) -> dict:
          .map(m => ({itemprop:m.getAttribute('itemprop'),property:m.getAttribute('property'),content:m.getAttribute('content'),currency:m.getAttribute('data-currency')||'CZK'})),
     })""")
     payload["visible_prices"] = page.evaluate(VISIBLE_PRICE_JS)
+    payload["detail_text"] = page.evaluate(r"""() => {
+      const h = document.querySelector('h1');
+      if (!h) return '';
+      const main = h.closest('main') || document.querySelector('main') || document.body;
+      let raw = main.innerText || '';
+      const heading = (h.innerText || h.textContent || '').trim();
+      let pos = raw.indexOf(heading);
+      if (pos < 0) return '';
+      raw = raw.slice(pos + heading.length, pos + heading.length + 1000);
+      const stop = /(?:\n\s*(?:Do košíku|Značka\s*:|Země původu\s*:|Popis produktu|Další varianty)\s*(?:\n|$))/i.exec(raw);
+      return (stop ? raw.slice(0, stop.index) : raw).slice(0, 650);
+    }""")
     return payload
 
 
@@ -202,6 +221,7 @@ def inspect(page, entry: dict, checked_at: str) -> dict:
             ],
             'jsonld_blocks_count': len(payload.get('jsonld', [])),
             'price_meta_count': len(payload.get('meta', [])),
+            'detail_excerpt': str(payload.get('detail_text') or '')[:500],
         }
         title = payload.get('title') or ''
         data['title'] = title or None
@@ -209,7 +229,7 @@ def inspect(page, entry: dict, checked_at: str) -> dict:
             data['status'] = 'title_mismatch'
             data['note'] = 'Produktový nadpis neodpovídá požadovanému výrobku'
             return data
-        price, source, note = from_browser_payload(payload)
+        price, source, note = from_browser_payload(payload, entry['store'])
         if price is None:
             data['status'] = 'price_unverified'
             data['note'] = note
@@ -256,6 +276,23 @@ def make_report(results: list[dict], previous: dict, now: str) -> dict:
             'scope': 'Pouze konkrétní odkazy (nikoli celý katalog 75 pravidel)', 'items': enriched}
 
 
+def pilot_acceptance(report: dict, required_share: float = 0.60) -> tuple[bool, str]:
+    """Gate a pilot: meaningful coverage in BOTH stores, not one green price."""
+    items = report.get('items', [])
+    if not items:
+        return False, 'Prázdný seznam kontrolovaných výrobků'
+    from math import ceil
+    valid = [x for x in items if x.get('status') == 'ok' and plausible_pilot_price(x.get('price_czk'))]
+    stores = {x.get('store') for x in items if x.get('store')}
+    covered_stores = {x.get('store') for x in valid}
+    required = max(2, ceil(len(items) * required_share))
+    if len(valid) < required:
+        return False, f'Příliš nízké pokrytí: {len(valid)}/{len(items)}; pro pilot požadováno alespoň {required}'
+    if not stores.issubset(covered_stores):
+        return False, 'Chybí ověřené ceny z obou obchodů: ' + ', '.join(sorted(stores - covered_stores))
+    return True, f'Pilotní minimum dosaženo: {len(valid)}/{len(items)}, oba obchody mají ceny'
+
+
 def save_json(path: Path, value: dict | list) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_suffix('.tmp')
@@ -289,6 +326,7 @@ def run() -> int:
                         'candidates': d.get('visible_candidates_sample', [])[:5],
                         'jsonld_blocks': d.get('jsonld_blocks_count'),
                         'price_meta': d.get('price_meta_count'),
+                        'detail_excerpt': d.get('detail_excerpt', '')[:280],
                     }, ensure_ascii=False), flush=True)
         finally:
             browser.close()
@@ -316,7 +354,12 @@ def run() -> int:
         with open(summary, 'a', encoding='utf-8') as f:
             f.write('\n'.join(rows))
     # Real unknowns must not be disguised as a successful price scan.
-    return 0 if report['verified_price_count'] else 2
+    passed, gate_reason = pilot_acceptance(report)
+    print('PILOT GATE:', 'PASS' if passed else 'FAIL', gate_reason, flush=True)
+    if summary:
+        with open(summary, 'a', encoding='utf-8') as out:
+            out.write('\n**Pilot:** ' + ('PASS' if passed else 'NEÚSPĚŠNÝ') + ' – ' + gate_reason + '\n')
+    return 0 if passed else 2
 
 
 if __name__ == '__main__':

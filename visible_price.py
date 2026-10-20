@@ -14,7 +14,7 @@ _PRICE = re.compile(r'(?i)(?<!\d)(\d{1,4})[,.](\d{2})(?:\s*(?:kč|czk))?(?!\d)')
 _SPLIT = re.compile(r'(?i)^(\d{1,4})[\s\u00a0\n]+(\d{2})(?:\s*(?:kč|czk))?$')
 _WHOLE = re.compile(r'(?i)(?<!\d)(\d{1,4})\s*(?:kč|czk)(?!\w)')
 _HINT_EXCLUDE = re.compile(r'(?i)(?:unit|per-unit|unitprice|regular|original|previous|strike|old[-_]?price|crossed|reference|price-per)')
-_HINT_GOOD = re.compile(r'(?i)(?:actual|current|final|sale|discounted|product-price|price--now|price-current)')
+_HINT_GOOD = re.compile(r'(?i)(?:actual|current|final|sale|discounted|product-price|product-detail-price-section-price|price--now|price-current)')
 
 
 def parse_display_price(text: str) -> float | None:
@@ -26,6 +26,10 @@ def parse_display_price(text: str) -> float | None:
         return None
     # Do not accept a shipping threshold or packaging condition as a product price.
     if re.search(r'(?i)(?:doprava|za dopravu|nad \d+\s*kč)', s):
+        return None
+    # Price wrappers can concatenate children: '14990 Kč 169,90 Kč'.
+    # Accept only a single amount, not one numeric match within a bigger string.
+    if len(re.findall(r'(?i)\b\d{2,5}\s*(?:Kč|CZK)\b', s)) > 1:
         return None
     for pattern in (_PRICE, _SPLIT, _WHOLE):
         matches = list(pattern.finditer(s))
@@ -82,6 +86,62 @@ def choose_visible_price(nodes: list[dict[str, Any]]) -> tuple[float | None, str
     if len(conditions) == 1:
         note = conditions.pop() + '; ' + note
     return selected, 'visible-product-detail', note
+
+
+def choose_kosik_detail_price(text: str) -> tuple[float | None, str | None, str]:
+    """Read Košík product's *own* price block, never search/recommendations.
+
+    Input is text immediately after the product H1, cut at the cart/brand
+    boundary by the browser. This deliberately prefers a non-conditional price
+    over multibuy discounts. Unclear cases are left unverified.
+    """
+    if not isinstance(text, str) or not text.strip():
+        return None, None, 'Košík: cenový blok produktu nebyl vykreslen'
+    text = text.replace('\u00a0', ' ').replace('\u202f', ' ')
+    text = re.split(r'(?im)^\s*(?:Značka\s*:|Země původu\s*:|Popis produktu\s*$|Další varianty\s*$|Do košíku\s*$)', text, maxsplit=1)[0]
+    lines = [x.strip() for x in text.splitlines() if x.strip()][:28]
+    # Decimal fractions in a separate superscript usually appear as '19 90'.
+    # On Košík this denotes ordinary price unless specifically marked 'od N ks'.
+    split_candidates: list[float] = []
+    for i, line in enumerate(lines):
+        if re.fullmatch(r'\d{1,4}', line) and i+1 < len(lines) and re.fullmatch(r'\d{2}', lines[i+1]):
+            # Split DOM spans (crowns then superscript cents on the next line).
+            # Accept only when a unit-price label corroborates the pair nearby.
+            if any(_UNIT.search(other) for other in lines[i+2:i+5]):
+                amount = parse_display_price(line + ' ' + lines[i+1])
+                if amount is not None:
+                    split_candidates.append(amount)
+            continue
+        if _UNIT.search(line) or re.search(r'(?i)\bod\s*\d+\s*ks\b|\bza\s*1\s*ks\b', line):
+            continue
+        if re.search(r'(?i)doprav|registr|přihl', line):
+            continue
+        if not re.fullmatch(r'\d{1,4}\s+\d{2}(?:\s*(?:Kč|CZK))?', line, re.I):
+            continue
+        # Validate that the price is on the product's price line, not a pack size.
+        if i + 1 < len(lines) and re.search(r'(?i)\b(?:ks|g|kg|ml|l)\b', lines[i+1]) and not _UNIT.search(lines[i+1]):
+            continue
+        val = parse_display_price(line)
+        if val is not None:
+            split_candidates.append(val)
+    if len(set(split_candidates)) == 1:
+        return split_candidates[0], 'kosik-product-text', 'Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena'
+    if len(set(split_candidates)) > 1:
+        return None, None, 'Košík: více různých nekondicionálních cen v detailu'
+    # If the page prints 19,90 Kč rather than 19 90, accept only one price
+    # once quantity discounts, old prices and unit prices are excluded.
+    if re.search(r'(?i)multikup|množstevní sleva|\bod\s*\d+\s*ks', text):
+        return None, None, 'Košík: množstevní nabídka bez jednoznačné ceny jednoho kusu'
+    ordinary = []
+    for line in lines:
+        if _UNIT.search(line) or '%' in line or re.search(r'(?i)\bod\s*\d+\s*ks\b', line):
+            continue
+        amount = parse_display_price(line)
+        if amount is not None:
+            ordinary.append(amount)
+    if len(set(ordinary)) == 1:
+        return ordinary[0], 'kosik-product-text', 'Cena z produktového detailu; místní dostupnost neověřena'
+    return None, None, 'Košík: cena není v detailu dostatečně jednoznačná'
 
 
 # Executed in the browser only. Visible DOM geometry anchors candidates to
