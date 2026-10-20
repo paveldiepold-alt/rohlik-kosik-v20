@@ -1,11 +1,11 @@
 {
   "schema": "rk-v20-observations-1",
-  "checked_at": "2026-10-20T11:19:48+00:00",
+  "checked_at": "2026-10-20T12:15:05+00:00",
   "postcode": "149 00",
   "postcode_verified": false,
   "plan_count": 10,
-  "verified_price_count": 1,
-  "status": "partial_or_unverified",
+  "verified_price_count": 10,
+  "status": "all_listed_products_observed",
   "scope": "Pouze konkrétní odkazy (nikoli celý katalog 75 pravidel)",
   "items": [
     {
@@ -13,7 +13,7 @@
       "store": "Rohlík",
       "label": "Zewa Deluxe Standard papírové kapesníky 3vrstvé 10 × 10 ks",
       "url": "https://www.rohlik.cz/1307969-zewa-deluxe-standard-papirove-kapesniky-3vrstve-10x10ks",
-      "checked_at": "2026-10-20T11:19:48+00:00",
+      "checked_at": "2026-10-20T12:15:05+00:00",
       "status": "ok",
       "price_czk": 63.9,
       "title": "Zewa Deluxe Standard papírové kapesníky 3vrstvé 10x10ks",
@@ -63,9 +63,10 @@
           }
         ],
         "jsonld_blocks_count": 3,
-        "price_meta_count": 24
+        "price_meta_count": 24,
+        "detail_excerpt": "\n10 ks\n6,39 Kč/ks\n6390\nKč\n-21 % Pro Rohlíček"
       },
-      "previous_observed_price_czk": null,
+      "previous_observed_price_czk": 63.9,
       "drop_since_previous_pct": null
     },
     {
@@ -73,12 +74,12 @@
       "store": "Košík",
       "label": "Syoss Men Intense Power šampon 440 ml",
       "url": "https://www.kosik.cz/p304584-syoss-men-intense-power-sampon-pro-muze",
-      "checked_at": "2026-10-20T11:19:48+00:00",
-      "status": "price_unverified",
-      "price_czk": null,
+      "checked_at": "2026-10-20T12:15:05+00:00",
+      "status": "ok",
+      "price_czk": 169.9,
       "title": "Syoss Men Intense Power šampon pro muže",
-      "source": null,
-      "note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Stránka neposkytla jednoznačnou cenu produktu",
+      "source": "kosik-product-text",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "http_status": 200,
       "postcode_verified": false,
       "diagnostics": {
@@ -87,7 +88,8 @@
         "visible_candidates_count": 0,
         "visible_candidates_sample": [],
         "jsonld_blocks_count": 1,
-        "price_meta_count": 0
+        "price_meta_count": 0,
+        "detail_excerpt": "\n\n440 ml\n\n169\n90\n386,14 Kč/l"
       },
       "previous_observed_price_czk": null,
       "drop_since_previous_pct": null
@@ -97,12 +99,12 @@
       "store": "Rohlík",
       "label": "Syoss Men Intense Power šampon 440 ml",
       "url": "https://www.rohlik.cz/1299615-syoss-men-intense-power-sampon-pro-muze",
-      "checked_at": "2026-10-20T11:19:48+00:00",
-      "status": "price_unverified",
-      "price_czk": null,
+      "checked_at": "2026-10-20T12:15:05+00:00",
+      "status": "ok",
+      "price_czk": 149.9,
       "title": "Syoss Men Intense Power šampon pro muže",
-      "source": null,
-      "note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech",
+      "source": "visible-product-detail",
+      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
       "http_status": 200,
       "postcode_verified": false,
       "diagnostics": {
@@ -154,9 +156,10 @@
           }
         ],
         "jsonld_blocks_count": 3,
-        "price_meta_count": 31
+        "price_meta_count": 31,
+        "detail_excerpt": "\n440 ml\n340,68 Kč/l\n14990\nKč\n169,90 Kč*\n* Doporučená cena\nVýhodná cena"
       },
-      "previous_observed_price_czk": 169.9,
+      "previous_observed_price_czk": null,
       "drop_since_previous_pct": null
     },
     {
@@ -164,12 +167,12 @@
       "store": "Košík",
       "label": "Zewa Deluxe Standard – kapesníky 3vrstvé, balíčky",
       "url": "https://www.kosik.cz/p82407-zewa-deluxe-standard-kapesniky-3-vrstve",
-      "checked_at": "2026-10-20T11:19:48+00:00",
-      "status": "price_unverified",
-      "price_czk": null,
+      "checked_at": "2026-10-20T12:15:05+00:00",
+      "status": "ok",
+      "price_czk": 64.9,
       "title": "Zewa Deluxe Standard kapesníky 3 vrstvé",
-      "source": null,
-      "note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Stránka neposkytla jednoznačnou cenu produktu",
+      "source": "kosik-product-text",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "http_status": 200,
       "postcode_verified": false,
       "diagnostics": {
@@ -178,7 +181,8 @@
         "visible_candidates_count": 0,
         "visible_candidates_sample": [],
         "jsonld_blocks_count": 1,
-        "price_meta_count": 0
+        "price_meta_count": 0,
+        "detail_excerpt": "\n\n10 ks\n\nMultikup – množstevní sleva\n42,90 Kč\nod 2 ks\n–33 %\n64\n90\n6,49 Kč/ks"
       },
       "previous_observed_price_czk": null,
       "drop_since_previous_pct": null
@@ -188,12 +192,12 @@
       "store": "Košík",
       "label": "Zewa Deluxe Family – papírové kapesníky 3vrstvé BOX 90 ks",
       "url": "https://www.kosik.cz/p82477-zewa-deluxe-family-kapesniky-3vrstve",
-      "checked_at": "2026-10-20T11:19:48+00:00",
-      "status": "price_unverified",
-      "price_czk": null,
+      "checked_at": "2026-10-20T12:15:05+00:00",
+      "status": "ok",
+      "price_czk": 59.9,
       "title": "Zewa Deluxe Family kapesníky 3vrstvé",
-      "source": null,
-      "note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Stránka neposkytla jednoznačnou cenu produktu",
+      "source": "kosik-product-text",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "http_status": 200,
       "postcode_verified": false,
       "diagnostics": {
@@ -202,7 +206,8 @@
         "visible_candidates_count": 0,
         "visible_candidates_sample": [],
         "jsonld_blocks_count": 1,
-        "price_meta_count": 0
+        "price_meta_count": 0,
+        "detail_excerpt": "\n\n90 ks\n\nMultikup – množstevní sleva\n39,90 Kč\nod 2 ks\n–33 %\n59\n90\n0,67 Kč/ks"
       },
       "previous_observed_price_czk": null,
       "drop_since_previous_pct": null
@@ -212,12 +217,12 @@
       "store": "Košík",
       "label": "Zewa Wisch & Weg Original – kuchyňské utěrky 4 role",
       "url": "https://www.kosik.cz/p233874-zewa-wisch-weg-original-kuchynske-uterky-4-role",
-      "checked_at": "2026-10-20T11:19:48+00:00",
-      "status": "price_unverified",
-      "price_czk": null,
+      "checked_at": "2026-10-20T12:15:05+00:00",
+      "status": "ok",
+      "price_czk": 124.9,
       "title": "Zewa Wisch&Weg Original kuchyňské utěrky, 4 role",
-      "source": null,
-      "note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Stránka neposkytla jednoznačnou cenu produktu",
+      "source": "kosik-product-text",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "http_status": 200,
       "postcode_verified": false,
       "diagnostics": {
@@ -226,7 +231,8 @@
         "visible_candidates_count": 0,
         "visible_candidates_sample": [],
         "jsonld_blocks_count": 1,
-        "price_meta_count": 0
+        "price_meta_count": 0,
+        "detail_excerpt": "\n\n41.2 m\n\n124\n90\n3,03 Kč/m"
       },
       "previous_observed_price_czk": null,
       "drop_since_previous_pct": null
@@ -236,12 +242,12 @@
       "store": "Košík",
       "label": "ORION KOKO kokosová tyčinka",
       "url": "https://www.kosik.cz/p770680-orion-koko-kokosova-tycinka-macena-v-mlecne-poleve",
-      "checked_at": "2026-10-20T11:19:48+00:00",
-      "status": "price_unverified",
-      "price_czk": null,
+      "checked_at": "2026-10-20T12:15:05+00:00",
+      "status": "ok",
+      "price_czk": 19.9,
       "title": "ORION Koko, kokosová tyčinka máčená v mléčné polevě",
-      "source": null,
-      "note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Stránka neposkytla jednoznačnou cenu produktu",
+      "source": "kosik-product-text",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "http_status": 200,
       "postcode_verified": false,
       "diagnostics": {
@@ -250,7 +256,8 @@
         "visible_candidates_count": 0,
         "visible_candidates_sample": [],
         "jsonld_blocks_count": 1,
-        "price_meta_count": 0
+        "price_meta_count": 0,
+        "detail_excerpt": "\n\n35 g\n\nMultikup – množstevní sleva\n13,90 Kč\nod 3 ks\n–30 %\n19\n90\n568,57 Kč/kg"
       },
       "previous_observed_price_czk": null,
       "drop_since_previous_pct": null
@@ -260,12 +267,12 @@
       "store": "Košík",
       "label": "ORION Studentská pečeť mléčná",
       "url": "https://www.kosik.cz/p698853-orion-studentska-pecet-mlecna-cokolada-s-arasidy-rozinkami-a-zele",
-      "checked_at": "2026-10-20T11:19:48+00:00",
-      "status": "price_unverified",
-      "price_czk": null,
+      "checked_at": "2026-10-20T12:15:05+00:00",
+      "status": "ok",
+      "price_czk": 104.9,
       "title": "ORION Studentská pečeť, mléčná čokoláda s arašídy, rozinkami a želé",
-      "source": null,
-      "note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Stránka neposkytla jednoznačnou cenu produktu",
+      "source": "kosik-product-text",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "http_status": 200,
       "postcode_verified": false,
       "diagnostics": {
@@ -274,7 +281,8 @@
         "visible_candidates_count": 0,
         "visible_candidates_sample": [],
         "jsonld_blocks_count": 1,
-        "price_meta_count": 0
+        "price_meta_count": 0,
+        "detail_excerpt": "\n\n170 g\n\nMultikup – množstevní sleva\n79,90 Kč\nod 2 ks\n–23 %\n104\n90\nDoporučená cena\n139,90 Kč\n617,06 Kč/kg"
       },
       "previous_observed_price_czk": null,
       "drop_since_previous_pct": null
@@ -284,12 +292,12 @@
       "store": "Košík",
       "label": "Opavia Fidorka kokosová",
       "url": "https://www.kosik.cz/p21877-opavia-fidorka-mlecna-s-kokosem-modra",
-      "checked_at": "2026-10-20T11:19:48+00:00",
-      "status": "price_unverified",
-      "price_czk": null,
+      "checked_at": "2026-10-20T12:15:05+00:00",
+      "status": "ok",
+      "price_czk": 19.9,
       "title": "Opavia Fidorka Mléčná s kokosem, modrá",
-      "source": null,
-      "note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Stránka neposkytla jednoznačnou cenu produktu",
+      "source": "kosik-product-text",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "http_status": 200,
       "postcode_verified": false,
       "diagnostics": {
@@ -298,7 +306,8 @@
         "visible_candidates_count": 0,
         "visible_candidates_sample": [],
         "jsonld_blocks_count": 1,
-        "price_meta_count": 0
+        "price_meta_count": 0,
+        "detail_excerpt": "\n\n30 g\n\nMultikup – množstevní sleva\n17,90 Kč\nod 2 ks\n–10 %\n15,90 Kč\nod 4 ks\n–20 %\n19\n90\n663,33 Kč/kg"
       },
       "previous_observed_price_czk": null,
       "drop_since_previous_pct": null
@@ -308,12 +317,12 @@
       "store": "Košík",
       "label": "Opavia Miňonky kakaové",
       "url": "https://www.kosik.cz/p21907-opavia-minonky-kakaove-oplatky",
-      "checked_at": "2026-10-20T11:19:48+00:00",
-      "status": "price_unverified",
-      "price_czk": null,
+      "checked_at": "2026-10-20T12:15:05+00:00",
+      "status": "ok",
+      "price_czk": 19.9,
       "title": "Opavia Miňonky Kakaové oplatky",
-      "source": null,
-      "note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Stránka neposkytla jednoznačnou cenu produktu",
+      "source": "kosik-product-text",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "http_status": 200,
       "postcode_verified": false,
       "diagnostics": {
@@ -322,7 +331,8 @@
         "visible_candidates_count": 0,
         "visible_candidates_sample": [],
         "jsonld_blocks_count": 1,
-        "price_meta_count": 0
+        "price_meta_count": 0,
+        "detail_excerpt": "\n\n50 g\n\nMultikup – množstevní sleva\n15,90 Kč\nod 2 ks\n–20 %\n19\n90\n398,00 Kč/kg"
       },
       "previous_observed_price_czk": null,
       "drop_since_previous_pct": null
