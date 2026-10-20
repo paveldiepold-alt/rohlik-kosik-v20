@@ -1,0 +1,37 @@
+ROHLÍK × KOŠÍK v20 – ROZŠÍŘENÍ NA 75 PRAVIDEL / 196 HLEDÁNÍ
+============================================================
+
+DŮLEŽITÉ: Tento ZIP NENÍ pro vytvoření nového repozitáře. Neměň původní monitor.py,
+visible_price.py ani watchlist.json – úspěšný pilot 10/10 musí zůstat zachován.
+
+1. Otevři https://github.com/paveldiepold-alt/rohlik-kosik-v20
+2. VYBER VĚTEV fix/real-product-price-reading-v20 (NE main).
+3. Klikni Add file > Upload files.
+4. Z rozbaleného ZIPu nahraj tyto SOUBORY I SE SLOŽKAMI:
+    catalog_search.py
+    catalog_monitor.py
+    tests/test_catalog_monitor.py
+    docs/catalog.html
+    .github/workflows/catalog.yml
+   Složka .github se MUSÍ zachovat. Samotný ZIP GitHub nerozbaluje.
+5. Commit changes do opravné větve.
+6. Ověř v GitHubu, že v .github/workflows existuje catalog.yml.
+7. Otevři GitHub Actions > Rohlík Košík v20 - Kompletní katalog.
+   Run workflow > fix/real-product-price-reading-v20 > Run workflow.
+8. Po dokončení stačí napsat do chatu: Doběhlo.
+
+JAK ČÍST VÝSLEDEK
+- Plán: 75 pravidel, 98 různých vyhledávacích výrazů × 2 obchody = 196 úloh.
+- Jeden běh se pokusí o celý plán ve food-first pořadí do časového rozpočtu.
+- Pokud nestihne celé hledání, uloží checkpoint a další běh může pokračovat.
+- Červený stav při blokaci hledání/nesplněném pokrytí je poctivý výsledek,
+  nikoliv důkaz, že v obchodě žádné výrobky nejsou.
+- Každá nalezená položka je ověřována na detailu prostřednictvím současného
+  sběrače, který už prošel pilotem 10/10.
+- Data: docs/data/catalog_latest.json a catalog_progress.json.
+- Přehled: docs/catalog.html (na GitHub Pages se zobrazí až po zveřejnění
+  příslušné větve nebo začlenění do publikačního workflow).
+- Ceny nejsou ověřené pro konkrétní doručovací PSČ 149 00.
+- První skutečný běh veřejného katalogového vyhledávání DOSUD NEPROBĚHL.
+
+Nemazat původní testy. Žádné další nové repozitáře.

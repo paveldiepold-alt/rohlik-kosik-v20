@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rohlík × Košík – katalog všech sledovaných výrobků</title>
+<style>
+:root{color-scheme:light;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;background:#eff2f6;color:#172a44}
+*{box-sizing:border-box}body{margin:0}header{background:#142238;color:#fff;padding:21px max(24px,calc((100vw - 1380px)/2))}header h1{font-size:23px;margin:0 0 5px;font-weight:750}header p{margin:0;color:#c7d1e2;font-size:13px}
+main{max-width:1440px;padding:20px 28px 34px;margin:auto}.muted{font-size:12px;color:#62728a}.notice{border:1px solid #e9d7a4;border-radius:9px;background:#fff9ed;padding:13px 17px;margin:0 0 15px;font-size:13px;color:#76571c}
+.stats{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin:0 0 13px}.stat,.panel{background:#fff;border-radius:13px;box-shadow:0 2px 9px #2635490a}.stat{padding:17px}.stat strong{display:block;font-size:28px;letter-spacing:-.05em;font-weight:780}.stat span{font-size:12px;color:#62728a}
+.panel{padding:20px}.topline{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}h2{margin:0;font-size:18px}.pill{padding:5px 9px;background:#e8f1fa;border-radius:999px;color:#174b7e;font-size:12px;font-weight:700}.filters{display:flex;gap:10px;flex-wrap:wrap;padding:17px 0 10px}.field{display:flex;flex-direction:column;gap:5px}.field label{font-size:11px;font-weight:700;color:#506179}.field select,.field input{height:38px;border:1px solid #d4dfe9;background:#fff;border-radius:8px;padding:7px 10px;color:#20354d;font:inherit;font-size:13px;max-width:245px}.field input{width:235px}
+.progress{margin:13px 0 20px;display:grid;grid-template-columns:1fr 1fr;gap:13px}.lane{border:1px solid #e8edf2;border-radius:10px;padding:12px 13px;font-size:12px}.lane-head{display:flex;justify-content:space-between}.bar{margin-top:8px;height:8px;background:#edf1f5;border-radius:999px;overflow:hidden}.bar i{display:block;height:100%;background:#4288ba;width:0%}
+.tablewrap{overflow:auto}table{width:100%;border-collapse:collapse;font-size:12px}th{background:#f3f6f9;text-align:left;color:#445772;font-size:11px;white-space:nowrap}th,td{padding:12px;border-bottom:1px solid #e5eaf0;vertical-align:middle}th:nth-child(3){min-width:350px}td:nth-child(3){max-width:470px}td b{font-size:12px;line-height:1.4}td small{display:block;color:#8190a3;font-size:10px;margin-top:4px}a{color:#0c5caa;text-decoration:none;font-weight:700}a:hover{text-decoration:underline}
+.product{display:flex;gap:12px;align-items:center}.photo{width:49px;height:53px;object-fit:contain;border:1px solid #e8edf3;border-radius:7px;padding:4px;flex-shrink:0}.placeholder{display:grid;place-items:center;background:#f4f6fa;color:#96a2b0;font-size:10px}.price{white-space:nowrap;font-weight:760;color:#123656}.condition{font-size:11px;color:#416a84}.store{font-weight:650}.warn{color:#956519}.ok{color:#13805b}.empty{padding:38px;text-align:center;color:#687991;font-size:14px}
+.cards{display:none}.prodcard{border-bottom:1px solid #e1e7f0;padding:14px 0}.prodcard header{background:none;color:inherit;padding:0;margin-bottom:8px;display:flex;justify-content:space-between;font-size:12px}.prodcard .product{align-items:flex-start}.prodcard .name{font-weight:740;font-size:13px}.prodcard .foot{display:flex;justify-content:space-between;margin-top:9px;font-size:12px;padding-left:60px}.footer{margin:18px 2px;font-size:11px;color:#697b93;line-height:1.5}
+@media(max-width:1020px){.stats{grid-template-columns:repeat(3,1fr)}main{padding:15px 14px}.tablewrap{display:none}.cards{display:block}.filters{gap:8px}.progress{grid-template-columns:1fr}.stat strong{font-size:24px}}@media(max-width:580px){.stats{grid-template-columns:repeat(2,1fr)}.field{flex:1 0 45%}.field input,.field select{max-width:100%;width:100%}.stat{padding:14px}.panel{padding:14px}h2{font-size:16px}}
+</style>
+</head>
+<body>
+<header><h1>🛒 Rohlík × Košík</h1><p>Kompletní sledovaný sortiment · běžné ceny · diagnostika pokrytí</p></header>
+<main>
+  <div class="notice" id="notice">Načítám poslední skutečně uložené výsledky. Neověřené ceny a neúplné hledání neznamenají, že výrobek není dostupný.</div>
+  <section class="stats" aria-label="Přehled sběru">
+    <div class="stat"><strong id="sProducts">—</strong><span>Nalezené výrobky</span></div>
+    <div class="stat"><strong id="sVerified">—</strong><span>Ověřené ceny v cyklu</span></div>
+    <div class="stat"><strong id="sQueries">—</strong><span>Hotové vyhledávací úlohy</span></div>
+    <div class="stat"><strong id="sRules">—</strong><span>Pravidla s výsledkem / celkem</span></div>
+    <div class="stat"><strong id="sStores">2</strong><span>Obchody ve vyhledávání</span></div>
+  </section>
+  <section class="panel">
+    <div class="topline"><h2>Přehled výrobků</h2><span class="pill" id="stamp">Čeká na první katalogový sběr</span></div>
+    <div class="progress" id="progress"></div>
+    <div class="filters">
+      <div class="field"><label for="shop">Obchod</label><select id="shop"><option value="">Oba obchody</option><option>Rohlík</option><option>Košík</option></select></div>
+      <div class="field"><label for="cat">Kategorie</label><select id="cat"><option value="">Všechny kategorie</option></select></div>
+      <div class="field"><label for="status">Cena</label><select id="status"><option value="">Vše</option><option value="ok">Ověřená</option><option value="other">Nezjištěná</option></select></div>
+      <div class="field"><label for="term">Hledat</label><input id="term" placeholder="Název nebo značka…" type="search"></div>
+    </div>
+    <div class="muted" id="shown"></div>
+    <div class="tablewrap"><table><thead><tr><th>Obchod</th><th>Kategorie</th><th>Výrobek</th><th>Cena / kus</th><th>Podmínka</th><th>Detail</th></tr></thead><tbody id="rows"></tbody></table></div>
+    <div class="cards" id="cards"></div>
+  </section>
+  <div class="footer">Zdroj: veřejné vyhledávání Rohlík a Košík. Ceny a dostupnost pro PSČ 149 00 nejsou ověřeny. Množstevní nabídky nejsou cenou jednoho kusu. Srovnání mezi obchody zobrazíme pouze u ověřeně identického výrobku a balení. Zobrazení může obsahovat produkty z předchozí kontroly; aktuálnost sleduj podle data.</div>
+</main>
+<script>
+'use strict';
+let data={items:[],rules:[],coverage:{by_store:{}}};
+const $=id=>document.getElementById(id);
+const money=x=>typeof x==='number'&&Number.isFinite(x)?x.toLocaleString('cs-CZ',{minimumFractionDigits:2,maximumFractionDigits:2})+' Kč':'nezjištěna';
+const safe=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const safeUrl=u=>typeof u==='string'&&u.startsWith('https://')?u:'';
+const cats=product=>{const ids=product.rule_ids||[];const c=ids.map(id=>rules.get(id)?.category).filter(Boolean);return [...new Set(c)];};
+let rules=new Map();
+const photo=p=>{const u=safeUrl(p.image_url);return u?`<img class="photo" loading="lazy" src="${safe(u)}" alt="" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'photo placeholder',textContent:'Bez foto'}))">`:'<div class="photo placeholder">Bez foto</div>';};
+const promo=p=>Array.isArray(p.multibuy)&&p.multibuy.length?p.multibuy.map(m=>`<span class="condition">od ${Number(m.min_qty)||'?'} ks: ${money(m.price_czk)}</span>`).join(' · '):'—';
+function apply(){
+ const store=$('shop').value, category=$('cat').value,status=$('status').value, q=$('term').value.trim().toLocaleLowerCase('cs');
+ const list=(data.items||[]).filter(p=>(!store||p.store===store)&&(!category||cats(p).includes(category))&&(!status||(status==='ok'?p.price_status==='ok':p.price_status!=='ok'))&&(!q||`${p.name} ${p.title} ${cats(p).join(' ')}`.toLocaleLowerCase('cs').includes(q)));
+ $('shown').textContent=`Zobrazeno ${list.length} z ${data.items.length} zachycených výrobků. Výrobky bez aktuálního ověření nemusí být skladem.`;
+ const segment=list.slice(0,1200); // Rendering limit only; collection is not truncated.
+ $('rows').innerHTML=segment.length?segment.map(p=>`<tr><td class="store">${safe(p.store)}</td><td>${safe(cats(p).join(', ')||'—')}</td><td><div class="product">${photo(p)}<div><b>${safe(p.title||p.name)}</b><small>${safe(p.checked_at||'Bez data')}</small></div></div></td><td><span class="price ${p.price_status==='ok'?'ok':'warn'}">${money(p.price_czk)}</span></td><td>${promo(p)}</td><td><a href="${safe(safeUrl(p.url)||'#')}" target="_blank" rel="noopener noreferrer">Otevřít ↗</a></td></tr>`).join(''):'<tr><td colspan="6" class="empty">Pro zvolené filtry nejsou zatím žádné záznamy.</td></tr>';
+ $('cards').innerHTML=segment.map(p=>`<div class="prodcard"><header><span>${safe(p.store)} · ${safe(cats(p)[0]||'—')}</span><span>${p.price_status==='ok'?'✓ Ověřeno':'? Neověřeno'}</span></header><div class="product">${photo(p)}<div><div class="name">${safe(p.title||p.name)}</div><div class="price" style="margin-top:7px">${money(p.price_czk)}</div><div>${promo(p)}</div></div></div><div class="foot"><span>${safe((p.checked_at||'').slice(0,16))}</span><a href="${safe(safeUrl(p.url)||'#')}" target="_blank" rel="noopener noreferrer">Otevřít ↗</a></div></div>`).join('');
+}
+async function load(){try{
+ const res=await fetch('./data/catalog_latest.json?ts='+Date.now(),{cache:'no-store'}); if(!res.ok)throw new Error('HTTP '+res.status);
+ data=await res.json();if(!Array.isArray(data.items))throw new Error('Neplatný formát dat');
+ rules=new Map((data.rules||[]).map(r=>[r.id,r]));
+ const ct=[...new Set((data.rules||[]).map(r=>r.category))];const order=data.category_order||[];ct.sort((a,b)=>{const ia=order.indexOf(a),ib=order.indexOf(b);return (ia<0?999:ia)-(ib<0?999:ib)||a.localeCompare(b,'cs')});
+ $('cat').innerHTML='<option value="">Všechny kategorie</option>'+ct.map(x=>`<option value="${safe(x)}">${safe(x)}</option>`).join('');
+ $('sProducts').textContent=data.discovered_total??data.items.length;
+ $('sVerified').textContent=data.verified_current_cycle??0;
+ $('sQueries').textContent=(data.coverage?.finished_jobs??0)+' / '+(data.coverage?.total_jobs??'—');
+ $('sRules').textContent=(data.rules_seen??'—')+'/'+(data.rules_total??'?');
+ $('stamp').textContent='Poslední sběr: '+new Date(data.generated_at).toLocaleString('cs-CZ');
+ $('notice').textContent=data.note||'Částečný sběr. Přesnost pro PSČ není ověřena.';
+ $('progress').innerHTML=['Rohlík','Košík'].map(s=>{const v=data.coverage?.by_store?.[s]||{finished:0,planned:0};const pct=v.planned?Math.min(100,Math.round(v.finished/v.planned*100)):0;return `<div class="lane"><div class="lane-head"><b>${s}</b><span>${v.finished}/${v.planned} dotazů</span></div><div class="bar"><i style="width:${pct}%"></i></div></div>`}).join('');
+ apply();
+ }catch(e){$('notice').textContent='Katalogová data ještě nebyla zveřejněna: '+String(e.message)+'. Nejde o prázdný sortiment.'; $('shown').textContent='Spusť nejprve katalogovou automatizaci v GitHub Actions.';}
+}
+['shop','cat','status','term'].forEach(id=>$(id).addEventListener(id==='term'?'input':'change',apply));load();
+</script>
+</body>
+</html>
