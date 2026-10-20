@@ -13,6 +13,7 @@ import unicodedata
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse
+from visible_price import VISIBLE_PRICE_JS, choose_visible_price
 
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "docs" / "data"
@@ -104,22 +105,30 @@ def extract_jsonld_prices(raw: str) -> list[dict]:
 
 
 def from_browser_payload(payload: dict) -> tuple[float | None, str | None, str]:
+    visible_price, visible_source, visible_note = choose_visible_price(payload.get('visible_prices', []))
+    if visible_price is not None:
+        return visible_price, visible_source, visible_note
     candidates = []
     for raw in payload.get('jsonld', []):
         candidates.extend(extract_jsonld_prices(raw))
     for m in payload.get('meta', []):
         if m.get('itemprop') == 'price' or m.get('property') in PRICE_META:
             candidates.append({'price': m.get('content'), 'currency': m.get('currency', 'CZK'), 'source': 'product-meta'})
-    return choose_price(candidates)
+    structured_price, structured_source, structured_note = choose_price(candidates)
+    if structured_price is not None:
+        return structured_price, structured_source, structured_note
+    return None, None, f'{visible_note}; {structured_note}'
 
 
 def browser_extract(page) -> dict:
-    return page.evaluate("""() => ({
+    payload = page.evaluate("""() => ({
        title: (document.querySelector('h1')?.textContent || '').trim(),
        jsonld: [...document.querySelectorAll('script[type="application/ld+json"]')].map(e => e.textContent),
        meta: [...document.querySelectorAll('meta[itemprop="price"],meta[property="product:price:amount"],meta[property="og:price:amount"]')]
          .map(m => ({itemprop:m.getAttribute('itemprop'),property:m.getAttribute('property'),content:m.getAttribute('content'),currency:m.getAttribute('data-currency')||'CZK'})),
     })""")
+    payload["visible_prices"] = page.evaluate(VISIBLE_PRICE_JS)
+    return payload
 
 
 def inspect(page, entry: dict, checked_at: str) -> dict:
