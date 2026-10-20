@@ -1,0 +1,1475 @@
+{
+  "plan_signature": "5934df25c29c18a88a8d",
+  "completed": [
+    "Košík::aquila",
+    "Košík::aquila 1,5 l",
+    "Košík::avokádo",
+    "Košík::axe",
+    "Košík::axe deodorant",
+    "Košík::axe sprchový gel",
+    "Košík::banány",
+    "Košík::borůvky",
+    "Košík::cherry rajčata",
+    "Košík::chodura",
+    "Košík::citrony",
+    "Košík::coca-cola",
+    "Košík::coca-cola original 1,5 l",
+    "Košík::coca-cola original 2 l",
+    "Košík::dobrá voda",
+    "Košík::dobrá voda 1,5 l",
+    "Košík::fidorka",
+    "Košík::flora",
+    "Košík::galbani",
+    "Košík::galbani mozzarella",
+    "Košík::hellmann",
+    "Košík::hellmann majonéza",
+    "Košík::hera",
+    "Košík::hovězí svíčková",
+    "Košík::hroznové víno",
+    "Košík::hrozny",
+    "Košík::kapesníky box 3vrstvé",
+    "Košík::kapesníky v krabici",
+    "Košík::kmotr",
+    "Košík::kostelecké",
+    "Košík::krahulík",
+    "Košík::král sýrů",
+    "Košík::král sýrů hermelín",
+    "Košík::kuchyňské papírové utěrky",
+    "Košík::kuřecí paličky",
+    "Košík::kuřecí prsa",
+    "Košík::kuřecí prsní řízky",
+    "Košík::kuřecí stehna",
+    "Košík::le & co",
+    "Košík::le co šunka",
+    "Košík::leerdammer",
+    "Košík::linteo",
+    "Košík::lipno tavený sýr",
+    "Košík::madeta",
+    "Košík::madeta máslo",
+    "Košík::maliny",
+    "Košík::miňonky",
+    "Košík::mrkev",
+    "Košík::okurky",
+    "Košík::omega",
+    "Košík::orion koko kokosová tyčinka",
+    "Košík::panzani",
+    "Košík::panzani rýže",
+    "Košík::panzani těstoviny",
+    "Košík::papriky",
+    "Košík::papírové kapesníky box",
+    "Košík::papírové utěrky",
+    "Košík::ponnath",
+    "Košík::president plátkový sýr",
+    "Košík::président",
+    "Košík::rajec",
+    "Košík::rajec 1,5 l",
+    "Košík::rajčata",
+    "Košík::rama",
+    "Košík::sedlčanský",
+    "Košík::signal",
+    "Košík::smetanito",
+    "Košík::studentská pečeť",
+    "Košík::syoss",
+    "Košík::syoss men intense power",
+    "Košík::vepřová krkovice",
+    "Košík::vepřová panenka",
+    "Košík::veselá kráva",
+    "Košík::wein",
+    "Košík::zewa",
+    "Košík::zewa deluxe standard kapesníky",
+    "Košík::zewa kapesníky box",
+    "Košík::zewa papírové utěrky",
+    "Košík::zewa toaletní papír",
+    "Košík::zewa ubrousky",
+    "Košík::želetava",
+    "Rohlík::aquila",
+    "Rohlík::aquila 1,5 l",
+    "Rohlík::avokádo",
+    "Rohlík::axe",
+    "Rohlík::axe deodorant",
+    "Rohlík::axe sprchový gel",
+    "Rohlík::banány",
+    "Rohlík::borůvky",
+    "Rohlík::cherry rajčata",
+    "Rohlík::chodura",
+    "Rohlík::citrony",
+    "Rohlík::coca-cola",
+    "Rohlík::coca-cola original 1,5 l",
+    "Rohlík::coca-cola original 2 l",
+    "Rohlík::dobrá voda",
+    "Rohlík::dobrá voda 1,5 l",
+    "Rohlík::fidorka",
+    "Rohlík::flora",
+    "Rohlík::galbani",
+    "Rohlík::galbani mozzarella",
+    "Rohlík::hellmann",
+    "Rohlík::hellmann majonéza",
+    "Rohlík::hera",
+    "Rohlík::hovězí svíčková",
+    "Rohlík::hroznové víno",
+    "Rohlík::hrozny",
+    "Rohlík::kapesníky box 3vrstvé",
+    "Rohlík::kapesníky v krabici",
+    "Rohlík::kmotr",
+    "Rohlík::kostelecké",
+    "Rohlík::krahulík",
+    "Rohlík::král sýrů",
+    "Rohlík::král sýrů hermelín",
+    "Rohlík::kuchyňské papírové utěrky",
+    "Rohlík::kuřecí paličky",
+    "Rohlík::kuřecí prsa",
+    "Rohlík::kuřecí prsní řízky",
+    "Rohlík::kuřecí stehna",
+    "Rohlík::le & co",
+    "Rohlík::le co šunka",
+    "Rohlík::leerdammer",
+    "Rohlík::linteo",
+    "Rohlík::lipno tavený sýr",
+    "Rohlík::madeta",
+    "Rohlík::madeta máslo",
+    "Rohlík::maliny",
+    "Rohlík::miňonky",
+    "Rohlík::mrkev",
+    "Rohlík::okurky",
+    "Rohlík::omega",
+    "Rohlík::orion koko kokosová tyčinka",
+    "Rohlík::panzani",
+    "Rohlík::panzani rýže",
+    "Rohlík::panzani těstoviny",
+    "Rohlík::papriky",
+    "Rohlík::papírové kapesníky box",
+    "Rohlík::papírové utěrky",
+    "Rohlík::ponnath",
+    "Rohlík::president plátkový sýr",
+    "Rohlík::président",
+    "Rohlík::rajec",
+    "Rohlík::rajec 1,5 l",
+    "Rohlík::rajčata",
+    "Rohlík::rama",
+    "Rohlík::sedlčanský",
+    "Rohlík::signal",
+    "Rohlík::smetanito",
+    "Rohlík::studentská pečeť",
+    "Rohlík::syoss",
+    "Rohlík::syoss men intense power",
+    "Rohlík::vepřová krkovice",
+    "Rohlík::vepřová panenka",
+    "Rohlík::veselá kráva",
+    "Rohlík::wein",
+    "Rohlík::zewa",
+    "Rohlík::zewa deluxe standard kapesníky",
+    "Rohlík::zewa kapesníky box",
+    "Rohlík::zewa papírové utěrky",
+    "Rohlík::zewa toaletní papír",
+    "Rohlík::zewa ubrousky",
+    "Rohlík::želetava"
+  ],
+  "queries": {
+    "Rohlík::kuřecí prsní řízky": {
+      "query": "kuřecí prsní řízky",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 65,
+      "matched": 36,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::kuřecí prsní řízky": {
+      "query": "kuřecí prsní řízky",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 10,
+      "matched": 6,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::kuřecí prsa": {
+      "query": "kuřecí prsa",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 178,
+      "matched": 40,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::kuřecí prsa": {
+      "query": "kuřecí prsa",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 15,
+      "matched": 12,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::kuřecí stehna": {
+      "query": "kuřecí stehna",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 29,
+      "matched": 11,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::kuřecí stehna": {
+      "query": "kuřecí stehna",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 28,
+      "matched": 20,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::kuřecí paličky": {
+      "query": "kuřecí paličky",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 17,
+      "matched": 1,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::kuřecí paličky": {
+      "query": "kuřecí paličky",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 14,
+      "matched": 6,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::vepřová krkovice": {
+      "query": "vepřová krkovice",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 25,
+      "matched": 11,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::vepřová krkovice": {
+      "query": "vepřová krkovice",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 18,
+      "matched": 14,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::vepřová panenka": {
+      "query": "vepřová panenka",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 160,
+      "matched": 18,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::vepřová panenka": {
+      "query": "vepřová panenka",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 11,
+      "matched": 8,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::hovězí svíčková": {
+      "query": "hovězí svíčková",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 35,
+      "matched": 6,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::hovězí svíčková": {
+      "query": "hovězí svíčková",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 26,
+      "matched": 2,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::le & co": {
+      "query": "LE & CO",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 208,
+      "matched": 23,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::le & co": {
+      "query": "LE & CO",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 95,
+      "matched": 38,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::le co šunka": {
+      "query": "LE CO šunka",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 29,
+      "matched": 13,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::le co šunka": {
+      "query": "LE CO šunka",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 34,
+      "matched": 29,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::chodura": {
+      "query": "Chodura",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 12,
+      "matched": 12,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::chodura": {
+      "query": "Chodura",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 25,
+      "matched": 21,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::wein": {
+      "query": "Wein",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 4,
+      "matched": 0,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::wein": {
+      "query": "Wein",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 14,
+      "matched": 1,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::kostelecké": {
+      "query": "Kostelecké",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 4,
+      "matched": 0,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::kostelecké": {
+      "query": "Kostelecké",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 11,
+      "matched": 4,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::kmotr": {
+      "query": "Kmotr",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 13,
+      "matched": 7,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::kmotr": {
+      "query": "Kmotr",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 4,
+      "matched": 4,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::ponnath": {
+      "query": "Ponnath",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 11,
+      "matched": 8,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::ponnath": {
+      "query": "Ponnath",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 14,
+      "matched": 11,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::krahulík": {
+      "query": "Krahulík",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 1,
+      "matched": 0,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::krahulík": {
+      "query": "Krahulík",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 11,
+      "matched": 2,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::madeta": {
+      "query": "MADETA",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 65,
+      "matched": 17,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::madeta": {
+      "query": "MADETA",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 66,
+      "matched": 14,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::leerdammer": {
+      "query": "Leerdammer",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 11,
+      "matched": 8,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::leerdammer": {
+      "query": "Leerdammer",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 7,
+      "matched": 4,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::président": {
+      "query": "Président",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 43,
+      "matched": 16,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::président": {
+      "query": "Président",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 38,
+      "matched": 19,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::president plátkový sýr": {
+      "query": "President plátkový sýr",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 27,
+      "matched": 14,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::president plátkový sýr": {
+      "query": "President plátkový sýr",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 15,
+      "matched": 11,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::želetava": {
+      "query": "Želetava",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 2,
+      "matched": 2,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::želetava": {
+      "query": "Želetava",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 14,
+      "matched": 9,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::smetanito": {
+      "query": "Smetanito",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 11,
+      "matched": 11,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::smetanito": {
+      "query": "Smetanito",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 14,
+      "matched": 14,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::veselá kráva": {
+      "query": "Veselá kráva",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 8,
+      "matched": 3,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::veselá kráva": {
+      "query": "Veselá kráva",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 10,
+      "matched": 9,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::lipno tavený sýr": {
+      "query": "Lipno tavený sýr",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 25,
+      "matched": 3,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::lipno tavený sýr": {
+      "query": "Lipno tavený sýr",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 11,
+      "matched": 5,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::král sýrů": {
+      "query": "Král Sýrů",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 25,
+      "matched": 7,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::král sýrů": {
+      "query": "Král Sýrů",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 17,
+      "matched": 14,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::král sýrů hermelín": {
+      "query": "Král sýrů hermelín",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 22,
+      "matched": 14,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::král sýrů hermelín": {
+      "query": "Král sýrů hermelín",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 19,
+      "matched": 16,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::sedlčanský": {
+      "query": "Sedlčanský",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 7,
+      "matched": 7,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::sedlčanský": {
+      "query": "Sedlčanský",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 8,
+      "matched": 8,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::galbani": {
+      "query": "Galbani",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 17,
+      "matched": 9,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::galbani": {
+      "query": "Galbani",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 10,
+      "matched": 7,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::galbani mozzarella": {
+      "query": "Galbani mozzarella",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 15,
+      "matched": 9,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::galbani mozzarella": {
+      "query": "Galbani mozzarella",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 8,
+      "matched": 7,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::hellmann": {
+      "query": "Hellmann",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 26,
+      "matched": 4,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::hellmann": {
+      "query": "Hellmann",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 14,
+      "matched": 3,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::hellmann majonéza": {
+      "query": "Hellmann majonéza",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 24,
+      "matched": 4,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::hellmann majonéza": {
+      "query": "Hellmann majonéza",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 13,
+      "matched": 3,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::madeta máslo": {
+      "query": "Madeta máslo",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 26,
+      "matched": 5,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::madeta máslo": {
+      "query": "Madeta máslo",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 10,
+      "matched": 1,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::hera": {
+      "query": "Hera",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 39,
+      "matched": 5,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::hera": {
+      "query": "Hera",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 22,
+      "matched": 6,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::omega": {
+      "query": "Omega",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 58,
+      "matched": 7,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::omega": {
+      "query": "Omega",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 35,
+      "matched": 5,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::rama": {
+      "query": "Rama",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 12,
+      "matched": 9,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::rama": {
+      "query": "Rama",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 7,
+      "matched": 7,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::flora": {
+      "query": "Flora",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 33,
+      "matched": 14,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::flora": {
+      "query": "Flora",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 13,
+      "matched": 5,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::avokádo": {
+      "query": "avokádo",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 45,
+      "matched": 31,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::avokádo": {
+      "query": "avokádo",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 16,
+      "matched": 13,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::banány": {
+      "query": "banány",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 178,
+      "matched": 121,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::banány": {
+      "query": "banány",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 120,
+      "matched": 77,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::borůvky": {
+      "query": "borůvky",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 164,
+      "matched": 98,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::borůvky": {
+      "query": "borůvky",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 120,
+      "matched": 71,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::maliny": {
+      "query": "maliny",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 208,
+      "matched": 145,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::maliny": {
+      "query": "maliny",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 26,
+      "matched": 18,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::citrony": {
+      "query": "citrony",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 176,
+      "matched": 99,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::citrony": {
+      "query": "citrony",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 118,
+      "matched": 55,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::hroznové víno": {
+      "query": "hroznové víno",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 36,
+      "matched": 9,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::hroznové víno": {
+      "query": "hroznové víno",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 48,
+      "matched": 8,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::hrozny": {
+      "query": "hrozny",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 48,
+      "matched": 17,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::hrozny": {
+      "query": "hrozny",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 48,
+      "matched": 8,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::okurky": {
+      "query": "okurky",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 52,
+      "matched": 40,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::okurky": {
+      "query": "okurky",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 38,
+      "matched": 24,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::rajčata": {
+      "query": "rajčata",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 168,
+      "matched": 61,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::rajčata": {
+      "query": "rajčata",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 120,
+      "matched": 59,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::cherry rajčata": {
+      "query": "cherry rajčata",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 28,
+      "matched": 17,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::cherry rajčata": {
+      "query": "cherry rajčata",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 15,
+      "matched": 15,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::mrkev": {
+      "query": "mrkev",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 107,
+      "matched": 53,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::mrkev": {
+      "query": "mrkev",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 69,
+      "matched": 64,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::papriky": {
+      "query": "papriky",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 117,
+      "matched": 57,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::papriky": {
+      "query": "papriky",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 110,
+      "matched": 60,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::studentská pečeť": {
+      "query": "Studentská pečeť",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 6,
+      "matched": 5,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::studentská pečeť": {
+      "query": "Studentská pečeť",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 15,
+      "matched": 11,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::miňonky": {
+      "query": "Miňonky",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 3,
+      "matched": 1,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::miňonky": {
+      "query": "Miňonky",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 18,
+      "matched": 2,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::fidorka": {
+      "query": "Fidorka",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 6,
+      "matched": 1,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::fidorka": {
+      "query": "Fidorka",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 18,
+      "matched": 2,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::orion koko kokosová tyčinka": {
+      "query": "ORION KOKO kokosová tyčinka",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 25,
+      "matched": 4,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::orion koko kokosová tyčinka": {
+      "query": "ORION KOKO kokosová tyčinka",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 17,
+      "matched": 2,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::panzani": {
+      "query": "Panzani",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 26,
+      "matched": 11,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::panzani": {
+      "query": "Panzani",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 20,
+      "matched": 7,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::panzani těstoviny": {
+      "query": "Panzani těstoviny",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 30,
+      "matched": 11,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::panzani těstoviny": {
+      "query": "Panzani těstoviny",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 18,
+      "matched": 7,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::panzani rýže": {
+      "query": "Panzani rýže",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 26,
+      "matched": 11,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::panzani rýže": {
+      "query": "Panzani rýže",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 14,
+      "matched": 2,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::aquila": {
+      "query": "Aquila",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 8,
+      "matched": 0,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::aquila": {
+      "query": "Aquila",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 5,
+      "matched": 0,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::aquila 1,5 l": {
+      "query": "Aquila 1,5 l",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 46,
+      "matched": 4,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::aquila 1,5 l": {
+      "query": "Aquila 1,5 l",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 12,
+      "matched": 0,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::rajec": {
+      "query": "Rajec",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 17,
+      "matched": 4,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::rajec": {
+      "query": "Rajec",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 21,
+      "matched": 2,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::rajec 1,5 l": {
+      "query": "Rajec 1,5 l",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 63,
+      "matched": 8,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::rajec 1,5 l": {
+      "query": "Rajec 1,5 l",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 11,
+      "matched": 2,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::dobrá voda": {
+      "query": "Dobrá voda",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 26,
+      "matched": 5,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::dobrá voda": {
+      "query": "Dobrá voda",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 9,
+      "matched": 4,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::dobrá voda 1,5 l": {
+      "query": "Dobrá voda 1,5 l",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 63,
+      "matched": 11,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::dobrá voda 1,5 l": {
+      "query": "Dobrá voda 1,5 l",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 6,
+      "matched": 4,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::coca-cola": {
+      "query": "Coca-Cola",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 108,
+      "matched": 6,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::coca-cola": {
+      "query": "Coca-Cola",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 89,
+      "matched": 0,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::coca-cola original 1,5 l": {
+      "query": "Coca-Cola Original 1,5 l",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 57,
+      "matched": 5,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::coca-cola original 1,5 l": {
+      "query": "Coca-Cola Original 1,5 l",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 20,
+      "matched": 0,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::coca-cola original 2 l": {
+      "query": "Coca-Cola Original 2 l",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 15,
+      "matched": 1,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::coca-cola original 2 l": {
+      "query": "Coca-Cola Original 2 l",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 19,
+      "matched": 0,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::zewa": {
+      "query": "Zewa",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 20,
+      "matched": 16,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::zewa": {
+      "query": "Zewa",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 21,
+      "matched": 16,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::zewa deluxe standard kapesníky": {
+      "query": "Zewa Deluxe Standard kapesníky",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 18,
+      "matched": 15,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::zewa deluxe standard kapesníky": {
+      "query": "Zewa Deluxe Standard kapesníky",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 13,
+      "matched": 3,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::kapesníky box 3vrstvé": {
+      "query": "kapesníky box 3vrstvé",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 25,
+      "matched": 7,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::kapesníky box 3vrstvé": {
+      "query": "kapesníky box 3vrstvé",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 13,
+      "matched": 1,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::kapesníky v krabici": {
+      "query": "kapesníky v krabici",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 25,
+      "matched": 6,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::kapesníky v krabici": {
+      "query": "kapesníky v krabici",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 19,
+      "matched": 1,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::zewa kapesníky box": {
+      "query": "Zewa kapesníky box",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 25,
+      "matched": 16,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::zewa kapesníky box": {
+      "query": "Zewa kapesníky box",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 14,
+      "matched": 2,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::papírové kapesníky box": {
+      "query": "papírové kapesníky box",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 25,
+      "matched": 6,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::papírové kapesníky box": {
+      "query": "papírové kapesníky box",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 13,
+      "matched": 0,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::kuchyňské papírové utěrky": {
+      "query": "kuchyňské papírové utěrky",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 29,
+      "matched": 18,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::kuchyňské papírové utěrky": {
+      "query": "kuchyňské papírové utěrky",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 37,
+      "matched": 18,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::papírové utěrky": {
+      "query": "papírové utěrky",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 31,
+      "matched": 18,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::papírové utěrky": {
+      "query": "papírové utěrky",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 60,
+      "matched": 18,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::zewa papírové utěrky": {
+      "query": "Zewa papírové utěrky",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 26,
+      "matched": 20,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::zewa papírové utěrky": {
+      "query": "Zewa papírové utěrky",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 15,
+      "matched": 15,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::zewa toaletní papír": {
+      "query": "Zewa toaletní papír",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 27,
+      "matched": 16,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::zewa toaletní papír": {
+      "query": "Zewa toaletní papír",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 10,
+      "matched": 10,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::zewa ubrousky": {
+      "query": "Zewa ubrousky",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 20,
+      "matched": 16,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::zewa ubrousky": {
+      "query": "Zewa ubrousky",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 15,
+      "matched": 10,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::linteo": {
+      "query": "Linteo",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 50,
+      "matched": 21,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::linteo": {
+      "query": "Linteo",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 56,
+      "matched": 23,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::axe": {
+      "query": "AXE",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 15,
+      "matched": 15,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::axe": {
+      "query": "AXE",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 11,
+      "matched": 8,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::axe deodorant": {
+      "query": "Axe deodorant",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 11,
+      "matched": 7,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::axe deodorant": {
+      "query": "Axe deodorant",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 18,
+      "matched": 8,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::axe sprchový gel": {
+      "query": "Axe sprchový gel",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 26,
+      "matched": 9,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::axe sprchový gel": {
+      "query": "Axe sprchový gel",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 17,
+      "matched": 8,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::syoss": {
+      "query": "Syoss",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 27,
+      "matched": 1,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::syoss": {
+      "query": "Syoss",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 42,
+      "matched": 1,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::syoss men intense power": {
+      "query": "Syoss Men Intense Power",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 17,
+      "matched": 1,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::syoss men intense power": {
+      "query": "Syoss Men Intense Power",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 19,
+      "matched": 1,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Rohlík::signal": {
+      "query": "Signal",
+      "shop": "Rohlík",
+      "status": "ok",
+      "links": 8,
+      "matched": 7,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    },
+    "Košík::signal": {
+      "query": "Signal",
+      "shop": "Košík",
+      "status": "ok",
+      "links": 10,
+      "matched": 3,
+      "note": "Veřejné výsledky vyhledávání; úplnost neověřena"
+    }
+  },
+  "discovered_in_cycle": {
+    "Rohlík": 994,
+    "Košík": 749
+  },
+  "fresh_verified_by_store": {
+    "Rohlík": 287,
+    "Košík": 747
+  },
+  "cycle": 1,
+  "planned_jobs": 196
+}
