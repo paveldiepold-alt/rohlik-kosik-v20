@@ -109,7 +109,12 @@ if 'def is_fresh_produce_name(' not in source:
 
 # Re-evaluate previously collected data *without any internet access or rescan*.
 import importlib
+import sys
+
+sys.path.insert(0, str(ROOT.resolve()))
+sys.modules.pop('catalog_monitor', None)
 importlib.invalidate_caches()
+
 from catalog_monitor import rule_matches
 
 cfg = json.loads(WATCH.read_text(encoding='utf-8'))
