@@ -1,0 +1,146 @@
+
+    
+  
+              # not in an ingredient listing or a long multiproduct description.
+              m = re.search(_FRESH_IDENTITIES[rule['id']], n)
+              return bool(m and len(n[:m.start()].split()) <= 4)
+          '''
+          
+          # Prevent repeated execution from duplicating code.
+          source = SRC.read_text(encoding='utf-8')
+          if 'def is_fresh_produce_name(' not in source:
+              anchor = '\ndef rule_matches(name: str, rule: dict) -> bool:'
+              assert source.count(anchor) == 1, 'Unexpected catalog_monitor.py structure (helper insertion)'
+              source = source.replace(anchor, '\n' + HELPER + anchor, 1)
+              target = "    if rid in ('W033', 'W034', 'W035', 'W036'):"
+              guard = """    # Do not treat a product mentioning fruit/vegetables as fresh produce.
+              if rule.get('required_product_state') in ('cerstve_ovoce', 'cerstva_zelenina'):
+                  if not is_fresh_produce_name(name, rule):
+                      return False
+          """
+              assert source.count(target) == 1, 'Unexpected catalog_monitor.py structure (guard insertion)'
+              source = source.replace(target, guard + target, 1)
+              # Revalidate every future snapshot, so stale entries cannot reappear.
+              old = "    all_items=sorted(items.values(),key=lambda x:(x['store'],x['name'].casefold()))"
+              replacement = old + """
+              rules_by_id = {r['id']:r for r in load(CONFIG,{}).get('watch_rules',[])}
+              cleaned_items = []
+              for row in all_items:
+                  ids = [rid for rid in row.get('rule_ids', [])
+                         if rid in rules_by_id and rule_matches(row.get('name',''), rules_by_id[rid])
+                         and (rules_by_id[rid].get('required_product_state') not in
+                              ('cerstve_ovoce','cerstva_zelenina')
+                              or not row.get('title')
+                              or rule_matches(row['title'], rules_by_id[rid]))]
+                  if ids:
+                      row['rule_ids'] = ids
+                      cleaned_items.append(row)
+              all_items = cleaned_items
+          """
+              assert source.count(old) == 1, 'Unexpected catalog_monitor.py structure (snapshot insertion)'
+              source = source.replace(old, replacement, 1)
+              ast.parse(source,filename=str(SRC))
+              SRC.write_text(source,encoding='utf-8')
+          
+          # Re-evaluate previously collected data *without any internet access or rescan*.
+          import importlib
+          importlib.invalidate_caches()
+          from catalog_monitor import rule_matches
+          
+          cfg = json.loads(WATCH.read_text(encoding='utf-8'))
+          by_id = {r['id']:r for r in cfg.get('watch_rules', [])}
+          data = json.loads(CATALOG.read_text(encoding='utf-8'))
+          original = data.get('items', [])
+          clean, excluded = [], []
+          changed_rules = 0
+          for orig in original:
+              product = dict(orig)
+              ids = list(product.get('rule_ids', []))
+              kept = [rid for rid in ids
+                      if rid in by_id and rule_matches(product.get('name', ''), by_id[rid])
+                      and (by_id[rid].get('required_product_state') not in ('cerstve_ovoce','cerstva_zelenina')
+                           or not product.get('title')
+                           or rule_matches(product['title'],by_id[rid]))]
+              if kept != ids:
+                  changed_rules += 1
+              if kept:
+                  product['rule_ids'] = kept
+                  clean.append(product)
+              else:
+                  product['quality_rejection_reason'] = 'Nevyhovuje pravidlům pro čerstvé ovoce/zeleninu nebo ostatním sledovacím pravidlům'
+                  excluded.append(product)
+          
+          # Verified counts and rule coverage must reflect the corrected visible data.
+          data['items'] = clean
+          data['discovered_total'] = len(clean)
+          data['raw_discovered_total'] = len(original)
+          data['quality_excluded_total'] = len(excluded)
+          data['quality_changed_rule_matches'] = changed_rules
+          data['verified_current_cycle'] = sum(
+              p.get('price_status') == 'ok' and p.get('cycle') == data.get('cycle',1)
+              for p in clean
+          )
+          data['rules_seen'] = len({rid for p in clean for rid in p.get('rule_ids',[])})
+          # The progress checkpoint remains unchanged; 196/196 still represents completed searches.
+          data['note'] = (str(data.get('note','')).split(' | Korekce kategorií:')[0]
+                          + f' | Korekce kategorií: vyřazeno {len(excluded)} nesouvisejících výrobků;'
+                          + ' údaje z veřejného vyhledávání, nikoli garantované úplnosti sortimentu.')
+          
+          now = datetime.now(timezone.utc).isoformat(timespec='seconds')
+          REJECTED.parent.mkdir(parents=True,exist_ok=True)
+          REJECTED.write_text(json.dumps({'generated_at':now,'count':len(excluded),'items':excluded},
+                                         ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          CATALOG.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          
+          # Regression test fixtures mirroring the user-reported screenshot.
+          scenarios = [
+              ('Aktimel Kids Banana split 8x100g','W038',False),
+              ('Actimel Triple Action Borůvka - Ostružina','W039',False),
+              ('Activia Kefír Borůvka','W039',False),
+              ('AGIVA 2v1 Mycí houbička s mýdlem s vůní manga, kiwi a avokáda','W037',False),
+              ('Agro Přírodní hnojivo pro rajčata a papriky 1,5 kg','W044',False),
+              ('Agrola Zákys Borůvka','W039',False),
+              ('Air Wick Vonné tyčinky - Růžový šek a maliny','W040',False),
+              ('ALNATURA BIO Dětská výživa Hovězí, mrkev, brambory a brokolice','W046',False),
+              ('ALNATURA BIO Rajčata sekaná','W044',False),
+              ('ALNATURA BIO Borůvky neslazené','W039',False),
+              ('Banány volné 1 kg','W038',True),
+              ('BIO Borůvky čerstvé 125 g','W039',True),
+              ('Rajčata cherry 250 g','W044',True),
+              ('Čerstvá mrkev s natí svazek','W046',True),
+              ('Paprika červená 1 ks','W047',True),
+              ('Avokádo Hass kus','W037',True),
+              ('Okurka hadovka 1 kus','W043',True),
+              ('Maliny čerstvé 125g','W040',True),
+              ('Citrony volné 500g','W041',True),
+              ('Hroznové víno bílé 500g','W042',True),
+          ]
+          for name,rid,expected in scenarios:
+              actual=rule_matches(name,by_id[rid])
+              assert actual==expected, f'{name}: expected {expected}, got {actual}'
+          assert len(clean)+len(excluded)==len(original)
+          assert all(p.get('rule_ids') for p in clean)
+          print(f'OK: {len(scenarios)} regresních testů, původně {len(original)} produktů, '
+                f'v katalogu {len(clean)}, vyřazeno {len(excluded)}, změněna pravidla u {changed_rules}; '
+                f'bez nového sběru',flush=True)
+          PYTHON_CATALOG_QUALITY_FIX
+
+      - name: Run regression tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Commit corrected catalogue and rule changes
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add catalog_monitor.py docs/data/catalog_latest.json docs/data/catalog_quality_excluded.json
+          if git diff --cached --quiet; then
+            echo 'Nothing to update.'
+          else
+            git commit -m 'quality: exclude derived fruit and vegetable products [skip ci]'
+            git push origin HEAD:fix/real-product-price-reading-v20
+          fi
+          echo '## Korekce kategorií' >> "$GITHUB_STEP_SUMMARY"
+          echo 'Chybné výrobky z ovoce/zeleniny byly odstraněny z dashboardu a uloženy do auditního souboru. 196 dokončených vyhledávání zůstává zachováno.' >> "$GITHUB_STEP_SUMMARY"
+
