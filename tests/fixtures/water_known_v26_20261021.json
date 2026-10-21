@@ -1,0 +1,112 @@
+[
+  {
+    "store": "Košík",
+    "name": "Dobrá voda Neperlivá Bílé hrozny 6 x 1,5l",
+    "rule_id": "W035",
+    "store_category_path": [
+      "Nápoje",
+      "Vody",
+      "Minerální",
+      "Ochucené",
+      "Neperlivé"
+    ],
+    "category_source": "jsonld_breadcrumb",
+    "price_status": "ok"
+  },
+  {
+    "store": "Košík",
+    "name": "Dobrá voda Neperlivá Malina 6 x 1.5 L",
+    "rule_id": "W035",
+    "store_category_path": [
+      "Nápoje",
+      "Vody",
+      "Minerální",
+      "Ochucené",
+      "Neperlivé"
+    ],
+    "category_source": "dom_breadcrumb",
+    "price_status": "ok"
+  },
+  {
+    "store": "Košík",
+    "name": "Dobrá voda Neperlivá Mandarinka 6 x 1,5l",
+    "rule_id": "W035",
+    "store_category_path": [],
+    "category_source": null,
+    "price_status": "ok"
+  },
+  {
+    "store": "Košík",
+    "name": "Dobrá voda Neperlivá s příchutí jahoda 6 x 1.5 L",
+    "rule_id": "W035",
+    "store_category_path": [],
+    "category_source": null,
+    "price_status": "ok"
+  },
+  {
+    "store": "Košík",
+    "name": "Rajec Pramenitá voda Mateřídouška nesycená 6 x 1,5l",
+    "rule_id": "W034",
+    "store_category_path": [],
+    "category_source": null,
+    "price_status": "ok"
+  },
+  {
+    "store": "Rohlík",
+    "name": "Dobrá voda Neperlivá bílé hrozny 6×1,5 l",
+    "rule_id": "W035",
+    "store_category_path": [
+      "Nápoje",
+      "Vody a minerálky",
+      "Ochucené",
+      "Další příchutě"
+    ],
+    "category_source": "jsonld_breadcrumb",
+    "price_status": "ok"
+  },
+  {
+    "store": "Rohlík",
+    "name": "Dobrá voda Neperlivá jahoda 6×1,5 l",
+    "rule_id": "W035",
+    "store_category_path": [],
+    "category_source": null,
+    "price_status": "ok"
+  },
+  {
+    "store": "Rohlík",
+    "name": "Dobrá voda Neperlivá malina 6×1,5 l",
+    "rule_id": "W035",
+    "store_category_path": [
+      "Nápoje",
+      "Vody a minerálky",
+      "Ochucené",
+      "Jahoda a malina"
+    ],
+    "category_source": "jsonld_breadcrumb",
+    "price_status": "http_error"
+  },
+  {
+    "store": "Rohlík",
+    "name": "Rajec Jemně perlivá voda (6×1,5l)",
+    "rule_id": "W034",
+    "store_category_path": [],
+    "category_source": null,
+    "price_status": "ok"
+  },
+  {
+    "store": "Rohlík",
+    "name": "Rajec Kojenecká voda (6×1,5l)",
+    "rule_id": "W034",
+    "store_category_path": [],
+    "category_source": null,
+    "price_status": "ok"
+  },
+  {
+    "store": "Rohlík",
+    "name": "Rajec Neperlivá voda (6×1,5l)",
+    "rule_id": "W034",
+    "store_category_path": [],
+    "category_source": null,
+    "price_status": "ok"
+  }
+]
