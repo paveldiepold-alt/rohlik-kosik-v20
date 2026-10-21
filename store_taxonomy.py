@@ -195,9 +195,14 @@ def gate_item(item: dict, *, strict_missing: bool = True) -> tuple[dict|None,dic
 
 
 def partition_items(items: list[dict]) -> tuple[list[dict],list[dict]]:
+    # v24: apply retailer taxonomy and item-type guard across all categories.
+    from catalog_quality_v24 import gate_catalog_item
     visible,review=[],[]
     for row in items:
-        included, excluded=gate_item(row)
-        if included:visible.append(included)
+        included, excluded=gate_item(row)  # existing fresh produce verification
         if excluded:review.append(excluded)
+        if included:
+            verified, flagged = gate_catalog_item(included)
+            if verified:visible.append(verified)
+            if flagged:review.append(flagged)
     return visible,review

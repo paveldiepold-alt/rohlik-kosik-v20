@@ -1,0 +1,243 @@
+{
+  "schema": "rk-v24-audit",
+  "before": 1165,
+  "after": 1122,
+  "quarantined": 43,
+  "flagged": 450,
+  "removed_rules_by_category": {
+    "Maso": 24,
+    "Másla a tuky": 11,
+    "Zelenina": 8
+  },
+  "reasons": {
+    "Zpracovany nebo hotovy pokrm, nikoli syrove maso": 14,
+    "Kosmetika, zdravotnicky nebo papirovy vyrobek neni jedly tuk": 10,
+    "Prodejce: pestovani a osiva nejsou cerstva zelenina/ovoce": 8,
+    "Nazev oznacuje potravu pro zvirata": 10,
+    "Jen znacka/nazev bez potvrzeni, ze jde o jedly tuk": 1
+  },
+  "samples": [
+    {
+      "name": "Costa Brava Lomo - sušená vepřová panenka",
+      "category": "Maso",
+      "reason": "Zpracovany nebo hotovy pokrm, nikoli syrove maso"
+    },
+    {
+      "name": "Dr.Max Omega Kids Smart Chews 30 ks",
+      "category": "Másla a tuky",
+      "reason": "Kosmetika, zdravotnicky nebo papirovy vyrobek neni jedly tuk"
+    },
+    {
+      "name": "Dr.Max Omega Smart Chews želé 30 ks",
+      "category": "Másla a tuky",
+      "reason": "Kosmetika, zdravotnicky nebo papirovy vyrobek neni jedly tuk"
+    },
+    {
+      "name": "EvoTears Omega oční kapky 3 ml",
+      "category": "Másla a tuky",
+      "reason": "Kosmetika, zdravotnicky nebo papirovy vyrobek neni jedly tuk"
+    },
+    {
+      "name": "Monoprix Gourmet Sušená vepřová krkovice",
+      "category": "Maso",
+      "reason": "Zpracovany nebo hotovy pokrm, nikoli syrove maso"
+    },
+    {
+      "name": "Monoprix Gourmet Sušená vepřová panenka Lomo, španělská specialita",
+      "category": "Maso",
+      "reason": "Zpracovany nebo hotovy pokrm, nikoli syrove maso"
+    },
+    {
+      "name": "Semo Okurka setá salátová - hadovka - FORMULE F1",
+      "category": "Zelenina",
+      "reason": "Prodejce: pestovani a osiva nejsou cerstva zelenina/ovoce"
+    },
+    {
+      "name": "Semo Okurka setá salátová - skleníková dlouhá SUPERSTAR F1",
+      "category": "Zelenina",
+      "reason": "Prodejce: pestovani a osiva nejsou cerstva zelenina/ovoce"
+    },
+    {
+      "name": "Semo Paprika extrémně pálivá - NAGA MORICHA",
+      "category": "Zelenina",
+      "reason": "Prodejce: pestovani a osiva nejsou cerstva zelenina/ovoce"
+    },
+    {
+      "name": "Semo Paprika Habanero Chocolate",
+      "category": "Zelenina",
+      "reason": "Prodejce: pestovani a osiva nejsou cerstva zelenina/ovoce"
+    },
+    {
+      "name": "Semo Paprika roční extrémně pálivá - CAROLINA REAPER",
+      "category": "Zelenina",
+      "reason": "Prodejce: pestovani a osiva nejsou cerstva zelenina/ovoce"
+    },
+    {
+      "name": "Semo Paprika roční Habanero Red",
+      "category": "Zelenina",
+      "reason": "Prodejce: pestovani a osiva nejsou cerstva zelenina/ovoce"
+    },
+    {
+      "name": "Semo Paprika roční Korál",
+      "category": "Zelenina",
+      "reason": "Prodejce: pestovani a osiva nejsou cerstva zelenina/ovoce"
+    },
+    {
+      "name": "Semo Paprika směs barev Chili",
+      "category": "Zelenina",
+      "reason": "Prodejce: pestovani a osiva nejsou cerstva zelenina/ovoce"
+    },
+    {
+      "name": "Sokol Falco Kuřecí prsa s bramborovým salátem",
+      "category": "Maso",
+      "reason": "Zpracovany nebo hotovy pokrm, nikoli syrove maso"
+    },
+    {
+      "name": "Vodňanské Kuře Uzená kuřecí stehna",
+      "category": "Maso",
+      "reason": "Zpracovany nebo hotovy pokrm, nikoli syrove maso"
+    },
+    {
+      "name": "Weleda Extra Rich Omega Serum Drops",
+      "category": "Másla a tuky",
+      "reason": "Kosmetika, zdravotnicky nebo papirovy vyrobek neni jedly tuk"
+    },
+    {
+      "name": "Apetisimo Kuřecí prsa krájená, pečená",
+      "category": "Maso",
+      "reason": "Zpracovany nebo hotovy pokrm, nikoli syrove maso"
+    },
+    {
+      "name": "Apetisimo Kuřecí stehna gyros, krájená",
+      "category": "Maso",
+      "reason": "Zpracovany nebo hotovy pokrm, nikoli syrove maso"
+    },
+    {
+      "name": "Applaws Cat Jelly kapsička kuřecí prsa s jehněčím pro kočky",
+      "category": "Maso",
+      "reason": "Nazev oznacuje potravu pro zvirata"
+    },
+    {
+      "name": "Applaws Cat Jelly kapsička kuřecí prsa s játry pro kočky",
+      "category": "Maso",
+      "reason": "Nazev oznacuje potravu pro zvirata"
+    },
+    {
+      "name": "Applaws Cat kapsička kuřecí prsa a chřest pro kočky",
+      "category": "Maso",
+      "reason": "Nazev oznacuje potravu pro zvirata"
+    },
+    {
+      "name": "Applaws Cat kapsička kuřecí prsa a divoká rýže pro kočky",
+      "category": "Maso",
+      "reason": "Nazev oznacuje potravu pro zvirata"
+    },
+    {
+      "name": "Applaws Cat kapsička kuřecí prsa s lososem",
+      "category": "Maso",
+      "reason": "Nazev oznacuje potravu pro zvirata"
+    },
+    {
+      "name": "Applaws Cat kapsička kuřecí prsa s tuňákem",
+      "category": "Maso",
+      "reason": "Nazev oznacuje potravu pro zvirata"
+    },
+    {
+      "name": "Applaws Cat Kitten kapsička kuřecí prsa",
+      "category": "Maso",
+      "reason": "Nazev oznacuje potravu pro zvirata"
+    },
+    {
+      "name": "Applaws Cat miska kuřecí prsa s kachnou pro kočky",
+      "category": "Maso",
+      "reason": "Nazev oznacuje potravu pro zvirata"
+    },
+    {
+      "name": "Applaws Cat miska kuřecí prsa s rýží pro kočky",
+      "category": "Maso",
+      "reason": "Nazev oznacuje potravu pro zvirata"
+    },
+    {
+      "name": "Glazovaná kuřecí prsa s bbq omáčkou s ořechy, karamelizovaná karotka a fazolky edamame (set k přípravě hotového jídla)",
+      "category": "Maso",
+      "reason": "Zpracovany nebo hotovy pokrm, nikoli syrove maso"
+    },
+    {
+      "name": "GYNELLA Flora 10 vaginálních čípků",
+      "category": "Másla a tuky",
+      "reason": "Kosmetika, zdravotnicky nebo papirovy vyrobek neni jedly tuk"
+    },
+    {
+      "name": "Harmony Soft Flora toaletní papír 3vrstvý, 16 ks",
+      "category": "Másla a tuky",
+      "reason": "Kosmetika, zdravotnicky nebo papirovy vyrobek neni jedly tuk"
+    },
+    {
+      "name": "Kuřecí prsa s dijonskou omáčkou, opečeným batátem a křupavou zeleninou (set k přípravě hotového jídla)",
+      "category": "Maso",
+      "reason": "Zpracovany nebo hotovy pokrm, nikoli syrove maso"
+    },
+    {
+      "name": "Kuřecí prsa s opečenou karotkou a bbq omáčkou (set k přípravě hotového jídla)",
+      "category": "Maso",
+      "reason": "Zpracovany nebo hotovy pokrm, nikoli syrove maso"
+    },
+    {
+      "name": "Kuřecí prsa se sýrovou omáčkou a mini bramborami (set k přípravě hotového jídla)",
+      "category": "Maso",
+      "reason": "Zpracovany nebo hotovy pokrm, nikoli syrove maso"
+    },
+    {
+      "name": "Libeřské lahůdky Kuřecí řízek s poctivým bramborovým salátem",
+      "category": "Maso",
+      "reason": "Zpracovany nebo hotovy pokrm, nikoli syrove maso"
+    },
+    {
+      "name": "Lyopro Lyofilizovaná kuřecí prsa pro psy",
+      "category": "Maso",
+      "reason": "Nazev oznacuje potravu pro zvirata"
+    },
+    {
+      "name": "Maso Uzeniny Polička BIO Hovězí svíčková",
+      "category": "Maso",
+      "reason": "Zpracovany nebo hotovy pokrm, nikoli syrove maso"
+    },
+    {
+      "name": "Panthenol Omega chladivá pěna po opalování Aloe vera 9% 200ml",
+      "category": "Másla a tuky",
+      "reason": "Kosmetika, zdravotnicky nebo papirovy vyrobek neni jedly tuk"
+    },
+    {
+      "name": "Panthenol Omega chladivá pěna po opalování ve spreji 10% 200ml",
+      "category": "Másla a tuky",
+      "reason": "Kosmetika, zdravotnicky nebo papirovy vyrobek neni jedly tuk"
+    },
+    {
+      "name": "Panthenol Omega tělové mléko aloe vera 9% 250ml",
+      "category": "Másla a tuky",
+      "reason": "Kosmetika, zdravotnicky nebo papirovy vyrobek neni jedly tuk"
+    },
+    {
+      "name": "Salvest Põnn BIO Kapsička vepřová panenka se zeleninovým pyré",
+      "category": "Maso",
+      "reason": "Zpracovany nebo hotovy pokrm, nikoli syrove maso"
+    },
+    {
+      "name": "Schubert Podestýlková Omega Pro vejce",
+      "category": "Másla a tuky",
+      "reason": "Jen znacka/nazev bez potvrzeni, ze jde o jedly tuk"
+    },
+    {
+      "name": "Solgar Full Spectrum Omega SALMON OIL cps.120",
+      "category": "Másla a tuky",
+      "reason": "Kosmetika, zdravotnicky nebo papirovy vyrobek neni jedly tuk"
+    }
+  ],
+  "price_gaps": {
+    "Košík|price_unverified": 22,
+    "Košík|ok": 81,
+    "Košík|title_mismatch": 6,
+    "Rohlík|http_error": 44,
+    "Rohlík|ok": 56
+  }
+}

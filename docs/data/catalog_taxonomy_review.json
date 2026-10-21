@@ -1,7 +1,6 @@
 {
-  "schema": "rk-v21-taxonomy-review-1",
-  "generated_at": "2026-10-21T09:07:52+00:00",
-  "count": 407,
+  "schema": "rk-v24-taxonomy-review",
+  "count": 450,
   "items": [
     {
       "store": "Košík",
@@ -15584,6 +15583,1456 @@
           "reason": "Prodejce neposkytl spolehlivou kategorii"
         }
       ],
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Košík",
+      "name": "Costa Brava Lomo - sušená vepřová panenka",
+      "url": "https://www.kosik.cz/p725282-costa-brava-lomo-susena-veprova-panenka",
+      "rule_ids": [
+        "W004"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/0n/185x185x1_0nxcg6lazlh4.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Costa Brava Lomo - sušená vepřová panenka",
+      "price_czk": 84.9,
+      "price_status": "ok",
+      "price_source": "kosik-product-text",
+      "checked_at": "2026-10-20T13:49:28+00:00",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W004",
+            "category": "Maso",
+            "reason": "Zpracovany nebo hotovy pokrm, nikoli syrove maso"
+          }
+        ],
+        "category_path": []
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Košík",
+      "name": "Dr.Max Omega Kids Smart Chews 30 ks",
+      "url": "https://www.kosik.cz/p780936-dr-max-dr-max-omega-kids-smart-chews-30-ks",
+      "rule_ids": [
+        "W030"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/d5/185x185x1_d55owna1mg18.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Dr.Max Omega Kids Smart Chews 30 ks",
+      "price_czk": 209.0,
+      "price_status": "ok",
+      "price_source": "kosik-product-text",
+      "checked_at": "2026-10-20T14:01:09+00:00",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W030",
+            "category": "Másla a tuky",
+            "reason": "Kosmetika, zdravotnicky nebo papirovy vyrobek neni jedly tuk"
+          }
+        ],
+        "category_path": []
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Košík",
+      "name": "Dr.Max Omega Smart Chews želé 30 ks",
+      "url": "https://www.kosik.cz/p779158-dr-max-dr-max-omega-smart-chews-zele-30-ks",
+      "rule_ids": [
+        "W030"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/1r/185x185x1_1rljcjuee7sa.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Dr.Max Omega Smart Chews želé 30 ks",
+      "price_czk": 293.0,
+      "price_status": "ok",
+      "price_source": "kosik-product-text",
+      "checked_at": "2026-10-20T14:01:11+00:00",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W030",
+            "category": "Másla a tuky",
+            "reason": "Kosmetika, zdravotnicky nebo papirovy vyrobek neni jedly tuk"
+          }
+        ],
+        "category_path": []
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Košík",
+      "name": "EvoTears Omega oční kapky 3 ml",
+      "url": "https://www.kosik.cz/p780838-evotears-evotears-omega-ocni-kapky-3-ml",
+      "rule_ids": [
+        "W030"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/cj/185x185x1_cj9cncglt591.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "EvoTears Omega oční kapky 3 ml",
+      "price_czk": 521.0,
+      "price_status": "ok",
+      "price_source": "kosik-product-text",
+      "checked_at": "2026-10-20T14:01:14+00:00",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W030",
+            "category": "Másla a tuky",
+            "reason": "Kosmetika, zdravotnicky nebo papirovy vyrobek neni jedly tuk"
+          }
+        ],
+        "category_path": []
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Košík",
+      "name": "Monoprix Gourmet Sušená vepřová krkovice",
+      "url": "https://www.kosik.cz/p788614-monoprix-gourmet-susena-veprova-krkovice",
+      "rule_ids": [
+        "W003"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/e0/185x185x1_e0i4lmhaeyvz.png",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Monoprix Gourmet Sušená vepřová krkovice",
+      "price_czk": 99.9,
+      "price_status": "ok",
+      "price_source": "kosik-product-text",
+      "checked_at": "2026-10-20T13:48:47+00:00",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
+      "multibuy": [
+        {
+          "min_qty": 2,
+          "price_czk": 73.9
+        }
+      ],
+      "http_status": 200,
+      "postcode_verified": false,
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W003",
+            "category": "Maso",
+            "reason": "Zpracovany nebo hotovy pokrm, nikoli syrove maso"
+          }
+        ],
+        "category_path": []
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Košík",
+      "name": "Monoprix Gourmet Sušená vepřová panenka Lomo, španělská specialita",
+      "url": "https://www.kosik.cz/p792604-monoprix-gourmet-susena-veprova-panenka-lomo-spanelska-specialita",
+      "rule_ids": [
+        "W004"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/02/185x185x1_020unr5sg61e.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Monoprix Gourmet Sušená vepřová panenka Lomo, španělská specialita",
+      "price_czk": 139.9,
+      "price_status": "ok",
+      "price_source": "kosik-product-text",
+      "checked_at": "2026-10-20T13:49:29+00:00",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W004",
+            "category": "Maso",
+            "reason": "Zpracovany nebo hotovy pokrm, nikoli syrove maso"
+          }
+        ],
+        "category_path": []
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Košík",
+      "name": "Semo Okurka setá salátová - hadovka - FORMULE F1",
+      "url": "https://www.kosik.cz/p598361-semo-okurka-seta-salatova-hadovka-formule-f1",
+      "rule_ids": [
+        "W043"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/bv/185x185x1_bvtt8pw0scub.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Semo Okurka setá salátová - hadovka - FORMULE F1",
+      "price_czk": 84.9,
+      "price_status": "ok",
+      "price_source": "kosik-product-text",
+      "checked_at": "2026-10-20T14:12:02+00:00",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Domácnost a zahrada",
+        "Zahrada a balkón",
+        "Osiva a travní směsi",
+        "Zelenina"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Okurka setá salátová - hadovka - FORMULE F1. Salátová okurka typu „MULTIFRUIT“ se středně dlouhými plody 16 – 24 cm, bez krčku, tmavozelená raná, určená pro…",
+      "taxonomy_checked_at": "2026-10-21T07:19:25+00:00",
+      "taxonomy_status": "review",
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W043",
+            "category": "Zelenina",
+            "reason": "Prodejce: pestovani a osiva nejsou cerstva zelenina/ovoce"
+          }
+        ],
+        "category_path": [
+          "Domácnost a zahrada",
+          "Zahrada a balkón",
+          "Osiva a travní směsi",
+          "Zelenina"
+        ]
+      }
+    },
+    {
+      "store": "Košík",
+      "name": "Semo Okurka setá salátová - skleníková dlouhá SUPERSTAR F1",
+      "url": "https://www.kosik.cz/p441570-semo-okurka-seta-salatova-sklenikova-dlouha-superstar-f1",
+      "rule_ids": [
+        "W043"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/yh/185x185x1_yhrx0ee62lx9.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Semo Okurka setá salátová - skleníková dlouhá SUPERSTAR F1",
+      "price_czk": 69.9,
+      "price_status": "ok",
+      "price_source": "kosik-product-text",
+      "checked_at": "2026-10-20T14:11:59+00:00",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Domácnost a zahrada",
+        "Zahrada a balkón",
+        "Osiva a travní směsi",
+        "Zelenina"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Okurka setá salátová - skleníková dlouhá SUPERSTAR F1 - semena. Okurka je plodinou první tratě. Vyžaduje záhřevné, hlinité, humózní půdy. Vzhledem k slabšímu…",
+      "taxonomy_checked_at": "2026-10-21T07:19:25+00:00",
+      "taxonomy_status": "review",
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W043",
+            "category": "Zelenina",
+            "reason": "Prodejce: pestovani a osiva nejsou cerstva zelenina/ovoce"
+          }
+        ],
+        "category_path": [
+          "Domácnost a zahrada",
+          "Zahrada a balkón",
+          "Osiva a travní směsi",
+          "Zelenina"
+        ]
+      }
+    },
+    {
+      "store": "Košík",
+      "name": "Semo Paprika extrémně pálivá - NAGA MORICHA",
+      "url": "https://www.kosik.cz/p598331-semo-paprika-extremne-paliva-naga-moricha",
+      "rule_ids": [
+        "W047"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/d7/185x185x1_d7adij0v8f9k.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Semo Paprika extrémně pálivá - NAGA MORICHA",
+      "price_czk": 79.9,
+      "price_status": "ok",
+      "price_source": "kosik-product-text",
+      "checked_at": "2026-10-20T14:18:05+00:00",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Domácnost a zahrada",
+        "Zahrada a balkón",
+        "Osiva a travní směsi",
+        "Zelenina"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Paprika extrémně pálivá - NAGA MORICHA. Jedna z nejpálivějších papriček na světě, pocházející ze severovýchodní Indie a Bangladéše. Má nízký, rozložitý růst a…",
+      "taxonomy_checked_at": "2026-10-21T07:19:26+00:00",
+      "taxonomy_status": "review",
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W047",
+            "category": "Zelenina",
+            "reason": "Prodejce: pestovani a osiva nejsou cerstva zelenina/ovoce"
+          }
+        ],
+        "category_path": [
+          "Domácnost a zahrada",
+          "Zahrada a balkón",
+          "Osiva a travní směsi",
+          "Zelenina"
+        ]
+      }
+    },
+    {
+      "store": "Košík",
+      "name": "Semo Paprika Habanero Chocolate",
+      "url": "https://www.kosik.cz/p652520-semo-paprika-habanero-chocolate",
+      "rule_ids": [
+        "W047"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/ed/185x185x1_ed1ew0fnnoxy.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Semo Paprika Habanero Chocolate",
+      "price_czk": 63.9,
+      "price_status": "ok",
+      "price_source": "kosik-product-text",
+      "checked_at": "2026-10-20T14:17:56+00:00",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Domácnost a zahrada",
+        "Zahrada a balkón",
+        "Osiva a travní směsi",
+        "Zelenina"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Habanero chocolate – velmi silně pálivé papričky - SHU 450 000. Plody jsou hnědo-červené barvy o velikosti 4 - 7 cm. Papričky jsou nepravidelného tvaru, mají…",
+      "taxonomy_checked_at": "2026-10-21T07:19:26+00:00",
+      "taxonomy_status": "review",
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W047",
+            "category": "Zelenina",
+            "reason": "Prodejce: pestovani a osiva nejsou cerstva zelenina/ovoce"
+          }
+        ],
+        "category_path": [
+          "Domácnost a zahrada",
+          "Zahrada a balkón",
+          "Osiva a travní směsi",
+          "Zelenina"
+        ]
+      }
+    },
+    {
+      "store": "Košík",
+      "name": "Semo Paprika roční extrémně pálivá - CAROLINA REAPER",
+      "url": "https://www.kosik.cz/p598351-semo-paprika-rocni-extremne-paliva-carolina-reaper",
+      "rule_ids": [
+        "W047"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/tp/185x185x1_tph3kwvn2b2f.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Semo Paprika roční extrémně pálivá - CAROLINA REAPER",
+      "price_czk": 95.9,
+      "price_status": "ok",
+      "price_source": "kosik-product-text",
+      "checked_at": "2026-10-20T14:18:09+00:00",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Domácnost a zahrada",
+        "Zahrada a balkón",
+        "Osiva a travní směsi",
+        "Zelenina"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Paprika roční extrémně pálivá - CAROLINA REAPER. Velmi vzrůstná, při venkovním pěstování velmi pozdní, extrémně silně pálivá paprika. Plody jsou nepravidelné,…",
+      "taxonomy_checked_at": "2026-10-21T07:19:26+00:00",
+      "taxonomy_status": "review",
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W047",
+            "category": "Zelenina",
+            "reason": "Prodejce: pestovani a osiva nejsou cerstva zelenina/ovoce"
+          }
+        ],
+        "category_path": [
+          "Domácnost a zahrada",
+          "Zahrada a balkón",
+          "Osiva a travní směsi",
+          "Zelenina"
+        ]
+      }
+    },
+    {
+      "store": "Košík",
+      "name": "Semo Paprika roční Habanero Red",
+      "url": "https://www.kosik.cz/p111327-semo-paprika-rocni-habanero-red",
+      "rule_ids": [
+        "W047"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/9n/185x185x1_9nlvym4so7ft.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Semo Paprika roční Habanero Red",
+      "price_czk": 65.9,
+      "price_status": "ok",
+      "price_source": "kosik-product-text",
+      "checked_at": "2026-10-20T14:17:50+00:00",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Domácnost a zahrada",
+        "Zahrada a balkón",
+        "Osiva a travní směsi",
+        "Zelenina"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Paprika roční - okrasná, silně pálivá HABANERO RED v technické zralosti zelené a v botanické červené. Papričky připomínají tvarem „lucerničky“ velké 4 - 7 cm,…",
+      "taxonomy_checked_at": "2026-10-21T07:19:26+00:00",
+      "taxonomy_status": "review",
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W047",
+            "category": "Zelenina",
+            "reason": "Prodejce: pestovani a osiva nejsou cerstva zelenina/ovoce"
+          }
+        ],
+        "category_path": [
+          "Domácnost a zahrada",
+          "Zahrada a balkón",
+          "Osiva a travní směsi",
+          "Zelenina"
+        ]
+      }
+    },
+    {
+      "store": "Košík",
+      "name": "Semo Paprika roční Korál",
+      "url": "https://www.kosik.cz/p111337-semo-paprika-rocni-koral",
+      "rule_ids": [
+        "W047"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/rt/185x185x1_rtzhhbofed2m.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Semo Paprika roční Korál",
+      "price_czk": 27.9,
+      "price_status": "ok",
+      "price_source": "kosik-product-text",
+      "checked_at": "2026-10-20T14:18:02+00:00",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Domácnost a zahrada",
+        "Zahrada a balkón",
+        "Osiva a travní směsi",
+        "Zelenina"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Paprika roční Korál KORÁL raná, silně pálivá, aromatická kořeninová paprika třešňovitého typu, vhodná k nakládání do kyselého nálevu i jako surovina k sušení…",
+      "taxonomy_checked_at": "2026-10-21T07:19:27+00:00",
+      "taxonomy_status": "review",
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W047",
+            "category": "Zelenina",
+            "reason": "Prodejce: pestovani a osiva nejsou cerstva zelenina/ovoce"
+          }
+        ],
+        "category_path": [
+          "Domácnost a zahrada",
+          "Zahrada a balkón",
+          "Osiva a travní směsi",
+          "Zelenina"
+        ]
+      }
+    },
+    {
+      "store": "Košík",
+      "name": "Semo Paprika směs barev Chili",
+      "url": "https://www.kosik.cz/p111047-semo-paprika-smes-barev-chili",
+      "rule_ids": [
+        "W047"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/6z/185x185x1_6zy5bmrrqykt.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Semo Paprika směs barev Chili",
+      "price_czk": 36.9,
+      "price_status": "ok",
+      "price_source": "kosik-product-text",
+      "checked_at": "2026-10-20T14:17:51+00:00",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Domácnost a zahrada",
+        "Zahrada a balkón",
+        "Osiva a travní směsi",
+        "Zelenina"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Paprika roční - chili, silně pálivá Kolekce PALETA BAREV - Směs raných chili papriček určených pro pěstování na poli, ve fóliovnících, sklenících i květináčích…",
+      "taxonomy_checked_at": "2026-10-21T07:19:28+00:00",
+      "taxonomy_status": "review",
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W047",
+            "category": "Zelenina",
+            "reason": "Prodejce: pestovani a osiva nejsou cerstva zelenina/ovoce"
+          }
+        ],
+        "category_path": [
+          "Domácnost a zahrada",
+          "Zahrada a balkón",
+          "Osiva a travní směsi",
+          "Zelenina"
+        ]
+      }
+    },
+    {
+      "store": "Košík",
+      "name": "Sokol Falco Kuřecí prsa s bramborovým salátem",
+      "url": "https://www.kosik.cz/p785952-sokol-falco-kureci-prsa-s-bramborovym-salatem",
+      "rule_ids": [
+        "W001"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/82/185x185x1_82oq8zo87uo4.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Sokol Falco Kuřecí prsa s bramborovým salátem",
+      "price_czk": 47.9,
+      "price_status": "ok",
+      "price_source": "kosik-product-text",
+      "checked_at": "2026-10-20T13:47:09+00:00",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W001",
+            "category": "Maso",
+            "reason": "Zpracovany nebo hotovy pokrm, nikoli syrove maso"
+          }
+        ],
+        "category_path": []
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Košík",
+      "name": "Vodňanské Kuře Uzená kuřecí stehna",
+      "url": "https://www.kosik.cz/p818614-vodnanske-kure-uzena-kureci-stehna",
+      "rule_ids": [
+        "W002"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/3p/185x185x1_3plbqrjv2hiy.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Vodňanské Kuře Uzená kuřecí stehna",
+      "price_czk": 109.0,
+      "price_status": "ok",
+      "price_source": "kosik-product-text",
+      "checked_at": "2026-10-20T13:47:43+00:00",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W002",
+            "category": "Maso",
+            "reason": "Zpracovany nebo hotovy pokrm, nikoli syrove maso"
+          }
+        ],
+        "category_path": []
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Košík",
+      "name": "Weleda Extra Rich Omega Serum Drops",
+      "url": "https://www.kosik.cz/p803684-weleda-extra-rich-omega-serum-drops",
+      "rule_ids": [
+        "W030"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/s9/185x185x1_s9pfgvzcw7sv.png",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Weleda Extra Rich Omega Serum Drops",
+      "price_czk": 354.0,
+      "price_status": "ok",
+      "price_source": "kosik-product-text",
+      "checked_at": "2026-10-20T14:01:12+00:00",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W030",
+            "category": "Másla a tuky",
+            "reason": "Kosmetika, zdravotnicky nebo papirovy vyrobek neni jedly tuk"
+          }
+        ],
+        "category_path": []
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Rohlík",
+      "name": "Apetisimo Kuřecí prsa krájená, pečená",
+      "url": "https://www.rohlik.cz/1462648-apetisimo-kureci-prsa-krajena-pecena",
+      "rule_ids": [
+        "W001"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1462648/1462648-1720034397704.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Apetisimo Kuřecí prsa krájená, pečená",
+      "price_czk": 75.9,
+      "price_status": "ok",
+      "price_source": "visible-product-detail",
+      "checked_at": "2026-10-20T13:46:02+00:00",
+      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W001",
+            "category": "Maso",
+            "reason": "Zpracovany nebo hotovy pokrm, nikoli syrove maso"
+          }
+        ],
+        "category_path": []
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Rohlík",
+      "name": "Apetisimo Kuřecí stehna gyros, krájená",
+      "url": "https://www.rohlik.cz/1462644-apetisimo-kureci-stehna-gyros-krajena",
+      "rule_ids": [
+        "W002"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1462644/1462644-1720028355622.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Apetisimo Kuřecí stehna gyros, krájená",
+      "price_czk": null,
+      "price_status": "http_error",
+      "price_source": null,
+      "checked_at": "2026-10-20T13:47:15+00:00",
+      "note": "HTTP 429",
+      "multibuy": [],
+      "http_status": 429,
+      "postcode_verified": false,
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W002",
+            "category": "Maso",
+            "reason": "Zpracovany nebo hotovy pokrm, nikoli syrove maso"
+          }
+        ],
+        "category_path": []
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Rohlík",
+      "name": "Applaws Cat Jelly kapsička kuřecí prsa s jehněčím pro kočky",
+      "url": "https://www.rohlik.cz/1457770-applaws-cat-jelly-kapsicka-kureci-prsa-s-jehnecim-pro-kocky",
+      "rule_ids": [
+        "W001"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1457770/1457770-1730821426670.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Applaws Cat Jelly kapsička kuřecí prsa s jehněčím pro kočky",
+      "price_czk": null,
+      "price_status": "http_error",
+      "price_source": null,
+      "checked_at": "2026-10-20T13:46:24+00:00",
+      "note": "HTTP 429",
+      "multibuy": [],
+      "http_status": 429,
+      "postcode_verified": false,
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W001",
+            "category": "Maso",
+            "reason": "Nazev oznacuje potravu pro zvirata"
+          }
+        ],
+        "category_path": []
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Rohlík",
+      "name": "Applaws Cat Jelly kapsička kuřecí prsa s játry pro kočky",
+      "url": "https://www.rohlik.cz/1419071-applaws-cat-jelly-kapsicka-kureci-prsa-s-jatry-pro-kocky",
+      "rule_ids": [
+        "W001"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1419071/1419071-1723111926851.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Applaws Cat Jelly kapsička kuřecí prsa s játry pro kočky",
+      "price_czk": null,
+      "price_status": "http_error",
+      "price_source": null,
+      "checked_at": "2026-10-20T13:46:24+00:00",
+      "note": "HTTP 429",
+      "multibuy": [],
+      "http_status": 429,
+      "postcode_verified": false,
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W001",
+            "category": "Maso",
+            "reason": "Nazev oznacuje potravu pro zvirata"
+          }
+        ],
+        "category_path": []
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Rohlík",
+      "name": "Applaws Cat kapsička kuřecí prsa a chřest pro kočky",
+      "url": "https://www.rohlik.cz/1457764-applaws-cat-kapsicka-kureci-prsa-a-chrest-pro-kocky",
+      "rule_ids": [
+        "W001"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1457764/1457764-1726043387763.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Applaws Cat kapsička kuřecí prsa a chřest pro kočky",
+      "price_czk": null,
+      "price_status": "http_error",
+      "price_source": null,
+      "checked_at": "2026-10-20T13:46:24+00:00",
+      "note": "HTTP 429",
+      "multibuy": [],
+      "http_status": 429,
+      "postcode_verified": false,
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W001",
+            "category": "Maso",
+            "reason": "Nazev oznacuje potravu pro zvirata"
+          }
+        ],
+        "category_path": []
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Rohlík",
+      "name": "Applaws Cat kapsička kuřecí prsa a divoká rýže pro kočky",
+      "url": "https://www.rohlik.cz/1419073-applaws-cat-kapsicka-kureci-prsa-a-divoka-ryze-pro-kocky",
+      "rule_ids": [
+        "W001"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=250,h=250,q=75/https://cdn.rohlik.cz/images/grocery/products/1419073/1419073-1721651243237.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Applaws Cat kapsička kuřecí prsa a divoká rýže pro kočky",
+      "price_czk": null,
+      "price_status": "http_error",
+      "price_source": null,
+      "checked_at": "2026-10-20T13:46:48+00:00",
+      "note": "HTTP 429",
+      "multibuy": [],
+      "http_status": 429,
+      "postcode_verified": false,
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W001",
+            "category": "Maso",
+            "reason": "Nazev oznacuje potravu pro zvirata"
+          }
+        ],
+        "category_path": []
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Rohlík",
+      "name": "Applaws Cat kapsička kuřecí prsa s lososem",
+      "url": "https://www.rohlik.cz/1482582-applaws-cat-kapsicka-kureci-prsa-s-lososem",
+      "rule_ids": [
+        "W001"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1482582/1482582-1782718953334561297.png",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Applaws Cat kapsička kuřecí prsa s lososem",
+      "price_czk": 46.9,
+      "price_status": "ok",
+      "price_source": "visible-product-detail",
+      "checked_at": "2026-10-20T13:46:20+00:00",
+      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W001",
+            "category": "Maso",
+            "reason": "Nazev oznacuje potravu pro zvirata"
+          }
+        ],
+        "category_path": []
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Rohlík",
+      "name": "Applaws Cat kapsička kuřecí prsa s tuňákem",
+      "url": "https://www.rohlik.cz/1482581-applaws-cat-kapsicka-kureci-prsa-s-tunakem",
+      "rule_ids": [
+        "W001"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1482581/1482581-1782718952792822457.png",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Applaws Cat kapsička kuřecí prsa s tuňákem",
+      "price_czk": null,
+      "price_status": "http_error",
+      "price_source": null,
+      "checked_at": "2026-10-20T13:46:24+00:00",
+      "note": "HTTP 429",
+      "multibuy": [],
+      "http_status": 429,
+      "postcode_verified": false,
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W001",
+            "category": "Maso",
+            "reason": "Nazev oznacuje potravu pro zvirata"
+          }
+        ],
+        "category_path": []
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Rohlík",
+      "name": "Applaws Cat Kitten kapsička kuřecí prsa",
+      "url": "https://www.rohlik.cz/1482583-applaws-cat-kitten-kapsicka-kureci-prsa",
+      "rule_ids": [
+        "W001"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1482583/1482583-1782718953872941744.png",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Applaws Cat Kitten kapsička kuřecí prsa",
+      "price_czk": null,
+      "price_status": "http_error",
+      "price_source": null,
+      "checked_at": "2026-10-20T13:46:25+00:00",
+      "note": "HTTP 429",
+      "multibuy": [],
+      "http_status": 429,
+      "postcode_verified": false,
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W001",
+            "category": "Maso",
+            "reason": "Nazev oznacuje potravu pro zvirata"
+          }
+        ],
+        "category_path": []
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Rohlík",
+      "name": "Applaws Cat miska kuřecí prsa s kachnou pro kočky",
+      "url": "https://www.rohlik.cz/1457756-applaws-cat-miska-kureci-prsa-s-kachnou-pro-kocky",
+      "rule_ids": [
+        "W001"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1457756/1457756-1724924212425.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Applaws Cat miska kuřecí prsa s kachnou pro kočky",
+      "price_czk": 40.9,
+      "price_status": "ok",
+      "price_source": "visible-product-detail",
+      "checked_at": "2026-10-20T13:46:18+00:00",
+      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W001",
+            "category": "Maso",
+            "reason": "Nazev oznacuje potravu pro zvirata"
+          }
+        ],
+        "category_path": []
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Rohlík",
+      "name": "Applaws Cat miska kuřecí prsa s rýží pro kočky",
+      "url": "https://www.rohlik.cz/1457759-applaws-cat-miska-kureci-prsa-s-ryzi-pro-kocky",
+      "rule_ids": [
+        "W001"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1457759/1457759-1718875735444.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Applaws Cat miska kuřecí prsa s rýží pro kočky",
+      "price_czk": null,
+      "price_status": "http_error",
+      "price_source": null,
+      "checked_at": "2026-10-20T13:46:24+00:00",
+      "note": "HTTP 429",
+      "multibuy": [],
+      "http_status": 429,
+      "postcode_verified": false,
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W001",
+            "category": "Maso",
+            "reason": "Nazev oznacuje potravu pro zvirata"
+          }
+        ],
+        "category_path": []
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Rohlík",
+      "name": "Glazovaná kuřecí prsa s bbq omáčkou s ořechy, karamelizovaná karotka a fazolky edamame (set k přípravě hotového jídla)",
+      "url": "https://www.rohlik.cz/1476693-glazovana-kureci-prsa-s-bbq-omackou-s-orechy-karamelizovana-karotka-a-fazolky-edamame-set-k-priprave-hotoveho-jidla",
+      "rule_ids": [
+        "W001"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1476693/1476693-1763037076199.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Glazovaná kuřecí prsa s bbq omáčkou s ořechy, karamelizovaná karotka a fazolky edamame (set k přípravě hotového jídla)",
+      "price_czk": null,
+      "price_status": "http_error",
+      "price_source": null,
+      "checked_at": "2026-10-20T13:46:24+00:00",
+      "note": "HTTP 429",
+      "multibuy": [],
+      "http_status": 429,
+      "postcode_verified": false,
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W001",
+            "category": "Maso",
+            "reason": "Zpracovany nebo hotovy pokrm, nikoli syrove maso"
+          }
+        ],
+        "category_path": []
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Rohlík",
+      "name": "GYNELLA Flora 10 vaginálních čípků",
+      "url": "https://www.rohlik.cz/1470654-gynella-flora-10-vaginalnich-cipku",
+      "rule_ids": [
+        "W032"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1470654/1470654-355782.png",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "GYNELLA Flora 10 vaginálních čípků",
+      "price_czk": 559.9,
+      "price_status": "ok",
+      "price_source": "visible-product-detail",
+      "checked_at": "2026-10-20T14:01:58+00:00",
+      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W032",
+            "category": "Másla a tuky",
+            "reason": "Kosmetika, zdravotnicky nebo papirovy vyrobek neni jedly tuk"
+          }
+        ],
+        "category_path": []
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Rohlík",
+      "name": "Harmony Soft Flora toaletní papír 3vrstvý, 16 ks",
+      "url": "https://www.rohlik.cz/1481748-harmony-soft-flora-toaletni-papir-3vrstvy-16-ks",
+      "rule_ids": [
+        "W032"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1481748/1481748-177979908164801791.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Harmony Soft Flora toaletní papír 3vrstvý, 16 ks",
+      "price_czk": 139.9,
+      "price_status": "ok",
+      "price_source": "visible-product-detail",
+      "checked_at": "2026-10-20T14:01:54+00:00",
+      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W032",
+            "category": "Másla a tuky",
+            "reason": "Kosmetika, zdravotnicky nebo papirovy vyrobek neni jedly tuk"
+          }
+        ],
+        "category_path": []
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Rohlík",
+      "name": "Kuřecí prsa s dijonskou omáčkou, opečeným batátem a křupavou zeleninou (set k přípravě hotového jídla)",
+      "url": "https://www.rohlik.cz/1476694-kureci-prsa-s-dijonskou-omackou-opecenym-batatem-a-krupavou-zeleninou-set-k-priprave-hotoveho-jidla",
+      "rule_ids": [
+        "W001"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1476694/1476694-1763030884695.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Kuřecí prsa s dijonskou omáčkou, opečeným batátem a křupavou zeleninou (set k přípravě hotového jídla)",
+      "price_czk": null,
+      "price_status": "http_error",
+      "price_source": null,
+      "checked_at": "2026-10-20T13:46:24+00:00",
+      "note": "HTTP 429",
+      "multibuy": [],
+      "http_status": 429,
+      "postcode_verified": false,
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W001",
+            "category": "Maso",
+            "reason": "Zpracovany nebo hotovy pokrm, nikoli syrove maso"
+          }
+        ],
+        "category_path": []
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Rohlík",
+      "name": "Kuřecí prsa s opečenou karotkou a bbq omáčkou (set k přípravě hotového jídla)",
+      "url": "https://www.rohlik.cz/1476695-kureci-prsa-s-opecenou-karotkou-a-bbq-omackou-set-k-priprave-hotoveho-jidla",
+      "rule_ids": [
+        "W001"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1476695/1476695-1767702783691.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Kuřecí prsa s opečenou karotkou a bbq omáčkou (set k přípravě hotového jídla)",
+      "price_czk": null,
+      "price_status": "http_error",
+      "price_source": null,
+      "checked_at": "2026-10-20T13:46:24+00:00",
+      "note": "HTTP 429",
+      "multibuy": [],
+      "http_status": 429,
+      "postcode_verified": false,
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W001",
+            "category": "Maso",
+            "reason": "Zpracovany nebo hotovy pokrm, nikoli syrove maso"
+          }
+        ],
+        "category_path": []
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Rohlík",
+      "name": "Kuřecí prsa se sýrovou omáčkou a mini bramborami (set k přípravě hotového jídla)",
+      "url": "https://www.rohlik.cz/1476704-kureci-prsa-se-syrovou-omackou-a-mini-bramborami-set-k-priprave-hotoveho-jidla",
+      "rule_ids": [
+        "W001"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1476704/1476704-1767702842336.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Kuřecí prsa se sýrovou omáčkou a mini bramborami (set k přípravě hotového jídla)",
+      "price_czk": null,
+      "price_status": "http_error",
+      "price_source": null,
+      "checked_at": "2026-10-20T13:46:24+00:00",
+      "note": "HTTP 429",
+      "multibuy": [],
+      "http_status": 429,
+      "postcode_verified": false,
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W001",
+            "category": "Maso",
+            "reason": "Zpracovany nebo hotovy pokrm, nikoli syrove maso"
+          }
+        ],
+        "category_path": []
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Rohlík",
+      "name": "Libeřské lahůdky Kuřecí řízek s poctivým bramborovým salátem",
+      "url": "https://www.rohlik.cz/1377583-liberske-lahudky-kureci-rizek-s-poctivym-bramborovym-salatem",
+      "rule_ids": [
+        "W001"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1377583/1377583-1588285460.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Libeřské lahůdky Kuřecí řízek s poctivým bramborovým salátem",
+      "price_czk": null,
+      "price_status": "http_error",
+      "price_source": null,
+      "checked_at": "2026-10-20T13:46:48+00:00",
+      "note": "HTTP 429",
+      "multibuy": [],
+      "http_status": 429,
+      "postcode_verified": false,
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W001",
+            "category": "Maso",
+            "reason": "Zpracovany nebo hotovy pokrm, nikoli syrove maso"
+          }
+        ],
+        "category_path": []
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Rohlík",
+      "name": "Lyopro Lyofilizovaná kuřecí prsa pro psy",
+      "url": "https://www.rohlik.cz/1464209-lyopro-lyofilizovana-kureci-prsa-pro-psy",
+      "rule_ids": [
+        "W001"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1464209/1464209-1725628897683.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Lyopro Lyofilizovaná kuřecí prsa pro psy",
+      "price_czk": null,
+      "price_status": "http_error",
+      "price_source": null,
+      "checked_at": "2026-10-20T13:46:24+00:00",
+      "note": "HTTP 429",
+      "multibuy": [],
+      "http_status": 429,
+      "postcode_verified": false,
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W001",
+            "category": "Maso",
+            "reason": "Nazev oznacuje potravu pro zvirata"
+          }
+        ],
+        "category_path": []
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Rohlík",
+      "name": "Maso Uzeniny Polička BIO Hovězí svíčková",
+      "url": "https://www.rohlik.cz/1479634-maso-uzeniny-policka-bio-hovezi-svickova",
+      "rule_ids": [
+        "W005"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1479634/1479634-1771583150998716971.png",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Maso Uzeniny Polička BIO Hovězí svíčková",
+      "price_czk": null,
+      "price_status": "http_error",
+      "price_source": null,
+      "checked_at": "2026-10-20T13:49:36+00:00",
+      "note": "HTTP 429",
+      "multibuy": [],
+      "http_status": 429,
+      "postcode_verified": false,
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W005",
+            "category": "Maso",
+            "reason": "Zpracovany nebo hotovy pokrm, nikoli syrove maso"
+          }
+        ],
+        "category_path": []
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Rohlík",
+      "name": "Panthenol Omega chladivá pěna po opalování Aloe vera 9% 200ml",
+      "url": "https://www.rohlik.cz/1460622-panthenol-omega-chladiva-pena-po-opalovani-aloe-vera-9-200ml",
+      "rule_ids": [
+        "W030"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1460622/1460622-370821.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Panthenol Omega chladivá pěna po opalování Aloe vera 9% 200ml",
+      "price_czk": 279.9,
+      "price_status": "ok",
+      "price_source": "visible-product-detail",
+      "checked_at": "2026-10-20T14:00:59+00:00",
+      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W030",
+            "category": "Másla a tuky",
+            "reason": "Kosmetika, zdravotnicky nebo papirovy vyrobek neni jedly tuk"
+          }
+        ],
+        "category_path": []
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Rohlík",
+      "name": "Panthenol Omega chladivá pěna po opalování ve spreji 10% 200ml",
+      "url": "https://www.rohlik.cz/1459215-panthenol-omega-chladiva-pena-po-opalovani-ve-spreji-10-200ml",
+      "rule_ids": [
+        "W030"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1459215/1459215-370820.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Panthenol Omega chladivá pěna po opalování ve spreji 10% 200ml",
+      "price_czk": 279.9,
+      "price_status": "ok",
+      "price_source": "visible-product-detail",
+      "checked_at": "2026-10-20T14:00:58+00:00",
+      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W030",
+            "category": "Másla a tuky",
+            "reason": "Kosmetika, zdravotnicky nebo papirovy vyrobek neni jedly tuk"
+          }
+        ],
+        "category_path": []
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Rohlík",
+      "name": "Panthenol Omega tělové mléko aloe vera 9% 250ml",
+      "url": "https://www.rohlik.cz/1352549-panthenol-omega-telove-mleko-aloe-vera-9-250ml",
+      "rule_ids": [
+        "W030"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1352549/1352549-281487.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Panthenol Omega tělové mléko aloe vera 9% 250ml",
+      "price_czk": 269.9,
+      "price_status": "ok",
+      "price_source": "visible-product-detail",
+      "checked_at": "2026-10-20T14:01:01+00:00",
+      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W030",
+            "category": "Másla a tuky",
+            "reason": "Kosmetika, zdravotnicky nebo papirovy vyrobek neni jedly tuk"
+          }
+        ],
+        "category_path": []
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Rohlík",
+      "name": "Salvest Põnn BIO Kapsička vepřová panenka se zeleninovým pyré",
+      "url": "https://www.rohlik.cz/1403691-salvest-ponn-bio-kapsicka-veprova-panenka-se-zeleninovym-pyre",
+      "rule_ids": [
+        "W004"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=250,h=250,q=75/https://cdn.rohlik.cz/images/grocery/products/1403691/1403691-1638004209180.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Salvest Põnn BIO Kapsička vepřová panenka se zeleninovým pyré",
+      "price_czk": 38.9,
+      "price_status": "ok",
+      "price_source": "visible-product-detail",
+      "checked_at": "2026-10-20T13:49:09+00:00",
+      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W004",
+            "category": "Maso",
+            "reason": "Zpracovany nebo hotovy pokrm, nikoli syrove maso"
+          }
+        ],
+        "category_path": []
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Rohlík",
+      "name": "Schubert Podestýlková Omega Pro vejce",
+      "url": "https://www.rohlik.cz/1316393-schubert-podestylkova-omega-pro-vejce",
+      "rule_ids": [
+        "W030"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1316393/1316393-1726641805609.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Schubert Podestýlková Omega Pro vejce",
+      "price_czk": 70.9,
+      "price_status": "ok",
+      "price_source": "visible-product-detail",
+      "checked_at": "2026-10-20T14:00:54+00:00",
+      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W030",
+            "category": "Másla a tuky",
+            "reason": "Jen znacka/nazev bez potvrzeni, ze jde o jedly tuk"
+          }
+        ],
+        "category_path": []
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Rohlík",
+      "name": "Solgar Full Spectrum Omega SALMON OIL cps.120",
+      "url": "https://www.rohlik.cz/1464955-solgar-full-spectrum-omega-salmon-oil-cps-120",
+      "rule_ids": [
+        "W030"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1464955/1464955-383261.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Solgar Full Spectrum Omega SALMON OIL cps.120",
+      "price_czk": 499.0,
+      "price_status": "ok",
+      "price_source": "visible-product-detail",
+      "checked_at": "2026-10-20T14:00:56+00:00",
+      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W030",
+            "category": "Másla a tuky",
+            "reason": "Kosmetika, zdravotnicky nebo papirovy vyrobek neni jedly tuk"
+          }
+        ],
+        "category_path": []
+      },
       "taxonomy_status": "review"
     }
   ]
