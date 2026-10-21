@@ -1,0 +1,135 @@
+{
+  "schema": "rk-v24-laundry-prices",
+  "requested": 24,
+  "checked": 24,
+  "verified": 22,
+  "required_verified": 17,
+  "status_counts": {
+    "title_mismatch": 1,
+    "ok": 22,
+    "price_unverified": 1
+  },
+  "blocked": false,
+  "sample": [
+    {
+      "name": "Ariel Gel Color",
+      "status": "title_mismatch",
+      "price": null
+    },
+    {
+      "name": "Persil Color prací gel na barevné prádlo",
+      "status": "ok",
+      "price": 289.9
+    },
+    {
+      "name": "Persil Color prací gel na barevné prádlo",
+      "status": "ok",
+      "price": 459.9
+    },
+    {
+      "name": "Persil Color prací prášek",
+      "status": "ok",
+      "price": 599.9
+    },
+    {
+      "name": "Persil Color prací prášek na barevné prádlo BOX",
+      "status": "ok",
+      "price": 459.9
+    },
+    {
+      "name": "Persil Discs Color prací kapsle",
+      "status": "ok",
+      "price": 599.9
+    },
+    {
+      "name": "Persil Discs Universal prací kapsle",
+      "status": "ok",
+      "price": 599.9
+    },
+    {
+      "name": "Persil Expert Freshness by Silan prací prášek",
+      "status": "ok",
+      "price": 599.9
+    },
+    {
+      "name": "Persil Expert Freshness by Silan prací prášek",
+      "status": "ok",
+      "price": 459.9
+    },
+    {
+      "name": "Persil Expert Sensitive prací gel pro citlivou pokožku",
+      "status": "ok",
+      "price": 289.9
+    },
+    {
+      "name": "Persil Expert Sensitive prací gel pro citlivou pokožku",
+      "status": "price_unverified",
+      "price": null
+    },
+    {
+      "name": "Persil Expert Sensitive prací prášek pro citlivou pokožku",
+      "status": "ok",
+      "price": 289.9
+    },
+    {
+      "name": "Persil Ultra koncentrovaný Sensitive Gel, 2x 62 pracích dávek",
+      "status": "ok",
+      "price": 599.0
+    },
+    {
+      "name": "Persil Universal prací gel",
+      "status": "ok",
+      "price": 159.9
+    },
+    {
+      "name": "Persil Universal prací prášek",
+      "status": "ok",
+      "price": 289.9
+    },
+    {
+      "name": "Silan Aromatherapy Cape Town koncentrovaný avivážní přípravek 2772ml",
+      "status": "ok",
+      "price": 169.9
+    },
+    {
+      "name": "Silan Aromatherapy Marrakesh aviváž (2772 ml)",
+      "status": "ok",
+      "price": 169.9
+    },
+    {
+      "name": "Silan Aromatherapy Tokyo aviváž (2772 ml)",
+      "status": "ok",
+      "price": 169.9
+    },
+    {
+      "name": "Silan Aviváž Aromatherapy Dreamy Lotus 2,772l",
+      "status": "ok",
+      "price": 169.9
+    },
+    {
+      "name": "Silan Aviváž Aromatherapy Fascinating Frangipani 2,7l",
+      "status": "ok",
+      "price": 169.9
+    },
+    {
+      "name": "Silan Aviváž Aromatherapy Fascinating Jungle 2,772l",
+      "status": "ok",
+      "price": 169.9
+    },
+    {
+      "name": "Silan Aviváž Aromatherapy Magic Magnolia 2,772l",
+      "status": "ok",
+      "price": 169.9
+    },
+    {
+      "name": "Silan Aviváž Aromatherapy Relaxing Maldives (2772 ml)",
+      "status": "ok",
+      "price": 169.9
+    },
+    {
+      "name": "Silan Aviváž Fresh Sky",
+      "status": "ok",
+      "price": 169.9
+    }
+  ]
+}
