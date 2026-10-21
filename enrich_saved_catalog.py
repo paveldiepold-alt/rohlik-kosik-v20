@@ -50,6 +50,66 @@ def make_public(catalog, rows, catalog_path, review_path):
     return cat['taxonomy_v21']
 
 
+# Conservative incremental retry policy: do not re-fetch confirmed category pages,
+# and do not hammer retailer pages after rate limiting.
+MAX_RETRY_PER_RUN = 100
+MAX_NON_RATE_RETRIES = 2
+
+
+def should_retry_product(item: dict, *, only_produce: bool = True) -> bool:
+    if only_produce and not any(r in FRESH_IDS for r in item.get('rule_ids', [])):
+        return False
+    if item.get('store_category_path'):
+        return False  # Already verified using retailer metadata.
+    if not item.get('taxonomy_checked_at'):
+        return True  # Previously discovered, never checked.
+    if item.get('category_source') not in ('error', 'missing'):
+        return False
+    reason = str(item.get('taxonomy_error') or '')
+    if '429' in reason or '403' in reason or '503' in reason:
+        return int(item.get('taxonomy_attempts', 0)) < 6
+    # Old v21 error records had one attempted request, before this counter existed.
+    return int(item.get('taxonomy_attempts', 1)) < MAX_NON_RATE_RETRIES
+
+
+def product_identity_matches(original: str, payload: dict) -> bool:
+    """Confirm identity via visible heading or Product JSON-LD, not URL keyword."""
+    import re
+    import unicodedata
+    def tokens(s):
+        z = unicodedata.normalize('NFKD', str(s or '')).casefold()
+        z = ''.join(c for c in z if not unicodedata.combining(c))
+        return re.findall(r'[a-z0-9]+', z)
+    base = tokens(original)
+    if not base: return False
+    candidates = [payload.get('title','')]
+    for raw in payload.get('jsonld', []):
+        try: obj=json.loads(raw)
+        except (ValueError,TypeError): continue
+        def walk(node):
+            if isinstance(node,list):
+                for x in node: yield from walk(x)
+            elif isinstance(node,dict):
+                yield node
+                if '@graph' in node: yield from walk(node['@graph'])
+        for obj2 in walk(obj):
+            types=obj2.get('@type',[])
+            if 'Product' in (types if isinstance(types,list) else [types]):
+                candidates.append(obj2.get('name',''))
+    from collections import Counter
+    a=Counter(base)
+    for candidate in candidates:
+        b=Counter(tokens(candidate))
+        if not b: continue
+        shared=sum((a & b).values())
+        # A swapped word order or accent change is fine. A different product or
+        # redirected shop homepage must not be treated as a verified product.
+        if shared / sum(a.values()) >= 0.90 and shared / sum(b.values()) >= 0.75:
+            return True
+    return False
+
+
+
 async def run(args):
     catalog_path=Path(args.catalog)
     catalog=load(catalog_path, None)
@@ -66,88 +126,4 @@ async def run(args):
                 by_key[key]={**old,**product,
                     'rule_ids':sorted(set(old.get('rule_ids',[])) | set(product.get('rule_ids',[])))}
             else:
-                by_key[key]=product
-    all_count=len(by_key)
-    targets=[(k,item) for k,item in by_key.items() if
-        (not args.only_produce or any(r in FRESH_IDS for r in item.get('rule_ids',[])))
-        and (args.retry_missing or not item.get('store_category_path'))
-        and (args.retry_missing or not item.get('taxonomy_checked_at'))]
-    targets=targets[:args.max_products]
-    if not targets:
-        print('No new taxonomy checks needed; existing records preserved')
-        print(make_public(catalog,by_key,catalog_path,args.review))
-        return
-    deadline=time.monotonic()+args.budget_seconds
-    queue=asyncio.Queue()
-    for obj in targets:queue.put_nowait(obj)
-    results=Counter()
-    completed=0
-    from playwright.async_api import async_playwright
-    async with async_playwright() as pw:
-        browser=await pw.chromium.launch(headless=True,args=['--no-sandbox'])
-        async def worker(idx):
-            nonlocal completed
-            ctx=await browser.new_context(locale='cs-CZ',timezone_id='Europe/Prague',viewport={'width':1260,'height':800})
-            page=await ctx.new_page()
-            try:
-                while time.monotonic()<deadline:
-                    try:key,item=queue.get_nowait()
-                    except asyncio.QueueEmpty:break
-                    rec=dict(item)
-                    url=rec['url']
-                    host=urlparse(url).hostname
-                    store=rec['store']
-                    if host not in ('www.rohlik.cz','rohlik.cz','www.kosik.cz','kosik.cz') or \
-                       (store=='Rohlík') != ('rohlik.cz' in host):
-                        context={'store_category_path':[],'category_source':'error',
-                                 'taxonomy_error':'Invalid source URL','product_description':''}
-                    else:
-                        try:
-                            response=await page.goto(url,wait_until='domcontentloaded',timeout=22000)
-                            if not response or response.status>=400:
-                                raise RuntimeError(f'HTTP {response.status if response else "none"}')
-                            await page.wait_for_timeout(650)
-                            payload=await page.evaluate(CONTEXT_JS)
-                            context=parse_context(payload)
-                            # Avoid a stale page or redirection to a different product.
-                            title=payload.get('title','')
-                            original=rec.get('title') or rec.get('name') or ''
-                            if not title or (len(original)>10 and original.casefold() not in title.casefold()
-                                and title.casefold() not in original.casefold()):
-                                context={'store_category_path':[],'category_source':'error',
-                                         'taxonomy_error':'Product title changed / mismatch',
-                                         'product_description':''}
-                        except Exception as e:
-                            context={'store_category_path':[],'category_source':'error',
-                                     'taxonomy_error':f'{type(e).__name__}: {str(e)[:150]}',
-                                     'product_description':''}
-                    rec.update(context)
-                    rec['taxonomy_checked_at']=datetime.now(timezone.utc).isoformat(timespec='seconds')
-                    by_key[key]=rec
-                    results[rec.get('category_source','missing')]+=1
-                    completed+=1
-                    if completed%20==0:
-                        outcome=make_public(catalog,by_key,catalog_path,args.review)
-                        print(f'Checked {completed}/{len(targets)}, {dict(results)}, {outcome}',flush=True)
-                    queue.task_done()
-                    await asyncio.sleep(0.2)
-            finally:
-                await ctx.close()
-        await asyncio.gather(*(worker(i) for i in range(args.workers)))
-        await browser.close()
-    outcome=make_public(catalog,by_key,catalog_path,args.review)
-    print(f'DONE: initial={all_count}, checked={completed}/{len(targets)}, '
-          f'sources={dict(results)}, public/review={outcome}',flush=True)
 
-
-if __name__=='__main__':
-    p=argparse.ArgumentParser()
-    p.add_argument('--catalog',default='docs/data/catalog_latest.json')
-    p.add_argument('--review',default='docs/data/catalog_taxonomy_review.json')
-    p.add_argument('--max-products',type=int,default=650)
-    p.add_argument('--workers',type=int,default=4)
-    p.add_argument('--budget-seconds',type=int,default=1800)
-    p.add_argument('--only-produce',action='store_true',default=True)
-    p.add_argument('--all',dest='only_produce',action='store_false')
-    p.add_argument('--retry-missing',action='store_true',default=False)
-    asyncio.run(run(p.parse_args()))
