@@ -1,0 +1,42 @@
+Rohlík × Košík v22.1 – jednorázová oprava neúspěšného běhu #1
+==========================================================
+
+PRICINA (ověřeno z GitHub logu 39590456561)
+1) Původní test test_kosik_routing.py čeká 'kosik-product-text'; nový parser
+   správně vrací 'kosik-pack-v22' při stejné ceně 19,90 Kč.
+2) Workflow se i po přerušení testů pokusilo 'git add' reportu,
+   který se ještě nevytvořil. Výsledek: chyba pathspec.
+
+OBSAH (pouze DVA soubory k nahrazení)
+- apply_price_patch_v22.py   => kořen repozitáře, větev main
+- .github/workflows/prices_v22.yml => tato cesta, větev main
+
+PROVEDENÁ OPRAVA
+- Patch aktualizuje původní test přesně pro nový zdroj ceny a zachovává
+  kontrolovanou hodnotu. Je opakovatelný a při jiné struktuře skončí chybou.
+- Workflow uloží rovněž aktualizovaný test, neukládá nic po přeskočeném
+  cenovém běhu a nehavaruje na dosud neexistujícím reportu.
+- Žádné plošné vyhledávání 196 dotazů.
+
+ZKONTROLOVANÉ TESTY MIMO GITHUB
+- 11 testů ceny v22: OK.
+- Syntaktická kontrola skriptu: OK.
+- Test instalace do malé simulace projektu: OK, i při druhém spuštění.
+- Aktualizovaný původně padající test v této simulaci: OK.
+- GitHub workflow YAML: načten a zkontrolovány změněné kroky.
+
+Není zatím potvrzen běh s živými stránkami, dostupnost cen pro PSČ 149 00
+ani úplné end-to-end ověření všech 46 testů v původním GitHub repozitáři.
+
+POSTUP NA GITHUBU
+1) Rozbal tento ZIP.
+2) Otevři main > hlavní adresář > Add file > Upload files:
+   nahraj apply_price_patch_v22.py a potvrď Commit changes.
+3) Otevři main > .github > workflows > Upload files:
+   nahraj prices_v22.yml a potvrď Commit changes.
+4) Spusť jediný běh workflow "Rohlik Kosik v22 - Oprava cen bez noveho
+   vyhledavani" na main, focus=Ariel, max_products=40.
+5) Ověřit log, report a konkrétní ceny Ariel před rozšířením na zbytek.
+   Neoznačovat projekt jako hotový, pokud kontrola neprojde.
+
+Po GitHub zápis nebyl žádán přístup v rámci přípravy tohoto ZIPu.

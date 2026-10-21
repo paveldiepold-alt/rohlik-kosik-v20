@@ -21,9 +21,24 @@ def patch(root: Path) -> None:
         new_unit=r'(?:kg|g|l|ml|ks|m|100\s*g|100\s*ml|dávk\w*|pran\w*|porc\w*|použit\w*|rol\w*)'
         if old_unit not in v:raise ValueError('Unexpected visible_price.py unit expression; no files modified')
         v=v.replace(old_unit,new_unit)
-    ast.parse(m,filename='monitor.py');ast.parse(v,filename='visible_price.py')
+    # v22 intentionally reports a more specific price provenance.  The pre-v22
+    # unit test asserts the *old* source label while checking the same price.
+    # Migrate only that one exact assertion; retain the price and all other
+    # tests unchanged. Fail closed if an unexpected test version is found.
+    legacy_test = root/'tests'/'test_kosik_routing.py'
+    test_text = legacy_test.read_text(encoding='utf-8')
+    old_assert = "self.assertEqual(from_browser_payload(payload,'Košík')[:2],(19.9,'kosik-product-text'))"
+    new_assert = "self.assertEqual(from_browser_payload(payload,'Košík')[:2],(19.9,'kosik-pack-v22'))"
+    if old_assert in test_text:
+        test_text = test_text.replace(old_assert,new_assert,1)
+    elif new_assert not in test_text:
+        raise ValueError('Unknown legacy Košík test assertion; no files modified')
+    ast.parse(m,filename='monitor.py')
+    ast.parse(v,filename='visible_price.py')
+    ast.parse(test_text,filename='tests/test_kosik_routing.py')
     monitor.write_text(m,encoding='utf-8')
     visible.write_text(v,encoding='utf-8')
+    legacy_test.write_text(test_text,encoding='utf-8')
     print('OK: v22 price patch installed; repeat-safe')
 
 
