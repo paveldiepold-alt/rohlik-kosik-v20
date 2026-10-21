@@ -78,7 +78,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add docs/data/catalog_latest.json docs/data/catalog_progress.json || true
+          git add docs/data/catalog_latest.json docs/data/catalog_progress.json docs/data/catalog_taxonomy_review.json || true
           if ! git diff --cached --quiet; then
             git commit -m 'data: catalogue scan checkpoint [skip ci]'
             git push origin HEAD:fix/real-product-price-reading-v20
