@@ -1,6 +1,7 @@
 {
-  "schema": "rk-v24-taxonomy-review",
-  "count": 450,
+  "schema": "rk-v25-retailer-taxonomy-review",
+  "generated_at": "2026-10-21T14:12:55+00:00",
+  "count": 484,
   "items": [
     {
       "store": "Košík",
@@ -17032,6 +17033,1295 @@
           }
         ],
         "category_path": []
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Košík",
+      "name": "Authentic Farmářská kuřecí prsa bez kůže a kosti 3ks",
+      "url": "https://www.kosik.cz/p416799-authentic-farmarska-kureci-prsa-bez-kuze-a-kosti-3ks",
+      "rule_ids": [
+        "W001"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/00/185x185x1_006iscxp4izy.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Authentic Farmářská kuřecí prsa bez kůže a kosti 3ks",
+      "price_czk": 251.92,
+      "price_status": "ok",
+      "price_source": "kosik-product-text",
+      "checked_at": "2026-10-20T13:46:53+00:00",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "v25_meat_check": {
+        "status": "review",
+        "reason": "Bez prokazatelne kategorie produktove stranky e-shopu",
+        "merchant_path": [],
+        "source": null
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Košík",
+      "name": "Authentic Farmářská kuřecí stehna horní 6ks",
+      "url": "https://www.kosik.cz/p416829-authentic-farmarska-kureci-stehna-horni-6ks",
+      "rule_ids": [
+        "W002"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/9m/185x185x1_9mc6qiogq2mj.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Authentic Farmářská kuřecí stehna horní 6ks",
+      "price_czk": 225.3,
+      "price_status": "ok",
+      "price_source": "kosik-product-text",
+      "checked_at": "2026-10-20T13:47:26+00:00",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "v25_meat_check": {
+        "status": "review",
+        "reason": "Bez prokazatelne kategorie produktove stranky e-shopu",
+        "merchant_path": [],
+        "source": null
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Košík",
+      "name": "Authentic Farmářské kuřecí stehenní řízky s kůží a bez kosti 4ks",
+      "url": "https://www.kosik.cz/p416809-authentic-farmarske-kureci-stehenni-rizky-s-kuzi-a-bez-kosti-4ks",
+      "rule_ids": [
+        "W002"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/ly/185x185x1_ly8zl29i54la.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Authentic Farmářské kuřecí stehenní řízky s kůží a bez kosti 4ks",
+      "price_czk": 323.3,
+      "price_status": "ok",
+      "price_source": "kosik-product-text",
+      "checked_at": "2026-10-20T13:47:28+00:00",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "v25_meat_check": {
+        "status": "review",
+        "reason": "Bez prokazatelne kategorie produktove stranky e-shopu",
+        "merchant_path": [],
+        "source": null
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Košík",
+      "name": "Authentic Vepřová panenka",
+      "url": "https://www.kosik.cz/p793290-authentic-veprova-panenka",
+      "rule_ids": [
+        "W004"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/kq/185x185x1_kqmnddlfa4ia.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Authentic Vepřová panenka",
+      "price_czk": 149.56,
+      "price_status": "ok",
+      "price_source": "kosik-product-text",
+      "checked_at": "2026-10-20T13:49:19+00:00",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "v25_meat_check": {
+        "status": "review",
+        "reason": "Bez prokazatelne kategorie produktove stranky e-shopu",
+        "merchant_path": [],
+        "source": null
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Košík",
+      "name": "Authentic Vepřová panenka - rodinné balení, 2ks",
+      "url": "https://www.kosik.cz/p615689-authentic-veprova-panenka-rodinne-baleni-2ks",
+      "rule_ids": [
+        "W004"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/vy/185x185x1_vygzvza1b7uo.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Authentic Vepřová panenka - rodinné balení, 2ks",
+      "price_czk": 367.09,
+      "price_status": "ok",
+      "price_source": "kosik-product-text",
+      "checked_at": "2026-10-20T13:49:22+00:00",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "v25_meat_check": {
+        "status": "review",
+        "reason": "Bez prokazatelne kategorie produktove stranky e-shopu",
+        "merchant_path": [],
+        "source": null
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Košík",
+      "name": "Fine Life Vepřová krkovice bez kosti",
+      "url": "https://www.kosik.cz/p810080-fine-life-veprova-krkovice-bez-kosti",
+      "rule_ids": [
+        "W003"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/zs/185x185x1_zsvap5oyg5vi.png",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Fine Life Vepřová krkovice bez kosti",
+      "price_czk": 103.3,
+      "price_status": "ok",
+      "price_source": "kosik-product-text",
+      "checked_at": "2026-10-20T13:48:38+00:00",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "v25_meat_check": {
+        "status": "review",
+        "reason": "Bez prokazatelne kategorie produktove stranky e-shopu",
+        "merchant_path": [],
+        "source": null
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Košík",
+      "name": "GymBeam Kuřecí prsa ve vlastní šťávě",
+      "url": "https://www.kosik.cz/p809150-gymbeam-kureci-prsa-ve-vlastni-stave",
+      "rule_ids": [
+        "W001"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/9s/185x185x1_9s12tbubldlz.png",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "GymBeam Kuřecí prsa ve vlastní šťávě",
+      "price_czk": 89.9,
+      "price_status": "ok",
+      "price_source": "kosik-product-text",
+      "checked_at": "2026-10-20T13:47:03+00:00",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Trvanlivé",
+        "Konzervované potraviny",
+        "Maso a hotová jídla",
+        "Hotová jídla"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "GymBeam Chicken Breasts in Brine jsou šťavnaté kuřecí prsa naložená v lehce solném nálevu, která představují jednoduchý a rychlý způsob, jak doplnit kvalitní…",
+      "taxonomy_checked_at": "2026-10-21T14:06:52+00:00",
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W001",
+            "category": "Maso",
+            "reason": "Prodejce: zpracovany vyrobek neni syrove maso"
+          }
+        ],
+        "category_path": [
+          "Trvanlivé",
+          "Konzervované potraviny",
+          "Maso a hotová jídla",
+          "Hotová jídla"
+        ]
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Košík",
+      "name": "Honestly Kuřecí prso s rajčatovým pestem a kurkumovou rýží",
+      "url": "https://www.kosik.cz/p822964-honestly-kureci-prso-s-rajcatovym-pestem-a-kurkumovou-ryzi",
+      "rule_ids": [
+        "W001"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/yy/185x185x1_yyqh9pwtxcxc.png",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Honestly Kuřecí prso s rajčatovým pestem a kurkumovou rýží",
+      "price_czk": 219.9,
+      "price_status": "ok",
+      "price_source": "kosik-product-text",
+      "checked_at": "2026-10-20T13:46:58+00:00",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "v25_meat_check": {
+        "status": "review",
+        "reason": "Bez prokazatelne kategorie produktove stranky e-shopu",
+        "merchant_path": [],
+        "source": null
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Košík",
+      "name": "Iceland Kentucky kuřecí stehna obalená",
+      "url": "https://www.kosik.cz/p794040-iceland-kentucky-kureci-stehna-obalena",
+      "rule_ids": [
+        "W002"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/n4/185x185x1_n4plq0y35b7y.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Iceland Kentucky kuřecí stehna obalená",
+      "price_czk": 199.9,
+      "price_status": "ok",
+      "price_source": "kosik-product-text",
+      "checked_at": "2026-10-20T13:47:49+00:00",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Mražené",
+        "Hotová jídla a přílohy",
+        "Hlavní jídla s masem"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Šťavnatá kuřecí stehna (s kostí) obalená ve strouhance ve stylu Kentucky, inspirovaná chutí známou z fastfoodových řetězců. Předpřipravená a ideální k domácímu…",
+      "taxonomy_checked_at": "2026-10-21T14:07:09+00:00",
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W002",
+            "category": "Maso",
+            "reason": "Prodejce: zpracovany vyrobek neni syrove maso"
+          }
+        ],
+        "category_path": [
+          "Mražené",
+          "Hotová jídla a přílohy",
+          "Hlavní jídla s masem"
+        ]
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Košík",
+      "name": "Kuřecí prsní řízek bez kosti a kůže",
+      "url": "https://www.kosik.cz/p681032-kureci-prsni-rizek-bez-kosti-a-kuze",
+      "rule_ids": [
+        "W001"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/lf/185x185x1_lf9078y3aek8.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Kuřecí prsní řízek bez kosti a kůže",
+      "price_czk": null,
+      "price_status": "title_mismatch",
+      "price_source": null,
+      "checked_at": "2026-10-20T13:46:30+00:00",
+      "note": "Produktový nadpis neodpovídá požadovanému výrobku",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "v25_meat_check": {
+        "status": "review",
+        "reason": "Bez prokazatelne kategorie produktove stranky e-shopu",
+        "merchant_path": [],
+        "source": null
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Košík",
+      "name": "Kuřecí prsní řízky, mražené",
+      "url": "https://www.kosik.cz/p717594-kureci-prsni-rizky-mrazene",
+      "rule_ids": [
+        "W001"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/9c/185x185x1_9co2jf3yt3vp.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Kuřecí prsní řízky, mražené",
+      "price_czk": 119.9,
+      "price_status": "ok",
+      "price_source": "kosik-product-text",
+      "checked_at": "2026-10-20T13:46:35+00:00",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Mražené",
+        "Maso a drůbež",
+        "Drůbež a králík"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Mražené kuřecí prsní řízky představují libové maso z kuřecích prsou, které je prakticky porcované a připravené k dalšímu zpracování. Díky šetrnému zmrazení si…",
+      "taxonomy_checked_at": "2026-10-21T14:07:35+00:00",
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W001",
+            "category": "Maso",
+            "reason": "Prodejce: zpracovany vyrobek neni syrove maso"
+          }
+        ],
+        "category_path": [
+          "Mražené",
+          "Maso a drůbež",
+          "Drůbež a králík"
+        ]
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Košík",
+      "name": "Kuřecí prsní řízky, mražené",
+      "url": "https://www.kosik.cz/p717584-kureci-prsni-rizky-mrazene",
+      "rule_ids": [
+        "W001"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/kh/185x185x1_khnohstlcyaf.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Kuřecí prsní řízky, mražené",
+      "price_czk": 202.9,
+      "price_status": "ok",
+      "price_source": "kosik-product-text",
+      "checked_at": "2026-10-20T13:46:39+00:00",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "v25_meat_check": {
+        "status": "review",
+        "reason": "Bez prokazatelne kategorie produktove stranky e-shopu",
+        "merchant_path": [],
+        "source": null
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Košík",
+      "name": "Kuřecí stehenní řízek, mražený",
+      "url": "https://www.kosik.cz/p717570-kureci-stehenni-rizek-mrazeny",
+      "rule_ids": [
+        "W002"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/bq/185x185x1_bqv8hnablq21.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Kuřecí stehenní řízek, mražený",
+      "price_czk": 179.9,
+      "price_status": "ok",
+      "price_source": "kosik-product-text",
+      "checked_at": "2026-10-20T13:47:46+00:00",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Mražené",
+        "Maso a drůbež",
+        "Drůbež a králík"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Kuřecí stehenní řízek bez kůže, mražený Tato část kuřete je velmi dobře využitelná. Vzhledem k vyššímu obsahu tuku si zachovává šťavnatost při jakékoli úpravě.…",
+      "taxonomy_checked_at": "2026-10-21T14:07:53+00:00",
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W002",
+            "category": "Maso",
+            "reason": "Prodejce: zpracovany vyrobek neni syrove maso"
+          }
+        ],
+        "category_path": [
+          "Mražené",
+          "Maso a drůbež",
+          "Drůbež a králík"
+        ]
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Košík",
+      "name": "Kuřecí stehna horní s kostí a kůží, mražená",
+      "url": "https://www.kosik.cz/p717588-kureci-stehna-horni-s-kosti-a-kuzi-mrazena",
+      "rule_ids": [
+        "W002"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/rz/185x185x1_rzaegfmwja3d.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Kuřecí stehna horní s kostí a kůží, mražená",
+      "price_czk": 67.9,
+      "price_status": "ok",
+      "price_source": "kosik-product-text",
+      "checked_at": "2026-10-20T13:47:47+00:00",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Mražené",
+        "Maso a drůbež",
+        "Drůbež a králík"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Kuřecí stehna horní s kostí a kůží, mraženáTato část kuřete je velmi dobře využitelná. Vzhledem k&nbsp;vyššímu obsahu tuku si zachovává šťavnatost při jakékoli…",
+      "taxonomy_checked_at": "2026-10-21T14:08:11+00:00",
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W002",
+            "category": "Maso",
+            "reason": "Prodejce: zpracovany vyrobek neni syrove maso"
+          }
+        ],
+        "category_path": [
+          "Mražené",
+          "Maso a drůbež",
+          "Drůbež a králík"
+        ]
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Košík",
+      "name": "Kuřecí stehna, mražená",
+      "url": "https://www.kosik.cz/p717596-kureci-stehna-mrazena",
+      "rule_ids": [
+        "W002"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/h0/185x185x1_h0e7x53qbnw1.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Kuřecí stehna, mražená",
+      "price_czk": 65.9,
+      "price_status": "ok",
+      "price_source": "kosik-product-text",
+      "checked_at": "2026-10-20T13:47:44+00:00",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Mražené",
+        "Maso a drůbež",
+        "Drůbež a králík"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Mražená kuřecí stehna jsou šťavnaté části kuřete s vyšším podílem tmavého masa, vhodné pro různé druhy tepelné úpravy. Díky zmrazení jsou praktická pro delší…",
+      "taxonomy_checked_at": "2026-10-21T14:08:20+00:00",
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W002",
+            "category": "Maso",
+            "reason": "Prodejce: zpracovany vyrobek neni syrove maso"
+          }
+        ],
+        "category_path": [
+          "Mražené",
+          "Maso a drůbež",
+          "Drůbež a králík"
+        ]
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Košík",
+      "name": "Le & Co Moravská krkovice (93% masa)",
+      "url": "https://www.kosik.cz/p796578-le-co-moravska-krkovice-93-masa",
+      "rule_ids": [
+        "W003"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/qw/185x185x1_qworm96tjn0j.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Le & Co Moravská krkovice (93% masa)",
+      "price_czk": 39.9,
+      "price_status": "ok",
+      "price_source": "kosik-product-text",
+      "checked_at": "2026-10-20T13:48:44+00:00",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Uzeniny a lahůdky",
+        "Šunky",
+        "Vepřové",
+        "Výběrové"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Voňavá, šťavnatá a dokonale ochucená – taková je moravská krkovice.&nbsp;Díky vysokému obsahu masa a poctivému zpracování se stane hvězdou každé studené mísy.…",
+      "taxonomy_checked_at": "2026-10-21T14:08:29+00:00",
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W003",
+            "category": "Maso",
+            "reason": "Prodejce: zpracovany vyrobek neni syrove maso"
+          }
+        ],
+        "category_path": [
+          "Uzeniny a lahůdky",
+          "Šunky",
+          "Vepřové",
+          "Výběrové"
+        ]
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Košík",
+      "name": "Le & Co Shaved Kuřecí prsní šunka zauzená (80% masa)",
+      "url": "https://www.kosik.cz/p19717-le-co-shaved-kureci-prsni-sunka-zauzena-80-masa",
+      "rule_ids": [
+        "W001",
+        "W006"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/1p/185x185x1_1p966lzrkcth.png",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Le & Co Shaved Kuřecí prsní šunka zauzená (80% masa)",
+      "price_czk": 47.9,
+      "price_status": "ok",
+      "price_source": "kosik-product-text",
+      "checked_at": "2026-10-20T13:50:23+00:00",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
+      "multibuy": [
+        {
+          "min_qty": 2,
+          "price_czk": 39.9
+        }
+      ],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Uzeniny a lahůdky",
+        "Šunky",
+        "Drůbeží"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Nákup až ke dveřím na pár kliků. Doprava zdarma na velké nákupy, nový akční leták každý týden a spousta odměn ve věrnostních klubech.",
+      "taxonomy_checked_at": "2026-10-21T14:08:37+00:00",
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W001",
+            "category": "Maso",
+            "reason": "Prodejce: zpracovany vyrobek neni syrove maso"
+          }
+        ],
+        "category_path": [
+          "Uzeniny a lahůdky",
+          "Šunky",
+          "Drůbeží"
+        ]
+      },
+      "taxonomy_status": "partial"
+    },
+    {
+      "store": "Košík",
+      "name": "Le & Co Šunka kuřecí prsní nejvyšší jakosti (92% masa)",
+      "url": "https://www.kosik.cz/p476343-le-co-sunka-kureci-prsni-nejvyssi-jakosti-92-masa",
+      "rule_ids": [
+        "W001",
+        "W006"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/y0/185x185x1_y0qq9qvdk1dx.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Le & Co Šunka kuřecí prsní nejvyšší jakosti (92% masa)",
+      "price_czk": 34.9,
+      "price_status": "ok",
+      "price_source": "kosik-product-text",
+      "checked_at": "2026-10-20T13:50:33+00:00",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Uzeniny a lahůdky",
+        "Šunky",
+        "Drůbeží"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Vyrobena z chlazených kuřecích prsou. Obsah masa 92%. O výrobci Le &amp; Co je neustále inovující se společnost a jedna z nejvýznamnějších výrobců šunky a…",
+      "taxonomy_checked_at": "2026-10-21T14:08:47+00:00",
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W001",
+            "category": "Maso",
+            "reason": "Prodejce: zpracovany vyrobek neni syrove maso"
+          }
+        ],
+        "category_path": [
+          "Uzeniny a lahůdky",
+          "Šunky",
+          "Drůbeží"
+        ]
+      },
+      "taxonomy_status": "partial"
+    },
+    {
+      "store": "Košík",
+      "name": "Lyopro Kuřecí prsa",
+      "url": "https://www.kosik.cz/p798040-lyopro-kureci-prsa",
+      "rule_ids": [
+        "W001"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/5q/185x185x1_5qhhife1hccm.png",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Lyopro Kuřecí prsa",
+      "price_czk": 94.9,
+      "price_status": "ok",
+      "price_source": "kosik-product-text",
+      "checked_at": "2026-10-20T13:47:04+00:00",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "v25_meat_check": {
+        "status": "review",
+        "reason": "Bez prokazatelne kategorie produktove stranky e-shopu",
+        "merchant_path": [],
+        "source": null
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Košík",
+      "name": "Moje Maso BIO vepřová krkovice bez kosti",
+      "url": "https://www.kosik.cz/p191625-moje-maso-bio-veprova-krkovice-bez-kosti",
+      "rule_ids": [
+        "W003"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/5j/185x185x1_5j9ydk5jeg9r.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Moje Maso BIO vepřová krkovice bez kosti",
+      "price_czk": 139.18,
+      "price_status": "ok",
+      "price_source": "kosik-product-text",
+      "checked_at": "2026-10-20T13:48:39+00:00",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "v25_meat_check": {
+        "status": "review",
+        "reason": "Bez prokazatelne kategorie produktove stranky e-shopu",
+        "merchant_path": [],
+        "source": null
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Košík",
+      "name": "Poké by Simona Brazilské kuřecí prso s teriaki omáčkou",
+      "url": "https://www.kosik.cz/p816756-poke-by-simona-brazilske-kureci-prso-s-teriaki-omackou",
+      "rule_ids": [
+        "W001"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/di/185x185x1_dif6t3stperm.png",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Poké by Simona Brazilské kuřecí prso s teriaki omáčkou",
+      "price_czk": 149.9,
+      "price_status": "ok",
+      "price_source": "kosik-product-text",
+      "checked_at": "2026-10-20T13:47:01+00:00",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Uzeniny a lahůdky",
+        "Hotová jídla a přílohy",
+        "Zeleninové saláty"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Svěží poke bowl inspirovaná exotickými chutěmi, která vás přenese o kus dál od každodenní rutiny. Šťavnaté kuřecí prso v lahodné teriyaki omáčce doplňuje…",
+      "taxonomy_checked_at": "2026-10-21T14:10:24+00:00",
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W001",
+            "category": "Maso",
+            "reason": "Prodejce: zpracovany vyrobek neni syrove maso"
+          }
+        ],
+        "category_path": [
+          "Uzeniny a lahůdky",
+          "Hotová jídla a přílohy",
+          "Zeleninové saláty"
+        ]
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Košík",
+      "name": "Vilgain Kuřecí prsa se solí a pepřem",
+      "url": "https://www.kosik.cz/p789360-vilgain-kureci-prsa-se-soli-a-peprem",
+      "rule_ids": [
+        "W001"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/4u/185x185x1_4u1who0rlqvy.png",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Vilgain Kuřecí prsa se solí a pepřem",
+      "price_czk": 69.9,
+      "price_status": "ok",
+      "price_source": "kosik-product-text",
+      "checked_at": "2026-10-20T13:47:07+00:00",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Trvanlivé",
+        "Konzervované potraviny",
+        "Maso a hotová jídla",
+        "Maso a utopenci"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Velké kusy libového masa, z&nbsp;ověřených chovů, bez konzervantů.",
+      "taxonomy_checked_at": "2026-10-21T14:12:17+00:00",
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W001",
+            "category": "Maso",
+            "reason": "Prodejce: zpracovany vyrobek neni syrove maso"
+          }
+        ],
+        "category_path": [
+          "Trvanlivé",
+          "Konzervované potraviny",
+          "Maso a hotová jídla",
+          "Maso a utopenci"
+        ]
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Rohlík",
+      "name": "DZ Klatovy Kuřecí prsní šunka nejvyšší jakosti krájená",
+      "url": "https://www.rohlik.cz/1474441-dz-klatovy-kureci-prsni-sunka-nejvyssi-jakosti-krajena",
+      "rule_ids": [
+        "W001"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1474441/1474441-1756730677987.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "DZ Klatovy Kuřecí prsní šunka nejvyšší jakosti krájená",
+      "price_czk": 35.9,
+      "price_status": "ok",
+      "price_source": "visible-product-detail",
+      "checked_at": "2026-10-20T13:46:22+00:00",
+      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Uzeniny a lahůdky",
+        "Šunky a slaniny",
+        "Drůbeží"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Prsní kuřecí šunka nejvyšší jakosti, krájená. Masný výrobek tepelně opracovaný. Baleno v ochranné atmosféře.PoužitíUrčeno k přímé konzumaci.O výrobciD",
+      "taxonomy_checked_at": "2026-10-21T14:06:39+00:00",
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W001",
+            "category": "Maso",
+            "reason": "Prodejce: zpracovany vyrobek neni syrove maso"
+          }
+        ],
+        "category_path": [
+          "Uzeniny a lahůdky",
+          "Šunky a slaniny",
+          "Drůbeží"
+        ]
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Rohlík",
+      "name": "DZ Klatovy Kuřecí prsní šunka nejvyšší jakosti zauzená krájená",
+      "url": "https://www.rohlik.cz/1461797-dz-klatovy-kureci-prsni-sunka-nejvyssi-jakosti-zauzena-krajena",
+      "rule_ids": [
+        "W001"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1461797/1461797-1716928193637.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "DZ Klatovy Kuřecí prsní šunka nejvyšší jakosti zauzená krájená",
+      "price_czk": 44.9,
+      "price_status": "ok",
+      "price_source": "visible-product-detail",
+      "checked_at": "2026-10-20T13:46:16+00:00",
+      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Uzeniny a lahůdky",
+        "Šunky a slaniny",
+        "Drůbeží"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Zauzená kuřecí prsní šunka nejvyšší jakosti, krájená. Baleno v ochranné atmosféře.PoužitíUrčeno k přímé konzumaci.O výrobciDrůbežářský závod Kla",
+      "taxonomy_checked_at": "2026-10-21T14:06:48+00:00",
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W001",
+            "category": "Maso",
+            "reason": "Prodejce: zpracovany vyrobek neni syrove maso"
+          }
+        ],
+        "category_path": [
+          "Uzeniny a lahůdky",
+          "Šunky a slaniny",
+          "Drůbeží"
+        ]
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Rohlík",
+      "name": "Hovězí svíčková, karlovarský knedlík od Jana Bureše",
+      "url": "https://www.rohlik.cz/1407394-hovezi-svickova-karlovarsky-knedlik-od-jana-burese",
+      "rule_ids": [
+        "W005"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1407394/1407394-1615387616536.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Hovězí svíčková, karlovarský knedlík od Jana Bureše",
+      "price_czk": null,
+      "price_status": "http_error",
+      "price_source": null,
+      "checked_at": "2026-10-20T13:49:36+00:00",
+      "note": "HTTP 429",
+      "multibuy": [],
+      "http_status": 429,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Bistro",
+        "Hlavní jídla"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "S šéfkuchařem Honzou Burešem jsme pro vás připravili legendární svíčkovou omáčku s karlovarským knedlíkem.Svíčkovou omáčku připravuje Honza podle vlas",
+      "taxonomy_checked_at": "2026-10-21T14:07:23+00:00",
+      "v25_meat_check": {
+        "status": "reject",
+        "reason": "Produkt neni v odpovidajici kategorii syroveho masa",
+        "merchant_path": [
+          "Bistro",
+          "Hlavní jídla"
+        ],
+        "source": "jsonld_breadcrumb"
+      },
+      "taxonomy_status": "reject"
+    },
+    {
+      "store": "Rohlík",
+      "name": "Just Meat Kuřecí prsa s pepřem a solí",
+      "url": "https://www.rohlik.cz/1478194-just-meat-kureci-prsa-s-peprem-a-soli",
+      "rule_ids": [
+        "W001"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1478194/1478194-1779959918966951462.png",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Just Meat Kuřecí prsa s pepřem a solí",
+      "price_czk": 66.9,
+      "price_status": "ok",
+      "price_source": "visible-product-detail",
+      "checked_at": "2026-10-20T13:46:12+00:00",
+      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Speciální výživa",
+        "Fitness výživa",
+        "Hotová jídla, těstoviny a omáčky"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Hotové kousky šťavnatých kuřecích&nbsp;prsou, které jsou&nbsp;dochucené&nbsp;mořskou solí a černým pepřem. Kuřecí maso pochází&nbsp;ze slovenských cho",
+      "taxonomy_checked_at": "2026-10-21T14:07:40+00:00",
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W001",
+            "category": "Maso",
+            "reason": "Prodejce: zpracovany vyrobek neni syrove maso"
+          }
+        ],
+        "category_path": [
+          "Speciální výživa",
+          "Fitness výživa",
+          "Hotová jídla, těstoviny a omáčky"
+        ]
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Rohlík",
+      "name": "Kuřecí řízek s bramborovou kaší od Honzy Bureše",
+      "url": "https://www.rohlik.cz/1412422-kureci-rizek-s-bramborovou-kasi-od-honzy-burese",
+      "rule_ids": [
+        "W001"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1412422/1412422-1664880648577.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Kuřecí řízek s bramborovou kaší od Honzy Bureše",
+      "price_czk": 199.9,
+      "price_status": "ok",
+      "price_source": "visible-product-detail",
+      "checked_at": "2026-10-20T13:46:14+00:00",
+      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Bistro",
+        "Hlavní jídla"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "S šéfkuchařem Honzou Burešem jsme pro vás připravili oblíbenou českou klasiku, kuřecí řízek s bramborovou kaší.&nbsp;České kuřecí prso obalené v klasi",
+      "taxonomy_checked_at": "2026-10-21T14:08:33+00:00",
+      "v25_meat_check": {
+        "status": "reject",
+        "reason": "Produkt neni v odpovidajici kategorii syroveho masa",
+        "merchant_path": [
+          "Bistro",
+          "Hlavní jídla"
+        ],
+        "source": "jsonld_breadcrumb"
+      },
+      "taxonomy_status": "reject"
+    },
+    {
+      "store": "Rohlík",
+      "name": "Libeřské lahůdky Řízek kuřecí prsní, 3 ks",
+      "url": "https://www.rohlik.cz/1421843-liberske-lahudky-rizek-kureci-prsni-3-ks",
+      "rule_ids": [
+        "W001"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1421843/1421843-1782129065174.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Libeřské lahůdky Řízek kuřecí prsní, 3 ks",
+      "price_czk": 284.9,
+      "price_status": "ok",
+      "price_source": "visible-product-detail",
+      "checked_at": "2026-10-20T13:46:10+00:00",
+      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Uzeniny a lahůdky",
+        "Hotová jídla a přílohy",
+        "Hlavní jídla a omáčky",
+        "Řízky, stripsy, nuggety a další předpřipravená masa"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Vychutnejte si poctivý řízek z jemných kuřecích prsou v dokonale&nbsp;křupavém trojobalu. Skvěle bude chutnat s bramborovou kaší, salátem a nebo jen t",
+      "taxonomy_checked_at": "2026-10-21T14:08:42+00:00",
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W001",
+            "category": "Maso",
+            "reason": "Prodejce: zpracovany vyrobek neni syrove maso"
+          }
+        ],
+        "category_path": [
+          "Uzeniny a lahůdky",
+          "Hotová jídla a přílohy",
+          "Hlavní jídla a omáčky",
+          "Řízky, stripsy, nuggety a další předpřipravená masa"
+        ]
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Rohlík",
+      "name": "Pappudia Kuřecí řízek s bramborovou kaší",
+      "url": "https://www.rohlik.cz/1473420-pappudia-kureci-rizek-s-bramborovou-kasi",
+      "rule_ids": [
+        "W001"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1473420/1473420-1752142665422957479.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Pappudia Kuřecí řízek s bramborovou kaší",
+      "price_czk": null,
+      "price_status": "http_error",
+      "price_source": null,
+      "checked_at": "2026-10-20T13:46:48+00:00",
+      "note": "HTTP 429",
+      "multibuy": [],
+      "http_status": 429,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Uzeniny a lahůdky",
+        "Hotová jídla a přílohy",
+        "Hlavní jídla a omáčky",
+        "Tradiční"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Pappudia Kuřecí řízek s bramborovou kaší! Tradiční a oblíbená kombinace, která potěší malé i velké jedlíky.Už žádné starosti s vařením! S naší značkou",
+      "taxonomy_checked_at": "2026-10-21T14:10:02+00:00",
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W001",
+            "category": "Maso",
+            "reason": "Prodejce: zpracovany vyrobek neni syrove maso"
+          }
+        ],
+        "category_path": [
+          "Uzeniny a lahůdky",
+          "Hotová jídla a přílohy",
+          "Hlavní jídla a omáčky",
+          "Tradiční"
+        ]
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Rohlík",
+      "name": "Rohlik.cz Kuřecí prsní šunka pro děti nejvyšší jakosti",
+      "url": "https://www.rohlik.cz/1437840-rohlik-cz-kureci-prsni-sunka-pro-deti-nejvyssi-jakosti",
+      "rule_ids": [
+        "W001"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1437840/1437840-1676899426536.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Rohlik.cz Kuřecí prsní šunka pro děti nejvyšší jakosti",
+      "price_czk": null,
+      "price_status": "http_error",
+      "price_source": null,
+      "checked_at": "2026-10-20T13:46:24+00:00",
+      "note": "HTTP 429",
+      "multibuy": [],
+      "http_status": 429,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Uzeniny a lahůdky",
+        "Šunky a slaniny",
+        "Šunky, pršuty a slaniny z čerstvého pultu"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Čerstvý nářez z Rohlíku, který svou kvalitou uspokojí i ty nejnáročnější chuťové buňky a svými obaly zase odpovědnost vůči přírodě.Dětská kuřecí šunka",
+      "taxonomy_checked_at": "2026-10-21T14:10:28+00:00",
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W001",
+            "category": "Maso",
+            "reason": "Prodejce: zpracovany vyrobek neni syrove maso"
+          }
+        ],
+        "category_path": [
+          "Uzeniny a lahůdky",
+          "Šunky a slaniny",
+          "Šunky, pršuty a slaniny z čerstvého pultu"
+        ]
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Rohlík",
+      "name": "Schär Kuřecí prsty bez lepku a laktózy",
+      "url": "https://www.rohlik.cz/1419271-schaer-kureci-prsty-bez-lepku-a-laktozy",
+      "rule_ids": [
+        "W001"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1419271/1419271-1645043103023.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Schär Kuřecí prsty bez lepku a laktózy",
+      "price_czk": null,
+      "price_status": "http_error",
+      "price_source": null,
+      "checked_at": "2026-10-20T13:46:48+00:00",
+      "note": "HTTP 429",
+      "multibuy": [],
+      "http_status": 429,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Mražené",
+        "Hotová jídla",
+        "Obalovaná jídla"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Krřecí prsty bez lepku, bez laktózy, hluboce mražené.Balení obsahuje&nbsp;15 kusů.&nbsp;PoužitíPřed konzumaci nutno tepelně zpracovat.&nbsp;Smažte 3–4",
+      "taxonomy_checked_at": "2026-10-21T14:10:37+00:00",
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W001",
+            "category": "Maso",
+            "reason": "Prodejce: zpracovany vyrobek neni syrove maso"
+          }
+        ],
+        "category_path": [
+          "Mražené",
+          "Hotová jídla",
+          "Obalovaná jídla"
+        ]
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Rohlík",
+      "name": "Vilgain Kuřecí prsa se solí a pepřem",
+      "url": "https://www.rohlik.cz/1458994-vilgain-kureci-prsa-se-soli-a-peprem",
+      "rule_ids": [
+        "W001"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1458994/1458994-1726740862212.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Vilgain Kuřecí prsa se solí a pepřem",
+      "price_czk": 69.9,
+      "price_status": "ok",
+      "price_source": "visible-product-detail",
+      "checked_at": "2026-10-20T13:46:08+00:00",
+      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Speciální výživa",
+        "Fitness výživa",
+        "Hotová jídla, těstoviny a omáčky"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Kuřecí prsa se solí a pepřem. Velké kusy prémiového kuřecího masa&nbsp;ve vlastní šťávě&nbsp;jemně dochucené&nbsp;solí a&nbsp;pepřem. Maso&nbsp;pocház",
+      "taxonomy_checked_at": "2026-10-21T14:11:55+00:00",
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W001",
+            "category": "Maso",
+            "reason": "Prodejce: zpracovany vyrobek neni syrove maso"
+          }
+        ],
+        "category_path": [
+          "Speciální výživa",
+          "Fitness výživa",
+          "Hotová jídla, těstoviny a omáčky"
+        ]
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Rohlík",
+      "name": "Vodňanské Kuře Kuřecí prsní řízky",
+      "url": "https://www.rohlik.cz/1354251-vodnanske-kure-kureci-prsni-rizky",
+      "rule_ids": [
+        "W001"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1354251/1354251-1565337496.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Vodňanské Kuře Kuřecí prsní řízky",
+      "price_czk": 159.9,
+      "price_status": "ok",
+      "price_source": "visible-product-detail",
+      "checked_at": "2026-10-20T13:46:00+00:00",
+      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Maso a ryby",
+        "Drůbež",
+        "Prsa a stehenní řízky",
+        "Prsa"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Kuřecí maso neobsahuje velké množství tuku a je lehce stravitelné.Balení obsahuje 3 kusy&nbsp;prsních řízků.PoužitíPrsí řízky se hodí na obalované řiz",
+      "taxonomy_checked_at": "2026-10-21T14:12:13+00:00",
+      "v25_meat_check": {
+        "status": "review",
+        "reason": "Kategorie je obecna; nazev ci popis naznacuje zpracovany pokrm",
+        "merchant_path": [
+          "Maso a ryby",
+          "Drůbež",
+          "Prsa a stehenní řízky",
+          "Prsa"
+        ],
+        "source": "jsonld_breadcrumb"
+      },
+      "taxonomy_status": "review"
+    },
+    {
+      "store": "Rohlík",
+      "name": "Waistnot Jižanské kořeněné kuřecí řízky s rýží",
+      "url": "https://www.rohlik.cz/1454238-waistnot-jizanske-korenene-kureci-rizky-s-ryzi",
+      "rule_ids": [
+        "W001"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1454238/1454238-1701348343962.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Waistnot Jižanské kořeněné kuřecí řízky s rýží",
+      "price_czk": null,
+      "price_status": "http_error",
+      "price_source": null,
+      "checked_at": "2026-10-20T13:46:25+00:00",
+      "note": "HTTP 429",
+      "multibuy": [],
+      "http_status": 429,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Mražené",
+        "Hotová jídla",
+        "Tradiční jídla"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Kuřecí prso s jižní směsí koření s rýží basmati a divooué rýží s kukuřicí a hráškem.Jídla Waistnot představují praktickou volbu pro ty, kteří chtějí s",
+      "taxonomy_checked_at": "2026-10-21T14:12:30+00:00",
+      "v24_review": {
+        "decisions": [
+          {
+            "rule_id": "W001",
+            "category": "Maso",
+            "reason": "Prodejce: zpracovany vyrobek neni syrove maso"
+          }
+        ],
+        "category_path": [
+          "Mražené",
+          "Hotová jídla",
+          "Tradiční jídla"
+        ]
       },
       "taxonomy_status": "review"
     }

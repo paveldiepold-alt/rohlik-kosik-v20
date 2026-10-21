@@ -203,6 +203,10 @@ def partition_items(items: list[dict]) -> tuple[list[dict],list[dict]]:
         if excluded:review.append(excluded)
         if included:
             verified, flagged = gate_catalog_item(included)
-            if verified:visible.append(verified)
+            if verified:
+                from retailer_meat_gate_v25 import gate_meat_item
+                public_meat, review_meat = gate_meat_item(verified)
+                if public_meat:visible.append(public_meat)
+                if review_meat:review.append(review_meat)
             if flagged:review.append(flagged)
     return visible,review
