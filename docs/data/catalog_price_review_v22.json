@@ -1,0 +1,254 @@
+{
+  "schema": "rk-v22-price-review-1",
+  "run_at": "2026-10-21T11:49:13+00:00",
+  "processed": 37,
+  "requested": 37,
+  "statuses": {
+    "title_mismatch": 1,
+    "price_unverified": 36
+  },
+  "blocked": false,
+  "sample": [
+    {
+      "name": "Ariel Gel Color",
+      "url": "https://www.kosik.cz/p820202-ariel-gel-color",
+      "before": 6.75,
+      "after": null,
+      "status": "title_mismatch",
+      "reason": "Produktový nadpis neodpovídá požadovanému výrobku"
+    },
+    {
+      "name": "Ariel Gel Pro Winter Dream 4.05l",
+      "url": "https://www.kosik.cz/p823554-ariel-gel-pro-winter-dream-4-05l",
+      "before": 7.77,
+      "after": null,
+      "status": "price_unverified",
+      "reason": "Stránka neposkytla jednoznačnou cenu produktu"
+    },
+    {
+      "name": "Ariel Kapsle Color",
+      "url": "https://www.kosik.cz/p820204-ariel-kapsle-color",
+      "before": 8.81,
+      "after": null,
+      "status": "price_unverified",
+      "reason": "Stránka neposkytla jednoznačnou cenu produktu"
+    },
+    {
+      "name": "Ariel Kapsle Spring Awakening",
+      "url": "https://www.kosik.cz/p820206-ariel-kapsle-spring-awakening",
+      "before": 11.65,
+      "after": null,
+      "status": "price_unverified",
+      "reason": "Stránka neposkytla jednoznačnou cenu produktu"
+    },
+    {
+      "name": "Ariel Kapsle Ultra Power Color+",
+      "url": "https://www.kosik.cz/p823556-ariel-kapsle-ultra-power-color",
+      "before": 17.48,
+      "after": null,
+      "status": "price_unverified",
+      "reason": "Stránka neposkytla jednoznačnou cenu produktu"
+    },
+    {
+      "name": "Ariel Kapsle Ultra Power Universal+",
+      "url": "https://www.kosik.cz/p823558-ariel-kapsle-ultra-power-universal",
+      "before": 17.48,
+      "after": null,
+      "status": "price_unverified",
+      "reason": "Stránka neposkytla jednoznačnou cenu produktu"
+    },
+    {
+      "name": "Ariel Kapsle Winter Dream",
+      "url": "https://www.kosik.cz/p823560-ariel-kapsle-winter-dream",
+      "before": 11.65,
+      "after": null,
+      "status": "price_unverified",
+      "reason": "Stránka neposkytla jednoznačnou cenu produktu"
+    },
+    {
+      "name": "Ariel Professional Regular Prášek na praní",
+      "url": "https://www.kosik.cz/p800550-ariel-professional-regular-prasek-na-prani",
+      "before": 6.59,
+      "after": null,
+      "status": "price_unverified",
+      "reason": "Stránka neposkytla jednoznačnou cenu produktu"
+    },
+    {
+      "name": "Lenor Unstoppables perličky Ariel, 495 g",
+      "url": "https://www.kosik.cz/p795310-lenor-unstoppables-perlicky-ariel-495-g",
+      "before": 8.73,
+      "after": null,
+      "status": "price_unverified",
+      "reason": "Stránka neposkytla jednoznačnou cenu produktu"
+    },
+    {
+      "name": "Ariel Gel Color (1,8 l)",
+      "url": "https://www.kosik.cz/p798826-ariel-gel-color-1-8-l",
+      "before": null,
+      "after": null,
+      "status": "price_unverified",
+      "reason": "Stránka neposkytla jednoznačnou cenu produktu"
+    },
+    {
+      "name": "Ariel Gel Color (2,7 l)",
+      "url": "https://www.kosik.cz/p800490-ariel-gel-color-2-7-l",
+      "before": null,
+      "after": null,
+      "status": "price_unverified",
+      "reason": "Stránka neposkytla jednoznačnou cenu produktu"
+    },
+    {
+      "name": "Ariel Gel Color 4,5 l",
+      "url": "https://www.kosik.cz/p795242-ariel-gel-color-4-5-l",
+      "before": null,
+      "after": null,
+      "status": "price_unverified",
+      "reason": "Stránka neposkytla jednoznačnou cenu produktu"
+    },
+    {
+      "name": "Ariel Gel Mountain Spring (1,8l )",
+      "url": "https://www.kosik.cz/p798828-ariel-gel-mountain-spring-1-8l",
+      "before": null,
+      "after": null,
+      "status": "price_unverified",
+      "reason": "Stránka neposkytla jednoznačnou cenu produktu"
+    },
+    {
+      "name": "Ariel Gel Mountain Spring (2,7 l)",
+      "url": "https://www.kosik.cz/p798838-ariel-gel-mountain-spring-2-7-l",
+      "before": null,
+      "after": null,
+      "status": "price_unverified",
+      "reason": "Stránka neposkytla jednoznačnou cenu produktu"
+    },
+    {
+      "name": "Ariel Gel Mountain Spring, 4,5 l",
+      "url": "https://www.kosik.cz/p795244-ariel-gel-mountain-spring-4-5-l",
+      "before": null,
+      "after": null,
+      "status": "price_unverified",
+      "reason": "Stránka neposkytla jednoznačnou cenu produktu"
+    },
+    {
+      "name": "Ariel Gel Sensitive, 4,5 l",
+      "url": "https://www.kosik.cz/p795268-ariel-gel-sensitive-4-5-l",
+      "before": null,
+      "after": null,
+      "status": "price_unverified",
+      "reason": "Stránka neposkytla jednoznačnou cenu produktu"
+    },
+    {
+      "name": "Ariel Kapsle Color Box",
+      "url": "https://www.kosik.cz/p795278-ariel-kapsle-color-box",
+      "before": null,
+      "after": null,
+      "status": "price_unverified",
+      "reason": "Stránka neposkytla jednoznačnou cenu produktu"
+    },
+    {
+      "name": "Ariel Kapsle Color, krabice",
+      "url": "https://www.kosik.cz/p795250-ariel-kapsle-color-krabice",
+      "before": null,
+      "after": null,
+      "status": "price_unverified",
+      "reason": "Stránka neposkytla jednoznačnou cenu produktu"
+    },
+    {
+      "name": "Ariel Kapsle Color, sáček",
+      "url": "https://www.kosik.cz/p795272-ariel-kapsle-color-sacek",
+      "before": null,
+      "after": null,
+      "status": "price_unverified",
+      "reason": "Stránka neposkytla jednoznačnou cenu produktu"
+    },
+    {
+      "name": "Ariel Kapsle Color, sáček",
+      "url": "https://www.kosik.cz/p795236-ariel-kapsle-color-sacek",
+      "before": null,
+      "after": null,
+      "status": "price_unverified",
+      "reason": "Stránka neposkytla jednoznačnou cenu produktu"
+    },
+    {
+      "name": "Ariel Kapsle Mountain Spring sáček",
+      "url": "https://www.kosik.cz/p795274-ariel-kapsle-mountain-spring-sacek",
+      "before": null,
+      "after": null,
+      "status": "price_unverified",
+      "reason": "Stránka neposkytla jednoznačnou cenu produktu"
+    },
+    {
+      "name": "Ariel Kapsle Mountain Spring, sáček",
+      "url": "https://www.kosik.cz/p795238-ariel-kapsle-mountain-spring-sacek",
+      "before": null,
+      "after": null,
+      "status": "price_unverified",
+      "reason": "Stránka neposkytla jednoznačnou cenu produktu"
+    },
+    {
+      "name": "Ariel Plus Gel Fresh Air, 2,25 l",
+      "url": "https://www.kosik.cz/p795260-ariel-plus-gel-fresh-air-2-25-l",
+      "before": null,
+      "after": null,
+      "status": "price_unverified",
+      "reason": "Stránka neposkytla jednoznačnou cenu produktu"
+    },
+    {
+      "name": "Ariel Plus Gel Gold Orchid, 2,25 l",
+      "url": "https://www.kosik.cz/p812430-ariel-plus-gel-gold-orchid-2-25-l",
+      "before": null,
+      "after": null,
+      "status": "price_unverified",
+      "reason": "Stránka neposkytla jednoznačnou cenu produktu"
+    },
+    {
+      "name": "Ariel Plus Kapsle Extra Clean Box",
+      "url": "https://www.kosik.cz/p795276-ariel-plus-kapsle-extra-clean-box",
+      "before": null,
+      "after": null,
+      "status": "price_unverified",
+      "reason": "Stránka neposkytla jednoznačnou cenu produktu"
+    },
+    {
+      "name": "Ariel Plus Kapsle Extra Clean, krabice",
+      "url": "https://www.kosik.cz/p795248-ariel-plus-kapsle-extra-clean-krabice",
+      "before": null,
+      "after": null,
+      "status": "price_unverified",
+      "reason": "Stránka neposkytla jednoznačnou cenu produktu"
+    },
+    {
+      "name": "Ariel Plus Kapsle Extra Clean, sáček",
+      "url": "https://www.kosik.cz/p795270-ariel-plus-kapsle-extra-clean-sacek",
+      "before": null,
+      "after": null,
+      "status": "price_unverified",
+      "reason": "Stránka neposkytla jednoznačnou cenu produktu"
+    },
+    {
+      "name": "Ariel Plus Kapsle Extra Clean, sáček",
+      "url": "https://www.kosik.cz/p795264-ariel-plus-kapsle-extra-clean-sacek",
+      "before": null,
+      "after": null,
+      "status": "price_unverified",
+      "reason": "Stránka neposkytla jednoznačnou cenu produktu"
+    },
+    {
+      "name": "Ariel Plus Kapsle Fresh Air, sáček",
+      "url": "https://www.kosik.cz/p795266-ariel-plus-kapsle-fresh-air-sacek",
+      "before": null,
+      "after": null,
+      "status": "price_unverified",
+      "reason": "Stránka neposkytla jednoznačnou cenu produktu"
+    },
+    {
+      "name": "Ariel Plus prací prášek Unstoppables 5,5kg",
+      "url": "https://www.kosik.cz/p733102-ariel-plus-praci-prasek-unstoppables-5-5kg",
+      "before": null,
+      "after": null,
+      "status": "price_unverified",
+      "reason": "Stránka neposkytla jednoznačnou cenu produktu"
+    }
+  ],
+  "note": "Price values are whole packs only when validated; no inferred price or location availability."
+}

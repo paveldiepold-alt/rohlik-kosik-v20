@@ -9,7 +9,7 @@ from __future__ import annotations
 import re
 from typing import Any
 
-_UNIT = re.compile(r'(?i)\b(?:kč|czk)\s*/\s*(?:kg|g|l|ml|ks|m|100\s*g|100\s*ml)\b')
+_UNIT = re.compile(r'(?i)\b(?:kč|czk)\s*/\s*(?:kg|g|l|ml|ks|m|100\s*g|100\s*ml|dávk\w*|pran\w*|porc\w*|použit\w*|rol\w*)\b')
 _PRICE = re.compile(r'(?i)(?<!\d)(\d{1,4})[,.](\d{2})(?:\s*(?:kč|czk))?(?!\d)')
 _SPLIT = re.compile(r'(?i)^(\d{1,4})[\s\u00a0\n]+(\d{2})(?:\s*(?:kč|czk))?$')
 _WHOLE = re.compile(r'(?i)(?<!\d)(\d{1,4})\s*(?:kč|czk)(?!\w)')
@@ -182,7 +182,7 @@ VISIBLE_PRICE_JS = r"""() => {
       const dec = getComputedStyle(p).textDecorationLine;
       return p.matches('s,del,strike') || /line-through/.test(dec) || /(?:old[-_]?price|previous-price|original-price|strikethrough)/i.test(cl);
     });
-    const unit = /\b(?:Kč|CZK)\s*\/\s*(?:kg|g|l|ml|ks|m|100\s*g|100\s*ml)\b/i.test(txt)
+    const unit = /\b(?:Kč|CZK)\s*\/\s*(?:kg|g|l|ml|ks|m|100\s*g|100\s*ml|dávk\w*|pran\w*|porc\w*|použit\w*|rol\w*)\b/i.test(txt)
         || /unit[-_]?price|price[-_]?per[-_]?unit/i.test(hint);
     const key = [txt,hint,Math.round(r.top),Math.round(r.left)].join('|');
     if (seen.has(key)) continue;

@@ -50,7 +50,7 @@ Do košíku
 
     def test_fallback_only_for_kosik_and_not_structured_wrong(self):
         payload={'visible_prices':[],'detail_text':'30 g\n19 90\n663,33 Kč/kg','jsonld':[],'meta':[]}
-        self.assertEqual(from_browser_payload(payload,'Košík')[:2],(19.9,'kosik-product-text'))
+        self.assertEqual(from_browser_payload(payload,'Košík')[:2],(19.9,'kosik-pack-v22'))
         self.assertIsNone(from_browser_payload(payload,'Rohlík')[0])
 
     def test_one_of_ten_must_be_failure_not_green(self):

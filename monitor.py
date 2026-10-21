@@ -140,6 +140,16 @@ def extract_jsonld_prices(raw: str) -> list[dict]:
 
 
 def from_browser_payload(payload: dict, shop: str = "") -> tuple[float | None, str | None, str]:
+    # v22: Košík pack price precedes unit prices in the own H1 price block.
+    if shop == 'Košík':
+        from price_v22 import choose_kosik_pack_price, UNIT_RE
+        pack, pack_source, reason = choose_kosik_pack_price(payload.get('detail_text',''))
+        if pack is not None:
+            return pack, pack_source, reason
+        # If a unit price appears but the pack price is ambiguous, do not
+        # fall back to the old parser, which could publish Kč/dávka as Kč/ks.
+        if UNIT_RE.search(payload.get('detail_text','')):
+            return None, None, reason
     visible_price, visible_source, visible_note = choose_visible_price(payload.get('visible_prices', []))
     if visible_price is not None:
         return visible_price, visible_source, visible_note
