@@ -1,0 +1,385 @@
+{
+  "schema": "rk-v23-price-audit-1",
+  "requested": 37,
+  "processed": 37,
+  "verified_now": 36,
+  "status_counts": {
+    "title_mismatch": 1,
+    "ok": 36
+  },
+  "blocked": false,
+  "run_at": "2026-10-21T12:17:30+00:00",
+  "sample": [
+    {
+      "name": "Ariel Gel Color",
+      "status": "title_mismatch",
+      "old": null,
+      "new": null,
+      "reason": "Title does not confirm product identity",
+      "url": "https://www.kosik.cz/p820202-ariel-gel-color",
+      "offer_valid_until": null,
+      "discount_pct": null
+    },
+    {
+      "name": "Ariel Gel Pro Winter Dream 4.05l",
+      "status": "ok",
+      "old": null,
+      "new": 699.0,
+      "reason": "Cena balení ověřená jednotkovou cenou",
+      "url": "https://www.kosik.cz/p823554-ariel-gel-pro-winter-dream-4-05l",
+      "offer_valid_until": null,
+      "discount_pct": null
+    },
+    {
+      "name": "Ariel Kapsle Color",
+      "status": "ok",
+      "old": null,
+      "new": 749.0,
+      "reason": "Cena balení ověřená jednotkovou cenou",
+      "url": "https://www.kosik.cz/p820204-ariel-kapsle-color",
+      "offer_valid_until": null,
+      "discount_pct": null
+    },
+    {
+      "name": "Ariel Kapsle Spring Awakening",
+      "status": "ok",
+      "old": null,
+      "new": 699.0,
+      "reason": "Cena balení ověřená jednotkovou cenou",
+      "url": "https://www.kosik.cz/p820206-ariel-kapsle-spring-awakening",
+      "offer_valid_until": null,
+      "discount_pct": null
+    },
+    {
+      "name": "Ariel Kapsle Ultra Power Color+",
+      "status": "ok",
+      "old": null,
+      "new": 699.0,
+      "reason": "Cena balení ověřená jednotkovou cenou",
+      "url": "https://www.kosik.cz/p823556-ariel-kapsle-ultra-power-color",
+      "offer_valid_until": null,
+      "discount_pct": null
+    },
+    {
+      "name": "Ariel Kapsle Ultra Power Universal+",
+      "status": "ok",
+      "old": null,
+      "new": 699.0,
+      "reason": "Cena balení ověřená jednotkovou cenou",
+      "url": "https://www.kosik.cz/p823558-ariel-kapsle-ultra-power-universal",
+      "offer_valid_until": null,
+      "discount_pct": null
+    },
+    {
+      "name": "Ariel Kapsle Winter Dream",
+      "status": "ok",
+      "old": null,
+      "new": 699.0,
+      "reason": "Cena balení ověřená jednotkovou cenou",
+      "url": "https://www.kosik.cz/p823560-ariel-kapsle-winter-dream",
+      "offer_valid_until": null,
+      "discount_pct": null
+    },
+    {
+      "name": "Ariel Professional Regular Prášek na praní",
+      "status": "ok",
+      "old": null,
+      "new": 659.0,
+      "reason": "Cena balení ověřená jednotkovou cenou",
+      "url": "https://www.kosik.cz/p800550-ariel-professional-regular-prasek-na-prani",
+      "offer_valid_until": null,
+      "discount_pct": null
+    },
+    {
+      "name": "Ariel kapsle Japanese Blossom",
+      "status": "ok",
+      "old": null,
+      "new": 449.0,
+      "reason": "Cena balení, původní cena a sleva souhlasí",
+      "url": "https://www.kosik.cz/p818840-ariel-kapsle-japanese-blossom",
+      "offer_valid_until": "2026-10-27",
+      "discount_pct": 35.8
+    },
+    {
+      "name": "Lenor Unstoppables perličky Ariel, 495 g",
+      "status": "ok",
+      "old": null,
+      "new": 349.0,
+      "reason": "Cena balení ověřená jednotkovou cenou",
+      "url": "https://www.kosik.cz/p795310-lenor-unstoppables-perlicky-ariel-495-g",
+      "offer_valid_until": null,
+      "discount_pct": null
+    },
+    {
+      "name": "Ariel Gel Color (1,8 l)",
+      "status": "ok",
+      "old": null,
+      "new": 199.9,
+      "reason": "Cena balení, původní cena a sleva souhlasí",
+      "url": "https://www.kosik.cz/p798826-ariel-gel-color-1-8-l",
+      "offer_valid_until": "2026-10-27",
+      "discount_pct": 55.5
+    },
+    {
+      "name": "Ariel Gel Color (2,7 l)",
+      "status": "ok",
+      "old": null,
+      "new": 299.9,
+      "reason": "Cena balení, původní cena a sleva souhlasí",
+      "url": "https://www.kosik.cz/p800490-ariel-gel-color-2-7-l",
+      "offer_valid_until": "2026-10-27",
+      "discount_pct": 39.9
+    },
+    {
+      "name": "Ariel Gel Color 4,5 l",
+      "status": "ok",
+      "old": null,
+      "new": 499.0,
+      "reason": "Cena balení, původní cena a sleva souhlasí",
+      "url": "https://www.kosik.cz/p795242-ariel-gel-color-4-5-l",
+      "offer_valid_until": "2026-10-27",
+      "discount_pct": 28.6
+    },
+    {
+      "name": "Ariel Gel Mountain Spring (1,8l )",
+      "status": "ok",
+      "old": null,
+      "new": 199.9,
+      "reason": "Cena balení, původní cena a sleva souhlasí",
+      "url": "https://www.kosik.cz/p798828-ariel-gel-mountain-spring-1-8l",
+      "offer_valid_until": "2026-10-27",
+      "discount_pct": 55.5
+    },
+    {
+      "name": "Ariel Gel Mountain Spring (2,7 l)",
+      "status": "ok",
+      "old": null,
+      "new": 299.9,
+      "reason": "Cena balení, původní cena a sleva souhlasí",
+      "url": "https://www.kosik.cz/p798838-ariel-gel-mountain-spring-2-7-l",
+      "offer_valid_until": "2026-10-27",
+      "discount_pct": 39.9
+    },
+    {
+      "name": "Ariel Gel Mountain Spring, 4,5 l",
+      "status": "ok",
+      "old": null,
+      "new": 499.0,
+      "reason": "Cena balení, původní cena a sleva souhlasí",
+      "url": "https://www.kosik.cz/p795244-ariel-gel-mountain-spring-4-5-l",
+      "offer_valid_until": "2026-10-27",
+      "discount_pct": 28.6
+    },
+    {
+      "name": "Ariel Gel Sensitive, 4,5 l",
+      "status": "ok",
+      "old": null,
+      "new": 499.0,
+      "reason": "Cena balení, původní cena a sleva souhlasí",
+      "url": "https://www.kosik.cz/p795268-ariel-gel-sensitive-4-5-l",
+      "offer_valid_until": "2026-10-27",
+      "discount_pct": 28.6
+    },
+    {
+      "name": "Ariel Kapsle Color Box",
+      "status": "ok",
+      "old": null,
+      "new": 699.0,
+      "reason": "Cena balení, původní cena a sleva souhlasí",
+      "url": "https://www.kosik.cz/p795278-ariel-kapsle-color-box",
+      "offer_valid_until": "2026-10-27",
+      "discount_pct": 22.2
+    },
+    {
+      "name": "Ariel Kapsle Color, krabice",
+      "status": "ok",
+      "old": null,
+      "new": 249.0,
+      "reason": "Cena balení, původní cena a sleva souhlasí",
+      "url": "https://www.kosik.cz/p795250-ariel-kapsle-color-krabice",
+      "offer_valid_until": "2026-10-27",
+      "discount_pct": 37.6
+    },
+    {
+      "name": "Ariel Kapsle Color, sáček",
+      "status": "ok",
+      "old": null,
+      "new": 499.0,
+      "reason": "Cena balení, původní cena a sleva souhlasí",
+      "url": "https://www.kosik.cz/p795272-ariel-kapsle-color-sacek",
+      "offer_valid_until": "2026-10-27",
+      "discount_pct": 28.6
+    },
+    {
+      "name": "Ariel Kapsle Color, sáček",
+      "status": "ok",
+      "old": null,
+      "new": 299.9,
+      "reason": "Cena balení, původní cena a sleva souhlasí",
+      "url": "https://www.kosik.cz/p795236-ariel-kapsle-color-sacek",
+      "offer_valid_until": "2026-10-27",
+      "discount_pct": 39.9
+    },
+    {
+      "name": "Ariel Kapsle Mountain Spring sáček",
+      "status": "ok",
+      "old": null,
+      "new": 499.0,
+      "reason": "Cena balení, původní cena a sleva souhlasí",
+      "url": "https://www.kosik.cz/p795274-ariel-kapsle-mountain-spring-sacek",
+      "offer_valid_until": "2026-10-27",
+      "discount_pct": 28.6
+    },
+    {
+      "name": "Ariel Kapsle Mountain Spring, sáček",
+      "status": "ok",
+      "old": null,
+      "new": 299.9,
+      "reason": "Cena balení, původní cena a sleva souhlasí",
+      "url": "https://www.kosik.cz/p795238-ariel-kapsle-mountain-spring-sacek",
+      "offer_valid_until": "2026-10-27",
+      "discount_pct": 39.9
+    },
+    {
+      "name": "Ariel Plus Gel Fresh Air, 2,25 l",
+      "status": "ok",
+      "old": null,
+      "new": 299.9,
+      "reason": "Cena balení, původní cena a sleva souhlasí",
+      "url": "https://www.kosik.cz/p795260-ariel-plus-gel-fresh-air-2-25-l",
+      "offer_valid_until": "2026-10-27",
+      "discount_pct": 39.9
+    },
+    {
+      "name": "Ariel Plus Gel Gold Orchid, 2,25 l",
+      "status": "ok",
+      "old": null,
+      "new": 299.9,
+      "reason": "Cena balení, původní cena a sleva souhlasí",
+      "url": "https://www.kosik.cz/p812430-ariel-plus-gel-gold-orchid-2-25-l",
+      "offer_valid_until": "2026-10-27",
+      "discount_pct": 39.9
+    },
+    {
+      "name": "Ariel Plus Kapsle Extra Clean Box",
+      "status": "ok",
+      "old": null,
+      "new": 699.0,
+      "reason": "Cena balení, původní cena a sleva souhlasí",
+      "url": "https://www.kosik.cz/p795276-ariel-plus-kapsle-extra-clean-box",
+      "offer_valid_until": "2026-10-27",
+      "discount_pct": 22.2
+    },
+    {
+      "name": "Ariel Plus Kapsle Extra Clean, krabice",
+      "status": "ok",
+      "old": null,
+      "new": 249.0,
+      "reason": "Cena balení, původní cena a sleva souhlasí",
+      "url": "https://www.kosik.cz/p795248-ariel-plus-kapsle-extra-clean-krabice",
+      "offer_valid_until": "2026-10-27",
+      "discount_pct": 37.6
+    },
+    {
+      "name": "Ariel Plus Kapsle Extra Clean, sáček",
+      "status": "ok",
+      "old": null,
+      "new": 499.0,
+      "reason": "Cena balení, původní cena a sleva souhlasí",
+      "url": "https://www.kosik.cz/p795270-ariel-plus-kapsle-extra-clean-sacek",
+      "offer_valid_until": "2026-10-27",
+      "discount_pct": 28.6
+    },
+    {
+      "name": "Ariel Plus Kapsle Extra Clean, sáček",
+      "status": "ok",
+      "old": null,
+      "new": 299.9,
+      "reason": "Cena balení, původní cena a sleva souhlasí",
+      "url": "https://www.kosik.cz/p795264-ariel-plus-kapsle-extra-clean-sacek",
+      "offer_valid_until": "2026-10-27",
+      "discount_pct": 39.9
+    },
+    {
+      "name": "Ariel Plus Kapsle Fresh Air, sáček",
+      "status": "ok",
+      "old": null,
+      "new": 299.9,
+      "reason": "Cena balení, původní cena a sleva souhlasí",
+      "url": "https://www.kosik.cz/p795266-ariel-plus-kapsle-fresh-air-sacek",
+      "offer_valid_until": "2026-10-27",
+      "discount_pct": 39.9
+    },
+    {
+      "name": "Ariel Plus prací prášek Unstoppables 5,5kg",
+      "status": "ok",
+      "old": null,
+      "new": 549.0,
+      "reason": "Cena balení, původní cena a sleva souhlasí",
+      "url": "https://www.kosik.cz/p733102-ariel-plus-praci-prasek-unstoppables-5-5kg",
+      "offer_valid_until": "2026-10-27",
+      "discount_pct": 26.7
+    },
+    {
+      "name": "Ariel Prášek Color BOX, 2,75 kg",
+      "status": "ok",
+      "old": null,
+      "new": 299.0,
+      "reason": "Cena balení, původní cena a sleva souhlasí",
+      "url": "https://www.kosik.cz/p795254-ariel-prasek-color-box-2-75-kg",
+      "offer_valid_until": "2026-10-27",
+      "discount_pct": 37.6
+    },
+    {
+      "name": "Ariel Prášek Color BOX, 5,5 kg",
+      "status": "ok",
+      "old": null,
+      "new": 549.0,
+      "reason": "Cena balení, původní cena a sleva souhlasí",
+      "url": "https://www.kosik.cz/p795240-ariel-prasek-color-box-5-5-kg",
+      "offer_valid_until": "2026-10-27",
+      "discount_pct": 26.7
+    },
+    {
+      "name": "Ariel Prášek Color, 1,1 kg",
+      "status": "ok",
+      "old": null,
+      "new": 179.0,
+      "reason": "Cena balení, původní cena a sleva souhlasí",
+      "url": "https://www.kosik.cz/p741426-ariel-prasek-color-1-1-kg",
+      "offer_valid_until": "2026-10-27",
+      "discount_pct": 21.8
+    },
+    {
+      "name": "Ariel Prášek Mountain Spring BOX, 2,75 kg",
+      "status": "ok",
+      "old": null,
+      "new": 299.0,
+      "reason": "Cena balení, původní cena a sleva souhlasí",
+      "url": "https://www.kosik.cz/p795256-ariel-prasek-mountain-spring-box-2-75-kg",
+      "offer_valid_until": "2026-10-27",
+      "discount_pct": 37.6
+    },
+    {
+      "name": "Ariel gel Japanese Blossom",
+      "status": "ok",
+      "old": null,
+      "new": 199.9,
+      "reason": "Cena balení, původní cena a sleva souhlasí",
+      "url": "https://www.kosik.cz/p818836-ariel-gel-japanese-blossom",
+      "offer_valid_until": "2026-10-27",
+      "discount_pct": 55.5
+    },
+    {
+      "name": "Ariel gel Japanese Blossom",
+      "status": "ok",
+      "old": null,
+      "new": 449.0,
+      "reason": "Cena balení, původní cena a sleva souhlasí",
+      "url": "https://www.kosik.cz/p818838-ariel-gel-japanese-blossom",
+      "offer_valid_until": "2026-10-27",
+      "discount_pct": 35.8
+    }
+  ],
+  "required_verified": 26
+}

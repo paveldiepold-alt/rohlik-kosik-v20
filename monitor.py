@@ -239,6 +239,21 @@ def inspect(page, entry: dict, checked_at: str) -> dict:
             data['status'] = 'title_mismatch'
             data['note'] = 'Produktový nadpis neodpovídá požadovanému výrobku'
             return data
+        # v23 persistent product-pack pricing from retailer detail
+        if entry['store'] == 'Košík':
+            from price_v23 import PRODUCT_HEADER_JS, parse_product_offer
+            shop_data = page.evaluate(PRODUCT_HEADER_JS)
+            shop_offer = parse_product_offer(shop_data.get('text', ''), checked_at)
+            if shop_offer['price_czk'] is not None:
+                data.update(status='ok', price_czk=shop_offer['price_czk'],
+                    source='kosik-pack-v23',note=shop_offer['reason'],
+                    original_price_czk=shop_offer.get('original_price_czk'),
+                    discount_pct=shop_offer.get('discount_pct'),
+                    offer_valid_until=shop_offer.get('offer_valid_until'))
+                return data
+            # Do not fall back to a possibly misleading per-dose/unit price.
+            data.update(status='price_unverified',note='v23: '+shop_offer['reason'])
+            return data
         price, source, note = from_browser_payload(payload, entry['store'])
         if price is None:
             data['status'] = 'price_unverified'
