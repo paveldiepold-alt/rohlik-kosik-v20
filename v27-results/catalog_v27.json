@@ -3394,10 +3394,6 @@
       ],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-21T19:00:49+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Deodoranty a antiperspiranty",
@@ -3407,6 +3403,10 @@
       "category_source": "jsonld_breadcrumb",
       "product_description": "Pánský deodorant ve spreji Ice Chill s vůní máty a citrónu je deodorant, který nejenže účinně a dlouhodobě chrání proti zápachu, ale dokonce dokáže snížit vaši…",
       "taxonomy_checked_at": "2026-10-21T19:00:49+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-21T19:00:49+00:00",
+      "v27_category_probe_attempts": 1,
       "category_v27": {
         "status": "review",
         "evidence_state": "unmapped_merchant_path",
@@ -4923,9 +4923,9 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-21T19:00:22+00:00",
       "v27_category_probe_status": "category_missing",
       "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
+      "v27_category_checked_at": "2026-10-21T19:00:22+00:00",
       "v27_category_probe_attempts": 1,
       "category_v27": {
         "status": "review",
@@ -6183,9 +6183,9 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-21T19:00:40+00:00",
       "v27_category_probe_status": "category_missing",
       "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
+      "v27_category_checked_at": "2026-10-21T19:00:40+00:00",
       "v27_category_probe_attempts": 1,
       "category_v27": {
         "status": "review",
@@ -6656,10 +6656,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-21T19:00:31+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Čistící přípravky",
@@ -6668,6 +6664,10 @@
       "category_source": "jsonld_breadcrumb",
       "product_description": "Clin Pro Nature čistič oken ve spreji s 99 % složek přírodního původu.Clin Pro Nature čistič oken nabízí dobře známý silný čisticí výkon, ovšem v udržitelnější…",
       "taxonomy_checked_at": "2026-10-21T19:00:31+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-21T19:00:31+00:00",
+      "v27_category_probe_attempts": 1,
       "category_v27": {
         "status": "verified",
         "evidence_state": "mapped",
@@ -8780,10 +8780,23 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:06:29+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Mozzarella a salátové",
+        "Mozzarella a burrata"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Mozzarella Galbani, sněhobílý známý měkký sýr v pevném obalu a nálevu, který sýr konzervuje. Struktura mladého sýra je poměrně pružná a poddajná, dá se lehce…",
+      "taxonomy_checked_at": "2026-10-21T19:06:29+00:00",
       "category_v27": {
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
+        "evidence_state": "unmapped_merchant_path",
+        "probe_status": "category_found",
         "category": null,
         "display_category": "Ke kontrole",
         "source": null,
@@ -8797,7 +8810,7 @@
             "reason": "Kategorie neověřena u prodejce"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -8823,10 +8836,22 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:07:13+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Bez laktózy",
+        "Sýry"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Měkký polotučný nezrající pařený sýr v nálevu.Obsah laktózy &lt;0,01 g / 100 g.Hmotnost pevného podílu: 125g.",
+      "taxonomy_checked_at": "2026-10-21T19:07:13+00:00",
       "category_v27": {
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
+        "evidence_state": "unmapped_merchant_path",
+        "probe_status": "category_found",
         "category": null,
         "display_category": "Ke kontrole",
         "source": null,
@@ -8840,7 +8865,7 @@
             "reason": "Kategorie neověřena u prodejce"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -8866,10 +8891,23 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:06:20+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Mozzarella a salátové",
+        "Mozzarella a burrata"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Mozzarella light, známý sýr v odlehčené variantě, v pevném obalu a nálevu, který sýr konzervuje. Struktura mladého sýra je poměrně pružná a poddajná, dá se…",
+      "taxonomy_checked_at": "2026-10-21T19:06:20+00:00",
       "category_v27": {
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
+        "evidence_state": "unmapped_merchant_path",
+        "probe_status": "category_found",
         "category": null,
         "display_category": "Ke kontrole",
         "source": null,
@@ -8883,7 +8921,7 @@
             "reason": "Kategorie neověřena u prodejce"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -8909,10 +8947,23 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:06:37+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Mozzarella a salátové",
+        "Mozzarella a burrata"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Měkký nezrající sýr v nálevu. V tomto praktickém balení najdete mini kuličky tradiční mozzarelly, které se hodí jako předkrm nebo občerstvení na párty, např. s…",
+      "taxonomy_checked_at": "2026-10-21T19:06:37+00:00",
       "category_v27": {
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
+        "evidence_state": "unmapped_merchant_path",
+        "probe_status": "category_found",
         "category": null,
         "display_category": "Ke kontrole",
         "source": null,
@@ -8926,7 +8977,7 @@
             "reason": "Kategorie neověřena u prodejce"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -9086,24 +9137,36 @@
       ],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:07:30+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Papírová a vatová hygiena",
+        "Kuchyňské utěrky"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "2 vrstvé kuchyňské utěrky, balení obsahuje 4 role s délkou 11m. O značce Říká se, že na místě Harmaneckých papíren se v minulosti nacházelo jezírko, ve kterém…",
+      "taxonomy_checked_at": "2026-10-21T19:07:30+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Papírové utěrky",
+        "display_category": "Papírové utěrky",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Papírové utěrky"
         ],
         "rule_checks": {
           "W074": {
             "expected": "Papírové utěrky",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Papírové utěrky podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -9652,10 +9715,14 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:04:34+00:00",
+      "v27_category_probe_status": "category_missing",
+      "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
+      "v27_category_probe_attempts": 1,
       "category_v27": {
         "status": "review",
         "evidence_state": "merchant_path_missing",
-        "probe_status": null,
+        "probe_status": "category_missing",
         "category": null,
         "display_category": "Ke kontrole",
         "source": null,
@@ -9738,9 +9805,9 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-21T19:00:12+00:00",
       "v27_category_probe_status": "category_missing",
       "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
+      "v27_category_checked_at": "2026-10-21T19:00:12+00:00",
       "v27_category_probe_attempts": 1,
       "category_v27": {
         "status": "review",
@@ -10354,24 +10421,37 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:07:47+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plísňové",
+        "S bílou plísní"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Hermelín Lahůdková paprikaLehká chuť sladké papriky.VyzrálostVíce než 20 dní do data spotřeby:&nbsp;sýr je svěží a pevnější10–20 dní do data spotřeby:&nbsp;sýr…",
+      "taxonomy_checked_at": "2026-10-21T19:07:47+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Sýry / plísňové",
+        "display_category": "Sýry / plísňové",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Sýry / plísňové"
         ],
         "rule_checks": {
           "W023": {
             "expected": "Sýry / plísňové",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Plísňové sýry podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -10397,24 +10477,37 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:08:05+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plísňové",
+        "S bílou plísní"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Hermelín OriginálSýr s krémovou konzistencí a ušlechtilou plísní, která mu dodává typický bělostný vzhled a jemné žampionové aroma.VyzrálostVíce než 20 dní do…",
+      "taxonomy_checked_at": "2026-10-21T19:08:05+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Sýry / plísňové",
+        "display_category": "Sýry / plísňové",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Sýry / plísňové"
         ],
         "rule_checks": {
           "W023": {
             "expected": "Sýry / plísňové",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Plísňové sýry podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -10483,24 +10576,37 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:08:57+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plísňové",
+        "S bílou plísní"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Hermelín Provensálské bylinkyKombinace příjemné chuti bylinek a krémovosti sýru samotného.VyzrálostVíce než 20 dní do data spotřeby:&nbsp;sýr je svěží a…",
+      "taxonomy_checked_at": "2026-10-21T19:08:57+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Sýry / plísňové",
+        "display_category": "Sýry / plísňové",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Sýry / plísňové"
         ],
         "rule_checks": {
           "W023": {
             "expected": "Sýry / plísňové",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Plísňové sýry podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -10526,24 +10632,37 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:07:56+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plísňové",
+        "S bílou plísní"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Hermelín Zelený pepřSýr s chutí výběrového zeleného pepře.VyzrálostVíce než 20 dní do data spotřeby:&nbsp;sýr je svěží a pevnější10–20 dní do data spotřeby:…",
+      "taxonomy_checked_at": "2026-10-21T19:07:56+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Sýry / plísňové",
+        "display_category": "Sýry / plísňové",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Sýry / plísňové"
         ],
         "rule_checks": {
           "W023": {
             "expected": "Sýry / plísňové",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Plísňové sýry podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -10821,24 +10940,36 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:07:39+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Uzeniny a lahůdky",
+        "Šunky",
+        "Drůbeží"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Dušená šunka vyrobená z vybraných chlazených krůtích prsou s obsahem vitamínů A, B1, B3, B5, B6, B12, C, E v hladině vyšší než 25% DDD.Obsah masa 92%.O…",
+      "taxonomy_checked_at": "2026-10-21T19:07:39+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Uzeniny / šunky",
+        "display_category": "Uzeniny / šunky",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Uzeniny / šunky"
         ],
         "rule_checks": {
           "W006": {
             "expected": "Uzeniny / šunky",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Šunky podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -10869,24 +11000,36 @@
       ],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:11:17+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Uzeniny a lahůdky",
+        "Šunky",
+        "Drůbeží"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Krůtí šunka s obsahem mořské soli, 83% masa a pouze 1,5% tuku. Jedná se o tepelně opracovaný masný výrobek původem z České republiky. Produkt je balen v…",
+      "taxonomy_checked_at": "2026-10-21T19:11:17+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Uzeniny / šunky",
+        "display_category": "Uzeniny / šunky",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Uzeniny / šunky"
         ],
         "rule_checks": {
           "W006": {
             "expected": "Uzeniny / šunky",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Šunky podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -11016,24 +11159,37 @@
       ],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:11:26+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Uzeniny a lahůdky",
+        "Šunky",
+        "Vepřové",
+        "Nejvyšší jakosti"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Pražská šunka nejvyšší jakosti shaved. Jedná se o tepelně opracovaný masný výrobek původem z České republiky. Produkt je balen v ochranné atmosféře. Obsah masa…",
+      "taxonomy_checked_at": "2026-10-21T19:11:26+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Uzeniny / šunky",
+        "display_category": "Uzeniny / šunky",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Uzeniny / šunky"
         ],
         "rule_checks": {
           "W006": {
             "expected": "Uzeniny / šunky",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Šunky podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -11111,24 +11267,37 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:10:59+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Uzeniny a lahůdky",
+        "Šunky",
+        "Vepřové",
+        "Výběrové"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Dušená výběrová šunka z vepřové kýty. Obsah masa 80%. O výrobci Společnost LE &amp; CO má pětadvacetiletou tradici a v současné chvíli je jedním z…",
+      "taxonomy_checked_at": "2026-10-21T19:10:59+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Uzeniny / šunky",
+        "display_category": "Uzeniny / šunky",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Uzeniny / šunky"
         ],
         "rule_checks": {
           "W006": {
             "expected": "Uzeniny / šunky",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Šunky podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -11154,24 +11323,36 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:11:08+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Uzeniny a lahůdky",
+        "Šunky",
+        "Drůbeží"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Najemno nakrájená, delikatesní krůtí šunka. Jedná se o tepelně opracovaný masný výrobek původem z České republiky. Produkt je balen v ochranné atmosféře. Obsah…",
+      "taxonomy_checked_at": "2026-10-21T19:11:08+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Uzeniny / šunky",
+        "display_category": "Uzeniny / šunky",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Uzeniny / šunky"
         ],
         "rule_checks": {
           "W006": {
             "expected": "Uzeniny / šunky",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Šunky podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -11462,24 +11643,37 @@
       ],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:07:21+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Uzeniny a lahůdky",
+        "Šunky",
+        "Vepřové",
+        "Nejvyšší jakosti"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Šunka nejvyšší kvality dušená v páře, vyrobená ze spodních šálů vepřové kýty s částečným tukovým krytím. Obsah masa 92%. O výrobci Le &amp; Co je neustále…",
+      "taxonomy_checked_at": "2026-10-21T19:07:21+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Uzeniny / šunky",
+        "display_category": "Uzeniny / šunky",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Uzeniny / šunky"
         ],
         "rule_checks": {
           "W006": {
             "expected": "Uzeniny / šunky",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Šunky podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -11842,24 +12036,37 @@
       ],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:11:34+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Uzeniny a lahůdky",
+        "Šunky",
+        "Vepřové",
+        "Nejvyšší jakosti"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Vepřová šunka od kosti nejvyšší jakosti shaved. Jedná se o tepelně opracovaný masný výrobek původem z České republiky. Produkt je balen v ochranné atmosféře.…",
+      "taxonomy_checked_at": "2026-10-21T19:11:34+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Uzeniny / šunky",
+        "display_category": "Uzeniny / šunky",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Uzeniny / šunky"
         ],
         "rule_checks": {
           "W006": {
             "expected": "Uzeniny / šunky",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Šunky podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -11890,24 +12097,37 @@
       ],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:11:43+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Uzeniny a lahůdky",
+        "Šunky",
+        "Vepřové",
+        "Výběrové"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Vepřová šunka s 83% vepřové kýty obohacená o mořskou sůl. Jedná se o tepelně opracovaný masný výrobek původem z České republiky. Produkt je balen v ochranné…",
+      "taxonomy_checked_at": "2026-10-21T19:11:43+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Uzeniny / šunky",
+        "display_category": "Uzeniny / šunky",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Uzeniny / šunky"
         ],
         "rule_checks": {
           "W006": {
             "expected": "Uzeniny / šunky",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Šunky podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -14325,24 +14545,37 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:05:01+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plátkové",
+        "Eidam"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Eidam je polotvrdý sýr s nízkodohřívanou sýřeninou. Na našem trhu patří k tradičním druhům přírodních sýrů. Užití je vskutku velmi rozmanité - již nasekaná na…",
+      "taxonomy_checked_at": "2026-10-21T19:05:01+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Sýry / plátkové",
+        "display_category": "Sýry / plátkové",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Sýry / plátkové"
         ],
         "rule_checks": {
           "W017": {
             "expected": "Sýry / plátkové",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Plátkové sýry podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -14454,24 +14687,36 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:04:52+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Tavené"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Základem pro výrobu Jihočeského Lipna jsou kvalitní sýry z Madety. Jejich poměr a jednotlivé druhy, které jsou při výrobě použity, jsou tajemstvím léty…",
+      "taxonomy_checked_at": "2026-10-21T19:04:52+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Sýry / tavené",
+        "display_category": "Sýry / tavené",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Sýry / tavené"
         ],
         "rule_checks": {
           "W022": {
             "expected": "Sýry / tavené",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Tavené sýry podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -14497,24 +14742,36 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:04:43+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Máslo, margaríny, tuky",
+        "Máslo"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Bez zbytečné skromnosti - pravděpodobně nejlepší máslo široko daleko. Je vyrobené z kvalitních surovin. Navíc se lehce roztírá a má tradiční nezapomenutelnou…",
+      "taxonomy_checked_at": "2026-10-21T19:04:43+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Másla a tuky",
+        "display_category": "Másla a tuky",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Másla a tuky"
         ],
         "rule_checks": {
           "W028": {
             "expected": "Másla a tuky",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Jedlé máslo/tuky podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -14540,24 +14797,37 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:05:10+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plátkové",
+        "Eidam"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Eidam je polotvrdý sýr s nízkodohřívanou sýřeninou a díky vyššímu obsahu tuku je jemnější a lahodnější. Na našem trhu patří k oblíbeným druhům přírodních sýrů.…",
+      "taxonomy_checked_at": "2026-10-21T19:05:10+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Sýry / plátkové",
+        "display_category": "Sýry / plátkové",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Sýry / plátkové"
         ],
         "rule_checks": {
           "W017": {
             "expected": "Sýry / plátkové",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Plátkové sýry podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -14626,24 +14896,37 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:05:19+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plátkové",
+        "Ostatní typy"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Lipánek je lahodný plátkový přírodní sýr z&nbsp;poctivého jihočeského mléka.Chuť a vůně sýra lépe vynikne, ponecháte-li jej asi 15 minut před konzumací při…",
+      "taxonomy_checked_at": "2026-10-21T19:05:19+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Sýry / plátkové",
+        "display_category": "Sýry / plátkové",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Sýry / plátkové"
         ],
         "rule_checks": {
           "W017": {
             "expected": "Sýry / plátkové",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Plátkové sýry podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -16510,24 +16793,36 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:09:23+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Máslo, margaríny, tuky",
+        "Tuky na pečení a smažení"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Jedlý tuk rostlinný 100%, jednodruhový, vhodný na smažení, fritování, pečení.",
+      "taxonomy_checked_at": "2026-10-21T19:09:23+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Másla a tuky",
+        "display_category": "Másla a tuky",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Másla a tuky"
         ],
         "rule_checks": {
           "W030": {
             "expected": "Másla a tuky",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Jedlé máslo/tuky podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -16792,24 +17087,37 @@
       ],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:10:51+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Trvanlivé",
+        "Těstoviny a kuskus",
+        "Těstoviny podle tvaru",
+        "Špagety a linguine"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Svým dlouhým, plochým a úzkým tvarem se stávají jedinečnou alternativou ke klasickým špagetám a jsou často podávány s mořskými plody nebo pestem. Kvalita…",
+      "taxonomy_checked_at": "2026-10-21T19:10:51+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Těstoviny a rýže",
+        "display_category": "Těstoviny a rýže",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Těstoviny a rýže"
         ],
         "rule_checks": {
           "W052": {
             "expected": "Těstoviny a rýže",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Těstoviny/rýže podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -19657,24 +19965,37 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:05:54+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plísňové",
+        "S bílou plísní"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Président Camembert se vyznačuje jemnou smetanovou chutí. Tento hermelín je ideální na všední i sváteční stůl a přímo se rozplývá na jazyku. Neprohloupíte s…",
+      "taxonomy_checked_at": "2026-10-21T19:05:54+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Sýry / plísňové",
+        "display_category": "Sýry / plísňové",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Sýry / plísňové"
         ],
         "rule_checks": {
           "W025": {
             "expected": "Sýry / plísňové",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Plísňové sýry podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -19829,24 +20150,37 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:07:04+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plísňové",
+        "S bílou plísní"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Président Camembert L´Aromatique je aromatický sýr s bílou plísní na povrchu. Svou aromatickou chuť získává tento hermelín díky delšímu zrání. Gurmány camembet…",
+      "taxonomy_checked_at": "2026-10-21T19:07:04+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Sýry / plísňové",
+        "display_category": "Sýry / plísňové",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Sýry / plísňové"
         ],
         "rule_checks": {
           "W025": {
             "expected": "Sýry / plísňové",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Plísňové sýry podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -19915,24 +20249,37 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:06:55+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plísňové",
+        "S bílou plísní"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Měkký zrající sýr s bílou plísní na povrchu. Président Camembert 90 g Linea je vhodný pro milovníky in životního stylu díky nízkému obsahu tuku. I přes to…",
+      "taxonomy_checked_at": "2026-10-21T19:06:55+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Sýry / plísňové",
+        "display_category": "Sýry / plísňové",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Sýry / plísňové"
         ],
         "rule_checks": {
           "W025": {
             "expected": "Sýry / plísňové",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Plísňové sýry podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -19958,24 +20305,37 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:06:46+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plísňové",
+        "S bílou plísní"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Président Camembert 90 g chilli má tradiční krémovou chuť okořeněnou pikantními chilli papričkami a ideální velikost pro to pravé potěšení. Je jemně pikantní,…",
+      "taxonomy_checked_at": "2026-10-21T19:06:46+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Sýry / plísňové",
+        "display_category": "Sýry / plísňové",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Sýry / plísňové"
         ],
         "rule_checks": {
           "W025": {
             "expected": "Sýry / plísňové",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Plísňové sýry podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -20001,24 +20361,37 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:06:11+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plísňové",
+        "S bílou plísní"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Président Camembert 90 g zelený pepř má tradiční krémovou chuť ozvláštněnou zeleným pepřem a ideální velikost pro to pravé potěšení. Právě zelený pepř dodává…",
+      "taxonomy_checked_at": "2026-10-21T19:06:11+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Sýry / plísňové",
+        "display_category": "Sýry / plísňové",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Sýry / plísňové"
         ],
         "rule_checks": {
           "W025": {
             "expected": "Sýry / plísňové",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Plísňové sýry podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -20044,24 +20417,37 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:05:28+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plátkové",
+        "Cheddar"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Jeden z nejrozšířenějších sýrů na světě, původem z Anglie, si Vás získá jemnou nasládlou chutí, která se s dobou zrání stává ještě výraznější. Hodí se při…",
+      "taxonomy_checked_at": "2026-10-21T19:05:28+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Sýry / plátkové",
+        "display_category": "Sýry / plátkové",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Sýry / plátkové"
         ],
         "rule_checks": {
           "W019": {
             "expected": "Sýry / plátkové",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Plátkové sýry podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -20087,24 +20473,37 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:05:36+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plátkové",
+        "Ementálského typu"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Vynikající tvrdý sýr s oky, který Vám nabídne jemnou, lehce nasládlou chuť s vůní po oříšcích. K jeho výrobě se používá střed sýrového bochníku. Tam najdeme ty…",
+      "taxonomy_checked_at": "2026-10-21T19:05:36+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Sýry / plátkové",
+        "display_category": "Sýry / plátkové",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Sýry / plátkové"
         ],
         "rule_checks": {
           "W019": {
             "expected": "Sýry / plátkové",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Plátkové sýry podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -20130,24 +20529,37 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:06:03+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plátkové",
+        "Gouda"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Gouda (Chauda) je tvrdý sýr vyráběný z kravského mléka a je označován jako jeden z nejlepších sýrů na světě. Vyznačuje se jemnou vůní s lehkým oříškovým…",
+      "taxonomy_checked_at": "2026-10-21T19:06:03+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Sýry / plátkové",
+        "display_category": "Sýry / plátkové",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Sýry / plátkové"
         ],
         "rule_checks": {
           "W019": {
             "expected": "Sýry / plátkové",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Plátkové sýry podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -20173,24 +20585,37 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:05:45+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plátkové",
+        "Holandského typu"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Chuťově výrazný tvrdý sýr s oky s delikátní texturou a ovocnou chutí. Snoubení s vínem Sýr Maasdamer chutná s červenými víny. Česká vína: Frankovka, pozní sběr…",
+      "taxonomy_checked_at": "2026-10-21T19:05:45+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Sýry / plátkové",
+        "display_category": "Sýry / plátkové",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Sýry / plátkové"
         ],
         "rule_checks": {
           "W019": {
             "expected": "Sýry / plátkové",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Plátkové sýry podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -21724,24 +22149,36 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:09:32+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Čistící přípravky",
+        "Univerzální"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Tradiční výrobek. Ideální na podlahy, kuchyně, sanitární předměty a sanitární keramiku, ale také dětské hračky a další omyvatelné povrchy v domácnosti.…",
+      "taxonomy_checked_at": "2026-10-21T19:09:32+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Úklid",
+        "display_category": "Úklid",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Úklid"
         ],
         "rule_checks": {
           "W069": {
             "expected": "Úklid",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Úklid podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -21767,24 +22204,36 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:10:33+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Čistící přípravky",
+        "Univerzální"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Dezinfekce vody a povrchů. Dezinfekce vody ve studních. Odstraňuje 99,9 % bakterií. Vhodné i pro dezinfekci vody v bazénech. Osvědčená kvalita. Ideální na…",
+      "taxonomy_checked_at": "2026-10-21T19:10:33+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Úklid",
+        "display_category": "Úklid",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Úklid"
         ],
         "rule_checks": {
           "W069": {
             "expected": "Úklid",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Úklid podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -21815,24 +22264,37 @@
       ],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:09:58+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Odstraňovače skvrn",
+        "Běžné"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Tekutý prostředek pro bělení prádla. Účinně bělí prádlo. Odstraňuje špínu a skvrny již při předpírání. Koncentrovaná síla. Příjemná květinová vůně. Osvědčená…",
+      "taxonomy_checked_at": "2026-10-21T19:09:58+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "mismatch",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Praní",
+        "display_category": "Praní",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Úklid"
         ],
         "rule_checks": {
           "W069": {
             "expected": "Úklid",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "mismatch",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Praní podle cesty prodejce; nesoulad s pravidly: Úklid"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -21863,24 +22325,37 @@
       ],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:10:07+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Odstraňovače skvrn",
+        "Běžné"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Tekutý prostředek pro bělení prádla. Účinně bělí prádlo. Odstraňuje špínu a skvrny již při předpírání. Koncentrovaná síla. Příjemná svěží vůně. Osvědčená…",
+      "taxonomy_checked_at": "2026-10-21T19:10:07+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "mismatch",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Praní",
+        "display_category": "Praní",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Úklid"
         ],
         "rule_checks": {
           "W069": {
             "expected": "Úklid",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "mismatch",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Praní podle cesty prodejce; nesoulad s pravidly: Úklid"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -21906,24 +22381,36 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:08:49+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Čistící přípravky",
+        "Podlahy a koberce"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Univerzální čistič Savo na podlahy Na dřevo a lamináty.Univerzální čisticí přípravek vhodný na čištění všech typů omyvatelných dřevěných a laminátových povrchů…",
+      "taxonomy_checked_at": "2026-10-21T19:08:49+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Úklid",
+        "display_category": "Úklid",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Úklid"
         ],
         "rule_checks": {
           "W069": {
             "expected": "Úklid",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Úklid podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -22040,24 +22527,36 @@
       ],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:10:16+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Čistící přípravky",
+        "Univerzální"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Univerzální použití. Odstraňuje 99,9 % bakterií.&nbsp;Účinné složení. Osvědčená kvalita. Parfemováno. Čistí a dezinfikuje. Ideální pro dezinfekci hraček, kotců…",
+      "taxonomy_checked_at": "2026-10-21T19:10:16+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Úklid",
+        "display_category": "Úklid",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Úklid"
         ],
         "rule_checks": {
           "W069": {
             "expected": "Úklid",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Úklid podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -22088,24 +22587,36 @@
       ],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:10:24+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Čistící přípravky",
+        "Univerzální"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Univerzální použití. Odstraňuje 99,9 % bakterií. Účinné složení. Osvědčená kvalita. Parfemováno. Čistí a dezinfikuje. Ideální pro dezinfekci hraček, kotců…",
+      "taxonomy_checked_at": "2026-10-21T19:10:24+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Úklid",
+        "display_category": "Úklid",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Úklid"
         ],
         "rule_checks": {
           "W069": {
             "expected": "Úklid",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Úklid podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -22131,24 +22642,36 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:10:42+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Čistící přípravky",
+        "Univerzální"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Savo na podlahy a povrchy je přípravek ke každodennímu úklidu ploch v kancelářích, školách a školkách, zdravotnických zařízeních atd. Odstraňuje mastnotu a…",
+      "taxonomy_checked_at": "2026-10-21T19:10:42+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Úklid",
+        "display_category": "Úklid",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Úklid"
         ],
         "rule_checks": {
           "W069": {
             "expected": "Úklid",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Úklid podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -22260,24 +22783,36 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:09:41+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Čistící přípravky",
+        "Čistění odpadů"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Účinný gelový uvolňovač odpadů. Okamžitý účinek. Odstraňují zápach. Univerzální použití. Aktivní působení proti novým usazeninám. Vhodný prostředek pro…",
+      "taxonomy_checked_at": "2026-10-21T19:09:41+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Úklid",
+        "display_category": "Úklid",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Úklid"
         ],
         "rule_checks": {
           "W069": {
             "expected": "Úklid",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Úklid podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -22447,24 +22982,36 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:09:49+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Čistící přípravky",
+        "Univerzální"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Savo Antibakteriální sprej je ideální pro každodenní dezinfekci a tím pomáhá chránit Váš domov a rodinu před bakteriemi a alergeny. Složení bez chloru nejen…",
+      "taxonomy_checked_at": "2026-10-21T19:09:49+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Úklid",
+        "display_category": "Úklid",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Úklid"
         ],
         "rule_checks": {
           "W069": {
             "expected": "Úklid",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Úklid podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -22490,24 +23037,37 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:08:14+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plísňové",
+        "S bílou plísní"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Hermelín se sníženým obsahem tuku, jogurtovou kulturou a odlehčenou chutí. Vyznačuje se jemnou nakyslostí a příjemným jogurtovým aroma. Jak správně vychutnat…",
+      "taxonomy_checked_at": "2026-10-21T19:08:14+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Sýry / plísňové",
+        "display_category": "Sýry / plísňové",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Sýry / plísňové"
         ],
         "rule_checks": {
           "W024": {
             "expected": "Sýry / plísňové",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Plísňové sýry podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -22662,24 +23222,37 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:08:22+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plísňové",
+        "S bílou plísní"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Hermelín - to je pravý český originál!Původní český sýr s lehce slanou chutí, ušlechtilou bílou plísní a vláčně prozrálou konzistencí. Po nakrojení má uvnitř…",
+      "taxonomy_checked_at": "2026-10-21T19:08:22+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Sýry / plísňové",
+        "display_category": "Sýry / plísňové",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Sýry / plísňové"
         ],
         "rule_checks": {
           "W024": {
             "expected": "Sýry / plísňové",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Plísňové sýry podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -22748,24 +23321,37 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:08:40+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plísňové",
+        "S bílou plísní"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Sedlčanský Smetanový hermelín s extra porcí smetany má lahodnou máslovou chuť. V sýru se snoubí sytá a rozplývavá rextura a lehká vůně žampionů. Jeho sametově…",
+      "taxonomy_checked_at": "2026-10-21T19:08:40+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Sýry / plísňové",
+        "display_category": "Sýry / plísňové",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Sýry / plísňové"
         ],
         "rule_checks": {
           "W024": {
             "expected": "Sýry / plísňové",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Plísňové sýry podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -22791,24 +23377,37 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:08:31+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plísňové",
+        "S bílou plísní"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Hermelín - to je pravý český originál!Původní český sýr s lehce slanou chutí, ušlechtilou bílou plísní a vláčně prozrálou konzistencí. Po nakrojení má uvnitř…",
+      "taxonomy_checked_at": "2026-10-21T19:08:31+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Sýry / plísňové",
+        "display_category": "Sýry / plísňové",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Sýry / plísňové"
         ],
         "rule_checks": {
           "W024": {
             "expected": "Sýry / plísňové",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Plísňové sýry podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -26519,24 +27118,36 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:09:15+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Papírová a vatová hygiena",
+        "Kuchyňské utěrky"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Tento výrobek obsahuje 325 utržků a je tak jedním z našich největších balení kuchyňských utěrek zaručujících pohodlí a čistotu na dlouhou dobu. Můžete jej…",
+      "taxonomy_checked_at": "2026-10-21T19:09:15+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Papírové utěrky",
+        "display_category": "Papírové utěrky",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Papírové utěrky"
         ],
         "rule_checks": {
           "W074": {
             "expected": "Papírové utěrky",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Papírové utěrky podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -26610,24 +27221,36 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:09:06+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Papírová a vatová hygiena",
+        "Kuchyňské utěrky"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Extra dlouhé dvouvrstvé utěrky vysoké kvality, které jsou pevné a savé, představují praktického pomocníka do každé domácnosti. Kuchyňské utěrky Zewa Premium…",
+      "taxonomy_checked_at": "2026-10-21T19:09:06+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Papírové utěrky",
+        "display_category": "Papírové utěrky",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Papírové utěrky"
         ],
         "rule_checks": {
           "W074": {
             "expected": "Papírové utěrky",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Papírové utěrky podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -31098,24 +31721,37 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:07:08+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Čisticí prostředky",
+        "Koupelna a WC",
+        "WC bloky"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Bref Power Aktiv Lemon je pevný WC blok s vůní citronu v atraktivním balení čtyř kuliček, které v sobě ukrývají recepturu se čtyřmi funkcemi funkcemi.",
+      "taxonomy_checked_at": "2026-10-21T19:07:08+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Úklid",
+        "display_category": "Úklid",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Úklid"
         ],
         "rule_checks": {
           "W066": {
             "expected": "Úklid",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Úklid podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "blocked_http",
@@ -31184,24 +31820,37 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:07:26+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Čisticí prostředky",
+        "Koupelna a WC",
+        "WC bloky"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Bref Power Aktiv Levandule je pevný WC blok s vůní levandule&nbsp;v atraktivním balení čtyř kuliček, které v sobě ukrývají recepturu se čtyřmi funkcem",
+      "taxonomy_checked_at": "2026-10-21T19:07:26+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Úklid",
+        "display_category": "Úklid",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Úklid"
         ],
         "rule_checks": {
           "W066": {
             "expected": "Úklid",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Úklid podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -31227,24 +31876,37 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:07:17+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Čisticí prostředky",
+        "Koupelna a WC",
+        "WC bloky"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Bref Power Aktiv Ocean je pevný WC blok s vůní oceánu v atraktivním balení čtyř kuliček, které v sobě ukrývají recepturu se čtyřmi funkcemi. čisticí p",
+      "taxonomy_checked_at": "2026-10-21T19:07:17+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Úklid",
+        "display_category": "Úklid",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Úklid"
         ],
         "rule_checks": {
           "W066": {
             "expected": "Úklid",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Úklid podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -32278,24 +32940,37 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:06:24+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Čisticí prostředky",
+        "Univerzální",
+        "Tekuté"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Účinný proti nečistotě a šetrný k vašemu domovu. Cif krém účinně odstraňuje i ty nejodolnější nečistoty, jako je připálený tuk, připálené zbytky jídla",
+      "taxonomy_checked_at": "2026-10-21T19:06:24+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Úklid",
+        "display_category": "Úklid",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Úklid"
         ],
         "rule_checks": {
           "W070": {
             "expected": "Úklid",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Úklid podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -33088,24 +33763,36 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:07:34+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Čisticí prostředky",
+        "Na sklo a okna"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Čistič Clin s jemnou vůní citronu poskytuje dlouhotrvající lesk beze šmouh na oknech a jiných skleněných površích. Odstraňuje skvrny od vody, prach, n",
+      "taxonomy_checked_at": "2026-10-21T19:07:34+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Úklid",
+        "display_category": "Úklid",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Úklid"
         ],
         "rule_checks": {
           "W071": {
             "expected": "Úklid",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Úklid podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "blocked_http",
@@ -33389,10 +34076,23 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:09:54+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Kosmetika",
+        "Ústní hygiena",
+        "Zubní pasty",
+        "Běžné"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Zubní pasta Colgate se svěží mentolovou příchutí. Obsahuje fluorid, který zuby chrání před vznikem zubního kazu.PoužitíPasta je vhodná pro každodenní",
+      "taxonomy_checked_at": "2026-10-21T19:09:54+00:00",
       "category_v27": {
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
+        "evidence_state": "unmapped_merchant_path",
+        "probe_status": "category_found",
         "category": null,
         "display_category": "Ke kontrole",
         "source": null,
@@ -33406,7 +34106,7 @@
             "reason": "Kategorie neověřena u prodejce"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Cesta prodejce nemá schválené mapování"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -33647,10 +34347,23 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:10:12+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Kosmetika",
+        "Ústní hygiena",
+        "Zubní pasty",
+        "Běžné"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Zubní pasta Colgate Max fresh s chladivými krystaly je novou dimenzí svěžesti s technologií FreshFX, která vám poskytne 10krát déle trvající chladivý",
+      "taxonomy_checked_at": "2026-10-21T19:10:12+00:00",
       "category_v27": {
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
+        "evidence_state": "unmapped_merchant_path",
+        "probe_status": "category_found",
         "category": null,
         "display_category": "Ke kontrole",
         "source": null,
@@ -33664,7 +34377,7 @@
             "reason": "Kategorie neověřena u prodejce"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Cesta prodejce nemá schválené mapování"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -33819,10 +34532,23 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:10:03+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Kosmetika",
+        "Ústní hygiena",
+        "Zubní pasty",
+        "Běžné"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Zubní pasta Triple action zajišťuje ochranu před zubním kazem, bílé zuby a svěží dech. Napomáhá chránit před bakteriemi způsobujícími zubní kaz, reduk",
+      "taxonomy_checked_at": "2026-10-21T19:10:03+00:00",
       "category_v27": {
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
+        "evidence_state": "unmapped_merchant_path",
+        "probe_status": "category_found",
         "category": null,
         "display_category": "Ke kontrole",
         "source": null,
@@ -33836,7 +34562,7 @@
             "reason": "Kategorie neověřena u prodejce"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Cesta prodejce nemá schválené mapování"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -33862,10 +34588,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-21T19:00:36+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Kosmetika",
         "Ústní hygiena",
@@ -33875,6 +34597,10 @@
       "category_source": "jsonld_breadcrumb",
       "product_description": "Zubní pasta Colgate Whitening pomáhá obnovit přirozenou bělost vašich zubů. Tato zubní pasta byla vyvinuta na základě dlouhodobých vědeckých zkušenost",
       "taxonomy_checked_at": "2026-10-21T19:00:36+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-21T19:00:36+00:00",
+      "v27_category_probe_attempts": 1,
       "category_v27": {
         "status": "review",
         "evidence_state": "unmapped_merchant_path",
@@ -35001,10 +35727,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-21T19:00:45+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Mléčné a chlazené",
         "Sýry",
@@ -35014,6 +35736,10 @@
       "category_source": "jsonld_breadcrumb",
       "product_description": "Měkký nezrající polotučný pařený sýr ve slaném nálevu.Galbani Mozzarella Light se uplatní ve zdravém a vyváženém jídelníčku. Obsahuje totiž jen pouhýc",
       "taxonomy_checked_at": "2026-10-21T19:00:45+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-21T19:00:45+00:00",
+      "v27_category_probe_attempts": 1,
       "category_v27": {
         "status": "review",
         "evidence_state": "unmapped_merchant_path",
@@ -35444,10 +36170,22 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:05:14+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Majonézy, tatarské omáčky a dresingy",
+        "Majonézy"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Krémová majonéza&nbsp;Hellmann’s s jemnou konzistencí a vyváženou chutí. Vzniká z pečlivě vybraných surovin – kvalitního rostlinného oleje, vajec z vo",
+      "taxonomy_checked_at": "2026-10-21T19:05:14+00:00",
       "category_v27": {
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
+        "evidence_state": "unmapped_merchant_path",
+        "probe_status": "category_found",
         "category": null,
         "display_category": "Ke kontrole",
         "source": null,
@@ -35461,7 +36199,7 @@
             "reason": "Kategorie neověřena u prodejce"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -35573,10 +36311,22 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:08:01+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Majonézy, tatarské omáčky a dresingy",
+        "Majonézy"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Hellmann’s Majonéza Delikátní má krémovou konzistenci a jemně nasládlou chuť, která ji odlišuje od klasické majonézy. Má vyvážený profil a vzniká z pe",
+      "taxonomy_checked_at": "2026-10-21T19:08:01+00:00",
       "category_v27": {
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
+        "evidence_state": "unmapped_merchant_path",
+        "probe_status": "category_found",
         "category": null,
         "display_category": "Ke kontrole",
         "source": null,
@@ -35590,7 +36340,7 @@
             "reason": "Kategorie neověřena u prodejce"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -36077,13 +36827,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:07:00+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Mytí nádobí",
+        "Prostředky na ruční mytí"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Objevte všechny produkty Jar.Ať už se jedná o talíře a skleničky nebo hrnce a pánve – účinné složení Jaru si poradí s mastnotou i velice znečištěným n",
+      "taxonomy_checked_at": "2026-10-21T19:07:00+00:00",
       "category_v27": {
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Úklid",
+        "display_category": "Úklid",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Úklid"
         ],
@@ -36091,10 +36853,10 @@
           "W072": {
             "expected": "Úklid",
             "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "reason": "Kategorie prodejce potvrzuje sortiment, ale ne konkrétní variantu sledovaného pravidla"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Úklid podle cesty prodejce; konkrétní typ dle pravidel zatím nelze potvrdit: Úklid"
       },
       "price_diagnostic_v27": {
         "status": "blocked_http",
@@ -37225,10 +37987,23 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:10:20+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plísňové, zrající, pařené a uzené",
+        "Plísňové a zrající"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Hermelín od značky Král sýrů je vláčný sýr s jemnou chutí a krémovou konzistencí.Ušlechtilá plíseň doprovází zrající proces sýru a dodá mu osobité aro",
+      "taxonomy_checked_at": "2026-10-21T19:10:20+00:00",
       "category_v27": {
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
+        "evidence_state": "unmapped_merchant_path",
+        "probe_status": "category_found",
         "category": null,
         "display_category": "Ke kontrole",
         "source": null,
@@ -37242,7 +38017,7 @@
             "reason": "Kategorie neověřena u prodejce"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -37949,24 +38724,36 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:06:07+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Uzeniny a lahůdky",
+        "Šunky a slaniny",
+        "Drůbeží"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Dušená šunka nejvyšší jakosti je vyrobena z chlazených kuřecích prsou.Dětská kuřecí šunka je charakteristická nízkým obsahem přídatných látek \"E\". Kuř",
+      "taxonomy_checked_at": "2026-10-21T19:06:07+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Uzeniny / šunky",
+        "display_category": "Uzeniny / šunky",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Uzeniny / šunky"
         ],
         "rule_checks": {
           "W006": {
             "expected": "Uzeniny / šunky",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Šunky podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "blocked_http",
@@ -38078,24 +38865,36 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:04:48+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Uzeniny a lahůdky",
+        "Šunky a slaniny",
+        "Vepřové"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Dušená šunka výběrová je vyrobena z vybraných šálů vepřové kýty. Podíl masa v šunce je 85 %.Struktura je většinou tvořena z jedné nebo několika málo s",
+      "taxonomy_checked_at": "2026-10-21T19:04:48+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Uzeniny / šunky",
+        "display_category": "Uzeniny / šunky",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Uzeniny / šunky"
         ],
         "rule_checks": {
           "W006": {
             "expected": "Uzeniny / šunky",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Šunky podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "blocked_http",
@@ -38121,24 +38920,36 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:04:57+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Uzeniny a lahůdky",
+        "Šunky a slaniny",
+        "Drůbeží"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Výběrová šunka je vyrobena z chlazených krůtích prsou, lehce zauzena přírodním kouřem.&nbsp;Podíl masa v šunce je 85&nbsp;%.Struktura je většinou tvoř",
+      "taxonomy_checked_at": "2026-10-21T19:04:57+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Uzeniny / šunky",
+        "display_category": "Uzeniny / šunky",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Uzeniny / šunky"
         ],
         "rule_checks": {
           "W006": {
             "expected": "Uzeniny / šunky",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Šunky podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "blocked_http",
@@ -38250,10 +39061,6 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-21T19:00:54+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Uzeniny a lahůdky",
         "Šunky a slaniny",
@@ -38262,6 +39069,10 @@
       "category_source": "jsonld_breadcrumb",
       "product_description": "Šunka nejvyšší jakosti je vyrobena z vybrané šálů vepřové kýty. Podíl masa v šunce je 95 %.Struktura je většinou tvořena z jedné nebo několika málo sv",
       "taxonomy_checked_at": "2026-10-21T19:00:54+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-21T19:00:54+00:00",
+      "v27_category_probe_attempts": 1,
       "category_v27": {
         "status": "verified",
         "evidence_state": "mapped",
@@ -38581,10 +39392,6 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-21T19:00:18+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Mléčné a chlazené",
         "Sýry",
@@ -38594,6 +39401,10 @@
       "category_source": "jsonld_breadcrumb",
       "product_description": "Polotučný plátkový sýr.Leerdammer Lightlife je holandský polotvrdý polotučný sýr, který vás překvapí oříškovou chutí a nižším obsahem tuku o 38 %. Sýr",
       "taxonomy_checked_at": "2026-10-21T19:00:18+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-21T19:00:18+00:00",
+      "v27_category_probe_attempts": 1,
       "category_v27": {
         "status": "verified",
         "evidence_state": "mapped",
@@ -39755,10 +40566,22 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:09:28+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Dítě",
+        "Pleny a ubrousky",
+        "Vlhčené ubrousky"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Čistící ubrousky napuštěné pečujícím mlékem s výtažky z aloe vera.Ubrousky jsou ideální pro jemnou a šetrnou očistu pokožky vašeho děťátka. Udržují př",
+      "taxonomy_checked_at": "2026-10-21T19:09:28+00:00",
       "category_v27": {
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
+        "evidence_state": "unmapped_merchant_path",
+        "probe_status": "category_found",
         "category": null,
         "display_category": "Ke kontrole",
         "source": null,
@@ -39772,7 +40595,7 @@
             "reason": "Kategorie neověřena u prodejce"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Cesta prodejce nemá schválené mapování"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -39798,24 +40621,37 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:07:43+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Papírová a vatová hygiena",
+        "Ubrousky a utěrky",
+        "Kuchyňské utěrky"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Tyto jemné bílé kuchyňské utěrky Linteo jsou baleny po 2 rolích.Papír je vyroben ze 100% celulózy a je ozdoben zeleným prolisem. U těchto kuchyňských",
+      "taxonomy_checked_at": "2026-10-21T19:07:43+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Papírové utěrky",
+        "display_category": "Papírové utěrky",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Papírové utěrky"
         ],
         "rule_checks": {
           "W074": {
             "expected": "Papírové utěrky",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Papírové utěrky podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -39841,24 +40677,37 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:09:02+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Papírová a vatová hygiena",
+        "Ubrousky a utěrky",
+        "Kuchyňské utěrky"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Jemné bílé kuchyňské utěrky Linteo XXL jsou baleny po jednom kuse, přičemž jedna&nbsp;role má návin jako pět&nbsp;klasických rolí.Balení je praktické",
+      "taxonomy_checked_at": "2026-10-21T19:09:02+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Papírové utěrky",
+        "display_category": "Papírové utěrky",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Papírové utěrky"
         ],
         "rule_checks": {
           "W074": {
             "expected": "Papírové utěrky",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Papírové utěrky podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -39927,10 +40776,22 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:10:38+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Dítě",
+        "Pleny a ubrousky",
+        "Vlhčené ubrousky"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Dětské vlhčené ubrousky s měsíčkem lékařským.Čistící ubrousky napuštěné pečujícím mlékem s obsahem extraktu měsíčku lékařského. Čistí, zjemňují a chrá",
+      "taxonomy_checked_at": "2026-10-21T19:10:38+00:00",
       "category_v27": {
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
+        "evidence_state": "unmapped_merchant_path",
+        "probe_status": "category_found",
         "category": null,
         "display_category": "Ke kontrole",
         "source": null,
@@ -39944,7 +40805,7 @@
             "reason": "Kategorie neověřena u prodejce"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Cesta prodejce nemá schválené mapování"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -39970,24 +40831,37 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:10:29+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Papírová a vatová hygiena",
+        "Toaletní papír",
+        "Vlhčený"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Vlhčený toaletní papír Linteo Kids pomáhá zpříjemnit dětem toaletní návyky a celkový přístup k hygieně.Provitamín B5 a extrakt z heřmánku chrání dětsk",
+      "taxonomy_checked_at": "2026-10-21T19:10:29+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "mismatch",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Papír a hygiena",
+        "display_category": "Papír a hygiena",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Papír a hygiena"
         ],
         "rule_checks": {
           "W054": {
             "expected": "Papír a hygiena",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "mismatch",
+            "reason": "Podkategorie e-shopu je papír, nikoli vlhčené ubrousky"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Papírová hygiena podle cesty prodejce; typ je neověřený; nesoulad s pravidly: Papír a hygiena"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -40013,24 +40887,37 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:08:53+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Papírová a vatová hygiena",
+        "Ubrousky a utěrky",
+        "Kuchyňské utěrky"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Jemné bílé dvouvrstvé kuchyňské utěrky Linteo jsou baleny po 4 kusech. Papír je vyroben ze 100% celulózy. Balení obsahuje 4 x 48 útržků.PoužitíPapírov",
+      "taxonomy_checked_at": "2026-10-21T19:08:53+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Papírové utěrky",
+        "display_category": "Papírové utěrky",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Papírové utěrky"
         ],
         "rule_checks": {
           "W074": {
             "expected": "Papírové utěrky",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Papírové utěrky podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -40314,10 +41201,23 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:09:19+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Papírová a vatová hygiena",
+        "Ubrousky a utěrky",
+        "Vlhčené ubrousky na úklid"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Vlhčené ubrousky Linteo Satin jsou vhodné pro všestranné použití v domácnosti.PoužitíUbrousky využijete při utírání různých povrchů ve vaší domácnosti",
+      "taxonomy_checked_at": "2026-10-21T19:09:19+00:00",
       "category_v27": {
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
+        "evidence_state": "unmapped_merchant_path",
+        "probe_status": "category_found",
         "category": null,
         "display_category": "Ke kontrole",
         "source": null,
@@ -40331,7 +41231,7 @@
             "reason": "Kategorie neověřena u prodejce"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Nesledovaná podkategorie drogerie"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -40400,24 +41300,37 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:09:11+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Papírová a vatová hygiena",
+        "Toaletní papír",
+        "Vlhčený"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Vlhčený toaletní papír s extraktem z dubové kůry se užívá po použití či místo toaletního papíru pro pocit čistoty a svěžesti a pro kvalitnější hygienu",
+      "taxonomy_checked_at": "2026-10-21T19:09:11+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "mismatch",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Papír a hygiena",
+        "display_category": "Papír a hygiena",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Papír a hygiena"
         ],
         "rule_checks": {
           "W054": {
             "expected": "Papír a hygiena",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "mismatch",
+            "reason": "Podkategorie e-shopu je papír, nikoli vlhčené ubrousky"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Papírová hygiena podle cesty prodejce; typ je neověřený; nesoulad s pravidly: Papír a hygiena"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -41170,24 +42083,37 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:09:45+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plátkové",
+        "Ementálský typ"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Madeland, plátkovaný polotvrdý sýr holandského typu s tvorbou ok uvnitř. Obsah tuku v sušině je 30 %.Madeland je sýr se smetanově žlutou barvou, vláčn",
+      "taxonomy_checked_at": "2026-10-21T19:09:45+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Sýry / plátkové",
+        "display_category": "Sýry / plátkové",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Sýry / plátkové"
         ],
         "rule_checks": {
           "W017": {
             "expected": "Sýry / plátkové",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Plátkové sýry podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -42966,13 +43892,27 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:08:09+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Trvanlivé",
+        "Sladkosti",
+        "Čokolády",
+        "Hořké čokolády",
+        "Hořké čokolády s oříšky"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Hořká čokoláda s arašídy, želé a rozinkami.PoužitíUrčeno k přímé konzumaci.O výrobciNestlé je švýcarská nadnárodní společnost se sídlem ve Vevey ve Šv",
+      "taxonomy_checked_at": "2026-10-21T19:08:09+00:00",
       "category_v27": {
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Sladké",
+        "display_category": "Sladké",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Sladké"
         ],
@@ -42980,10 +43920,10 @@
           "W048": {
             "expected": "Sladké",
             "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "reason": "Kategorie prodejce potvrzuje sortiment, ale ne konkrétní variantu sledovaného pravidla"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Sladkosti podle cesty prodejce; konkrétní typ dle pravidel zatím nelze potvrdit: Sladké"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -44117,10 +45057,23 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:05:41+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Kosmetika",
+        "Ústní hygiena",
+        "Zubní pasty",
+        "Problémy s dásněmi"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Parodontax Classic je zubní pasta bez fluoridu pro zdravější dásně.Zubní pasta parodontax Classic při čištění zubů 2× denně pomáhá zastavit a předcház",
+      "taxonomy_checked_at": "2026-10-21T19:05:41+00:00",
       "category_v27": {
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
+        "evidence_state": "unmapped_merchant_path",
+        "probe_status": "category_found",
         "category": null,
         "display_category": "Ke kontrole",
         "source": null,
@@ -44134,7 +45087,7 @@
             "reason": "Kategorie neověřena u prodejce"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Cesta prodejce nemá schválené mapování"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -44246,10 +45199,23 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:05:50+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Kosmetika",
+        "Ústní hygiena",
+        "Zubní pasty",
+        "Problémy s dásněmi"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Parodontax Whitening je zubní pasta ke každodennímu použití s obsahem fluoridu pro zdravější dásně a silnější zuby.Zubní pasta parodontax Whitening še",
+      "taxonomy_checked_at": "2026-10-21T19:05:50+00:00",
       "category_v27": {
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
+        "evidence_state": "unmapped_merchant_path",
+        "probe_status": "category_found",
         "category": null,
         "display_category": "Ke kontrole",
         "source": null,
@@ -44263,7 +45229,7 @@
             "reason": "Kategorie neověřena u prodejce"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Cesta prodejce nemá schválené mapování"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -45106,24 +46072,37 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:06:33+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Prací prostředky",
+        "Prací prášky",
+        "Univerzální"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Persil Deep Clean Expert Sensitive prací prášek pro citlivou pokožku. Prášek byl speciálně navržen tak, aby zajistil hloubkovou čistotu vašeho prádla",
+      "taxonomy_checked_at": "2026-10-21T19:06:33+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Praní",
+        "display_category": "Praní",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Praní"
         ],
         "rule_checks": {
           "W062": {
             "expected": "Praní",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Praní podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -46165,24 +47144,37 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:06:42+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plátkové",
+        "Cheddar"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Cheddar je původem z Anglie, získá si vás&nbsp;jemnou nasládlou chutí, která se s dobou zrání stává ještě výraznější.PoužitíHodí se při každé příleži",
+      "taxonomy_checked_at": "2026-10-21T19:06:42+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Sýry / plátkové",
+        "display_category": "Sýry / plátkové",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Sýry / plátkové"
         ],
         "rule_checks": {
           "W019": {
             "expected": "Sýry / plátkové",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Plátkové sýry podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "blocked_http",
@@ -46251,24 +47243,37 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:05:58+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plátkové",
+        "Ementálský typ"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Plátkový sýr Emmental Président.Tvrdý sýr s oky, který vám nabídne jemnou, lehce nasládlou chuť s vůní po oříšcích. K jeho výrobě se používá střed sýr",
+      "taxonomy_checked_at": "2026-10-21T19:05:58+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Sýry / plátkové",
+        "display_category": "Sýry / plátkové",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Sýry / plátkové"
         ],
         "rule_checks": {
           "W019": {
             "expected": "Sýry / plátkové",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Plátkové sýry podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "blocked_http",
@@ -46509,24 +47514,37 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:04:39+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Smetanové, cottage a tavené",
+        "Tavené"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Plátkový sýr Emmental Président.Tavený sýr, který vám nabídne jemnou, lehce nasládlou chuť s vůní po oříšcích. K jeho výrobě se používá střed sýrového",
+      "taxonomy_checked_at": "2026-10-21T19:04:39+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "mismatch",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Sýry / tavené",
+        "display_category": "Sýry / tavené",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Sýry / plátkové"
         ],
         "rule_checks": {
           "W019": {
             "expected": "Sýry / plátkové",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "mismatch",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Tavené sýry podle cesty prodejce; nesoulad s pravidly: Sýry / plátkové"
       },
       "price_diagnostic_v27": {
         "status": "blocked_http",
@@ -47660,24 +48678,37 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:08:36+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Prací prostředky",
+        "Odstraňovače skvrn",
+        "Tekuté"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Tekutý prostředek pro předpírání a praní bílého a stálobarevného prádla navrátí vašemu prádlu ztracenou bělost.Speciální mikrosmáčedlo v jeho složení",
+      "taxonomy_checked_at": "2026-10-21T19:08:36+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "mismatch",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Praní",
+        "display_category": "Praní",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Úklid"
         ],
         "rule_checks": {
           "W069": {
             "expected": "Úklid",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "mismatch",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Praní podle cesty prodejce; nesoulad s pravidly: Úklid"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -47875,24 +48906,37 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:08:27+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Čisticí prostředky",
+        "Koupelna a WC",
+        "Čištění koupelny"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Savo proti plísním je tekutý dezinfekční přípravek ve spreji, který účinně odstraňuje plísně, kvasinky, řasy a houby již po prvním použití. Povrchy ne",
+      "taxonomy_checked_at": "2026-10-21T19:08:27+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Úklid",
+        "display_category": "Úklid",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Úklid"
         ],
         "rule_checks": {
           "W069": {
             "expected": "Úklid",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Úklid podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -48004,24 +49048,37 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:06:16+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Čisticí prostředky",
+        "Koupelna a WC",
+        "Čištění WC"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Savo WC čistič s vůní oceánu se postará o zářivě bílou toaletu bez usazenin. Jeho účinné složení odstraní vodní kámen a příjemná vůně oceánu vaši toal",
+      "taxonomy_checked_at": "2026-10-21T19:06:16+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Úklid",
+        "display_category": "Úklid",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Úklid"
         ],
         "rule_checks": {
           "W069": {
             "expected": "Úklid",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Úklid podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -48047,24 +49104,37 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:08:18+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Čisticí prostředky",
+        "Koupelna a WC",
+        "Čištění WC"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Savo WC Turbo účinně odstraňuje vodní kámen v toaletě a vyčistí i hluboce usazené nečistoty. Příjemná vůně zanechá vaši toaletu svěží po dlouhou dobu.",
+      "taxonomy_checked_at": "2026-10-21T19:08:18+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Úklid",
+        "display_category": "Úklid",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Úklid"
         ],
         "rule_checks": {
           "W069": {
             "expected": "Úklid",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Úklid podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -48262,10 +49332,23 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:05:23+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Na gril, fondue a raclette",
+        "Na gril a pánev"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Sedlčanský hermelín, krémový sýr s ušlechtilou plísní na povrchu se skvěle hodí na gril.Balení obsahuje 4&nbsp;hermelíny&nbsp;a grilovací koření.Použi",
+      "taxonomy_checked_at": "2026-10-21T19:05:23+00:00",
       "category_v27": {
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
+        "evidence_state": "unmapped_merchant_path",
+        "probe_status": "category_found",
         "category": null,
         "display_category": "Ke kontrole",
         "source": null,
@@ -48279,7 +49362,7 @@
             "reason": "Kategorie neověřena u prodejce"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
       },
       "price_diagnostic_v27": {
         "status": "price_read_unverified",
@@ -48305,10 +49388,23 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:05:32+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plísňové, zrající, pařené a uzené",
+        "Plísňové a zrající"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Český sýr s příjemnou, lehce slanou chutí, ušlechtilou bílou plísní a vláčně prozrálou konzistencí.Sedlčanský Hermelín je vyroben podle původní sýrařs",
+      "taxonomy_checked_at": "2026-10-21T19:05:32+00:00",
       "category_v27": {
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
+        "evidence_state": "unmapped_merchant_path",
+        "probe_status": "category_found",
         "category": null,
         "display_category": "Ke kontrole",
         "source": null,
@@ -48322,7 +49418,7 @@
             "reason": "Kategorie neověřena u prodejce"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -48477,10 +49573,6 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-21T19:00:27+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Kosmetika",
         "Ústní hygiena",
@@ -48490,6 +49582,10 @@
       "category_source": "jsonld_breadcrumb",
       "product_description": "Zubní pasta Signal Family care Herbal fresh obsahuje bohatou směs přírodních výtažků, mezi kterými jsou máta, šalvěj, myrha a eukalyptus, známé pro je",
       "taxonomy_checked_at": "2026-10-21T19:00:27+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-21T19:00:27+00:00",
+      "v27_category_probe_attempts": 1,
       "category_v27": {
         "status": "review",
         "evidence_state": "unmapped_merchant_path",
@@ -49914,10 +51010,23 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:08:45+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Kosmetika",
+        "Vlasová péče",
+        "Šampony",
+        "Pro muže"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Šampon pro muže Syoss Power &amp; Strength je určený pro normální vlasy, které posiluje a oživuje. Jeho vysoce účinná receptura osvěžuje vlasy i pokož",
+      "taxonomy_checked_at": "2026-10-21T19:08:45+00:00",
       "category_v27": {
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
+        "evidence_state": "unmapped_merchant_path",
+        "probe_status": "category_found",
         "category": null,
         "display_category": "Ke kontrole",
         "source": null,
@@ -49931,7 +51040,7 @@
             "reason": "Kategorie neověřena u prodejce"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Cesta prodejce nemá schválené mapování"
       },
       "price_diagnostic_v27": {
         "status": "blocked_http",
@@ -50139,24 +51248,37 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:06:51+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Prací prostředky",
+        "Odstraňovače skvrn",
+        "Tekuté"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Odstraňovač skvrn ve spreji účinně zbavuje skrvn na vašem oblečení.ConsumerCare_CZ@reckitt.com Konkrétní varianta obalu bude dodána dle aktuální sklad",
+      "taxonomy_checked_at": "2026-10-21T19:06:51+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Praní",
+        "display_category": "Praní",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Praní"
         ],
         "rule_checks": {
           "W065": {
             "expected": "Praní",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "E-shop potvrzuje kategorii odstraňovačů skvrn"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Praní podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -50354,24 +51476,37 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:09:37+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Prací prostředky",
+        "Odstraňovače skvrn",
+        "Tekuté"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Powergel odstraňovač skvrn účinně zbavuje skrvn na vašem oblečení.ConsumerCare_CZ@reckitt.com Konkrétní varianta obalu bude doručena dle aktuální skla",
+      "taxonomy_checked_at": "2026-10-21T19:09:37+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Praní",
+        "display_category": "Praní",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Praní"
         ],
         "rule_checks": {
           "W065": {
             "expected": "Praní",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "E-shop potvrzuje kategorii odstraňovačů skvrn"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Praní podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -50503,10 +51638,22 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:05:05+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Sýrové snacky a pro děti"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Sýr a křup je praktický snack kombinující jemný a krémový tavený sýr s křupavými tyčinkami. Díky praktickému balení si můžete snadno užít rychlou a ch",
+      "taxonomy_checked_at": "2026-10-21T19:05:05+00:00",
       "category_v27": {
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
+        "evidence_state": "unmapped_merchant_path",
+        "probe_status": "category_found",
         "category": null,
         "display_category": "Ke kontrole",
         "source": null,
@@ -50520,7 +51667,7 @@
             "reason": "Kategorie neověřena u prodejce"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -50824,13 +51971,26 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:07:52+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Papírová a vatová hygiena",
+        "Toaletní papír",
+        "Vlhčený"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Vlhčený toaletní papír Zewa Almond Milk je příjemně hebký a hýčká pokožku na dotek. Po jeho použití budete mít pocit luxusní čistoty. Splachovatelný a",
+      "taxonomy_checked_at": "2026-10-21T19:07:52+00:00",
       "category_v27": {
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Papír a hygiena",
+        "display_category": "Papír a hygiena",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Papír a hygiena"
         ],
@@ -50838,10 +51998,10 @@
           "W053": {
             "expected": "Papír a hygiena",
             "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "reason": "Kategorie prodejce potvrzuje sortiment, ale ne konkrétní variantu sledovaného pravidla"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Papírová hygiena podle cesty prodejce; typ je neověřený; konkrétní typ dle pravidel zatím nelze potvrdit: Papír a hygiena"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -50910,13 +52070,26 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:10:55+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Papírová a vatová hygiena",
+        "Toaletní papír",
+        "3 vrstvý"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Bílý třívrstvý toaletní papír s jemnou ražbou, skutečnou vůní heřmánku a nadýchanými polštářky, které zaručí pocit maximálního pohodlí. OdorBlock™&nbs",
+      "taxonomy_checked_at": "2026-10-21T19:10:55+00:00",
       "category_v27": {
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Papír a hygiena",
+        "display_category": "Papír a hygiena",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Papír a hygiena"
         ],
@@ -50924,10 +52097,10 @@
           "W053": {
             "expected": "Papír a hygiena",
             "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "reason": "Kategorie prodejce potvrzuje sortiment, ale ne konkrétní variantu sledovaného pravidla"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Papírová hygiena podle cesty prodejce; typ je neověřený; konkrétní typ dle pravidel zatím nelze potvrdit: Papír a hygiena"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -50996,13 +52169,26 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:11:04+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Papírová a vatová hygiena",
+        "Toaletní papír",
+        "3 vrstvý"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Pokud hledáte klasický bílý třívrstvý toaletní papír bez jakékoli parfemace, ale s maximální účinností a péčí o pokožku, toto je pro vás ideální volba",
+      "taxonomy_checked_at": "2026-10-21T19:11:04+00:00",
       "category_v27": {
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Papír a hygiena",
+        "display_category": "Papír a hygiena",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Papír a hygiena"
         ],
@@ -51010,10 +52196,10 @@
           "W053": {
             "expected": "Papír a hygiena",
             "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "reason": "Kategorie prodejce potvrzuje sortiment, ale ne konkrétní variantu sledovaného pravidla"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Papírová hygiena podle cesty prodejce; typ je neověřený; konkrétní typ dle pravidel zatím nelze potvrdit: Papír a hygiena"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -51039,13 +52225,26 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:11:13+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Papírová a vatová hygiena",
+        "Toaletní papír",
+        "3 vrstvý"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Pokud hledáte klasický bílý třívrstvý toaletní papír bez jakékoli parfemace, ale s maximální účinností a péčí o pokožku, tento výrobek je pro vás ideá",
+      "taxonomy_checked_at": "2026-10-21T19:11:13+00:00",
       "category_v27": {
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Papír a hygiena",
+        "display_category": "Papír a hygiena",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Papír a hygiena"
         ],
@@ -51053,10 +52252,10 @@
           "W053": {
             "expected": "Papír a hygiena",
             "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "reason": "Kategorie prodejce potvrzuje sortiment, ale ne konkrétní variantu sledovaného pravidla"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Papírová hygiena podle cesty prodejce; typ je neověřený; konkrétní typ dle pravidel zatím nelze potvrdit: Papír a hygiena"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -51125,13 +52324,27 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:11:48+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Papírová a vatová hygiena",
+        "Kapesníky",
+        "V krabičce",
+        "3 vrstvé"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Tři vrstvy dokonale měkkého a zároveň pevného papíru dělají z kapesníků Zewa Deluxe Design ideální volbu dvou produktů v jednom. Kapesníky Zewa jsou t",
+      "taxonomy_checked_at": "2026-10-21T19:11:48+00:00",
       "category_v27": {
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Papír a hygiena",
+        "display_category": "Papír a hygiena",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Kapesníky / krabice"
         ],
@@ -51139,10 +52352,10 @@
           "W075": {
             "expected": "Kapesníky / krabice",
             "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "reason": "Širší kategorie prodejce nezaručuje konkrétní typ"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Papírová hygiena podle cesty prodejce; typ je neověřený; konkrétní typ dle pravidel zatím nelze potvrdit: Kapesníky / krabice"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -51168,13 +52381,27 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:11:39+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Papírová a vatová hygiena",
+        "Kapesníky",
+        "V balíčku",
+        "3 vrstvé"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Tyto třívrstvé kapesníčky jsou příjemně měkké a zároveň tak pevné, že přežijí i náhodný pobyt v pračce – i při pracím cyklu s intenzivním odstřeďování",
+      "taxonomy_checked_at": "2026-10-21T19:11:39+00:00",
       "category_v27": {
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Papír a hygiena",
+        "display_category": "Papír a hygiena",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Kapesníky / balíčky"
         ],
@@ -51182,10 +52409,10 @@
           "W073": {
             "expected": "Kapesníky / balíčky",
             "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "reason": "Širší kategorie prodejce nezaručuje konkrétní typ"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Papírová hygiena podle cesty prodejce; typ je neověřený; konkrétní typ dle pravidel zatím nelze potvrdit: Kapesníky / balíčky"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -51254,13 +52481,26 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:10:46+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Papírová a vatová hygiena",
+        "Toaletní papír",
+        "4 vrstvý"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Zewa Ultra Soft je čtyřvrstvý toaletní papír vyrobený ze 100% celulózy. Hebká textura toho nejjemnějšího papíru Zewa Ultra Soft,&nbsp;poskytuje vaší p",
+      "taxonomy_checked_at": "2026-10-21T19:10:46+00:00",
       "category_v27": {
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Papír a hygiena",
+        "display_category": "Papír a hygiena",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Papír a hygiena"
         ],
@@ -51268,10 +52508,10 @@
           "W053": {
             "expected": "Papír a hygiena",
             "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "reason": "Kategorie prodejce potvrzuje sortiment, ale ne konkrétní variantu sledovaného pravidla"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Papírová hygiena podle cesty prodejce; typ je neověřený; konkrétní typ dle pravidel zatím nelze potvrdit: Papír a hygiena"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -51297,24 +52537,37 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:11:30+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Papírová a vatová hygiena",
+        "Ubrousky a utěrky",
+        "Kuchyňské utěrky"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Největší balení kuchyňských utěrek zaručujících pohodlí a čistotu na dlouhou dobu. Recyklovatelný obal. Certifikace FSC.&nbsp; Role obsahuje 325 útržk",
+      "taxonomy_checked_at": "2026-10-21T19:11:30+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Papírové utěrky",
+        "display_category": "Papírové utěrky",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Papírové utěrky"
         ],
         "rule_checks": {
           "W074": {
             "expected": "Papírové utěrky",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Papírové utěrky podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -51469,24 +52722,37 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-21T19:11:21+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Papírová a vatová hygiena",
+        "Ubrousky a utěrky",
+        "Kuchyňské utěrky"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Dvouvrstvé kuchyňské utěrky s nejvyšší Zewa kvalitou. Speciální technologie výroby zaručuje vysokou absorpci a odolnost proti protržení i při namočení",
+      "taxonomy_checked_at": "2026-10-21T19:11:21+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": null,
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Papírové utěrky",
+        "display_category": "Papírové utěrky",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Papírové utěrky"
         ],
         "rule_checks": {
           "W074": {
             "expected": "Papírové utěrky",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Papírové utěrky podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -51613,7 +52879,7 @@
   },
   "v27_probe_control": {
     "shop_backoff_until": {},
-    "last_batch_at": "2026-10-21T19:00:54+00:00"
+    "last_batch_at": "2026-10-21T19:11:48+00:00"
   },
   "v27_audit": {
     "rules_configured": 75,
@@ -51632,7 +52898,7 @@
     ],
     "unknown_rule_ids": [],
     "schema": "rk-v27-taxonomy-audit",
-    "generated_at": "2026-10-21T19:00:55+00:00",
+    "generated_at": "2026-10-21T19:11:48+00:00",
     "source_generated_at": "2026-10-21T14:12:55+00:00",
     "products_before": 1090,
     "products_after": 1090,
@@ -51640,19 +52906,19 @@
     "priced_after": 894,
     "missing_prices": 196,
     "category_statuses": {
-      "review": 944,
-      "verified": 140,
-      "mismatch": 6
+      "review": 873,
+      "verified": 205,
+      "mismatch": 12
     },
     "rule_match_statuses": {
-      "review": 945,
-      "verified": 143,
-      "mismatch": 6
+      "review": 874,
+      "verified": 208,
+      "mismatch": 12
     },
-    "merchant_category_mapped": 211,
-    "merchant_category_unmapped": 879,
-    "products_with_merchant_category_but_rule_review": 65,
-    "products_with_merchant_category_but_rule_mismatch": 6,
+    "merchant_category_mapped": 291,
+    "merchant_category_unmapped": 799,
+    "products_with_merchant_category_but_rule_review": 74,
+    "products_with_merchant_category_but_rule_mismatch": 12,
     "price_diagnostics": {
       "ok": 894,
       "price_read_unverified": 27,
@@ -51683,12 +52949,12 @@
       "Košík": 556,
       "Rohlík": 534
     },
-    "review_count": 950,
-    "retailer_path_present": 222,
-    "retailer_path_missing": 868,
-    "trusted_retailer_path": 221,
-    "trusted_but_unmapped": 10,
-    "untrusted_or_missing_path": 869,
+    "review_count": 885,
+    "retailer_path_present": 321,
+    "retailer_path_missing": 769,
+    "trusted_retailer_path": 320,
+    "trusted_but_unmapped": 29,
+    "untrusted_or_missing_path": 770,
     "source_price_evidence_unchanged": true,
     "source_items_unchanged": true,
     "category_mapping_method": "trusted merchant path only; specific rule checks for meat and produce; no titles"
