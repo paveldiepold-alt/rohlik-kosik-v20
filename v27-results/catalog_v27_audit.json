@@ -1,0 +1,78 @@
+{
+  "rules_configured": 75,
+  "rules_with_products": 73,
+  "rules_without_products": [
+    {
+      "id": "W008",
+      "label": "Šunky – Wein",
+      "category": "Uzeniny / šunky"
+    },
+    {
+      "id": "W033",
+      "label": "Aquila – neperlivá, jemně perlivá, kojenecká",
+      "category": "Nápoje / vody"
+    }
+  ],
+  "unknown_rule_ids": [],
+  "schema": "rk-v27-taxonomy-audit",
+  "generated_at": "2026-10-21T19:00:55+00:00",
+  "source_generated_at": "2026-10-21T14:12:55+00:00",
+  "products_before": 1090,
+  "products_after": 1090,
+  "priced_before": 894,
+  "priced_after": 894,
+  "missing_prices": 196,
+  "category_statuses": {
+    "review": 944,
+    "verified": 140,
+    "mismatch": 6
+  },
+  "rule_match_statuses": {
+    "review": 945,
+    "verified": 143,
+    "mismatch": 6
+  },
+  "merchant_category_mapped": 211,
+  "merchant_category_unmapped": 879,
+  "products_with_merchant_category_but_rule_review": 65,
+  "products_with_merchant_category_but_rule_mismatch": 6,
+  "price_diagnostics": {
+    "ok": 894,
+    "price_read_unverified": 27,
+    "blocked_http": 169
+  },
+  "price_by_shop": {
+    "Košík": {
+      "total": 556,
+      "priced": 554,
+      "missing": 2,
+      "diagnostics": {
+        "ok": 554,
+        "price_read_unverified": 2
+      }
+    },
+    "Rohlík": {
+      "total": 534,
+      "priced": 340,
+      "missing": 194,
+      "diagnostics": {
+        "price_read_unverified": 25,
+        "ok": 340,
+        "blocked_http": 169
+      }
+    }
+  },
+  "shops": {
+    "Košík": 556,
+    "Rohlík": 534
+  },
+  "review_count": 950,
+  "retailer_path_present": 222,
+  "retailer_path_missing": 868,
+  "trusted_retailer_path": 221,
+  "trusted_but_unmapped": 10,
+  "untrusted_or_missing_path": 869,
+  "source_price_evidence_unchanged": true,
+  "source_items_unchanged": true,
+  "category_mapping_method": "trusted merchant path only; specific rule checks for meat and produce; no titles"
+}

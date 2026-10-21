@@ -1,0 +1,1043 @@
+{
+  "schema": "rk-v27-merchant-path-review",
+  "number_of_distinct_trusted_paths": 52,
+  "mapped_product_total": 211,
+  "unmapped_or_mismatched_path_count": 9,
+  "without_trusted_path_by_shop": {
+    "Košík": 453,
+    "Rohlík": 416
+  },
+  "note": "Old rule categories are references for audit only; never proof of merchant classification.",
+  "paths": [
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Papriky a chilli papričky",
+        "Papriky"
+      ],
+      "mapped_category": "Zelenina",
+      "mapping_reason": "Zelenina podle cesty prodejce",
+      "product_count": 14,
+      "old_rule_categories": {
+        "Zelenina": 14
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p793992-bio-paprika-ramiro-2-ks",
+        "https://www.kosik.cz/p73137-bio-paprika-cervena-baleni",
+        "https://www.kosik.cz/p367374-bio-paprika-zluta-baleni"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Ovoce a zelenina",
+        "Ovoce",
+        "Banány a exotické ovoce"
+      ],
+      "mapped_category": "Ovoce",
+      "mapping_reason": "Ovoce podle cesty prodejce",
+      "product_count": 13,
+      "old_rule_categories": {
+        "Ovoce": 13
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1422409-avokado-hass-ready-to-eat-4-ks",
+        "https://www.rohlik.cz/1320523-avokado-hass-male-ready-to-eat-1-ks",
+        "https://www.rohlik.cz/707973-avokado-hass-velke-ready-to-eat-1-ks"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Maso a ryby",
+        "Drůbeží maso",
+        "Kuře",
+        "Stehna a čtvrtky"
+      ],
+      "mapped_category": "Maso",
+      "mapping_reason": "Syrové maso podle cesty prodejce; typ upřesňují pravidla",
+      "product_count": 12,
+      "old_rule_categories": {
+        "Maso": 12
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p545786-authentic-farmarska-kureci-stehna",
+        "https://www.kosik.cz/p416759-authentic-farmarska-kureci-stehna-spodni-palicky-6ks",
+        "https://www.kosik.cz/p787178-emi-food-kureci-stehenni-rizek-bez-kosti-volny-chov"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Kořenová zelenina",
+        "Mrkev"
+      ],
+      "mapped_category": "Zelenina",
+      "mapping_reason": "Zelenina podle cesty prodejce",
+      "product_count": 11,
+      "old_rule_categories": {
+        "Zelenina": 11
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p794880-bio-mrkev",
+        "https://www.kosik.cz/p389124-farma-hana-souckova-mrkev-oranzova-baleni",
+        "https://www.kosik.cz/p793250-fine-life-mrkev-prana-baleni"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Maso a ryby",
+        "Drůbež",
+        "Prsa a stehenní řízky",
+        "Prsa"
+      ],
+      "mapped_category": "Maso",
+      "mapping_reason": "Syrové maso podle cesty prodejce; typ upřesňují pravidla",
+      "product_count": 11,
+      "old_rule_categories": {
+        "Maso": 11
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1476819-amadori-bio-kureci-prsni-platky-innerfilet",
+        "https://www.rohlik.cz/1413888-amadori-bio-kureci-prso",
+        "https://www.rohlik.cz/1478059-banquet-kureci-prsa-sous-vide"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Papriky a chilli"
+      ],
+      "mapped_category": "Zelenina",
+      "mapping_reason": "Zelenina podle cesty prodejce",
+      "product_count": 11,
+      "old_rule_categories": {
+        "Zelenina": 11
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1410463-bio-paprika-cervena-1-ks",
+        "https://www.rohlik.cz/1418544-bio-paprika-zluta",
+        "https://www.rohlik.cz/1461616-baby-papriky-mix-zn-eat-me-baleni"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Maso a ryby",
+        "Vepřové",
+        "Krkovice a plec",
+        "Krkovice"
+      ],
+      "mapped_category": "Maso",
+      "mapping_reason": "Syrové maso podle cesty prodejce; typ upřesňují pravidla",
+      "product_count": 9,
+      "old_rule_categories": {
+        "Maso": 9
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1476268-dobre-reznictvi-veprova-krkovice-starena-min-21-dni",
+        "https://www.rohlik.cz/1408924-maso-veprova-krkovice-platky",
+        "https://www.rohlik.cz/1408923-maso-veprova-krkovice-v-celku"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Ovoce a zelenina",
+        "Ovoce",
+        "Hrozny a melouny"
+      ],
+      "mapped_category": "Ovoce",
+      "mapping_reason": "Ovoce podle cesty prodejce",
+      "product_count": 9,
+      "old_rule_categories": {
+        "Ovoce": 9
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1463058-bio-hrozny-bile-bezsemenne-baleni",
+        "https://www.rohlik.cz/1326877-hrozny-bezsemenne-mix-baleni",
+        "https://www.rohlik.cz/1356397-hrozny-bile-bezsemenne-volne-odr-autumncrisp-strapec"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Mrkev a kořenová zelenina"
+      ],
+      "mapped_category": "Zelenina",
+      "mapping_reason": "Zelenina podle cesty prodejce",
+      "product_count": 9,
+      "old_rule_categories": {
+        "Zelenina": 9
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1411188-bio-mrkev-baleni",
+        "https://www.rohlik.cz/1351243-mrkev-fialova-1ks-volna",
+        "https://www.rohlik.cz/1313441-mrkev-koktejlova-baby-baleni"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Rajčata"
+      ],
+      "mapped_category": "Zelenina",
+      "mapping_reason": "Zelenina podle cesty prodejce",
+      "product_count": 9,
+      "old_rule_categories": {
+        "Zelenina": 11
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1325193-bio-cherry-rajcata-vanicka",
+        "https://www.rohlik.cz/1408285-cherry-rajcata-baleni",
+        "https://www.rohlik.cz/1466689-kunraticka-stodola-rajcata-cherry-na-vetvicce-odr-red-egg-strapec"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Maso a ryby",
+        "Vepřové maso",
+        "Krkovice"
+      ],
+      "mapped_category": "Maso",
+      "mapping_reason": "Syrové maso podle cesty prodejce; typ upřesňují pravidla",
+      "product_count": 8,
+      "old_rule_categories": {
+        "Maso": 8
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p127127-authentic-veprova-krkovice-bez-kosti",
+        "https://www.kosik.cz/p429165-authentic-veprova-krkovice-bez-kosti",
+        "https://www.kosik.cz/p801002-emi-food-veprova-krkovice-duroc"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Rajčata",
+        "Cherry rajčata",
+        "Cherry červená"
+      ],
+      "mapped_category": "Zelenina",
+      "mapping_reason": "Zelenina podle cesty prodejce",
+      "product_count": 8,
+      "old_rule_categories": {
+        "Zelenina": 8
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p795664-rajcata-brioso-vanicka",
+        "https://www.kosik.cz/p817992-rajcata-cherry-ovalna-kyblik",
+        "https://www.kosik.cz/p308914-rajcata-cherry-vanicka"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Maso a ryby",
+        "Drůbež",
+        "Stehna a čtvrtky",
+        "Stehna"
+      ],
+      "mapped_category": "Maso",
+      "mapping_reason": "Syrové maso podle cesty prodejce; typ upřesňují pravidla",
+      "product_count": 8,
+      "old_rule_categories": {
+        "Maso": 8
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1413890-amadori-bio-kureci-stehno",
+        "https://www.rohlik.cz/1418577-campese-kureci-palicky-z-volneho-chovu",
+        "https://www.rohlik.cz/1418575-campese-kureci-stehna-z-volneho-chovu"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Maso a ryby",
+        "Drůbeží maso",
+        "Kuře",
+        "Prsa, řízky, nudličky"
+      ],
+      "mapped_category": "Maso",
+      "mapping_reason": "Syrové maso podle cesty prodejce; typ upřesňují pravidla",
+      "product_count": 6,
+      "old_rule_categories": {
+        "Maso": 6
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p787182-emi-food-kureci-prsa-bez-kosti-volny-chov",
+        "https://www.kosik.cz/p680992-rabbit-venkovske-prsni-rizky-bez-kuze",
+        "https://www.kosik.cz/p794876-ronsard-bio-kureci-prsa-bez-kosti-a-kuze"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Maso a ryby",
+        "Vepřové",
+        "Panenka"
+      ],
+      "mapped_category": "Maso",
+      "mapping_reason": "Syrové maso podle cesty prodejce; typ upřesňují pravidla",
+      "product_count": 5,
+      "old_rule_categories": {
+        "Maso": 5
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1416990-iberico-veprova-panenka",
+        "https://www.rohlik.cz/1408861-maso-veprova-panenka",
+        "https://www.rohlik.cz/1480917-nase-maso-veprova-panenka-steak"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Ovoce a zelenina",
+        "Ovoce",
+        "Citrusy"
+      ],
+      "mapped_category": "Ovoce",
+      "mapping_reason": "Ovoce podle cesty prodejce",
+      "product_count": 5,
+      "old_rule_categories": {
+        "Ovoce": 5
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1411174-bio-citrony-baleni",
+        "https://www.rohlik.cz/1350159-citron-1-ks",
+        "https://www.rohlik.cz/1417988-citron-amalfi-1-ks"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Ovoce a zelenina",
+        "Ovoce",
+        "Jahody a lesní plody"
+      ],
+      "mapped_category": "Ovoce",
+      "mapping_reason": "Ovoce podle cesty prodejce",
+      "product_count": 5,
+      "old_rule_categories": {
+        "Ovoce": 5
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1407560-boruvky-kanadske-xxl-baleni-bedynka",
+        "https://www.rohlik.cz/1317247-boruvky-baleni",
+        "https://www.rohlik.cz/1482106-eat-me-maliny-cerstve-xl-baleni-vanicka"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Okurky, cukety a lilky"
+      ],
+      "mapped_category": "Zelenina",
+      "mapping_reason": "Zelenina podle cesty prodejce",
+      "product_count": 5,
+      "old_rule_categories": {
+        "Zelenina": 5
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1294911-bio-okurka-hadovka-1-ks-cca-300-g",
+        "https://www.rohlik.cz/1340323-mini-okurky-baleni",
+        "https://www.rohlik.cz/1294559-okurka-hadovka-cca-300-g"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Maso a ryby",
+        "Vepřové maso",
+        "Panenka"
+      ],
+      "mapped_category": "Maso",
+      "mapping_reason": "Syrové maso podle cesty prodejce; typ upřesňují pravidla",
+      "product_count": 4,
+      "old_rule_categories": {
+        "Maso": 4
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p802840-metro-chef-veprova-panenka-bez-retizku",
+        "https://www.kosik.cz/p191655-moje-maso-bio-veprova-panenka",
+        "https://www.kosik.cz/p297984-veprova-panenka-z-prasnic-bez-retizku"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Ovoce a zelenina",
+        "Ovoce",
+        "Banány a exotické",
+        "Avokádo"
+      ],
+      "mapped_category": "Ovoce",
+      "mapping_reason": "Ovoce podle cesty prodejce",
+      "product_count": 4,
+      "old_rule_categories": {
+        "Ovoce": 4
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p718434-avokado-hass-ready-to-eat-2-ks",
+        "https://www.kosik.cz/p795666-avokado-hass-ready-to-eat-1-ks",
+        "https://www.kosik.cz/p793238-avokado-hass-3-ks"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Ovoce a zelenina",
+        "Ovoce",
+        "Banány a exotické",
+        "Banány"
+      ],
+      "mapped_category": "Ovoce",
+      "mapping_reason": "Ovoce podle cesty prodejce",
+      "product_count": 4,
+      "old_rule_categories": {
+        "Ovoce": 4
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p721374-bio-banany",
+        "https://www.kosik.cz/p821782-banan-baby",
+        "https://www.kosik.cz/p78217-banan-1-ks"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Rajčata",
+        "Cherry rajčata",
+        "Cherry barevná a mix"
+      ],
+      "mapped_category": "Zelenina",
+      "mapping_reason": "Zelenina podle cesty prodejce",
+      "product_count": 4,
+      "old_rule_categories": {
+        "Zelenina": 4
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p309074-rajcata-cherry-mix",
+        "https://www.kosik.cz/p814284-rajcata-cherry-oranzova-kerikova-vanicka",
+        "https://www.kosik.cz/p814280-rajcata-cherry-zelena-kerikova-vanicka"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Ovoce a zelenina",
+        "Ovoce",
+        "Citrusy",
+        "Citróny"
+      ],
+      "mapped_category": "Ovoce",
+      "mapping_reason": "Ovoce podle cesty prodejce",
+      "product_count": 3,
+      "old_rule_categories": {
+        "Ovoce": 3
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p794638-citron-1-ks",
+        "https://www.kosik.cz/p718438-citrony-bio-baleni",
+        "https://www.kosik.cz/p12277-citrony-sit"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Okurky, cukety a lilky",
+        "Okurky"
+      ],
+      "mapped_category": "Zelenina",
+      "mapping_reason": "Zelenina podle cesty prodejce",
+      "product_count": 3,
+      "old_rule_categories": {
+        "Zelenina": 3
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p791112-bio-okurka",
+        "https://www.kosik.cz/p793232-metro-chef-okurka-z-tvrdonic",
+        "https://www.kosik.cz/p793552-okurka-hadovka-1-ks"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Rajčata",
+        "Salátová rajčata",
+        "Salátová rajčata na stonku"
+      ],
+      "mapped_category": "Zelenina",
+      "mapping_reason": "Zelenina podle cesty prodejce",
+      "product_count": 3,
+      "old_rule_categories": {
+        "Zelenina": 3
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p724392-bio-rajcata-cervena",
+        "https://www.kosik.cz/p457490-bio-rajcata-cervena-kulata-na-stonku-baleni",
+        "https://www.kosik.cz/p793258-rajcata-cervena-kerikova-vanicka"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Maso a ryby",
+        "Hovězí a telecí",
+        "Roštěná a svíčková",
+        "Svíčková"
+      ],
+      "mapped_category": "Maso",
+      "mapping_reason": "Syrové maso podle cesty prodejce; typ upřesňují pravidla",
+      "product_count": 3,
+      "old_rule_categories": {
+        "Maso": 3
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1384488-bio-maso-hovezi-svickova-z-plemene-dexter-ze-statku-roden",
+        "https://www.rohlik.cz/1409057-maso-hovezi-svickova",
+        "https://www.rohlik.cz/1375189-nase-maso-hovezi-svickova-steaky"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Drogerie a kosmetika",
+        "Mytí nádobí",
+        "Ruční mytí"
+      ],
+      "mapped_category": "Úklid",
+      "mapping_reason": "Úklid podle cesty prodejce",
+      "product_count": 2,
+      "old_rule_categories": {
+        "Úklid": 2
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p104617-jar-citron",
+        "https://www.kosik.cz/p104647-jar-citron"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Maso a ryby",
+        "Hovězí maso",
+        "Svíčková a roštěnec"
+      ],
+      "mapped_category": "Maso",
+      "mapping_reason": "Syrové maso podle cesty prodejce; typ upřesňují pravidla",
+      "product_count": 2,
+      "old_rule_categories": {
+        "Maso": 2
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p106287-masna-rosovice-hovezi-svickova",
+        "https://www.kosik.cz/p106337-masna-rosovice-hovezi-svickova"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Nápoje",
+        "Vody",
+        "Minerální",
+        "Ochucené",
+        "Neperlivé"
+      ],
+      "mapped_category": "Nápoje / vody",
+      "mapping_reason": "Vody podle cesty prodejce",
+      "product_count": 2,
+      "old_rule_categories": {
+        "Nápoje / vody": 2
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p48787-dobra-voda-neperliva-bile-hrozny-6-x-1-5l",
+        "https://www.kosik.cz/p48797-dobra-voda-neperliva-malina-6-x-1-5-l"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Ovoce a zelenina",
+        "Ovoce",
+        "Hrozny"
+      ],
+      "mapped_category": "Ovoce",
+      "mapping_reason": "Ovoce podle cesty prodejce",
+      "product_count": 2,
+      "old_rule_categories": {
+        "Ovoce": 2
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p721402-hrozny-bile-bezsemenne",
+        "https://www.kosik.cz/p721400-hrozny-cervene-bezsemenne"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Ovoce a zelenina",
+        "Ovoce",
+        "Jahody a bobuloviny"
+      ],
+      "mapped_category": "Ovoce",
+      "mapping_reason": "Ovoce podle cesty prodejce",
+      "product_count": 2,
+      "old_rule_categories": {
+        "Ovoce": 2
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p712666-boruvky-kanadske-vanicka",
+        "https://www.kosik.cz/p791116-maliny-vanicka"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Rajčata",
+        "Salátová rajčata",
+        "Salátová rajčata volná"
+      ],
+      "mapped_category": "Zelenina",
+      "mapping_reason": "Zelenina podle cesty prodejce",
+      "product_count": 2,
+      "old_rule_categories": {
+        "Zelenina": 2
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p818546-rajcata-ovalna-vanicka",
+        "https://www.kosik.cz/p797728-rajcata-vanicka"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Uzeniny a lahůdky",
+        "Šunky",
+        "Drůbeží"
+      ],
+      "mapped_category": "Uzeniny / šunky",
+      "mapping_reason": "Šunky podle cesty prodejce",
+      "product_count": 2,
+      "old_rule_categories": {
+        "Uzeniny / šunky": 2
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p19717-le-co-shaved-kureci-prsni-sunka-zauzena-80-masa",
+        "https://www.kosik.cz/p476343-le-co-sunka-kureci-prsni-nejvyssi-jakosti-92-masa"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Maso a ryby",
+        "Drůbež",
+        "Prsa a stehenní řízky",
+        "Stehenní řízky"
+      ],
+      "mapped_category": "Maso",
+      "mapping_reason": "Syrové maso podle cesty prodejce; typ upřesňují pravidla",
+      "product_count": 2,
+      "old_rule_categories": {
+        "Maso": 2
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1406563-kureci-stehenni-rizky-od-ceskeho-vyrobce",
+        "https://www.rohlik.cz/1354309-vodnanske-kure-kureci-stehenni-rizky"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Ovoce a zelenina",
+        "Kuchařské boxy, hotové saláty a ready to cook",
+        "Rychlá příprava a předvařená zelenina"
+      ],
+      "mapped_category": null,
+      "mapping_reason": "Jiná nebo nejednoznačná podkategorie ovoce a zeleniny",
+      "product_count": 2,
+      "old_rule_categories": {
+        "Zelenina": 2
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1337185-mrkev-krouhana-nudlicky",
+        "https://www.rohlik.cz/1337183-mrkev-krajena-kostky"
+      ],
+      "needs_review": true
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Drogerie a kosmetika",
+        "Deodoranty a antiperspiranty",
+        "Pánské",
+        "Spreje"
+      ],
+      "mapped_category": null,
+      "mapping_reason": "Nesledovaná podkategorie drogerie",
+      "product_count": 1,
+      "old_rule_categories": {
+        "Kosmetika": 1
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p121507-axe-ice-chill-deodorant-ve-spreji-pro-muze"
+      ],
+      "needs_review": true
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Drogerie a kosmetika",
+        "Čistící přípravky",
+        "Okna"
+      ],
+      "mapped_category": "Úklid",
+      "mapping_reason": "Úklid podle cesty prodejce",
+      "product_count": 1,
+      "old_rule_categories": {
+        "Úklid": 1
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p113797-clin-pro-nature-mint-eucalyptus-cistic-oken"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Maso a ryby",
+        "Drůbeží maso",
+        "Kuře",
+        "Mleté a mělněné kuřecí maso"
+      ],
+      "mapped_category": null,
+      "mapping_reason": "Maso ve zpracované či nejednoznačné kategorii",
+      "product_count": 1,
+      "old_rule_categories": {
+        "Maso": 1
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p717966-rabbit-reznictvi-kureci-stehna-rizek-mlety"
+      ],
+      "needs_review": true
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Maso a ryby",
+        "Maso na grilování",
+        "Marinované maso"
+      ],
+      "mapped_category": null,
+      "mapping_reason": "Maso ve zpracované či nejednoznačné kategorii",
+      "product_count": 1,
+      "old_rule_categories": {
+        "Maso": 1
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p725876-primas-farmarska-krkovice-na-gril-s-bylinkami"
+      ],
+      "needs_review": true
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Maso a ryby",
+        "Vepřové maso",
+        "Uzené"
+      ],
+      "mapped_category": null,
+      "mapping_reason": "Maso ve zpracované či nejednoznačné kategorii",
+      "product_count": 1,
+      "old_rule_categories": {
+        "Maso": 1
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p88367-krasno-valasska-krkovice"
+      ],
+      "needs_review": true
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Kosmetika",
+        "Ústní hygiena",
+        "Zubní pasty",
+        "Bělící"
+      ],
+      "mapped_category": null,
+      "mapping_reason": "Cesta prodejce nemá schválené mapování",
+      "product_count": 1,
+      "old_rule_categories": {
+        "Dentální hygiena": 1
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1291299-colgate-whitening-belici-zubni-pasta"
+      ],
+      "needs_review": true
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Kosmetika",
+        "Ústní hygiena",
+        "Zubní pasty",
+        "Běžné"
+      ],
+      "mapped_category": null,
+      "mapping_reason": "Cesta prodejce nemá schválené mapování",
+      "product_count": 1,
+      "old_rule_categories": {
+        "Dentální hygiena": 1
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1291285-signal-family-care-herbal-fresh-zubni-pasta-pro-beznou-peci"
+      ],
+      "needs_review": true
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Maso a ryby",
+        "Hovězí a telecí",
+        "Steaky"
+      ],
+      "mapped_category": "Maso",
+      "mapping_reason": "Syrové maso podle cesty prodejce; typ upřesňují pravidla",
+      "product_count": 1,
+      "old_rule_categories": {
+        "Maso": 1
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1482665-pirinat-bio-hovezi-svickova-puky"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Maso a ryby",
+        "Vepřové",
+        "Grilování a steaky"
+      ],
+      "mapped_category": null,
+      "mapping_reason": "Maso ve zpracované či nejednoznačné kategorii",
+      "product_count": 1,
+      "old_rule_categories": {
+        "Maso": 1
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1473494-sutcha-spiz-veprova-panenka-a-svestka-se-slaninou"
+      ],
+      "needs_review": true
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Mozzarella, ricotta a salátové sýry",
+        "Mozzarella, burrata a ricotta"
+      ],
+      "mapped_category": null,
+      "mapping_reason": "Mléčná kategorie bez jednoznačného sledovaného typu",
+      "product_count": 1,
+      "old_rule_categories": {
+        "Sýry / mozzarella a salátové": 1
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1292433-galbani-mozzarella-light"
+      ],
+      "needs_review": true
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plátkové",
+        "Ementálský typ"
+      ],
+      "mapped_category": "Sýry / plátkové",
+      "mapping_reason": "Plátkové sýry podle cesty prodejce",
+      "product_count": 1,
+      "old_rule_categories": {
+        "Sýry / plátkové": 1
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1289779-leerdammer-lightlife-syr-platky"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Nápoje",
+        "Vody a minerálky",
+        "Ochucené",
+        "Další příchutě"
+      ],
+      "mapped_category": "Nápoje / vody",
+      "mapping_reason": "Vody podle cesty prodejce",
+      "product_count": 1,
+      "old_rule_categories": {
+        "Nápoje / vody": 1
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1461410-dobra-voda-neperliva-bile-hrozny-6-1-5-l"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Nápoje",
+        "Vody a minerálky",
+        "Ochucené",
+        "Jahoda a malina"
+      ],
+      "mapped_category": "Nápoje / vody",
+      "mapping_reason": "Vody podle cesty prodejce",
+      "product_count": 1,
+      "old_rule_categories": {
+        "Nápoje / vody": 1
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1461414-dobra-voda-neperliva-malina-6-1-5-l"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Ovoce a zelenina",
+        "BIO ovoce a zelenina",
+        "BIO Ovoce"
+      ],
+      "mapped_category": "Ovoce",
+      "mapping_reason": "BIO ovoce podle vnořené cesty prodejce",
+      "product_count": 1,
+      "old_rule_categories": {
+        "Ovoce": 1
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1483699-bio-hrozny-trio-bezsemenne"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Rajčata",
+        "Cherry rajčata (ø plodu 15-30mm)"
+      ],
+      "mapped_category": "Zelenina",
+      "mapping_reason": "Zelenina podle cesty prodejce",
+      "product_count": 1,
+      "old_rule_categories": {
+        "Zelenina": 1
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1478177-rajcata-cherry-na-vetvicce-honey-zn-looye-baleni"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Rajčata",
+        "Koktejlová cherry rajčata (ø plodu 30-45mm)"
+      ],
+      "mapped_category": "Zelenina",
+      "mapping_reason": "Zelenina podle cesty prodejce",
+      "product_count": 1,
+      "old_rule_categories": {
+        "Zelenina": 2
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1478178-joyn-koktejlova-rajcata-zn-looye-baleni"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Uzeniny a lahůdky",
+        "Šunky a slaniny",
+        "Vepřové"
+      ],
+      "mapped_category": "Uzeniny / šunky",
+      "mapping_reason": "Šunky podle cesty prodejce",
+      "product_count": 1,
+      "old_rule_categories": {
+        "Uzeniny / šunky": 1
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1292717-le-co-sunka-od-kosti-nejvyssi-jakosti-s-obsahem-masa-95"
+      ],
+      "needs_review": false
+    }
+  ]
+}
