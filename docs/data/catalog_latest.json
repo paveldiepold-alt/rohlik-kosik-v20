@@ -1,10 +1,10 @@
 {
   "schema": "rk-v20-catalog-1",
-  "generated_at": "2026-10-21T07:20:42+00:00",
+  "generated_at": "2026-10-21T08:57:10+00:00",
   "postcode": "149 00",
   "postcode_verified": false,
   "complete": false,
-  "note": "Výsledky veřejného vyhledávání, nikoli garantovaná úplnost sortimentu. Neověřené položky nejsou slevy. | Korekce kategorií: vyřazeno 543 nesouvisejících výrobků; údaje z veřejného vyhledávání, nikoli garantované úplnosti sortimentu. | Kategorie prodejce: 1118 veřejných produktů; 454 záznamů k prověření.",
+  "note": "Výsledky veřejného vyhledávání, nikoli garantovaná úplnost sortimentu. Neověřené položky nejsou slevy. | Korekce kategorií: vyřazeno 543 nesouvisejících výrobků; údaje z veřejného vyhledávání, nikoli garantované úplnosti sortimentu. | Kategorie prodejce: 1130 veřejných produktů; 442 záznamů k prověření.",
   "rules_total": 75,
   "rules": [
     {
@@ -410,7 +410,7 @@
     "Praní",
     "Úklid"
   ],
-  "rules_seen": 72,
+  "rules_seen": 73,
   "coverage": {
     "total_jobs": 196,
     "finished_jobs": 196,
@@ -429,8 +429,8 @@
       "no_cards": 1
     }
   },
-  "discovered_total": 1118,
-  "verified_current_cycle": 865,
+  "discovered_total": 1130,
+  "verified_current_cycle": 873,
   "items": [
     {
       "store": "Košík",
@@ -1939,6 +1939,46 @@
     },
     {
       "store": "Košík",
+      "name": "BIO Rajčata červená",
+      "url": "https://www.kosik.cz/p724392-bio-rajcata-cervena",
+      "rule_ids": [
+        "W044"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/rd/185x185x1_rda2imtxs2yd.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "BIO Rajčata červená",
+      "price_czk": 139.9,
+      "price_status": "ok",
+      "price_source": "kosik-product-text",
+      "checked_at": "2026-10-20T14:13:03+00:00",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Rajčata",
+        "Salátová rajčata",
+        "Salátová rajčata na stonku"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "Product title changed / mismatch",
+      "product_description": "Jedná se o dužnatou bobuli, která se řadí mezi zeleninu, patří do čeledi lilkovitých. Tato plodová zelenina má v závislosti&nbsp;na kultivaru různé tvary i…",
+      "taxonomy_checked_at": "2026-10-21T08:53:14+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W044",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
+    },
+    {
+      "store": "Košík",
       "name": "BIO Rajčata červená kulatá na stonku, balení",
       "url": "https://www.kosik.cz/p457490-bio-rajcata-cervena-kulata-na-stonku-baleni",
       "rule_ids": [
@@ -3028,6 +3068,45 @@
     },
     {
       "store": "Košík",
+      "name": "Citron, 1 ks",
+      "url": "https://www.kosik.cz/p794638-citron-1-ks",
+      "rule_ids": [
+        "W041"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/sn/185x185x1_snygfqitqac3.png",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Citron, 1 ks",
+      "price_czk": 4.79,
+      "price_status": "ok",
+      "price_source": "kosik-product-text",
+      "checked_at": "2026-10-20T14:08:54+00:00",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Ovoce",
+        "Citrusy",
+        "Citróny"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "Product title changed / mismatch",
+      "product_description": "Citron, 1 ks, cca 90 g.Jakost: I.Kalibr: 3/5.Odrůda: Primofiori.Kůra plodů je chemicky ošetřena: Imazalil.O produktuCitrony obsahují kyselinu askorbovou a…",
+      "taxonomy_checked_at": "2026-10-21T08:53:28+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W041",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
+    },
+    {
+      "store": "Košík",
       "name": "Citrony BIO, balení",
       "url": "https://www.kosik.cz/p718438-citrony-bio-baleni",
       "rule_ids": [
@@ -3830,6 +3909,13 @@
       "category_source": "jsonld_breadcrumb",
       "product_description": "Ochucená minerální voda nesycená s nízkým obsahem minerálních látek s příchutí bílých hroznů. Pochází z průzračného pramene v Novohradských horách a nabízí…",
       "taxonomy_checked_at": "2026-10-21T07:18:38+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W042",
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
+        }
+      ],
       "taxonomy_status": "partial"
     },
     {
@@ -3856,12 +3942,26 @@
       ],
       "http_status": 200,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Nápoje",
+        "Vody",
+        "Minerální",
+        "Ochucené",
+        "Neperlivé"
+      ],
+      "category_source": "dom_breadcrumb",
       "taxonomy_error": "Product title changed / mismatch",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:18:38+00:00",
-      "taxonomy_status": "partial"
+      "product_description": "Nákup až ke dveřím na pár kliků. Doprava zdarma na velké nákupy, nový akční leták každý týden a spousta odměn ve věrnostních klubech.",
+      "taxonomy_checked_at": "2026-10-21T08:53:33+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W040",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "partial",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Košík",
@@ -4713,6 +4813,13 @@
       "category_source": "jsonld_breadcrumb",
       "product_description": "Prostředek na mytí nádobí Jar Lemon má takové čisticí účinky, kterým můžete vždy důvěřovat. Ať už se jedná o talíře a skleničky nebo hrnce a pánve – účinné…",
       "taxonomy_checked_at": "2026-10-21T07:18:56+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W041",
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
+        }
+      ],
       "taxonomy_status": "partial"
     },
     {
@@ -4742,6 +4849,13 @@
       "category_source": "jsonld_breadcrumb",
       "product_description": "Prostředek na mytí nádobí Jar Lemon má takové čisticí účinky, kterým můžete vždy důvěřovat. Ať už se jedná o talíře a skleničky nebo hrnce a pánve – účinné…",
       "taxonomy_checked_at": "2026-10-21T07:18:56+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W041",
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
+        }
+      ],
       "taxonomy_status": "partial"
     },
     {
@@ -7469,6 +7583,44 @@
     },
     {
       "store": "Košík",
+      "name": "Maliny, vanička",
+      "url": "https://www.kosik.cz/p791116-maliny-vanicka",
+      "rule_ids": [
+        "W040"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/2d/185x185x1_2d9e556egbqm.png",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Maliny, vanička",
+      "price_czk": 59.9,
+      "price_status": "ok",
+      "price_source": "kosik-product-text",
+      "checked_at": "2026-10-20T14:08:10+00:00",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Ovoce",
+        "Jahody a bobuloviny"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "Product title changed / mismatch",
+      "product_description": "Malina, vanička, 125 g.O produktuMalina je plodem přesněji plodenstvím maliníku. Ovoce je složeno z drobných kuliček, sytě růžové barvy, tvořících známé plody.…",
+      "taxonomy_checked_at": "2026-10-21T08:54:28+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W040",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
+    },
+    {
+      "store": "Košík",
       "name": "Masna Rosovice Hovězí svíčková",
       "url": "https://www.kosik.cz/p106287-masna-rosovice-hovezi-svickova",
       "rule_ids": [
@@ -7901,6 +8053,45 @@
       "product_description": "Mrkev čerstvá praná 500g. O PRODUKTU Základní kořenová zelenina, která nechybí snad skoro žádné domácnosti. Kořen je dužnatě zesílený, válcovitý nebo úzce…",
       "taxonomy_checked_at": "2026-10-21T07:19:07+00:00",
       "taxonomy_status": "verified"
+    },
+    {
+      "store": "Košík",
+      "name": "Mrkev s natí, svazek",
+      "url": "https://www.kosik.cz/p296834-mrkev-s-nati-svazek",
+      "rule_ids": [
+        "W046"
+      ],
+      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/d4/185x185x1_d4e7ur1cjm1f.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Mrkev s natí, svazek",
+      "price_czk": 24.9,
+      "price_status": "ok",
+      "price_source": "kosik-product-text",
+      "checked_at": "2026-10-20T14:15:01+00:00",
+      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Kořenová zelenina",
+        "Mrkev"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "Product title changed / mismatch",
+      "product_description": "Mrkev má nasládlou chuť a v naší kuchyni má velké využití například v salátech, pomazánkách, polévkách, jako základ omáček, případně pečená nebo dušená jako…",
+      "taxonomy_checked_at": "2026-10-21T08:54:33+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W046",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Košík",
@@ -17061,12 +17252,25 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Nápoje",
+        "Vody a minerálky",
+        "Ochucené",
+        "Další příchutě"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:26+00:00",
-      "taxonomy_status": "partial"
+      "product_description": "Neperlivý nealkoholický nápoj s příchutí bílého hrozna. Dodržujte pitný režim s Dobrou vodou z Novohradských hor.Balení obsahuje 6 kusů.PoužitíPodávej",
+      "taxonomy_checked_at": "2026-10-21T08:52:39+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W042",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "partial",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -17116,6 +17320,13 @@
       "category_source": "jsonld_breadcrumb",
       "product_description": "Vychutnejte si sladkou a jedinečnou příchuť malin v neperlivé Dobré vodě. Zpříjemněte si dodržování pitného režimu s Dobrou vodou z Novohradských hor.",
       "taxonomy_checked_at": "2026-10-21T07:20:28+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W040",
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
+        }
+      ],
       "taxonomy_status": "partial"
     },
     {
@@ -17357,6 +17568,44 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false
+    },
+    {
+      "store": "Rohlík",
+      "name": "EAT ME Maliny čerstvé XL balení, vanička",
+      "url": "https://www.rohlik.cz/1482106-eat-me-maliny-cerstve-xl-baleni-vanicka",
+      "rule_ids": [
+        "W040"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1482106/1482106-1780650555645.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "EAT ME Maliny čerstvé XL balení, vanička",
+      "price_czk": 129.9,
+      "price_status": "ok",
+      "price_source": "visible-product-detail",
+      "checked_at": "2026-10-20T14:07:34+00:00",
+      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Ovoce",
+        "Jahody a lesní plody"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Šťavnaté a sladké maliny, které jsou vybírané s tou největší péčí. Toto oblíbené lesní ovoce vyniká svou lahodnou chutí a širokým využitím v kuchyni.U",
+      "taxonomy_checked_at": "2026-10-21T08:52:56+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W040",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -17920,6 +18169,234 @@
     },
     {
       "store": "Rohlík",
+      "name": "Hrozny bezsemenné mix, balení",
+      "url": "https://www.rohlik.cz/1326877-hrozny-bezsemenne-mix-baleni",
+      "rule_ids": [
+        "W042"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1326877/1326877-1501861166.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Hrozny bezsemenné mix, balení",
+      "price_czk": 80.9,
+      "price_status": "ok",
+      "price_source": "visible-product-detail",
+      "checked_at": "2026-10-20T14:10:23+00:00",
+      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Ovoce",
+        "Hrozny a melouny"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Mix světlého a tmavého hroznového vína.PoužitíHrozny se používají především k přímé konzumaci. Můžeme s nimi zdobit jednohubky, jsou vhodné jako dopln",
+      "taxonomy_checked_at": "2026-10-21T08:56:09+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W042",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
+    },
+    {
+      "store": "Rohlík",
+      "name": "Hrozny bílé bezsemenné volné (odr. AUTUMNCRISP®), střapec",
+      "url": "https://www.rohlik.cz/1356397-hrozny-bile-bezsemenne-volne-odr-autumncrisp-strapec",
+      "rule_ids": [
+        "W042"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1356397/1356397-1560000030.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Hrozny bílé bezsemenné volné (odr. AUTUMNCRISP®), střapec",
+      "price_czk": null,
+      "price_status": "price_unverified",
+      "price_source": null,
+      "checked_at": "2026-10-20T14:10:33+00:00",
+      "note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Ovoce",
+        "Hrozny a melouny"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Čerstvé bílé hrozny bez pecek.PoužitíHrozny se používají především k přímé konzumaci. Můžeme s nimi zdobit jednohubky, jsou vhodné jako doplněk k různ",
+      "taxonomy_checked_at": "2026-10-21T08:56:13+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W042",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
+    },
+    {
+      "store": "Rohlík",
+      "name": "Hrozny bílé bezsemenné, balení",
+      "url": "https://www.rohlik.cz/1314777-hrozny-bile-bezsemenne-baleni",
+      "rule_ids": [
+        "W042"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1314777/1314777-1538028408.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Hrozny bílé bezsemenné, balení",
+      "price_czk": 59.9,
+      "price_status": "ok",
+      "price_source": "visible-product-detail",
+      "checked_at": "2026-10-20T14:10:19+00:00",
+      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Ovoce",
+        "Hrozny a melouny"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Sladké bílé hrozny bez semínek. Odrůda bude doručena dle aktuální skladové dostupnosti.Upozorňujeme, že některé bobule mohou mít v průběhu roku tmavě",
+      "taxonomy_checked_at": "2026-10-21T08:56:17+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W042",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
+    },
+    {
+      "store": "Rohlík",
+      "name": "Hrozny bílé volné (odr. Victoria), střapec",
+      "url": "https://www.rohlik.cz/1350685-hrozny-bile-volne-odr-victoria-strapec",
+      "rule_ids": [
+        "W042"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1350685/1350685-1684841010944.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Hrozny bílé volné (odr. Victoria), střapec",
+      "price_czk": null,
+      "price_status": "price_unverified",
+      "price_source": null,
+      "checked_at": "2026-10-20T14:10:35+00:00",
+      "note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Ovoce",
+        "Hrozny a melouny"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Sladké bílé hrozny ze Sicílie.PoužitíHrozny se používají především k přímé konzumaci. Můžeme s nimi zdobit jednohubky, jsou vhodné jako doplněk k různ",
+      "taxonomy_checked_at": "2026-10-21T08:56:20+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W042",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
+    },
+    {
+      "store": "Rohlík",
+      "name": "Hrozny tmavé bezsemenné, balení",
+      "url": "https://www.rohlik.cz/1293685-hrozny-tmave-bezsemenne-baleni",
+      "rule_ids": [
+        "W042"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1293685/1293685-1499947322.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Hrozny tmavé bezsemenné, balení",
+      "price_czk": null,
+      "price_status": "price_unverified",
+      "price_source": null,
+      "checked_at": "2026-10-20T14:10:25+00:00",
+      "note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Ovoce",
+        "Hrozny a melouny"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Sladké tmavé hrozny bez semínek.PoužitíIdeální k přímé konzumaci. Můžete je přidat do salátů, dezertů nebo osvěžujících nápojů.Tmavými hrozny můžete t",
+      "taxonomy_checked_at": "2026-10-21T08:56:24+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W042",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
+    },
+    {
+      "store": "Rohlík",
+      "name": "Hrozny tmavé volně (odr. Red globe) , střapec",
+      "url": "https://www.rohlik.cz/1356399-hrozny-tmave-volne-odr-red-globe-strapec",
+      "rule_ids": [
+        "W042"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1356399/1356399-1573481015.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Hrozny tmavé volně (odr. Red globe) , střapec",
+      "price_czk": 111.92,
+      "price_status": "ok",
+      "price_source": "visible-product-detail",
+      "checked_at": "2026-10-20T14:10:21+00:00",
+      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Ovoce",
+        "Hrozny a melouny"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Tmavé hrozny ze Sicílie.PoužitíIdeální k přímé konzumaci. Můžete je přidat do salátů, dezertů nebo osvěžujících nápojů.&nbsp;Tmavými hrozny můžete tak",
+      "taxonomy_checked_at": "2026-10-21T08:56:28+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W042",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
+    },
+    {
+      "store": "Rohlík",
       "name": "Ibérico Vepřová panenka",
       "url": "https://www.rohlik.cz/1416990-iberico-veprova-panenka",
       "rule_ids": [
@@ -18257,6 +18734,51 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false
+    },
+    {
+      "store": "Rohlík",
+      "name": "Joyn koktejlová rajčata (zn Looye), balení",
+      "url": "https://www.rohlik.cz/1478178-joyn-koktejlova-rajcata-zn-looye-baleni",
+      "rule_ids": [
+        "W044",
+        "W045"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1478178/1478178-1765213453277.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Joyn koktejlová rajčata (zn Looye), balení",
+      "price_czk": null,
+      "price_status": "http_error",
+      "price_source": null,
+      "checked_at": "2026-10-20T14:12:22+00:00",
+      "note": "HTTP 429",
+      "multibuy": [],
+      "http_status": 429,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Rajčata",
+        "Koktejlová cherry rajčata (ø plodu 30-45mm)"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Looye Joyn rajčata vynikají harmonickou chutí, pevnou texturou a intenzivní rajčatovou vůní. Získala dvouhvězdičkové ocenění Superior Taste Award 2024",
+      "taxonomy_checked_at": "2026-10-21T08:56:32+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W044",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        },
+        {
+          "rule_id": "W045",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -24404,8 +24926,8 @@
   "quality_changed_rule_matches": 583,
   "taxonomy_v21": {
     "total_known": 1566,
-    "visible": 1118,
-    "review_or_rejected": 454,
-    "category_verified": 292
+    "visible": 1130,
+    "review_or_rejected": 442,
+    "category_verified": 385
   }
 }

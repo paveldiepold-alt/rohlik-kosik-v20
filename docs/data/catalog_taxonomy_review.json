@@ -1,7 +1,7 @@
 {
   "schema": "rk-v21-taxonomy-review-1",
-  "generated_at": "2026-10-21T07:20:42+00:00",
-  "count": 454,
+  "generated_at": "2026-10-21T08:57:10+00:00",
+  "count": 442,
   "items": [
     {
       "store": "Košík",
@@ -31,7 +31,7 @@
       "category_source": "error",
       "taxonomy_error": "Product title changed / mismatch",
       "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:18:18+00:00",
+      "taxonomy_checked_at": "2026-10-21T08:52:26+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W041",
@@ -39,7 +39,8 @@
           "reason": "Prodejce neposkytl spolehlivou kategorii"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "review",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Košík",
@@ -65,19 +66,25 @@
       ],
       "http_status": 200,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Trvanlivé",
+        "Konzervované potraviny",
+        "Zelenina",
+        "Okurky a cibulky"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "Product title changed / mismatch",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:18:18+00:00",
+      "product_description": "Nákup až ke dveřím na pár kliků. Doprava zdarma na velké nákupy, nový akční leták každý týden a spousta odměn ve věrnostních klubech.",
+      "taxonomy_checked_at": "2026-10-21T08:52:30+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W043",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Košík",
@@ -98,19 +105,25 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Trvanlivé",
+        "Konzervované potraviny",
+        "Zelenina",
+        "Feferony a papriky"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "Product title changed / mismatch",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:18:18+00:00",
+      "product_description": "Nákup až ke dveřím na pár kliků. Doprava zdarma na velké nákupy, nový akční leták každý týden a spousta odměn ve věrnostních klubech.",
+      "taxonomy_checked_at": "2026-10-21T08:52:34+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W047",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Košík",
@@ -135,7 +148,7 @@
       "category_source": "error",
       "taxonomy_error": "Product title changed / mismatch",
       "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:18:18+00:00",
+      "taxonomy_checked_at": "2026-10-21T08:52:38+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W047",
@@ -143,7 +156,8 @@
           "reason": "Prodejce neposkytl spolehlivou kategorii"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "review",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Košík",
@@ -202,19 +216,26 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Trvanlivé",
+        "Konzervované potraviny",
+        "Zelenina",
+        "Rajčata",
+        "Celá a krájená"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "Product title changed / mismatch",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:18:20+00:00",
+      "product_description": "Nákup až ke dveřím na pár kliků. Doprava zdarma na velké nákupy, nový akční leták každý týden a spousta odměn ve věrnostních klubech.",
+      "taxonomy_checked_at": "2026-10-21T08:52:42+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W044",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Košík",
@@ -281,19 +302,24 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Uzeniny a lahůdky",
+        "Saláty a pomazánky",
+        "Hummus"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "Product title changed / mismatch",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:18:20+00:00",
+      "product_description": "Extra výživný hummus s avokádem dle izraelské receptury od šéfkuchaře Hameda Maliho. Zažeňte hlad výživnou svačinkou, které podlehl celý svět. Hummus je…",
+      "taxonomy_checked_at": "2026-10-21T08:52:46+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W037",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Produkt není v kategorii čerstvého ovoce"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Košík",
@@ -323,19 +349,25 @@
       ],
       "http_status": 200,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Mražené",
+        "Zmrzliny",
+        "Kelímky",
+        "Sorbety a dřeně"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "Product title changed / mismatch",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:18:21+00:00",
+      "product_description": "Osvěžení, které vás nadchne. Dopřejte si gelato se šťávou ze sicilských citronů dle receptury Ľudmily Abrham. Zchlaďte se v letních tropech sorbetem z citrónů…",
+      "taxonomy_checked_at": "2026-10-21T08:52:50+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W041",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Košík",
@@ -356,19 +388,25 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Trvanlivé",
+        "Konzervované potraviny",
+        "Zelenina",
+        "Okurky a cibulky"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "Product title changed / mismatch",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:18:21+00:00",
+      "product_description": "Naše unikátní české okurky pěstujeme přímo na Znojemsku. Authentic znojemské okurky zrají pod teplým jihomoravským sluncem, křupou jedna báseň a chutnají…",
+      "taxonomy_checked_at": "2026-10-21T08:52:53+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W043",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Košík",
@@ -389,19 +427,25 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Mražené",
+        "Bramborové produkty",
+        "Hranolky a vlnky",
+        "Vlnky"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "Product title changed / mismatch",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:18:22+00:00",
+      "product_description": "Vlnkované široké hranolky s paprikovou příchutí jsou křupavé, podélně žebrované hranolky s pikantním paprikovým kořením. Díky jedinečnému vlkovanému tvaru a…",
+      "taxonomy_checked_at": "2026-10-21T08:52:57+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W047",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Košík",
@@ -426,7 +470,7 @@
       "category_source": "error",
       "taxonomy_error": "Product title changed / mismatch",
       "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:18:23+00:00",
+      "taxonomy_checked_at": "2026-10-21T08:53:01+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W037",
@@ -434,7 +478,8 @@
           "reason": "Prodejce neposkytl spolehlivou kategorii"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "review",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Košík",
@@ -527,19 +572,24 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Lékárna Dr. Max",
+        "Matka - dítě",
+        "Dětská výživa"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "Product title changed / mismatch",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:18:24+00:00",
+      "product_description": "Babybio maso-zeleninový příkrm v BIO kvalitě přináší lahodnou kombinaci farmářské kachny z Francie, sladké mrkve z oblasti Landes a dýně, doplněnou jablkem a…",
+      "taxonomy_checked_at": "2026-10-21T08:53:05+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W046",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Košík",
@@ -569,7 +619,7 @@
       "category_source": "error",
       "taxonomy_error": "Product title changed / mismatch",
       "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:18:25+00:00",
+      "taxonomy_checked_at": "2026-10-21T08:53:09+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W040",
@@ -577,7 +627,8 @@
           "reason": "Prodejce neposkytl spolehlivou kategorii"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "review",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Košík",
@@ -656,39 +707,6 @@
     },
     {
       "store": "Košík",
-      "name": "BIO Rajčata červená",
-      "url": "https://www.kosik.cz/p724392-bio-rajcata-cervena",
-      "rule_ids": [
-        "W044"
-      ],
-      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/rd/185x185x1_rda2imtxs2yd.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "BIO Rajčata červená",
-      "price_czk": 139.9,
-      "price_status": "ok",
-      "price_source": "kosik-product-text",
-      "checked_at": "2026-10-20T14:13:03+00:00",
-      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
-      "multibuy": [],
-      "http_status": 200,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "Product title changed / mismatch",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:18:29+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W044",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Košík",
       "name": "Birell  0.0 Malina & Limetka nealkoholické pivo 4x0,33l",
       "url": "https://www.kosik.cz/p813322-birell-0-0-malina-limetka-nealkoholicke-pivo-4x0-33l",
       "rule_ids": [
@@ -706,19 +724,25 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Nápoje",
+        "Piva",
+        "Nealko",
+        "Ochucené"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "Product title changed / mismatch",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:18:30+00:00",
+      "product_description": "Birell 0.0 Limetka &amp; Malina je osvěžující míchaný nápoj s harmonickou kombinací šťavnaté limetky a jemné vůně čerstvých malin.&nbsp;Vyvážená ovocná chuť…",
+      "taxonomy_checked_at": "2026-10-21T08:53:19+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W040",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Košík",
@@ -1282,52 +1306,25 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Trvanlivé",
+        "Konzervované potraviny",
+        "Olivy",
+        "Zelené olivy"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "Product title changed / mismatch",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:18:35+00:00",
+      "product_description": "Objevte vynikající chuť zelených oliv ze Španělska, plněných lahodnou pastou z pečených červených paprik. Tento produkt značky Casino, která je známá svou…",
+      "taxonomy_checked_at": "2026-10-21T08:53:24+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W047",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Košík",
-      "name": "Citron, 1 ks",
-      "url": "https://www.kosik.cz/p794638-citron-1-ks",
-      "rule_ids": [
-        "W041"
-      ],
-      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/sn/185x185x1_snygfqitqac3.png",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Citron, 1 ks",
-      "price_czk": 4.79,
-      "price_status": "ok",
-      "price_source": "kosik-product-text",
-      "checked_at": "2026-10-20T14:08:54+00:00",
-      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
-      "multibuy": [],
-      "http_status": 200,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "Product title changed / mismatch",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:18:36+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W041",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Košík",
@@ -1461,7 +1458,8 @@
           "decision": "reject",
           "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
-      ]
+      ],
+      "taxonomy_status": "partial"
     },
     {
       "store": "Košík",
@@ -1488,18 +1486,26 @@
       ],
       "http_status": 200,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Nápoje",
+        "Vody",
+        "Minerální",
+        "Ochucené",
+        "Neperlivé"
+      ],
+      "category_source": "dom_breadcrumb",
       "taxonomy_error": "Product title changed / mismatch",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:18:38+00:00",
+      "product_description": "Nákup až ke dveřím na pár kliků. Doprava zdarma na velké nákupy, nový akční leták každý týden a spousta odměn ve věrnostních klubech.",
+      "taxonomy_checked_at": "2026-10-21T08:53:33+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W040",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
-      ]
+      ],
+      "taxonomy_status": "partial",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Košík",
@@ -1648,19 +1654,25 @@
       ],
       "http_status": 200,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Trvanlivé",
+        "Konzervované potraviny",
+        "Zelenina",
+        "Okurky a cibulky"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "Product title changed / mismatch",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:18:40+00:00",
+      "product_description": "Pasterovaná zelenina ve sladkokyselém nálevu s cukrem.Chutné a křupavé okurky z&nbsp;jižní Moravy.O výrobciEfko je největší výrobce moravských okurek. Nevyrábí…",
+      "taxonomy_checked_at": "2026-10-21T08:53:38+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W043",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Košík",
@@ -1866,19 +1878,24 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Péče o vlasy",
+        "Masky, oleje a extra péče"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "Product title changed / mismatch",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:18:43+00:00",
+      "product_description": "Vyživující maska na vlasy pro suché vlasy, obohacená o vitamíny C, E a F a se 3 možnostmi použití.Balzám na vlasy.Maska na vlasy.Bezoplachová péče.Až 7x…",
+      "taxonomy_checked_at": "2026-10-21T08:53:42+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W038",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Košík",
@@ -2035,19 +2052,26 @@
       ],
       "http_status": 200,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Děti",
+        "Dětská výživa",
+        "Kapsičky",
+        "Ovocné",
+        "Ovocný mix"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "Product title changed / mismatch",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:18:44+00:00",
+      "product_description": "Ovocné pyré s chutí sezónního ovoce v praktickém, uzavíratelném obalu je hravou svačinkou pro děti od ukončeného 6. měsíce. Obal je šetrnější k životnímu…",
+      "taxonomy_checked_at": "2026-10-21T08:53:47+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W039",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Košík",
@@ -2073,19 +2097,26 @@
       ],
       "http_status": 200,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Děti",
+        "Dětská výživa",
+        "Kapsičky",
+        "Ovocné",
+        "Ovocný mix"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "Product title changed / mismatch",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:18:44+00:00",
+      "product_description": "S GERBER Organic kapsičkami máte vždy po ruce chutnou svačinku plnou ovoce bez přidaných cukrů, bez lepku a bez konzervantů díky níž si váš malý jedlík užije…",
+      "taxonomy_checked_at": "2026-10-21T08:53:51+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W038",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Košík",
@@ -2193,7 +2224,7 @@
       "category_source": "error",
       "taxonomy_error": "Product title changed / mismatch",
       "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:18:46+00:00",
+      "taxonomy_checked_at": "2026-10-21T08:53:56+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W044",
@@ -2201,7 +2232,8 @@
           "reason": "Prodejce neposkytl spolehlivou kategorii"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "review",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Košík",
@@ -2222,19 +2254,26 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Děti",
+        "Dětská výživa",
+        "Dětské příkrmy",
+        "S masem",
+        "Kuřecí maso"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "Product title changed / mismatch",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:18:46+00:00",
+      "product_description": "Mrkev je královna zeleniny. Taková Marilyn Monroe z kuchyně a zahrady. Šťavnatá, mírně sladká, štíhlá, příjemně zbarvená… v podstatě dokonalá. To ovšem platilo…",
+      "taxonomy_checked_at": "2026-10-21T08:54:00+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W046",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Košík",
@@ -2255,19 +2294,25 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Děti",
+        "Dětská výživa",
+        "Dětské cereálie a snacky",
+        "Křupky a krekry"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "Product title changed / mismatch",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:18:47+00:00",
+      "product_description": "Goodies Bluey křupky srdíčka banán a jahoda jsou hravé křupky obalené v prášku z mrazem sušeného ovoce. &nbsp;Žádné přidané cukry, plno skvělé chuti. Křupavá…",
+      "taxonomy_checked_at": "2026-10-21T08:54:05+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W038",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Košík",
@@ -2615,19 +2660,27 @@
       ],
       "http_status": 200,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Děti",
+        "Dětská výživa",
+        "Dětské příkrmy",
+        "Ovocné",
+        "Dvoudruhové",
+        "S borůvkou"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "Product title changed / mismatch",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:18:50+00:00",
+      "product_description": "Ovocný příkrm od ukončeného 6. měsíce, sterilizováno.Ve 100 g výrobku je obsaženo 13,5 g přírodně se vyskytujícíh sladidel.Bez lepku.Návod k použitíPři…",
+      "taxonomy_checked_at": "2026-10-21T08:54:09+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W039",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Košík",
@@ -3077,19 +3130,26 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Děti",
+        "Dětská výživa",
+        "Dětské příkrmy",
+        "S masem",
+        "Hovězí maso"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "Product title changed / mismatch",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:18:54+00:00",
+      "product_description": "Příkrmy HiPP jsou přizpůsobeny nutričním potřebám miminek.&nbsp;Vhodné pro děti od ukončeného 4. měsíce.Potravina pro zvláštní výživu – potravina je součástí…",
+      "taxonomy_checked_at": "2026-10-21T08:54:14+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W046",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Košík",
@@ -3203,7 +3263,8 @@
           "decision": "reject",
           "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
-      ]
+      ],
+      "taxonomy_status": "partial"
     },
     {
       "store": "Košík",
@@ -3239,7 +3300,8 @@
           "decision": "reject",
           "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
-      ]
+      ],
+      "taxonomy_status": "partial"
     },
     {
       "store": "Košík",
@@ -3311,19 +3373,26 @@
       ],
       "http_status": 200,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Nápoje",
+        "Vody",
+        "Minerální",
+        "Ochucené",
+        "Jemně perlivé"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "Product title changed / mismatch",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:18:56+00:00",
+      "product_description": "Ochucená minerální voda jemně sycená s příchutí bílých hroznů.Stáčená z chráněných přírodních zdrojů, jemně mineralizovaná. Přirozený zdroj minerálních látek v…",
+      "taxonomy_checked_at": "2026-10-21T08:54:19+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W042",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Košík",
@@ -3639,19 +3708,26 @@
       ],
       "http_status": 200,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Trvanlivé",
+        "Slané",
+        "Brambůrky a chipsy",
+        "Brambůrky",
+        "Paprikové a tomatové"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "Product title changed / mismatch",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:18:59+00:00",
+      "product_description": "Smažené bramborové lupínky s příchutí papriky.O značceBez ohledu na příležitost, ať už jsou to narozeniny nebo Silvestr - chipsy Lay's jsou perfektním…",
+      "taxonomy_checked_at": "2026-10-21T08:54:23+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W047",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Produkt není v kategorii čerstvé zeleniny"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Košík",
@@ -3779,39 +3855,6 @@
         }
       ],
       "taxonomy_status": "rejected"
-    },
-    {
-      "store": "Košík",
-      "name": "Maliny, vanička",
-      "url": "https://www.kosik.cz/p791116-maliny-vanicka",
-      "rule_ids": [
-        "W040"
-      ],
-      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/2d/185x185x1_2d9e556egbqm.png",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Maliny, vanička",
-      "price_czk": 59.9,
-      "price_status": "ok",
-      "price_source": "kosik-product-text",
-      "checked_at": "2026-10-20T14:08:10+00:00",
-      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
-      "multibuy": [],
-      "http_status": 200,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "Product title changed / mismatch",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:19:00+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W040",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
     },
     {
       "store": "Košík",
@@ -4250,39 +4293,6 @@
         }
       ],
       "taxonomy_status": "rejected"
-    },
-    {
-      "store": "Košík",
-      "name": "Mrkev s natí, svazek",
-      "url": "https://www.kosik.cz/p296834-mrkev-s-nati-svazek",
-      "rule_ids": [
-        "W046"
-      ],
-      "image_url": "https://static-new.kosik.cz/k3wCdnContainerk3w-static-ne-cz-prod/images/thumbs/d4/185x185x1_d4e7ur1cjm1f.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Mrkev s natí, svazek",
-      "price_czk": 24.9,
-      "price_status": "ok",
-      "price_source": "kosik-product-text",
-      "checked_at": "2026-10-20T14:15:01+00:00",
-      "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
-      "multibuy": [],
-      "http_status": 200,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "Product title changed / mismatch",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:19:07+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W046",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
     },
     {
       "store": "Košík",
@@ -5407,7 +5417,7 @@
       "category_source": "error",
       "taxonomy_error": "Product title changed / mismatch",
       "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:19:24+00:00",
+      "taxonomy_checked_at": "2026-10-21T08:54:37+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W046",
@@ -5415,7 +5425,8 @@
           "reason": "Prodejce neposkytl spolehlivou kategorii"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "review",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Košík",
@@ -7989,7 +8000,7 @@
       "store_category_path": [],
       "category_source": "missing",
       "product_description": "Sladké borůvky v BIO kvalitě. Plody jsou sladké, šťavnaté a mají intenzivní a krásnou vůni. Vážení zákazníci vezměte prosím na vědomí, že BIO položky jsou pěstovány bez chemického ošetření, a proto jsou náchylnější pro vznik povrchových a vzhledových vad na povrchu plodu. Tyto nevzhledné vady nemají vliv na chuť a kvalitu produktu. Jedná se pouze o vizuální problém, který je u BIO položek naprosto běžný a neměl by být důvodem k reklamaci. Děkujeme za pochopení. Použití Borůvky se nejčastěji konzumují čerstvé. Také se přidávají na palačinky, do koláčů, buchet nebo dortů. Dělají se z nich nanuky, poháry nebo se hodí do ovocných koktejlů, salátů a samozřejmě nesmí chybět v ovocných knedlících. Nechte se inspirovat recepty od Romana Vaňka! Borů",
-      "taxonomy_checked_at": "2026-10-21T07:20:08+00:00",
+      "taxonomy_checked_at": "2026-10-21T08:52:27+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W039",
@@ -7997,7 +8008,8 @@
           "reason": "Prodejce neposkytl spolehlivou kategorii"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "review",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -8837,19 +8849,24 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Nápoje",
+        "Vody a minerálky",
+        "Sportovní a obohacené"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:26+00:00",
+      "product_description": "Perlivá kofeinová voda s příchutí citronu a máty.Každá lahev obsahuje 150 mg přírodního kofeinu z Tchibo kávových zrn Arabica, což odpovídá zhruba 2 š",
+      "taxonomy_checked_at": "2026-10-21T08:52:31+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W041",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -8871,24 +8888,30 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Nápoje",
+        "Piva a cidery",
+        "Nealkoholická",
+        "Plechovky"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:26+00:00",
+      "product_description": "Ochucené nealkoholické pivo s příchutí maliny a borůvky. Bez konzervantů a umělých barviv. Obsah alkoholu: &lt;0,5 % obj.Balení obsahuje 4 plechovky.",
+      "taxonomy_checked_at": "2026-10-21T08:52:35+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W039",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         },
         {
           "rule_id": "W040",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -8910,18 +8933,25 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Nápoje",
+        "Vody a minerálky",
+        "Ochucené",
+        "Další příchutě"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:26+00:00",
+      "product_description": "Neperlivý nealkoholický nápoj s příchutí bílého hrozna. Dodržujte pitný režim s Dobrou vodou z Novohradských hor.Balení obsahuje 6 kusů.PoužitíPodávej",
+      "taxonomy_checked_at": "2026-10-21T08:52:39+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W042",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
-      ]
+      ],
+      "taxonomy_status": "partial",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -8958,7 +8988,8 @@
           "decision": "reject",
           "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
-      ]
+      ],
+      "taxonomy_status": "partial"
     },
     {
       "store": "Rohlík",
@@ -8979,19 +9010,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Kosmetika",
+        "Deodoranty a parfémy",
+        "Dámské",
+        "Ve spreji"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:26+00:00",
+      "product_description": "Objevte péči o celé tělo s deodorantem Dove s vůní maliny a růže.Tento sprej kombinuje účinnou ochranu proti tělesnému zápachu s jemnou péčí o pokožku",
+      "taxonomy_checked_at": "2026-10-21T08:52:43+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W040",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -9012,19 +9049,26 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Trvanlivé",
+        "Müsli, cereálie, kaše a tyčinky",
+        "Kaše",
+        "Ovesné",
+        "Ovocné"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:27+00:00",
+      "product_description": "Objevte všechny produkty Dr. Oetker.Malinová ovesná kaše. Vyvážená receptura s vysokým obsahem celozrnných ovesných vloček pro energii do vašeho dne.",
+      "taxonomy_checked_at": "2026-10-21T08:52:47+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W040",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Produkt není v kategorii čerstvého ovoce"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -9045,52 +9089,24 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Nápoje",
+        "Vody a minerálky",
+        "Sportovní a obohacené"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:27+00:00",
+      "product_description": "Funkční minerální voda obohacená&nbsp;o vitamíny a minerální látky. s příchutí citrónu jemně perliváPoužitíPodávejte vychlazené. Vhodné k jídlu i samo",
+      "taxonomy_checked_at": "2026-10-21T08:52:52+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W041",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "EAT ME Maliny čerstvé XL balení, vanička",
-      "url": "https://www.rohlik.cz/1482106-eat-me-maliny-cerstve-xl-baleni-vanicka",
-      "rule_ids": [
-        "W040"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1482106/1482106-1780650555645.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "EAT ME Maliny čerstvé XL balení, vanička",
-      "price_czk": 129.9,
-      "price_status": "ok",
-      "price_source": "visible-product-detail",
-      "checked_at": "2026-10-20T14:07:34+00:00",
-      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
-      "multibuy": [],
-      "http_status": 200,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:27+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W040",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -9111,19 +9127,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Trvanlivé",
+        "Konzervy, hotovky a instantní pokrmy",
+        "Sterilovaná zelenina, luštěniny a houby",
+        "Okurky"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:27+00:00",
+      "product_description": "Okurkový salát v jemně pálivém sladko-kyselém nálevu. Pasterovaná zelenina vhodná jako rychlá příloha.Hmotnost pevného podílu 240 g. Celková hmotnost",
+      "taxonomy_checked_at": "2026-10-21T08:53:00+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W043",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -9144,19 +9166,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Trvanlivé",
+        "Konzervy, hotovky a instantní pokrmy",
+        "Sterilovaná zelenina, luštěniny a houby",
+        "Okurky"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:27+00:00",
+      "product_description": "Křupavé okurky v kořeněném nálevu.Kouzlo výjimečné harmonie a koření tradiční receptury. Zpestří váš chuťový zážitek.",
+      "taxonomy_checked_at": "2026-10-21T08:53:05+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W043",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -9177,19 +9205,25 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Trvanlivé",
+        "Konzervy, hotovky a instantní pokrmy",
+        "Sterilovaná zelenina, luštěniny a houby",
+        "Směsi"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:27+00:00",
+      "product_description": "Mrkev s ananasem, zeleninovo-ovocná směs ve sladkokyselém nálevu.Pasterovaný výrobek.Hmotnost pevného podílu 200 g. Celková hmotnost obsahu 340 g.Použ",
+      "taxonomy_checked_at": "2026-10-21T08:53:10+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W046",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -9210,19 +9244,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Trvanlivé",
+        "Konzervy, hotovky a instantní pokrmy",
+        "Sterilovaná zelenina, luštěniny a houby",
+        "Okurky"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:27+00:00",
+      "product_description": "Okurky Efko bez přidaného cukru. Pasterovaná zelenina ve sladkokyselém nálevu se sladidlem rostlinného původu. Obsahují pouze přirozeně se vyskytujíc",
+      "taxonomy_checked_at": "2026-10-21T08:53:15+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W043",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -9243,19 +9283,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Trvanlivé",
+        "Konzervy, hotovky a instantní pokrmy",
+        "Sterilovaná zelenina, luštěniny a houby",
+        "Okurky"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:27+00:00",
+      "product_description": "Chutné a křupavé okurky z jižní Moravy.Ač to zní neuvěřitelně, &nbsp;jsou i tyto malinké&nbsp;okurčičky ručně sbírané! Křupavé v jemném sladkokyselém",
+      "taxonomy_checked_at": "2026-10-21T08:53:19+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W043",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -9276,19 +9322,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Trvanlivé",
+        "Konzervy, hotovky a instantní pokrmy",
+        "Sterilovaná zelenina, luštěniny a houby",
+        "Okurky"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:28+00:00",
+      "product_description": "Chutné a křupavé okurky z jižní Moravy.Ač to zní neuvěřitelně, &nbsp;jsou i tyto malinké&nbsp;okurčičky ručně sbírané! Křupavé v jemném sladkokyselém",
+      "taxonomy_checked_at": "2026-10-21T08:53:24+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W043",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -9309,19 +9361,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Trvanlivé",
+        "Konzervy, hotovky a instantní pokrmy",
+        "Sterilovaná zelenina, luštěniny a houby",
+        "Okurky"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:28+00:00",
+      "product_description": "Chutné a křupavé okurky z jižní Moravy.Vybrané koření a jemný ocet, cukr a přírodní aroma – i to jsou složky jedinečné efko chuti.",
+      "taxonomy_checked_at": "2026-10-21T08:53:29+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W043",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -9342,19 +9400,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Nápoje",
+        "Piva a cidery",
+        "Soury (kyseláče) a pšeničná",
+        "Soury (kyseláče)"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:28+00:00",
+      "product_description": "Ochucené pivo Kisseláč&nbsp;s&nbsp;příchutí maliny a ostružiny značky&nbsp;Elektrárna.&nbsp;Výčepní, nefiltrované pivo s ovocným aroma po lesním ovoci",
+      "taxonomy_checked_at": "2026-10-21T08:53:34+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W040",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -9375,19 +9439,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Dítě",
+        "Výživa",
+        "Kapsičky do ruky",
+        "Masové a zeleninové"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:28+00:00",
+      "product_description": "Kapsička s delikátní kombinací ovoce a zeleniny&nbsp;v BIO kvalitě.Vyzrálá jablka, královna&nbsp;zeleniny mrkev a pastinák, který je známý svou textur",
+      "taxonomy_checked_at": "2026-10-21T08:53:38+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W046",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -9408,19 +9478,26 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Trvanlivé",
+        "Müsli, cereálie, kaše a tyčinky",
+        "Müsli a Granola",
+        "Pečené müsli a granoly",
+        "Ovocné"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:28+00:00",
+      "product_description": "Emco Mysli XXL borůvky a maliny kombinuje křupavé hrudky s kousky borůvek a malin. Díky vysokému podílu ovesných vloček je přirozeným zdrojem vlákniny",
+      "taxonomy_checked_at": "2026-10-21T08:53:43+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W039",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Produkt není v kategorii čerstvého ovoce"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -9441,19 +9518,24 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Nevolnost, zvracení",
+        "Co mě trápí...",
+        "Lékárna"
+      ],
+      "category_source": "jsonld_product_category",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:28+00:00",
+      "product_description": "Enhydrol banán je potravina pro zvláštní lékařské účely určená k rehydrataci. Používá se k doplnění vody a elektrolytů u stavů hrozících odvodněním organismu jako jsou průjmová onemocnění, horečka či zvracení. Potravina je určená pro dospělé a děti od ukončeného prvního týdne věku. Má složení odpovídající požadavkům ESPGHAN s přírodní banánovou chutí. Balení obsahuje 10 sáčků.",
+      "taxonomy_checked_at": "2026-10-21T08:53:47+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W038",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Produkt není v kategorii čerstvého ovoce"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -9474,19 +9556,24 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Uzeniny a lahůdky",
+        "Saláty, pomazánky a pesta",
+        "Zeleninové pomazánky, hummusy a dipy"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:28+00:00",
+      "product_description": "Hummus s citronovou kůrou&nbsp;podle autentické řecké receptury, vyrobený ze 100% řecké cizrny a kvalitních středomořských surovin.&nbsp;Má jemnou vyv",
+      "taxonomy_checked_at": "2026-10-21T08:53:52+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W041",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Produkt není v kategorii čerstvého ovoce"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -9545,19 +9632,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Nápoje",
+        "Limonády a energy",
+        "Limonády",
+        "Jahoda a malina"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:28+00:00",
+      "product_description": "Fizi drink s malinovou příchutí se sníženým obsahem cukru a bez konzervantů! Každá plechovka obsahuje QR kód, díky kterému můžete&nbsp;po naskenovaní",
+      "taxonomy_checked_at": "2026-10-21T08:53:56+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W040",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -9578,19 +9671,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Nápoje",
+        "Džusy, ovocné nápoje a sirupy",
+        "Nektary a ovocné nápoje",
+        "Nektary"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:28+00:00",
+      "product_description": "Sladký ovocný nektar z kvalitních, pečlivě vybraných borůvek. Podíl ovocné složky je nejméně 35 %. Džusy Superior obsahují ovocné šťávy a nektary, kte",
+      "taxonomy_checked_at": "2026-10-21T08:54:01+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W039",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -9611,19 +9710,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Mražené",
+        "Zmrzlina a led",
+        "Nanuky a kornouty",
+        "Nanuky ovocné"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:28+00:00",
+      "product_description": "Fruitisimo banán–jahoda sorbet je čistě ovocná zmrzlina s kombinací banánové a jahodové chuti. Hodí se jako lehké osvěžení.PoužitíPodávejte jako dezer",
+      "taxonomy_checked_at": "2026-10-21T08:54:05+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W038",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -9644,19 +9749,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Trvanlivé",
+        "Sladkosti",
+        "Bonboniéry, pralinky a čokoládové lanýže",
+        "Bonboniéry jednodruhové"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:28+00:00",
+      "product_description": "Mléčné čokoládové pralinky Geisha s malinovou příchutí nabízejí harmonické spojení jemné čokolády a ovocných tónů. Tyto cukrovinky jsou inspirovány ja",
+      "taxonomy_checked_at": "2026-10-21T08:54:10+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W040",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -9677,19 +9788,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Dítě",
+        "Výživa",
+        "Kapsičky do ruky",
+        "Ovocné"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:28+00:00",
+      "product_description": "Ovocná kapsička s příchutí borůvek vhodná pro děti od ukončeného 12. měsíce. Kapsička představuje jedinečnou svačinku plnou nejkvalitnějších jablek, b",
+      "taxonomy_checked_at": "2026-10-21T08:54:15+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W039",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Produkt není v kategorii čerstvého ovoce"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -9710,19 +9827,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Dítě",
+        "Výživa",
+        "Kapsičky do ruky",
+        "Ovocné"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:29+00:00",
+      "product_description": "Gerber Natural kapsička banán a jablko je ovocná přesnídávka do malé ručky, která potěší všechny mlsné jazýčky. V každé porci se nachází pečlivě vybra",
+      "taxonomy_checked_at": "2026-10-21T08:54:19+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W038",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Produkt není v kategorii čerstvého ovoce"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -9743,19 +9866,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Dítě",
+        "Výživa",
+        "Kapsičky do ruky",
+        "Ovocné"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:29+00:00",
+      "product_description": "Gerber Natural kapsička jablko, banán a jahoda je ovocná přesnídávka do malé ručky, která potěší všechny mlsné jazýčky. V každé porci se nachází pečli",
+      "taxonomy_checked_at": "2026-10-21T08:54:24+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W038",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Produkt není v kategorii čerstvého ovoce"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -9776,19 +9905,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Dítě",
+        "Výživa",
+        "Kapsičky do ruky",
+        "Ovocné"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:29+00:00",
+      "product_description": "Gerber Natural kapsička jablko, borůvka a banán je ovocná přesnídávka do malé ručky, která potěší všechny mlsné jazýčky. V každé porci se nachází pečl",
+      "taxonomy_checked_at": "2026-10-21T08:54:29+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W039",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Produkt není v kategorii čerstvého ovoce"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -9810,24 +9945,30 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Smetanové, cottage a tavené",
+        "Smetanové"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:29+00:00",
+      "product_description": "Čerstvý termizovaný sýr Gervais Original je vyrobený z tvarohu, smetany, papriky a rajčat. Velmi dobře se roztírá díky své krémové konzistenci.&nbsp;G",
+      "taxonomy_checked_at": "2026-10-21T08:54:33+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W044",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         },
         {
           "rule_id": "W047",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -9848,19 +9989,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Dítě",
+        "Výživa",
+        "Příkrmy",
+        "Masové"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:29+00:00",
+      "product_description": "Potěšte své děti BIO masozeleninovým příkrmem, kde hlavní roli hraje poctivá porce farmářského kuřete, podpořená&nbsp;sladkou mrkví a kapkou&nbsp;šťáv",
+      "taxonomy_checked_at": "2026-10-21T08:54:38+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W046",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -9881,19 +10028,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Dítě",
+        "Výživa",
+        "Sušenky, křupky, ovocné tyčinky a želé",
+        "Dětské křupky a krekry"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:29+00:00",
+      "product_description": "Nesmažené jahodovo-banánové křupky Goodies jsou hravá srdíčka obalená&nbsp;lyofilizovaným ovocným práškem. Jsou skvělým zdrojem vlákniny, navíc bez př",
+      "taxonomy_checked_at": "2026-10-21T08:54:42+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W038",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Produkt není v kategorii čerstvého ovoce"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -9914,19 +10067,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Dítě",
+        "Výživa",
+        "Kapsičky do ruky",
+        "Ovocné"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:29+00:00",
+      "product_description": "Goodies banán, jahoda a jablko – ovocné pyré v kapsičce s motivem oblíbené postavičky Bluey dělá z každé svačiny malou radost. Ovocná dětská kapsička",
+      "taxonomy_checked_at": "2026-10-21T08:54:46+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W038",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Produkt není v kategorii čerstvého ovoce"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -9947,19 +10106,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Dítě",
+        "Výživa",
+        "Kapsičky do ruky",
+        "Ovocné"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:29+00:00",
+      "product_description": "Goodies jablko a banán – ovocné pyré v kapsičce s motivem oblíbené postavičky Bluey dělá z každé svačiny malou radost. Ovocná dětská kapsička obsahuje",
+      "taxonomy_checked_at": "2026-10-21T08:54:50+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W038",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Produkt není v kategorii čerstvého ovoce"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -9980,19 +10145,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Dítě",
+        "Výživa",
+        "Kapsičky do ruky",
+        "Ovocné"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:29+00:00",
+      "product_description": "Goodies jablko a borůvka – ovocné pyré v kapsičce s motivem oblíbené postavičky Bluey dělá z každé svačiny malou radost. Ovocná dětská kapsička obsahu",
+      "taxonomy_checked_at": "2026-10-21T08:54:54+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W039",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Produkt není v kategorii čerstvého ovoce"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -10013,19 +10184,24 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Pekárna a cukrárna",
+        "Sladké pečivo",
+        "Balené sladké pečivo"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:29+00:00",
+      "product_description": "Balené jemné pečivo s vanilkovo-borůvkovou náplní.PoužitíUrčeno k přímé konzumaci.O výrobciFrost Prešov, a.s. je slovenská společnost, která byla zalo",
+      "taxonomy_checked_at": "2026-10-21T08:54:58+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W039",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -10046,19 +10222,24 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Speciální výživa",
+        "Doplňky stravy",
+        "Energické gely,shoty a elektrolyty"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:29+00:00",
+      "product_description": "Doplněk stravy. Magnesium shot s příchutí citrónu. Se sladidly.Shot obsahuje: čištěná voda regulátor kyselosti (kyselina citronová) hořečnaté soli kys",
+      "taxonomy_checked_at": "2026-10-21T08:55:02+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W041",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Produkt není v kategorii čerstvého ovoce"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -10079,19 +10260,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Dítě",
+        "Výživa",
+        "Sušenky, křupky, ovocné tyčinky a želé",
+        "Dětské křupky a krekry"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:29+00:00",
+      "product_description": "Hami BIO prstýnky vhodné od šestého měsíce jsou zábavnou svačinkou pro malé, ale i větší ratolesti. V jednom balení najdete dvě příchutě: mrkev a rajč",
+      "taxonomy_checked_at": "2026-10-21T08:55:05+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W046",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Produkt není v kategorii čerstvé zeleniny"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -10112,19 +10299,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Dítě",
+        "Výživa",
+        "Příkrmy",
+        "Ovocné"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:30+00:00",
+      "product_description": "Hami kapsička Jablko, banán, černý rybíz a borůvky je ovocné pyré v praktickém balení pro děti. Obsahuje vitamín C. Ovocná kombinace přináší vyváženou",
+      "taxonomy_checked_at": "2026-10-21T08:55:09+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W038",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -10145,19 +10338,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Dítě",
+        "Výživa",
+        "Kapsičky do ruky",
+        "Ovocné"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:30+00:00",
+      "product_description": "Ovocná kapsička s příchutí banánu, broskví a jablek pro děti od ukončeného 6. měsíce.Kapsička zajistí dětem přísun potřebného ovoce a vitamínů.&nbsp;J",
+      "taxonomy_checked_at": "2026-10-21T08:55:13+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W038",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Produkt není v kategorii čerstvého ovoce"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -10179,24 +10378,30 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Dítě",
+        "Výživa",
+        "Kapsičky do ruky",
+        "Ovocné"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:30+00:00",
+      "product_description": "Ovocná kapsička jablko, banán, borůvky a jáhly pro děti od ukončeného 6.&nbsp;měsíce. Kapsička zajistí dětem přísun potřebného ovoce a vitamínů.&nbsp;",
+      "taxonomy_checked_at": "2026-10-21T08:55:17+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W038",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Produkt není v kategorii čerstvého ovoce"
         },
         {
           "rule_id": "W039",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Produkt není v kategorii čerstvého ovoce"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -10217,19 +10422,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Dítě",
+        "Výživa",
+        "Kapsičky do ruky",
+        "Ovocné"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:30+00:00",
+      "product_description": "Ovocná kapsička jablko, banán, meruňka a polenta pro děti od ukončeného 6.&nbsp;měsíce. Kapsička zajistí dětem přísun potřebného ovoce a vitamínů.&nbs",
+      "taxonomy_checked_at": "2026-10-21T08:55:21+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W038",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Produkt není v kategorii čerstvého ovoce"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -10250,19 +10461,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Dítě",
+        "Výživa",
+        "Sušenky, křupky, ovocné tyčinky a želé",
+        "Dětské křupky a krekry"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:30+00:00",
+      "product_description": "Hamánek BIO rýžová kolečka malina a banán. Jemná, a přitom křupavá struktura doplněná o chuť šťavnatého ovoce představuje ideální svačinku pro malé hl",
+      "taxonomy_checked_at": "2026-10-21T08:55:25+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W040",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Produkt není v kategorii čerstvého ovoce"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -10283,19 +10500,25 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Dítě",
+        "Výživa",
+        "Kapsičky do ruky",
+        "Ovocné"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:30+00:00",
+      "product_description": "Ovocná kapsička ze 100 % ovoce s příchutí borůvky pro děti od ukončeného 6. měsíce. Pasterováno. Bez přidaného cukru, obsahuje přirozeně se vyskytujíc",
+      "taxonomy_checked_at": "2026-10-21T08:55:29+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W039",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Produkt není v kategorii čerstvého ovoce"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -10316,19 +10539,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Dítě",
+        "Výživa",
+        "Kapsičky do ruky",
+        "Ovocné"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:30+00:00",
+      "product_description": "Ovocná kapsička ze 100 % ovoces příchutí hrušek a banánu pro děti od ukončeného 4. měsíce.Díky&nbsp;praktickému balení \"kapsička\" si dítě svačinku můž",
+      "taxonomy_checked_at": "2026-10-21T08:55:33+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W038",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Produkt není v kategorii čerstvého ovoce"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -10349,19 +10578,25 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Dítě",
+        "Výživa",
+        "Kapsičky do ruky",
+        "Ovocné"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:30+00:00",
+      "product_description": "Zeleninovo-ovocná kapsička s příchutí jablek, mrkve a červené řepy pro děti od ukončeného 6. měsíce.Kapsička zajistí dětem přísun potřebného ovoce, ze",
+      "taxonomy_checked_at": "2026-10-21T08:55:36+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W046",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Produkt není v kategorii čerstvé zeleniny"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -10382,19 +10617,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Dítě",
+        "Výživa",
+        "Příkrmy",
+        "Ovocné"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:30+00:00",
+      "product_description": "Vyvážená BIO kapsička s jablky, banány, mangem a mrkví. 80 % ovoce a 20 % zeleniny bez přídavku cukrů (obsahuje přirozeně se vyskytující cukry) nedosl",
+      "taxonomy_checked_at": "2026-10-21T08:55:41+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W038",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -10415,19 +10656,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Dítě",
+        "Výživa",
+        "Kapsičky do ruky",
+        "Ovocné"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:30+00:00",
+      "product_description": "HiPP BIO kapsička s kombinací jablka, banánu, višně a špaldy nabízí jemné ovocné pyré pro děti od 1 roku. Bez přídavku cukrů (obsahuje pouze přirozeně",
+      "taxonomy_checked_at": "2026-10-21T08:55:45+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W038",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Produkt není v kategorii čerstvého ovoce"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -10448,19 +10695,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Dítě",
+        "Výživa",
+        "Příkrmy",
+        "Zeleninové"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:30+00:00",
+      "product_description": "Junior menu Mrkev s bramborami je kompletní hotové jídlo obsahující zeleninu v BIO kvalitě, rozmixovány do jemného krému. vhodné pro děti od ukončenéh",
+      "taxonomy_checked_at": "2026-10-21T08:55:49+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W046",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -10481,19 +10734,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Dítě",
+        "Výživa",
+        "Příkrmy",
+        "Masové"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:30+00:00",
+      "product_description": "Maso-zeleninový příkrm Mrkev s kukuřicí a telecím masem je kompletní hotové jídlo obsahující zeleninu v BIO kvalitě. vhodné pro děti od ukončeného 6.",
+      "taxonomy_checked_at": "2026-10-21T08:55:53+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W046",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -10514,19 +10773,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Dítě",
+        "Výživa",
+        "Příkrmy",
+        "Masové"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:30+00:00",
+      "product_description": "Junior menu Mrkev s rýží a telecím je kompletní hotové jídlo obsahující telecí&nbsp;maso&nbsp;a&nbsp;zeleninu&nbsp;v BIO kvalitě. vhodné pro děti od u",
+      "taxonomy_checked_at": "2026-10-21T08:55:57+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W046",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -10547,19 +10812,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Dítě",
+        "Výživa",
+        "Příkrmy",
+        "Rybí"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:30+00:00",
+      "product_description": "Junior menu Mrkev s bramborai a lososem je kompletní hotové jídlo s kousky mořské ryby a zeleniny, rozmixováno do jemného pyré. vhodné pro děti od uko",
+      "taxonomy_checked_at": "2026-10-21T08:56:01+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W046",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -10580,256 +10851,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Dítě",
+        "Výživa",
+        "Kapsičky do ruky",
+        "Ovocné"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:31+00:00",
+      "product_description": "Dětské ovocno-zeleninové&nbsp;pyré v kvalitě Demeter. Obsahuje 100 % přírodních a BIO surovin a neobsahuje přidaný cukr, GMO, sůl ani jiná aditiva, ta",
+      "taxonomy_checked_at": "2026-10-21T08:56:05+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W046",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Produkt není v kategorii čerstvé zeleniny"
         }
       ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "Hrozny bezsemenné mix, balení",
-      "url": "https://www.rohlik.cz/1326877-hrozny-bezsemenne-mix-baleni",
-      "rule_ids": [
-        "W042"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1326877/1326877-1501861166.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Hrozny bezsemenné mix, balení",
-      "price_czk": 80.9,
-      "price_status": "ok",
-      "price_source": "visible-product-detail",
-      "checked_at": "2026-10-20T14:10:23+00:00",
-      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
-      "multibuy": [],
-      "http_status": 200,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:31+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W042",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "Hrozny bílé bezsemenné volné (odr. AUTUMNCRISP®), střapec",
-      "url": "https://www.rohlik.cz/1356397-hrozny-bile-bezsemenne-volne-odr-autumncrisp-strapec",
-      "rule_ids": [
-        "W042"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1356397/1356397-1560000030.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Hrozny bílé bezsemenné volné (odr. AUTUMNCRISP®), střapec",
-      "price_czk": null,
-      "price_status": "price_unverified",
-      "price_source": null,
-      "checked_at": "2026-10-20T14:10:33+00:00",
-      "note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech",
-      "multibuy": [],
-      "http_status": 200,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:31+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W042",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "Hrozny bílé bezsemenné, balení",
-      "url": "https://www.rohlik.cz/1314777-hrozny-bile-bezsemenne-baleni",
-      "rule_ids": [
-        "W042"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1314777/1314777-1538028408.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Hrozny bílé bezsemenné, balení",
-      "price_czk": 59.9,
-      "price_status": "ok",
-      "price_source": "visible-product-detail",
-      "checked_at": "2026-10-20T14:10:19+00:00",
-      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
-      "multibuy": [],
-      "http_status": 200,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:31+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W042",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "Hrozny bílé volné (odr. Victoria), střapec",
-      "url": "https://www.rohlik.cz/1350685-hrozny-bile-volne-odr-victoria-strapec",
-      "rule_ids": [
-        "W042"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1350685/1350685-1684841010944.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Hrozny bílé volné (odr. Victoria), střapec",
-      "price_czk": null,
-      "price_status": "price_unverified",
-      "price_source": null,
-      "checked_at": "2026-10-20T14:10:35+00:00",
-      "note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech",
-      "multibuy": [],
-      "http_status": 200,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:31+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W042",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "Hrozny tmavé bezsemenné, balení",
-      "url": "https://www.rohlik.cz/1293685-hrozny-tmave-bezsemenne-baleni",
-      "rule_ids": [
-        "W042"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1293685/1293685-1499947322.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Hrozny tmavé bezsemenné, balení",
-      "price_czk": null,
-      "price_status": "price_unverified",
-      "price_source": null,
-      "checked_at": "2026-10-20T14:10:25+00:00",
-      "note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech",
-      "multibuy": [],
-      "http_status": 200,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:31+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W042",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "Hrozny tmavé volně (odr. Red globe) , střapec",
-      "url": "https://www.rohlik.cz/1356399-hrozny-tmave-volne-odr-red-globe-strapec",
-      "rule_ids": [
-        "W042"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1356399/1356399-1573481015.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Hrozny tmavé volně (odr. Red globe) , střapec",
-      "price_czk": 111.92,
-      "price_status": "ok",
-      "price_source": "visible-product-detail",
-      "checked_at": "2026-10-20T14:10:21+00:00",
-      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
-      "multibuy": [],
-      "http_status": 200,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:31+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W042",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "Joyn koktejlová rajčata (zn Looye), balení",
-      "url": "https://www.rohlik.cz/1478178-joyn-koktejlova-rajcata-zn-looye-baleni",
-      "rule_ids": [
-        "W044",
-        "W045"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1478178/1478178-1765213453277.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Joyn koktejlová rajčata (zn Looye), balení",
-      "price_czk": null,
-      "price_status": "http_error",
-      "price_source": null,
-      "checked_at": "2026-10-20T14:12:22+00:00",
-      "note": "HTTP 429",
-      "multibuy": [],
-      "http_status": 429,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:31+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W044",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        },
-        {
-          "rule_id": "W045",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -10850,19 +10890,25 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Nápoje",
+        "Vody a minerálky",
+        "Ochucené",
+        "Jahoda a malina"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:31+00:00",
+      "product_description": "Nesycený nealkoholický nápoj s kapkou ovocné šťávy s příchutí maliny. Jupík – oblíbený nápoj pro aktivní děti.Víte, jak se neztratit v divočině žízně?",
+      "taxonomy_checked_at": "2026-10-21T08:56:36+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W040",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -10883,19 +10929,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Mražené",
+        "Zmrzlina a led",
+        "Nanuky a kornouty",
+        "Nanuky ovocné"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:31+00:00",
+      "product_description": "Vodová zmrzlina s citrónovou příchutí a jahodová zmrzlina se zelenou tukovou polevou.PoužitíUrčeno k přímé konzumaci.O výrobciFroneri je nová zmrzlino",
+      "taxonomy_checked_at": "2026-10-21T08:56:39+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W041",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -10916,19 +10968,24 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Mražené",
+        "Zmrzlina a led",
+        "Multipacky"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:31+00:00",
+      "product_description": "Vodová zmrzlina s příchutí citronu, jahodovým sorbetem ve žvýkačkové polevě s kousky jahod. Balení obsahuje 9 kusů.PoužitíUrčeno k přímé konzumaci.O v",
+      "taxonomy_checked_at": "2026-10-21T08:56:43+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W041",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -10949,19 +11006,26 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Plant Based",
+        "Alternativy mléčného a chlazeného",
+        "Rostlinné dezerty",
+        "Dle základu",
+        "Ovesné"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:31+00:00",
+      "product_description": "Ovesná kaše značky Kasha s příchutí maliny. Na vývoji kaše spolupracovali profesionální kuchaři a výživoví poradci. Je bez laktózy, bez lepku, bez kon",
+      "taxonomy_checked_at": "2026-10-21T08:56:47+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W040",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -10982,19 +11046,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Dítě",
+        "Výživa",
+        "Sušenky, křupky, ovocné tyčinky a želé",
+        "Dětské sušenky a cereálie"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:31+00:00",
+      "product_description": "Dětské ovocno-zeleninové knoflíčky s příchutí banánu a dýně.Knoflíčky jsou vhodné pro miminka od 9 měsíců. Díky zeleninové složce dopřejete vašemu děť",
+      "taxonomy_checked_at": "2026-10-21T08:56:51+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W038",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Produkt není v kategorii čerstvého ovoce"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -11015,19 +11085,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Dítě",
+        "Výživa",
+        "Sušenky, křupky, ovocné tyčinky a želé",
+        "Dětské sušenky a cereálie"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:31+00:00",
+      "product_description": "Dětské ovocno-zeleninové knoflíčky s příchutí maliny a červené řepy.Knoflíčky jsou vhodné pro miminka od 9 měsíců. Díky zeleninové složce dopřejete va",
+      "taxonomy_checked_at": "2026-10-21T08:56:54+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W040",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Produkt není v kategorii čerstvého ovoce"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -11048,19 +11124,26 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Trvanlivé",
+        "Konzervy, hotovky a instantní pokrmy",
+        "Sterilovaná zelenina, luštěniny a houby",
+        "Rajčata a protlaky",
+        "Drcená"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:31+00:00",
+      "product_description": "BIO pasírovaná rajčata. Pasterováno.Kitchin BIO Pasírovaná rajčata neboli passata jsou vyrobena výhradně z pečlivě vybraných BIO rajčat pěstovaných v",
+      "taxonomy_checked_at": "2026-10-21T08:56:58+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W044",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -11081,19 +11164,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Trvanlivé",
+        "Konzervy, hotovky a instantní pokrmy",
+        "Sterilovaná zelenina, luštěniny a houby",
+        "Okurky"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:31+00:00",
+      "product_description": "Kitchin okurky cornichon jsou plné chuti a křupavosti. Jsou ručně sbírané před dosažením zralosti a mají příjemně nakyslou a štiplavou chuť, která můž",
+      "taxonomy_checked_at": "2026-10-21T08:57:02+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W043",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -11114,19 +11203,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Trvanlivé",
+        "Konzervy, hotovky a instantní pokrmy",
+        "Sterilovaná zelenina, luštěniny a houby",
+        "Okurky"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:31+00:00",
+      "product_description": "Kitchin nakládané okurky jsou plné chuti a křupavosti. V jejich chuti se pojí sladkost, kyselost a jemné bylinky použité v láku.Nakládané okurky nesmí",
+      "taxonomy_checked_at": "2026-10-21T08:57:06+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W043",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -11147,19 +11242,26 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Trvanlivé",
+        "Konzervy, hotovky a instantní pokrmy",
+        "Sterilovaná zelenina, luštěniny a houby",
+        "Rajčata a protlaky",
+        "Drcená"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:32+00:00",
+      "product_description": "Pasírovaná rajčata Rustica, italsky passata Rustica, jsou typem rajčatové omáčky, která je vyrobená ze zralých, čerstvých rajčat. Ta jsou oloupána, zb",
+      "taxonomy_checked_at": "2026-10-21T08:57:10+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W044",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
