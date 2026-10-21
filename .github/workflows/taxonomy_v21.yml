@@ -1,0 +1,101 @@
+name: Rohlík Košík v21 - Kategorie prodejce (bez nového sběru)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rk-v21-taxonomy
+  cancel-in-progress: false
+
+jobs:
+  taxonomy:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - name: Load taxonomy upgrade from main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: patch
+      - name: Checkout current catalogue branch
+        uses: actions/checkout@v4
+        with:
+          ref: fix/real-product-price-reading-v20
+          path: catalog
+          fetch-depth: 0
+      - name: Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Unit tests (offline)
+        run: PYTHONPATH=patch python -m unittest discover -s patch/tests -v
+      - name: Patch catalogue scanner (without restarting search)
+        working-directory: catalog
+        run: |
+          cp ../patch/store_taxonomy.py store_taxonomy.py
+          python ../patch/apply_taxonomy_patch.py catalog_monitor.py
+          python -m py_compile catalog_monitor.py store_taxonomy.py
+          PYTHONPATH=. python -m unittest discover -s tests -v
+      - name: Install Playwright browser
+        run: |
+          python -m pip install playwright==1.56.0
+          python -m playwright install --with-deps chromium
+      - name: Enrich existing produce products from product pages
+        working-directory: catalog
+        run: |
+          python ../patch/enrich_saved_catalog.py \
+            --catalog docs/data/catalog_latest.json \
+            --review docs/data/catalog_taxonomy_review.json \
+            --max-products 650 --workers 4 --budget-seconds 1700
+      - name: Save diagnostic outputs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rk-v21-taxonomy-review
+          path: |
+            catalog/docs/data/catalog_latest.json
+            catalog/docs/data/catalog_taxonomy_review.json
+          if-no-files-found: warn
+          retention-days: 14
+      - name: Commit updated scanner and verified catalog
+        working-directory: catalog
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add catalog_monitor.py store_taxonomy.py docs/data/catalog_latest.json docs/data/catalog_taxonomy_review.json
+          if git diff --cached --quiet; then
+            echo 'No modifications needed' >> "$GITHUB_STEP_SUMMARY"
+          else
+            git commit -m 'taxonomy: retailer categories before fresh produce inclusion [skip ci]'
+            git push origin HEAD:fix/real-product-price-reading-v20
+          fi
+          echo '## Retailer category validation' >> "$GITHUB_STEP_SUMMARY"
+          echo 'Produce was checked using retailer breadcrumb metadata when present. Unknowns were quarantined; no catalogue-wide product search was run.' >> "$GITHUB_STEP_SUMMARY"
+      - name: Ensure future catalogue scans keep taxonomy review data
+        working-directory: patch
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PYCODE'
+          from pathlib import Path
+          p=Path('.github/workflows/catalog.yml')
+          t=p.read_text(encoding='utf-8')
+          old='git add docs/data/catalog_latest.json docs/data/catalog_progress.json || true'
+          new='git add docs/data/catalog_latest.json docs/data/catalog_progress.json docs/data/catalog_taxonomy_review.json || true'
+          if old not in t and new not in t:
+              raise SystemExit('STOP: unexpected catalog workflow; no changes made')
+          if old in t:
+              p.write_text(t.replace(old,new),encoding='utf-8')
+          PYCODE
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add .github/workflows/catalog.yml
+          if ! git diff --cached --quiet; then
+            git commit -m 'catalog: preserve taxonomy review after future scans [skip ci]'
+            git push origin HEAD:main
+          fi
