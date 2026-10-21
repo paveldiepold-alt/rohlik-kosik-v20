@@ -44,7 +44,7 @@ jobs:
         run: |
           cp ../patch/price_v22.py price_v22.py
           python ../patch/apply_price_patch_v22.py .
-          python -m py_compile monitor.py visible_price.py price_v22.py
+          python -m py_compile monitor.py visible_price.py price_v22.py tests/test_kosik_routing.py
           PYTHONPATH=. python -m unittest discover -s tests -v
       - name: Install Playwright Chromium
         run: |
@@ -75,14 +75,19 @@ jobs:
           if-no-files-found: warn
           retention-days: 14
       - name: Save scanner and reviewed product prices
-        if: always()
+        # Only save after test/patch phase successfully reached the price replay.
+        # Preserve partial replay checkpoints if retailer rate-limits the run.
+        if: always() && steps.recheck.outcome != 'skipped'
         working-directory: catalog
         shell: bash
         run: |
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add monitor.py visible_price.py price_v22.py docs/data/catalog_latest.json docs/data/catalog_price_review_v22.json
+          git add monitor.py visible_price.py price_v22.py tests/test_kosik_routing.py docs/data/catalog_latest.json
+          if [[ -f docs/data/catalog_price_review_v22.json ]]; then
+            git add docs/data/catalog_price_review_v22.json
+          fi
           if ! git diff --cached --quiet; then
             git commit -m 'prices: parse whole-pack amounts, replay saved URL checks [skip ci]'
             git push origin HEAD:fix/real-product-price-reading-v20
