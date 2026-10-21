@@ -1,0 +1,94 @@
+name: Rohlik Kosik v22 - Oprava cen bez noveho vyhledavani
+on:
+  workflow_dispatch:
+    inputs:
+      focus:
+        description: 'Pilot: cast nazvu (napr. Ariel). Prazdne = vsechny znacky.'
+        required: false
+        default: 'Ariel'
+        type: string
+      max_products:
+        description: 'Maximalni pocet jiz nalezenych produktu v tomto behu (max 70)'
+        required: false
+        default: '40'
+        type: string
+permissions:
+  contents: write
+concurrency:
+  group: rk-v20-catalog
+  cancel-in-progress: false
+jobs:
+  validate-and-recheck:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    steps:
+      - name: Load safe price fix from main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: patch
+      - name: Checkout saved catalog branch
+        uses: actions/checkout@v4
+        with:
+          ref: fix/real-product-price-reading-v20
+          fetch-depth: 0
+          path: catalog
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate fix offline
+        run: PYTHONPATH=patch python -m unittest discover -s patch/tests -p 'test_*v22.py' -v
+      - name: Patch catalog scanner without starting catalogue searches
+        working-directory: catalog
+        run: |
+          cp ../patch/price_v22.py price_v22.py
+          python ../patch/apply_price_patch_v22.py .
+          python -m py_compile monitor.py visible_price.py price_v22.py
+          PYTHONPATH=. python -m unittest discover -s tests -v
+      - name: Install Playwright Chromium
+        run: |
+          python -m pip install 'playwright==1.56.0'
+          python -m playwright install --with-deps chromium
+      - name: Recheck saved product URLs only
+        id: recheck
+        working-directory: catalog
+        continue-on-error: true
+        env:
+          FOCUS: ${{ inputs.focus }}
+          LIMIT: ${{ inputs.max_products }}
+        run: |
+          python ../patch/recheck_catalog_prices_v22.py \
+            --catalog docs/data/catalog_latest.json \
+            --report docs/data/catalog_price_review_v22.json \
+            --focus "$FOCUS" \
+            --max-products "$LIMIT" \
+            --budget-seconds 1200 --delay-seconds 3
+      - name: Upload review and checkpoint
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rk-v22-prices-review
+          path: |
+            catalog/docs/data/catalog_price_review_v22.json
+            catalog/docs/data/catalog_latest.json
+          if-no-files-found: warn
+          retention-days: 14
+      - name: Save scanner and reviewed product prices
+        if: always()
+        working-directory: catalog
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add monitor.py visible_price.py price_v22.py docs/data/catalog_latest.json docs/data/catalog_price_review_v22.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'prices: parse whole-pack amounts, replay saved URL checks [skip ci]'
+            git push origin HEAD:fix/real-product-price-reading-v20
+          fi
+      - name: Report result
+        if: steps.recheck.outcome != 'success'
+        run: |
+          echo '::error::Price recheck interrupted; saved diagnostics and checkpoint. See artifact.'
+          exit 1
