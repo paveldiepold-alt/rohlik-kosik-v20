@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Monitor slev v27 – kategorie prodejců</title>
+<style>
+:root{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;background:#eef2f6;color:#172c49}
+*{box-sizing:border-box}body{margin:0}header{background:#142238;color:#fff;padding:20px max(18px,calc((100vw - 1730px)/2))}h1{font-size:23px;margin:0}header p{color:#cbd7e6;margin:5px 0 0;font-size:13px}
+main{max-width:1780px;margin:auto;padding:20px 24px}.notice{border:1px solid #ead8aa;background:#fff9ea;border-radius:10px;padding:13px 16px;font-size:13px;color:#695129;margin-bottom:15px}.grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px;margin-bottom:15px}.stat,.panel{border-radius:12px;background:white;box-shadow:0 2px 11px #1234560b}.stat{padding:17px}.stat strong{display:block;font-size:29px}.stat span{font-size:12px;color:#647792}.shopcoverage{display:flex;gap:10px;flex-wrap:wrap;margin:-2px 0 15px}.shopcover{background:white;border-radius:10px;padding:10px 15px;flex:1;min-width:200px;font-size:12px;color:#536780;box-shadow:0 1px 8px #12345606}.shopcover strong{color:#20334f}.shopbar{height:6px;background:#e7edf2;border-radius:8px;margin-top:8px;overflow:hidden}.shopbar span{display:block;height:100%;background:#477eac}.panel{padding:20px}.filters{display:flex;flex-wrap:wrap;gap:13px;align-items:end}.filters label{display:flex;flex-direction:column;gap:5px;min-width:190px;font-size:11px;font-weight:750;color:#5c6f89}.filters select,.filters input{height:41px;width:100%;border:1px solid #d3dce7;border-radius:8px;background:#fff;padding:8px 10px;color:#14243a;font-size:13px}.filters .search{flex:1;min-width:210px}.summary{font-size:12px;color:#61718a;padding:15px 0}.wrap{overflow:auto}table{width:100%;border-collapse:collapse;font-size:13px;min-width:1050px}th{text-align:left;background:#f2f5fa;color:#51647c;font-size:12px;white-space:nowrap}td,th{padding:12px 10px;border-bottom:1px solid #e9edf3;vertical-align:top}td:nth-child(2){max-width:470px}.title{font-weight:760}.path{margin-top:5px;font-size:11px;color:#637791;line-height:1.45}.price{font-weight:750;white-space:nowrap}.ok{color:#137d5a}.warn{color:#ac761e}.badge{display:inline-block;border-radius:20px;background:#f0f3f8;padding:4px 9px;font-size:11px;font-weight:750}.badge.verified{color:#176f55;background:#e9f8f1}.badge.review{color:#986b18;background:#fff2d6}.badge.mismatch{color:#af443f;background:#fff0ed}.note{font-size:11px;color:#647891;margin-top:7px}.pager{display:flex;justify-content:flex-end;align-items:center;gap:10px;margin-top:16px}.pager button{padding:9px 14px;border-radius:7px;border:1px solid #cbd5e0;background:white;cursor:pointer}a{color:#1663ad;text-decoration:none;font-weight:730}a:hover{text-decoration:underline}footer{font-size:11px;color:#708198;padding:12px 0 20px}
+@media(max-width:850px){main{padding:12px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.panel{padding:13px}.filters label{flex:1;min-width:145px}.stat strong{font-size:23px}}
+.quick{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:13px}.quick button{border:1px solid #cfdae7;background:#fff;border-radius:8px;padding:10px 13px;cursor:pointer;color:#263a56;font-weight:700}.quick button.active{color:#fff;background:#173f64;border-color:#173f64}.fav{background:none;border:0;font-size:23px;cursor:pointer;color:#a4b3c5}.fav.selected{color:#c38b22}.stamp{font-size:11px;color:#74849a}.meta{font-size:11px;color:#60738a;margin-top:5px}.del{color:#ba5a40;font-weight:700;white-space:nowrap}.light{color:#8998a8}.old{font-size:11px;color:#8998a8;text-decoration:line-through}.mobile{display:none}.mobile-card{background:white;border:1px solid #e3eaf1;border-radius:9px;padding:12px;margin-bottom:9px}.mobile-card h3{font-size:14px;margin:0 0 6px}.mobile-top{display:flex;justify-content:space-between;gap:8px}.mobile-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:8px;font-size:12px}.empty-note{text-align:center;color:#77869b;padding:20px}.filters .smallfilter{min-width:155px}
+@media(max-width:850px){.wrap{display:none}.mobile{display:block}.quick button{flex:1}.pager{justify-content:space-between}}
+</style>
+</head>
+<body>
+<header><h1>🛒 Monitor slev v27 <small style="font-size:13px">· testovací náhled</small></h1><p>Rohlík × Košík · skutečné cesty kategorií e-shopů · oddělená diagnostika cen</p></header>
+<main>
+<div class="notice" id="notice">Načítám nezávislý náhled v27. Původní katalog v26 není tímto zobrazením upravován.</div>
+<section class="grid" aria-label="Souhrn"><div class="stat"><strong id="nAll">—</strong><span>Výrobků celkem</span></div><div class="stat"><strong id="nPriced">—</strong><span>S poslední doloženou cenou</span></div><div class="stat"><strong id="nMissing">—</strong><span>Bez ověřené ceny</span></div><div class="stat"><strong id="nVerified">—</strong><span>Mapováno z cesty e-shopu</span></div><div class="stat"><strong id="nReview">—</strong><span>Zařazení / pravidla ke kontrole</span></div><div class="stat"><strong id="nRules">—</strong><span>Pravidla s výsledkem / celkem</span></div></section>
+<div class="shopcoverage" id="priceCoverage" aria-label="Dostupnost cen podle e-shopu"></div>
+<div class="quick" aria-label="Rychlá zobrazení">
+<button type="button" data-view="all" class="active">Všechny výrobky</button>
+<button type="button" data-view="deals">Akce s doloženou platností <span id="qDeals">—</span></button>
+<button type="button" data-view="drops">Pokles ceny <span id="qDrops">—</span></button>
+<button type="button" data-view="favs">★ Oblíbené <span id="qFavs">—</span></button>
+<button type="button" data-view="missing">Bez ceny <span id="qMissing">—</span></button>
+<button type="button" data-view="review">Zařazení/pravidla k prověření <span id="qReview">—</span></button>
+</div>
+<section class="panel"><div class="filters">
+<label>Obchod<select id="shop"><option value="">Oba obchody</option><option>Košík</option><option>Rohlík</option></select></label>
+<label>Ověřená kategorie e-shopu<select id="category"><option value="">Všechny kategorie</option></select></label>
+<label title="U výrobků bez potvrzené kategorie slouží pouze k procházení katalogu, nikoli k jejich automatickému zařazení.">Sledovaná skupina (původní pravidlo)<select id="rulecat"><option value="">Všechny sledované skupiny</option></select></label>
+<label>Shoda se sledovaným pravidlem<select id="catstate"><option value="">Všechny stavy</option><option value="verified">Potvrzeno i pravidlo</option><option value="review">Varianta/kategorie k prověření</option><option value="mismatch">Nesoulad s pravidly</option></select></label>
+<label>Diagnostika ceny<select id="pstate"><option value="">Všechny ceny</option><option value="ok">S cenou</option><option value="blocked_http">Blokování HTTP</option><option value="price_read_unverified">Cena nevyčtena</option><option value="identity_mismatch">Neověřená identita</option><option value="product_unavailable_unconfirmed">Produkt možná nedostupný</option><option value="invalid_price_evidence">Neplatný záznam ceny</option><option value="unknown">Neznámý problém</option></select></label>
+<label>Seřadit<select id="sort"><option value="name">Název A–Z</option><option value="price_asc">Nejnižší cena</option><option value="price_desc">Nejvyšší cena</option><option value="discount">Největší sleva</option><option value="recent">Poslední cena</option></select></label>
+<label class="search">Název / cesta obchodu<input id="q" type="search" placeholder="Hledat výrobek nebo kategorii…"></label></div>
+<div class="summary" id="shown">—</div>
+<div class="wrap"><table><thead><tr><th>★</th><th>Obchod</th><th>Výrobek a cesta kategorie e-shopu</th><th>Společná kategorie</th><th>Shoda se sledovaným pravidlem</th><th>Cena / sleva</th><th>Diagnostika ceny</th><th>Detail</th></tr></thead><tbody id="rows"></tbody></table></div><div class="mobile" id="cards"></div>
+<div class="pager"><button id="prev">← Předchozí</button><span id="pages">—</span><button id="next">Další →</button></div></section>
+<footer>Ceny jsou historická pozorování a nemusejí být aktuální. Stav HTTP 429 ukazuje na poslední známý problém se zdrojem, nikoliv důkaz trvalé nedostupnosti výrobku. Označení „Ke kontrole“ neznamená, že je produkt smazán. Kategorie prodejce a shoda konkrétní varianty sledovaného pravidla jsou nezávislé údaje. Filtr původní sledované skupiny je pouze navigační pomůcka a nepředstavuje potvrzení kategorie prodejcem.</footer>
+</main>
+<script>
+'use strict';
+const $=id=>document.getElementById(id);let catalog=null, subset=[],page=0,view='all';
+const FAV_KEY='rk-favorites-v26';let favs=new Set();
+try{const saved=JSON.parse(localStorage.getItem(FAV_KEY)||'[]');if(Array.isArray(saved))favs=new Set(saved.filter(x=>typeof x==='string').slice(0,2500))}catch(_){ }
+const key=p=>String(p.store||'')+'|'+String(p.url||'');
+const recordFavs=()=>{try{localStorage.setItem(FAV_KEY,JSON.stringify([...favs]))}catch(_){ }};
+const isPrice=p=>p.price_status==='ok'&&typeof p.price_czk==='number'&&Number.isFinite(p.price_czk)&&p.price_czk>0;
+const ageHours=p=>{const stamp=Date.parse(p.checked_at||'');return Number.isFinite(stamp)?Math.max(0,(Date.now()-stamp)/3600000):Infinity};
+const freshPrice=p=>isPrice(p)&&ageHours(p)<=72;
+const today=()=>{const values=Object.fromEntries(new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Prague',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date()).map(x=>[x.type,x.value]));return `${values.year}-${values.month}-${values.day}`};
+// A dated/current advertised promotion is different from a historical
+// discount observation. Missing expiry does not prove active validity.
+const evidencedDiscount=p=>isPrice(p)&&typeof p.discount_pct==='number'&&Number.isFinite(p.discount_pct)&&p.discount_pct>0&&p.original_price_czk>p.price_czk;
+const promo=p=>freshPrice(p)&&evidencedDiscount(p)&&typeof p.offer_valid_until==='string'&&p.offer_valid_until>=today();
+const drop=p=>freshPrice(p)&&typeof p.drop_since_previous_pct==='number'&&p.drop_since_previous_pct>=5;
+function selectView(k){view=k;document.querySelectorAll('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===k));apply();}
+
+const fmt=x=>typeof x==='number'&&Number.isFinite(x)?x.toLocaleString('cs-CZ',{style:'currency',currency:'CZK'}):'Neověřeno';
+const node=(tag,text,cls)=>{const x=document.createElement(tag);if(text!==undefined)x.textContent=String(text);if(cls)x.className=cls;return x};
+function favoriteButton(p){let b=node('button',favs.has(key(p))?'★':'☆','fav'+(favs.has(key(p))?' selected':''));b.type='button';b.title=favs.has(key(p))?'Odebrat z oblíbených':'Přidat do oblíbených';b.setAttribute('aria-label',b.title);b.addEventListener('click',()=>{if(favs.has(key(p)))favs.delete(key(p));else favs.add(key(p));recordFavs();$('qFavs').textContent=favs.size;apply()});return b;}
+function render(){const start=page*100, list=subset.slice(start,start+100);$('rows').replaceChildren();$('cards').replaceChildren();
+ for(const p of list){const c=p.category_v27||{},t=p.price_diagnostic_v27||{},tr=node('tr');
+ let td=node('td');td.append(favoriteButton(p));tr.append(td);
+ td=node('td',p.store||'?');tr.append(td);
+ td=node('td');td.append(node('div',p.title||p.name||'—','title'));
+ td.append(node('div',(p.store_category_path||[]).join(' › ')||'Cesta kategorie zatím nezjištěna','path'));
+ if(c.status!=='verified'&&c.expected_from_rules?.length)td.append(node('div','Původní sledování (neověřené): '+c.expected_from_rules.join(', '),'meta'));tr.append(td);
+ tr.append(node('td',c.display_category||'Ke kontrole'));
+ td=node('td');td.append(node('span',c.status==='verified'?'Potvrzeno i pravidlo':c.status==='mismatch'?'Nesoulad pravidla':'K prověření','badge '+(c.status||'review')));
+ td.append(node('div',c.reason||'—','note'));tr.append(td);
+ td=node('td',isPrice(p)?fmt(p.price_czk):'Neověřeno',isPrice(p)?'price ok':'price warn');
+ if(isPrice(p)&&Number.isFinite(p.original_price_czk)&&p.original_price_czk>p.price_czk)td.append(node('div',fmt(p.original_price_czk),'old'));
+ if(promo(p))td.append(node('div','−'+p.discount_pct.toLocaleString('cs-CZ')+' % · platnost doložena','del'));
+ if(evidencedDiscount(p)&&!promo(p))td.append(node('div','Historická sleva; platnost nyní neověřena','meta'));
+ if(drop(p))td.append(node('div','Pokles od minula '+p.drop_since_previous_pct+' %','meta'));
+ td.append(node('div',p.checked_at||'—','note'));if(isPrice(p)&&!freshPrice(p))td.append(node('div','Starší cenové pozorování','meta'));
+ tr.append(td);
+ td=node('td',t.status==='ok'?'Evidována':(t.reason||'Neznámý stav'));tr.append(td);
+ td=node('td');const a=node('a','Otevřít ↗');if(/^https:\/\/(?:www\.)?(?:kosik|rohlik)\.cz\//.test(p.url||'')){a.href=p.url;a.target='_blank';a.rel='noopener noreferrer';td.append(a)}tr.append(td);$('rows').append(tr);
+ const card=node('article',undefined,'mobile-card'),top=node('div',undefined,'mobile-top');
+ const name=node('h3',p.title||p.name||'—');top.append(name,favoriteButton(p));card.append(top);
+ card.append(node('div',p.store+' · '+(c.display_category||'Ke kontrole'),'meta'));
+ const data=node('div',undefined,'mobile-grid');
+ data.append(node('div',isPrice(p)?fmt(p.price_czk):'Bez ceny','price'),node('div',promo(p)?'Sleva −'+p.discount_pct+' %':(c.status==='verified'?'✓ Pravidlo potvrzeno':c.status==='mismatch'?'⚠ Nesoulad pravidla':'? Varianta/kategorie k prověření'),'meta'));card.append(data);
+ card.append(node('div',(p.store_category_path||[]).join(' › ')||'Bez kategorie e-shopu','path'));
+ if(c.status!=='verified'&&c.expected_from_rules?.length)card.append(node('div','Původní sledování (neověřené): '+c.expected_from_rules.join(', '),'meta'));
+ const link=node('a','Detail výrobku ↗');if(/^https:\/\/(?:www\.)?(?:kosik|rohlik)\.cz\//.test(p.url||'')){link.href=p.url;link.target='_blank';link.rel='noopener noreferrer';card.append(link)}$('cards').append(card);
+ }
+ if(!list.length){const td=node('td','Žádný výrobek neodpovídá filtrům.','empty-note');td.colSpan=8;const tr=node('tr');tr.append(td);$('rows').append(tr);$('cards').append(node('div','Žádný výrobek neodpovídá filtrům.','empty-note'));}
+ $('shown').textContent=`Zobrazeno ${subset.length} ze ${catalog.items.length} výrobků. Strana ${page+1}/${Math.max(1,Math.ceil(subset.length/100))}.`;
+ $('pages').textContent=`${page+1} / ${Math.max(1,Math.ceil(subset.length/100))}`;
+ $('prev').disabled=page===0;$('next').disabled=(page+1)*100>=subset.length;
+}
+function apply(){if(!catalog)return;const shop=$('shop').value,cat=$('category').value,rulecat=$('rulecat').value,cs=$('catstate').value,ps=$('pstate').value,q=$('q').value.toLocaleLowerCase('cs');
+ subset=catalog.items.filter(p=>{
+ if(view==='deals'&&!promo(p))return false;if(view==='drops'&&!drop(p))return false;
+ if(view==='favs'&&!favs.has(key(p)))return false;if(view==='missing'&&isPrice(p))return false;
+ if(view==='review'&&p.category_v27?.status==='verified')return false;
+ return (!shop||p.store===shop)&&(!cat||(p.category_v27?.display_category||'Ke kontrole')===cat)&&(!rulecat||(p.category_v27?.expected_from_rules||[]).includes(rulecat))&&(!cs||p.category_v27?.status===cs)&&(!ps||p.price_diagnostic_v27?.status===ps)&&(!q||[p.name,p.title,...(p.store_category_path||[])].join(' ').toLocaleLowerCase('cs').includes(q))});
+ const sort=$('sort').value;subset.sort((a,b)=>{if(sort==='price_asc'||sort==='price_desc'){if(!isPrice(a))return isPrice(b)?1:0;if(!isPrice(b))return -1;return sort==='price_asc'?a.price_czk-b.price_czk:b.price_czk-a.price_czk}if(sort==='discount')return (b.discount_pct||0)-(a.discount_pct||0);if(sort==='recent')return String(b.checked_at||'').localeCompare(String(a.checked_at||''));return String(a.name||a.title||'').localeCompare(String(b.name||b.title||''),'cs')});
+ page=0;render();}
+for(const id of ['shop','category','rulecat','catstate','pstate','sort','q'])$(id).addEventListener(id==='q'?'input':'change',apply);
+document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>selectView(b.dataset.view)));
+$('prev').onclick=()=>{if(page>0){page--;render()}};$('next').onclick=()=>{if((page+1)*100<subset.length){page++;render()}};
+(async()=>{try{const res=await fetch('data/catalog_v27.json?'+Date.now(),{cache:'no-store'});if(!res.ok)throw Error('HTTP '+res.status);
+ catalog=await res.json();if(!Array.isArray(catalog.items)||catalog.schema!=='rk-v27-catalogue-preview-1')throw Error('Neplatný náhled v27');
+ const a=catalog.v27_audit||{};
+ const byShop=a.price_by_shop||{};
+ $('priceCoverage').replaceChildren();
+ for(const shop of ['Košík','Rohlík']){const stats=byShop[shop]||{total:0,priced:0,missing:0};
+ const box=node('div',undefined,'shopcover'),pc=stats.total?100*stats.priced/stats.total:0;
+ box.append(node('strong',shop+' · '+stats.priced+' / '+stats.total+' výrobků s cenou'),
+ node('div',stats.missing+' bez potvrzené ceny ('+pc.toLocaleString('cs-CZ',{maximumFractionDigits:1})+' % pokrytí)','meta'));
+ const bar=node('div',undefined,'shopbar'),fill=node('span');fill.style.width=pc+'%';bar.append(fill);box.append(bar);$('priceCoverage').append(box)}
+ $('nAll').textContent=catalog.items.length;$('nPriced').textContent=a.priced_after??'?';$('nMissing').textContent=a.missing_prices??'?';$('nVerified').textContent=a.merchant_category_mapped??0;$('nReview').textContent=(a.category_statuses?.review||0)+(a.category_statuses?.mismatch||0);$('nRules').textContent=`${a.rules_with_products??'?'} / ${a.rules_configured??'?'}`;
+ const cats=[...new Set(catalog.items.map(p=>p.category_v27?.display_category||'Ke kontrole'))].sort((a,b)=>a.localeCompare(b,'cs'));
+ for(const cat of cats){const option=node('option',cat);option.value=cat;$('category').append(option)}
+ const ruleCategories=[...new Set((catalog.rules||[]).map(r=>r.category).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'cs'));
+ for(const rc of ruleCategories){const option=node('option',rc);option.value=rc;$('rulecat').append(option)}
+ $('qDeals').textContent=catalog.items.filter(promo).length; $('qDrops').textContent=catalog.items.filter(drop).length; $('qMissing').textContent=catalog.items.filter(p=>!isPrice(p)).length; $('qReview').textContent=(a.category_statuses?.review||0)+(a.category_statuses?.mismatch||0); $('qFavs').textContent=favs.size;
+ $('notice').textContent=`Náhled v27 vytvořen ${new Date(a.generated_at).toLocaleString('cs-CZ')}. Evidováno ${a.products_after} výrobků; ceny převzaty beze změn. Kategorie bez potvrzeného breadcrumbu jsou označeny ke kontrole.` + (a.rules_without_products?.length ? ` Bez výrobků u pravidel: ${a.rules_without_products.map(r=>r.id).join(', ')}.` : '');
+ selectView('all');}catch(e){ $('notice').textContent='Náhled v27 není připraven: '+e.message+'. Nejprve spusť generátor catalog_v27.py proti kopii existujícího katalogu.'; }} )();
+</script></body></html>
