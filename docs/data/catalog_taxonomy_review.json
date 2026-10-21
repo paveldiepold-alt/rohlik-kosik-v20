@@ -1,7 +1,7 @@
 {
   "schema": "rk-v21-taxonomy-review-1",
-  "generated_at": "2026-10-21T08:57:10+00:00",
-  "count": 442,
+  "generated_at": "2026-10-21T09:07:52+00:00",
+  "count": 407,
   "items": [
     {
       "store": "Košík",
@@ -11282,19 +11282,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Trvanlivé",
+        "Konzervy, hotovky a instantní pokrmy",
+        "Sterilovaná zelenina, luštěniny a houby",
+        "Okurky"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:32+00:00",
+      "product_description": "Naše Kitchin výběrové okurky ve sladkokyselém nálevu s bylinkami jsou ideální volbou pro náročné gurmány i profesionální kuchyni. Malé nakládačky typu",
+      "taxonomy_checked_at": "2026-10-21T09:01:39+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W043",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -11315,19 +11321,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Trvanlivé",
+        "Konzervy, hotovky a instantní pokrmy",
+        "Sterilovaná zelenina, luštěniny a houby",
+        "Okurky"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:32+00:00",
+      "product_description": "Naše Kitchin výběrové okurky ve sladkokyselém nálevu s chilli ocení zejména ti, kdo hledají v gastronomii něco živějšího a odvážnějšího. Malé nakládač",
+      "taxonomy_checked_at": "2026-10-21T09:01:43+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W043",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -11348,19 +11360,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Trvanlivé",
+        "Konzervy, hotovky a instantní pokrmy",
+        "Sterilovaná zelenina, luštěniny a houby",
+        "Okurky"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:32+00:00",
+      "product_description": "Naše Kitchin výběrové okurky ve sladkokyselém nálevu s medem jsou ideální volbou pro náročné gurmány i profesionální kuchyni. Malé nakládačky typu cor",
+      "taxonomy_checked_at": "2026-10-21T09:01:47+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W043",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -11381,19 +11399,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Nápoje",
+        "Vody a minerálky",
+        "Ochucené",
+        "Citron a limeta"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:32+00:00",
+      "product_description": "Jemně perlivá minerální voda Korunní s příchutí citronu.Příjemně nakyslá, šťavnatá chuť citronu.PoužitíDodržujte pitný režim s minerální vodou Korunní",
+      "taxonomy_checked_at": "2026-10-21T09:01:50+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W041",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -11414,19 +11438,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Nápoje",
+        "Vody a minerálky",
+        "Ochucené",
+        "Další příchutě"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:32+00:00",
+      "product_description": "Jemně perlivá minerální voda s příchutí pomela a okurky. Nápoj je bez cukru.PoužitíUrčeno k přímé konzumaci.&nbsp;Dodržujte pitný režim s minerální vo",
+      "taxonomy_checked_at": "2026-10-21T09:01:54+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W043",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -11447,19 +11477,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Jogurty a mléčné dezerty",
+        "Dětské dezerty, tyčinky a řezy",
+        "Dětské dezerty"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:32+00:00",
+      "product_description": "Tvarohový dezert s příchutí jahody a banánu v praktickém balení.&nbsp;Obsahuje zdroj vápníku, vitamínu D a bílkovin. Díky znovu uzavíratelnému balení",
+      "taxonomy_checked_at": "2026-10-21T09:01:58+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W038",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -11480,19 +11516,24 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Trvanlivé",
+        "Koření a ochucovadla",
+        "Jednodruhové koření"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:32+00:00",
+      "product_description": "Sladká paprika má ovocný nádech, pro své aroma je nenahraditelná v maďarské kuchyni. S lahůdkovou paprikou Kotányi dodáte jídlu výraznou barvu a jedin",
+      "taxonomy_checked_at": "2026-10-21T09:02:02+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W047",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -11513,19 +11554,24 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Trvanlivé",
+        "Koření a ochucovadla",
+        "Jednodruhové koření"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:32+00:00",
+      "product_description": "Sladká paprika má ovocný nádech, pro své aroma je nenahraditelná v maďarské kuchyni. S maďarskou sladkou paprikou Kotányi dodáte jídlu výraznou barvu",
+      "taxonomy_checked_at": "2026-10-21T09:02:06+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W047",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -11546,19 +11592,24 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Trvanlivé",
+        "Koření a ochucovadla",
+        "Jednodruhové koření"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:32+00:00",
+      "product_description": "Sypký kořenící přípravek.Značka Kotányi je synonymem pro papriku&nbsp;vysoké&nbsp;kvality. Dodá pokrmům výraznou barvu a pikantní chuť.PoužitíPaprika",
+      "taxonomy_checked_at": "2026-10-21T09:02:10+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W047",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -11579,19 +11630,24 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Trvanlivé",
+        "Koření a ochucovadla",
+        "Jednodruhové koření"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:32+00:00",
+      "product_description": "Paprika uzená je charakteristická lehce nasládlou kouřovou chutí a aromatem. Zralé, červené lusky papriky se před mletím udí v kouři z dubového dřeva.",
+      "taxonomy_checked_at": "2026-10-21T09:02:13+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W047",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -11612,19 +11668,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Dítě",
+        "Výživa",
+        "Kapsičky do ruky",
+        "Ovocné"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:32+00:00",
+      "product_description": "Kapsička ze 100% pyré z ovoce, mrkve a koncentrátu.&nbsp;Kapsičku můžete dát&nbsp;do školní brašny na svačinu nebo&nbsp;nabalit na výlet či hřiště.Pas",
+      "taxonomy_checked_at": "2026-10-21T09:02:17+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W040",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Produkt není v kategorii čerstvého ovoce"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -11645,19 +11707,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Dítě",
+        "Výživa",
+        "Kapsičky do ruky",
+        "Ovocné"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:32+00:00",
+      "product_description": "Ovocná svačinka s magem, jablkem, banánem a jáhlami.Husté ovocné pyré s přídavkem vitaminu C. Pasterováno, bez přídavku cukrů. Obsahuje pouze přirozen",
+      "taxonomy_checked_at": "2026-10-21T09:02:21+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W038",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Produkt není v kategorii čerstvého ovoce"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -11678,19 +11746,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Nápoje",
+        "Vody a minerálky",
+        "Ochucené",
+        "Jahoda a malina"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:32+00:00",
+      "product_description": "Kubík Waterrr je ochucená pramenitá voda s příchutí malin.Je vyrobena z pramenité vody z hor technologií Top Aseptic, která zajišťuje, že voda je bez",
+      "taxonomy_checked_at": "2026-10-21T09:02:25+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W040",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -11711,184 +11785,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Nápoje",
+        "Vody a minerálky",
+        "Ochucené",
+        "Jahoda a malina"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:32+00:00",
+      "product_description": "Kubík Waterrr je ochucená pramenitá voda s příchutí malin.Je vyrobena z pramenité vody z hor technologií Top Aseptic, která zajišťuje, že voda je bez",
+      "taxonomy_checked_at": "2026-10-21T09:02:28+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W040",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "Kunratická stodola - duopack (maliny a borůvky), vanička",
-      "url": "https://www.rohlik.cz/1474041-kunraticka-stodola-duopack-maliny-a-boruvky-vanicka",
-      "rule_ids": [
-        "W040"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1474041/1474041-1755184848536.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Kunratická stodola - duopack (maliny a borůvky), vanička",
-      "price_czk": 299.9,
-      "price_status": "ok",
-      "price_source": "visible-product-detail",
-      "checked_at": "2026-10-20T14:05:04+00:00",
-      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
-      "multibuy": [],
-      "http_status": 200,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:32+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W040",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "Kunratická stodola – Hrozny bílé volné, střapec",
-      "url": "https://www.rohlik.cz/1469422-kunraticka-stodola-hrozny-bile-volne-strapec",
-      "rule_ids": [
-        "W042"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1469422/1469422-1747782481067.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Kunratická stodola – Hrozny bílé volné, střapec",
-      "price_czk": 401.98,
-      "price_status": "ok",
-      "price_source": "visible-product-detail",
-      "checked_at": "2026-10-20T14:10:58+00:00",
-      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
-      "multibuy": [],
-      "http_status": 200,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:33+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W042",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "Kunratická stodola – Hrozny růžové bezpeckové volně (odr. Sweet celebration), střapec",
-      "url": "https://www.rohlik.cz/1466686-kunraticka-stodola-hrozny-ruzove-bezpeckove-volne-odr-sweet-celebration-strapec",
-      "rule_ids": [
-        "W042"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1466686/1466686-1768051025997.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Kunratická stodola – Hrozny růžové bezpeckové volně (odr. Sweet celebration), střapec",
-      "price_czk": 464.36,
-      "price_status": "ok",
-      "price_source": "visible-product-detail",
-      "checked_at": "2026-10-20T14:11:00+00:00",
-      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
-      "multibuy": [],
-      "http_status": 200,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:33+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W042",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "Kunratická stodola – Rajčata cherry na větvičce (odr. Red Egg), střapec",
-      "url": "https://www.rohlik.cz/1466689-kunraticka-stodola-rajcata-cherry-na-vetvicce-odr-red-egg-strapec",
-      "rule_ids": [
-        "W044"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1466689/1466689-1736933600347.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Kunratická stodola – Rajčata cherry na větvičce (odr. Red Egg), střapec",
-      "price_czk": null,
-      "price_status": "http_error",
-      "price_source": null,
-      "checked_at": "2026-10-20T14:12:22+00:00",
-      "note": "HTTP 429",
-      "multibuy": [],
-      "http_status": 429,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:33+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W044",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "La Parcela Rajčata cherry Angelle sladká oválná, shaker",
-      "url": "https://www.rohlik.cz/1321665-la-parcela-rajcata-cherry-angelle-sladka-ovalna-shaker",
-      "rule_ids": [
-        "W044"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1321665/1321665-1497966198.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "La Parcela Rajčata cherry Angelle sladká oválná, shaker",
-      "price_czk": null,
-      "price_status": "http_error",
-      "price_source": null,
-      "checked_at": "2026-10-20T14:12:22+00:00",
-      "note": "HTTP 429",
-      "multibuy": [],
-      "http_status": 429,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:33+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W044",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -11909,19 +11824,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Nápoje",
+        "Piva a cidery",
+        "Nealkoholická",
+        "Multipacky"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:33+00:00",
+      "product_description": "Míchaný nápoj z nealkoholického piva s příchutí citronu. Tmavý míchaný nápoj z nealkoholického piva s příchutí citronu se vyznačuje osvěžující vůní a",
+      "taxonomy_checked_at": "2026-10-21T09:02:51+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W041",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -11942,19 +11863,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Nápoje",
+        "Horké nápoje",
+        "Čaj",
+        "Ovocné"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:33+00:00",
+      "product_description": "Ovocný čaj aromatizovaný s příchutí malin a jahod značky Loyd vás zahřeje při chladném ránu. Díky pyramidovým sáčkům se čaj lépe vylouhuje, a získává",
+      "taxonomy_checked_at": "2026-10-21T09:02:55+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W040",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -11975,19 +11902,24 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Nápoje",
+        "Vody a minerálky",
+        "Sportovní a obohacené"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:33+00:00",
+      "product_description": "Magnesia Plus Revital s příchutí hroznového vína a aloe vera. Máte za sebou náročný výkon a vaše tělo potřebuje důkladnou regeneraci? S Magnesií Plus",
+      "taxonomy_checked_at": "2026-10-21T09:02:59+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W042",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -12008,19 +11940,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Nápoje",
+        "Vody a minerálky",
+        "Ochucené",
+        "Jahoda a malina"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:33+00:00",
+      "product_description": "Magnesia RED malina je ochucená sycená minerální voda s příchutí maliny. Obsahuje přírodní hořčík, který přispívá k hydrataci a doplnění minerálů.Bale",
+      "taxonomy_checked_at": "2026-10-21T09:03:02+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W040",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -12041,52 +11979,25 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Nápoje",
+        "Vody a minerálky",
+        "Ochucené",
+        "Jahoda a malina"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:33+00:00",
+      "product_description": "Jemně perlivá Margnesia red s příchutí maliny. Bez umělých sladidel s&nbsp;dávkou přírodního hořčíku a vitaminy B.O výrobciSpolečnost Mattoni 1873 a.s",
+      "taxonomy_checked_at": "2026-10-21T09:03:06+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W040",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "Maliny čerstvé, vanička",
-      "url": "https://www.rohlik.cz/799753-maliny-cerstve-vanicka",
-      "rule_ids": [
-        "W040"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/799753/799753-1643367295788.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Maliny čerstvé, vanička",
-      "price_czk": 59.9,
-      "price_status": "ok",
-      "price_source": "visible-product-detail",
-      "checked_at": "2026-10-20T14:07:29+00:00",
-      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
-      "multibuy": [],
-      "http_status": 200,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:33+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W040",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -12107,19 +12018,26 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Trvanlivé",
+        "Sladkosti",
+        "Oplatky, sušenky a tyčinky",
+        "Oplatky",
+        "Oplatky bez polevy"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:33+00:00",
+      "product_description": "Křupavé oplatky Manner s krémovou náplní s příchutí maliny (78 %) pro sladkou svačinu během dne.Kombinují tenké vrstvy oplatky a ovocně laděný krém.Po",
+      "taxonomy_checked_at": "2026-10-21T09:03:14+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W040",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Produkt není v kategorii čerstvého ovoce"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -12140,19 +12058,24 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Marks & Spencer",
+        "Mražené",
+        "Ovoce a zelenina"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:33+00:00",
+      "product_description": "Zasyrova zamrazená mrkev odrůdy Chantenay určená k tepelné úpravě.Má jasně červenou barvu a šťavnatý, sladký kořen. Je lehce stravitelná, a proto je v",
+      "taxonomy_checked_at": "2026-10-21T09:03:18+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W046",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -12173,19 +12096,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Nápoje",
+        "Vody a minerálky",
+        "Ochucené",
+        "Citron a limeta"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:33+00:00",
+      "product_description": "Jemně perlivá voda s příchutí citronu. Řada Mattoni esence neobsahuje cukr&nbsp;ani jiná sladidla. Lahev, etiketa i víčko je 100% recyklovatelné.Balen",
+      "taxonomy_checked_at": "2026-10-21T09:03:21+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W041",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -12206,19 +12135,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Nápoje",
+        "Vody a minerálky",
+        "Ochucené",
+        "Další příchutě"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:33+00:00",
+      "product_description": "Jemně sycená minerální voda s příchutí yuzu a okurky. Řada Mattoni esence neobsahuje cukr&nbsp;ani jiná sladidla. Lahev, etiketa i víčko je 100% recyk",
+      "taxonomy_checked_at": "2026-10-21T09:03:25+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W043",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -12239,19 +12174,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Nápoje",
+        "Vody a minerálky",
+        "Ochucené",
+        "Citron a limeta"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:33+00:00",
+      "product_description": "Ochucenou minerální vodu Mattoni s příchutí citronu si nyní můžete vychutnat v nových vratných lahví o objemu 1L.Nová skleněná lahev Mattoni osloví př",
+      "taxonomy_checked_at": "2026-10-21T09:03:29+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W041",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -12272,19 +12213,26 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Trvanlivé",
+        "Slané, snacky a ořechy",
+        "Ořechy, semínka a sušené ovoce",
+        "Sušené ovoce",
+        "Sušené mrazem"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:33+00:00",
+      "product_description": "Lyofilizovaný banán je křupavé ovoce plné přirozených vitamínů a minerálů. Díky šetrnému sušení mrazem si zachovává svou svěží chuť, vůni i nutriční h",
+      "taxonomy_checked_at": "2026-10-21T09:03:33+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W038",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -12305,19 +12253,26 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Trvanlivé",
+        "Slané, snacky a ořechy",
+        "Ořechy, semínka a sušené ovoce",
+        "Sušené ovoce",
+        "Sušené mrazem"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:34+00:00",
+      "product_description": "Lyofilizované kiwi, banán a maracuja je křupavý mix plný&nbsp;přirozených vitamínů a minerálů. Díky šetrnému sušení mrazem si zachovává svou svěží chu",
+      "taxonomy_checked_at": "2026-10-21T09:03:37+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W038",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -12338,19 +12293,25 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Mražené",
+        "Zmrzlina a led",
+        "Nanuky a kornouty",
+        "Nanuky krémové"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:34+00:00",
+      "product_description": "Malinový nanuk politý bílou čokoládovou polevou.PoužitíUrčeno k přímé konzumaci.O výrobciTipafrost je česká společnost zabývající se výrobou mražených",
+      "taxonomy_checked_at": "2026-10-21T09:03:41+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W040",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -12371,52 +12332,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Mražené",
+        "Zmrzlina a led",
+        "Nanuky a kornouty",
+        "Nanuky ovocné"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:34+00:00",
+      "product_description": "Miamo sorbet malina a vanilka – svěží spojení zralých malin a krémové vanilky v jemné růžové polevě.PoužitíUrčeno k přímé konzumaci.O výrobciTipafrost",
+      "taxonomy_checked_at": "2026-10-21T09:03:45+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W040",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "Mini okurky, balení",
-      "url": "https://www.rohlik.cz/1340323-mini-okurky-baleni",
-      "rule_ids": [
-        "W043"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1340323/1340323-1779454372501.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Mini okurky, balení",
-      "price_czk": null,
-      "price_status": "http_error",
-      "price_source": null,
-      "checked_at": "2026-10-20T14:11:35+00:00",
-      "note": "HTTP 429",
-      "multibuy": [],
-      "http_status": 429,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:34+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W043",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -12437,19 +12371,25 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Dítě",
+        "Výživa",
+        "Kapsičky do ruky",
+        "Ovocné"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:34+00:00",
+      "product_description": "Mixit kapsička vhodná pro děti od 6. měsíce s BIO banány, BIO borůvkami a BIO vločkami z ekologického zemědělství. Kapsička je znovu uzavíratelná, při",
+      "taxonomy_checked_at": "2026-10-21T09:03:52+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W038",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Produkt není v kategorii čerstvého ovoce"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -12470,19 +12410,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Trvanlivé",
+        "Slané, snacky a ořechy",
+        "Ořechy, semínka a sušené ovoce",
+        "Sušené ovoce"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:34+00:00",
+      "product_description": "Tyto sušené banány Mixit pocházejí z nikaragujské oblasti San Juan del Río Coco, kde místní farmář pěstuje vyhlášenou odrůdu Gros Michel. Ta je ceněná",
+      "taxonomy_checked_at": "2026-10-21T09:03:56+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W038",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -12503,19 +12449,24 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Mléko a mléčné nápoje",
+        "Kefíry a zákys"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:34+00:00",
+      "product_description": "Acidofilní mléko s příchutí maliny. Kysaný mléčný nápoj s nízkým obsahem tuku.PoužitíUrčeno k přímé konzumaci. Před konzumací doporučujeme protřepat.O",
+      "taxonomy_checked_at": "2026-10-21T09:04:00+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W040",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -12536,19 +12487,24 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Mléko a mléčné nápoje",
+        "Kefíry a zákys"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:34+00:00",
+      "product_description": "Kunín Acidofilní mléko s malinovou příchutí.Obsahuje zdraví prospěšné jogurtové kultury, má nízký obsah tuku.PoužitíRychlá a chutná svačina.O výrobciS",
+      "taxonomy_checked_at": "2026-10-21T09:04:03+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W040",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -12569,316 +12525,25 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Vysoký krevní tlak a cholesterol",
+        "Srdce a cévní soustava",
+        "Doplňky stravy",
+        "Lékárna"
+      ],
+      "category_source": "jsonld_product_category",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:34+00:00",
+      "product_description": "Doplněk stravy. Doplněk stravy Mollers Omega 3 je rybí olej z tresčích jater z Norska, s citronovou příchutí. Vitaminy A a D přispívají k normální funkci imunitního systému. EPA a DHA přispívají k normální činnosti srdce. DHA přispívá k udržení normální činnosti mozku, DHA a vitamin A přispívají k udržení normálního stavu zraku. Vitamin D přispívá k udržení normálního stavu kostí a zubů. Vitamin E přispívá k ochraně buněk před oxidativním stresem. Není určeno pro děti do 3 let. Nepřekračujte doporučené denní dávkování. Uchovávejte mimo dosah dětí. Doplňky stravy nejsou náhradou pestré stravy. Balení: 250 ml.",
+      "taxonomy_checked_at": "2026-10-21T09:04:07+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W041",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "Mrkev fialová 1ks, volná",
-      "url": "https://www.rohlik.cz/1351243-mrkev-fialova-1ks-volna",
-      "rule_ids": [
-        "W046"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1314617/1314617-1508146084.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Mrkev fialová 1ks, volná",
-      "price_czk": null,
-      "price_status": "price_unverified",
-      "price_source": null,
-      "checked_at": "2026-10-20T14:14:29+00:00",
-      "note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech",
-      "multibuy": [],
-      "http_status": 200,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:34+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W046",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "Mrkev koktejlová (baby), balení",
-      "url": "https://www.rohlik.cz/1313441-mrkev-koktejlova-baby-baleni",
-      "rule_ids": [
-        "W046"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1313441/1313441-1469197688.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Mrkev koktejlová (baby), balení",
-      "price_czk": 31.9,
-      "price_status": "ok",
-      "price_source": "visible-product-detail",
-      "checked_at": "2026-10-20T14:14:25+00:00",
-      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
-      "multibuy": [],
-      "http_status": 200,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:34+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W046",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "Mrkev krouhaná nudličky",
-      "url": "https://www.rohlik.cz/1337185-mrkev-krouhana-nudlicky",
-      "rule_ids": [
-        "W046"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1337185/1337185-1521198106.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Mrkev krouhaná nudličky",
-      "price_czk": 19.9,
-      "price_status": "ok",
-      "price_source": "visible-product-detail",
-      "checked_at": "2026-10-20T14:14:27+00:00",
-      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
-      "multibuy": [],
-      "http_status": 200,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:34+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W046",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "Mrkev krájená kostky",
-      "url": "https://www.rohlik.cz/1337183-mrkev-krajena-kostky",
-      "rule_ids": [
-        "W046"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1337183/1337183-1521196833.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Mrkev krájená kostky",
-      "price_czk": 16.9,
-      "price_status": "ok",
-      "price_source": "visible-product-detail",
-      "checked_at": "2026-10-20T14:14:32+00:00",
-      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
-      "multibuy": [],
-      "http_status": 200,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:34+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W046",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "Mrkev praná čerstvá, balení",
-      "url": "https://www.rohlik.cz/1289717-mrkev-prana-cerstva-baleni",
-      "rule_ids": [
-        "W046"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1289717/1289717-1488195409.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Mrkev praná čerstvá, balení",
-      "price_czk": 24.9,
-      "price_status": "ok",
-      "price_source": "visible-product-detail",
-      "checked_at": "2026-10-20T14:14:21+00:00",
-      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
-      "multibuy": [],
-      "http_status": 200,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:34+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W046",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "Mrkev s natí, svazek (cca 500 g)",
-      "url": "https://www.rohlik.cz/1294755-mrkev-s-nati-svazek-cca-500-g",
-      "rule_ids": [
-        "W046"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1294755/1294755-1482836916.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Mrkev s natí, svazek (cca 500 g)",
-      "price_czk": 24.9,
-      "price_status": "ok",
-      "price_source": "visible-product-detail",
-      "checked_at": "2026-10-20T14:14:19+00:00",
-      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
-      "multibuy": [],
-      "http_status": 200,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:34+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W046",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "Mrkev sladká (odr. Mokum), balení",
-      "url": "https://www.rohlik.cz/1419522-mrkev-sladka-odr-mokum-baleni",
-      "rule_ids": [
-        "W046"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1419522/1419522-1645787939877.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Mrkev sladká (odr. Mokum), balení",
-      "price_czk": 35.9,
-      "price_status": "ok",
-      "price_source": "visible-product-detail",
-      "checked_at": "2026-10-20T14:14:30+00:00",
-      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
-      "multibuy": [],
-      "http_status": 200,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:34+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W046",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "Mrkev čerstvá praná 1 ks, volná",
-      "url": "https://www.rohlik.cz/1350467-mrkev-cerstva-prana-1-ks-volna",
-      "rule_ids": [
-        "W046"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1325993/1325993-1542963378.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Mrkev čerstvá praná 1 ks, volná",
-      "price_czk": null,
-      "price_status": "price_unverified",
-      "price_source": null,
-      "checked_at": "2026-10-20T14:14:23+00:00",
-      "note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech",
-      "multibuy": [],
-      "http_status": 200,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:35+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W046",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "Mrkev žlutá 1 ks, volná",
-      "url": "https://www.rohlik.cz/1351245-mrkev-zluta-1-ks-volna",
-      "rule_ids": [
-        "W046"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1333375/1333375-1515594118.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Mrkev žlutá 1 ks, volná",
-      "price_czk": null,
-      "price_status": "price_unverified",
-      "price_source": null,
-      "checked_at": "2026-10-20T14:14:36+00:00",
-      "note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech",
-      "multibuy": [],
-      "http_status": 200,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:35+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W046",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -12899,19 +12564,26 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Trvanlivé",
+        "Konzervy, hotovky a instantní pokrmy",
+        "Sterilovaná zelenina, luštěniny a houby",
+        "Rajčata a protlaky",
+        "Loupaná"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:35+00:00",
+      "product_description": "Jemně krájená rajčata Baby Roma jsou konzervovaná v bohaté rajčatové šťávě, která je dochucená pouze špetkou soli, aby vynikla jejich přirozeně naslád",
+      "taxonomy_checked_at": "2026-10-21T09:04:44+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W044",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -12932,19 +12604,24 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Drogerie",
+        "Prací prostředky",
+        "Aviváže"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:35+00:00",
+      "product_description": "Máchadlo prádla s vůní citornu je šetrná a účinná alternativa k běžné aviváži, navržená tak, aby vaše prádlo zůstalo jemné, svěží a zbavené zbytků pra",
+      "taxonomy_checked_at": "2026-10-21T09:04:48+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W041",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -12965,19 +12642,24 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Drogerie",
+        "Čisticí prostředky",
+        "Na podlahu a koberce"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:35+00:00",
+      "product_description": "Čisticí prostředek Natuty je jemný, ale účinný přípravek na mytí různých typů podlah, který odstraňuje nečistoty bez zanechání šmouh. Díky svému šetrn",
+      "taxonomy_checked_at": "2026-10-21T09:04:52+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W041",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -12998,118 +12680,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Mražené",
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Jednodruhová zelenina"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:35+00:00",
+      "product_description": "Mini mrkev, hluboce zmrazená zelenina.PoužitíNa pánvi: Zmrazenou mini mrkev duste nebo orestujte na másle do měkka. V hrnci: Zmrazenou mini mrkev vsyp",
+      "taxonomy_checked_at": "2026-10-21T09:04:56+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W046",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "Okurka hadovka (cca 300 g)",
-      "url": "https://www.rohlik.cz/1294559-okurka-hadovka-cca-300-g",
-      "rule_ids": [
-        "W043"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1294559/1294559-1599144049.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Okurka hadovka (cca 300 g)",
-      "price_czk": 24.9,
-      "price_status": "ok",
-      "price_source": "visible-product-detail",
-      "checked_at": "2026-10-20T14:11:23+00:00",
-      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
-      "multibuy": [],
-      "http_status": 200,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:35+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W043",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "Okurka polní 1 ks",
-      "url": "https://www.rohlik.cz/1354613-okurka-polni-1-ks",
-      "rule_ids": [
-        "W043"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1326209/1326209-1498832932.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Okurka polní 1 ks",
-      "price_czk": null,
-      "price_status": "price_unverified",
-      "price_source": null,
-      "checked_at": "2026-10-20T14:11:33+00:00",
-      "note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech",
-      "multibuy": [],
-      "http_status": 200,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:35+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W043",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "Okurkový meloun Barattiere",
-      "url": "https://www.rohlik.cz/1460862-okurkovy-meloun-barattiere",
-      "rule_ids": [
-        "W043"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1460862/1460862-1714380105317.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Okurkový meloun Barattiere",
-      "price_czk": null,
-      "price_status": "http_error",
-      "price_source": null,
-      "checked_at": "2026-10-20T14:11:35+00:00",
-      "note": "HTTP 429",
-      "multibuy": [],
-      "http_status": 429,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:35+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W043",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -13130,19 +12719,25 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Jogurty a mléčné dezerty",
+        "Ochucené",
+        "Tučné"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:35+00:00",
+      "product_description": "Dezert s ovocnou vrstvou&nbsp;z borůvek, která je překrytá hustým smetanovým jogurtem.PoužitíUrčeno k přímé konzumaci.O výrobciBohatá historie společn",
+      "taxonomy_checked_at": "2026-10-21T09:05:10+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W039",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -13163,19 +12758,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Nápoje",
+        "Vody a minerálky",
+        "Ochucené",
+        "Citron a limeta"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:35+00:00",
+      "product_description": "Ochucená minerální voda s příchutí citrónu.&nbsp;Dodržujte svůj pravidelný pitný režim s&nbsp;jemně sycenou&nbsp;vodou značky Ondrášovka.PoužitíUrčeno",
+      "taxonomy_checked_at": "2026-10-21T09:05:14+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W041",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -13196,19 +12797,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Nápoje",
+        "Vody a minerálky",
+        "Ochucené",
+        "Jahoda a malina"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:35+00:00",
+      "product_description": "Ochucená minerální voda s příchutí maliny.&nbsp;Jemně perlivá minerální voda s příchutí sladkých malin nabízí svěží chuť ovoce a také vyvážené množstv",
+      "taxonomy_checked_at": "2026-10-21T09:05:18+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W040",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -13229,19 +12836,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Dítě",
+        "Výživa",
+        "Kapsičky do ruky",
+        "Ovocné"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:35+00:00",
+      "product_description": "Ovocná kapsička vyrobená z jablek a malin.Ovoce bylo nejdříve za studena pasírováno a následně pasterováno.PoužitíVhodné pro děti od 5&nbsp;měsíců.Urč",
+      "taxonomy_checked_at": "2026-10-21T09:05:22+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W040",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Produkt není v kategorii čerstvého ovoce"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -13262,19 +12875,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Dítě",
+        "Výživa",
+        "Nápoje",
+        "Ochucené nápoje"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:35+00:00",
+      "product_description": "Ovocný mošt vyrobený z jablek a borůvek značky Ovocňák. Mošt je 100% šťáva z ovoce lisovaná za studena, aby si zachovala přirozenou chuť a kvalitu. Na",
+      "taxonomy_checked_at": "2026-10-21T09:05:26+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W039",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -13295,19 +12914,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Dítě",
+        "Výživa",
+        "Nápoje",
+        "Ochucené nápoje"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:36+00:00",
+      "product_description": "100% šťáva z ovoce, která je vyrobena z pečlivě vybraných plodů. Mošt je lisovaný za studena, aby se zachovalo co nejvíce z přírody. Do jednoho 330 ml",
+      "taxonomy_checked_at": "2026-10-21T09:05:29+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W046",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -13328,19 +12953,25 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Dítě",
+        "Výživa",
+        "Sušenky, křupky, ovocné tyčinky a želé",
+        "Dětské ovocné tyčinky a želé"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:36+00:00",
+      "product_description": "Ovocné plátky vyrobené z jablek a malin.Ovoce&nbsp;bylo nejdříve za studena pasírováno a pak v podobě dřeně několik hodin sušeno při nízké teplotě.Na",
+      "taxonomy_checked_at": "2026-10-21T09:05:33+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W040",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Produkt není v kategorii čerstvého ovoce"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -13361,316 +12992,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Dítě",
+        "Výživa",
+        "Sušenky, křupky, ovocné tyčinky a želé",
+        "Dětské křupky a krekry"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:36+00:00",
+      "product_description": "Kukuřičné křupky mrkev a ananas.Přirozeně bezlepkové kukuřičné křupky ochucené přírodním koncentrátem z mrkve a ananasu.Křupky jsou sladkou ovocnou al",
+      "taxonomy_checked_at": "2026-10-21T09:05:37+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W046",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Produkt není v kategorii čerstvé zeleniny"
         }
       ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "Paní Mrkev – blanšírované mrkvové kostky, balení",
-      "url": "https://www.rohlik.cz/1435418-pani-mrkev-blansirovane-mrkvove-kostky-baleni",
-      "rule_ids": [
-        "W046"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1435418/1435418-1671055681266.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Paní Mrkev – blanšírované mrkvové kostky, balení",
-      "price_czk": 49.9,
-      "price_status": "ok",
-      "price_source": "visible-product-detail",
-      "checked_at": "2026-10-20T14:14:34+00:00",
-      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
-      "multibuy": [],
-      "http_status": 200,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:36+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W046",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "Paprika bílá 1 ks",
-      "url": "https://www.rohlik.cz/1350681-paprika-bila-1-ks",
-      "rule_ids": [
-        "W047"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1295149/1295149-1501777846.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Paprika bílá 1 ks",
-      "price_czk": null,
-      "price_status": "price_unverified",
-      "price_source": null,
-      "checked_at": "2026-10-20T14:16:36+00:00",
-      "note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech",
-      "multibuy": [],
-      "http_status": 200,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:36+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W047",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "Paprika oranžová 1 ks",
-      "url": "https://www.rohlik.cz/1352395-paprika-oranzova-1-ks",
-      "rule_ids": [
-        "W047"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1338663/1338663-1524136184.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Paprika oranžová 1 ks",
-      "price_czk": null,
-      "price_status": "price_unverified",
-      "price_source": null,
-      "checked_at": "2026-10-20T14:17:00+00:00",
-      "note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech",
-      "multibuy": [],
-      "http_status": 200,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:36+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W047",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "Paprika pálivá špičatá, balení",
-      "url": "https://www.rohlik.cz/1326617-paprika-paliva-spicata-baleni",
-      "rule_ids": [
-        "W047"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1326617/1326617-1502721787.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Paprika pálivá špičatá, balení",
-      "price_czk": 47.9,
-      "price_status": "ok",
-      "price_source": "visible-product-detail",
-      "checked_at": "2026-10-20T14:16:59+00:00",
-      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
-      "multibuy": [],
-      "http_status": 200,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:36+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W047",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "Paprika trikolora 3 ks, sáček",
-      "url": "https://www.rohlik.cz/1297011-paprika-trikolora-3-ks-sacek",
-      "rule_ids": [
-        "W047"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1297011/1297011-1456404711.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Paprika trikolora 3 ks, sáček",
-      "price_czk": 69.9,
-      "price_status": "ok",
-      "price_source": "visible-product-detail",
-      "checked_at": "2026-10-20T14:16:55+00:00",
-      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
-      "multibuy": [],
-      "http_status": 200,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:36+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W047",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "Paprika zelená 1 ks",
-      "url": "https://www.rohlik.cz/1350683-paprika-zelena-1-ks",
-      "rule_ids": [
-        "W047"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1294575/1294575-1482841985.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Paprika zelená 1 ks",
-      "price_czk": null,
-      "price_status": "price_unverified",
-      "price_source": null,
-      "checked_at": "2026-10-20T14:16:47+00:00",
-      "note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech",
-      "multibuy": [],
-      "http_status": 200,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:36+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W047",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "Paprika červená 1 ks",
-      "url": "https://www.rohlik.cz/1350165-paprika-cervena-1-ks",
-      "rule_ids": [
-        "W047"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1350165/1350165-1712840452350.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Paprika červená 1 ks",
-      "price_czk": null,
-      "price_status": "price_unverified",
-      "price_source": null,
-      "checked_at": "2026-10-20T14:16:41+00:00",
-      "note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech",
-      "multibuy": [],
-      "http_status": 200,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:36+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W047",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "Paprika žlutá 1 ks",
-      "url": "https://www.rohlik.cz/1348941-paprika-zluta-1-ks",
-      "rule_ids": [
-        "W047"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1348941/1348941-1547105706.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Paprika žlutá 1 ks",
-      "price_czk": null,
-      "price_status": "price_unverified",
-      "price_source": null,
-      "checked_at": "2026-10-20T14:16:38+00:00",
-      "note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech",
-      "multibuy": [],
-      "http_status": 200,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:36+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W047",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "Papriky Padrone na gril, balení",
-      "url": "https://www.rohlik.cz/1325731-papriky-padrone-na-gril-baleni",
-      "rule_ids": [
-        "W047"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1325731/1325731-1659031797646.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Papriky Padrone na gril, balení",
-      "price_czk": 70.9,
-      "price_status": "ok",
-      "price_source": "visible-product-detail",
-      "checked_at": "2026-10-20T14:16:56+00:00",
-      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
-      "multibuy": [],
-      "http_status": 200,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:36+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W047",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -13691,19 +13031,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Mražené",
+        "Zmrzlina a led",
+        "Nanuky a kornouty",
+        "Nanuky krémové"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:36+00:00",
+      "product_description": "Pegas Premium Malina je poctivá smetanová zmrzlina doplněná malinovým sorbetem. Povrch tvoří intenzivní malinová poleva, která podtrhuje ovocnou chuť.",
+      "taxonomy_checked_at": "2026-10-21T09:06:14+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W040",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -13724,19 +13070,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Nápoje",
+        "Horké nápoje",
+        "Čaj",
+        "Zelené a matcha"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:36+00:00",
+      "product_description": "PerfectTed Ceremonial Matcha Borůvka je prášek z prémiové japonské matchy s borůvkovou příchutí. Matcha pochází z oblasti Uji v Japonsku, kde je ručně",
+      "taxonomy_checked_at": "2026-10-21T09:06:18+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W039",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -13757,19 +13109,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Nápoje",
+        "Džusy, ovocné nápoje a sirupy",
+        "Nektary a ovocné nápoje",
+        "Nektary"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:37+00:00",
+      "product_description": "Ovocný džus s příchutí borůvek. Šťáva je vyrobená z koncentrátů ovocných šťáv.PoužitíPřed konzumací protřepejte. Hodí se také jako ovocný základ pro m",
+      "taxonomy_checked_at": "2026-10-21T09:06:22+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W039",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -13791,24 +13149,29 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Nápoje",
+        "Limonády a energy",
+        "Ledové čaje"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:37+00:00",
+      "product_description": "Při výrobě nápoje Pfanner Botanic Tea je vytvořen nálev z kvalitních&nbsp;bylinek z přírody, jako je&nbsp;aloisie citronová, rozmarýn, kopřiva, yzop,",
+      "taxonomy_checked_at": "2026-10-21T09:06:26+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W040",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         },
         {
           "rule_id": "W041",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -13829,52 +13192,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Mražené",
+        "Hotová jídla",
+        "Ze světa",
+        "Itálie a Řecko"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:37+00:00",
+      "product_description": "Čtveřice prémiových rajčat plněných lahodnou směsí vepřového masa, jemně dochucenou špetkou česneku a čerstvé petrželky. Tento luxusní pokrm naplno ro",
+      "taxonomy_checked_at": "2026-10-21T09:06:30+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W044",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "Plantain banán 1 ks",
-      "url": "https://www.rohlik.cz/1353357-plantain-banan-1-ks",
-      "rule_ids": [
-        "W038"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1324997/1324997-1495173561.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Plantain banán 1 ks",
-      "price_czk": null,
-      "price_status": "http_error",
-      "price_source": null,
-      "checked_at": "2026-10-20T14:02:48+00:00",
-      "note": "HTTP 429",
-      "multibuy": [],
-      "http_status": 429,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:37+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W038",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -13895,19 +13231,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Nápoje",
+        "Vody a minerálky",
+        "Ochucené",
+        "Jahoda a malina"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:37+00:00",
+      "product_description": "Jemně perlivá minerální voda se sladidly s příchutí maliny bez cukru a kalorií. Užijte si&nbsp;příchuť maliny&nbsp;umocněnou&nbsp;kombinací minerálů s",
+      "taxonomy_checked_at": "2026-10-21T09:06:37+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W040",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -13928,19 +13270,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Dítě",
+        "Výživa",
+        "Kapsičky do ruky",
+        "Ovocné"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:37+00:00",
+      "product_description": "Ovocná kapsička s&nbsp;malinami v BIO kvalitě&nbsp;je příjemně sladká, svěží a má skvělou malinovou&nbsp;vůni. Je zjemněna BIO&nbsp;jablíčky&nbsp;odrů",
+      "taxonomy_checked_at": "2026-10-21T09:06:41+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W040",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Produkt není v kategorii čerstvého ovoce"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -13961,19 +13309,25 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Trvanlivé",
+        "Slané, snacky a ořechy",
+        "Chipsy, brambůrky",
+        "Bramborové"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:37+00:00",
+      "product_description": "Jemně pikantní Pringles s příchutí papriky – chipsy s intenzivní chutí v každém soustu.Základem je bramborové těsto vylévané do formiček, proto jsou v",
+      "taxonomy_checked_at": "2026-10-21T09:06:44+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W047",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Produkt není v kategorii čerstvé zeleniny"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -13994,19 +13348,24 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Speciální výživa",
+        "Doplňky stravy",
+        "Energické gely,shoty a elektrolyty"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:37+00:00",
+      "product_description": "Pulse Performance Elektrolyty Citron &amp; Limetka jsou doplněk stravy v prášku s komplexem elektrolytů doplněným o vitamin C a vitamin B6. Příchuť Le",
+      "taxonomy_checked_at": "2026-10-21T09:06:48+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W041",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Produkt není v kategorii čerstvého ovoce"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -14028,24 +13387,29 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Nápoje",
+        "Lihoviny",
+        "Ready to drink, Hard seltzer, koktejly a příslušenství"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:37+00:00",
+      "product_description": "Ochucený lihový nápoj v plechovce s chutí sladkých malin a svěžího citronu. Obsah alkoholu: 3,1 % obj.PoužitíVhodné k přímé konzumaci nebo jako přísad",
+      "taxonomy_checked_at": "2026-10-21T09:06:52+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W040",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         },
         {
           "rule_id": "W041",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -14066,19 +13430,24 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Pekárna a cukrárna",
+        "Racio a Knäckebrot",
+        "Pufované pečivo"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:37+00:00",
+      "product_description": "Rýžové pufované chlebíčky&nbsp;s příchutí papriky.Pufováním se rýžová či jiná zrna díky vysoké teplotě a tlaku nafouknou, což může i za jejich následn",
+      "taxonomy_checked_at": "2026-10-21T09:06:56+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W047",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -14099,184 +13468,25 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Nápoje",
+        "Vody a minerálky",
+        "Ochucené",
+        "Další příchutě"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:37+00:00",
+      "product_description": "Nealkoholický nápoj z pramenité vody Rajec v BIO kvalitě. Je jemně sycený&nbsp;s přídavkem extraktů maliny a květu lípy. Neobsahuje&nbsp;cukr.&nbsp;Vy",
+      "taxonomy_checked_at": "2026-10-21T09:06:59+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W040",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "Rajčata cherry kulatá keříková Dulcita, vanička",
-      "url": "https://www.rohlik.cz/709625-rajcata-cherry-kulata-kerikova-dulcita-vanicka",
-      "rule_ids": [
-        "W044"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/709625/709625-1470035616.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Rajčata cherry kulatá keříková Dulcita, vanička",
-      "price_czk": null,
-      "price_status": "http_error",
-      "price_source": null,
-      "checked_at": "2026-10-20T14:12:22+00:00",
-      "note": "HTTP 429",
-      "multibuy": [],
-      "http_status": 429,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:37+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W044",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "Rajčata cherry na větvičce Honey (zn. Looye), balení",
-      "url": "https://www.rohlik.cz/1478177-rajcata-cherry-na-vetvicce-honey-zn-looye-baleni",
-      "rule_ids": [
-        "W044"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1478177/1478177-1765213775832.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Rajčata cherry na větvičce Honey (zn. Looye), balení",
-      "price_czk": null,
-      "price_status": "http_error",
-      "price_source": null,
-      "checked_at": "2026-10-20T14:12:22+00:00",
-      "note": "HTTP 429",
-      "multibuy": [],
-      "http_status": 429,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:37+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W044",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "Rajčata cherry na větvičce, vanička",
-      "url": "https://www.rohlik.cz/1296929-rajcata-cherry-na-vetvicce-vanicka",
-      "rule_ids": [
-        "W044"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1296929/1296929-1482842956.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Rajčata cherry na větvičce, vanička",
-      "price_czk": null,
-      "price_status": "http_error",
-      "price_source": null,
-      "checked_at": "2026-10-20T14:12:22+00:00",
-      "note": "HTTP 429",
-      "multibuy": [],
-      "http_status": 429,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:37+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W044",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "Rajčata cherry, vanička",
-      "url": "https://www.rohlik.cz/1322665-rajcata-cherry-vanicka",
-      "rule_ids": [
-        "W044"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1322665/1322665-1496047881.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Rajčata cherry, vanička",
-      "price_czk": null,
-      "price_status": "http_error",
-      "price_source": null,
-      "checked_at": "2026-10-20T14:12:22+00:00",
-      "note": "HTTP 429",
-      "multibuy": [],
-      "http_status": 429,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:37+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W044",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "Rajčata oválná, balení",
-      "url": "https://www.rohlik.cz/1422038-rajcata-ovalna-baleni",
-      "rule_ids": [
-        "W044"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=250,h=250,q=75/https://cdn.rohlik.cz/images/grocery/products/1422038/1422038-1652967379913.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Rajčata oválná, balení",
-      "price_czk": null,
-      "price_status": "http_error",
-      "price_source": null,
-      "checked_at": "2026-10-20T14:12:23+00:00",
-      "note": "HTTP 429",
-      "multibuy": [],
-      "http_status": 429,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:37+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W044",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -14297,19 +13507,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Nápoje",
+        "Džusy, ovocné nápoje a sirupy",
+        "Nektary a ovocné nápoje",
+        "Nektary"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:38+00:00",
+      "product_description": "Happy Day Malina je ovocný nektar s malinovou příchutí od značky Rauch. Happy Day od Rauch nese označení V-Label a je&nbsp;veganský. Je certifikován r",
+      "taxonomy_checked_at": "2026-10-21T09:07:22+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W040",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -14330,19 +13546,24 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Nápoje",
+        "Limonády a energy",
+        "Ledové čaje"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:38+00:00",
+      "product_description": "Ledový čaj BEZ CUKRU s citronovou příchutí vyrobený z nálevu černého čaje. Barevný svět MyTea. MyTea poskytuje pestrou škálu příchutí a můžete se tak",
+      "taxonomy_checked_at": "2026-10-21T09:07:25+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W041",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -14363,19 +13584,26 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Trvanlivé",
+        "Müsli, cereálie, kaše a tyčinky",
+        "Müsli, Protein, Raw tyčinky a Flapjacky",
+        "Ovocné a raw tyčinky",
+        "Raw"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:38+00:00",
+      "product_description": "RAW ovocná tyčinka z datlí s kokosem a malinami je bez lepku a přidaného cukru. Tyčinka obsahuje pouze přirozeně se vyskytující cukry.PoužitíUrčeno k",
+      "taxonomy_checked_at": "2026-10-21T09:07:29+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W040",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Produkt není v kategorii čerstvého ovoce"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -14396,19 +13624,24 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Nápoje",
+        "Limonády a energy",
+        "Energy nápoje"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:38+00:00",
+      "product_description": "Energetický nápoj s příchutí borůvky a vysokým obsahem kofeinu.Inspirován funkčními nápoji Dálného východu, založil v polovině 80. let Dietrich Matesc",
+      "taxonomy_checked_at": "2026-10-21T09:07:33+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W039",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -14429,19 +13662,26 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Trvanlivé",
+        "Sladkosti",
+        "Bonbóny, žvýkačky a lízátka",
+        "Bonbóny",
+        "Cucavé"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:38+00:00",
+      "product_description": "Švýcarský bylinný drops s malinovo-meduňkovou příchutí bez cukru, se sladidly. Každý bonbon obsahuje výtažky ze 13 alpských bylin.PoužitíUrčeno k přím",
+      "taxonomy_checked_at": "2026-10-21T09:07:37+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W040",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Produkt není v kategorii čerstvého ovoce"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -14462,19 +13702,24 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Plant Based",
+        "Pekárna a cukrárna",
+        "Dezerty"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:38+00:00",
+      "product_description": "Nadýchaný krém se snoubí s chutí banánu a jemně nasáklými piškoty. Chuť kakaa dává dezertu hloubku, kterou si zamilujete. Dopřejte si tuto&nbsp;vegans",
+      "taxonomy_checked_at": "2026-10-21T09:07:40+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W038",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Produkt není v kategorii čerstvého ovoce"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -14495,52 +13740,24 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Plant Based",
+        "Alternativy uzenin a lahůdek",
+        "Rostlinné pomazánky a saláty"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:38+00:00",
+      "product_description": "Pořádně vyladěná pomazánka z pečené karotky, cukety s&nbsp;kmínem. Perfektní strukturu jí dodává cibule, česnek a rajčatový protlak.&nbsp;Díky obsahu",
+      "taxonomy_checked_at": "2026-10-21T09:07:44+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W046",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Produkt není v kategorii čerstvé zeleniny"
         }
       ],
-      "taxonomy_status": "review"
-    },
-    {
-      "store": "Rohlík",
-      "name": "Rohlík.cz Rajčata cherry na větvičce Rozálka, balení",
-      "url": "https://www.rohlik.cz/1460637-rohlik-cz-rajcata-cherry-na-vetvicce-rozalka-baleni",
-      "rule_ids": [
-        "W044"
-      ],
-      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1460637/1460637-1778573166435.jpg",
-      "package_verified": null,
-      "cycle": 1,
-      "title": "Rohlík.cz Rajčata cherry na větvičce Rozálka, balení",
-      "price_czk": null,
-      "price_status": "http_error",
-      "price_source": null,
-      "checked_at": "2026-10-20T14:12:23+00:00",
-      "note": "HTTP 429",
-      "multibuy": [],
-      "http_status": 429,
-      "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
-      "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:38+00:00",
-      "taxonomy_decisions": [
-        {
-          "rule_id": "W044",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
-        }
-      ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -14561,19 +13778,25 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "store_category_path": [],
-      "category_source": "error",
+      "store_category_path": [
+        "Trvanlivé",
+        "Konzervy, hotovky a instantní pokrmy",
+        "Sterilovaná zelenina, luštěniny a houby",
+        "Papriky"
+      ],
+      "category_source": "jsonld_breadcrumb",
       "taxonomy_error": "RuntimeError: HTTP 429",
-      "product_description": "",
-      "taxonomy_checked_at": "2026-10-21T07:20:38+00:00",
+      "product_description": "Krájené pálivé zelené papričky jalapeno v kyselém nálevu jsou ideálním doplňkem k různým pokrmům.Hmotnost pevného podílu 175 g. Celková hmotnost obsah",
+      "taxonomy_checked_at": "2026-10-21T09:07:52+00:00",
       "taxonomy_decisions": [
         {
           "rule_id": "W047",
-          "decision": "review",
-          "reason": "Prodejce neposkytl spolehlivou kategorii"
+          "decision": "reject",
+          "reason": "Kategorie obchodu označuje jiný/zpracovaný výrobek"
         }
       ],
-      "taxonomy_status": "review"
+      "taxonomy_status": "rejected",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",

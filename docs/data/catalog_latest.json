@@ -1,10 +1,10 @@
 {
   "schema": "rk-v20-catalog-1",
-  "generated_at": "2026-10-21T08:57:10+00:00",
+  "generated_at": "2026-10-21T09:07:52+00:00",
   "postcode": "149 00",
   "postcode_verified": false,
   "complete": false,
-  "note": "Výsledky veřejného vyhledávání, nikoli garantovaná úplnost sortimentu. Neověřené položky nejsou slevy. | Korekce kategorií: vyřazeno 543 nesouvisejících výrobků; údaje z veřejného vyhledávání, nikoli garantované úplnosti sortimentu. | Kategorie prodejce: 1130 veřejných produktů; 442 záznamů k prověření.",
+  "note": "Výsledky veřejného vyhledávání, nikoli garantovaná úplnost sortimentu. Neověřené položky nejsou slevy. | Korekce kategorií: vyřazeno 543 nesouvisejících výrobků; údaje z veřejného vyhledávání, nikoli garantované úplnosti sortimentu. | Kategorie prodejce: 1165 veřejných produktů; 407 záznamů k prověření.",
   "rules_total": 75,
   "rules": [
     {
@@ -429,8 +429,8 @@
       "no_cards": 1
     }
   },
-  "discovered_total": 1130,
-  "verified_current_cycle": 873,
+  "discovered_total": 1165,
+  "verified_current_cycle": 888,
   "items": [
     {
       "store": "Košík",
@@ -19042,6 +19042,158 @@
     },
     {
       "store": "Rohlík",
+      "name": "Kunratická stodola - duopack (maliny a borůvky), vanička",
+      "url": "https://www.rohlik.cz/1474041-kunraticka-stodola-duopack-maliny-a-boruvky-vanicka",
+      "rule_ids": [
+        "W040"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1474041/1474041-1755184848536.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Kunratická stodola - duopack (maliny a borůvky), vanička",
+      "price_czk": 299.9,
+      "price_status": "ok",
+      "price_source": "visible-product-detail",
+      "checked_at": "2026-10-20T14:05:04+00:00",
+      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Ovoce",
+        "Jahody a lesní plody"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Štavnaté a čerstvé maliny a borůvky ve vaničce. Plody jsou sladké, akorát zralé a představují ideální letní ovoce.PoužitíBorůvky a maliny se hodí do k",
+      "taxonomy_checked_at": "2026-10-21T09:02:32+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W040",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
+    },
+    {
+      "store": "Rohlík",
+      "name": "Kunratická stodola – Hrozny bílé volné, střapec",
+      "url": "https://www.rohlik.cz/1469422-kunraticka-stodola-hrozny-bile-volne-strapec",
+      "rule_ids": [
+        "W042"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1469422/1469422-1747782481067.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Kunratická stodola – Hrozny bílé volné, střapec",
+      "price_czk": 401.98,
+      "price_status": "ok",
+      "price_source": "visible-product-detail",
+      "checked_at": "2026-10-20T14:10:58+00:00",
+      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Ovoce",
+        "Hrozny a melouny"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Čerstvé bílé hrozny odrůdy Sugrathirtyfive/Autumncrisp se sladkou chutí a příjemnou křupavostí.PoužitíHrozny se používají především k přímé konzumaci.",
+      "taxonomy_checked_at": "2026-10-21T09:02:36+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W042",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
+    },
+    {
+      "store": "Rohlík",
+      "name": "Kunratická stodola – Hrozny růžové bezpeckové volně (odr. Sweet celebration), střapec",
+      "url": "https://www.rohlik.cz/1466686-kunraticka-stodola-hrozny-ruzove-bezpeckove-volne-odr-sweet-celebration-strapec",
+      "rule_ids": [
+        "W042"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1466686/1466686-1768051025997.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Kunratická stodola – Hrozny růžové bezpeckové volně (odr. Sweet celebration), střapec",
+      "price_czk": 464.36,
+      "price_status": "ok",
+      "price_source": "visible-product-detail",
+      "checked_at": "2026-10-20T14:11:00+00:00",
+      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Ovoce",
+        "Hrozny a melouny"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Tmavé hrozny odrůdy Sweet celebration na střapci se vyznačují svou sladkou chutí a příjemnou křupavostí.PoužitíIdeální k přímé konzumaci. Můžete je př",
+      "taxonomy_checked_at": "2026-10-21T09:02:40+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W042",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
+    },
+    {
+      "store": "Rohlík",
+      "name": "Kunratická stodola – Rajčata cherry na větvičce (odr. Red Egg), střapec",
+      "url": "https://www.rohlik.cz/1466689-kunraticka-stodola-rajcata-cherry-na-vetvicce-odr-red-egg-strapec",
+      "rule_ids": [
+        "W044"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1466689/1466689-1736933600347.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Kunratická stodola – Rajčata cherry na větvičce (odr. Red Egg), střapec",
+      "price_czk": null,
+      "price_status": "http_error",
+      "price_source": null,
+      "checked_at": "2026-10-20T14:12:22+00:00",
+      "note": "HTTP 429",
+      "multibuy": [],
+      "http_status": 429,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Rajčata"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Vychutnejte si skvělá cherry rajčata na větvičce odrůdy Red Egg.PoužitíRajčata&nbsp;jsou&nbsp;šťavnatá a velice sladká, proto nejlépe chutnají čerstvá",
+      "taxonomy_checked_at": "2026-10-21T09:02:44+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W044",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
+    },
+    {
+      "store": "Rohlík",
       "name": "Kuřecí prsa s dijonskou omáčkou, opečeným batátem a křupavou zeleninou (set k přípravě hotového jídla)",
       "url": "https://www.rohlik.cz/1476694-kureci-prsa-s-dijonskou-omackou-opecenym-batatem-a-krupavou-zeleninou-set-k-priprave-hotoveho-jidla",
       "rule_ids": [
@@ -19219,6 +19371,44 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false
+    },
+    {
+      "store": "Rohlík",
+      "name": "La Parcela Rajčata cherry Angelle sladká oválná, shaker",
+      "url": "https://www.rohlik.cz/1321665-la-parcela-rajcata-cherry-angelle-sladka-ovalna-shaker",
+      "rule_ids": [
+        "W044"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1321665/1321665-1497966198.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "La Parcela Rajčata cherry Angelle sladká oválná, shaker",
+      "price_czk": null,
+      "price_status": "http_error",
+      "price_source": null,
+      "checked_at": "2026-10-20T14:12:22+00:00",
+      "note": "HTTP 429",
+      "multibuy": [],
+      "http_status": 429,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Rajčata"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Intenzivně sladká cherry rajčátka odrůdy Angelle jsou křupavá, mají&nbsp;hruškovitý&nbsp;tvar, intenzivní a jasně červenou&nbsp;barvu a&nbsp;výbornou&",
+      "taxonomy_checked_at": "2026-10-21T09:02:47+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W044",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -20782,6 +20972,44 @@
     },
     {
       "store": "Rohlík",
+      "name": "Maliny čerstvé, vanička",
+      "url": "https://www.rohlik.cz/799753-maliny-cerstve-vanicka",
+      "rule_ids": [
+        "W040"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/799753/799753-1643367295788.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Maliny čerstvé, vanička",
+      "price_czk": 59.9,
+      "price_status": "ok",
+      "price_source": "visible-product-detail",
+      "checked_at": "2026-10-20T14:07:29+00:00",
+      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Ovoce",
+        "Jahody a lesní plody"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Šťavnaté a hlavně sladké plody malin, které jsou vybírány s tou největší péčí.Maliny jsou oblíbeným lesním ovocem a jejich použití je velmi široké.Pou",
+      "taxonomy_checked_at": "2026-10-21T09:03:10+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W040",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
+    },
+    {
+      "store": "Rohlík",
       "name": "Maso Uzeniny Polička BIO Hovězí svíčková",
       "url": "https://www.rohlik.cz/1479634-maso-uzeniny-policka-bio-hovezi-svickova",
       "rule_ids": [
@@ -20882,6 +21110,44 @@
     },
     {
       "store": "Rohlík",
+      "name": "Mini okurky, balení",
+      "url": "https://www.rohlik.cz/1340323-mini-okurky-baleni",
+      "rule_ids": [
+        "W043"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1340323/1340323-1779454372501.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Mini okurky, balení",
+      "price_czk": null,
+      "price_status": "http_error",
+      "price_source": null,
+      "checked_at": "2026-10-20T14:11:35+00:00",
+      "note": "HTTP 429",
+      "multibuy": [],
+      "http_status": 429,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Okurky, cukety a lilky"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Mini okurky jsou malé, křupavé a velice chutné. Balení obsahuje 4-5ks mini okurek.PoužitíBaby okurky jsou pro svoji lahodnou chuť ideální ke konzumaci",
+      "taxonomy_checked_at": "2026-10-21T09:03:48+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W043",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
+    },
+    {
+      "store": "Rohlík",
       "name": "Moddia Kuchyňské utěrky 2vrstvé",
       "url": "https://www.rohlik.cz/1439221-moddia-kuchynske-uterky-2vrstve",
       "rule_ids": [
@@ -20962,6 +21228,348 @@
     },
     {
       "store": "Rohlík",
+      "name": "Mrkev fialová 1ks, volná",
+      "url": "https://www.rohlik.cz/1351243-mrkev-fialova-1ks-volna",
+      "rule_ids": [
+        "W046"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1314617/1314617-1508146084.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Mrkev fialová 1ks, volná",
+      "price_czk": null,
+      "price_status": "price_unverified",
+      "price_source": null,
+      "checked_at": "2026-10-20T14:14:29+00:00",
+      "note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Mrkev a kořenová zelenina"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Fialová mrkev má sladší chuť, její povrch je fialový a vnitřek oranžový jako u klasické mrkve.PoužitíFialová mrkev je nejen výživná, ale velmi snadno",
+      "taxonomy_checked_at": "2026-10-21T09:04:11+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W046",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
+    },
+    {
+      "store": "Rohlík",
+      "name": "Mrkev koktejlová (baby), balení",
+      "url": "https://www.rohlik.cz/1313441-mrkev-koktejlova-baby-baleni",
+      "rule_ids": [
+        "W046"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1313441/1313441-1469197688.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Mrkev koktejlová (baby), balení",
+      "price_czk": 31.9,
+      "price_status": "ok",
+      "price_source": "visible-product-detail",
+      "checked_at": "2026-10-20T14:14:25+00:00",
+      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Mrkev a kořenová zelenina"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Mrkev má jasně oranžovou&nbsp;barvu a&nbsp;jemně nasládlou chuť. Mrkev je oloupaná a bez tvrdého konce.&nbsp;PoužitíKoktejlová mrkev je oblíbenou a zd",
+      "taxonomy_checked_at": "2026-10-21T09:04:14+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W046",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
+    },
+    {
+      "store": "Rohlík",
+      "name": "Mrkev krouhaná nudličky",
+      "url": "https://www.rohlik.cz/1337185-mrkev-krouhana-nudlicky",
+      "rule_ids": [
+        "W046"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1337185/1337185-1521198106.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Mrkev krouhaná nudličky",
+      "price_czk": 19.9,
+      "price_status": "ok",
+      "price_source": "visible-product-detail",
+      "checked_at": "2026-10-20T14:14:27+00:00",
+      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Kuchařské boxy, hotové saláty a ready to cook",
+        "Rychlá příprava a předvařená zelenina"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Očištěná mrkev, nakrouhaná na nudličky, bez zjevných organických vad – polotovar pro rychlé vaření.Minimální garance spotřeby jsou dva dny.PoužitíMrke",
+      "taxonomy_checked_at": "2026-10-21T09:04:18+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W046",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
+    },
+    {
+      "store": "Rohlík",
+      "name": "Mrkev krájená kostky",
+      "url": "https://www.rohlik.cz/1337183-mrkev-krajena-kostky",
+      "rule_ids": [
+        "W046"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1337183/1337183-1521196833.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Mrkev krájená kostky",
+      "price_czk": 16.9,
+      "price_status": "ok",
+      "price_source": "visible-product-detail",
+      "checked_at": "2026-10-20T14:14:32+00:00",
+      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Kuchařské boxy, hotové saláty a ready to cook",
+        "Rychlá příprava a předvařená zelenina"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Mrkev nakrájená na kostky, očištěná, bez zjevných organických vad – polotovar pro rychlé vaření.PoužitíNakrájená mrkev je určená především ke zhotoven",
+      "taxonomy_checked_at": "2026-10-21T09:04:22+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W046",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
+    },
+    {
+      "store": "Rohlík",
+      "name": "Mrkev praná čerstvá, balení",
+      "url": "https://www.rohlik.cz/1289717-mrkev-prana-cerstva-baleni",
+      "rule_ids": [
+        "W046"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1289717/1289717-1488195409.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Mrkev praná čerstvá, balení",
+      "price_czk": 24.9,
+      "price_status": "ok",
+      "price_source": "visible-product-detail",
+      "checked_at": "2026-10-20T14:14:21+00:00",
+      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Mrkev a kořenová zelenina"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Mrkev má jasně oranžovou&nbsp;barvu a&nbsp;jemně nasládlou chuť.&nbsp;PoužitíMrkev můžete jíst syrovou. Skvěle doplňuje různé saláty, polévky, omáčky,",
+      "taxonomy_checked_at": "2026-10-21T09:04:26+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W046",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
+    },
+    {
+      "store": "Rohlík",
+      "name": "Mrkev s natí, svazek (cca 500 g)",
+      "url": "https://www.rohlik.cz/1294755-mrkev-s-nati-svazek-cca-500-g",
+      "rule_ids": [
+        "W046"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1294755/1294755-1482836916.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Mrkev s natí, svazek (cca 500 g)",
+      "price_czk": 24.9,
+      "price_status": "ok",
+      "price_source": "visible-product-detail",
+      "checked_at": "2026-10-20T14:14:19+00:00",
+      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Mrkev a kořenová zelenina"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Mrkev s natí vás mile překvapí svou výjimečně lahodnou chutí a křupavostí. &nbsp;PoužitíMrkev můžete jíst čerstvou. Skvěle doplňuje různé saláty, polé",
+      "taxonomy_checked_at": "2026-10-21T09:04:29+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W046",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
+    },
+    {
+      "store": "Rohlík",
+      "name": "Mrkev sladká (odr. Mokum), balení",
+      "url": "https://www.rohlik.cz/1419522-mrkev-sladka-odr-mokum-baleni",
+      "rule_ids": [
+        "W046"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1419522/1419522-1645787939877.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Mrkev sladká (odr. Mokum), balení",
+      "price_czk": 35.9,
+      "price_status": "ok",
+      "price_source": "visible-product-detail",
+      "checked_at": "2026-10-20T14:14:30+00:00",
+      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Mrkev a kořenová zelenina"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Mrkev speciální odrůdy Mokum. Tato mrkev je pěstovaná zejména pro svou sladkou chuť, kterou má díky&nbsp;vyššímu obsahu&nbsp;cukru.PoužitíMrkev můžete",
+      "taxonomy_checked_at": "2026-10-21T09:04:33+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W046",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
+    },
+    {
+      "store": "Rohlík",
+      "name": "Mrkev čerstvá praná 1 ks, volná",
+      "url": "https://www.rohlik.cz/1350467-mrkev-cerstva-prana-1-ks-volna",
+      "rule_ids": [
+        "W046"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1325993/1325993-1542963378.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Mrkev čerstvá praná 1 ks, volná",
+      "price_czk": null,
+      "price_status": "price_unverified",
+      "price_source": null,
+      "checked_at": "2026-10-20T14:14:23+00:00",
+      "note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Mrkev a kořenová zelenina"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Dopřejte si výbornou mrkev, která vás překvapí jemně nasládlou chutí. Má jasně oranžovou barvu a šťavnatý a sladký kořen.&nbsp;PoužitíMrkev můžete jís",
+      "taxonomy_checked_at": "2026-10-21T09:04:37+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W046",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
+    },
+    {
+      "store": "Rohlík",
+      "name": "Mrkev žlutá 1 ks, volná",
+      "url": "https://www.rohlik.cz/1351245-mrkev-zluta-1-ks-volna",
+      "rule_ids": [
+        "W046"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1333375/1333375-1515594118.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Mrkev žlutá 1 ks, volná",
+      "price_czk": null,
+      "price_status": "price_unverified",
+      "price_source": null,
+      "checked_at": "2026-10-20T14:14:36+00:00",
+      "note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Mrkev a kořenová zelenina"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Žlutá mrkev má výrazně zemitou chuť, která je mnohem jemnější než u klasické oranžové mrkve.Přítomnost a koncentrace barvivového pigmentu ovlivňuje ba",
+      "taxonomy_checked_at": "2026-10-21T09:04:41+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W046",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
+    },
+    {
+      "store": "Rohlík",
       "name": "Naše maso Hovězí svíčková steaky",
       "url": "https://www.rohlik.cz/1375189-nase-maso-hovezi-svickova-steaky",
       "rule_ids": [
@@ -21019,6 +21627,120 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false
+    },
+    {
+      "store": "Rohlík",
+      "name": "Okurka hadovka (cca 300 g)",
+      "url": "https://www.rohlik.cz/1294559-okurka-hadovka-cca-300-g",
+      "rule_ids": [
+        "W043"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1294559/1294559-1599144049.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Okurka hadovka (cca 300 g)",
+      "price_czk": 24.9,
+      "price_status": "ok",
+      "price_source": "visible-product-detail",
+      "checked_at": "2026-10-20T14:11:23+00:00",
+      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Okurky, cukety a lilky"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Okurka hadovka, kterou si oblíbíte díky své štavnatosti.Vážení zákazníci. Rádi bychom vás informovali, že okurky země původu Holandsko jsou obvykle do",
+      "taxonomy_checked_at": "2026-10-21T09:04:59+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W043",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
+    },
+    {
+      "store": "Rohlík",
+      "name": "Okurka polní 1 ks",
+      "url": "https://www.rohlik.cz/1354613-okurka-polni-1-ks",
+      "rule_ids": [
+        "W043"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1326209/1326209-1498832932.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Okurka polní 1 ks",
+      "price_czk": null,
+      "price_status": "price_unverified",
+      "price_source": null,
+      "checked_at": "2026-10-20T14:11:33+00:00",
+      "note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Okurky, cukety a lilky"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Okurka polní se vyznačuje především svou křupavostí a sytě zelenou barvou.PoužitíOkurky se konzumují syrové i vařené. Můžeme je solit, přidávat do pol",
+      "taxonomy_checked_at": "2026-10-21T09:05:03+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W043",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
+    },
+    {
+      "store": "Rohlík",
+      "name": "Okurkový meloun Barattiere",
+      "url": "https://www.rohlik.cz/1460862-okurkovy-meloun-barattiere",
+      "rule_ids": [
+        "W043"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1460862/1460862-1714380105317.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Okurkový meloun Barattiere",
+      "price_czk": null,
+      "price_status": "http_error",
+      "price_source": null,
+      "checked_at": "2026-10-20T14:11:35+00:00",
+      "note": "HTTP 429",
+      "multibuy": [],
+      "http_status": 429,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Okurky, cukety a lilky"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Okurkový meloun Barattiere rostoucí v okolí&nbsp;Bari v oblasti Puglia. Má velice osvěžující chuť připomínající okurku. Díky své jemné chuti se hodí j",
+      "taxonomy_checked_at": "2026-10-21T09:05:07+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W043",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -21522,6 +22244,44 @@
     },
     {
       "store": "Rohlík",
+      "name": "Paní Mrkev – blanšírované mrkvové kostky, balení",
+      "url": "https://www.rohlik.cz/1435418-pani-mrkev-blansirovane-mrkvove-kostky-baleni",
+      "rule_ids": [
+        "W046"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1435418/1435418-1671055681266.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Paní Mrkev – blanšírované mrkvové kostky, balení",
+      "price_czk": 49.9,
+      "price_status": "ok",
+      "price_source": "visible-product-detail",
+      "checked_at": "2026-10-20T14:14:34+00:00",
+      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Mrkev a kořenová zelenina"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Paní Mrkev jsou blanšírované mrkvové kostky. Nebaví váš čistit, škrabat a krájet zeleninu? Nemusíte. Rozbalte pouze sáček a máte skoro hotovo.&nbsp;Př",
+      "taxonomy_checked_at": "2026-10-21T09:05:41+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W046",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
+    },
+    {
+      "store": "Rohlík",
       "name": "Pappudia Kuřecí řízek s bramborovou kaší",
       "url": "https://www.rohlik.cz/1473420-pappudia-kureci-rizek-s-bramborovou-kasi",
       "rule_ids": [
@@ -21539,6 +22299,310 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false
+    },
+    {
+      "store": "Rohlík",
+      "name": "Paprika bílá 1 ks",
+      "url": "https://www.rohlik.cz/1350681-paprika-bila-1-ks",
+      "rule_ids": [
+        "W047"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1295149/1295149-1501777846.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Paprika bílá 1 ks",
+      "price_czk": null,
+      "price_status": "price_unverified",
+      "price_source": null,
+      "checked_at": "2026-10-20T14:16:36+00:00",
+      "note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Papriky a chilli"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Šťavnatá bílá paprika se sladkou chutí.&nbsp;Tyto papriky&nbsp;neobsahují&nbsp;žádný&nbsp;kapsaicin, který by způsoboval jejich pálivost.PoužitíPaprik",
+      "taxonomy_checked_at": "2026-10-21T09:05:45+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W047",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
+    },
+    {
+      "store": "Rohlík",
+      "name": "Paprika oranžová 1 ks",
+      "url": "https://www.rohlik.cz/1352395-paprika-oranzova-1-ks",
+      "rule_ids": [
+        "W047"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1338663/1338663-1524136184.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Paprika oranžová 1 ks",
+      "price_czk": null,
+      "price_status": "price_unverified",
+      "price_source": null,
+      "checked_at": "2026-10-20T14:17:00+00:00",
+      "note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Papriky a chilli"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Oranžová paprika je často nazývaná za \"Královnu paprik\", kvůli své sladké chuti. PoužitíV čerstvém stavu je vhodná do salátů, na chlebíčky či jako obl",
+      "taxonomy_checked_at": "2026-10-21T09:05:48+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W047",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
+    },
+    {
+      "store": "Rohlík",
+      "name": "Paprika pálivá špičatá, balení",
+      "url": "https://www.rohlik.cz/1326617-paprika-paliva-spicata-baleni",
+      "rule_ids": [
+        "W047"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1326617/1326617-1502721787.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Paprika pálivá špičatá, balení",
+      "price_czk": 47.9,
+      "price_status": "ok",
+      "price_source": "visible-product-detail",
+      "checked_at": "2026-10-20T14:16:59+00:00",
+      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Papriky a chilli"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Paprika odrůdy Rush je středně zelená, pálivá paprika, mající štíhlé plody v délce&nbsp;cca 18–20 cm.&nbsp;U této papriky má jednoznačně největší vliv",
+      "taxonomy_checked_at": "2026-10-21T09:05:52+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W047",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
+    },
+    {
+      "store": "Rohlík",
+      "name": "Paprika trikolora 3 ks, sáček",
+      "url": "https://www.rohlik.cz/1297011-paprika-trikolora-3-ks-sacek",
+      "rule_ids": [
+        "W047"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1297011/1297011-1456404711.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Paprika trikolora 3 ks, sáček",
+      "price_czk": 69.9,
+      "price_status": "ok",
+      "price_source": "visible-product-detail",
+      "checked_at": "2026-10-20T14:16:55+00:00",
+      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Papriky a chilli"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Papriky odrůdy California wonder s tlustou, masitou stěnou a&nbsp;jemnou chutí, která je sladká (nepálivá).Balení obsahuje&nbsp;tři kusy papriky odrůd",
+      "taxonomy_checked_at": "2026-10-21T09:05:56+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W047",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
+    },
+    {
+      "store": "Rohlík",
+      "name": "Paprika zelená 1 ks",
+      "url": "https://www.rohlik.cz/1350683-paprika-zelena-1-ks",
+      "rule_ids": [
+        "W047"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1294575/1294575-1482841985.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Paprika zelená 1 ks",
+      "price_czk": null,
+      "price_status": "price_unverified",
+      "price_source": null,
+      "checked_at": "2026-10-20T14:16:47+00:00",
+      "note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Papriky a chilli"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Tyto papriky jsou méně sladké a mírně hořčí než klasické žluté nebo červené papriky,PoužitíV čerstvém stavu je paprika vhodná do salátů, na chlebíčky",
+      "taxonomy_checked_at": "2026-10-21T09:05:59+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W047",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
+    },
+    {
+      "store": "Rohlík",
+      "name": "Paprika červená 1 ks",
+      "url": "https://www.rohlik.cz/1350165-paprika-cervena-1-ks",
+      "rule_ids": [
+        "W047"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1350165/1350165-1712840452350.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Paprika červená 1 ks",
+      "price_czk": null,
+      "price_status": "price_unverified",
+      "price_source": null,
+      "checked_at": "2026-10-20T14:16:41+00:00",
+      "note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Papriky a chilli"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Červenou papriku si oblíbíte pro její šťavnatost&nbsp;a sladkou&nbsp;chuť.Vážení zákazníci upozorňujeme, že tyto papriky ze španělské produkce&nbsp;mo",
+      "taxonomy_checked_at": "2026-10-21T09:06:03+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W047",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
+    },
+    {
+      "store": "Rohlík",
+      "name": "Paprika žlutá 1 ks",
+      "url": "https://www.rohlik.cz/1348941-paprika-zluta-1-ks",
+      "rule_ids": [
+        "W047"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1348941/1348941-1547105706.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Paprika žlutá 1 ks",
+      "price_czk": null,
+      "price_status": "price_unverified",
+      "price_source": null,
+      "checked_at": "2026-10-20T14:16:38+00:00",
+      "note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Papriky a chilli"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Žlutou papriku si oblíbíte, pro její nasládlou&nbsp;osvěžující chuť.&nbsp;PoužitíV čerstvém stavu je paprika vhodná do salátů, na chlebíčky či jako ob",
+      "taxonomy_checked_at": "2026-10-21T09:06:07+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W047",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
+    },
+    {
+      "store": "Rohlík",
+      "name": "Papriky Padrone na gril, balení",
+      "url": "https://www.rohlik.cz/1325731-papriky-padrone-na-gril-baleni",
+      "rule_ids": [
+        "W047"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1325731/1325731-1659031797646.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Papriky Padrone na gril, balení",
+      "price_czk": 70.9,
+      "price_status": "ok",
+      "price_source": "visible-product-detail",
+      "checked_at": "2026-10-20T14:16:56+00:00",
+      "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "multibuy": [],
+      "http_status": 200,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Papriky a chilli"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Papriky Padrón jsou odrůdou&nbsp;papriky, jejichž název je odvozen od obce Padrón v provincii A Goruna, Galicie, v&nbsp;severozápadním Španělsku.&nbsp",
+      "taxonomy_checked_at": "2026-10-21T09:06:11+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W047",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -22202,6 +23266,44 @@
     },
     {
       "store": "Rohlík",
+      "name": "Plantain banán 1 ks",
+      "url": "https://www.rohlik.cz/1353357-plantain-banan-1-ks",
+      "rule_ids": [
+        "W038"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1324997/1324997-1495173561.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Plantain banán 1 ks",
+      "price_czk": null,
+      "price_status": "http_error",
+      "price_source": null,
+      "checked_at": "2026-10-20T14:02:48+00:00",
+      "note": "HTTP 429",
+      "multibuy": [],
+      "http_status": 429,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Ovoce",
+        "Banány a exotické ovoce"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Plantain neboli zeleninový banán je plod banánovníku odrůdy Musa × Paradisiaca. Je větší než jiné druhy banánů a má sytě zelenou barvu.PoužitíUrčeno k",
+      "taxonomy_checked_at": "2026-10-21T09:06:33+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W038",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
+    },
+    {
+      "store": "Rohlík",
       "name": "Ponnath Bavorské grilovací klobásky",
       "url": "https://www.rohlik.cz/1321235-ponnath-bavorske-grilovaci-klobasky",
       "rule_ids": [
@@ -22762,6 +23864,197 @@
     },
     {
       "store": "Rohlík",
+      "name": "Rajčata cherry kulatá keříková Dulcita, vanička",
+      "url": "https://www.rohlik.cz/709625-rajcata-cherry-kulata-kerikova-dulcita-vanicka",
+      "rule_ids": [
+        "W044"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/709625/709625-1470035616.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Rajčata cherry kulatá keříková Dulcita, vanička",
+      "price_czk": null,
+      "price_status": "http_error",
+      "price_source": null,
+      "checked_at": "2026-10-20T14:12:22+00:00",
+      "note": "HTTP 429",
+      "multibuy": [],
+      "http_status": 429,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Rajčata"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Cherry rajčata Dulcita se vyznačují svou výjimečnou, aromatickou a sladkou chutí. PoužitíCherry rajčata&nbsp;se používají především do zeleninových sa",
+      "taxonomy_checked_at": "2026-10-21T09:07:03+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W044",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
+    },
+    {
+      "store": "Rohlík",
+      "name": "Rajčata cherry na větvičce Honey (zn. Looye), balení",
+      "url": "https://www.rohlik.cz/1478177-rajcata-cherry-na-vetvicce-honey-zn-looye-baleni",
+      "rule_ids": [
+        "W044"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1478177/1478177-1765213775832.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Rajčata cherry na větvičce Honey (zn. Looye), balení",
+      "price_czk": null,
+      "price_status": "http_error",
+      "price_source": null,
+      "checked_at": "2026-10-20T14:12:22+00:00",
+      "note": "HTTP 429",
+      "multibuy": [],
+      "http_status": 429,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Rajčata",
+        "Cherry rajčata (ø plodu 15-30mm)"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Looye Honeytomatoes jsou pěstované s maximální péčí tak, aby nabídly bohatou, sladkou chuť a šťavnatou chuť, kterou si okamžitě zamilujete. V Bruselu",
+      "taxonomy_checked_at": "2026-10-21T09:07:07+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W044",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
+    },
+    {
+      "store": "Rohlík",
+      "name": "Rajčata cherry na větvičce, vanička",
+      "url": "https://www.rohlik.cz/1296929-rajcata-cherry-na-vetvicce-vanicka",
+      "rule_ids": [
+        "W044"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1296929/1296929-1482842956.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Rajčata cherry na větvičce, vanička",
+      "price_czk": null,
+      "price_status": "http_error",
+      "price_source": null,
+      "checked_at": "2026-10-20T14:12:22+00:00",
+      "note": "HTTP 429",
+      "multibuy": [],
+      "http_status": 429,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Rajčata"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Cherry rajčata na větvičce.&nbsp;PoužitíCherry rajčata&nbsp;se používají především do zeleninových salátů, těstovinových pokrmů, nebo jako dekorace na",
+      "taxonomy_checked_at": "2026-10-21T09:07:10+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W044",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
+    },
+    {
+      "store": "Rohlík",
+      "name": "Rajčata cherry, vanička",
+      "url": "https://www.rohlik.cz/1322665-rajcata-cherry-vanicka",
+      "rule_ids": [
+        "W044"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1322665/1322665-1496047881.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Rajčata cherry, vanička",
+      "price_czk": null,
+      "price_status": "http_error",
+      "price_source": null,
+      "checked_at": "2026-10-20T14:12:22+00:00",
+      "note": "HTTP 429",
+      "multibuy": [],
+      "http_status": 429,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Rajčata"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Červená cherry rajčata ve vaničce s nasládlou chutí.Velikostí i tvarem připomínají větší třešeň.&nbsp;PoužitíCherry rajčata&nbsp;se používají předevší",
+      "taxonomy_checked_at": "2026-10-21T09:07:14+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W044",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
+    },
+    {
+      "store": "Rohlík",
+      "name": "Rajčata oválná, balení",
+      "url": "https://www.rohlik.cz/1422038-rajcata-ovalna-baleni",
+      "rule_ids": [
+        "W044"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=250,h=250,q=75/https://cdn.rohlik.cz/images/grocery/products/1422038/1422038-1652967379913.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Rajčata oválná, balení",
+      "price_czk": null,
+      "price_status": "http_error",
+      "price_source": null,
+      "checked_at": "2026-10-20T14:12:23+00:00",
+      "note": "HTTP 429",
+      "multibuy": [],
+      "http_status": 429,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Rajčata"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Rajčata oválného tvaru s pevnou dužinou a sladkou chutí. Obsahují menší množství semen a větší podíl dužiny než běžné kulaté odrůdy. Rajčata dodáváme",
+      "taxonomy_checked_at": "2026-10-21T09:07:18+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W044",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
+    },
+    {
+      "store": "Rohlík",
       "name": "Rama Classic",
       "url": "https://www.rohlik.cz/1445179-rama-classic",
       "rule_ids": [
@@ -22959,6 +24252,44 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false
+    },
+    {
+      "store": "Rohlík",
+      "name": "Rohlík.cz Rajčata cherry na větvičce Rozálka, balení",
+      "url": "https://www.rohlik.cz/1460637-rohlik-cz-rajcata-cherry-na-vetvicce-rozalka-baleni",
+      "rule_ids": [
+        "W044"
+      ],
+      "image_url": "https://www.rohlik.cz/cdn-cgi/image/f=auto,onerror=redirect,w=240,h=240,q=75/https://cdn.rohlik.cz/images/grocery/products/1460637/1460637-1778573166435.jpg",
+      "package_verified": null,
+      "cycle": 1,
+      "title": "Rohlík.cz Rajčata cherry na větvičce Rozálka, balení",
+      "price_czk": null,
+      "price_status": "http_error",
+      "price_source": null,
+      "checked_at": "2026-10-20T14:12:23+00:00",
+      "note": "HTTP 429",
+      "multibuy": [],
+      "http_status": 429,
+      "postcode_verified": false,
+      "store_category_path": [
+        "Ovoce a zelenina",
+        "Zelenina",
+        "Rajčata"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "taxonomy_error": "RuntimeError: HTTP 429",
+      "product_description": "Vyzkoušejte skvělá cherry rajčata Rozálka, vypěstovaná exluzivně pro Rohlík ve skleníku v Kostelci na Hané. Jsou šťavnatá, voňavá a plná chuti, protož",
+      "taxonomy_checked_at": "2026-10-21T09:07:48+00:00",
+      "taxonomy_decisions": [
+        {
+          "rule_id": "W044",
+          "decision": "review",
+          "reason": "Prodejce neposkytl spolehlivou kategorii"
+        }
+      ],
+      "taxonomy_status": "verified",
+      "taxonomy_attempts": 2
     },
     {
       "store": "Rohlík",
@@ -24926,8 +26257,8 @@
   "quality_changed_rule_matches": 583,
   "taxonomy_v21": {
     "total_known": 1566,
-    "visible": 1130,
-    "review_or_rejected": 442,
-    "category_verified": 385
+    "visible": 1165,
+    "review_or_rejected": 407,
+    "category_verified": 485
   }
 }
