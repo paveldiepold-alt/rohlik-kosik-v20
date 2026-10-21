@@ -1,0 +1,193 @@
+name: Monitor slev v27 - Izolovany sber kategorii (v26 read-only)
+"on":
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/taxonomy_v27_bootstrap.yml
+      - catalog_v27.py
+      - taxonomy_probe_v27.py
+      - rule_path_v27.py
+      - tests/test_*v27.py
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: Pocet produktu v davce, 1-100
+        default: '60'
+        required: false
+        type: string
+      delay:
+        description: Mezera mezi pozadavky, 2.5-60 sekund
+        default: '3.3'
+        required: false
+        type: string
+permissions:
+  contents: write
+concurrency:
+  group: rk-v20-catalog
+  cancel-in-progress: false
+jobs:
+  v27-probe:
+    if: github.ref_name == 'main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    env:
+      INPUT_LIMIT: ${{ inputs.limit || '60' }}
+      INPUT_DELAY: ${{ inputs.delay || '3.3' }}
+      BRANCH: feature/retailer-taxonomy-v27
+    steps:
+      - name: Checkout default branch, never check out or write v26 source
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Offline tests and parameter checks BEFORE touching retailer sites
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import os
+          n=int(os.environ['INPUT_LIMIT'])
+          d=float(os.environ['INPUT_DELAY'])
+          assert 1 <= n <= 100, 'limit must be 1..100'
+          assert 2.5 <= d <= 60, 'delay must be 2.5..60'
+          PY
+          python -m unittest discover -s tests -p 'test_*v27.py' -v
+      - name: Read latest v26 catalogue and existing v27 staging from separate branches
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p .v27-run/deps
+          git fetch --no-tags origin '+refs/heads/fix/real-product-price-reading-v20:refs/remotes/origin/fix/real-product-price-reading-v20'
+          git show origin/fix/real-product-price-reading-v20:docs/data/catalog_latest.json > .v27-run/source.json
+          git show origin/fix/real-product-price-reading-v20:store_taxonomy.py > .v27-run/deps/store_taxonomy.py
+          git show origin/fix/real-product-price-reading-v20:price_v23.py > .v27-run/deps/price_v23.py
+          if git ls-remote --exit-code --heads origin "$BRANCH" > /dev/null 2>&1; then
+            git fetch --no-tags origin "+refs/heads/${BRANCH}:refs/remotes/origin/${BRANCH}"
+            git show "origin/${BRANCH}:v27-results/catalog_v27_staging.json" > .v27-run/staging.json || rm -f .v27-run/staging.json
+          fi
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          cat=json.loads(Path('.v27-run/source.json').read_text(encoding='utf-8'))
+          items=cat['items']
+          ids=[(p.get('store'),p.get('url')) for p in items]
+          assert len(items)>=1090, 'v26 shrank below the agreed 1090 baseline: STOP'
+          assert len(set(ids))==len(ids), 'duplicate product identity: STOP'
+          print('v26 read-only source:',len(items),'products; prices:',sum(p.get('price_status')=='ok' for p in items))
+          PY
+      - name: Install browser for a bounded respectful category-only scan
+        shell: bash
+        run: |
+          python -m pip install --disable-pip-version-check playwright==1.56.0
+          python -m playwright install --with-deps chromium
+      - name: Run read-only merchant probe; keep source bytes identical
+        shell: bash
+        run: |
+          set -euo pipefail
+          before=$(sha256sum .v27-run/source.json | cut -d' ' -f1)
+          # runpy prepends the fresh v26 dependencies before the older main files.
+          # Direct `python taxonomy_probe_v27.py` would otherwise import main's
+          # store_taxonomy.py instead of the freshly fetched v26 version.
+          python - --input .v27-run/source.json --staging .v27-run/staging.json \
+            --report .v27-run/probe.json --limit "$INPUT_LIMIT" --delay "$INPUT_DELAY" <<'PY'
+          import runpy,sys
+          sys.path.insert(0,'.v27-run/deps')
+          sys.argv=['taxonomy_probe_v27.py',*sys.argv[1:]]
+          runpy.run_path('taxonomy_probe_v27.py',run_name='__main__')
+          PY
+          python catalog_v27.py \
+            --input .v27-run/staging.json \
+            --output .v27-run/catalog_v27.json \
+            --review .v27-run/review.json \
+            --audit .v27-run/audit.json \
+            --path-review .v27-run/path_review.json
+          after=$(sha256sum .v27-run/source.json | cut -d' ' -f1)
+          test "$before" = "$after"
+      - name: Strict field-by-field integrity gate
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          source=json.loads(Path('.v27-run/source.json').read_text(encoding='utf-8'))
+          stage=json.loads(Path('.v27-run/staging.json').read_text(encoding='utf-8'))
+          compiled=json.loads(Path('.v27-run/catalog_v27.json').read_text(encoding='utf-8'))
+          audit=json.loads(Path('.v27-run/audit.json').read_text(encoding='utf-8'))
+          pkey=lambda p:(p['store'],p['url'])
+          assert [pkey(p) for p in source['items']]==[pkey(p) for p in stage['items']]==[pkey(p) for p in compiled['items']]
+          permitted={'store_category_path','category_source','product_description','taxonomy_checked_at',
+                     'v27_category_probe_status','v27_category_probe_note','v27_category_checked_at','v27_category_probe_attempts'}
+          for old,staged,new in zip(source['items'],stage['items'],compiled['items']):
+            for k,v in old.items():
+              if k not in permitted: assert staged.get(k)==v,(pkey(old),k,'staging changed source')
+            assert all(k in staged for k in old),('source field deleted',pkey(old))
+            assert all(new.get(k)==v for k,v in staged.items()),('compiled output changed source',pkey(old))
+          assert audit['products_before']==audit['products_after']==len(source['items'])
+          assert audit['priced_before']==audit['priced_after']
+          print('PASS: unchanged v26 products, fields and price evidence')
+          PY
+          test -z "$(git status --porcelain -- docs/data/catalog_latest.json docs/catalog.html)"
+      - name: Persist ONLY review files on an isolated feature branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git show-ref --verify --quiet "refs/remotes/origin/${BRANCH}"; then
+            git worktree add --detach .v27-out "origin/${BRANCH}"
+          else
+            git worktree add --detach .v27-out HEAD
+          fi
+          mkdir -p .v27-out/v27-results
+          cp .v27-run/staging.json .v27-out/v27-results/catalog_v27_staging.json
+          cp .v27-run/catalog_v27.json .v27-out/v27-results/catalog_v27.json
+          cp .v27-run/probe.json .v27-out/v27-results/catalog_v27_probe.json
+          cp .v27-run/review.json .v27-out/v27-results/catalog_v27_review.json
+          cp .v27-run/audit.json .v27-out/v27-results/catalog_v27_audit.json
+          cp .v27-run/path_review.json .v27-out/v27-results/catalog_v27_path_review.json
+          cd .v27-out
+          git config user.name github-actions[bot]
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add v27-results/
+          if ! git diff --cached --quiet; then
+            git commit -m 'v27: taxonomy staging only [skip ci]'
+            git push origin "HEAD:refs/heads/${BRANCH}"
+          fi
+      - name: Explain real progress in Action summary
+        if: always()
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          audit=Path('.v27-run/audit.json')
+          probe=Path('.v27-run/probe.json')
+          s=['## Monitor slev v27 – oddělená kontrola kategorií','']
+          if audit.exists():
+            a=json.loads(audit.read_text(encoding='utf-8'))
+            for k in ('products_before','priced_before','missing_prices','merchant_category_mapped','retailer_path_missing','review_count','category_statuses'):
+              if k in a:s.append(f'- **{k}:** {a[k]}')
+          if probe.exists():
+            p=json.loads(probe.read_text(encoding='utf-8'))
+            for k in ('attempted','statuses','still_without_category','still_needing_probe','blocked_stores'):
+              s.append(f'- **{k}:** {p.get(k)}')
+          s.extend(['','Produkční větev v26 nebyla změněna. Náhled a kontrolní soubory jsou pouze v samostatné větvi / artefaktu.'])
+          with open(os.environ['GITHUB_STEP_SUMMARY'],'a',encoding='utf-8') as f:f.write('\n'.join(s)+'\n')
+          PY
+      - name: Keep the result downloadable even if branch write is denied
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: monitor-slev-v27-taxonomy-uat
+          path: |
+            .v27-run/staging.json
+            .v27-run/probe.json
+            .v27-run/catalog_v27.json
+            .v27-run/audit.json
+            .v27-run/review.json
+            .v27-run/path_review.json
+          if-no-files-found: ignore
+          retention-days: 30
