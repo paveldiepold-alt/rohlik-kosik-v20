@@ -126,4 +126,115 @@ async def run(args):
                 by_key[key]={**old,**product,
                     'rule_ids':sorted(set(old.get('rule_ids',[])) | set(product.get('rule_ids',[])))}
             else:
+                by_key[key]=product
+    all_count=len(by_key)
+    targets=[(k,item) for k,item in by_key.items()
+             if should_retry_product(item, only_produce=args.only_produce)]
+    requested=len(targets)
+    # Alternate retailers so neither can starve the other in a limited batch.
+    by_store={name:[entry for entry in targets if entry[1].get('store')==name]
+              for name in ('Košík','Rohlík')}
+    others=[entry for entry in targets if entry[1].get('store') not in by_store]
+    alternating=[]
+    for idx in range(max((len(v) for v in by_store.values()), default=0)):
+        for name in ('Košík','Rohlík'):
+            if idx<len(by_store[name]): alternating.append(by_store[name][idx])
+    targets=(alternating+others)[:min(args.max_products, MAX_RETRY_PER_RUN)]
+    print(f'Taxonomy retry: {requested} pending, {len(targets)} selected '
+          f'(safety limit {MAX_RETRY_PER_RUN} per run).',flush=True)
+    if not targets:
+        print('No new taxonomy checks needed; existing records preserved')
+        print(make_public(catalog,by_key,catalog_path,args.review))
+        return
+    deadline=time.monotonic()+args.budget_seconds
+    queue=asyncio.Queue()
+    for obj in targets:queue.put_nowait(obj)
+    results=Counter()
+    completed=0
+    blocked_stores=set()
+    store_locks={s:asyncio.Lock() for s in ('Rohlík','Košík')}
+    from playwright.async_api import async_playwright
+    async with async_playwright() as pw:
+        browser=await pw.chromium.launch(headless=True,args=['--no-sandbox'])
+        async def worker(idx):
+            nonlocal completed
+            ctx=await browser.new_context(locale='cs-CZ',timezone_id='Europe/Prague',viewport={'width':1260,'height':800})
+            page=await ctx.new_page()
+            try:
+                while time.monotonic()<deadline:
+                    try:key,item=queue.get_nowait()
+                    except asyncio.QueueEmpty:break
+                    rec=dict(item)
+                    url=rec['url']
+                    host=urlparse(url).hostname
+                    store=rec['store']
+                    if store in blocked_stores:
+                        results['skipped_rate_limit']+=1
+                        queue.task_done()
+                        continue
+                    # Serialize per retailer and slow requests so 429 does not
+                    # cascade into hundreds of false failures in a few seconds.
+                    async with store_locks.setdefault(store,asyncio.Lock()):
+                        if store in blocked_stores:
+                            results['skipped_rate_limit']+=1
+                            queue.task_done()
+                            continue
+                        await asyncio.sleep(args.delay_seconds)
+                        if host not in ('www.rohlik.cz','rohlik.cz','www.kosik.cz','kosik.cz') or \
+                           (store=='Rohlík') != ('rohlik.cz' in host):
+                            context={'store_category_path':[],'category_source':'error',
+                                     'taxonomy_error':'Invalid source URL','product_description':''}
+                        else:
+                            try:
+                                response=await page.goto(url,wait_until='domcontentloaded',timeout=22000)
+                                code=response.status if response else 0
+                                if code in (403,429,503):
+                                    blocked_stores.add(store)
+                                    raise RuntimeError(f'HTTP {code}: shop checks paused for this run')
+                                if not response or code>=400:
+                                    raise RuntimeError(f'HTTP {code or "none"}')
+                                await page.wait_for_timeout(650)
+                                payload=await page.evaluate(CONTEXT_JS)
+                                context=parse_context(payload)
+                                original=rec.get('title') or rec.get('name') or ''
+                                if not product_identity_matches(original,payload):
+                                    context={'store_category_path':[],'category_source':'error',
+                                             'taxonomy_error':'Product title changed / mismatch',
+                                             'product_description':''}
+                            except Exception as e:
+                                context={'store_category_path':[],'category_source':'error',
+                                         'taxonomy_error':f'{type(e).__name__}: {str(e)[:150]}',
+                                         'product_description':''}
+                        rec.update(context)
+                        rec['taxonomy_checked_at']=datetime.now(timezone.utc).isoformat(timespec='seconds')
+                        rec['taxonomy_attempts']=int(rec.get('taxonomy_attempts',1 if item.get('taxonomy_checked_at') else 0))+1
+                        by_key[key]=rec
+                        results[rec.get('category_source','missing')]+=1
+                        completed+=1
+                        if completed%20==0:
+                            outcome=make_public(catalog,by_key,catalog_path,args.review)
+                            print(f'Checked {completed}/{len(targets)}, {dict(results)}, '
+                                  f'blocked={sorted(blocked_stores)}, {outcome}',flush=True)
+                    queue.task_done()
+                    await asyncio.sleep(0.2)
+            finally:
+                await ctx.close()
+        await asyncio.gather(*(worker(i) for i in range(min(args.workers,2))))
+        await browser.close()
+    outcome=make_public(catalog,by_key,catalog_path,args.review)
+    print(f'DONE: initial={all_count}, checked={completed}/{len(targets)}, blocked_shops={sorted(blocked_stores)}, '
+          f'sources={dict(results)}, public/review={outcome}',flush=True)
 
+
+if __name__=='__main__':
+    p=argparse.ArgumentParser()
+    p.add_argument('--catalog',default='docs/data/catalog_latest.json')
+    p.add_argument('--review',default='docs/data/catalog_taxonomy_review.json')
+    p.add_argument('--max-products',type=int,default=650)
+    p.add_argument('--workers',type=int,default=4)
+    p.add_argument('--budget-seconds',type=int,default=1800)
+    p.add_argument('--only-produce',action='store_true',default=True)
+    p.add_argument('--all',dest='only_produce',action='store_false')
+    p.add_argument('--retry-missing',action='store_true',default=False)
+    p.add_argument('--delay-seconds',type=float,default=2.5)
+    asyncio.run(run(p.parse_args()))
