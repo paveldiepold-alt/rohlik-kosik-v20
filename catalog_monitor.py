@@ -123,10 +123,7 @@ def rule_matches(name: str, rule: dict) -> bool:
     if rule.get('required_product_state') in ('cerstve_ovoce', 'cerstva_zelenina'):
         if any(has_expression(n, x) for x in ('sušené', 'mražené', 'šťáva', 'sirup', 'ochucený', 'nápoj', 'čaj', 'bonbony', 'chipsy', 'olej')):
             return False
-    # Do not treat a product mentioning fruit/vegetables as fresh produce.
-    if rule.get('required_product_state') in ('cerstve_ovoce', 'cerstva_zelenina'):
-        if not is_fresh_produce_name(name, rule):
-            return False
+    # Produce name is only a candidate; shop taxonomy is checked after detail fetch.
     if rid in ('W033', 'W034', 'W035', 'W036'):
         # A title alone cannot establish PET unless explicitly marked. Product
         # discovery may include the item, but mark pack confirmation pending.
@@ -267,7 +264,10 @@ def main() -> int:
         done=set()
     state['planned_jobs']=len(jobs)
     current=load(DATA/'catalog_latest.json',{})
-    items={x['store']+'|'+x['url']:x for x in current.get('items',[]) if isinstance(x,dict) and x.get('url') and x.get('store')}
+    pending=load(DATA/'catalog_taxonomy_review.json',{}).get('items',[])
+    # Include quarantined records so each new cycle may recheck their retailer taxonomy.
+    all_saved=[*current.get('items',[]), *pending]
+    items={x['store']+'|'+x['url']:x for x in all_saved if isinstance(x,dict) and x.get('url') and x.get('store')}
     now=dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds')
     started=time.monotonic()
     deadline=started+43*60
@@ -318,6 +318,13 @@ def main() -> int:
                         row=inspect(detail_pages[shop],{'id':product['url'],'store':shop,
                             'label':product['name'],'url':product['url']},at)
                         detail_checked+=1
+                        # taxonomy-v21: context from retailer product page, after inspect() has navigated.
+                        from store_taxonomy import extract_shop_context
+                        if row.get('http_status') == 200 and row.get('status') != 'title_mismatch':
+                            shop_context=extract_shop_context(detail_pages[shop])
+                        else:
+                            shop_context={'store_category_path':[],'category_source':'missing',
+                                          'product_description':''}
                         multibuy=[]
                         if shop=='Košík' and row['status']=='ok':
                             try:
@@ -330,7 +337,7 @@ def main() -> int:
                         state.setdefault('discovered_in_cycle',{})[shop]=state.get('discovered_in_cycle',{}).get(shop,0)+1
                         if row['status']=='ok':
                             state.setdefault('fresh_verified_by_store',{})[shop]=state.get('fresh_verified_by_store',{}).get(shop,0)+1
-                        items[k]={**product, 'cycle':state['cycle'],
+                        items[k]={**product, **shop_context, 'taxonomy_checked_at':at, 'cycle':state['cycle'],
                                   'title':row.get('title') or product['name'],
                                   'price_czk':row.get('price_czk'),
                                   'price_status':row['status'],'price_source':row.get('source'),
@@ -377,6 +384,13 @@ def snapshot(state: dict,items: dict,jobs: list[dict],now: str) -> None:
             row['rule_ids'] = ids
             cleaned_items.append(row)
     all_items = cleaned_items
+    # Category MUST come from retailer detail, not the search phrase.
+    from store_taxonomy import partition_items
+    all_items, needs_review=partition_items(all_items)
+    dump(DATA/'catalog_taxonomy_review.json', {
+        'schema':'rk-v21-taxonomy-review-1',
+        'generated_at':dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds'),
+        'count':len(needs_review), 'items':needs_review})
 
     verified_current=sum(x.get('price_status')=='ok' and x.get('cycle')==state.get('cycle') for x in all_items)
     latest={'schema':'rk-v20-catalog-1','generated_at':dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds'),'postcode':'149 00',
