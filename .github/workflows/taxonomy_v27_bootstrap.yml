@@ -10,7 +10,7 @@ name: Monitor slev v27 - Izolovany sber kategorii (v26 read-only)
       - tests/test_*v27.py
   schedule:
     # Every six hours (UTC); respectful 100-product batches, never 6 runs at once.
-    - cron: '17 0,6,12,18 * * *'
+    - cron: '17 */3 * * *'
   workflow_dispatch:
     inputs:
       limit:
