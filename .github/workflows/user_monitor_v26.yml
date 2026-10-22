@@ -1,15 +1,19 @@
 name: Rohlík Košík v26 - Bezpečná denní kontrola cen (zachovat design)
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/user_monitor_v26.yml
   workflow_dispatch:
     inputs:
       limit:
         description: 'Počet produktů ke kontrole (1-35)'
-        default: '24'
+        default: '35'
         required: false
         type: string
   schedule:
-    - cron: '13 7 * * *'
+    - cron: '13 */3 * * *'
 
 permissions:
   contents: write
@@ -21,7 +25,7 @@ concurrency:
 jobs:
   daily-prices:
     runs-on: ubuntu-24.04
-    timeout-minutes: 40
+    timeout-minutes: 25
     steps:
       - name: Checkout current published v26 data and parser
         uses: actions/checkout@v4
@@ -58,21 +62,28 @@ jobs:
           print('Before: products:', len(items), 'priced:', sum(x.get('price_status') == 'ok' for x in items))
           PY
         env:
-          INPUT_LIMIT: ${{ inputs.limit || '24' }}
+          INPUT_LIMIT: ${{ inputs.limit || '35' }}
+
+      - name: Verify promotion parser offline
+        shell: bash
+        run: |
+          python -m unittest discover -s tests -p 'test_visible_price.py' -v
+          python -m unittest discover -s tests -p 'test_maintenance_v26.py' -v
 
       - name: Install price browser
         shell: bash
+        timeout-minutes: 6
         run: |
           set -euo pipefail
           python -m pip install --disable-pip-version-check 'playwright==1.56.0'
-          python -m playwright install --with-deps chromium
+          python -m playwright install chromium
 
       - name: Check saved product URLs, never crawl unrelated products
         id: price
         continue-on-error: true
         shell: bash
         env:
-          CHECK_LIMIT: ${{ inputs.limit || '24' }}
+          CHECK_LIMIT: ${{ inputs.limit || '35' }}
         run: |
           set -euo pipefail
           python maintenance_v26.py --limit "$CHECK_LIMIT" --delay 3.3

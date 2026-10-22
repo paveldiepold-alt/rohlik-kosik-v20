@@ -15,7 +15,7 @@ name: Monitor slev v27 - Izolovany sber kategorii (v26 read-only)
     inputs:
       limit:
         description: Pocet produktu v davce, 1-100
-        default: '60'
+        default: '25'
         required: false
         type: string
       delay:
@@ -32,9 +32,9 @@ jobs:
   v27-probe:
     if: github.ref_name == 'main'
     runs-on: ubuntu-24.04
-    timeout-minutes: 45
+    timeout-minutes: 25
     env:
-      INPUT_LIMIT: ${{ inputs.limit || '100' }}
+      INPUT_LIMIT: ${{ inputs.limit || '25' }}
       INPUT_DELAY: ${{ inputs.delay || '3.3' }}
       BRANCH: feature/retailer-taxonomy-v27
     steps:
@@ -84,9 +84,11 @@ jobs:
           PY
       - name: Install browser for a bounded respectful category-only scan
         shell: bash
+        timeout-minutes: 6
         run: |
+          set -euo pipefail
           python -m pip install --disable-pip-version-check playwright==1.56.0
-          python -m playwright install --with-deps chromium
+          python -m playwright install chromium
       - name: Run read-only merchant probe; keep source bytes identical
         shell: bash
         run: |
@@ -159,6 +161,60 @@ jobs:
             git commit -m 'v27: taxonomy staging only [skip ci]'
             git push origin "HEAD:refs/heads/${BRANCH}"
           fi
+      - name: Publish verified v27 category overlay to public catalogue (no price edits)
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PYOVERLAY'
+          import json
+          from collections import Counter
+          from datetime import datetime, timezone
+          from pathlib import Path
+          src=json.loads(Path('.v27-run/source.json').read_text(encoding='utf-8'))
+          new=json.loads(Path('.v27-run/catalog_v27.json').read_text(encoding='utf-8'))
+          ids=lambda rows:[(p['store'],p['url']) for p in rows]
+          assert ids(src['items'])==ids(new['items'])
+          assert len(new['items'])>=1090
+          rows=[]
+          for p in new['items']:
+            rows.append({k:p.get(k) for k in ('store','url','category_v27','store_category_path','category_source')})
+          states=Counter(p['category_v27']['status'] for p in new['items'])
+          mapped=sum(p['category_v27'].get('category') is not None for p in new['items'])
+          counts=dict(states)
+          counts.update(mapped=mapped,unmapped=len(rows)-mapped,
+                        mapped_with_rule_review=sum(p['category_v27'].get('category') is not None and p['category_v27']['status']=='review' for p in new['items']))
+          overlay={'schema':'rk-v27-retailer-category-overlay-v1',
+                   'generated_at':datetime.now(timezone.utc).isoformat(timespec='seconds'),
+                   'source_catalog_generated_at':src['generated_at'],
+                   'source_category_run_at':new.get('generated_at'),
+                   'total':len(rows),'counts':counts,'items':rows}
+          Path('.v27-run/public_overlay.json').write_text(json.dumps(overlay,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          print('Safe overlay:',len(rows),'mapped:',mapped,'verified:',states['verified'])
+          PYOVERLAY
+          git fetch --no-tags origin '+refs/heads/fix/real-product-price-reading-v20:refs/remotes/origin/fix/real-product-price-reading-v20'
+          git worktree add --detach .v27-public origin/fix/real-product-price-reading-v20
+          python - <<'PYVERIFY'
+          import json
+          from pathlib import Path
+          target=Path('.v27-public/docs/data/taxonomy_v27_public.json')
+          prior=json.loads(target.read_text(encoding='utf-8'))
+          new=json.loads(Path('.v27-run/public_overlay.json').read_text(encoding='utf-8'))
+          old_ids=[(x['store'],x['url']) for x in prior['items']]
+          new_ids=[(x['store'],x['url']) for x in new['items']]
+          assert old_ids==new_ids, 'Product identity mismatch: STOP'
+          assert new['counts']['mapped']>=prior['counts']['mapped'], 'Category coverage regression: STOP'
+          target.write_text(json.dumps(new,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          PYVERIFY
+          cd .v27-public
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- docs/data/taxonomy_v27_public.json
+          test -z "$(git status --porcelain -- docs/catalog.html docs/data/catalog_latest.json)"
+          if ! git diff --cached --quiet; then
+            git commit -m 'v27: publish verified merchant taxonomy overlay [skip ci]'
+            git push origin 'HEAD:refs/heads/fix/real-product-price-reading-v20'
+          fi
+
       - name: Explain real progress in Action summary
         if: always()
         shell: bash
