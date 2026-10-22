@@ -84,7 +84,7 @@ main{max-width:1780px;padding:18px 24px 40px;margin:auto}.notice{border:1px soli
   <div class="field"><label for="shop">Obchod</label><select id="shop"><option value="">Oba obchody</option><option>Rohlík</option><option>Košík</option></select></div>
   <div class="field"><label for="category">Kategorie</label><select id="category"><option value="">Všechny kategorie</option></select></div>
   <div class="field"><label for="brand">Značka</label><input id="brand" type="search" placeholder="Název značky..."></div>
-  <div class="field"><label for="state">Zobrazení / sleva</label><select id="state"><option value="">Všechny produkty</option><option value="priced">S ověřenou cenou</option><option value="missing">Bez ceny</option><option value="sale">Aktuálně zlevněné</option><option value="20">Sleva alespoň 20 %</option><option value="quantity">Množstevní nabídka</option></select></div>
+  <div class="field"><label for="state">Zobrazení / sleva</label><select id="state"><option value="">Všechny produkty</option><option value="priced">S ověřenou cenou</option><option value="missing">Bez ceny</option><option value="sale">Aktuálně zlevněné</option><option value="20">Sleva alespoň 20 %</option><option value="30">Sleva alespoň 30 %</option><option value="40">Sleva alespoň 40 %</option><option value="quantity">Množstevní nabídka</option></select></div>
   <div class="field"><label for="minPrice">Cena od (Kč)</label><input id="minPrice" type="number" min="0" step="1" placeholder="Od"></div>
   <div class="field"><label for="maxPrice">Cena do (Kč)</label><input id="maxPrice" type="number" min="0" step="1" placeholder="Do"></div>
   <div class="field"><label for="validity">Platnost akce</label><select id="validity"><option value="">Všechny</option><option value="valid">Ještě platná, doložená</option><option value="date">Uvedeno datum konce</option><option value="unknown">Datum neuvedeno</option><option value="expired">Ukončená</option></select></div>
@@ -128,7 +128,7 @@ function chosen(){const f={shop:$('shop').value,category:$('category').value,bra
  if(f.shop&&p.store!==f.shop)return false;if(f.category&&!cats(p).includes(f.category))return false;
  if(f.brand&&!String(p.brand||p.title||p.name||'').toLowerCase().includes(f.brand))return false;
  if(f.search&&!`${p.name||''} ${p.title||''} ${p.brand||''} ${p.product_description||''} ${cats(p).join(' ')}`.toLowerCase().includes(f.search))return false;
- if(f.state==='priced'&&!price||f.state==='missing'&&price||f.state==='sale'&&!active(p)||f.state==='20'&&!(active(p)&&reduction>=20)||f.state==='quantity'&&!quantity)return false;
+ if(f.state==='priced'&&!price||f.state==='missing'&&price||f.state==='sale'&&!active(p)||['20','30','40'].includes(f.state)&&!(active(p)&&reduction>=Number(f.state))||f.state==='quantity'&&!quantity)return false;
  if((f.min>0||f.max!==Infinity)&&(!price||p.price_czk<f.min||p.price_czk>f.max))return false;
  if(f.validity==='valid'&&!(reduction!=null&&until&&until>=day)||f.validity==='date'&&!until||f.validity==='unknown'&&!!until||f.validity==='expired'&&!(until&&until<day))return false;
  if(f.until&&!(until&&until<=f.until))return false;return true});
