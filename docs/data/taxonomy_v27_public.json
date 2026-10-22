@@ -1,16 +1,16 @@
 {
   "schema": "rk-v27-retailer-category-overlay-v1",
-  "generated_at": "2026-10-22T15:17:39+00:00",
+  "generated_at": "2026-10-22T15:37:06+00:00",
   "source_catalog_generated_at": "2026-10-21T14:12:55+00:00",
   "source_category_run_at": null,
   "total": 1090,
   "counts": {
-    "review": 441,
-    "unmapped": 320,
-    "verified": 620,
-    "mapped": 770,
-    "mapped_with_rule_review": 150,
-    "mismatch": 29
+    "review": 374,
+    "unmapped": 240,
+    "verified": 686,
+    "mapped": 850,
+    "mapped_with_rule_review": 164,
+    "mismatch": 30
   },
   "items": [
     {
@@ -450,17 +450,22 @@
       "store": "Košík",
       "url": "https://www.kosik.cz/p812430-ariel-plus-gel-gold-orchid-2-25-l",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Praní",
+        "display_category": "Praní",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Praní podle cesty prodejce",
         "expected_from_rules": [
           "Praní"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Gely",
+        "Univerzální"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Košík",
@@ -1313,17 +1318,22 @@
       "store": "Košík",
       "url": "https://www.kosik.cz/p818070-bref-color-auto-active-chlorine-wc-blok-3x-50-g",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Úklid",
+        "display_category": "Úklid",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Úklid podle cesty prodejce",
         "expected_from_rules": [
           "Úklid"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Čistící přípravky",
+        "Toaleta",
+        "WC bloky a gely"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Košík",
@@ -1345,33 +1355,43 @@
       "store": "Košík",
       "url": "https://www.kosik.cz/p818076-bref-color-auto-active-eucalyptus-tuhy-wc-blok-5x-50-g",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Úklid",
+        "display_category": "Úklid",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Úklid podle cesty prodejce",
         "expected_from_rules": [
           "Úklid"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Čistící přípravky",
+        "Toaleta",
+        "WC bloky a gely"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Košík",
       "url": "https://www.kosik.cz/p818072-bref-color-auto-active-flower-wc-blok-3x-50-g",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Úklid",
+        "display_category": "Úklid",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Úklid podle cesty prodejce",
         "expected_from_rules": [
           "Úklid"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Čistící přípravky",
+        "Toaleta",
+        "WC bloky a gely"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Košík",
@@ -1409,49 +1429,64 @@
       "store": "Košík",
       "url": "https://www.kosik.cz/p818078-bref-power-active-lemon-tuhy-wc-blok-6x-50-g",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Úklid",
+        "display_category": "Úklid",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Úklid podle cesty prodejce",
         "expected_from_rules": [
           "Úklid"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Čistící přípravky",
+        "Toaleta",
+        "WC bloky a gely"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Košík",
       "url": "https://www.kosik.cz/p818080-bref-power-active-pine-tuhy-wc-blok-6x-50-g",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Úklid",
+        "display_category": "Úklid",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Úklid podle cesty prodejce",
         "expected_from_rules": [
           "Úklid"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Čistící přípravky",
+        "Toaleta",
+        "WC bloky a gely"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Košík",
       "url": "https://www.kosik.cz/p804538-bref-power-aktiv-fruitopia-3x-50-g",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Úklid",
+        "display_category": "Úklid",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Úklid podle cesty prodejce",
         "expected_from_rules": [
           "Úklid"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Čistící přípravky",
+        "Toaleta",
+        "WC bloky a gely"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Košík",
@@ -1853,33 +1888,43 @@
       "store": "Košík",
       "url": "https://www.kosik.cz/p813260-chodura-pivni-salam-se-syrem",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Uzeniny / salámy",
+        "display_category": "Uzeniny / salámy",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Salámy podle cesty prodejce",
         "expected_from_rules": [
           "Uzeniny / salámy"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Uzeniny a lahůdky",
+        "Salámy",
+        "Tvrdé",
+        "Krájené"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Košík",
       "url": "https://www.kosik.cz/p813258-chodura-pivni-salam-se-zelenym-peprem",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Uzeniny / salámy",
+        "display_category": "Uzeniny / salámy",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Salámy podle cesty prodejce",
         "expected_from_rules": [
           "Uzeniny / salámy"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Uzeniny a lahůdky",
+        "Salámy",
+        "Tvrdé",
+        "Krájené"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Košík",
@@ -2207,17 +2252,21 @@
       "store": "Košík",
       "url": "https://www.kosik.cz/p813470-clin-peony-cistic-na-okna",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Úklid",
+        "display_category": "Úklid",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Úklid podle cesty prodejce",
         "expected_from_rules": [
           "Úklid"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Čistící přípravky",
+        "Okna"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Košík",
@@ -2343,33 +2392,45 @@
       "store": "Košík",
       "url": "https://www.kosik.cz/p816642-colgate-detska-zubni-pasta-bluey-0-5-let",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Dentální hygiena",
+        "display_category": "Dentální hygiena",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Dentální hygiena podle cesty prodejce",
         "expected_from_rules": [
           "Dentální hygiena"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Ústní hygiena",
+        "Zubní pasty",
+        "Dětské",
+        "0-6 let"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Košík",
       "url": "https://www.kosik.cz/p816640-colgate-detska-zubni-pasta-harry-potter-bubbling-cauldron-6-9-let",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Dentální hygiena",
+        "display_category": "Dentální hygiena",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Dentální hygiena podle cesty prodejce",
         "expected_from_rules": [
           "Dentální hygiena"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Ústní hygiena",
+        "Zubní pasty",
+        "Dětské",
+        "6-12 let"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Košík",
@@ -2575,17 +2636,22 @@
       "store": "Košík",
       "url": "https://www.kosik.cz/p816636-colgate-zubni-pasta-herbal",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Dentální hygiena",
+        "display_category": "Dentální hygiena",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Dentální hygiena podle cesty prodejce",
         "expected_from_rules": [
           "Dentální hygiena"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Ústní hygiena",
+        "Zubní pasty",
+        "S bylinnými výtažky"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Košík",
@@ -2612,65 +2678,86 @@
       "store": "Košík",
       "url": "https://www.kosik.cz/p816648-colgate-zubni-pasta-max-white-purple-reveal",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Dentální hygiena",
+        "display_category": "Dentální hygiena",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Dentální hygiena podle cesty prodejce",
         "expected_from_rules": [
           "Dentální hygiena"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Ústní hygiena",
+        "Zubní pasty",
+        "Bělící"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Košík",
       "url": "https://www.kosik.cz/p816638-colgate-zubni-pasta-max-white-sparkle-diamonds",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Dentální hygiena",
+        "display_category": "Dentální hygiena",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Dentální hygiena podle cesty prodejce",
         "expected_from_rules": [
           "Dentální hygiena"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Ústní hygiena",
+        "Zubní pasty",
+        "Bělící"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Košík",
       "url": "https://www.kosik.cz/p816656-colgate-zubni-pasta-total-junior",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Dentální hygiena",
+        "display_category": "Dentální hygiena",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Dentální hygiena podle cesty prodejce",
         "expected_from_rules": [
           "Dentální hygiena"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Ústní hygiena",
+        "Zubní pasty",
+        "Dětské",
+        "6-12 let"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Košík",
       "url": "https://www.kosik.cz/p816654-colgate-zubni-pasta-total-original",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Dentální hygiena",
+        "display_category": "Dentální hygiena",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Dentální hygiena podle cesty prodejce",
         "expected_from_rules": [
           "Dentální hygiena"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Ústní hygiena",
+        "Zubní pasty",
+        "Pro svěží dech"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Košík",
@@ -2697,33 +2784,43 @@
       "store": "Košík",
       "url": "https://www.kosik.cz/p816644-colgate-zubni-pasta-triple-action",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Dentální hygiena",
+        "display_category": "Dentální hygiena",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Dentální hygiena podle cesty prodejce",
         "expected_from_rules": [
           "Dentální hygiena"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Ústní hygiena",
+        "Zubní pasty",
+        "Pro svěží dech"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Košík",
       "url": "https://www.kosik.cz/p816646-colgate-zubni-pasta-triple-action",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Dentální hygiena",
+        "display_category": "Dentální hygiena",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Dentální hygiena podle cesty prodejce",
         "expected_from_rules": [
           "Dentální hygiena"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Ústní hygiena",
+        "Zubní pasty",
+        "Multipacky"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Košík",
@@ -3485,17 +3582,22 @@
       "store": "Košík",
       "url": "https://www.kosik.cz/p817708-jar-power-sprej-do-mycky-lemon-3v1-2x500ml",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
+        "category": "Úklid",
+        "display_category": "Úklid",
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "evidence_state": "mapped",
+        "reason": "Úklid podle cesty prodejce; konkrétní typ dle pravidel zatím nelze potvrdit: Úklid",
         "expected_from_rules": [
           "Úklid"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Mytí nádobí",
+        "Prostředky do myčky",
+        "Leštidla a oplachovače"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Košík",
@@ -4556,17 +4658,22 @@
       "store": "Košík",
       "url": "https://www.kosik.cz/p806102-leerdammer-delacreme-platky",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Sýry / plátkové",
+        "display_category": "Sýry / plátkové",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Plátkové sýry podle cesty prodejce",
         "expected_from_rules": [
           "Sýry / plátkové"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plátkové",
+        "Holandského typu"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Košík",
@@ -4609,17 +4716,22 @@
       "store": "Košík",
       "url": "https://www.kosik.cz/p812438-lenor-avivaz-amethyst-flower-bouquet-duopack-2x-987-ml",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Praní",
+        "display_category": "Praní",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Praní podle cesty prodejce",
         "expected_from_rules": [
           "Praní"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Aviváže a vůně",
+        "Tekuté aviváže"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Košík",
@@ -4709,49 +4821,64 @@
       "store": "Košík",
       "url": "https://www.kosik.cz/p814262-lenor-avivaz-gold-orchid-2-640-l",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Praní",
+        "display_category": "Praní",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Praní podle cesty prodejce",
         "expected_from_rules": [
           "Praní"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Aviváže a vůně",
+        "Tekuté aviváže"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Košík",
       "url": "https://www.kosik.cz/p814266-lenor-avivaz-sensitive-base-2-640-l",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Praní",
+        "display_category": "Praní",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Praní podle cesty prodejce",
         "expected_from_rules": [
           "Praní"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Aviváže a vůně",
+        "Tekuté aviváže"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Košík",
       "url": "https://www.kosik.cz/p814264-lenor-avivaz-spring-awakening-2-640-l",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Praní",
+        "display_category": "Praní",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Praní podle cesty prodejce",
         "expected_from_rules": [
           "Praní"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Aviváže a vůně",
+        "Tekuté aviváže"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Košík",
@@ -4873,65 +5000,85 @@
       "store": "Košík",
       "url": "https://www.kosik.cz/p816670-lenor-perlicky-do-prani-cotton-fresh-495-g",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Praní",
+        "display_category": "Praní",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Praní podle cesty prodejce",
         "expected_from_rules": [
           "Praní"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Aviváže a vůně",
+        "Vonné doplňky"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Košík",
       "url": "https://www.kosik.cz/p809350-lenor-professional-spring-avivaz",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Praní",
+        "display_category": "Praní",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Praní podle cesty prodejce",
         "expected_from_rules": [
           "Praní"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Aviváže a vůně",
+        "Tekuté aviváže"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Košík",
       "url": "https://www.kosik.cz/p811774-lenor-unstoppables-perlicky-fresh-735-g",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Praní",
+        "display_category": "Praní",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Praní podle cesty prodejce",
         "expected_from_rules": [
           "Praní"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Aviváže a vůně",
+        "Vonné doplňky"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Košík",
       "url": "https://www.kosik.cz/p811776-lenor-unstoppables-perlicky-spring-awakening-735-g",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Praní",
+        "display_category": "Praní",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Praní podle cesty prodejce",
         "expected_from_rules": [
           "Praní"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Aviváže a vůně",
+        "Vonné doplňky"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Košík",
@@ -6170,33 +6317,45 @@
       "store": "Košík",
       "url": "https://www.kosik.cz/p814380-orion-studentska-pecet-bublinky-mlecna-a-bile-bublinky",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
+        "category": "Sladké",
+        "display_category": "Sladké",
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "evidence_state": "mapped",
+        "reason": "Sladkosti podle cesty prodejce; konkrétní typ dle pravidel zatím nelze potvrdit: Sladké",
         "expected_from_rules": [
           "Sladké"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Trvanlivé",
+        "Sladké",
+        "Čokolády",
+        "Mléčná čokoláda",
+        "S příchutí"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Košík",
       "url": "https://www.kosik.cz/p814378-orion-studentska-pecet-bublinky-mlecna-s-karamelovou-prichuti",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
+        "category": "Sladké",
+        "display_category": "Sladké",
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "evidence_state": "mapped",
+        "reason": "Sladkosti podle cesty prodejce; konkrétní typ dle pravidel zatím nelze potvrdit: Sladké",
         "expected_from_rules": [
           "Sladké"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Trvanlivé",
+        "Sladké",
+        "Čokolády",
+        "Mléčná čokoláda",
+        "S příchutí"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Košík",
@@ -6909,17 +7068,22 @@
       "store": "Košík",
       "url": "https://www.kosik.cz/p813464-persil-color-praci-prasek",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Praní",
+        "display_category": "Praní",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Praní podle cesty prodejce",
         "expected_from_rules": [
           "Praní"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Prášky",
+        "Barevné prádlo"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Košík",
@@ -6994,33 +7158,43 @@
       "store": "Košík",
       "url": "https://www.kosik.cz/p813460-persil-discs-color-praci-kapsle",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Praní",
+        "display_category": "Praní",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Praní podle cesty prodejce",
         "expected_from_rules": [
           "Praní"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Kapsle",
+        "Barevné prádlo"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Košík",
       "url": "https://www.kosik.cz/p813458-persil-discs-universal-praci-kapsle",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Praní",
+        "display_category": "Praní",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Praní podle cesty prodejce",
         "expected_from_rules": [
           "Praní"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Kapsle",
+        "Univerzální"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Košík",
@@ -7042,33 +7216,43 @@
       "store": "Košík",
       "url": "https://www.kosik.cz/p813462-persil-expert-freshness-by-silan-praci-prasek",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Praní",
+        "display_category": "Praní",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Praní podle cesty prodejce",
         "expected_from_rules": [
           "Praní"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Prášky",
+        "Univerzální"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Košík",
       "url": "https://www.kosik.cz/p813452-persil-expert-freshness-by-silan-praci-prasek",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Praní",
+        "display_category": "Praní",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Praní podle cesty prodejce",
         "expected_from_rules": [
           "Praní"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Prášky",
+        "Univerzální"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Košík",
@@ -7284,17 +7468,22 @@
       "store": "Košík",
       "url": "https://www.kosik.cz/p804534-persil-ultra-koncentrovany-sensitive-gel-2x-62-pracich-davek",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Praní",
+        "display_category": "Praní",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Praní podle cesty prodejce",
         "expected_from_rules": [
           "Praní"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Gely",
+        "Univerzální"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Košík",
@@ -9419,17 +9608,21 @@
       "store": "Košík",
       "url": "https://www.kosik.cz/p810846-smetanito-high-protein-3ks",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Sýry / tavené",
+        "display_category": "Sýry / tavené",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Tavené sýry podle cesty prodejce",
         "expected_from_rules": [
           "Sýry / tavené"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Tavené"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Košík",
@@ -9805,17 +9998,22 @@
       "store": "Košík",
       "url": "https://www.kosik.cz/p809314-vanish-oxi-action-gel-na-odstraneni-skvrn",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Praní",
+        "display_category": "Praní",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Praní podle cesty prodejce",
         "expected_from_rules": [
           "Praní"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Odstraňovače skvrn",
+        "Běžné"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Košík",
@@ -10406,17 +10604,22 @@
       "store": "Košík",
       "url": "https://www.kosik.cz/p816728-zewa-classic-soft-toaletni-papir-3vrstvy-16-roli",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
+        "category": "Papír a hygiena",
+        "display_category": "Papír a hygiena",
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "evidence_state": "mapped",
+        "reason": "Papírová a vlhčená hygiena podle cesty e-shopu; konkrétní typ dle pravidel zatím nelze potvrdit: Papír a hygiena",
         "expected_from_rules": [
           "Papír a hygiena"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Papírová a vatová hygiena",
+        "Toaletní papíry",
+        "3 vrstvé"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Košík",
@@ -10575,17 +10778,22 @@
       "store": "Košík",
       "url": "https://www.kosik.cz/p816732-zewa-just-1-toaletni-papir-5vrstvy-6-roli",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
+        "category": "Papír a hygiena",
+        "display_category": "Papír a hygiena",
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "evidence_state": "mapped",
+        "reason": "Papírová a vlhčená hygiena podle cesty e-shopu; konkrétní typ dle pravidel zatím nelze potvrdit: Papír a hygiena",
         "expected_from_rules": [
           "Papír a hygiena"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Papírová a vatová hygiena",
+        "Toaletní papíry",
+        "5 vrstvé"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Košík",
@@ -10815,33 +11023,43 @@
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1480043-ariel-oxi-power-effect-praci-prasek-4-4-kg",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Praní",
+        "display_category": "Praní",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Praní podle cesty prodejce",
         "expected_from_rules": [
           "Praní"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie",
+        "Prací prostředky",
+        "Prací prášky",
+        "Univerzální"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1480051-ariel-all-in-1-pods-touch-of-lenor-spring-awakening-praci-kapsle",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Praní",
+        "display_category": "Praní",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Praní podle cesty prodejce",
         "expected_from_rules": [
           "Praní"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie",
+        "Prací prostředky",
+        "Prací kapsle/tablety",
+        "Barevné prádlo"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
@@ -10863,17 +11081,22 @@
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1483563-ariel-all-in-1-pods-praci-kapsle-pro-barevne-pradlo",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Praní",
+        "display_category": "Praní",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Praní podle cesty prodejce",
         "expected_from_rules": [
           "Praní"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie",
+        "Prací prostředky",
+        "Prací kapsle/tablety",
+        "Barevné prádlo"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
@@ -10921,17 +11144,22 @@
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1480056-ariel-color-allin1-kapsle-na-prani",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Praní",
+        "display_category": "Praní",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Praní podle cesty prodejce",
         "expected_from_rules": [
           "Praní"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie",
+        "Prací prostředky",
+        "Prací kapsle/tablety",
+        "Barevné prádlo"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
@@ -10958,17 +11186,22 @@
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1480052-ariel-color-praci-gel-1-8-l",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Praní",
+        "display_category": "Praní",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Praní podle cesty prodejce",
         "expected_from_rules": [
           "Praní"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie",
+        "Prací prostředky",
+        "Prací gely",
+        "Barevné prádlo"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
@@ -11016,33 +11249,43 @@
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1480053-ariel-color-praci-prasek-3-465-kg",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Praní",
+        "display_category": "Praní",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Praní podle cesty prodejce",
         "expected_from_rules": [
           "Praní"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie",
+        "Prací prostředky",
+        "Prací prášky",
+        "Univerzální"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1480042-ariel-color-praci-prasek-4-675-kg",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Praní",
+        "display_category": "Praní",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Praní podle cesty prodejce",
         "expected_from_rules": [
           "Praní"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie",
+        "Prací prostředky",
+        "Prací prášky",
+        "Barevné prádlo"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
@@ -11069,33 +11312,43 @@
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1480054-ariel-extra-clean-allin1-kapsle-na-prani",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Praní",
+        "display_category": "Praní",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Praní podle cesty prodejce",
         "expected_from_rules": [
           "Praní"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie",
+        "Prací prostředky",
+        "Prací kapsle/tablety",
+        "Univerzální"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1480045-ariel-extra-clean-praci-gel-1-575-l",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Praní",
+        "display_category": "Praní",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Praní podle cesty prodejce",
         "expected_from_rules": [
           "Praní"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie",
+        "Prací prostředky",
+        "Prací gely",
+        "Univerzální"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
@@ -11122,17 +11375,22 @@
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1480055-ariel-mountain-spring-allin1-kapsle-na-prani",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Praní",
+        "display_category": "Praní",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Praní podle cesty prodejce",
         "expected_from_rules": [
           "Praní"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie",
+        "Prací prostředky",
+        "Prací kapsle/tablety",
+        "Univerzální"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
@@ -11306,81 +11564,106 @@
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1483564-ariel-tekuty-praci-gel-na-barevne-pradlo-4-05-l",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Praní",
+        "display_category": "Praní",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Praní podle cesty prodejce",
         "expected_from_rules": [
           "Praní"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie",
+        "Prací prostředky",
+        "Prací gely",
+        "Barevné prádlo"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1483386-ariel-ultra-power-pods-kapsle-na-prani-color",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Praní",
+        "display_category": "Praní",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Praní podle cesty prodejce",
         "expected_from_rules": [
           "Praní"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie",
+        "Prací prostředky",
+        "Prací kapsle/tablety",
+        "Barevné prádlo"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1483388-ariel-ultra-power-pods-kapsle-na-prani-color",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Praní",
+        "display_category": "Praní",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Praní podle cesty prodejce",
         "expected_from_rules": [
           "Praní"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie",
+        "Prací prostředky",
+        "Prací kapsle/tablety",
+        "Barevné prádlo"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1483385-ariel-ultra-power-pods-kapsle-na-prani-universal",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Praní",
+        "display_category": "Praní",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Praní podle cesty prodejce",
         "expected_from_rules": [
           "Praní"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie",
+        "Prací prostředky",
+        "Prací kapsle/tablety",
+        "Univerzální"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1483387-ariel-ultra-power-pods-kapsle-na-prani-universal",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Praní",
+        "display_category": "Praní",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Praní podle cesty prodejce",
         "expected_from_rules": [
           "Praní"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie",
+        "Prací prostředky",
+        "Prací kapsle/tablety",
+        "Univerzální"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
@@ -11595,30 +11878,40 @@
         "category": null,
         "display_category": "Ke kontrole",
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "evidence_state": "unmapped_merchant_path",
+        "reason": "Cesta prodejce nemá schválené mapování",
         "expected_from_rules": [
           "Kosmetika"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Kosmetika",
+        "Sprchové gely a mýdla a přísady do koupele",
+        "Sprchové gely",
+        "Pánské"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1480497-axe-black-deodorant-sprej",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Kosmetika",
+        "display_category": "Kosmetika",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Kosmetický sortiment podle cesty e-shopu",
         "expected_from_rules": [
           "Kosmetika"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Kosmetika",
+        "Deodoranty a parfémy",
+        "Pánské",
+        "Ve spreji"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
@@ -11648,46 +11941,61 @@
         "category": null,
         "display_category": "Ke kontrole",
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "evidence_state": "unmapped_merchant_path",
+        "reason": "Cesta prodejce nemá schválené mapování",
         "expected_from_rules": [
           "Kosmetika"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Kosmetika",
+        "Sprchové gely a mýdla a přísady do koupele",
+        "Sprchové gely",
+        "Pánské"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1481526-axe-black-vanilla-pansky-deodorant-sprej",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Kosmetika",
+        "display_category": "Kosmetika",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Kosmetický sortiment podle cesty e-shopu",
         "expected_from_rules": [
           "Kosmetika"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Kosmetika",
+        "Deodoranty a parfémy",
+        "Pánské",
+        "Ve spreji"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1481525-axe-cherry-fizz-deodorant-sprej",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Kosmetika",
+        "display_category": "Kosmetika",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Kosmetický sortiment podle cesty e-shopu",
         "expected_from_rules": [
           "Kosmetika"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Kosmetika",
+        "Deodoranty a parfémy",
+        "Pánské",
+        "Ve spreji"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
@@ -11717,14 +12025,19 @@
         "category": null,
         "display_category": "Ke kontrole",
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "evidence_state": "unmapped_merchant_path",
+        "reason": "Cesta prodejce nemá schválené mapování",
         "expected_from_rules": [
           "Kosmetika"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Kosmetika",
+        "Sprchové gely a mýdla a přísady do koupele",
+        "Sprchové gely",
+        "Pánské"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
@@ -11751,17 +12064,22 @@
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1480501-axe-number-10-fifa-deodorant-sprej",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Kosmetika",
+        "display_category": "Kosmetika",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Kosmetický sortiment podle cesty e-shopu",
         "expected_from_rules": [
           "Kosmetika"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Kosmetika",
+        "Deodoranty a parfémy",
+        "Pánské",
+        "Ve spreji"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
@@ -11770,14 +12088,19 @@
         "category": null,
         "display_category": "Ke kontrole",
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "evidence_state": "unmapped_merchant_path",
+        "reason": "Cesta prodejce nemá schválené mapování",
         "expected_from_rules": [
           "Kosmetika"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Kosmetika",
+        "Sprchové gely a mýdla a přísady do koupele",
+        "Sprchové gely",
+        "Pánské"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
@@ -11786,14 +12109,19 @@
         "category": null,
         "display_category": "Ke kontrole",
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "evidence_state": "unmapped_merchant_path",
+        "reason": "Cesta prodejce nemá schválené mapování",
         "expected_from_rules": [
           "Kosmetika"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Kosmetika",
+        "Sprchové gely a mýdla a přísady do koupele",
+        "Sprchové gely",
+        "Pánské"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
@@ -11802,14 +12130,19 @@
         "category": null,
         "display_category": "Ke kontrole",
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "evidence_state": "unmapped_merchant_path",
+        "reason": "Cesta prodejce nemá schválené mapování",
         "expected_from_rules": [
           "Kosmetika"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Kosmetika",
+        "Sprchové gely a mýdla a přísady do koupele",
+        "Sprchové gely",
+        "Pánské"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
@@ -13785,17 +14118,22 @@
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1483585-domestos-bleach-foam-mint-fresh-cistic-toalety",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Úklid",
+        "display_category": "Úklid",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Úklid podle cesty prodejce",
         "expected_from_rules": [
           "Úklid"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie",
+        "Čisticí prostředky",
+        "Koupelna a WC",
+        "Čištění WC"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
@@ -14298,49 +14636,64 @@
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1481753-harmony-clean-expert-kuchynske-uterky-2vrstve",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Papírové utěrky",
+        "display_category": "Papírové utěrky",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Papírové utěrky podle cesty prodejce",
         "expected_from_rules": [
           "Papírové utěrky"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie",
+        "Papírová a vatová hygiena",
+        "Ubrousky a utěrky",
+        "Kuchyňské utěrky"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1481752-harmony-everyday-maxi-kuchynske-uterky-2vrstve",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Papírové utěrky",
+        "display_category": "Papírové utěrky",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Papírové utěrky podle cesty prodejce",
         "expected_from_rules": [
           "Papírové utěrky"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie",
+        "Papírová a vatová hygiena",
+        "Ubrousky a utěrky",
+        "Kuchyňské utěrky"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1482738-harmony-kuchynske-uterky-3vrstve-letni-edice",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Papírové utěrky",
+        "display_category": "Papírové utěrky",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Papírové utěrky podle cesty prodejce",
         "expected_from_rules": [
           "Papírové utěrky"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie",
+        "Papírová a vatová hygiena",
+        "Ubrousky a utěrky",
+        "Kuchyňské utěrky"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
@@ -14618,17 +14971,22 @@
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1483566-jar-original-lemon-kapsle-do-mycky",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
+        "category": "Úklid",
+        "display_category": "Úklid",
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "evidence_state": "mapped",
+        "reason": "Úklid podle cesty prodejce; konkrétní typ dle pravidel zatím nelze potvrdit: Úklid",
         "expected_from_rules": [
           "Úklid"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie",
+        "Mytí nádobí",
+        "Tablety do myčky",
+        "Multifunkční"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
@@ -14713,17 +15071,22 @@
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1483567-jar-platinum-lemon-kapsle-do-mycky",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
+        "category": "Úklid",
+        "display_category": "Úklid",
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "evidence_state": "mapped",
+        "reason": "Úklid podle cesty prodejce; konkrétní typ dle pravidel zatím nelze potvrdit: Úklid",
         "expected_from_rules": [
           "Úklid"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie",
+        "Mytí nádobí",
+        "Tablety do myčky",
+        "Multifunkční"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
@@ -14824,17 +15187,22 @@
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1480553-jar-platinum-plus-lemon-kapsle-do-mycky",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
+        "category": "Úklid",
+        "display_category": "Úklid",
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "evidence_state": "mapped",
+        "reason": "Úklid podle cesty prodejce; konkrétní typ dle pravidel zatím nelze potvrdit: Úklid",
         "expected_from_rules": [
           "Úklid"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie",
+        "Mytí nádobí",
+        "Tablety do myčky",
+        "Multifunkční"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
@@ -15136,14 +15504,19 @@
         "category": null,
         "display_category": "Ke kontrole",
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "evidence_state": "unmapped_merchant_path",
+        "reason": "Mléčná kategorie bez jednoznačného sledovaného typu",
         "expected_from_rules": [
           "Sýry / plísňové"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plísňové, zrající, pařené a uzené",
+        "Plísňové a zrající"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
@@ -15911,17 +16284,22 @@
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1480057-lenor-ruby-jasmine-vonne-perlicky",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
+        "category": "Praní",
+        "display_category": "Praní",
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "evidence_state": "mapped",
+        "reason": "Praní podle cesty prodejce; konkrétní typ dle pravidel zatím nelze potvrdit: Praní",
         "expected_from_rules": [
           "Praní"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie",
+        "Prací prostředky",
+        "Vonné perličky a parfémy",
+        "Vonné perličky"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
@@ -15967,17 +16345,21 @@
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1483565-lenor-spring-awakening-avivaz-2-65-l",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Praní",
+        "display_category": "Praní",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Praní podle cesty prodejce",
         "expected_from_rules": [
           "Praní"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie",
+        "Prací prostředky",
+        "Aviváže"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
@@ -16046,17 +16428,22 @@
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1480058-lenor-unstoppables-scent-of-ariel-vonne-perlicky",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
+        "category": "Praní",
+        "display_category": "Praní",
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "evidence_state": "mapped",
+        "reason": "Praní podle cesty prodejce; konkrétní typ dle pravidel zatím nelze potvrdit: Praní",
         "expected_from_rules": [
           "Praní"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie",
+        "Prací prostředky",
+        "Vonné perličky a parfémy",
+        "Vonné perličky"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
@@ -16224,17 +16611,22 @@
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1483435-linteo-den-noc-kuchynske-uterky-2vrstve",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Papírové utěrky",
+        "display_category": "Papírové utěrky",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Papírové utěrky podle cesty prodejce",
         "expected_from_rules": [
           "Papírové utěrky"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie",
+        "Papírová a vatová hygiena",
+        "Ubrousky a utěrky",
+        "Kuchyňské utěrky"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
@@ -17426,49 +17818,65 @@
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1481435-orion-koko-oplatka-s-mlecnou-polevou",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
+        "category": "Sladké",
+        "display_category": "Sladké",
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "evidence_state": "mapped",
+        "reason": "Sladkosti podle cesty prodejce; konkrétní typ dle pravidel zatím nelze potvrdit: Sladké",
         "expected_from_rules": [
           "Sladké"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Trvanlivé",
+        "Sladkosti",
+        "Čokoládové tyčinky a figurky",
+        "Čokoládové tyčinky"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1479913-orion-studentska-pecet-bublinky-mlecna",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
+        "category": "Sladké",
+        "display_category": "Sladké",
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "evidence_state": "mapped",
+        "reason": "Sladkosti podle cesty prodejce; konkrétní typ dle pravidel zatím nelze potvrdit: Sladké",
         "expected_from_rules": [
           "Sladké"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Trvanlivé",
+        "Sladkosti",
+        "Čokoládové tyčinky a figurky",
+        "Čokoládové tyčinky"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1479912-orion-studentska-pecet-bublinky-mlecna-a-bile-bublinky",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
+        "category": "Sladké",
+        "display_category": "Sladké",
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "evidence_state": "mapped",
+        "reason": "Sladkosti podle cesty prodejce; konkrétní typ dle pravidel zatím nelze potvrdit: Sladké",
         "expected_from_rules": [
           "Sladké"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Trvanlivé",
+        "Sladkosti",
+        "Čokolády",
+        "Mléčné čokolády",
+        "Mléčné čokolády ochucené"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
@@ -18652,17 +19060,21 @@
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1480904-ponnath-bio-farmarske-klobasky",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Uzeniny / párky a klobásy",
+        "display_category": "Uzeniny / párky a klobásy",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Párky/klobásy podle cesty prodejce",
         "expected_from_rules": [
           "Uzeniny / párky a klobásy"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Uzeniny a lahůdky",
+        "Párky, klobásy a špekáčky",
+        "Bio a farmářské párky a klobásy"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
@@ -19387,14 +19799,18 @@
         "category": null,
         "display_category": "Ke kontrole",
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "evidence_state": "unmapped_merchant_path",
+        "reason": "Mléčná kategorie bez jednoznačného sledovaného typu",
         "expected_from_rules": [
           "Másla a tuky"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Smetany, šlehačky a tvarohy",
+        "Smetany ke šlehání a šlehačky"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
@@ -19403,14 +19819,18 @@
         "category": null,
         "display_category": "Ke kontrole",
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "evidence_state": "unmapped_merchant_path",
+        "reason": "Mléčná kategorie bez jednoznačného sledovaného typu",
         "expected_from_rules": [
           "Másla a tuky"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Smetany, šlehačky a tvarohy",
+        "Smetany na vaření"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
@@ -19899,14 +20319,19 @@
         "category": null,
         "display_category": "Ke kontrole",
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "evidence_state": "unmapped_merchant_path",
+        "reason": "Mléčná kategorie bez jednoznačného sledovaného typu",
         "expected_from_rules": [
           "Sýry / plísňové"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plísňové, zrající, pařené a uzené",
+        "Plísňové a zrající"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
@@ -20017,33 +20442,43 @@
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1480498-signal-nature-elements-integral-8-charcoal-zubni-pasta",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Dentální hygiena",
+        "display_category": "Dentální hygiena",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Zubní pasty podle cesty e-shopu",
         "expected_from_rules": [
           "Dentální hygiena"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Kosmetika",
+        "Ústní hygiena",
+        "Zubní pasty",
+        "Bělící"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1480499-signal-white-now-zubni-pasta",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Dentální hygiena",
+        "display_category": "Dentální hygiena",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Zubní pasty podle cesty e-shopu",
         "expected_from_rules": [
           "Dentální hygiena"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Kosmetika",
+        "Ústní hygiena",
+        "Zubní pasty",
+        "Bělící"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
@@ -20258,17 +20693,22 @@
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1483390-smetanito-gastro-kyblik-taveny-syr",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Sýry / tavené",
+        "display_category": "Sýry / tavené",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Tavené sýry podle cesty prodejce",
         "expected_from_rules": [
           "Sýry / tavené"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Smetanové, cottage a tavené",
+        "Tavené"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
@@ -20629,17 +21069,22 @@
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1480521-vanish-oxi-action-extra-hygiene-tekuty-odstranovac-skvrn",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Praní",
+        "display_category": "Praní",
+        "status": "verified",
+        "evidence_state": "mapped",
+        "reason": "Praní podle cesty prodejce",
         "expected_from_rules": [
           "Praní"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie",
+        "Prací prostředky",
+        "Odstraňovače skvrn",
+        "Tekuté"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
@@ -20771,17 +21216,21 @@
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1480522-vanish-oxi-action-prasek-na-cisteni-kobercu",
       "category_v27": {
-        "category": null,
-        "display_category": "Ke kontrole",
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)",
+        "category": "Úklid",
+        "display_category": "Úklid",
+        "status": "mismatch",
+        "evidence_state": "mapped",
+        "reason": "Úklid podle cesty prodejce; nesoulad s pravidly: Praní",
         "expected_from_rules": [
           "Praní"
         ]
       },
-      "store_category_path": [],
-      "category_source": null
+      "store_category_path": [
+        "Drogerie",
+        "Čisticí prostředky",
+        "Na podlahu a koberce"
+      ],
+      "category_source": "jsonld_breadcrumb"
     },
     {
       "store": "Rohlík",
