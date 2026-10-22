@@ -1,0 +1,73 @@
+name: Monitor slev v27 - Viditelny pokrok kategorii (KPI)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rk-v20-catalog
+  cancel-in-progress: false
+
+jobs:
+  publish-category-kpis:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Checkout patch from main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run patch regression tests
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m unittest discover -s tests -p 'test_patch_taxonomy_kpis_ui.py' -v
+      - name: Patch CURRENT published HTML in a separate worktree
+        shell: bash
+        run: |
+          set -euo pipefail
+          LIVE='fix/real-product-price-reading-v20'
+          git fetch --no-tags origin "+refs/heads/${LIVE}:refs/remotes/origin/${LIVE}"
+          git worktree add --detach .kpi-live "origin/${LIVE}"
+          python patch_taxonomy_kpis_v27.py .kpi-live/docs/catalog.html
+          python - <<'PY'
+          from pathlib import Path
+          html=Path('.kpi-live/docs/catalog.html').read_text(encoding='utf-8')
+          expected=('id="mobileCards"','id="taxKpiMapped"','id="taxKpiVerified"',
+                    'id="taxKpiUnmapped"','id="categoryStatus"','<option value="30">',
+                    '<option value="40">','function renderTaxonomyKpisV27(){')
+          for marker in expected: assert marker in html,marker
+          js=html.split('<script>',1)[1].split('</script>',1)[0]
+          Path('/tmp/taxonomy_kpi_v27.js').write_text(js,encoding='utf-8')
+          PY
+          node --check /tmp/taxonomy_kpi_v27.js
+          cd .kpi-live
+          git diff --check
+          test -z "$(git status --porcelain -- docs/data/)"
+          changed=$(git diff --name-only)
+          test -z "$changed" -o "$changed" = 'docs/catalog.html'
+      - name: Publish HTML only; never stage the catalogue or prices
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd .kpi-live
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- docs/catalog.html
+          git diff --cached --check
+          if ! git diff --cached --quiet; then
+            git commit -m 'ui: show live taxonomy coverage and missing-category KPIs [skip ci]'
+            git push origin HEAD:refs/heads/fix/real-product-price-reading-v20
+          fi
+      - name: Result
+        shell: bash
+        run: |
+          echo '## v27 - Viditelný pokrok kategorií' >> "$GITHUB_STEP_SUMMARY"
+          echo 'KPI se plní z aktuálního publikovaného overlay. Katalog, ceny, historie i produktová identita jsou beze změny.' >> "$GITHUB_STEP_SUMMARY"
