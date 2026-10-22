@@ -1,0 +1,144 @@
+{
+  "schema": "rk-v27-missing-price-backfill",
+  "started_at": "2026-10-22T08:16:37+00:00",
+  "finished_at": "2026-10-22T08:20:05+00:00",
+  "requested": 100,
+  "selected": 53,
+  "attempted": 53,
+  "newly_priced": 12,
+  "priced_before": 1037,
+  "priced_after": 1049,
+  "missing_before": 53,
+  "remaining_missing": 41,
+  "blocked_stores": [],
+  "statuses": {
+    "Rohlík|ok": 12,
+    "Rohlík|price_unverified": 39,
+    "Košík|title_mismatch": 1,
+    "Košík|price_unverified": 1
+  },
+  "failure_examples": [
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1316435-bio-avokado-k-dozrani-1-ks",
+      "status": "price_unverified",
+      "reason": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1464111-ariel-color-allin1-kapsle-na-prani",
+      "status": "price_unverified",
+      "reason": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1293753-sedlcansky-hermelin-na-gril-s-grilovacim-korenim-4-ks",
+      "status": "price_unverified",
+      "reason": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1348941-paprika-zluta-1-ks",
+      "status": "price_unverified",
+      "reason": "v27b: no-unique-product-pack-price; Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1474744-domestos-power-5-unicorn-wc-blok-5-50-g",
+      "status": "price_unverified",
+      "reason": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1349775-bio-banan-1-ks",
+      "status": "price_unverified",
+      "reason": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1315777-persil-color-praci-gel-0-99-l",
+      "status": "price_unverified",
+      "reason": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1479619-clin-peony-cistic-na-okna",
+      "status": "price_unverified",
+      "reason": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1353703-farma-rodiny-nemcovy-kureci-stehna",
+      "status": "price_unverified",
+      "reason": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1479611-persil-discs-4v1-color-praci-kapsle",
+      "status": "price_unverified",
+      "reason": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1480553-jar-platinum-plus-lemon-kapsle-do-mycky",
+      "status": "price_unverified",
+      "reason": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1353891-kureci-stehna-spodni-od-ceskeho-vyrobce",
+      "status": "price_unverified",
+      "reason": "v27b: no-unique-product-pack-price; Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1349785-banan-chiquita-1-ks",
+      "status": "price_unverified",
+      "reason": "v27b: no-unique-product-pack-price; Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1484396-ariel-winter-dream-praci-gel-1-8-l",
+      "status": "price_unverified",
+      "reason": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1483690-jar-platinum-plus-lemon-kapsle-do-mycky",
+      "status": "price_unverified",
+      "reason": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1384488-bio-maso-hovezi-svickova-z-plemene-dexter-ze-statku-roden",
+      "status": "price_unverified",
+      "reason": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1350159-citron-1-ks",
+      "status": "price_unverified",
+      "reason": "v27b: no-unique-product-pack-price; Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1484397-ariel-winter-dream-praci-gel-4-05-l",
+      "status": "price_unverified",
+      "reason": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1350683-paprika-zelena-1-ks",
+      "status": "price_unverified",
+      "reason": "v27b: no-unique-product-pack-price; Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1483812-jar-platinum-lemon-kapsle-do-mycky",
+      "status": "price_unverified",
+      "reason": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+    }
+  ],
+  "existing_verified_prices_untouched": true,
+  "catalogue_products_unchanged": true
+}

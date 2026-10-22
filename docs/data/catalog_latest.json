@@ -430,7 +430,7 @@
     }
   },
   "discovered_total": 1090,
-  "verified_current_cycle": 1037,
+  "verified_current_cycle": 1049,
   "items": [
     {
       "store": "Košík",
@@ -10272,10 +10272,11 @@
       "price_v24_status": "price_unverified",
       "price_v24_checked_at": "2026-10-21T13:35:50+00:00",
       "price_v24_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "last_monitor_attempt_at": "2026-10-21T16:38:16+00:00",
-      "monitor_v26_attempts": 1,
+      "last_monitor_attempt_at": "2026-10-22T08:20:05+00:00",
+      "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "monitor_v27b_last_probe_at": "2026-10-22T08:20:05+00:00"
     },
     {
       "store": "Košík",
@@ -14296,10 +14297,11 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "last_monitor_attempt_at": "2026-10-21T16:38:54+00:00",
-      "monitor_v26_attempts": 1,
-      "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "last_monitor_attempt_at": "2026-10-22T08:20:01+00:00",
+      "monitor_v26_attempts": 2,
+      "monitor_v26_status": "title_mismatch",
+      "monitor_v26_note": "Product identity differs",
+      "monitor_v27b_last_probe_at": "2026-10-22T08:20:01+00:00"
     },
     {
       "store": "Košík",
@@ -14566,10 +14568,10 @@
       "package_verified": null,
       "cycle": 1,
       "title": "Amadori BIO Kuřecí prsní plátky innerfilet",
-      "price_czk": null,
-      "price_status": "http_error",
-      "price_source": null,
-      "checked_at": "2026-10-20T13:46:25+00:00",
+      "price_czk": 287.96,
+      "price_status": "ok",
+      "price_source": "monitor-v26:visible-product-detail",
+      "checked_at": "2026-10-22T08:16:40+00:00",
       "note": "HTTP 429",
       "multibuy": [],
       "http_status": 429,
@@ -14584,10 +14586,17 @@
       "product_description": "Kuřecí prsní plátky značky Amadori v BIO kvalitě. Jsou jemné a&nbsp;šťavnaté.Proces chovu BIO kuřete probíhá za podmínek&nbsp;ekologického zemědělství",
       "taxonomy_checked_at": "2026-10-21T14:05:02+00:00",
       "meat_taxonomy_v25": "verified",
-      "last_monitor_attempt_at": "2026-10-21T16:38:11+00:00",
-      "monitor_v26_attempts": 1,
-      "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+      "last_monitor_attempt_at": "2026-10-22T08:16:40+00:00",
+      "monitor_v26_attempts": 2,
+      "monitor_v26_status": "ok",
+      "monitor_v26_note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "original_price_czk": null,
+      "discount_pct": null,
+      "offer_valid_until": null,
+      "price_history_previous_czk": null,
+      "price_history_previous_at": "2026-10-20T13:46:25+00:00",
+      "drop_since_previous_pct": null,
+      "monitor_v27b_last_probe_at": "2026-10-22T08:16:40+00:00"
     },
     {
       "store": "Rohlík",
@@ -14600,10 +14609,10 @@
       "package_verified": null,
       "cycle": 1,
       "title": "Amadori BIO Kuřecí prso",
-      "price_czk": null,
-      "price_status": "http_error",
-      "price_source": null,
-      "checked_at": "2026-10-20T13:46:25+00:00",
+      "price_czk": 188.97,
+      "price_status": "ok",
+      "price_source": "monitor-v26:visible-product-detail",
+      "checked_at": "2026-10-22T08:17:03+00:00",
       "note": "HTTP 429",
       "multibuy": [],
       "http_status": 429,
@@ -14618,10 +14627,17 @@
       "product_description": "BIO kuřecí prso&nbsp;je&nbsp;ideálním produktem na šťavnatý řízek. Balení obsahuje jedno&nbsp;kuřecí prso.Proces chovu BIO kuřete probíhá za podmínek",
       "taxonomy_checked_at": "2026-10-21T14:05:11+00:00",
       "meat_taxonomy_v25": "verified",
-      "last_monitor_attempt_at": "2026-10-21T16:38:31+00:00",
-      "monitor_v26_attempts": 1,
-      "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+      "last_monitor_attempt_at": "2026-10-22T08:17:03+00:00",
+      "monitor_v26_attempts": 2,
+      "monitor_v26_status": "ok",
+      "monitor_v26_note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "original_price_czk": null,
+      "discount_pct": null,
+      "offer_valid_until": null,
+      "price_history_previous_czk": null,
+      "price_history_previous_at": "2026-10-20T13:46:25+00:00",
+      "drop_since_previous_pct": null,
+      "monitor_v27b_last_probe_at": "2026-10-22T08:17:03+00:00"
     },
     {
       "store": "Rohlík",
@@ -14892,10 +14908,11 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "last_monitor_attempt_at": "2026-10-22T04:47:32+00:00",
-      "monitor_v26_attempts": 1,
+      "last_monitor_attempt_at": "2026-10-22T08:16:47+00:00",
+      "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech",
+      "monitor_v27b_last_probe_at": "2026-10-22T08:16:47+00:00"
     },
     {
       "store": "Rohlík",
@@ -15540,10 +15557,11 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "last_monitor_attempt_at": "2026-10-22T06:40:58+00:00",
-      "monitor_v26_attempts": 1,
+      "last_monitor_attempt_at": "2026-10-22T08:18:31+00:00",
+      "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech",
+      "monitor_v27b_last_probe_at": "2026-10-22T08:18:31+00:00"
     },
     {
       "store": "Rohlík",
@@ -15564,10 +15582,11 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "last_monitor_attempt_at": "2026-10-22T06:40:34+00:00",
-      "monitor_v26_attempts": 1,
+      "last_monitor_attempt_at": "2026-10-22T08:17:51+00:00",
+      "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech",
+      "monitor_v27b_last_probe_at": "2026-10-22T08:17:51+00:00"
     },
     {
       "store": "Rohlík",
@@ -15588,10 +15607,11 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "last_monitor_attempt_at": "2026-10-22T06:40:46+00:00",
-      "monitor_v26_attempts": 1,
+      "last_monitor_attempt_at": "2026-10-22T08:18:11+00:00",
+      "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech",
+      "monitor_v27b_last_probe_at": "2026-10-22T08:18:11+00:00"
     },
     {
       "store": "Rohlík",
@@ -16146,10 +16166,11 @@
       "product_description": "Obohaťte svůj pokrm&nbsp;avokádem&nbsp;v BIO kvalitě, které je určeno k dozrávání.&nbsp;Pro správné dozrání a skladování doporučujeme ponechat doma v",
       "taxonomy_checked_at": "2026-10-21T07:20:08+00:00",
       "taxonomy_status": "verified",
-      "last_monitor_attempt_at": "2026-10-22T06:07:03+00:00",
-      "monitor_v26_attempts": 1,
+      "last_monitor_attempt_at": "2026-10-22T08:16:43+00:00",
+      "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech",
+      "monitor_v27b_last_probe_at": "2026-10-22T08:16:43+00:00"
     },
     {
       "store": "Rohlík",
@@ -16202,10 +16223,10 @@
       "package_verified": null,
       "cycle": 1,
       "title": "BIO Citrony, balení",
-      "price_czk": null,
-      "price_status": "http_error",
-      "price_source": null,
-      "checked_at": "2026-10-20T14:08:40+00:00",
+      "price_czk": 77.45,
+      "price_status": "ok",
+      "price_source": "monitor-v26:v27b:rohlik-own-H1-visible-price-estimated",
+      "checked_at": "2026-10-22T08:19:31+00:00",
       "note": "HTTP 429",
       "multibuy": [],
       "http_status": 429,
@@ -16219,10 +16240,17 @@
       "product_description": "Osvěžující citrony v BIO kvalitě.Upozorňujeme, že některé citrony v letních měsících mohou mít světle až tmavě zelenou barvu.Odrůdy Bianchetto a Verde",
       "taxonomy_checked_at": "2026-10-21T07:20:10+00:00",
       "taxonomy_status": "verified",
-      "last_monitor_attempt_at": "2026-10-22T06:38:42+00:00",
-      "monitor_v26_attempts": 1,
-      "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech"
+      "last_monitor_attempt_at": "2026-10-22T08:19:31+00:00",
+      "monitor_v26_attempts": 2,
+      "monitor_v26_status": "ok",
+      "monitor_v26_note": "Výslovná cena v detailu výrobku; dostupnost/lokalita nepotvrzena",
+      "original_price_czk": null,
+      "discount_pct": null,
+      "offer_valid_until": null,
+      "price_history_previous_czk": null,
+      "price_history_previous_at": "2026-10-20T14:08:40+00:00",
+      "drop_since_previous_pct": null,
+      "monitor_v27b_last_probe_at": "2026-10-22T08:19:31+00:00"
     },
     {
       "store": "Rohlík",
@@ -16252,10 +16280,11 @@
       "product_description": "Sladké bílé hrozny bez semínek v BIO kvalitě. Mají skvělou chuť a jsou příjemně šťavnaté.PoužitíHrozny se používají především k přímé konzumaci. Můžem",
       "taxonomy_checked_at": "2026-10-21T07:20:10+00:00",
       "taxonomy_status": "verified",
-      "last_monitor_attempt_at": "2026-10-22T06:39:33+00:00",
-      "monitor_v26_attempts": 1,
+      "last_monitor_attempt_at": "2026-10-22T08:19:47+00:00",
+      "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech",
+      "monitor_v27b_last_probe_at": "2026-10-22T08:19:47+00:00"
     },
     {
       "store": "Rohlík",
@@ -16315,10 +16344,11 @@
       "product_description": "Dopřejte si prémiovou BIO hovězí svíčkovou ze stařeného hovězího masa&nbsp;ze zámku Karla Rodena z plemene Dexter. Zabaleno:&nbsp;ve vakuu Suché zrání",
       "taxonomy_checked_at": "2026-10-21T14:05:37+00:00",
       "meat_taxonomy_v25": "verified",
-      "last_monitor_attempt_at": "2026-10-22T06:09:00+00:00",
-      "monitor_v26_attempts": 1,
+      "last_monitor_attempt_at": "2026-10-22T08:18:04+00:00",
+      "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech",
+      "monitor_v27b_last_probe_at": "2026-10-22T08:18:04+00:00"
     },
     {
       "store": "Rohlík",
@@ -16331,10 +16361,10 @@
       "package_verified": null,
       "cycle": 1,
       "title": "BIO Mrkev, balení",
-      "price_czk": null,
-      "price_status": "price_unverified",
-      "price_source": null,
-      "checked_at": "2026-10-20T14:14:16+00:00",
+      "price_czk": 39.95,
+      "price_status": "ok",
+      "price_source": "monitor-v26:v27b:rohlik-own-H1-visible-price-estimated",
+      "checked_at": "2026-10-22T08:19:35+00:00",
       "note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech",
       "multibuy": [],
       "http_status": 200,
@@ -16348,10 +16378,17 @@
       "product_description": "Sladká, křupavá mrkev v BIO kvalitě.Tyto mrkve vám budou doručeny&nbsp;ve speciálním sáčku, který je označený BIO značkou, aby nedošlo k záměně s jiný",
       "taxonomy_checked_at": "2026-10-21T07:20:11+00:00",
       "taxonomy_status": "verified",
-      "last_monitor_attempt_at": "2026-10-22T06:38:54+00:00",
-      "monitor_v26_attempts": 1,
-      "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech"
+      "last_monitor_attempt_at": "2026-10-22T08:19:35+00:00",
+      "monitor_v26_attempts": 2,
+      "monitor_v26_status": "ok",
+      "monitor_v26_note": "Výslovná cena v detailu výrobku; dostupnost/lokalita nepotvrzena",
+      "original_price_czk": null,
+      "discount_pct": null,
+      "offer_valid_until": null,
+      "price_history_previous_czk": null,
+      "price_history_previous_at": "2026-10-20T14:14:16+00:00",
+      "drop_since_previous_pct": null,
+      "monitor_v27b_last_probe_at": "2026-10-22T08:19:35+00:00"
     },
     {
       "store": "Rohlík",
@@ -16393,10 +16430,10 @@
       "package_verified": null,
       "cycle": 1,
       "title": "BIO Paprika červená 1 ks",
-      "price_czk": null,
-      "price_status": "price_unverified",
-      "price_source": null,
-      "checked_at": "2026-10-20T14:16:51+00:00",
+      "price_czk": 35.04,
+      "price_status": "ok",
+      "price_source": "monitor-v26:v27b:rohlik-own-H1-visible-price-estimated",
+      "checked_at": "2026-10-22T08:19:27+00:00",
       "note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech",
       "multibuy": [],
       "http_status": 200,
@@ -16410,10 +16447,17 @@
       "product_description": "Červená, šťavnatá paprika se sladkou chutí v BIO kvalitě.Tyto papriky vám budou doručeny&nbsp;ve speciálním sáčku, který je označený BIO značkou, aby",
       "taxonomy_checked_at": "2026-10-21T07:20:12+00:00",
       "taxonomy_status": "verified",
-      "last_monitor_attempt_at": "2026-10-22T06:38:34+00:00",
-      "monitor_v26_attempts": 1,
-      "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech"
+      "last_monitor_attempt_at": "2026-10-22T08:19:27+00:00",
+      "monitor_v26_attempts": 2,
+      "monitor_v26_status": "ok",
+      "monitor_v26_note": "Výslovná cena v detailu výrobku; dostupnost/lokalita nepotvrzena",
+      "original_price_czk": null,
+      "discount_pct": null,
+      "offer_valid_until": null,
+      "price_history_previous_czk": null,
+      "price_history_previous_at": "2026-10-20T14:16:51+00:00",
+      "drop_since_previous_pct": null,
+      "monitor_v27b_last_probe_at": "2026-10-22T08:19:27+00:00"
     },
     {
       "store": "Rohlík",
@@ -16426,10 +16470,10 @@
       "package_verified": null,
       "cycle": 1,
       "title": "BIO Paprika žlutá",
-      "price_czk": null,
-      "price_status": "price_unverified",
-      "price_source": null,
-      "checked_at": "2026-10-20T14:16:48+00:00",
+      "price_czk": 74.86,
+      "price_status": "ok",
+      "price_source": "monitor-v26:v27b:rohlik-own-H1-visible-price-estimated",
+      "checked_at": "2026-10-22T08:19:43+00:00",
       "note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech",
       "multibuy": [],
       "http_status": 200,
@@ -16443,10 +16487,17 @@
       "product_description": "Žlutá paprika se sladkou chutí a šťavnatou dužinou&nbsp;v BIO kvalitě.Tato&nbsp;paprika vám bude&nbsp;doručena&nbsp;ve speciálním sáčku, který je ozna",
       "taxonomy_checked_at": "2026-10-21T07:20:12+00:00",
       "taxonomy_status": "verified",
-      "last_monitor_attempt_at": "2026-10-22T06:39:10+00:00",
-      "monitor_v26_attempts": 1,
-      "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech"
+      "last_monitor_attempt_at": "2026-10-22T08:19:43+00:00",
+      "monitor_v26_attempts": 2,
+      "monitor_v26_status": "ok",
+      "monitor_v26_note": "Výslovná cena v detailu výrobku; dostupnost/lokalita nepotvrzena",
+      "original_price_czk": null,
+      "discount_pct": null,
+      "offer_valid_until": null,
+      "price_history_previous_czk": null,
+      "price_history_previous_at": "2026-10-20T14:16:48+00:00",
+      "drop_since_previous_pct": null,
+      "monitor_v27b_last_probe_at": "2026-10-22T08:19:43+00:00"
     },
     {
       "store": "Rohlík",
@@ -16476,10 +16527,11 @@
       "product_description": "Sladké banány v BIO kvalitě.Banán&nbsp;je&nbsp;velice chutným a&nbsp;sladkým ovocem.&nbsp;Naše banány mohou být&nbsp;certifikovány Rainforest Alliianc",
       "taxonomy_checked_at": "2026-10-21T07:20:08+00:00",
       "taxonomy_status": "verified",
-      "last_monitor_attempt_at": "2026-10-22T06:10:15+00:00",
-      "monitor_v26_attempts": 1,
+      "last_monitor_attempt_at": "2026-10-22T08:17:07+00:00",
+      "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech",
+      "monitor_v27b_last_probe_at": "2026-10-22T08:17:07+00:00"
     },
     {
       "store": "Rohlík",
@@ -16551,10 +16603,10 @@
       "package_verified": null,
       "cycle": 1,
       "title": "Banán 1 ks",
-      "price_czk": null,
-      "price_status": "http_error",
-      "price_source": null,
-      "checked_at": "2026-10-20T14:02:47+00:00",
+      "price_czk": 729,
+      "price_status": "ok",
+      "price_source": "monitor-v26:v27b:rohlik-own-H1-visible-price-estimated",
+      "checked_at": "2026-10-22T08:17:27+00:00",
       "note": "HTTP 429",
       "multibuy": [],
       "http_status": 429,
@@ -16568,10 +16620,17 @@
       "product_description": "Banán je&nbsp;nejen velice chutným, sladkým ovocem, ale také je&nbsp;ideálním pomocníkem pro rychlé doplnění energie.Naše banány mohou být&nbsp;certif",
       "taxonomy_checked_at": "2026-10-21T07:20:01+00:00",
       "taxonomy_status": "verified",
-      "last_monitor_attempt_at": "2026-10-22T06:10:47+00:00",
-      "monitor_v26_attempts": 1,
-      "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech"
+      "last_monitor_attempt_at": "2026-10-22T08:17:27+00:00",
+      "monitor_v26_attempts": 2,
+      "monitor_v26_status": "ok",
+      "monitor_v26_note": "Výslovná cena v detailu výrobku; dostupnost/lokalita nepotvrzena",
+      "original_price_czk": null,
+      "discount_pct": null,
+      "offer_valid_until": null,
+      "price_history_previous_czk": null,
+      "price_history_previous_at": "2026-10-20T14:02:47+00:00",
+      "drop_since_previous_pct": null,
+      "monitor_v27b_last_probe_at": "2026-10-22T08:17:27+00:00"
     },
     {
       "store": "Rohlík",
@@ -16601,10 +16660,11 @@
       "product_description": "Sladké banány značky Chiquita.Naše banány mohou být certifikovány Rainforest Alliiance certifikací, která zaručuje mimo jiné šetrné pěstování produktů",
       "taxonomy_checked_at": "2026-10-21T07:20:02+00:00",
       "taxonomy_status": "verified",
-      "last_monitor_attempt_at": "2026-10-22T06:11:15+00:00",
-      "monitor_v26_attempts": 1,
+      "last_monitor_attempt_at": "2026-10-22T08:17:47+00:00",
+      "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech"
+      "monitor_v26_note": "v27b: no-unique-product-pack-price; Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech",
+      "monitor_v27b_last_probe_at": "2026-10-22T08:17:47+00:00"
     },
     {
       "store": "Rohlík",
@@ -16617,10 +16677,10 @@
       "package_verified": null,
       "cycle": 1,
       "title": "Banán k dozrání 1ks",
-      "price_czk": null,
-      "price_status": "http_error",
-      "price_source": null,
-      "checked_at": "2026-10-20T14:02:47+00:00",
+      "price_czk": 983,
+      "price_status": "ok",
+      "price_source": "monitor-v26:v27b:rohlik-own-H1-visible-price-estimated",
+      "checked_at": "2026-10-22T08:19:55+00:00",
       "note": "HTTP 429",
       "multibuy": [],
       "http_status": 429,
@@ -16634,10 +16694,17 @@
       "product_description": "Tento banán je o něco zelenější a tužší, takže potěší milovníky méně zralých kousků. Je určený především pro zákazníky, kteří preferují méně zralé ban",
       "taxonomy_checked_at": "2026-10-21T07:20:03+00:00",
       "taxonomy_status": "verified",
-      "last_monitor_attempt_at": "2026-10-22T06:39:49+00:00",
-      "monitor_v26_attempts": 1,
-      "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech"
+      "last_monitor_attempt_at": "2026-10-22T08:19:55+00:00",
+      "monitor_v26_attempts": 2,
+      "monitor_v26_status": "ok",
+      "monitor_v26_note": "Výslovná cena v detailu výrobku; dostupnost/lokalita nepotvrzena",
+      "original_price_czk": null,
+      "discount_pct": null,
+      "offer_valid_until": null,
+      "price_history_previous_czk": null,
+      "price_history_previous_at": "2026-10-20T14:02:47+00:00",
+      "drop_since_previous_pct": null,
+      "monitor_v27b_last_probe_at": "2026-10-22T08:19:55+00:00"
     },
     {
       "store": "Rohlík",
@@ -16667,10 +16734,11 @@
       "product_description": "Vyzkoušejte červené zanzibanány, které jsou naprosto odlišné od klasických žlutých banánů odrůdy Cavendish. Vynikají nejen svým vzhledem, ale i napros",
       "taxonomy_checked_at": "2026-10-21T07:20:03+00:00",
       "taxonomy_status": "verified",
-      "last_monitor_attempt_at": "2026-10-22T06:38:21+00:00",
-      "monitor_v26_attempts": 1,
+      "last_monitor_attempt_at": "2026-10-22T08:19:23+00:00",
+      "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech"
+      "monitor_v26_note": "v27b: no-unique-product-pack-price; Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech",
+      "monitor_v27b_last_probe_at": "2026-10-22T08:19:23+00:00"
     },
     {
       "store": "Rohlík",
@@ -16700,10 +16768,11 @@
       "product_description": "Banán je&nbsp;nejen velice chutným a&nbsp;sladkým ovocem.Baleno v plastovém sáčku.Upozorňujeme, že banány jsou dodávány v takové&nbsp;zralosti, aby vá",
       "taxonomy_checked_at": "2026-10-21T07:20:04+00:00",
       "taxonomy_status": "verified",
-      "last_monitor_attempt_at": "2026-10-22T06:38:01+00:00",
-      "monitor_v26_attempts": 1,
+      "last_monitor_attempt_at": "2026-10-22T08:19:11+00:00",
+      "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech"
+      "monitor_v26_note": "v27b: no-unique-product-pack-price; Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech",
+      "monitor_v27b_last_probe_at": "2026-10-22T08:19:11+00:00"
     },
     {
       "store": "Rohlík",
@@ -17172,10 +17241,11 @@
       "product_description": "Kuřecí paličky od kuřete z volného chovu z italské farmy. Balení obsahuje 4 paličky. Doba výkrmu minimálně 70 dnůCampese, free-range kuře (kuře z voln",
       "taxonomy_checked_at": "2026-10-21T14:05:46+00:00",
       "meat_taxonomy_v25": "verified",
-      "last_monitor_attempt_at": "2026-10-22T06:11:40+00:00",
-      "monitor_v26_attempts": 1,
+      "last_monitor_attempt_at": "2026-10-22T08:19:07+00:00",
+      "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech"
+      "monitor_v26_note": "v27b: no-unique-product-pack-price; Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech",
+      "monitor_v27b_last_probe_at": "2026-10-22T08:19:07+00:00"
     },
     {
       "store": "Rohlík",
@@ -17942,10 +18012,11 @@
       "product_description": "Osvěžující citrony.Lehké povrchové vady na citrusech jsou způsobeny vlivem počasí a ošleháním větvičkami při růstu plodů. Na chuť a kvalitu dužinu to",
       "taxonomy_checked_at": "2026-10-21T07:20:25+00:00",
       "taxonomy_status": "verified",
-      "last_monitor_attempt_at": "2026-10-22T06:36:18+00:00",
-      "monitor_v26_attempts": 1,
+      "last_monitor_attempt_at": "2026-10-22T08:18:08+00:00",
+      "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech"
+      "monitor_v26_note": "v27b: no-unique-product-pack-price; Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech",
+      "monitor_v27b_last_probe_at": "2026-10-22T08:18:08+00:00"
     },
     {
       "store": "Rohlík",
@@ -17975,10 +18046,11 @@
       "product_description": "Vynikající šťavnaté citrony s lístky ze slunné Sicílie. Citron je bez chemického ošetření.Vážení zákazníci, prosím vemte na vědomí, že lístek nemusí b",
       "taxonomy_checked_at": "2026-10-21T07:20:26+00:00",
       "taxonomy_status": "verified",
-      "last_monitor_attempt_at": "2026-10-22T06:39:02+00:00",
-      "monitor_v26_attempts": 1,
+      "last_monitor_attempt_at": "2026-10-22T08:19:39+00:00",
+      "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech"
+      "monitor_v26_note": "v27b: no-unique-product-pack-price; Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech",
+      "monitor_v27b_last_probe_at": "2026-10-22T08:19:39+00:00"
     },
     {
       "store": "Rohlík",
@@ -18167,10 +18239,11 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "last_monitor_attempt_at": "2026-10-22T06:40:18+00:00",
-      "monitor_v26_attempts": 1,
+      "last_monitor_attempt_at": "2026-10-22T08:17:19+00:00",
+      "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech",
+      "monitor_v27b_last_probe_at": "2026-10-22T08:17:19+00:00"
     },
     {
       "store": "Rohlík",
@@ -18767,10 +18840,11 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "last_monitor_attempt_at": "2026-10-22T06:37:54+00:00",
-      "monitor_v26_attempts": 1,
+      "last_monitor_attempt_at": "2026-10-22T08:16:59+00:00",
+      "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech",
+      "monitor_v27b_last_probe_at": "2026-10-22T08:16:59+00:00"
     },
     {
       "store": "Rohlík",
@@ -18969,10 +19043,11 @@
       "product_description": "Kuřecí stehna z Farmy rodiny Němcovy, kde při chovu kuřat dbají na možnost volného pohybu po stáji a složení jejich jídelníčku. Balení obsahuje dvě st",
       "taxonomy_checked_at": "2026-10-21T14:07:14+00:00",
       "meat_taxonomy_v25": "verified",
-      "last_monitor_attempt_at": "2026-10-22T06:05:12+00:00",
-      "monitor_v26_attempts": 1,
+      "last_monitor_attempt_at": "2026-10-22T08:17:24+00:00",
+      "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech",
+      "monitor_v27b_last_probe_at": "2026-10-22T08:17:24+00:00"
     },
     {
       "store": "Rohlík",
@@ -19479,10 +19554,11 @@
       ],
       "taxonomy_status": "verified",
       "taxonomy_attempts": 2,
-      "last_monitor_attempt_at": "2026-10-22T06:37:38+00:00",
-      "monitor_v26_attempts": 1,
+      "last_monitor_attempt_at": "2026-10-22T08:18:59+00:00",
+      "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech",
+      "monitor_v27b_last_probe_at": "2026-10-22T08:18:59+00:00"
     },
     {
       "store": "Rohlík",
@@ -19559,10 +19635,11 @@
       ],
       "taxonomy_status": "verified",
       "taxonomy_attempts": 2,
-      "last_monitor_attempt_at": "2026-10-22T06:36:46+00:00",
-      "monitor_v26_attempts": 1,
+      "last_monitor_attempt_at": "2026-10-22T08:18:27+00:00",
+      "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech",
+      "monitor_v27b_last_probe_at": "2026-10-22T08:18:27+00:00"
     },
     {
       "store": "Rohlík",
@@ -19848,10 +19925,11 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "last_monitor_attempt_at": "2026-10-22T06:41:09+00:00",
-      "monitor_v26_attempts": 1,
+      "last_monitor_attempt_at": "2026-10-22T08:18:19+00:00",
+      "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech",
+      "monitor_v27b_last_probe_at": "2026-10-22T08:18:19+00:00"
     },
     {
       "store": "Rohlík",
@@ -20022,10 +20100,11 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "last_monitor_attempt_at": "2026-10-22T06:41:02+00:00",
-      "monitor_v26_attempts": 1,
+      "last_monitor_attempt_at": "2026-10-22T08:17:59+00:00",
+      "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech",
+      "monitor_v27b_last_probe_at": "2026-10-22T08:17:59+00:00"
     },
     {
       "store": "Rohlík",
@@ -20076,10 +20155,11 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "last_monitor_attempt_at": "2026-10-22T06:40:29+00:00",
-      "monitor_v26_attempts": 1,
+      "last_monitor_attempt_at": "2026-10-22T08:17:39+00:00",
+      "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech",
+      "monitor_v27b_last_probe_at": "2026-10-22T08:17:39+00:00"
     },
     {
       "store": "Rohlík",
@@ -20687,10 +20767,11 @@
       "product_description": "Čerstvé kuřecí stehenní řízky od českého dodavatele kuřecího masa Raciola. Balení obsahuje tři nebo čtyři stehenní řízky (dle váhy kuřete).Kuřecí maso",
       "taxonomy_checked_at": "2026-10-21T14:08:07+00:00",
       "meat_taxonomy_v25": "verified",
-      "last_monitor_attempt_at": "2026-10-22T06:09:36+00:00",
-      "monitor_v26_attempts": 1,
+      "last_monitor_attempt_at": "2026-10-22T08:18:24+00:00",
+      "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech"
+      "monitor_v26_note": "v27b: no-unique-product-pack-price; Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech",
+      "monitor_v27b_last_probe_at": "2026-10-22T08:18:24+00:00"
     },
     {
       "store": "Rohlík",
@@ -20721,10 +20802,11 @@
       "product_description": "Čerstvá kuřecí stehna od českého dodavatele kuřecího masa Raciola. Balení obsahuje dvě stehna.Kuřecí maso je bílé a oproti vepřovému nebo hovězímu vel",
       "taxonomy_checked_at": "2026-10-21T14:08:16+00:00",
       "meat_taxonomy_v25": "verified",
-      "last_monitor_attempt_at": "2026-10-22T06:10:11+00:00",
-      "monitor_v26_attempts": 1,
+      "last_monitor_attempt_at": "2026-10-22T08:18:39+00:00",
+      "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech"
+      "monitor_v26_note": "v27b: no-unique-product-pack-price; Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech",
+      "monitor_v27b_last_probe_at": "2026-10-22T08:18:39+00:00"
     },
     {
       "store": "Rohlík",
@@ -20755,10 +20837,11 @@
       "product_description": "Čerstvé spodní kuřecí stehna od českého dodavatele kuřecího masa Raciola. Balení obsahuje čtyři&nbsp;až pět kuřecích stehen.Kuřecí maso patří mezi cel",
       "taxonomy_checked_at": "2026-10-21T14:08:24+00:00",
       "meat_taxonomy_v25": "verified",
-      "last_monitor_attempt_at": "2026-10-22T06:06:08+00:00",
-      "monitor_v26_attempts": 1,
+      "last_monitor_attempt_at": "2026-10-22T08:17:43+00:00",
+      "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech"
+      "monitor_v26_note": "v27b: no-unique-product-pack-price; Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech",
+      "monitor_v27b_last_probe_at": "2026-10-22T08:17:43+00:00"
     },
     {
       "store": "Rohlík",
@@ -21897,10 +21980,11 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "last_monitor_attempt_at": "2026-10-22T06:41:14+00:00",
-      "monitor_v26_attempts": 1,
+      "last_monitor_attempt_at": "2026-10-22T08:18:48+00:00",
+      "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech",
+      "monitor_v27b_last_probe_at": "2026-10-22T08:18:48+00:00"
     },
     {
       "store": "Rohlík",
@@ -22381,10 +22465,11 @@
       "product_description": "Hovězí svíčková, ve světě známá pod označením Tenderloin, je sval z oblasti hřbetu býka. Jelikož je po celou dobu života zvířete tento sval&nbsp;minim",
       "taxonomy_checked_at": "2026-10-21T14:08:51+00:00",
       "meat_taxonomy_v25": "verified",
-      "last_monitor_attempt_at": "2026-10-22T06:10:43+00:00",
-      "monitor_v26_attempts": 1,
+      "last_monitor_attempt_at": "2026-10-22T08:18:55+00:00",
+      "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+      "monitor_v26_note": "v27b: no-unique-product-pack-price; Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech",
+      "monitor_v27b_last_probe_at": "2026-10-22T08:18:55+00:00"
     },
     {
       "store": "Rohlík",
@@ -23012,10 +23097,10 @@
       "package_verified": null,
       "cycle": 1,
       "title": "Mrkev fialová 1ks, volná",
-      "price_czk": null,
-      "price_status": "price_unverified",
-      "price_source": null,
-      "checked_at": "2026-10-20T14:14:29+00:00",
+      "price_czk": 568,
+      "price_status": "ok",
+      "price_source": "monitor-v26:v27b:rohlik-own-H1-visible-price-estimated",
+      "checked_at": "2026-10-22T08:18:35+00:00",
       "note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech",
       "multibuy": [],
       "http_status": 200,
@@ -23038,10 +23123,17 @@
       ],
       "taxonomy_status": "verified",
       "taxonomy_attempts": 2,
-      "last_monitor_attempt_at": "2026-10-22T06:36:34+00:00",
-      "monitor_v26_attempts": 1,
-      "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech"
+      "last_monitor_attempt_at": "2026-10-22T08:18:35+00:00",
+      "monitor_v26_attempts": 2,
+      "monitor_v26_status": "ok",
+      "monitor_v26_note": "Výslovná cena v detailu výrobku; dostupnost/lokalita nepotvrzena",
+      "original_price_czk": null,
+      "discount_pct": null,
+      "offer_valid_until": null,
+      "price_history_previous_czk": null,
+      "price_history_previous_at": "2026-10-20T14:14:29+00:00",
+      "drop_since_previous_pct": null,
+      "monitor_v27b_last_probe_at": "2026-10-22T08:18:35+00:00"
     },
     {
       "store": "Rohlík",
@@ -23282,10 +23374,10 @@
       "package_verified": null,
       "cycle": 1,
       "title": "Mrkev čerstvá praná 1 ks, volná",
-      "price_czk": null,
-      "price_status": "price_unverified",
-      "price_source": null,
-      "checked_at": "2026-10-20T14:14:23+00:00",
+      "price_czk": 574,
+      "price_status": "ok",
+      "price_source": "monitor-v26:v27b:rohlik-own-H1-visible-price-estimated",
+      "checked_at": "2026-10-22T08:17:35+00:00",
       "note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech",
       "multibuy": [],
       "http_status": 200,
@@ -23308,10 +23400,17 @@
       ],
       "taxonomy_status": "verified",
       "taxonomy_attempts": 2,
-      "last_monitor_attempt_at": "2026-10-22T06:10:35+00:00",
-      "monitor_v26_attempts": 1,
-      "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech"
+      "last_monitor_attempt_at": "2026-10-22T08:17:35+00:00",
+      "monitor_v26_attempts": 2,
+      "monitor_v26_status": "ok",
+      "monitor_v26_note": "Výslovná cena v detailu výrobku; dostupnost/lokalita nepotvrzena",
+      "original_price_czk": null,
+      "discount_pct": null,
+      "offer_valid_until": null,
+      "price_history_previous_czk": null,
+      "price_history_previous_at": "2026-10-20T14:14:23+00:00",
+      "drop_since_previous_pct": null,
+      "monitor_v27b_last_probe_at": "2026-10-22T08:17:35+00:00"
     },
     {
       "store": "Rohlík",
@@ -23350,10 +23449,11 @@
       ],
       "taxonomy_status": "verified",
       "taxonomy_attempts": 2,
-      "last_monitor_attempt_at": "2026-10-22T06:37:02+00:00",
-      "monitor_v26_attempts": 1,
+      "last_monitor_attempt_at": "2026-10-22T08:18:51+00:00",
+      "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech",
+      "monitor_v27b_last_probe_at": "2026-10-22T08:18:51+00:00"
     },
     {
       "store": "Rohlík",
@@ -23539,10 +23639,11 @@
       ],
       "taxonomy_status": "verified",
       "taxonomy_attempts": 2,
-      "last_monitor_attempt_at": "2026-10-22T06:37:50+00:00",
-      "monitor_v26_attempts": 1,
+      "last_monitor_attempt_at": "2026-10-22T08:19:15+00:00",
+      "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech"
+      "monitor_v26_note": "v27b: no-unique-product-pack-price; Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech",
+      "monitor_v27b_last_probe_at": "2026-10-22T08:19:15+00:00"
     },
     {
       "store": "Rohlík",
@@ -23581,10 +23682,11 @@
       ],
       "taxonomy_status": "verified",
       "taxonomy_attempts": 2,
-      "last_monitor_attempt_at": "2026-10-22T06:39:57+00:00",
-      "monitor_v26_attempts": 1,
+      "last_monitor_attempt_at": "2026-10-22T08:19:59+00:00",
+      "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech"
+      "monitor_v26_note": "v27b: no-unique-product-pack-price; Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech",
+      "monitor_v27b_last_probe_at": "2026-10-22T08:19:59+00:00"
     },
     {
       "store": "Rohlík",
@@ -24105,10 +24207,10 @@
       "package_verified": null,
       "cycle": 1,
       "title": "Paprika bílá 1 ks",
-      "price_czk": null,
-      "price_status": "price_unverified",
-      "price_source": null,
-      "checked_at": "2026-10-20T14:16:36+00:00",
+      "price_czk": 764,
+      "price_status": "ok",
+      "price_source": "monitor-v26:v27b:rohlik-own-H1-visible-price-estimated",
+      "checked_at": "2026-10-22T08:17:55+00:00",
       "note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech",
       "multibuy": [],
       "http_status": 200,
@@ -24131,10 +24233,17 @@
       ],
       "taxonomy_status": "verified",
       "taxonomy_attempts": 2,
-      "last_monitor_attempt_at": "2026-10-22T06:11:03+00:00",
-      "monitor_v26_attempts": 1,
-      "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech"
+      "last_monitor_attempt_at": "2026-10-22T08:17:55+00:00",
+      "monitor_v26_attempts": 2,
+      "monitor_v26_status": "ok",
+      "monitor_v26_note": "Výslovná cena v detailu výrobku; dostupnost/lokalita nepotvrzena",
+      "original_price_czk": null,
+      "discount_pct": null,
+      "offer_valid_until": null,
+      "price_history_previous_czk": null,
+      "price_history_previous_at": "2026-10-20T14:16:36+00:00",
+      "drop_since_previous_pct": null,
+      "monitor_v27b_last_probe_at": "2026-10-22T08:17:55+00:00"
     },
     {
       "store": "Rohlík",
@@ -24173,10 +24282,11 @@
       ],
       "taxonomy_status": "verified",
       "taxonomy_attempts": 2,
-      "last_monitor_attempt_at": "2026-10-22T06:37:26+00:00",
-      "monitor_v26_attempts": 1,
+      "last_monitor_attempt_at": "2026-10-22T08:19:03+00:00",
+      "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech"
+      "monitor_v26_note": "v27b: no-unique-product-pack-price; Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech",
+      "monitor_v27b_last_probe_at": "2026-10-22T08:19:03+00:00"
     },
     {
       "store": "Rohlík",
@@ -24291,10 +24401,11 @@
       ],
       "taxonomy_status": "verified",
       "taxonomy_attempts": 2,
-      "last_monitor_attempt_at": "2026-10-22T06:11:31+00:00",
-      "monitor_v26_attempts": 1,
+      "last_monitor_attempt_at": "2026-10-22T08:18:15+00:00",
+      "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech"
+      "monitor_v26_note": "v27b: no-unique-product-pack-price; Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech",
+      "monitor_v27b_last_probe_at": "2026-10-22T08:18:15+00:00"
     },
     {
       "store": "Rohlík",
@@ -24307,10 +24418,10 @@
       "package_verified": null,
       "cycle": 1,
       "title": "Paprika červená 1 ks",
-      "price_czk": null,
-      "price_status": "price_unverified",
-      "price_source": null,
-      "checked_at": "2026-10-20T14:16:41+00:00",
+      "price_czk": 23.94,
+      "price_status": "ok",
+      "price_source": "monitor-v26:v27b:rohlik-own-H1-visible-price-estimated",
+      "checked_at": "2026-10-22T08:17:15+00:00",
       "note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech",
       "multibuy": [],
       "http_status": 200,
@@ -24333,10 +24444,17 @@
       ],
       "taxonomy_status": "verified",
       "taxonomy_attempts": 2,
-      "last_monitor_attempt_at": "2026-10-22T06:09:59+00:00",
-      "monitor_v26_attempts": 1,
-      "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech"
+      "last_monitor_attempt_at": "2026-10-22T08:17:15+00:00",
+      "monitor_v26_attempts": 2,
+      "monitor_v26_status": "ok",
+      "monitor_v26_note": "Výslovná cena v detailu výrobku; dostupnost/lokalita nepotvrzena",
+      "original_price_czk": null,
+      "discount_pct": null,
+      "offer_valid_until": null,
+      "price_history_previous_czk": null,
+      "price_history_previous_at": "2026-10-20T14:16:41+00:00",
+      "drop_since_previous_pct": null,
+      "monitor_v27b_last_probe_at": "2026-10-22T08:17:15+00:00"
     },
     {
       "store": "Rohlík",
@@ -24375,10 +24493,11 @@
       ],
       "taxonomy_status": "verified",
       "taxonomy_attempts": 2,
-      "last_monitor_attempt_at": "2026-10-22T06:09:23+00:00",
-      "monitor_v26_attempts": 1,
+      "last_monitor_attempt_at": "2026-10-22T08:16:55+00:00",
+      "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech"
+      "monitor_v26_note": "v27b: no-unique-product-pack-price; Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech",
+      "monitor_v27b_last_probe_at": "2026-10-22T08:16:55+00:00"
     },
     {
       "store": "Rohlík",
@@ -24557,10 +24676,11 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "last_monitor_attempt_at": "2026-10-22T06:05:27+00:00",
-      "monitor_v26_attempts": 1,
+      "last_monitor_attempt_at": "2026-10-22T08:17:12+00:00",
+      "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech",
+      "monitor_v27b_last_probe_at": "2026-10-22T08:17:12+00:00"
     },
     {
       "store": "Rohlík",
@@ -24731,10 +24851,11 @@
       "multibuy": [],
       "http_status": 429,
       "postcode_verified": false,
-      "last_monitor_attempt_at": "2026-10-22T06:38:46+00:00",
-      "monitor_v26_attempts": 1,
+      "last_monitor_attempt_at": "2026-10-22T08:17:32+00:00",
+      "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech",
+      "monitor_v27b_last_probe_at": "2026-10-22T08:17:32+00:00"
     },
     {
       "store": "Rohlík",
@@ -25162,10 +25283,11 @@
       ],
       "taxonomy_status": "verified",
       "taxonomy_attempts": 2,
-      "last_monitor_attempt_at": "2026-10-22T06:37:13+00:00",
-      "monitor_v26_attempts": 1,
+      "last_monitor_attempt_at": "2026-10-22T08:18:43+00:00",
+      "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech"
+      "monitor_v26_note": "v27b: no-unique-product-pack-price; Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech",
+      "monitor_v27b_last_probe_at": "2026-10-22T08:18:43+00:00"
     },
     {
       "store": "Rohlík",
@@ -26127,10 +26249,11 @@
       ],
       "taxonomy_status": "verified",
       "taxonomy_attempts": 2,
-      "last_monitor_attempt_at": "2026-10-22T06:39:25+00:00",
-      "monitor_v26_attempts": 1,
+      "last_monitor_attempt_at": "2026-10-22T08:19:51+00:00",
+      "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech",
+      "monitor_v27b_last_probe_at": "2026-10-22T08:19:51+00:00"
     },
     {
       "store": "Rohlík",
@@ -26759,10 +26882,11 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "last_monitor_attempt_at": "2026-10-22T06:05:35+00:00",
-      "monitor_v26_attempts": 1,
+      "last_monitor_attempt_at": "2026-10-22T08:16:51+00:00",
+      "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech",
+      "monitor_v27b_last_probe_at": "2026-10-22T08:16:51+00:00"
     },
     {
       "store": "Rohlík",
@@ -27581,10 +27705,11 @@
       "product_description": "Kuřecí prsní řízek z drůbeže z Moravy. Kuřata byla krmena pouze krmivem bez přidaných látek urychlující růst. Maso je chlazeno v moderním systému bez",
       "taxonomy_checked_at": "2026-10-21T14:11:12+00:00",
       "meat_taxonomy_v25": "verified",
-      "last_monitor_attempt_at": "2026-10-22T06:36:14+00:00",
-      "monitor_v26_attempts": 1,
+      "last_monitor_attempt_at": "2026-10-22T08:19:19+00:00",
+      "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech"
+      "monitor_v26_note": "v27b: no-unique-product-pack-price; Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech",
+      "monitor_v27b_last_probe_at": "2026-10-22T08:19:19+00:00"
     },
     {
       "store": "Rohlík",
@@ -28488,7 +28613,7 @@
     },
     "review_total": 484
   },
-  "last_price_monitor_at": "2026-10-22T07:50:39+00:00",
+  "last_price_monitor_at": "2026-10-22T08:20:05+00:00",
   "monitor_v26": {
     "processed": 24,
     "updated_prices": 15,
@@ -28503,14 +28628,16 @@
     "last_price_monitor_at": "2026-10-22T07:50:39+00:00"
   },
   "price_backfill_v27": {
-    "finished_at": "2026-10-22T06:41:34+00:00",
-    "attempted": 81,
-    "newly_priced": 51,
-    "remaining_missing": 53,
+    "finished_at": "2026-10-22T08:20:05+00:00",
+    "attempted": 53,
+    "newly_priced": 12,
+    "remaining_missing": 41,
     "blocked_stores": [],
     "statuses": {
-      "Rohlík|price_unverified": 30,
-      "Rohlík|ok": 51
+      "Rohlík|ok": 12,
+      "Rohlík|price_unverified": 39,
+      "Košík|title_mismatch": 1,
+      "Košík|price_unverified": 1
     }
   }
 }
