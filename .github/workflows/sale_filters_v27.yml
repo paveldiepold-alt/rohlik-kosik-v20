@@ -1,0 +1,63 @@
+name: Monitor slev v27 - Filtry slev 30 a 40 procent
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rk-v20-catalog
+  cancel-in-progress: false
+
+jobs:
+  deploy-filter-only:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout development files (main)
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Read LIVE published HTML and modify two exact fragments
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch --no-tags origin '+refs/heads/fix/real-product-price-reading-v20:refs/remotes/origin/fix/real-product-price-reading-v20'
+          git worktree add --detach .filter-publish 'origin/fix/real-product-price-reading-v20'
+          cd .filter-publish
+          python ../patch_sale_filters_v27.py docs/catalog.html
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('docs/catalog.html').read_text(encoding='utf8')
+          assert '<option value="30">Sleva alespoň 30 %</option>' in p
+          assert '<option value="40">Sleva alespoň 40 %</option>' in p
+          assert 'id="mobileCards"' in p
+          js=p.split('<script>',1)[1].split('</script>',1)[0]
+          Path('/tmp/uat10_filter.js').write_text(js,encoding='utf8')
+          PY
+          node --check /tmp/uat10_filter.js
+          git diff --check
+          paths=$(git diff --name-only)
+          if [ -n "$paths" ]; then test "$paths" = 'docs/catalog.html'; fi
+          test -z "$(git status --porcelain -- docs/data/)"
+      - name: Publish HTML only (never touch catalogue or prices)
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd .filter-publish
+          git config user.name github-actions[bot]
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- docs/catalog.html
+          if ! git diff --cached --quiet; then
+            git commit -m 'ui: add verified 30 and 40 percent discount thresholds [skip ci]'
+            git push origin 'HEAD:refs/heads/fix/real-product-price-reading-v20'
+          fi
+      - name: Summary
+        run: |
+          echo '## Filtry slev 30 % a 40 %' >> "$GITHUB_STEP_SUMMARY"
+          echo 'Oprava HTML provedena. Žádné výrobky ani ceny nebyly změněny.' >> "$GITHUB_STEP_SUMMARY"

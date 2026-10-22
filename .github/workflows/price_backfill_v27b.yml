@@ -1,0 +1,180 @@
+name: Monitor slev v27b - Zbyvajici chybejici ceny (opravene cteni)
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: 'Maximalni pocet zbyvajicich neocenenych vyrobku (1-100)'
+        type: string
+        required: false
+        default: '100'
+      delay:
+        description: 'Odstup mezi pozadavky na obchod v sekundach (3.3-60)'
+        type: string
+        required: false
+        default: '4.0'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rk-v20-catalog
+  cancel-in-progress: false
+
+jobs:
+  v27b-price-fallback:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    env:
+      BATCH_LIMIT: ${{ inputs.limit || '100' }}
+      BATCH_DELAY: ${{ inputs.delay || '4.0' }}
+    steps:
+      - name: Checkout latest LIVE price catalogue and certified v26 parser
+        uses: actions/checkout@v4
+        with:
+          ref: fix/real-product-price-reading-v20
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Setup Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Fetch independent v27b reader from main, run offline tests and snapshot
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p .v27b
+          git fetch --no-tags origin '+refs/heads/main:refs/remotes/origin/main'
+          for f in price_backfill_v27.py price_backfill_v27b.py price_details_v27b.py patch_sale_filters_v27.py; do
+            git show "origin/main:$f" > ".v27b/$f"
+          done
+          git show origin/main:tests/test_price_details_v27b.py > .v27b/test_price_details_v27b.py
+          git show origin/main:tests/test_backfill_wrapper_v27b.py > .v27b/test_backfill_wrapper_v27b.py
+          PYTHONPATH=.:.v27b python -m unittest discover -s .v27b -p 'test_*v27b.py' -v
+          python -m py_compile .v27b/price_backfill_v27b.py .v27b/price_details_v27b.py
+          python - <<'PY'
+          import json,hashlib,math,os,shutil
+          from pathlib import Path
+          limit=int(os.environ['BATCH_LIMIT']);delay=float(os.environ['BATCH_DELAY'])
+          assert 1<=limit<=100 and math.isfinite(delay) and 3.3<=delay<=60
+          doc=Path('docs/data/catalog_latest.json')
+          html=Path('docs/catalog.html')
+          assert doc.is_file() and html.is_file()
+          data=json.loads(doc.read_text(encoding='utf8'))
+          items=data['items']
+          ids=[(x['store'],x['url']) for x in items]
+          assert len(items)>=1090 and len(ids)==len(set(ids))
+          shutil.copyfile(doc,'.v27b/source.json')
+          Path('.v27b/html.sha256').write_text(hashlib.sha256(html.read_bytes()).hexdigest())
+          print('SOURCE',len(items),'priced',sum(x.get('price_status')=='ok' for x in items))
+          PY
+
+      - name: Install Chromium
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --disable-pip-version-check 'playwright==1.56.0'
+          python -m playwright install --with-deps chromium
+
+      - name: Recheck missing-only products using own-H1 price recognition
+        id: price
+        shell: bash
+        run: |
+          set -euo pipefail
+          PYTHONPATH=.:.v27b python .v27b/price_backfill_v27b.py \
+            --catalog docs/data/catalog_latest.json \
+            --report docs/data/monitor_v27b_price_report.json \
+            --limit "$BATCH_LIMIT" --delay "$BATCH_DELAY"
+
+      - name: Validate source protection, count, price identities and report
+        if: steps.price.outcome == 'success'
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import hashlib,json,math
+          from pathlib import Path
+          before=json.loads(Path('.v27b/source.json').read_text(encoding='utf8'))
+          after=json.loads(Path('docs/data/catalog_latest.json').read_text(encoding='utf8'))
+          r=json.loads(Path('docs/data/monitor_v27b_price_report.json').read_text(encoding='utf8'))
+          old=before['items'];new=after['items']
+          assert len(old)==len(new) and len(new)>=1090
+          assert before['generated_at']==after['generated_at']
+          immutable=('store','url','name','title','rule_ids','store_category_path','image_url','category_source')
+          permitted={'price_czk','price_status','price_source','checked_at',
+            'original_price_czk','discount_pct','offer_valid_until','multibuy',
+            'price_history_previous_czk','price_history_previous_at','drop_since_previous_pct',
+            'last_monitor_attempt_at','monitor_v26_attempts','monitor_v26_status','monitor_v26_note',
+            'monitor_v27b_last_probe_at'}
+          def good(x):
+            v=x.get('price_czk');return x.get('price_status')=='ok' and type(v) in (float,int) and math.isfinite(v) and v>0
+          for a,b in zip(old,new):
+            assert (a['store'],a['url'])==(b['store'],b['url'])
+            for key in immutable:assert a.get(key)==b.get(key),(a['url'],key)
+            if good(a):assert a==b, ('Verified price changed', a['url'])
+            else:
+              assert set(a).issubset(set(b)),('Existing field deleted',a['url'])
+              for k,v in a.items():
+                if k not in permitted:assert b[k]==v,(a['url'],k)
+              for k in b:
+                if k not in a:assert k in permitted,('Unexpected new field',a['url'],k)
+          p0=sum(good(x) for x in old);p1=sum(good(x) for x in new)
+          assert p1-p0==r['newly_priced']>=0
+          assert r['remaining_missing']==len(new)-p1
+          assert hashlib.sha256(Path('docs/catalog.html').read_bytes()).hexdigest()==Path('.v27b/html.sha256').read_text(), 'HTML changed'
+          if r['newly_priced']==0:
+            assert Path('docs/data/catalog_latest.json').read_bytes()==Path('.v27b/source.json').read_bytes()
+          print('PASS:',p0,'->',p1,'priced; new:',r['newly_priced'],'remaining:',r['remaining_missing'])
+          PY
+          test -z "$(git status --porcelain -- docs/catalog.html)"
+
+      - name: Upload report even if no prices can be confirmed
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rk-v27b-missing-price-evidence
+          path: docs/data/monitor_v27b_price_report.json
+          if-no-files-found: warn
+          retention-days: 21
+
+      - name: Persist only newly verified price data
+        if: steps.price.outcome == 'success'
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          r=json.loads(Path('docs/data/monitor_v27b_price_report.json').read_text(encoding='utf8'))
+          Path('.v27b/publish.txt').write_text('yes' if r['newly_priced']>0 else 'no')
+          PY
+          if [ "$(cat .v27b/publish.txt)" = 'yes' ]; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add -- docs/data/catalog_latest.json docs/data/monitor_v27b_price_report.json
+            git diff --cached --check
+            git commit -m 'prices: v27b verified missing-price detail fallback [skip ci]'
+            git push origin 'HEAD:refs/heads/fix/real-product-price-reading-v20'
+          else
+            echo 'No verified price found. No catalogue changes committed.'
+          fi
+
+      - name: Summarize newly filled prices (not simply successful reads)
+        if: always()
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          path=Path('docs/data/monitor_v27b_price_report.json')
+          msg=['## v27b – dočtení ceny celého výrobku','']
+          if path.is_file():
+            data=json.loads(path.read_text(encoding='utf8'))
+            for field in ('attempted','newly_priced','remaining_missing','blocked_stores','statuses'):
+              msg.append(f'- **{field}:** {data.get(field)}')
+            if not data.get('newly_priced'):msg.append('Bez změn katalogu; nejednoznačné ceny nebyly odhadnuty.')
+          else: msg.append('Report není dostupný; otevři log chyby.')
+          with open(os.environ['GITHUB_STEP_SUMMARY'],'a',encoding='utf8') as f:f.write('\n'.join(msg)+'\n')
+          PY
