@@ -1,0 +1,153 @@
+name: Monitor slev v27 - Zverejneni overenych kategorii
+
+on:
+  workflow_dispatch:
+    inputs:
+      deploy:
+        description: 'true = zverejnit kategorie (NE ceny); false = jen test a nahled'
+        default: false
+        required: true
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rk-v20-catalog
+  cancel-in-progress: false
+
+jobs:
+  categories-to-website:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Checkout integration script and its tests from main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Setup Python and Node
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Offline regression tests before touching current site
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m unittest discover -s tests -p 'test_publish_taxonomy_v27.py' -v
+          python -m py_compile publish_taxonomy_v27.py
+
+      - name: Read latest live prices, live HTML and isolated v27 compiled taxonomy
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p .v27-publish
+          LIVE='fix/real-product-price-reading-v20'
+          TAX='feature/retailer-taxonomy-v27'
+          git fetch --no-tags origin \
+            "+refs/heads/${LIVE}:refs/remotes/origin/${LIVE}" \
+            "+refs/heads/${TAX}:refs/remotes/origin/${TAX}"
+          git show "origin/${LIVE}:docs/data/catalog_latest.json" > .v27-publish/live.json
+          git show "origin/${LIVE}:docs/catalog.html" > .v27-publish/live.html
+          git show "origin/${TAX}:v27-results/catalog_v27.json" > .v27-publish/compiled.json
+          sha256sum .v27-publish/live.json .v27-publish/live.html > .v27-publish/source.sha256
+
+      - name: Build retailer-category overlay without replacing price data
+        shell: bash
+        run: |
+          set -euo pipefail
+          python publish_taxonomy_v27.py \
+            --live .v27-publish/live.json \
+            --compiled .v27-publish/compiled.json \
+            --html .v27-publish/live.html \
+            --output-overlay .v27-publish/taxonomy_v27_public.json \
+            --output-html .v27-publish/catalog.html \
+            --report .v27-publish/review_report.json
+          sha256sum --check .v27-publish/source.sha256
+          python - <<'PY'
+          from pathlib import Path
+          html=Path('.v27-publish/catalog.html').read_text(encoding='utf8')
+          assert '<script>' in html and '</script>' in html
+          Path('.v27-publish/catalog_script.js').write_text(html.split('<script>',1)[1].split('</script>',1)[0],encoding='utf8')
+          PY
+          node --check .v27-publish/catalog_script.js
+          cd .v27-publish
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          live=json.loads(Path('live.json').read_text(encoding='utf8'))
+          public=json.loads(Path('taxonomy_v27_public.json').read_text(encoding='utf8'))
+          html=Path('catalog.html').read_text(encoding='utf8')
+          assert public['total']==len(live['items'])==1090
+          assert len(public['items'])==1090
+          assert all('price_czk' not in x and 'discount_pct' not in x for x in public['items'])
+          assert 'id="mobileCards"' in html
+          assert "['20','30','40'].includes(f.state)" in html
+          print('STRICT PASS: live 1090 products and all price/discount fields remain read-only')
+          PY
+
+      - name: Upload HTML, category JSON and verification report
+        uses: actions/upload-artifact@v4
+        with:
+          name: rk-v27-kategorie-nahled
+          retention-days: 21
+          path: |
+            .v27-publish/catalog.html
+            .v27-publish/taxonomy_v27_public.json
+            .v27-publish/review_report.json
+
+      - name: Publish only HTML and a separate category overlay when approved
+        if: ${{ inputs.deploy == true }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          LIVE='fix/real-product-price-reading-v20'
+          git worktree add --detach .v27-publish-target "origin/${LIVE}"
+          mkdir -p .v27-publish-target/docs/data
+          cp .v27-publish/catalog.html .v27-publish-target/docs/catalog.html
+          cp .v27-publish/taxonomy_v27_public.json .v27-publish-target/docs/data/taxonomy_v27_public.json
+          cd .v27-publish-target
+          git diff --check
+          # The current 1049 prices, all product identities and price history are never staged.
+          test -z "$(git status --porcelain -- docs/data/catalog_latest.json)"
+          changed=$(git status --porcelain | sed -E 's/^...//' | sort)
+          while IFS= read -r path; do
+            [ -z "$path" ] && continue
+            case "$path" in
+              docs/catalog.html|docs/data/taxonomy_v27_public.json) ;;
+              *) echo "Unexpected changed path: $path"; exit 1 ;;
+            esac
+          done <<< "$changed"
+          if [ -n "$changed" ]; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add -- docs/catalog.html docs/data/taxonomy_v27_public.json
+            git diff --cached --check
+            git commit -m 'v27: show verified merchant categories with separate price-safe overlay [skip ci]'
+            git push origin "HEAD:refs/heads/${LIVE}"
+          else
+            echo 'HTML and overlay already published; nothing to change.'
+          fi
+
+      - name: Summarize tested/published status
+        if: always()
+        shell: bash
+        env:
+          PUBLISH: ${{ inputs.deploy }}
+        run: |
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          p=Path('.v27-publish/review_report.json')
+          s=['## v27 – Kategorie prodejců odděleně od cen','']
+          if p.exists():
+            a=json.loads(p.read_text(encoding='utf8'))
+            s += [f'- **{k}:** {v}' for k,v in a['category_counts'].items()]
+            s.append(f'- **produkty:** {a["total"]}; cena ani historie nedotčena')
+          else:
+            s.append('Příprava se nezdařila; zkontrolujte testy a log.')
+          s.append('Nasazení požadováno: '+os.environ.get('PUBLISH','false'))
+          with open(os.environ['GITHUB_STEP_SUMMARY'],'a',encoding='utf8') as out:out.write('\n'.join(s)+'\n')
+          PY
