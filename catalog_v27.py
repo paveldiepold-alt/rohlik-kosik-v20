@@ -105,6 +105,49 @@ def mapped_known_merchant_path(parts):
         return 'Sladké', 'Oplatky a sušenky podle cesty e-shopu'
     if root == 'plant based' and branch == 'alternativy mlecneho a chlazeneho' and has_seg(tail, 'rostlinné tuky a margaríny'):
         return 'Másla a tuky', 'Rostlinné tuky a margaríny podle cesty e-shopu'
+
+    # UAT14: additional *retailer-breadcrumb* groupings observed in the v27
+    # review (2026-10-22). Broader combined shelves are kept separate from
+    # narrow watch-rule classes: e.g. aged cheese is NOT proved to be mould cheese.
+    if root == 'kosmetika' and branch == 'sprchove gely a mydla a prisady do koupele':
+        if has_seg(tail, 'sprchové gely'):
+            return 'Kosmetika', 'Sprchové gely podle cesty e-shopu'
+    if root == 'drogerie a kosmetika' and branch == 'sprchove gely mydla peny':
+        if has_seg(tail, 'sprchové gely'):
+            return 'Kosmetika', 'Sprchové gely podle cesty e-shopu'
+
+    if root == 'mlecne a chlazene':
+        if branch == 'syry':
+            if (has_seg(tail, 'plísňové, zrající, pařené a uzené') and
+                    has_seg(tail, 'plísňové a zrající')):
+                return 'Sýry / plísňové a zrající', 'Širší skupina prodejce; přesný typ sýra zůstává k ověření'
+            if (has_seg(tail, 'na gril, fondue a raclette', 'grilovací sýry, raclette, fondue') and
+                    has_seg(tail, 'na gril a pánev', 'grilovací sýry')):
+                return 'Sýry / grilovací', 'Grilovací sýry podle cesty prodejce, nikoliv automaticky tavené či plísňové'
+            if has_seg(tail, 'sýrové snacky a pro děti'):
+                return 'Sýry / snacky a dětské', 'Snacky a dětské sýry podle cesty prodejce'
+            if (has_seg(tail, 'plísňové, zrající, pařené a uzené') and
+                    has_seg(tail, 'pařené a uzené')):
+                return 'Sýry / pařené a uzené', 'Pařené a uzené sýry podle cesty prodejce'
+        if branch == 'bez laktozy' and has_seg(tail, 'sýry'):
+            return 'Sýry / bez laktózy', 'Bezlaktózové sýry; konkrétní podtyp zatím není ověřen'
+        if branch == 'smetany slehacky a tvarohy' and has_seg(tail,
+                'smetany ke šlehání a šlehačky', 'smetany na vaření'):
+            return 'Mléčné / smetany', 'Smetany jsou oddělené od másel a tuků'
+
+    if root == 'specialni vyziva':
+        if branch == 'bezlepkove vyrobky' and has_seg(tail, 'pečení a vaření') and has_seg(tail, 'těstoviny'):
+            return 'Těstoviny a rýže', 'Bezlepkové těstoviny podle cesty prodejce'
+        if branch == 'bezlaktozove vyrobky' and has_seg(tail, 'sýry bez laktózy'):
+            return 'Sýry / bez laktózy', 'Bezlaktózové sýry; konkrétní podtyp zatím není ověřen'
+
+    if root == 'trvanlive' and branch == 'sladke' and has_seg(tail, 'sladké tyčinky'):
+        return 'Sladké', 'Sladké tyčinky podle cesty prodejce'
+
+    if root == 'plant based' and branch == 'alternativy mlecneho a chlazeneho':
+        if has_seg(tail, 'rostlinné smetany, šlehačky a krémy') and has_seg(tail,
+                'rostlinné smetany ke šlehání a šlehačky', 'rostlinné smetany na vaření'):
+            return 'Rostlinné alternativy / smetany', 'Rostlinné smetany podle cesty prodejce'
     return None
 
 
@@ -241,6 +284,13 @@ def broader_merchant_category(merchant, target):
     compatible = {
         'Papír a hygiena': {'Kapesníky / balíčky', 'Kapesníky / krabice', 'Papírové utěrky'},
         'Kosmetika': {'Holení', 'Dentální hygiena'},
+        # The store's combined shelf does not prove an exact cheese sub-type.
+        'Sýry / plísňové a zrající': {'Sýry / plísňové'},
+        'Sýry / grilovací': {'Sýry / tavené', 'Sýry / plísňové'},
+        'Sýry / bez laktózy': {'Sýry / mozzarella a salátové', 'Sýry / plísňové',
+                              'Sýry / tavené', 'Sýry / plátkové'},
+        'Sýry / snacky a dětské': {'Sýry / tavené'},
+        'Sýry / pařené a uzené': {'Sýry / plátkové'},
     }
     return target in compatible.get(merchant, set())
 
