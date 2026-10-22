@@ -1,27 +1,52 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-10-22T07:50:39+00:00",
-  "processed": 24,
-  "updated_prices": 15,
+  "at": "2026-10-22T17:37:31+00:00",
+  "processed": 35,
+  "updated_prices": 34,
   "blocked_stores": [],
   "statuses": {
-    "Košík|title_mismatch": 2,
-    "Košík|price_unverified": 6,
-    "Rohlík|ok": 5,
-    "Košík|ok": 10,
-    "Rohlík|price_unverified": 1
+    "Košík|ok": 17,
+    "Rohlík|ok": 17,
+    "Košík|price_unverified": 1
   },
-  "last_price_monitor_at": "2026-10-22T07:50:39+00:00",
+  "last_price_monitor_at": "2026-10-22T17:37:31+00:00",
   "new_drops": [
     {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p73137-bio-paprika-cervena-baleni",
-      "name": "BIO Paprika červená, balení",
-      "previous": 159.9,
-      "now": 139.9,
-      "drop_pct": 12.5,
-      "checked_at": "2026-10-22T07:50:10+00:00"
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1425050-ariel-extra-clean-allin1-kapsle-na-prani",
+      "name": "Ariel Extra Clean Allin1 + kapsle na praní",
+      "previous": 499.9,
+      "now": 439.9,
+      "drop_pct": 12.0,
+      "checked_at": "2026-10-22T17:34:51+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1432051-ariel-mountain-spring-allin1-kapsle-na-prani",
+      "name": "Ariel Mountain Spring Allin1 kapsle na praní",
+      "previous": 499.9,
+      "now": 439.9,
+      "drop_pct": 12.0,
+      "checked_at": "2026-10-22T17:35:20+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1469784-ariel-mountain-spring-praci-gel-4-5-l",
+      "name": "Ariel Mountain Spring prací gel (4,5 l)",
+      "previous": 499.9,
+      "now": 439.9,
+      "drop_pct": 12.0,
+      "checked_at": "2026-10-22T17:35:39+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1438403-ariel-sensitive-praci-gel-4-5-l",
+      "name": "Ariel Sensitive prací gel (4,5 l)",
+      "previous": 499.9,
+      "now": 439.9,
+      "drop_pct": 12.0,
+      "checked_at": "2026-10-22T17:35:59+00:00"
     }
   ],
-  "remaining_missing": 53
+  "remaining_missing": 41
 }
