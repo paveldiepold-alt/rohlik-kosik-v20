@@ -2812,9 +2812,9 @@
       "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "v27_category_checked_at": "2026-10-22T18:46:23+00:00",
       "v27_category_probe_status": "category_missing",
       "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
+      "v27_category_checked_at": "2026-10-22T18:46:23+00:00",
       "v27_category_probe_attempts": 1
     },
     {
@@ -4326,8 +4326,8 @@
       "drop_since_previous_pct": null,
       "v27_category_probe_status": "category_missing",
       "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-21T19:00:22+00:00",
-      "v27_category_probe_attempts": 1
+      "v27_category_checked_at": "2026-10-22T21:39:03+00:00",
+      "v27_category_probe_attempts": 2
     },
     {
       "store": "Košík",
@@ -5403,8 +5403,8 @@
       "drop_since_previous_pct": null,
       "v27_category_probe_status": "category_missing",
       "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-21T19:00:40+00:00",
-      "v27_category_probe_attempts": 1
+      "v27_category_checked_at": "2026-10-22T21:39:08+00:00",
+      "v27_category_probe_attempts": 2
     },
     {
       "store": "Košík",
@@ -8480,8 +8480,8 @@
       "drop_since_previous_pct": null,
       "v27_category_probe_status": "category_missing",
       "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-21T19:04:34+00:00",
-      "v27_category_probe_attempts": 1
+      "v27_category_checked_at": "2026-10-22T21:39:13+00:00",
+      "v27_category_probe_attempts": 2
     },
     {
       "store": "Košík",
@@ -8557,8 +8557,8 @@
       "drop_since_previous_pct": null,
       "v27_category_probe_status": "category_missing",
       "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-21T19:00:12+00:00",
-      "v27_category_probe_attempts": 1
+      "v27_category_checked_at": "2026-10-22T21:38:58+00:00",
+      "v27_category_probe_attempts": 2
     },
     {
       "store": "Košík",
@@ -46661,6 +46661,6 @@
   },
   "v27_probe_control": {
     "shop_backoff_until": {},
-    "last_batch_at": "2026-10-22T18:46:23+00:00"
+    "last_batch_at": "2026-10-22T21:39:13+00:00"
   }
 }
