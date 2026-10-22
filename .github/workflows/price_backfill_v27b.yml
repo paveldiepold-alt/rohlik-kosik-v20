@@ -52,6 +52,9 @@ jobs:
           done
           git show origin/main:tests/test_price_details_v27b.py > .v27b/test_price_details_v27b.py
           git show origin/main:tests/test_backfill_wrapper_v27b.py > .v27b/test_backfill_wrapper_v27b.py
+          # UAT10: the wrapper test resolves its tested file from repository root.
+          # Copy only for offline test import; actual runner stays isolated in .v27b.
+          cp .v27b/price_backfill_v27b.py ./price_backfill_v27b.py
           PYTHONPATH=.:.v27b python -m unittest discover -s .v27b -p 'test_*v27b.py' -v
           python -m py_compile .v27b/price_backfill_v27b.py .v27b/price_details_v27b.py
           python - <<'PY'
