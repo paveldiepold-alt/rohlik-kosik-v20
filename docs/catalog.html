@@ -62,6 +62,18 @@ main{max-width:1780px;padding:18px 24px 40px;margin:auto}.notice{border:1px soli
  footer{font-size:10px;line-height:1.55}
 }
 @media(max-width:370px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.v26-card-product .photo{width:64px;height:64px}.v26-card-price{font-size:18px}}
+/* v27 UAT13: prominent category progress - visual only, no data mutations. */
+.taxonomy-kpis-v27{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:0 0 13px}
+.taxonomy-kpis-v27 .tax-kpi{border:1px solid #dbe5ef;border-radius:12px;background:#fff;box-shadow:0 2px 11px #1d39550a;padding:13px 17px;min-width:0}
+.taxonomy-kpis-v27 .tax-kpi-label{font-size:12px;font-weight:750;color:#50617a}
+.taxonomy-kpis-v27 .tax-kpi-number{font-size:26px;font-weight:790;letter-spacing:-.6px;color:#193658;line-height:1.2;margin-top:6px}
+.taxonomy-kpis-v27 .tax-kpi-number small{font-size:13px;font-weight:650;color:#587187;letter-spacing:0}
+.taxonomy-kpis-v27 .tax-kpi-note{display:block;color:#65788f;font-size:11px;margin-top:4px;line-height:1.4}
+.taxonomy-kpis-v27 .tax-kpi-bar{height:6px;border-radius:10px;background:#e6edf4;overflow:hidden;margin-top:10px}
+.taxonomy-kpis-v27 .tax-kpi-fill{height:100%;width:0;background:#2a7c95;border-radius:10px;transition:width .25s ease}
+.taxonomy-kpis-v27 .tax-kpi-unmapped .tax-kpi-number{color:#925821}
+@media(max-width:900px){.taxonomy-kpis-v27{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-bottom:11px}.taxonomy-kpis-v27 .tax-kpi{padding:11px 10px}.taxonomy-kpis-v27 .tax-kpi-number{font-size:22px}.taxonomy-kpis-v27 .tax-kpi:last-child{grid-column:1/-1}}
+@media(max-width:370px){.taxonomy-kpis-v27 .tax-kpi-number{font-size:20px}}
 </style>
 </head>
 <body>
@@ -69,6 +81,11 @@ main{max-width:1780px;padding:18px 24px 40px;margin:auto}.notice{border:1px soli
 <main>
 <div class="notice" id="notice">Načítám uložený katalog. Neukládáme odhadované ceny ani termíny akcí.</div>
 <section class="stats" aria-label="Přehled"><div class="stat"><strong id="nProducts">—</strong><span>Produkty v katalogu</span></div><div class="stat"><strong id="nPrices">—</strong><span>Ceny označené jako ověřené</span></div><div class="stat"><strong id="nDiscounts">—</strong><span>Akce s doloženou slevou</span></div><div class="stat"><strong id="nMissing">—</strong><span>Ceny k doplnění</span></div><div class="stat"><strong id="nCoverage">—</strong><span>Vyhledávací úlohy</span></div></section>
+<section class="taxonomy-kpis-v27" id="taxonomyKpisV27" aria-label="Pokrok kategorizace podle e-shopů">
+ <div class="tax-kpi"><div class="tax-kpi-label">Kategorie přiřazené dle e-shopů</div><div class="tax-kpi-number" id="taxKpiMapped">—</div><span class="tax-kpi-note" id="taxKpiCoverage">Čekám na data kategorií</span><div class="tax-kpi-bar" role="progressbar" id="taxKpiProgress" aria-label="Podíl výrobků s přiřazenou kategorií" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="tax-kpi-fill" id="taxKpiBar"></div></div></div>
+ <div class="tax-kpi"><div class="tax-kpi-label">Plně ověřené kategorie</div><div class="tax-kpi-number" id="taxKpiVerified">—</div><span class="tax-kpi-note">Shoda kategorie e-shopu i sledovaného pravidla</span></div>
+ <div class="tax-kpi tax-kpi-unmapped"><div class="tax-kpi-label">Bez přiřazené kategorie</div><div class="tax-kpi-number" id="taxKpiUnmapped">—</div><span class="tax-kpi-note" id="taxKpiReview">Výrobky zůstávají v katalogu ke kontrole</span></div>
+</section>
 <div class="quick" aria-label="Rychlé zobrazení">
   <button type="button" data-quick="deals" class="quick-active">🔥 Ověřené akce <span id="qDeals">—</span></button>
   <button type="button" data-quick="drops">↘ Poklesy od minula <span id="qDrops">—</span></button>
@@ -154,6 +171,30 @@ function render(){const list=chosen(),per=window.matchMedia('(max-width:900px)')
  <details class="v26-card-more"><summary>Podrobnosti výrobku a kategorie</summary><div class="v26-card-details"><div>${esc(shopPath?'Kategorie e-shopu: '+shopPath:'Kategorie prodejce čeká na ověření')}</div><div>${esc((p.checked_at||'Bez data').replace('T',' ').slice(0,19))}</div><div>Podmínky: ${conditions(p)}</div></div></details></article>`;
  }).join(''):'<div class="empty">Žádné výrobky pro zvolené filtry.</div>';
  $('pageInfo').textContent=`${page} / ${pages}`;$('prev').disabled=page<=1;$('next').disabled=page>=pages;}
+function renderTaxonomyKpisV27(){
+ const fields=['taxKpiMapped','taxKpiVerified','taxKpiUnmapped'];
+ const rows=db.items||[];
+ // If the separate trusted retailer overlay failed, never show a false zero.
+ const ready=rows.length>0 && rows.every(p=>p.category_v27 && typeof p.category_v27==='object');
+ const fill=$('taxKpiBar'),bar=$('taxKpiProgress');
+ if(!ready){
+  for(const id of fields)$(id).textContent='—';
+  $('taxKpiCoverage').textContent='Ověření kategorií není dostupné';
+  $('taxKpiReview').textContent='Ceny i produkty zůstávají zachované';
+  fill.style.width='0%';bar.removeAttribute('aria-valuenow');
+  return;
+ }
+ const mapped=rows.filter(p=>Boolean(p.category_v27.category)).length;
+ const verified=rows.filter(p=>p.category_v27.status==='verified').length;
+ const missing=rows.length-mapped,review=rows.length-verified;
+ const pct=Math.round(mapped*1000/rows.length)/10;
+ $('taxKpiMapped').textContent=nf(mapped);
+ $('taxKpiVerified').textContent=nf(verified);
+ $('taxKpiUnmapped').textContent=nf(missing);
+ $('taxKpiCoverage').textContent=pct.toLocaleString('cs-CZ',{maximumFractionDigits:1})+' % z '+nf(rows.length)+' výrobků';
+ $('taxKpiReview').textContent=nf(review)+' k ověření včetně neshod; výrobky zůstávají v katalogu';
+ fill.style.width=pct+'%';bar.setAttribute('aria-valuenow',String(pct));
+}
 async function loadCategoryOverlay(){
  const box=$('taxonomyV27Status');
  try{
@@ -179,7 +220,7 @@ async function loadCategoryOverlay(){
   box.textContent='Kategorie e-shopů nejsou ověřené ('+e.message+'). Položky jsou ponechány ke kontrole; ceny se zobrazují beze změny.';
  }
 }
-async function load(){try{const rsp=await fetch('./data/catalog_latest.json?ts='+Date.now(),{cache:'no-store'});if(!rsp.ok)throw Error('HTTP '+rsp.status);db=await rsp.json();if(!Array.isArray(db.items))throw Error('Neplatný katalog');await loadCategoryOverlay();rules=new Map((db.rules||[]).map(r=>[r.id,r]));
+async function load(){try{const rsp=await fetch('./data/catalog_latest.json?ts='+Date.now(),{cache:'no-store'});if(!rsp.ok)throw Error('HTTP '+rsp.status);db=await rsp.json();if(!Array.isArray(db.items))throw Error('Neplatný katalog');await loadCategoryOverlay();renderTaxonomyKpisV27();rules=new Map((db.rules||[]).map(r=>[r.id,r]));
  const ct=[...new Set((db.items||[]).map(p=>categoryV27Label(p)))],ordered=db.category_order||[];ct.sort((a,b)=>(ordered.indexOf(a)<0?999:ordered.indexOf(a))-(ordered.indexOf(b)<0?999:ordered.indexOf(b))||a.localeCompare(b,'cs'));
  $('category').innerHTML='<option value="">Všechny kategorie</option>'+ct.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join('');
  $('qDeals').textContent=nf(db.items.filter(datedPromo).length);$('qDrops').textContent=nf(db.items.filter(actualDrop).length);$('qMissing').textContent=nf(db.items.filter(p=>!isPrice(p)).length);$('qFavs').textContent=favs.size;document.getElementById('monitorStamp').textContent=db.last_price_monitor_at?' Poslední cenová kontrola: '+new Date(db.last_price_monitor_at).toLocaleString('cs-CZ')+'.':''; $('nProducts').textContent=nf(db.items.length);$('nPrices').textContent=nf(db.items.filter(isPrice).length);$('nMissing').textContent=nf(db.items.filter(p=>!isPrice(p)).length);$('nDiscounts').textContent=nf(db.items.filter(datedPromo).length);$('nCoverage').textContent=`${db.coverage?.finished_jobs??0} / ${db.coverage?.total_jobs??'—'}`;
