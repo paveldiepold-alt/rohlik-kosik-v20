@@ -80,9 +80,11 @@ main{max-width:1780px;padding:18px 24px 40px;margin:auto}.notice{border:1px soli
 <section class="panel">
  <div class="top"><h2>Přehled a filtrování</h2><span class="pill" id="stamp">Čekám na data</span></div>
  <div class="progress" id="progress"></div>
+ <div id="taxonomyV27Status" role="status" aria-live="polite" style="padding:9px 11px;margin:8px 0 11px;background:#f0f5fa;border:1px solid #d8e4ef;border-radius:8px;font-size:12px;line-height:1.5;color:#1c4167">Načítám ověřené kategorie obchodů…</div>
  <div class="v26-mobile-tools"><button type="button" id="mobileFilters" aria-controls="filtersV26" aria-expanded="false">☷ Další filtry a řazení</button><span>20 výrobků na mobilní stránku</span></div><div class="filters v26-filter-collapsed" id="filtersV26">
   <div class="field"><label for="shop">Obchod</label><select id="shop"><option value="">Oba obchody</option><option>Rohlík</option><option>Košík</option></select></div>
   <div class="field"><label for="category">Kategorie</label><select id="category"><option value="">Všechny kategorie</option></select></div>
+   <div class="field"><label for="categoryStatus">Stav kategorie</label><select id="categoryStatus"><option value="">Všechny stavy</option><option value="verified">Plně ověřené</option><option value="review">Ke kontrole (včetně nesouladu)</option><option value="mismatch">Nesoulad se sledováním</option><option value="unmapped">Bez potvrzené kategorie</option></select></div>
   <div class="field"><label for="brand">Značka</label><input id="brand" type="search" placeholder="Název značky..."></div>
   <div class="field"><label for="state">Zobrazení / sleva</label><select id="state"><option value="">Všechny produkty</option><option value="priced">S ověřenou cenou</option><option value="missing">Bez ceny</option><option value="sale">Aktuálně zlevněné</option><option value="20">Sleva alespoň 20 %</option><option value="30">Sleva alespoň 30 %</option><option value="40">Sleva alespoň 40 %</option><option value="quantity">Množstevní nabídka</option></select></div>
   <div class="field"><label for="minPrice">Cena od (Kč)</label><input id="minPrice" type="number" min="0" step="1" placeholder="Od"></div>
@@ -116,16 +118,22 @@ const selectQuick=k=>{view=k;document.querySelectorAll('[data-quick]').forEach(b
 
 const $=id=>document.getElementById(id),nf=n=>new Intl.NumberFormat('cs-CZ').format(n),money=n=>typeof n==='number'&&Number.isFinite(n)?n.toLocaleString('cs-CZ',{minimumFractionDigits:2,maximumFractionDigits:2})+' Kč':'nezjištěna';
 const esc=s=>String(s??'').replace(/[&<>"']/g,k=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[k]));
-const cats=p=>[...new Set((p.rule_ids||[]).map(id=>rules.get(id)?.category).filter(Boolean))];
+const categoryV27Label=p=>p.category_v27?.display_category||'Ke kontrole';
+const categoryV27Badge=p=>{
+ const s=p.category_v27?.status;
+ return s==='verified'?'✓ Kategorie a pravidlo ověřeny':s==='mismatch'?'⚠ Nesoulad se sledovacím pravidlem':
+ (p.category_v27?.category?'◇ Kategorie e-shopu; pravidlo ke kontrole':'◇ Kategorie k ověření');
+};
+const cats=p=>[categoryV27Label(p)];
 const today=()=>{const parts=new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Prague',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());const v=Object.fromEntries(parts.map(p=>[p.type,p.value]));return `${v.year}-${v.month}-${v.day}`};
 const isPrice=p=>p.price_status==='ok'&&typeof p.price_czk==='number'&&p.price_czk>0;
 const disc=p=>typeof p.discount_pct==='number'&&Number.isFinite(p.discount_pct)&&isPrice(p)?p.discount_pct:null;
 const active=p=>datedPromo(p);
 const photo=p=>/^https:\/\//.test(p.image_url||'')?`<img class="photo" loading="lazy" src="${esc(p.image_url)}" alt="" onerror="this.style.visibility='hidden'">`:'<div class="photo"></div>';
 const conditions=p=>{let result=[];if(Array.isArray(p.multibuy))for(const x of p.multibuy){if(Number(x.min_qty)>=2&&typeof x.price_czk==='number')result.push(`od ${Number(x.min_qty)} ks za ${money(x.price_czk)}`)}if(p.offer_valid_until){const expired=p.offer_valid_until<today();const fmt=p.offer_valid_until.split('-').reverse().join('.');result.push(`<span class="${expired?'expired':'cond'}">${expired?'Akce skončila':'Platí do'} ${fmt}</span>`)}else if(disc(p)!=null)result.push('Datum konce neuvedeno');return result.length?result.join(' · '):'—'};
-function chosen(){const f={shop:$('shop').value,category:$('category').value,brand:$('brand').value.trim().toLowerCase(),state:$('state').value,min:Number($('minPrice').value||0),max:$('maxPrice').value?Number($('maxPrice').value):Infinity,validity:$('validity').value,until:$('until').value,search:$('search').value.trim().toLowerCase()};
+function chosen(){const f={shop:$('shop').value,category:$('category').value,categoryStatus:$('categoryStatus').value,brand:$('brand').value.trim().toLowerCase(),state:$('state').value,min:Number($('minPrice').value||0),max:$('maxPrice').value?Number($('maxPrice').value):Infinity,validity:$('validity').value,until:$('until').value,search:$('search').value.trim().toLowerCase()};
  const day=today();let list=(db.items||[]).filter(p=>{if(view==='deals'&&!datedPromo(p))return false;if(view==='favs'&&!favs.has(productId(p)))return false;if(view==='drops'&&!actualDrop(p))return false;if(view==='missing'&&isPrice(p))return false;const price=isPrice(p);const reduction=disc(p);const until=p.offer_valid_until;const quantity=Array.isArray(p.multibuy)&&p.multibuy.length>0;
- if(f.shop&&p.store!==f.shop)return false;if(f.category&&!cats(p).includes(f.category))return false;
+ if(f.shop&&p.store!==f.shop)return false;if(f.category&&!cats(p).includes(f.category))return false;if(f.categoryStatus==='verified'&&p.category_v27?.status!=='verified')return false;if(f.categoryStatus==='review'&&p.category_v27?.status==='verified')return false;if(f.categoryStatus==='mismatch'&&p.category_v27?.status!=='mismatch')return false;if(f.categoryStatus==='unmapped'&&p.category_v27?.category)return false;
  if(f.brand&&!String(p.brand||p.title||p.name||'').toLowerCase().includes(f.brand))return false;
  if(f.search&&!`${p.name||''} ${p.title||''} ${p.brand||''} ${p.product_description||''} ${cats(p).join(' ')}`.toLowerCase().includes(f.search))return false;
  if(f.state==='priced'&&!price||f.state==='missing'&&price||f.state==='sale'&&!active(p)||['20','30','40'].includes(f.state)&&!(active(p)&&reduction>=Number(f.state))||f.state==='quantity'&&!quantity)return false;
@@ -135,7 +143,7 @@ function chosen(){const f={shop:$('shop').value,category:$('category').value,bra
  const sort=$('sort').value;list.sort((a,b)=>{if(sort==='low'||sort==='high'){const va=isPrice(a)?a.price_czk:null,vb=isPrice(b)?b.price_czk:null;if(va==null)return vb==null?0:1;if(vb==null)return -1;return sort==='low'?va-vb:vb-va}if(sort==='discount'||view==='deals'&&sort==='name')return (disc(b)||0)-(disc(a)||0);if(sort==='recent')return String(b.checked_at||'').localeCompare(String(a.checked_at||''));return String(a.name||a.title||'').localeCompare(String(b.name||b.title||''),'cs')});return list;}
 function render(){const list=chosen(),per=window.matchMedia('(max-width:900px)').matches?20:Number($('pagesize').value);const pages=Math.max(1,Math.ceil(list.length/per));page=Math.min(page,pages);const section=list.slice((page-1)*per,page*per);
  $('shown').textContent=`${view==='deals'?'Doložené aktuální akce':view==='favs'?'Uložené oblíbené':view==='drops'?'Poklesy oproti minulé kontrole':view==='missing'?'Výrobky bez ověřené ceny':'Produkty'}: ${nf(list.length)} · z celkem ${nf(db.items.length)} produktů · strana ${page} / ${pages}`;document.getElementById('qFavs').textContent=favs.size;
- $('rows').innerHTML=section.length?section.map(p=>{const d=disc(p);const price=isPrice(p);const key=productId(p);const saved=favs.has(key);const label=freshPrice(p)?'Cena ≤72 h':price?'Starší cena':'Bez ceny';const shopPath=(p.store_category_path||[]).join(' → ');const provenance=shopPath?'Kategorie e-shopu: '+shopPath:'Kategorie podle sledovacího pravidla (e-shop nepotvrzen)';const discHtml=datedPromo(p)?`<span class="discount">−${Number(d).toLocaleString('cs-CZ',{maximumFractionDigits:1})} %</span>`:d!=null?'<span class="age-warn">Starší údaj o slevě</span>':'—';const old=price&&typeof p.original_price_czk==='number'?`<div class="old">${money(p.original_price_czk)}</div>`:'';return `<tr><td class="favcol"><button class="fav ${saved?'on':''}" data-id="${esc(key)}" title="${saved?'Odebrat z oblíbených':'Přidat do oblíbených'}" aria-label="Oblíbené">${saved?'★':'☆'}</button></td><td><b>${esc(p.store)}</b></td><td>${esc(cats(p).join(', ')||'—')}</td><td><div class="product">${photo(p)}<div><div class="name">${esc(p.title||p.name)}</div><div class="sub">${esc((p.checked_at||'').replace('T',' ').slice(0,16))} · <span class="${freshPrice(p)?'age-ok':'age-warn'}">${label}</span></div><div class="trust" title="${esc(provenance)}">${shopPath?'✓ Kategorie prodejce':'◇ Kategorie dle pravidla'}</div></div></div></td><td><span class="${price?'price':'unknown'}">${money(price?p.price_czk:null)}</span>${old}</td><td>${discHtml}</td><td><span class="cond">${conditions(p)}</span></td><td><a href="${esc(/^https:\/\/(www\.)?(rohlik|kosik)\.cz\//.test(p.url||'')?p.url:'#')}" target="_blank" rel="noopener noreferrer">Otevřít ↗</a></td></tr>`}).join(''):'<tr><td colspan="8" class="empty">Pro zvolené filtry nejsou žádné výsledky.</td></tr>';
+ $('rows').innerHTML=section.length?section.map(p=>{const d=disc(p);const price=isPrice(p);const key=productId(p);const saved=favs.has(key);const label=freshPrice(p)?'Cena ≤72 h':price?'Starší cena':'Bez ceny';const shopPath=(p.store_category_path||[]).join(' → ');const provenance=shopPath?'Kategorie e-shopu: '+shopPath:'Kategorie prodejce nebyla potvrzena';const discHtml=datedPromo(p)?`<span class="discount">−${Number(d).toLocaleString('cs-CZ',{maximumFractionDigits:1})} %</span>`:d!=null?'<span class="age-warn">Starší údaj o slevě</span>':'—';const old=price&&typeof p.original_price_czk==='number'?`<div class="old">${money(p.original_price_czk)}</div>`:'';return `<tr><td class="favcol"><button class="fav ${saved?'on':''}" data-id="${esc(key)}" title="${saved?'Odebrat z oblíbených':'Přidat do oblíbených'}" aria-label="Oblíbené">${saved?'★':'☆'}</button></td><td><b>${esc(p.store)}</b></td><td>${esc(cats(p).join(', ')||'—')}</td><td><div class="product">${photo(p)}<div><div class="name">${esc(p.title||p.name)}</div><div class="sub">${esc((p.checked_at||'').replace('T',' ').slice(0,16))} · <span class="${freshPrice(p)?'age-ok':'age-warn'}">${label}</span></div><div class="trust" title="${esc(provenance)}">${esc(categoryV27Badge(p))}</div></div></div></td><td><span class="${price?'price':'unknown'}">${money(price?p.price_czk:null)}</span>${old}</td><td>${discHtml}</td><td><span class="cond">${conditions(p)}</span></td><td><a href="${esc(/^https:\/\/(www\.)?(rohlik|kosik)\.cz\//.test(p.url||'')?p.url:'#')}" target="_blank" rel="noopener noreferrer">Otevřít ↗</a></td></tr>`}).join(''):'<tr><td colspan="8" class="empty">Pro zvolené filtry nejsou žádné výsledky.</td></tr>';
 
  $('mobileCards').innerHTML=section.length?section.map(p=>{
  const good=isPrice(p),id=productId(p),saved=favs.has(id),shopPath=(p.store_category_path||[]).join(' → ');
@@ -143,18 +151,43 @@ function render(){const list=chosen(),per=window.matchMedia('(max-width:900px)')
  return `<article class="v26-card"><div class="v26-card-head"><span class="v26-card-store">${esc(p.store)}</span><button type="button" class="fav ${saved?'on':''}" data-id="${esc(id)}" aria-label="Oblíbené">${saved?'★':'☆'}</button></div>
  <div class="v26-card-product">${photo(p)}<div class="v26-card-text"><div class="v26-card-name">${esc(p.title||p.name||'—')}</div><div class="v26-card-category">${esc(cats(p).join(', ')||'Kategorie k prověření')}</div></div></div>
  <div class="v26-card-foot"><div><div class="v26-card-price ${good?'':'missing'}">${good?money(p.price_czk):'Cena nezjištěna'}</div><div class="v26-card-price-note">${freshPrice(p)?'Cena ≤ 72 h':good?'Starší cenové pozorování':'Bez potvrzené ceny'}</div>${datedPromo(p)?`<span class="discount">Sleva −${disc(p)} %</span>`:''}</div>${url?`<a class="v26-card-link" target="_blank" rel="noopener noreferrer" href="${esc(url)}">Otevřít v e-shopu ↗</a>`:''}</div>
- <details class="v26-card-more"><summary>Podrobnosti výrobku a kategorie</summary><div class="v26-card-details"><div>${esc(shopPath?'Kategorie e-shopu: '+shopPath:'Kategorie dle sledovacího pravidla (neověřeno e-shopem)')}</div><div>${esc((p.checked_at||'Bez data').replace('T',' ').slice(0,19))}</div><div>Podmínky: ${conditions(p)}</div></div></details></article>`;
+ <details class="v26-card-more"><summary>Podrobnosti výrobku a kategorie</summary><div class="v26-card-details"><div>${esc(shopPath?'Kategorie e-shopu: '+shopPath:'Kategorie prodejce čeká na ověření')}</div><div>${esc((p.checked_at||'Bez data').replace('T',' ').slice(0,19))}</div><div>Podmínky: ${conditions(p)}</div></div></details></article>`;
  }).join(''):'<div class="empty">Žádné výrobky pro zvolené filtry.</div>';
  $('pageInfo').textContent=`${page} / ${pages}`;$('prev').disabled=page<=1;$('next').disabled=page>=pages;}
-async function load(){try{const rsp=await fetch('./data/catalog_latest.json?ts='+Date.now(),{cache:'no-store'});if(!rsp.ok)throw Error('HTTP '+rsp.status);db=await rsp.json();if(!Array.isArray(db.items))throw Error('Neplatný katalog');rules=new Map((db.rules||[]).map(r=>[r.id,r]));
- const ct=[...new Set((db.rules||[]).map(r=>r.category).filter(Boolean))],ordered=db.category_order||[];ct.sort((a,b)=>(ordered.indexOf(a)<0?999:ordered.indexOf(a))-(ordered.indexOf(b)<0?999:ordered.indexOf(b))||a.localeCompare(b,'cs'));
+async function loadCategoryOverlay(){
+ const box=$('taxonomyV27Status');
+ try{
+  const resp=await fetch('./data/taxonomy_v27_public.json?ts='+Date.now(),{cache:'no-store'});
+  if(!resp.ok)throw Error('HTTP '+resp.status);
+  const data=await resp.json();
+  if(data.schema!=='rk-v27-retailer-category-overlay-v1'||data.total!==db.items.length||!Array.isArray(data.items)||data.items.length!==db.items.length)
+   throw Error('Počet produktů nesouhlasí');
+  const map=new Map(data.items.map(x=>[String(x.store||'')+'|'+String(x.url||''),x]));
+  if(map.size!==db.items.length||db.items.some(p=>!map.has(productId(p))))throw Error('Identita produktů nesouhlasí');
+  for(const p of db.items){
+   const tax=map.get(productId(p));
+   p.category_v27=tax.category_v27;
+   p.store_category_path=tax.store_category_path||[];
+   p.category_source=tax.category_source||null;
+  }
+  const m=data.counts?.mapped||0,v=data.counts?.verified||0;
+  const review=db.items.length-v;
+  box.textContent='Kategorie dle e-shopu: '+nf(m)+' / '+nf(db.items.length)+'; plně ověřeno '+nf(v)+
+   '; ke kontrole '+nf(review)+'. Neověřené a nesouhlasící položky zůstávají v katalogu.';
+ }catch(e){
+  for(const p of db.items){delete p.category_v27;}
+  box.textContent='Kategorie e-shopů nejsou ověřené ('+e.message+'). Položky jsou ponechány ke kontrole; ceny se zobrazují beze změny.';
+ }
+}
+async function load(){try{const rsp=await fetch('./data/catalog_latest.json?ts='+Date.now(),{cache:'no-store'});if(!rsp.ok)throw Error('HTTP '+rsp.status);db=await rsp.json();if(!Array.isArray(db.items))throw Error('Neplatný katalog');await loadCategoryOverlay();rules=new Map((db.rules||[]).map(r=>[r.id,r]));
+ const ct=[...new Set((db.items||[]).map(p=>categoryV27Label(p)))],ordered=db.category_order||[];ct.sort((a,b)=>(ordered.indexOf(a)<0?999:ordered.indexOf(a))-(ordered.indexOf(b)<0?999:ordered.indexOf(b))||a.localeCompare(b,'cs'));
  $('category').innerHTML='<option value="">Všechny kategorie</option>'+ct.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join('');
  $('qDeals').textContent=nf(db.items.filter(datedPromo).length);$('qDrops').textContent=nf(db.items.filter(actualDrop).length);$('qMissing').textContent=nf(db.items.filter(p=>!isPrice(p)).length);$('qFavs').textContent=favs.size;document.getElementById('monitorStamp').textContent=db.last_price_monitor_at?' Poslední cenová kontrola: '+new Date(db.last_price_monitor_at).toLocaleString('cs-CZ')+'.':''; $('nProducts').textContent=nf(db.items.length);$('nPrices').textContent=nf(db.items.filter(isPrice).length);$('nMissing').textContent=nf(db.items.filter(p=>!isPrice(p)).length);$('nDiscounts').textContent=nf(db.items.filter(datedPromo).length);$('nCoverage').textContent=`${db.coverage?.finished_jobs??0} / ${db.coverage?.total_jobs??'—'}`;
- $('stamp').textContent='Aktualizace: '+new Date(db.generated_at).toLocaleString('cs-CZ');$('notice').textContent=db.note||'Údaje z veřejných produktových stránek; dostupnost pro PSČ není ověřena.';
+ $('stamp').textContent='Poslední kontrola cen: '+new Date(db.last_price_monitor_at||db.generated_at).toLocaleString('cs-CZ');$('stamp').title='Katalog původně sestaven: '+new Date(db.generated_at).toLocaleString('cs-CZ');$('notice').textContent=db.note||'Údaje z veřejných produktových stránek; dostupnost pro PSČ není ověřena.';
  $('progress').innerHTML=['Rohlík','Košík'].map(s=>{const x=db.coverage?.by_store?.[s]||{finished:0,planned:0};return `<div class="lane"><div class="head"><b>${s}</b><span>${x.finished}/${x.planned} vyhledávání</span></div><div class="bar"><i style="width:${x.planned?Math.round(100*x.finished/x.planned):0}%"></i></div></div>`}).join('');selectQuick('deals');
  }catch(e){$('notice').textContent='Nepodařilo se načíst katalog: '+e.message; $('shown').textContent='Data nejsou dostupná';}}
-for(const id of ['shop','category','brand','state','minPrice','maxPrice','validity','sort','search','until','pagesize'])$(id).addEventListener(['brand','minPrice','maxPrice','search'].includes(id)?'input':'change',()=>{page=1;render()});
-$('clear').addEventListener('click',()=>{for(const id of ['shop','category','brand','state','minPrice','maxPrice','validity','search','until'])$(id).value='';$('sort').value='name';$('pagesize').value='100';page=1;render()});
+for(const id of ['shop','category','categoryStatus','brand','state','minPrice','maxPrice','validity','sort','search','until','pagesize'])$(id).addEventListener(['brand','minPrice','maxPrice','search'].includes(id)?'input':'change',()=>{page=1;render()});
+$('clear').addEventListener('click',()=>{for(const id of ['shop','category','categoryStatus','brand','state','minPrice','maxPrice','validity','search','until'])$(id).value='';$('sort').value='name';$('pagesize').value='100';page=1;render()});
 document.querySelectorAll('[data-quick]').forEach(b=>b.addEventListener('click',()=>selectQuick(b.dataset.quick)));
 $('mobileFilters').addEventListener('click',()=>{const f=$('filtersV26'),b=$('mobileFilters');const expanded=!f.classList.toggle('v26-filter-collapsed');b.setAttribute('aria-expanded',String(expanded));b.textContent=expanded?'☷ Skrýt další filtry':'☷ Další filtry a řazení'});
 window.matchMedia('(max-width:900px)').addEventListener('change',()=>{page=1;render()});
