@@ -57,6 +57,57 @@ def trusted_path(item):
             and all(isinstance(x, str) and norm(x) for x in path))
 
 
+def mapped_known_merchant_path(parts):
+    """Conservative extension from *merchant breadcrumbs* only (never product title).
+
+    Every rule checks the parent aisle together with a specific child/leaf.
+    Generic cheese/marinated-meat paths stay under human review rather than
+    being forcibly assigned to a rule-specific subcategory.
+    """
+    root, branch = parts[:2]
+    tail = parts[1:]
+    # Baby wipes and sanitary paper are a shared hygiene shelf in the dashboard.
+    if root == 'deti' and branch == 'vlhcene ubrousky':
+        return 'Papír a hygiena', 'Dětské vlhčené ubrousky podle cesty e-shopu'
+    if root == 'dite' and branch == 'pleny a ubrousky' and has_seg(tail, 'vlhčené ubrousky'):
+        return 'Papír a hygiena', 'Vlhčené ubrousky pro děti podle cesty e-shopu'
+    if root == 'dite' and branch == 'detska kosmetika' and has_seg(tail, 'zubní hygiena'):
+        return 'Dentální hygiena', 'Dětská dentální hygiena podle cesty e-shopu'
+
+    if root in {'drogerie', 'drogerie a kosmetika'}:
+        if branch == 'papirova a vatova hygiena' and has_seg(tail, 'toaletní papíry', 'vlhčené ubrousky'):
+            return 'Papír a hygiena', 'Papírová a vlhčená hygiena podle cesty e-shopu'
+        if branch == 'damska hygiena' and has_seg(tail, 'intimní hygiena'):
+            return 'Papír a hygiena', 'Intimní hygiena podle cesty e-shopu'
+        if branch == 'deodoranty a antiperspiranty' or branch == 'pece o vlasy':
+            return 'Kosmetika', 'Kosmetický sortiment podle cesty e-shopu'
+        if branch == 'papirova a vatova hygiena' and has_seg(tail, 'ubrousky a utěrky', 'vlhčené ubrousky na úklid'):
+            # Cleaning wipes are not automatically paper tissues.
+            if has_seg(tail, 'vlhčené ubrousky na úklid'):
+                return 'Úklid', 'Čisticí ubrousky podle cesty e-shopu'
+
+    if root == 'kosmetika':
+        if branch == 'ustni hygiena' and has_seg(tail, 'zubní pasty'):
+            return 'Dentální hygiena', 'Zubní pasty podle cesty e-shopu'
+        if branch in {'deodoranty a parfemy', 'vlasova pece'}:
+            return 'Kosmetika', 'Kosmetický sortiment podle cesty e-shopu'
+        if branch == 'pletova pece a dekorativni kosmetika' and has_seg(tail, 'odličovací tampony a vata'):
+            return 'Papír a hygiena', 'Vatové tampony podle cesty e-shopu'
+
+    if root == 'mlecne a chlazene':
+        if has_seg(tail, 'majonézy a dresingy', 'majonézy, tatarské omáčky a dresingy') and has_seg(tail, 'majonézy'):
+            return 'Majonézy', 'Majonézy podle konkrétní cesty e-shopu'
+        if branch == 'syry' and has_seg(tail, 'mozzarella a salátové', 'mozzarella a burrata',
+                                        'mozzarella, ricotta a salátové sýry', 'mozzarella, burrata a ricotta'):
+            return 'Sýry / mozzarella a salátové', 'Mozzarella/salátové sýry podle cesty e-shopu'
+
+    if root == 'trvanlive' and branch == 'sladke' and has_seg(tail, 'oplatky a sušenky', 'oplatky'):
+        return 'Sladké', 'Oplatky a sušenky podle cesty e-shopu'
+    if root == 'plant based' and branch == 'alternativy mlecneho a chlazeneho' and has_seg(tail, 'rostlinné tuky a margaríny'):
+        return 'Másla a tuky', 'Rostlinné tuky a margaríny podle cesty e-shopu'
+    return None
+
+
 def merchant_category(item):
     """Return category + reason based only on merchant breadcrumb path.
 
@@ -74,6 +125,10 @@ def merchant_category(item):
     parts = [norm(p) for p in path]
     root, branch = parts[0], parts[1]
     tail = parts[1:]
+    extra = mapped_known_merchant_path(parts)
+    if extra is not None:
+        return extra
+
 
     # Fresh produce: the actual food aisle must be established by ancestry.
     if root in {'ovoce a zelenina', 'bio ovoce a zelenina'}:
