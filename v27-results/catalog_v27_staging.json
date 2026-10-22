@@ -543,7 +543,11 @@
       "offer_valid_until": null,
       "price_history_previous_czk": null,
       "price_history_previous_at": "2026-10-20T15:42:12+00:00",
-      "drop_since_previous_pct": null
+      "drop_since_previous_pct": null,
+      "v27_category_checked_at": "2026-10-22T15:44:25+00:00",
+      "v27_category_probe_status": "category_missing",
+      "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -919,7 +923,20 @@
       "last_monitor_attempt_at": "2026-10-22T04:46:57+00:00",
       "monitor_v26_attempts": 1,
       "monitor_v26_status": "title_mismatch",
-      "monitor_v26_note": "Product identity differs"
+      "monitor_v26_note": "Product identity differs",
+      "v27_category_checked_at": "2026-10-22T15:46:29+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Gely",
+        "Univerzální"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Objevte limitovanou Řadu Tekutého pracího prostředku Ariel: Winter Dream s osvěžujícím Dotekem Svěží Vůně Lenor. Použijte řadu pro maximální potěšení ze…",
+      "taxonomy_checked_at": "2026-10-22T15:46:29+00:00"
     },
     {
       "store": "Košík",
@@ -1018,7 +1035,20 @@
       "monitor_v26_note": "Cena balení ověřená jednotkovou cenou",
       "price_history_previous_czk": 749.0,
       "price_history_previous_at": "2026-10-21T12:15:17+00:00",
-      "drop_since_previous_pct": null
+      "drop_since_previous_pct": null,
+      "v27_category_checked_at": "2026-10-22T15:44:34+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Kapsle",
+        "Barevné prádlo"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Ariel představuje kapsle na praní Allin1 PODS Pro Barevné prádlo, které účinně odstraňují skvrny pro dokonalé výsledky a jsou skvělé i při praní na 30 °C a…",
+      "taxonomy_checked_at": "2026-10-22T15:44:34+00:00"
     },
     {
       "store": "Košík",
@@ -1388,7 +1418,20 @@
       "monitor_v26_note": "Cena balení ověřená jednotkovou cenou",
       "price_history_previous_czk": 699.0,
       "price_history_previous_at": "2026-10-21T12:15:22+00:00",
-      "drop_since_previous_pct": null
+      "drop_since_previous_pct": null,
+      "v27_category_checked_at": "2026-10-22T15:44:43+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Kapsle",
+        "Univerzální"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Ariel představuje kapsle na praní s tekutým pracím prostředkem Allin1 PODS +Touch of Lenor Spring Awakening.&nbsp;Navíc s modrou komůrkou zajišťující hloubkové…",
+      "taxonomy_checked_at": "2026-10-22T15:44:43+00:00"
     },
     {
       "store": "Košík",
@@ -1431,7 +1474,20 @@
       "monitor_v26_note": "Cena balení ověřená jednotkovou cenou",
       "price_history_previous_czk": 699.0,
       "price_history_previous_at": "2026-10-21T12:15:25+00:00",
-      "drop_since_previous_pct": null
+      "drop_since_previous_pct": null,
+      "v27_category_checked_at": "2026-10-22T15:46:38+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Kapsle",
+        "Barevné prádlo"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Objevte kapsle na praní Ariel ULTRA POWER PODS Color+ se složkou, která ODSTRAŇUJE SKVRNY 2× účinněji (účinek 1 kapsle ULTRA POWER odpovídá 2 kapslím Ariel…",
+      "taxonomy_checked_at": "2026-10-22T15:46:38+00:00"
     },
     {
       "store": "Košík",
@@ -1474,7 +1530,20 @@
       "monitor_v26_note": "Cena balení ověřená jednotkovou cenou",
       "price_history_previous_czk": 699.0,
       "price_history_previous_at": "2026-10-21T12:15:29+00:00",
-      "drop_since_previous_pct": null
+      "drop_since_previous_pct": null,
+      "v27_category_checked_at": "2026-10-22T15:46:47+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Kapsle",
+        "Univerzální"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Objevte kapsle na praní Ariel ULTRA POWER PODS universal + se složkou, která ODSTRAŇUJE SKVRNY 2× účinněji (účinek 1 kapsle ULTRA POWER odpovídá 2 kapslím…",
+      "taxonomy_checked_at": "2026-10-22T15:46:47+00:00"
     },
     {
       "store": "Košík",
@@ -1517,7 +1586,20 @@
       "monitor_v26_note": "Cena balení ověřená jednotkovou cenou",
       "price_history_previous_czk": 699.0,
       "price_history_previous_at": "2026-10-21T12:15:33+00:00",
-      "drop_since_previous_pct": null
+      "drop_since_previous_pct": null,
+      "v27_category_checked_at": "2026-10-22T15:46:56+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Kapsle",
+        "Univerzální"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Objevte limitovanou Řadu pracího prostředku Ariel Allin1 PODS®: Winter Dream s osvěžujícím dotekem svěží vůně Lenor. Použijte řadu pro maximální potěšení ze…",
+      "taxonomy_checked_at": "2026-10-22T15:46:56+00:00"
     },
     {
       "store": "Košík",
@@ -1617,10 +1699,6 @@
       "price_history_previous_czk": 299.9,
       "price_history_previous_at": "2026-10-21T12:16:43+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_checked_at": "2026-10-22T15:30:34+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Prací prostředky",
@@ -1629,7 +1707,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Ariel, značka doporučována výrobci Whirlpool, Electrolux, Candy a Beko, představuje tekutý prací prostředek Ariel +Touch of Lenor Gold Orchid.Hloubkové čištění…",
-      "taxonomy_checked_at": "2026-10-22T15:30:34+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:30:34+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:30:34+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -2252,7 +2334,20 @@
       "monitor_v26_note": "Cena balení, původní cena a sleva souhlasí",
       "price_history_previous_czk": 199.9,
       "price_history_previous_at": "2026-10-21T12:17:25+00:00",
-      "drop_since_previous_pct": null
+      "drop_since_previous_pct": null,
+      "v27_category_checked_at": "2026-10-22T15:43:49+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Gely",
+        "Univerzální"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Prací gel Ariel Japanese Blossom zajišťuje účinné odstranění běžných nečistot a zároveň zanechává prádlo svěží s květinovou vůní inspirovanou japonskými květy.…",
+      "taxonomy_checked_at": "2026-10-22T15:43:49+00:00"
     },
     {
       "store": "Košík",
@@ -2295,7 +2390,20 @@
       "monitor_v26_note": "Cena balení, původní cena a sleva souhlasí",
       "price_history_previous_czk": 449.0,
       "price_history_previous_at": "2026-10-21T12:17:29+00:00",
-      "drop_since_previous_pct": null
+      "drop_since_previous_pct": null,
+      "v27_category_checked_at": "2026-10-22T15:43:58+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Gely",
+        "Univerzální"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Prací gel Ariel Japanese Blossom poskytuje účinné praní a dlouhotrvající svěžest inspirovanou vůní japonských květů. Koncentrované složení pomáhá odstraňovat…",
+      "taxonomy_checked_at": "2026-10-22T15:43:58+00:00"
     },
     {
       "store": "Košík",
@@ -2338,7 +2446,20 @@
       "monitor_v26_note": "Cena balení, původní cena a sleva souhlasí",
       "price_history_previous_czk": 449.0,
       "price_history_previous_at": "2026-10-21T12:15:41+00:00",
-      "drop_since_previous_pct": null
+      "drop_since_previous_pct": null,
+      "v27_category_checked_at": "2026-10-22T15:44:07+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Kapsle",
+        "Univerzální"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Prací kapsle Ariel PODS® Japanese Blossom kombinují prací prostředek a svěží květinovou vůni inspirovanou japonskými květy v jediné dávce. Koncentrované…",
+      "taxonomy_checked_at": "2026-10-22T15:44:07+00:00"
     },
     {
       "store": "Košík",
@@ -3398,7 +3519,20 @@
       "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:45:45+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Čistící přípravky",
+        "Toaleta",
+        "WC bloky a gely"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Tekutý WC gel je určený pro pravidelné čištění toaletní mísy, včetně prostoru pod okrajem a v odtoku.Pomáhá odstraňovat organické nečistoty a usazeniny a…",
+      "taxonomy_checked_at": "2026-10-22T15:45:45+00:00"
     },
     {
       "store": "Košík",
@@ -3452,10 +3586,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:35:49+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Čistící přípravky",
@@ -3464,7 +3594,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Bref Color Auto Active WC závěsný čisticí blok na okraj toaletní mísy s chlórem a o 100% vyšší čisticí silou (proti organickým nečistotám ve srovnání s jinými…",
-      "taxonomy_checked_at": "2026-10-22T15:35:49+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:35:49+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:35:49+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -3484,7 +3618,20 @@
       "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:50:19+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Čistící přípravky",
+        "Toaleta",
+        "WC bloky a gely"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "\"Bref Color Auto Active závěsný WC čisticí blok na okraj toaletní mísy s vůní eukalyptu a o 100% vyšší čisticí silou*Závěsný čisticí WC blok na toaletní mísu…",
+      "taxonomy_checked_at": "2026-10-22T15:50:19+00:00"
     },
     {
       "store": "Košík",
@@ -3505,10 +3652,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:36:22+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Čistící přípravky",
@@ -3517,7 +3660,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Bref Color Auto Active závěsný WC čisticí blok na okraj toaletní mísy s vůní eukalyptu a o 100% vyšší čisticí silou (proti organickým nečistotám ve srovnání s…",
-      "taxonomy_checked_at": "2026-10-22T15:36:22+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:36:22+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:36:22+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -3538,10 +3685,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:36:00+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Čistící přípravky",
@@ -3550,7 +3693,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Bref Color Auto Active WC závěsný čisticí blok na okraj toaletní mísy s vůní květin a o 100% vyšší čisticí silou (proti organickým nečistotám ve srovnání s…",
-      "taxonomy_checked_at": "2026-10-22T15:36:00+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:36:00+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:36:00+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -3571,9 +3718,9 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:36:11+00:00",
       "v27_category_probe_status": "category_missing",
       "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:36:11+00:00",
       "v27_category_probe_attempts": 1
     },
     {
@@ -3594,7 +3741,11 @@
       "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:43:03+00:00",
+      "v27_category_probe_status": "category_missing",
+      "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -3615,10 +3766,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:36:32+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Čistící přípravky",
@@ -3627,7 +3774,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Bref Power Aktiv Lemon je pevný WC blok s vůní citronu v atraktivním balení šesti kuliček, které v sobě ukrývají recepturu se čtyřmi funkcemi.Vlastnosti…",
-      "taxonomy_checked_at": "2026-10-22T15:36:32+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:36:32+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:36:32+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -3648,10 +3799,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:36:43+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Čistící přípravky",
@@ -3660,7 +3807,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Bref Power Aktiv Pine je pevný WC blok s vůní borovice v atraktivním balení šesti kuliček, které v sobě ukrývají recepturu se čtyřmi funkcemi.Vlastnosti…",
-      "taxonomy_checked_at": "2026-10-22T15:36:43+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:36:43+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:36:43+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -3691,10 +3842,6 @@
       "price_history_previous_czk": null,
       "price_history_previous_at": "2026-10-20T15:46:49+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_checked_at": "2026-10-22T15:28:24+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Čistící přípravky",
@@ -3703,7 +3850,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Nákup až ke dveřím na pár kliků. Doprava zdarma na velké nákupy, nový akční leták každý týden a spousta odměn ve věrnostních klubech.",
-      "taxonomy_checked_at": "2026-10-22T15:28:24+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:28:24+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:28:24+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -3723,7 +3874,20 @@
       "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:45:00+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Čistící přípravky",
+        "Toaleta",
+        "WC bloky a gely"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "WC čisticí gel s květinovou vůní je určený k pravidelnému čištění toalety.Pomáhá odstraňovat vodní kámen, nečistoty a skvrny a zároveň zanechává toaletu svěží…",
+      "taxonomy_checked_at": "2026-10-22T15:45:00+00:00"
     },
     {
       "store": "Košík",
@@ -3743,7 +3907,20 @@
       "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:45:09+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Čistící přípravky",
+        "Toaleta",
+        "WC bloky a gely"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Čisticí gel s oceánskou vůní je určený pro pravidelnou péči o toaletu.Gelová konzistence usnadňuje nanášení pod okraj WC mísy, kde přípravek pomáhá odstraňovat…",
+      "taxonomy_checked_at": "2026-10-22T15:45:09+00:00"
     },
     {
       "store": "Košík",
@@ -3764,9 +3941,9 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:28:37+00:00",
       "v27_category_probe_status": "category_missing",
       "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:28:37+00:00",
       "v27_category_probe_attempts": 1
     },
     {
@@ -3787,7 +3964,20 @@
       "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:50:10+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Čistící přípravky",
+        "Toaleta",
+        "WC bloky a gely"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Bref Power Aktiv WC blok s vůní levandule pro nepřetržitou svěžest a ochranu před nečistotami, i mezi spláchnutími – 24 hodin, 7 dní v týdnu.Hledáte jednodušší…",
+      "taxonomy_checked_at": "2026-10-22T15:50:10+00:00"
     },
     {
       "store": "Košík",
@@ -3807,7 +3997,20 @@
       "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:50:06+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Čistící přípravky",
+        "Toaleta",
+        "WC bloky a gely"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Bref Power Aktiv WC blok s vůní citronu pro nepřetržitou svěžest a ochranu před nečistotami, i mezi spláchnutími – 24 hodin, 7 dní v týdnu.Hledáte jednodušší…",
+      "taxonomy_checked_at": "2026-10-22T15:50:06+00:00"
     },
     {
       "store": "Košík",
@@ -3827,7 +4030,20 @@
       "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:50:14+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Čistící přípravky",
+        "Toaleta",
+        "WC bloky a gely"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Bref Power Aktiv WC blok s vůní oceánu pro nepřetržitou svěžest a ochranu před nečistotami, i mezi spláchnutími – 24 hodin, 7 dní v týdnu.Hledáte jednodušší…",
+      "taxonomy_checked_at": "2026-10-22T15:50:14+00:00"
     },
     {
       "store": "Košík",
@@ -3847,7 +4063,20 @@
       "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:50:23+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Čistící přípravky",
+        "Toaleta",
+        "WC bloky a gely"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Bref Power Aktiv WC blok s vůní borovice pro nepřetržitou svěžest a ochranu před nečistotami, i mezi spláchnutími – 24 hodin, 7 dní v týdnu.Hledáte jednodušší…",
+      "taxonomy_checked_at": "2026-10-22T15:50:23+00:00"
     },
     {
       "store": "Košík",
@@ -4327,10 +4556,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:31:05+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Uzeniny a lahůdky",
         "Salámy",
@@ -4339,7 +4564,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Chodura Pivní salám se sýrem představuje oblíbenou kombinaci tradičního pivního salámu a jemných sýrových kousků, které mu dodávají plnější a krémovější chuť.…",
-      "taxonomy_checked_at": "2026-10-22T15:31:05+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:31:05+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:31:05+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -4360,10 +4589,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:30:54+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Uzeniny a lahůdky",
         "Salámy",
@@ -4372,7 +4597,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Chodura Pivní salám je tradiční masný výrobek inspirovaný klasickou českou uzenářskou školou a více než stoletou řemeslnou tradicí značky. Tento tepelně…",
-      "taxonomy_checked_at": "2026-10-22T15:30:54+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:30:54+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:30:54+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -4786,7 +5015,19 @@
       "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:49:57+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Čistící přípravky",
+        "Okna"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Clin Crystal čistič oken pro křišťálově čistá okna a zrcadla beze šmouh.Nová receptura Clin s přírodní složkou bioalkohol odstraňuje nečistoty a špínu, a tak…",
+      "taxonomy_checked_at": "2026-10-22T15:49:57+00:00"
     },
     {
       "store": "Košík",
@@ -4838,7 +5079,19 @@
       "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:50:02+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Čistící přípravky",
+        "Okna"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Clin Lemon čistič oken pro zářivě čistá okna a zdrcadla beze šmouh se svěží citrónovou vůní.Nová receptura Clin s přírodní složkou bioalkohol odstraňuje…",
+      "taxonomy_checked_at": "2026-10-22T15:50:02+00:00"
     },
     {
       "store": "Košík",
@@ -4858,7 +5111,11 @@
       "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:49:53+00:00",
+      "v27_category_probe_status": "category_missing",
+      "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -4879,10 +5136,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:32:07+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Čistící přípravky",
@@ -4890,7 +5143,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Clin Peony čistič oken pro zářivě čistá okna a zrcadla beze šmouh s jemnou pivoňkovou vůní!Čisticí prostředky Clin zajišťují profesionální čištění oken a…",
-      "taxonomy_checked_at": "2026-10-22T15:32:07+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:32:07+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:32:07+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -5056,7 +5313,20 @@
       "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:43:40+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Ústní hygiena",
+        "Zubní pasty",
+        "Bělící"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Bělicí fialové sérum Colgate Max White Purple s příchutí máty a citrusu koriguje barvu zubů. Sérum je šetrné ke sklovině a je proto vhodné jako doplněk při…",
+      "taxonomy_checked_at": "2026-10-22T15:43:40+00:00"
     },
     {
       "store": "Košík",
@@ -5115,10 +5385,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:34:02+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Ústní hygiena",
@@ -5128,7 +5394,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Dětská zubní pasta Colgate Kids First Smiles je určena pro děti od narození do 5 let. Byla vyvinuta speciálně pro ochranu mléčných zubů, které mají tenčí a…",
-      "taxonomy_checked_at": "2026-10-22T15:34:02+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:34:02+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:34:02+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -5149,10 +5419,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:33:51+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Ústní hygiena",
@@ -5162,7 +5428,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Zubní pasta Colgate Kids Big Smiles je určená pro děti ve věku 6–9 let. Poskytuje maximální ochranu proti zubnímu kazu, 4× posiluje zubní sklovinu a obsahuje…",
-      "taxonomy_checked_at": "2026-10-22T15:33:51+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:33:51+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:33:51+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -5291,7 +5561,11 @@
       "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:43:31+00:00",
+      "v27_category_probe_status": "category_missing",
+      "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -5521,10 +5795,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:33:31+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Ústní hygiena",
@@ -5533,7 +5803,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Zubní pasta Colgate Herbal Original kombinuje moderní dentální technologii s přírodními výtažky. Pomáhá chránit zuby před zubním kazem, odstraňuje plak, pečuje…",
-      "taxonomy_checked_at": "2026-10-22T15:33:31+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:33:31+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:33:31+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -5587,10 +5861,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:34:33+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Ústní hygiena",
@@ -5599,7 +5869,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Colgate Max White Purple Reveal je bělicí zubní pasta s technologií optické korekce barev, která okamžitě neutralizuje žluté tóny na povrchu zubů a opticky je…",
-      "taxonomy_checked_at": "2026-10-22T15:34:33+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:34:33+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:34:33+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -5620,10 +5894,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:33:41+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Ústní hygiena",
@@ -5632,7 +5902,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Bělicí zubní pasta Colgate Max White Sparkle Diamonds obsahuje třpytivé krystalky a technologii FreshFX, která zajišťuje dlouhotrvající chladivý pocit a svěží…",
-      "taxonomy_checked_at": "2026-10-22T15:33:41+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:33:41+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:33:41+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -5653,10 +5927,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:34:54+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Ústní hygiena",
@@ -5666,7 +5936,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Fluoridová zubní pasta Colgate Total Junior je určená pro děti ve věku 7–12 let. Má pokročilé složení s antibakteriální složkou, která pomáhá chránit nové…",
-      "taxonomy_checked_at": "2026-10-22T15:34:54+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:34:54+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:34:54+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -5687,10 +5961,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:34:43+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Ústní hygiena",
@@ -5699,7 +5969,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Colgate Total Original je univerzální zubní pasta určená pro každodenní použití od 7 let. Poskytuje kompletní ochranu celé ústní dutiny – pomáhá chránit před…",
-      "taxonomy_checked_at": "2026-10-22T15:34:43+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:34:43+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:34:43+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -5753,10 +6027,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:34:12+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Ústní hygiena",
@@ -5765,7 +6035,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Zubní pasta Colgate Triple Action poskytuje trojí účinek v jednom:chrání zuby před zubním kazem,pomáhá udržovat zuby bělejší odstraněním povrchových skvrn…",
-      "taxonomy_checked_at": "2026-10-22T15:34:12+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:34:12+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:34:12+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -5786,10 +6060,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:34:22+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Ústní hygiena",
@@ -5798,7 +6068,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Nákup až ke dveřím na pár kliků. Doprava zdarma na velké nákupy, nový akční leták každý týden a spousta odměn ve věrnostních klubech.",
-      "taxonomy_checked_at": "2026-10-22T15:34:22+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:34:22+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:34:22+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -5911,7 +6185,21 @@
         }
       ],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:44:52+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Nápoje",
+        "Vody",
+        "Minerální",
+        "Ochucené",
+        "Neperlivé"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Nákup až ke dveřím na pár kliků. Doprava zdarma na velké nákupy, nový akční leták každý týden a spousta odměn ve věrnostních klubech.",
+      "taxonomy_checked_at": "2026-10-22T15:44:52+00:00"
     },
     {
       "store": "Košík",
@@ -6219,9 +6507,9 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:32:18+00:00",
       "v27_category_probe_status": "category_missing",
       "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:32:18+00:00",
       "v27_category_probe_attempts": 1
     },
     {
@@ -7028,10 +7316,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:35:39+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Mytí nádobí",
@@ -7040,7 +7324,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Jar Power Spray Lemon je odmašťovací čisticí sprej vhodný pro kuchyňské povrchy, nádobí i předmytí před vložením do myčky. Praktické balení obsahuje 2× 500 ml…",
-      "taxonomy_checked_at": "2026-10-22T15:35:39+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:35:39+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:35:39+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -7084,7 +7372,19 @@
       "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:47:22+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Mytí nádobí",
+        "Ruční mytí"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Složení Tekutého Prostředku Na Mytí Nádobí Jar Platinum Plus je nejsilnější složení proti mastnotě Jar, které bojuje proti všem typům mastnoty.&nbsp;Museli…",
+      "taxonomy_checked_at": "2026-10-22T15:47:22+00:00"
     },
     {
       "store": "Košík",
@@ -8822,9 +9122,9 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:29:09+00:00",
       "v27_category_probe_status": "category_missing",
       "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:29:09+00:00",
       "v27_category_probe_attempts": 1
     },
     {
@@ -8846,10 +9146,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:28:58+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Mléčné a chlazené",
         "Sýry",
@@ -8858,7 +9154,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Poloměkký zrající plnotučný plátkový sýr. Přirozeně bez laktózy, obsah laktózy &lt;0,01 g na 100 g sýra. Přirozený zdroj bílkovin (23 g / 100 g) a vápníku (760…",
-      "taxonomy_checked_at": "2026-10-22T15:28:58+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:28:58+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:28:58+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -8878,7 +9178,20 @@
       "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:49:08+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plátkové",
+        "Holandského typu"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Extra jemné plátky holandského sýra Leerdammer, které se doslova rozplývají na jazyku a pozvolna uvolňují charakteristickou oříškovou chuť. Tento labužnický…",
+      "taxonomy_checked_at": "2026-10-22T15:49:08+00:00"
     },
     {
       "store": "Košík",
@@ -8932,10 +9245,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:30:44+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Prací prostředky",
@@ -8944,7 +9253,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Aviváž Lenor Floral Bouquet přináší 3x déle trvající vůni (v porovnání s Lenor Sensitive) pro chvilky relaxace po celý den. Její parfém obsahuje dotek…",
-      "taxonomy_checked_at": "2026-10-22T15:30:44+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:30:44+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:30:44+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -9097,10 +9410,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:32:28+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Prací prostředky",
@@ -9109,7 +9418,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "S aviváží Lenor Gold Orchid &amp; Vanilla prádlo voní 3× déle (v porovnání s Lenor Sensitive) pro chvilky relaxace po celý den. Její parfém obsahuje kapku…",
-      "taxonomy_checked_at": "2026-10-22T15:32:28+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:32:28+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:32:28+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -9130,10 +9443,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:32:49+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Prací prostředky",
@@ -9142,7 +9451,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Lenor Sensitive je aviváž určená pro jemnou péči o prádlo, zejména pro osoby s citlivou pokožkou. Pomáhá zjemnit tkaniny a zanechává prádlo svěží a příjemné na…",
-      "taxonomy_checked_at": "2026-10-22T15:32:49+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:32:49+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:32:49+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -9163,10 +9476,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:32:39+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Prací prostředky",
@@ -9175,7 +9484,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Aviváž Lenor Spring Awakening dodává celodenní pocit svěžesti jako po osprchování. Pro dlouhotrvající svěží vůni používejte kromě pracího prostředku také…",
-      "taxonomy_checked_at": "2026-10-22T15:32:39+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:32:39+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:32:39+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -9261,7 +9574,20 @@
       "note": "Cena z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:47:04+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Aviváže a vůně",
+        "Tekuté aviváže"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Objevte Aviváž Lenor Winter Dream v Limitované Edici pro 3× Déle Trvající Svěžest (v porovnání s Aviváží Lenor Sensitive). Použijte celou kolekci pro maximální…",
+      "taxonomy_checked_at": "2026-10-22T15:47:04+00:00"
     },
     {
       "store": "Košík",
@@ -9347,7 +9673,20 @@
       "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:47:13+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Aviváže a vůně",
+        "Vonné doplňky"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Objevte Vonné Perličky Lenor Winter Dream pro Nonstop Svěžest (až 12 týdnů, při uskladnění prádla).&nbsp;Použijte celou kolekci pro maximální svěžest:…",
+      "taxonomy_checked_at": "2026-10-22T15:47:13+00:00"
     },
     {
       "store": "Košík",
@@ -9368,10 +9707,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:35:06+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Prací prostředky",
@@ -9380,7 +9715,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Přidejte do prádla vonné perličky do praní Lenor Svěží bavlna pro jemnou svěžest, která trvá a trvá. Vonné perličky do praní bez barviv jsou navrženy tak, aby…",
-      "taxonomy_checked_at": "2026-10-22T15:35:06+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:35:06+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:35:06+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -9401,10 +9740,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:29:52+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Prací prostředky",
@@ -9413,7 +9748,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Koncentrovaná aviváž je určená pro profesionální péči o bílé i barevné textilie.Pomáhá změkčovat textilní vlákna a dodává prádlu dlouhotrvající svěžest a…",
-      "taxonomy_checked_at": "2026-10-22T15:29:52+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:29:52+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:29:52+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -9434,10 +9773,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:30:13+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Prací prostředky",
@@ -9446,7 +9781,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Objevte vonné perličky Lenor Unstoppables Fresh s technologií dlouhotrvající svěžesti, které vašemu prádlu poskytnou nepřetržitou svěžest po dobu až 12 týdnů…",
-      "taxonomy_checked_at": "2026-10-22T15:30:13+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:30:13+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:30:13+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -9467,10 +9806,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:30:23+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Prací prostředky",
@@ -9479,7 +9814,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Nákup až ke dveřím na pár kliků. Doprava zdarma na velké nákupy, nový akční leták každý týden a spousta odměn ve věrnostních klubech.",
-      "taxonomy_checked_at": "2026-10-22T15:30:23+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:30:23+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:30:23+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -9943,7 +10282,19 @@
       "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:47:57+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Papírová a vatová hygiena",
+        "Kuchyňské utěrky"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Dvouvrstvé bílé papírové kuchyňské utěrky Linteo jsou nepostradatelným pomocníkem při každodenním vaření a úklidu.&nbsp;Díky dlouhému návinu - 60 metrů v jedné…",
+      "taxonomy_checked_at": "2026-10-22T15:47:57+00:00"
     },
     {
       "store": "Košík",
@@ -10652,7 +11003,11 @@
       "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:43:22+00:00",
+      "v27_category_probe_status": "category_missing",
+      "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -10672,7 +11027,11 @@
       "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:43:13+00:00",
+      "v27_category_probe_status": "category_missing",
+      "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -11344,7 +11703,20 @@
       "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:44:16+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Trvanlivé",
+        "Sladké",
+        "Oplatky a sušenky",
+        "Oplatky"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Ikonická chuť tyčinky KOKO i ve formě oplatky.Křupavá oplatka v kombinaci s kokosovou náplní, polomáčená v mléčne polevě přináší známý chuťový zážitek v…",
+      "taxonomy_checked_at": "2026-10-22T15:44:16+00:00"
     },
     {
       "store": "Košík",
@@ -11484,9 +11856,9 @@
       ],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:33:21+00:00",
       "v27_category_probe_status": "category_missing",
       "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:33:21+00:00",
       "v27_category_probe_attempts": 1
     },
     {
@@ -11513,10 +11885,6 @@
       ],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:33:10+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Trvanlivé",
         "Sladké",
@@ -11526,7 +11894,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Studentská pečeť mléčná čokoláda s bílými bublinkami.Jemná mléčná čokoláda Studentská pečeť s kombinací nadýchaných bílých bublinek, které dodávají každému…",
-      "taxonomy_checked_at": "2026-10-22T15:33:10+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:33:10+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:33:10+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -11552,10 +11924,6 @@
       ],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:32:59+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Trvanlivé",
         "Sladké",
@@ -11565,7 +11933,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Studentská pečeť mléčná s bublinkami s příchutí karamelu.Lahodná mléčná čokoláda Studentská pečeť s nadýchanými karamelovými bublinkami, které dodávají každému…",
-      "taxonomy_checked_at": "2026-10-22T15:32:59+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:32:59+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:32:59+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -11630,9 +12002,9 @@
       ],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:29:32+00:00",
       "v27_category_probe_status": "category_missing",
       "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:29:32+00:00",
       "v27_category_probe_attempts": 1
     },
     {
@@ -12756,10 +13128,6 @@
       "original_price_czk": 739.0,
       "discount_pct": 18.8,
       "offer_valid_until": "2026-11-17",
-      "v27_category_checked_at": "2026-10-22T15:31:57+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Prací prostředky",
@@ -12768,7 +13136,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Persil Deep Clean Powder Color - Zažijte hloubkově čisté prádlo a hygienicky svěží pračku díky jedinečnému složení Persil.I po vyprání může z pračky vycházet…",
-      "taxonomy_checked_at": "2026-10-22T15:31:57+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:31:57+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:31:57+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -12828,7 +13200,20 @@
       "note": "Cena z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:45:27+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Prášky",
+        "Barevné prádlo"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Prací prášek je určený pro praní barevného prádla a pomáhá odstraňovat i odolné skvrny.Složení Deep Clean proniká do textilních vláken a podporuje důkladné…",
+      "taxonomy_checked_at": "2026-10-22T15:45:27+00:00"
     },
     {
       "store": "Košík",
@@ -12848,7 +13233,20 @@
       "note": "Cena z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:45:18+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Prášky",
+        "Bílé prádlo"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Prací prášek je určený pro praní bílého prádla a pomáhá odstraňovat i odolné skvrny.Receptura Deep Clean proniká do textilních vláken a podporuje důkladné…",
+      "taxonomy_checked_at": "2026-10-22T15:45:18+00:00"
     },
     {
       "store": "Košík",
@@ -12868,7 +13266,20 @@
       "note": "Cena z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:45:36+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Kapsle",
+        "Univerzální"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Prací kapsle jsou určené pro univerzální praní a pomáhají odstraňovat i odolné skvrny.Složení Deep Clean proniká do textilních vláken a podporuje důkladné…",
+      "taxonomy_checked_at": "2026-10-22T15:45:36+00:00"
     },
     {
       "store": "Košík",
@@ -12896,10 +13307,6 @@
       "original_price_czk": 699.9,
       "discount_pct": 14.3,
       "offer_valid_until": "2026-11-17",
-      "v27_category_checked_at": "2026-10-22T15:31:36+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Prací prostředky",
@@ -12908,7 +13315,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Persil prací kapsle Deep Clean 4v1 Universal – Zažijte odstranění i těch nejodolnějších skvrn – zářivé barvy, dlouhotrvající svěžest, hygienicky svěží…",
-      "taxonomy_checked_at": "2026-10-22T15:31:36+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:31:36+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:31:36+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -12936,10 +13347,6 @@
       "original_price_czk": 799.0,
       "discount_pct": 24.9,
       "offer_valid_until": "2026-11-17",
-      "v27_category_checked_at": "2026-10-22T15:31:26+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Prací prostředky",
@@ -12948,7 +13355,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Persil Deep Clean 4v1 Discs Universal - Zažijte hloubkově čisté prádlo a hygienicky svěží pračku díky jedinečnému složení Persil.Výkonná čtyřkomorová gelová…",
-      "taxonomy_checked_at": "2026-10-22T15:31:26+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:31:26+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:31:26+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -13000,10 +13411,6 @@
       "original_price_czk": 739.0,
       "discount_pct": 18.8,
       "offer_valid_until": "2026-11-17",
-      "v27_category_checked_at": "2026-10-22T15:31:47+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Prací prostředky",
@@ -13012,7 +13419,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Persil Deep Clean Powder Expert Freshness - Zažijte sílu pracího prášku Expert of FreshnessNová receptura Persil Expert Freshness poskytuje opravdovou…",
-      "taxonomy_checked_at": "2026-10-22T15:31:47+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:31:47+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:31:47+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -13040,10 +13451,6 @@
       "original_price_czk": 589.0,
       "discount_pct": 21.9,
       "offer_valid_until": "2026-11-17",
-      "v27_category_checked_at": "2026-10-22T15:31:15+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Prací prostředky",
@@ -13052,7 +13459,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Persil Deep Clean prací prášek Expert Freshness by Silan – Zažijte sílu experta na svěžestNová receptura Persil Expert Freshness by Silan zajišťuje skutečně…",
-      "taxonomy_checked_at": "2026-10-22T15:31:15+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:31:15+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:31:15+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -13433,10 +13844,6 @@
       "original_price_czk": 699.0,
       "discount_pct": 14.3,
       "offer_valid_until": "2026-11-17",
-      "v27_category_checked_at": "2026-10-22T15:28:14+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Prací prostředky",
@@ -13445,7 +13852,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Nákup až ke dveřím na pár kliků. Doprava zdarma na velké nákupy, nový akční leták každý týden a spousta odměn ve věrnostních klubech.",
-      "taxonomy_checked_at": "2026-10-22T15:28:14+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:28:14+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:28:14+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -14488,9 +14899,9 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:29:20+00:00",
       "v27_category_probe_status": "category_missing",
       "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:29:20+00:00",
       "v27_category_probe_attempts": 1
     },
     {
@@ -16292,7 +16703,20 @@
       "price_v24_note": "Cena balení, původní cena a sleva souhlasí",
       "original_price_czk": 219.0,
       "discount_pct": 22.4,
-      "offer_valid_until": "2026-11-10"
+      "offer_valid_until": "2026-11-10",
+      "v27_category_checked_at": "2026-10-22T15:45:54+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Aviváže a vůně",
+        "Tekuté aviváže"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Parfémovaný avivážní prostředek je určený pro všechny druhy textilií a dodává prádlu dlouhotrvající vůni inspirovanou atmosférou Kapského Města.Složení s…",
+      "taxonomy_checked_at": "2026-10-22T15:45:54+00:00"
     },
     {
       "store": "Košík",
@@ -16385,7 +16809,20 @@
       "price_v24_note": "Cena balení, původní cena a sleva souhlasí",
       "original_price_czk": 219.0,
       "discount_pct": 22.4,
-      "offer_valid_until": "2026-11-10"
+      "offer_valid_until": "2026-11-10",
+      "v27_category_checked_at": "2026-10-22T15:46:12+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Aviváže a vůně",
+        "Tekuté aviváže"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Silan Aromatherapy Marrakesh je aviváž určená pro závěrečnou péči o prádlo během praní. Varianta Marrakesh z řady Aromatherapy dodává prádlu příjemnou vůni a…",
+      "taxonomy_checked_at": "2026-10-22T15:46:12+00:00"
     },
     {
       "store": "Košík",
@@ -16445,7 +16882,20 @@
       "price_v24_note": "Cena balení, původní cena a sleva souhlasí",
       "original_price_czk": 219.0,
       "discount_pct": 22.4,
-      "offer_valid_until": "2026-11-10"
+      "offer_valid_until": "2026-11-10",
+      "v27_category_checked_at": "2026-10-22T15:46:03+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Aviváže a vůně",
+        "Tekuté aviváže"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Silan Aromatherapy Tokyo je aviváž určená pro závěrečnou péči o prádlo během praní. Varianta Tokyo z řady Aromatherapy provoní prádlo a balení vystačí až na…",
+      "taxonomy_checked_at": "2026-10-22T15:46:03+00:00"
     },
     {
       "store": "Košík",
@@ -16624,9 +17074,9 @@
       "original_price_czk": 219.9,
       "discount_pct": 22.7,
       "offer_valid_until": "2026-11-10",
-      "v27_category_checked_at": "2026-10-22T15:28:47+00:00",
       "v27_category_probe_status": "category_missing",
       "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:28:47+00:00",
       "v27_category_probe_attempts": 1
     },
     {
@@ -16830,10 +17280,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:30:03+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Mléčné a chlazené",
         "Sýry",
@@ -16841,7 +17287,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Smetanový tavený sýr s vysokým obsahem proteinu vyrobený v Želetavě.Smetanito s vysokým obsahem bílkovin pro všechny, které zajímá zdravý životní styl a výživa…",
-      "taxonomy_checked_at": "2026-10-22T15:30:03+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:30:03+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:30:03+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -16894,9 +17344,9 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:28:03+00:00",
       "v27_category_probe_status": "category_missing",
       "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:28:03+00:00",
       "v27_category_probe_attempts": 1
     },
     {
@@ -17129,7 +17579,19 @@
       "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:48:42+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Tavené"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Nákup až ke dveřím na pár kliků. Doprava zdarma na velké nákupy, nový akční leták každý týden a spousta odměn ve věrnostních klubech.",
+      "taxonomy_checked_at": "2026-10-22T15:48:42+00:00"
     },
     {
       "store": "Košík",
@@ -17450,10 +17912,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:29:42+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Prací prostředky",
@@ -17462,7 +17920,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Nákup až ke dveřím na pár kliků. Doprava zdarma na velké nákupy, nový akční leták každý týden a spousta odměn ve věrnostních klubech.",
-      "taxonomy_checked_at": "2026-10-22T15:29:42+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:29:42+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:29:42+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -17749,7 +18211,19 @@
       "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:49:44+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Bez laktózy",
+        "Sýry"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Trojúhelníkový sýr Veselá kráva bez laktózy je jemný a krémový tavený sýr z kvalitních ingrediencí. Skvěle se roztírá, má praktické porce a je ideální pro…",
+      "taxonomy_checked_at": "2026-10-22T15:49:44+00:00"
     },
     {
       "store": "Košík",
@@ -17769,7 +18243,19 @@
       "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:49:17+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Tavené"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Trojúhelníkový sýr Veselá kráva je jemný a krémový tavený sýr z kvalitních ingrediencí. Skvěle se roztírá, má praktické porce a je ideální pro celou rodinu.…",
+      "taxonomy_checked_at": "2026-10-22T15:49:17+00:00"
     },
     {
       "store": "Košík",
@@ -17789,7 +18275,19 @@
       "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:49:35+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Tavené"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Trojúhelníkový sýr Veselá kráva je jemný a krémový tavený sýr z kvalitních ingrediencí. Skvěle se roztírá, má praktické porce a je ideální pro celou rodinu.…",
+      "taxonomy_checked_at": "2026-10-22T15:49:35+00:00"
     },
     {
       "store": "Košík",
@@ -17809,7 +18307,19 @@
       "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:48:51+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Tavené"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Tavený sýr* a trvanlivé pečivo.V současné chvíli probíhá změna vizuálu u tohoto výrobku. Zboží vám bude dodáno dle aktuální skladové zásoby.Kombinace lahodného…",
+      "taxonomy_checked_at": "2026-10-22T15:48:51+00:00"
     },
     {
       "store": "Košík",
@@ -17834,7 +18344,19 @@
         }
       ],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:49:00+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Tavené"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Sýr a křup je praktický snack kombinující jemný a krémový tavený sýr s křupavými tyčinkami. Díky praktickému balení si můžete snadno užít rychlou a chutnou…",
+      "taxonomy_checked_at": "2026-10-22T15:49:00+00:00"
     },
     {
       "store": "Košík",
@@ -17947,7 +18469,19 @@
       "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:49:26+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Tavené"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Trojúhelníkový sýr Veselá kráva s krůtí šunkou je jemný a krémový tavený sýr z kvalitních ingrediencí. Skvěle se roztírá, má praktické porce a je ideální pro…",
+      "taxonomy_checked_at": "2026-10-22T15:49:26+00:00"
     },
     {
       "store": "Košík",
@@ -18393,10 +18927,6 @@
       ],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:35:17+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Papírová a vatová hygiena",
@@ -18405,7 +18935,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Zewa Classic Soft je třívrstvý toaletní papír navržený pro každodenní použití. Nabízí kombinaci jemnosti, savosti a odolnosti pro vyšší komfort při používání.…",
-      "taxonomy_checked_at": "2026-10-22T15:35:17+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:35:17+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:35:17+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -18425,7 +18959,20 @@
       "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:47:31+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Papírová a vatová hygiena",
+        "Toaletní papíry",
+        "3 vrstvé"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Bílý třívrstvý toaletní papír se svěžím zeleným potiskem a skutečnou vůní heřmánku. I díky tomu se stal opravdovým favoritem v mnoha domácnostech. Logo Zewa…",
+      "taxonomy_checked_at": "2026-10-22T15:47:31+00:00"
     },
     {
       "store": "Košík",
@@ -18445,7 +18992,20 @@
       "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:47:48+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Papírová a vatová hygiena",
+        "Toaletní papíry",
+        "3 vrstvé"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Bílý třívrstvý toaletní papír se svěžím zeleným potiskem a skutečnou vůní heřmánku. I díky tomu se stal opravdovým favoritem v mnoha domácnostech. Logo Zewa…",
+      "taxonomy_checked_at": "2026-10-22T15:47:48+00:00"
     },
     {
       "store": "Košík",
@@ -18465,7 +19025,20 @@
       "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:47:40+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Papírová a vatová hygiena",
+        "Toaletní papíry",
+        "3 vrstvé"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Pokud hledáte klasický bílý třívrstvý toaletní papír bez jakékoli parfemace, ale s maximální účinností a péčí o pokožku, toto je pro vás ideální volba. Zárukou…",
+      "taxonomy_checked_at": "2026-10-22T15:47:40+00:00"
     },
     {
       "store": "Košík",
@@ -18518,7 +19091,11 @@
       "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:46:21+00:00",
+      "v27_category_probe_status": "category_missing",
+      "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -18543,7 +19120,21 @@
         }
       ],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:48:24+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Papírová a vatová hygiena",
+        "Kapesníky",
+        "V krabičce",
+        "3 vrstvé"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Tři vrstvy dokonale měkkého a zároveň pevného papíru dělají z kapesníčků Zewa Family ideální volbu dvou produktů v jednom. Hodí se jak pro období nachlazení a…",
+      "taxonomy_checked_at": "2026-10-22T15:48:24+00:00"
     },
     {
       "store": "Košík",
@@ -18568,7 +19159,21 @@
         }
       ],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:48:06+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Papírová a vatová hygiena",
+        "Kapesníky",
+        "V balíčku",
+        "3 vrstvé"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Tyto třívrstvé kapesníčky jsou příjemně měkké a zároveň pevné, takže uspokojí opravdu každého. Bez jakékoli parfemace, v klasické bílé barvě.V současné chvíli…",
+      "taxonomy_checked_at": "2026-10-22T15:48:06+00:00"
     },
     {
       "store": "Košík",
@@ -18593,7 +19198,20 @@
       "monitor_v26_attempts": 2,
       "monitor_v26_status": "title_mismatch",
       "monitor_v26_note": "Product identity differs",
-      "monitor_v27b_last_probe_at": "2026-10-22T08:20:01+00:00"
+      "monitor_v27b_last_probe_at": "2026-10-22T08:20:01+00:00",
+      "v27_category_checked_at": "2026-10-22T15:48:33+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Papírová a vatová hygiena",
+        "Toaletní papíry",
+        "4 vrstvé"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Zewa Exclusive Almond Blossom je luxusní čtyřvrstvý toaletní papír s vůní mandlí pro nevšední, za to každodenní zážitek.&nbsp;Nechte rozmazlovat vaše tělo i…",
+      "taxonomy_checked_at": "2026-10-22T15:48:33+00:00"
     },
     {
       "store": "Košík",
@@ -18651,10 +19269,6 @@
       ],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:35:29+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Papírová a vatová hygiena",
@@ -18663,7 +19277,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Zewa Just 1 je vícevrstvý toaletní papír navržený pro pohodlné a úsporné používání. Díky 5 vrstvám poskytuje vyšší pevnost a savost. Obal je recyklovatelný a…",
-      "taxonomy_checked_at": "2026-10-22T15:35:29+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:35:29+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:35:29+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Košík",
@@ -18753,7 +19371,19 @@
       "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:48:15+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Papírová a vatová hygiena",
+        "Kuchyňské utěrky"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Tyto 2vrstvé kuchyňské utěrky přinášejí tu nejvyšší kvalitu Zewa.Speciální technologie výroby zaručuje vysokou absorpci a odolnost proti protržení i při…",
+      "taxonomy_checked_at": "2026-10-22T15:48:15+00:00"
     },
     {
       "store": "Košík",
@@ -19054,10 +19684,6 @@
       "price_history_previous_czk": null,
       "price_history_previous_at": "2026-10-20T15:41:31+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_checked_at": "2026-10-22T15:28:42+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie",
         "Prací prostředky",
@@ -19066,7 +19692,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Objevte všechny produkty Ariel.Prací prášek + Ultra Oxi Effect Fast Dissolving účinně odstraní i sedm dní zaschlé skvrny a zápach. Díky unikátní techn",
-      "taxonomy_checked_at": "2026-10-22T15:28:42+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:28:42+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:28:42+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -19097,10 +19727,6 @@
       "price_history_previous_czk": null,
       "price_history_previous_at": "2026-10-20T15:41:32+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_checked_at": "2026-10-22T15:29:03+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie",
         "Prací prostředky",
@@ -19109,7 +19735,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Ariel Allin1 PODS +Touch of Lenor Spring Awakening jsou kapsle na praní s tekutým pracím prostředkem. Díky modré komůrce zajišťují hloubkové čištění a",
-      "taxonomy_checked_at": "2026-10-22T15:29:03+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:29:03+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:29:03+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -19139,7 +19769,20 @@
       "offer_valid_until": null,
       "price_history_previous_czk": null,
       "price_history_previous_at": "2026-10-20T15:41:31+00:00",
-      "drop_since_previous_pct": null
+      "drop_since_previous_pct": null,
+      "v27_category_checked_at": "2026-10-22T15:43:09+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Prací prostředky",
+        "Prací kapsle/tablety",
+        "Barevné prádlo"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Tekutý prací prostředek v kapslích Ariel Allin1 PODS je speciálně navržen pro péči o barevné prádlo. Spolehlivě odstraňuje odolné skvrny a zajišťuje č",
+      "taxonomy_checked_at": "2026-10-22T15:43:09+00:00"
     },
     {
       "store": "Rohlík",
@@ -19170,10 +19813,6 @@
       "price_history_previous_czk": null,
       "price_history_previous_at": "2026-10-20T15:41:32+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_checked_at": "2026-10-22T15:35:55+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie",
         "Prací prostředky",
@@ -19182,7 +19821,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Kapsle na praní Ariel Allin1 PODS jsou určeny pro barevné prádlo. Účinně odstraňují skvrny a poskytují spolehlivé výsledky i při praní na 30 °C.Při př",
-      "taxonomy_checked_at": "2026-10-22T15:35:55+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:35:55+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:35:55+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -19299,10 +19942,6 @@
       "price_history_previous_czk": 259.9,
       "price_history_previous_at": "2026-10-20T15:41:29+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_checked_at": "2026-10-22T15:29:58+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie",
         "Prací prostředky",
@@ -19311,7 +19950,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Objevte všechny produkty Ariel.Kapsle na praní Ariel Allin1 PODS Color odstraňují odolné skvrny a zápach dokonce i při 30 °C. Jsou navrženy tak, aby f",
-      "taxonomy_checked_at": "2026-10-22T15:29:58+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:29:58+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:29:58+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -19380,10 +20023,6 @@
       "price_history_previous_czk": 259.9,
       "price_history_previous_at": "2026-10-20T15:41:07+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_checked_at": "2026-10-22T15:29:14+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie",
         "Prací prostředky",
@@ -19392,7 +20031,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Objevte všechny produkty Ariel.Tekutý prací prostředek Ariel Color na barevné prádlo odstraňuje odolné skvrny a zápach dokonce i při 30 °C. Jeho slože",
-      "taxonomy_checked_at": "2026-10-22T15:29:14+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:29:14+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:29:14+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -19503,10 +20146,6 @@
       "monitor_v26_attempts": 1,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech",
-      "v27_category_checked_at": "2026-10-22T15:29:26+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie",
         "Prací prostředky",
@@ -19515,7 +20154,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Objevte všechny produkty Ariel.Prací prášek Ariel Color Fast Dissolving dodává více svěžesti a účinně odstraňuje skvrny dokonce i při krátkém praní na",
-      "taxonomy_checked_at": "2026-10-22T15:29:26+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:29:26+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:29:26+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -19546,10 +20189,6 @@
       "price_history_previous_czk": null,
       "price_history_previous_at": "2026-10-20T15:41:31+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_checked_at": "2026-10-22T15:28:30+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie",
         "Prací prostředky",
@@ -19558,7 +20197,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Objevte všechny produkty Ariel.Prací prášek Ariel Color Fast Dissolving dodává více svěžesti a účinně odstraňuje skvrny dokonce i při krátkém praní na",
-      "taxonomy_checked_at": "2026-10-22T15:28:30+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:28:30+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:28:30+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -19622,10 +20265,6 @@
       "price_history_previous_czk": null,
       "price_history_previous_at": "2026-10-20T15:41:32+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_checked_at": "2026-10-22T15:29:37+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie",
         "Prací prostředky",
@@ -19634,7 +20273,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Objevte všechny produkty Ariel.Kapsle obsahují další červenou komůrku pro extra odstraňování skvrn a extra hygienu (ve srovnání s Ariel All-in-1 PODS",
-      "taxonomy_checked_at": "2026-10-22T15:29:37+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:29:37+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:29:37+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -19655,10 +20298,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:28:53+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie",
         "Prací prostředky",
@@ -19667,7 +20306,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Objevte všechny produkty Ariel.Tekutý prací gel Ariel Extra Clean je dosud nejúčinnější prostředek značky Ariel pro odstraňování skvrn. Zajišťuje výji",
-      "taxonomy_checked_at": "2026-10-22T15:28:53+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:28:53+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:28:53+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -19731,10 +20374,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:29:47+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie",
         "Prací prostředky",
@@ -19743,7 +20382,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Objevte všechny produkty Ariel.Prací prostředek v kapslích Ariel All-in-1 PODS Mountain Spring, který skvěle odstraňuje skvrny i při nižších teplotách",
-      "taxonomy_checked_at": "2026-10-22T15:29:47+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:29:47+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:29:47+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -20068,10 +20711,6 @@
       "price_history_previous_czk": null,
       "price_history_previous_at": "2026-10-20T15:41:32+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_checked_at": "2026-10-22T15:36:06+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie",
         "Prací prostředky",
@@ -20080,7 +20719,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Tekutý prací prostředek Ariel na barevné prádlo nabízí účinné odstraňování skvrn i při krátkých pracích cyklech. Je navržen tak, aby chránil barvy a z",
-      "taxonomy_checked_at": "2026-10-22T15:36:06+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:36:06+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:36:06+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -20111,10 +20754,6 @@
       "price_history_previous_czk": null,
       "price_history_previous_at": "2026-10-20T15:41:31+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_checked_at": "2026-10-22T15:35:01+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie",
         "Prací prostředky",
@@ -20123,7 +20762,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Objevte kapsle Ariel Ultra Power PODS Color+ s dosud nejsilnějším složením Ariel a technologií TurboBoost Enzyme. Pomáhají odstraňovat odolné skvrny j",
-      "taxonomy_checked_at": "2026-10-22T15:35:01+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:35:01+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:35:01+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -20154,10 +20797,6 @@
       "price_history_previous_czk": null,
       "price_history_previous_at": "2026-10-20T15:41:32+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_checked_at": "2026-10-22T15:35:24+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie",
         "Prací prostředky",
@@ -20166,7 +20805,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Objevte kapsle Ariel Ultra Power PODS Color+ s dosud nejsilnějším složením Ariel a technologií TurboBoost Enzyme. Pomáhají odstraňovat odolné skvrny j",
-      "taxonomy_checked_at": "2026-10-22T15:35:24+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:35:24+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:35:24+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -20197,10 +20840,6 @@
       "price_history_previous_czk": null,
       "price_history_previous_at": "2026-10-20T15:41:31+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_checked_at": "2026-10-22T15:34:49+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie",
         "Prací prostředky",
@@ -20209,7 +20848,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Objevte kapsle Ariel Ultra Power PODS Universal+ s dosud nejsilnějším složením Ariel a technologií TurboBoost Enzyme. Pomáhají odstraňovat odolné skvr",
-      "taxonomy_checked_at": "2026-10-22T15:34:49+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:34:49+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:34:49+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -20240,10 +20883,6 @@
       "price_history_previous_czk": null,
       "price_history_previous_at": "2026-10-20T15:41:32+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_checked_at": "2026-10-22T15:35:12+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie",
         "Prací prostředky",
@@ -20252,7 +20891,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Objevte kapsle Ariel Ultra Power PODS Universal+ s dosud nejsilnějším složením Ariel a technologií TurboBoost Enzyme. Pomáhají odstraňovat odolné skvr",
-      "taxonomy_checked_at": "2026-10-22T15:35:12+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:35:12+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:35:12+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -20272,7 +20915,20 @@
       "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:45:32+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Prací prostředky",
+        "Prací kapsle/tablety",
+        "Univerzální"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Objevte všechny produkty Ariel.Kapsle na praní Ariel Allin1 PODS Winter Dream představují praktické řešení pro každodenní péči o prádlo. Tento prací p",
+      "taxonomy_checked_at": "2026-10-22T15:45:32+00:00"
     },
     {
       "store": "Rohlík",
@@ -20297,7 +20953,20 @@
       "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech",
-      "monitor_v27b_last_probe_at": "2026-10-22T08:18:31+00:00"
+      "monitor_v27b_last_probe_at": "2026-10-22T08:18:31+00:00",
+      "v27_category_checked_at": "2026-10-22T15:45:23+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Prací prostředky",
+        "Prací kapsle/tablety",
+        "Univerzální"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Objevte všechny produkty Ariel.Kapsle na praní Ariel Allin1 PODS Winter Dream přinášejí účinné praní s osvěžující vůní Lenor. Jsou navrženy pro odstra",
+      "taxonomy_checked_at": "2026-10-22T15:45:23+00:00"
     },
     {
       "store": "Rohlík",
@@ -20322,7 +20991,20 @@
       "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech",
-      "monitor_v27b_last_probe_at": "2026-10-22T08:17:51+00:00"
+      "monitor_v27b_last_probe_at": "2026-10-22T08:17:51+00:00",
+      "v27_category_checked_at": "2026-10-22T15:45:05+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Prací prostředky",
+        "Prací gely",
+        "Univerzální"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Objevte všechny produkty Ariel.Tekutý prací prostředek Ariel Winter Dream přináší prádlu čistotu a svěží vůni inspirovanou aviváží Lenor. Gel je vhodn",
+      "taxonomy_checked_at": "2026-10-22T15:45:05+00:00"
     },
     {
       "store": "Rohlík",
@@ -20347,7 +21029,20 @@
       "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech",
-      "monitor_v27b_last_probe_at": "2026-10-22T08:18:11+00:00"
+      "monitor_v27b_last_probe_at": "2026-10-22T08:18:11+00:00",
+      "v27_category_checked_at": "2026-10-22T15:45:14+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Prací prostředky",
+        "Prací gely",
+        "Univerzální"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Objevte všechny produkty Ariel.Tekutý prací prostředek Ariel Winter Dream s osvěžující vůní Lenor je určen pro efektivní praní prádla. Spolehlivě odst",
+      "taxonomy_checked_at": "2026-10-22T15:45:14+00:00"
     },
     {
       "store": "Rohlík",
@@ -20639,10 +21334,6 @@
       "price_history_previous_czk": null,
       "price_history_previous_at": "2026-10-20T14:27:33+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_checked_at": "2026-10-22T15:32:02+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Kosmetika",
         "Sprchové gely a mýdla a přísady do koupele",
@@ -20651,7 +21342,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Osvěžující exotická vůně s tóny zeleného jablka, skořice, citrusového bergamotu a hřejivého jantaru dodá energii a sebevědomí. Příjemná nasládlá vůně,",
-      "taxonomy_checked_at": "2026-10-22T15:32:02+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:32:02+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:32:02+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -20672,10 +21367,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:30:39+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Kosmetika",
         "Deodoranty a parfémy",
@@ -20684,7 +21375,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Axe Black deodorant sprej pro muže poskytuje ochranu proti zápachu a dodá svěží vůni pro každodenní použití. Vůně kombinuje svěžest s nádechem šťavnat",
-      "taxonomy_checked_at": "2026-10-22T15:30:39+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:30:39+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:30:39+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -20738,10 +21433,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:30:29+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Kosmetika",
         "Sprchové gely a mýdla a přísady do koupele",
@@ -20750,7 +21441,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Elegantní vůně s nádechem šťavnatého ovoce a dřevitých tónů, která vydrží až 12 hodin. Nová formulace s obsahem prebiotik přírodního původu likvidujíc",
-      "taxonomy_checked_at": "2026-10-22T15:30:29+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:30:29+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:30:29+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -20771,10 +21466,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:33:57+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Kosmetika",
         "Deodoranty a parfémy",
@@ -20783,7 +21474,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Axe Premium Black Vanilla deodorant z kolekce Axe Fine Fragrance Collection je deodorant, díky kterému budete každý den vonět tak dobře, jako byste si",
-      "taxonomy_checked_at": "2026-10-22T15:33:57+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:33:57+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:33:57+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -20804,10 +21499,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:33:46+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Kosmetika",
         "Deodoranty a parfémy",
@@ -20816,7 +21507,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Axe Premium Cherry Fizz deodorant z kolekce Axe Fine Fragrance Collection je deodorant, díky kterému budete každý den vonět tak dobře, jako byste si p",
-      "taxonomy_checked_at": "2026-10-22T15:33:46+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:33:46+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:33:46+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -20870,10 +21565,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:31:21+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Kosmetika",
         "Sprchové gely a mýdla a přísady do koupele",
@@ -20882,7 +21573,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Sprchový gel s vůní červeného pepře a jantaru s nádechem čokolády, která vydrží až 12 hodin. Nová formulace s obsahem prebiotik přírodního původu likv",
-      "taxonomy_checked_at": "2026-10-22T15:31:21+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:31:21+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:31:21+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -20936,10 +21631,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:31:10+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Kosmetika",
         "Deodoranty a parfémy",
@@ -20948,7 +21639,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Pánský deo sprej Axe Number 10 poskytuje ochranu proti zápachu až 48 hodin. Vůně kombinuje svěžest vodního melounu, bergamotu a hrušky s mořskými tóny",
-      "taxonomy_checked_at": "2026-10-22T15:31:10+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:31:10+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:31:10+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -20969,10 +21664,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:31:52+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Kosmetika",
         "Sprchové gely a mýdla a přísady do koupele",
@@ -20981,7 +21672,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Axe SG Number 10 FIFA je sprchový gel pro muže s moderní vůní kombinující tóny vodního melounu, bergamotu a hrušky. Vůně vydrží až 12 hodin. Složení o",
-      "taxonomy_checked_at": "2026-10-22T15:31:52+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:31:52+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:31:52+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -21012,10 +21707,6 @@
       "price_history_previous_czk": null,
       "price_history_previous_at": "2026-10-20T14:27:33+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_checked_at": "2026-10-22T15:31:31+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Kosmetika",
         "Sprchové gely a mýdla a přísady do koupele",
@@ -21024,7 +21715,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Axe Premium Black Vanilla sprchový gel z kolekce AXE Fine Fragrance Collection je sprchový gel, díky kterému budete každý den vonět tak dobře, jako by",
-      "taxonomy_checked_at": "2026-10-22T15:31:31+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:31:31+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:31:31+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -21055,10 +21750,6 @@
       "price_history_previous_czk": null,
       "price_history_previous_at": "2026-10-20T14:27:33+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_checked_at": "2026-10-22T15:31:42+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Kosmetika",
         "Sprchové gely a mýdla a přísady do koupele",
@@ -21067,7 +21758,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Axe Premium Cherry Fizz sprchový gel z kolekce AXE Fine Fragrance Collection je sprchový gel, díky kterému budete každý den vonět tak dobře, jako byst",
-      "taxonomy_checked_at": "2026-10-22T15:31:42+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:31:42+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:31:42+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -22585,9 +23280,9 @@
       "price_history_previous_czk": null,
       "price_history_previous_at": "2026-10-20T13:46:25+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_checked_at": "2026-10-22T15:34:28+00:00",
       "v27_category_probe_status": "category_missing",
       "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:34:28+00:00",
       "v27_category_probe_attempts": 1
     },
     {
@@ -23113,7 +23808,20 @@
       "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:43:53+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Čisticí prostředky",
+        "Kuchyň",
+        "Ve spreji / s rozprašovačem"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Náhradní náplň Cif Infinite Clean s vůní limetky a citronové trávy je určena pro opakované použití vašeho rozprašovače. Obsahuje přírodní probiotika,",
+      "taxonomy_checked_at": "2026-10-22T15:43:53+00:00"
     },
     {
       "store": "Rohlík",
@@ -23133,7 +23841,20 @@
       "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:43:35+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Čisticí prostředky",
+        "Kuchyň",
+        "Ve spreji / s rozprašovačem"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Univerzální čisticí sprej Cif s vůní limetky a citronové trávy je určen pro úklid různých povrchů v domácnosti. Díky obsahu přírodních probiotik pomáh",
+      "taxonomy_checked_at": "2026-10-22T15:43:35+00:00"
     },
     {
       "store": "Rohlík",
@@ -23153,7 +23874,20 @@
       "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:43:44+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Čisticí prostředky",
+        "Kuchyň",
+        "Ve spreji / s rozprašovačem"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Náhradní náplň Cif Infinite Clean Reload s vůní lotosu a minerální soli je určena pro opakované použití rozprašovače Cif. Využívá technologii s přírod",
+      "taxonomy_checked_at": "2026-10-22T15:43:44+00:00"
     },
     {
       "store": "Rohlík",
@@ -23173,7 +23907,20 @@
       "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:43:27+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Čisticí prostředky",
+        "Kuchyň",
+        "Ve spreji / s rozprašovačem"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Cif Infinite Clean je univerzální čisticí sprej s probiotiky pro úklid různých povrchů v domácnosti. Jemná mlha zajišťuje rovnoměrné nanesení a zanech",
+      "taxonomy_checked_at": "2026-10-22T15:43:27+00:00"
     },
     {
       "store": "Rohlík",
@@ -23674,7 +24421,20 @@
       "offer_valid_until": null,
       "price_history_previous_czk": null,
       "price_history_previous_at": "2026-10-20T15:49:32+00:00",
-      "drop_since_previous_pct": null
+      "drop_since_previous_pct": null,
+      "v27_category_checked_at": "2026-10-22T15:48:29+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Čisticí prostředky",
+        "Univerzální",
+        "Ve spreji/s rozprašovačem"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Multi-shine rozprašovač pro všechny skleněné povrchy.Univerzální čistič pro odstraňování nečistot, jako je prach, otisky prstů či skvrny od jídla. Roz",
+      "taxonomy_checked_at": "2026-10-22T15:48:29+00:00"
     },
     {
       "store": "Rohlík",
@@ -24428,10 +25188,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:36:48+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie",
         "Čisticí prostředky",
@@ -24440,7 +25196,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Pěna ve spreji Domestos Power Foam přináší pohodlnější a efektivnější čištění toalety v nové revoluční formě. Speciálně vyvinutý rozprašovač zbaví vaš",
-      "taxonomy_checked_at": "2026-10-22T15:36:48+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:36:48+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:36:48+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -24914,7 +25674,19 @@
       "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:49:13+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Plant Based",
+        "Alternativy mléčného a chlazeného",
+        "Rostlinné tuky a margaríny"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Rostlinný roztíratelný tuk se sníženým obsahem tuku 30 %.Vhodný na studenou kuchyni.PoužitíUrčeno k přímé&nbsp;spotřebě,&nbsp;k mazání na pečivo nebo",
+      "taxonomy_checked_at": "2026-10-22T15:49:13+00:00"
     },
     {
       "store": "Rohlík",
@@ -24934,7 +25706,19 @@
       "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:48:02+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Plant Based",
+        "Alternativy mléčného a chlazeného",
+        "Rostlinné tuky a margaríny"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Rostlinný roztíratelný tuk s obsahem tuku 39 %, vhodný na mazání a přípravu pomazánek a studenou kuchyni.PoužitíUrčeno k přímé&nbsp;spotřebě,&nbsp;k m",
+      "taxonomy_checked_at": "2026-10-22T15:48:02+00:00"
     },
     {
       "store": "Rohlík",
@@ -24987,7 +25771,20 @@
       "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:49:31+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Mozzarella, ricotta a salátové sýry",
+        "Mozzarella, burrata a ricotta"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Měkký plnotučný nezrající pařený sýr v nálevu.Mozzarella je italským sýrem s mléčnou&nbsp;chutí.&nbsp;Na výrobu jedné mozzarelly se ho totiž spotřebuj",
+      "taxonomy_checked_at": "2026-10-22T15:49:31+00:00"
     },
     {
       "store": "Rohlík",
@@ -25072,7 +25869,20 @@
       "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:49:22+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Mozzarella, ricotta a salátové sýry",
+        "Mozzarella, burrata a ricotta"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Měkký nezrající sýr v nálevu.Pro mozzarellu Galbani je typická šťavnatá mléčná chuť. V tomto praktickém balení najdete mini kuličky tradiční mozzarell",
+      "taxonomy_checked_at": "2026-10-22T15:49:22+00:00"
     },
     {
       "store": "Rohlík",
@@ -25224,7 +26034,20 @@
       "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:46:16+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Papírová a vatová hygiena",
+        "Ubrousky a utěrky",
+        "Kuchyňské utěrky"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Dvouvrstvé kuchyňské utěrky Harmony s motivem Boba a Bobka jsou bílé, bez parfemace a certifikované pro krátkodobý styk s potravinami. Balení obsahuje",
+      "taxonomy_checked_at": "2026-10-22T15:46:16+00:00"
     },
     {
       "store": "Rohlík",
@@ -25245,10 +26068,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:34:17+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie",
         "Papírová a vatová hygiena",
@@ -25257,7 +26076,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Kuchyňské utěrky Clean Expert jsou vhodné pro úklid v celé domácnosti. Hodí se na utírání pracovních ploch, odsávání tekutin i běžný úklid v kuchyni a",
-      "taxonomy_checked_at": "2026-10-22T15:34:17+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:34:17+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:34:17+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -25278,10 +26101,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:34:07+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie",
         "Papírová a vatová hygiena",
@@ -25290,7 +26109,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Kuchyňské utěrky Everyday Maxi jsou vhodné pro každodenní úklid v kuchyni i v domácnosti. Díky většímu návinu pomáhají omezit četnost nákupů a šetří m",
-      "taxonomy_checked_at": "2026-10-22T15:34:07+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:34:07+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:34:07+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -25311,10 +26134,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:34:38+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie",
         "Papírová a vatová hygiena",
@@ -25323,7 +26142,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Kuchyňské utěrky Harmony 3vrstvé v letní edici kombinují praktické použití a moderní potisk sicilských citronů. Balení obsahuje tři role s celkovým ná",
-      "taxonomy_checked_at": "2026-10-22T15:34:38+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:34:38+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:34:38+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -25375,7 +26198,19 @@
       "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:47:53+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Majonézy, tatarské omáčky a dresingy",
+        "Majonézy"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Krémová majonéza&nbsp;Hellmann’s s jemnou konzistencí a vyváženou chutí. Vzniká z pečlivě vybraných surovin – kvalitního rostlinného oleje, vajec z vo",
+      "taxonomy_checked_at": "2026-10-22T15:47:53+00:00"
     },
     {
       "store": "Rohlík",
@@ -25820,7 +26655,19 @@
       "offer_valid_until": null,
       "price_history_previous_czk": null,
       "price_history_previous_at": "2026-10-20T14:08:41+00:00",
-      "drop_since_previous_pct": null
+      "drop_since_previous_pct": null,
+      "v27_category_checked_at": "2026-10-22T15:48:38+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Mytí nádobí",
+        "Prostředky na ruční mytí"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Objevte všechny produkty Jar.Ať už se jedná o talíře a skleničky nebo hrnce a pánve – účinné složení Jaru si poradí s mastnotou i velice znečištěným n",
+      "taxonomy_checked_at": "2026-10-22T15:48:38+00:00"
     },
     {
       "store": "Rohlík",
@@ -25851,10 +26698,6 @@
       "price_history_previous_czk": null,
       "price_history_previous_at": "2026-10-20T15:49:52+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_checked_at": "2026-10-22T15:36:27+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie",
         "Mytí nádobí",
@@ -25863,7 +26706,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Kapsle do myčky nádobí Jar Original All in One kombinují tekutý prostředek a prášek pro efektivní odstranění mastnoty a zaschlých zbytků. Obsahují sůl",
-      "taxonomy_checked_at": "2026-10-22T15:36:27+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:36:27+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:36:27+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -25974,7 +26821,20 @@
       "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech",
-      "monitor_v27b_last_probe_at": "2026-10-22T08:18:19+00:00"
+      "monitor_v27b_last_probe_at": "2026-10-22T08:18:19+00:00",
+      "v27_category_checked_at": "2026-10-22T15:44:03+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Mytí nádobí",
+        "Tablety do myčky",
+        "Multifunkční"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Kapsle do myčky nádobí Jar Platinum Lemon představují praktické řešení pro každodenní mytí. Účinně odstraňují odolné nečistoty, zaschlou mastnotu i př",
+      "taxonomy_checked_at": "2026-10-22T15:44:03+00:00"
     },
     {
       "store": "Rohlík",
@@ -26048,10 +26908,6 @@
       "price_history_previous_czk": null,
       "price_history_previous_at": "2026-10-20T15:49:52+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_checked_at": "2026-10-22T15:36:38+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie",
         "Mytí nádobí",
@@ -26060,7 +26916,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Kapsle do myčky nádobí Jar Platinum All in One účinně odstraňují odolné nečistoty, zaschlou mastnotu a připálené jídlo. Ultrarozpustná kapsle se rychl",
-      "taxonomy_checked_at": "2026-10-22T15:36:38+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:36:38+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:36:38+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -26176,7 +27036,19 @@
       "offer_valid_until": null,
       "price_history_previous_czk": null,
       "price_history_previous_at": "2026-10-20T14:08:42+00:00",
-      "drop_since_previous_pct": null
+      "drop_since_previous_pct": null,
+      "v27_category_checked_at": "2026-10-22T15:44:12+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Mytí nádobí",
+        "Prostředky na ruční mytí"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Objevte všechny produkty Jar.Tekutý prostředek na mytí nádobí Jar Platinum Plus Lemon &amp; Lime nabízí účinné složení pro odstranění odolné mastnoty.",
+      "taxonomy_checked_at": "2026-10-22T15:44:12+00:00"
     },
     {
       "store": "Rohlík",
@@ -26201,7 +27073,20 @@
       "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech",
-      "monitor_v27b_last_probe_at": "2026-10-22T08:17:59+00:00"
+      "monitor_v27b_last_probe_at": "2026-10-22T08:17:59+00:00",
+      "v27_category_checked_at": "2026-10-22T15:43:18+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Mytí nádobí",
+        "Tablety do myčky",
+        "Multifunkční"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Objevte všechny produkty Jar.Kapsle do myčky nádobí Jar Platinum Plus Lemon kombinují tekutý prostředek a prášek pro účinné mytí i během krátkých cykl",
+      "taxonomy_checked_at": "2026-10-22T15:43:18+00:00"
     },
     {
       "store": "Rohlík",
@@ -26270,10 +27155,6 @@
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech",
       "monitor_v27b_last_probe_at": "2026-10-22T08:17:39+00:00",
-      "v27_category_checked_at": "2026-10-22T15:32:34+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie",
         "Mytí nádobí",
@@ -26282,7 +27163,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Objevte všechny produkty Jar.Kapsle Jar Platinum Plus All In One do automatické myčky nádobí zanechávají nádobí čisté jako nové a mají nejlepší čistic",
-      "taxonomy_checked_at": "2026-10-22T15:32:34+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:32:34+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:32:34+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -26806,10 +27691,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:32:55+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Mléčné a chlazené",
         "Sýry",
@@ -26818,7 +27699,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Král Sýrů Lahůdková paprika je sýrový výrobek s výraznou paprikovou chutí. Hodí se pro rychlé studené občerstvení i drobné pohoštění. Využijete ji na",
-      "taxonomy_checked_at": "2026-10-22T15:32:55+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:32:55+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:32:55+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -27207,7 +28092,19 @@
       "offer_valid_until": null,
       "price_history_previous_czk": null,
       "price_history_previous_at": "2026-10-20T13:49:51+00:00",
-      "drop_since_previous_pct": null
+      "drop_since_previous_pct": null,
+      "v27_category_checked_at": "2026-10-22T15:47:09+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Uzeniny a lahůdky",
+        "Šunky a slaniny",
+        "Drůbeží"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Výběrová, dušená šunka je vyrobena z chlazených krůtích prsou.Dětská krůtí šunka je charakteristická nízkým obsahem přídatných látek \"E\". Krůtí prsa j",
+      "taxonomy_checked_at": "2026-10-22T15:47:09+00:00"
     },
     {
       "store": "Rohlík",
@@ -27489,7 +28386,19 @@
       "offer_valid_until": null,
       "price_history_previous_czk": null,
       "price_history_previous_at": "2026-10-20T13:49:51+00:00",
-      "drop_since_previous_pct": null
+      "drop_since_previous_pct": null,
+      "v27_category_checked_at": "2026-10-22T15:49:49+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Uzeniny a lahůdky",
+        "Šunky a slaniny",
+        "Vepřové"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Dušená šunka nejvyšší jakosti je vyrobena z vybrané vepřové kýty, lehce zauzena přírodním kouřem. Podíl masa v šunce je 93&nbsp;%.Masný, tepelně oprac",
+      "taxonomy_checked_at": "2026-10-22T15:49:49+00:00"
     },
     {
       "store": "Rohlík",
@@ -27951,7 +28860,20 @@
       "offer_valid_until": null,
       "price_history_previous_czk": null,
       "price_history_previous_at": "2026-10-20T13:55:01+00:00",
-      "drop_since_previous_pct": null
+      "drop_since_previous_pct": null,
+      "v27_category_checked_at": "2026-10-22T15:49:40+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plátkové",
+        "Ementálský typ"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Plátkový sýr s vysokým obsahem vápníku.Už od roku 1978 je díky své jemné oříškové chuti považovaný za klasiku. Sýr Leerdammer&nbsp;Original je vhodný",
+      "taxonomy_checked_at": "2026-10-22T15:49:40+00:00"
     },
     {
       "store": "Rohlík",
@@ -28363,10 +29285,6 @@
       "price_history_previous_czk": null,
       "price_history_previous_at": "2026-10-20T15:44:05+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_checked_at": "2026-10-22T15:30:08+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie",
         "Prací prostředky",
@@ -28375,7 +29293,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Vonné perličky Lenor Ruby Jasmine přinášejí dlouhotrvající svěžest až na 12 týdnů při uskladnění prádla. Vůně je inspirována prémiovým červeným ovocem",
-      "taxonomy_checked_at": "2026-10-22T15:30:08+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:30:08+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:30:08+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -28490,10 +29412,6 @@
       "price_history_previous_czk": null,
       "price_history_previous_at": "2026-10-20T15:44:05+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_checked_at": "2026-10-22T15:36:17+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie",
         "Prací prostředky",
@@ -28501,7 +29419,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Aviváž Lenor Spring Awakening dodává prádlu dlouhotrvající svěžest a příjemnou vůni. Pomáhá chránit tkaniny před natahováním, blednutím a žmolkováním,",
-      "taxonomy_checked_at": "2026-10-22T15:36:17+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:36:17+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:36:17+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -28661,10 +29583,6 @@
       "price_history_previous_czk": null,
       "price_history_previous_at": "2026-10-20T15:41:32+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_checked_at": "2026-10-22T15:30:19+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie",
         "Prací prostředky",
@@ -28673,7 +29591,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Objevte všechny produkty Lenor.Objevte vonné perličky Lenor Unstoppables Scent of Ariel s technologií dlouhotrvající svěžesti, která zajistí vašemu pr",
-      "taxonomy_checked_at": "2026-10-22T15:30:19+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:30:19+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:30:19+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -28698,7 +29620,19 @@
       "monitor_v26_attempts": 2,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech",
-      "monitor_v27b_last_probe_at": "2026-10-22T08:18:48+00:00"
+      "monitor_v27b_last_probe_at": "2026-10-22T08:18:48+00:00",
+      "v27_category_checked_at": "2026-10-22T15:45:50+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Prací prostředky",
+        "Aviváže"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Aviváž Lenor Winter Dream z limitované edice poskytuje prádlu dlouhotrvající svěžest a ochranu tkanin. Pomáhá snižovat mačkání, usnadňuje žehlení a ch",
+      "taxonomy_checked_at": "2026-10-22T15:45:50+00:00"
     },
     {
       "store": "Rohlík",
@@ -28728,7 +29662,19 @@
       "offer_valid_until": null,
       "price_history_previous_czk": null,
       "price_history_previous_at": "2026-10-20T15:44:05+00:00",
-      "drop_since_previous_pct": null
+      "drop_since_previous_pct": null,
+      "v27_category_checked_at": "2026-10-22T15:45:41+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Prací prostředky",
+        "Aviváže"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Aviváž Lenor Winter Dream z limitované edice poskytuje prádlu dlouhotrvající svěžest a ochranu tkanin. Pomáhá snižovat mačkání, usnadňuje žehlení a ch",
+      "taxonomy_checked_at": "2026-10-22T15:45:41+00:00"
     },
     {
       "store": "Rohlík",
@@ -28758,7 +29704,20 @@
       "offer_valid_until": null,
       "price_history_previous_czk": null,
       "price_history_previous_at": "2026-10-20T15:44:05+00:00",
-      "drop_since_previous_pct": null
+      "drop_since_previous_pct": null,
+      "v27_category_checked_at": "2026-10-22T15:45:59+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Prací prostředky",
+        "Vonné perličky a parfémy",
+        "Vonné perličky"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Vonné perličky Lenor Winter Dream dodávají prádlu dlouhotrvající svěžest, která při uskladnění vydrží až 12 týdnů. Pro dosažení optimálních výsledků j",
+      "taxonomy_checked_at": "2026-10-22T15:45:59+00:00"
     },
     {
       "store": "Rohlík",
@@ -28788,7 +29747,20 @@
       "offer_valid_until": null,
       "price_history_previous_czk": null,
       "price_history_previous_at": "2026-10-20T15:44:05+00:00",
-      "drop_since_previous_pct": null
+      "drop_since_previous_pct": null,
+      "v27_category_checked_at": "2026-10-22T15:46:07+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Prací prostředky",
+        "Vonné perličky a parfémy",
+        "Vonné perličky"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Vonné perličky Lenor Winter Dream dodávají prádlu dlouhotrvající svěžest, která při uskladnění vydrží až 12 týdnů. Pro dosažení optimálních výsledků j",
+      "taxonomy_checked_at": "2026-10-22T15:46:07+00:00"
     },
     {
       "store": "Rohlík",
@@ -28808,7 +29780,19 @@
       "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:48:20+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Dítě",
+        "Pleny a ubrousky",
+        "Vlhčené ubrousky"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Čistící ubrousky napuštěné pečujícím mlékem s obsahem extraktu měsíčku lékařského.Ubrousky jsou ideální pro jemnou a šetrnou očistu pokožky vašeho děť",
+      "taxonomy_checked_at": "2026-10-22T15:48:20+00:00"
     },
     {
       "store": "Rohlík",
@@ -28959,10 +29943,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:35:45+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie",
         "Papírová a vatová hygiena",
@@ -28971,7 +29951,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Dvouvrstvé kuchyňské utěrky Linteo Den &amp; Noc představují praktického pomocníka pro každodenní úklid v domácnosti. Balení obsahuje dvě role s dobro",
-      "taxonomy_checked_at": "2026-10-22T15:35:45+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:35:45+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:35:45+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -29510,7 +30494,20 @@
       "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:44:47+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plátkové",
+        "Ostatní"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Tavený salámový sýr uzený v praktických plátcích nabízí jemnou konzistenci a charakteristickou uzenou chuť. Neobsahuje umělé konzervanty ani emulgátor",
+      "taxonomy_checked_at": "2026-10-22T15:44:47+00:00"
     },
     {
       "store": "Rohlík",
@@ -29682,7 +30679,19 @@
       "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:48:11+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Máslo, tuky a margaríny",
+        "Máslo"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Jihočeské máslo Madeta s obsahem tuku 82 %. Máslo je vyrobené z překapávané&nbsp;smetany a má jemnou přírodní chuť.&nbsp;Díky své krémové konzistenci",
+      "taxonomy_checked_at": "2026-10-22T15:48:11+00:00"
     },
     {
       "store": "Rohlík",
@@ -29702,7 +30711,20 @@
       "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:46:25+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plátkové",
+        "Eidam"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Jihočeský plátkový eidam s obsahem tuku v sušině 20 %. Příznivci zdravého životního stylu jistě ocení lehčí variantu přírodní eidamské cihly, která si",
+      "taxonomy_checked_at": "2026-10-22T15:46:25+00:00"
     },
     {
       "store": "Rohlík",
@@ -29854,7 +30876,20 @@
       "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:46:34+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plátkové",
+        "Ementálský typ"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Madeland, plátkovaný polotvrdý sýr holandského typu s tvorbou ok uvnitř. Obsah tuku v sušině je 45 %.Madeland je sýr se smetanově žlutou barvou, vláčn",
+      "taxonomy_checked_at": "2026-10-22T15:46:34+00:00"
     },
     {
       "store": "Rohlík",
@@ -30931,7 +31966,21 @@
       "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:47:18+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Trvanlivé",
+        "Sladkosti",
+        "Oplatky, sušenky a tyčinky",
+        "Oplatky",
+        "Oplatky s polevou"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Křehká oplatka s jemnou kokosovou náplní v lahodné mléčné čokoládě. Ideální svačinka do školy, práce a dlouhé cesty. Konkrétní varianta bude dodána dl",
+      "taxonomy_checked_at": "2026-10-22T15:47:18+00:00"
     },
     {
       "store": "Rohlík",
@@ -30951,7 +32000,21 @@
       "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:47:27+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Trvanlivé",
+        "Sladkosti",
+        "Oplatky, sušenky a tyčinky",
+        "Oplatky",
+        "Oplatky s polevou"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Křupavé oplatky s kakaovou náplní (45 %). Máčené v&nbsp;kakaové polevě. S moukou pocházející z Iniciativy Harmony pro udržitelné pěstování pšenice. Vy",
+      "taxonomy_checked_at": "2026-10-22T15:47:27+00:00"
     },
     {
       "store": "Rohlík",
@@ -30971,7 +32034,20 @@
       "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:47:36+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Trvanlivé",
+        "Sladkosti",
+        "Čokoládové tyčinky a figurky",
+        "Čokoládové tyčinky"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Vychutnej si Koko kdekoliv a kdykoliv.Zajímavá a lahodná kombinace bílé čokolády a tmavé kakaovooříškové náplně.PoužitíUrčeno k přímé konzumaci.O výro",
+      "taxonomy_checked_at": "2026-10-22T15:47:36+00:00"
     },
     {
       "store": "Rohlík",
@@ -30992,10 +32068,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:33:36+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Trvanlivé",
         "Sladkosti",
@@ -31004,7 +32076,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Koko oplatka od Orionu přináší známý chuťový profil tyčinky Koko v podobě křupavé oplatky. Kombinuje kokosovou náplň a polomáčení v mléčné polevě.Použ",
-      "taxonomy_checked_at": "2026-10-22T15:33:36+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:33:36+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:33:36+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -31025,10 +32101,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:28:19+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Trvanlivé",
         "Sladkosti",
@@ -31037,7 +32109,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Studentská pečeť mléčná čokoláda s bublinkami.PoužitíUrčeno k přímé konzumaci.O výrobciNestlé je švýcarská nadnárodní společnost se sídlem ve Vevey ve",
-      "taxonomy_checked_at": "2026-10-22T15:28:19+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:28:19+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:28:19+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -31058,10 +32134,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:28:09+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Trvanlivé",
         "Sladkosti",
@@ -31071,7 +32143,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Studentská pečeť mléčná čokoláda s bílými bublinkami.PoužitíUrčeno k přímé konzumaci.O výrobciNestlé je švýcarská nadnárodní společnost se sídlem ve V",
-      "taxonomy_checked_at": "2026-10-22T15:28:09+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:28:09+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:28:09+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -31159,7 +32235,21 @@
       "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:47:44+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Trvanlivé",
+        "Sladkosti",
+        "Čokolády",
+        "Mléčné čokolády",
+        "Mléčné čokolády s oříšky"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Mléčná čokoláda s arašídy, želé a rozinkami.PoužitíUrčeno k přímé konzumaci.O výrobciNestlé je švýcarská nadnárodní společnost se sídlem ve Vevey ve Š",
+      "taxonomy_checked_at": "2026-10-22T15:47:44+00:00"
     },
     {
       "store": "Rohlík",
@@ -31997,7 +33087,20 @@
       "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:44:56+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Kosmetika",
+        "Ústní hygiena",
+        "Zubní pasty",
+        "Pro citlivé zuby"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Zubní pasta Parodontax Intensive Gum Repair Intense Clean pomáhá při pravidelném používání zastavit krvácení dásní. Účinně odstraňuje zubní plak i zub",
+      "taxonomy_checked_at": "2026-10-22T15:44:56+00:00"
     },
     {
       "store": "Rohlík",
@@ -33087,10 +34190,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:33:05+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Uzeniny a lahůdky",
         "Párky, klobásy a špekáčky",
@@ -33098,7 +34197,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "BIO Farmářské klobásky od Ponnath jsou tepelně opracovaný masný výrobek s trvanlivým charakterem. Masný výrobek tepelně opracovaný.PoužitíPodávejte za",
-      "taxonomy_checked_at": "2026-10-22T15:33:05+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:33:05+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:33:05+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -33655,7 +34758,20 @@
       "offer_valid_until": null,
       "price_history_previous_czk": null,
       "price_history_previous_at": "2026-10-20T13:55:17+00:00",
-      "drop_since_previous_pct": null
+      "drop_since_previous_pct": null,
+      "v27_category_checked_at": "2026-10-22T15:46:43+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Smetanové, cottage a tavené",
+        "Tavené"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Président Sandwich Cheddar jsou tavené sýrové plátky ze sýru Cheddar.Sýr vyráběný v továrně v Lons Le Saunier v srdci kraje Franche-Comté s&nbsp;typic",
+      "taxonomy_checked_at": "2026-10-22T15:46:43+00:00"
     },
     {
       "store": "Rohlík",
@@ -33771,7 +34887,20 @@
       "offer_valid_until": null,
       "price_history_previous_czk": null,
       "price_history_previous_at": "2026-10-20T13:55:17+00:00",
-      "drop_since_previous_pct": null
+      "drop_since_previous_pct": null,
+      "v27_category_checked_at": "2026-10-22T15:46:51+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plátkové",
+        "Gouda"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Gouda je tvrdý sýr vyráběný z kravského mléka. Vyznačuje se jemnou vůní s lehkým oříškovým nádechem.PoužitíTento sýr má široké využití ve studené i te",
+      "taxonomy_checked_at": "2026-10-22T15:46:51+00:00"
     },
     {
       "store": "Rohlík",
@@ -34481,10 +35610,6 @@
       "price_history_previous_czk": null,
       "price_history_previous_at": "2026-10-20T14:01:33+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_checked_at": "2026-10-22T15:33:26+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Mléčné a chlazené",
         "Smetany, šlehačky a tvarohy",
@@ -34492,7 +35617,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Rama Crema na šlehání 31% je alternativou smetany na vaření, která vznikla kombinací podmáslí,&nbsp;rostlinného tuku a oleje. Po vyšlehání dosáhne při",
-      "taxonomy_checked_at": "2026-10-22T15:33:26+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:33:26+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:33:26+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -34523,10 +35652,6 @@
       "price_history_previous_czk": null,
       "price_history_previous_at": "2026-10-20T14:01:35+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_checked_at": "2026-10-22T15:33:15+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Mléčné a chlazené",
         "Smetany, šlehačky a tvarohy",
@@ -34534,7 +35659,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Rama Crema na vaření 15% je alternativou smetany na vaření, která vznikla kombinací podmáslí a rostlinného tuku na vaření. Je vhodná pro teplou kuchyn",
-      "taxonomy_checked_at": "2026-10-22T15:33:15+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:33:15+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:33:15+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -34740,7 +35869,20 @@
       "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:48:55+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Čisticí prostředky",
+        "Koupelna a WC",
+        "Čištění koupelny"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Účinný sprej Savo Koupelna rychle a šetrně odstraňuje usazené skvrny od vody a mýdla a vodní kámen.Čištěným povrchům dodává lesk a zanechává příjemnou",
+      "taxonomy_checked_at": "2026-10-22T15:48:55+00:00"
     },
     {
       "store": "Rohlík",
@@ -34760,7 +35902,20 @@
       "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:48:47+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Čisticí prostředky",
+        "Kuchyň",
+        "Ve spreji / s rozprašovačem"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Účinný sprej Savo Kuchyně šetrně odstraňuje mastnotu i usazené nečistoty ze všech omyvatelných ploch v kuchyni.Díky rozprašovači se snadno aplikuje, v",
+      "taxonomy_checked_at": "2026-10-22T15:48:47+00:00"
     },
     {
       "store": "Rohlík",
@@ -35018,7 +36173,20 @@
       "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:49:04+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Čisticí prostředky",
+        "Koupelna a WC",
+        "Čističe odpadu"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Savo Razant je vysoce účinný gelový prostředek se zesíleným účinkem na uvolnění ucpaných odpadů a na odstranění nepříjemného zápachu z nich.Má okamžit",
+      "taxonomy_checked_at": "2026-10-22T15:49:04+00:00"
     },
     {
       "store": "Rohlík",
@@ -35340,10 +36508,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:32:44+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Mléčné a chlazené",
         "Sýry",
@@ -35352,7 +36516,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Sedlčanský Hermelín pikantní je tradiční český plísňový sýr s pevnou kůrkou a jemným těstem. Chuť doplňuje směs zeleného pepře a chilli. Díky mlékařsk",
-      "taxonomy_checked_at": "2026-10-22T15:32:44+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:32:44+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:32:44+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -35588,10 +36756,6 @@
       "price_history_previous_czk": null,
       "price_history_previous_at": "2026-10-20T14:28:31+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_checked_at": "2026-10-22T15:30:50+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Kosmetika",
         "Ústní hygiena",
@@ -35600,7 +36764,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Dove Advanced Care jsou revoluční sprchové gely pro jemnou a hydratovanou pokožku jako po použití tělového mléka na celých 24 hodin. Každá pokožka je",
-      "taxonomy_checked_at": "2026-10-22T15:30:50+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:30:50+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:30:50+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -35631,10 +36799,6 @@
       "price_history_previous_czk": null,
       "price_history_previous_at": "2026-10-20T14:28:31+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_checked_at": "2026-10-22T15:31:00+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Kosmetika",
         "Ústní hygiena",
@@ -35643,7 +36807,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Dove Advanced Care jsou revoluční sprchové gely pro jemnou a hydratovanou pokožku jako po použití tělového mléka na celých 24 hodin. Každá pokožka je",
-      "taxonomy_checked_at": "2026-10-22T15:31:00+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:31:00+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:31:00+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -35706,7 +36874,19 @@
       "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:44:39+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Prací prostředky",
+        "Aviváže"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Aviváž Silan Aromatherapy Cape Town poskytuje prádlu hebkost a dlouhotrvající vůni díky obsahu esenciálních olejů. Je vhodná pro různé druhy textilií,",
+      "taxonomy_checked_at": "2026-10-22T15:44:39+00:00"
     },
     {
       "store": "Rohlík",
@@ -35822,7 +37002,19 @@
       "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:44:21+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Prací prostředky",
+        "Aviváže"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Aviváž Silan Aromatherapy Marrakesh dodává prádlu hebkost a příjemnou květinovou vůni. Její složení je vhodné pro všechny druhy textilií, včetně jemné",
+      "taxonomy_checked_at": "2026-10-22T15:44:21+00:00"
     },
     {
       "store": "Rohlík",
@@ -35874,7 +37066,19 @@
       "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:44:30+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Drogerie",
+        "Prací prostředky",
+        "Aviváže"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Aviváž Silan Aromatherapy Tokyo dodává prádlu hebkost a zanechává květinovou vůni obohacenou o esenciální oleje. Je vhodná pro všechny běžné druhy tex",
+      "taxonomy_checked_at": "2026-10-22T15:44:30+00:00"
     },
     {
       "store": "Rohlík",
@@ -35991,10 +37195,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:35:34+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Mléčné a chlazené",
         "Sýry",
@@ -36003,7 +37203,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Smetanito Gastro je smetanový tavený sýr s krémovou konzistencí pro každodenní vaření. Snadno se roztírá a dobře se zapracuje do teplých i studených r",
-      "taxonomy_checked_at": "2026-10-22T15:35:34+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:35:34+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:35:34+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -36590,10 +37794,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:32:12+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie",
         "Prací prostředky",
@@ -36602,7 +37802,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Vanish Oxi Action Extra Hygiene je tekutý odstraňovač skvrn pro praní, který pomáhá odstranit skvrny z prádla a podporuje hygienickou čistotu. Formule",
-      "taxonomy_checked_at": "2026-10-22T15:32:12+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:32:12+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:32:12+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -36821,10 +38025,6 @@
       "multibuy": [],
       "http_status": 200,
       "postcode_verified": false,
-      "v27_category_checked_at": "2026-10-22T15:32:23+00:00",
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_probe_attempts": 1,
       "store_category_path": [
         "Drogerie",
         "Čisticí prostředky",
@@ -36832,7 +38032,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Vanish Oxi Action prášek na čištění koberců pomáhá odstranit špínu a zachytit chlupy z domácnosti. Je vhodný pro koberce i čalounění a je bezpečný pro",
-      "taxonomy_checked_at": "2026-10-22T15:32:23+00:00"
+      "taxonomy_checked_at": "2026-10-22T15:32:23+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-22T15:32:23+00:00",
+      "v27_category_probe_attempts": 1
     },
     {
       "store": "Rohlík",
@@ -36977,7 +38181,20 @@
       "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "v27_category_checked_at": "2026-10-22T15:47:00+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_probe_attempts": 1,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Smetanové, cottage a tavené",
+        "Tavené"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Trojúhelníkový sýr Veselá kráva je jemný a krémový tavený sýr z kvalitních ingrediencí. Skvěle se roztírá, má praktické porce a je ideální pro celou r",
+      "taxonomy_checked_at": "2026-10-22T15:47:00+00:00"
     },
     {
       "store": "Rohlík",
@@ -37790,6 +39007,6 @@
   },
   "v27_probe_control": {
     "shop_backoff_until": {},
-    "last_batch_at": "2026-10-22T15:36:48+00:00"
+    "last_batch_at": "2026-10-22T15:50:23+00:00"
   }
 }
