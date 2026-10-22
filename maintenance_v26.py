@@ -40,13 +40,13 @@ def pick_items(items, limit=30, now=None):
         host=urlparse(url).hostname
         if host not in ('kosik.cz','www.kosik.cz','rohlik.cz','www.rohlik.cz'):continue
         if (shop=='Košík')!=('kosik.cz' in host):continue
-        if hours_since(row,now=now)<24:continue
+        if hours_since(row,now=now)<4:continue
         # Products without a price are checked first; all others rotate by last attempt.
         missing=row.get('price_status')!='ok'
         # Recently failing sources still remain eligible but do not overtake never-attempted URLs.
         attempts=int(row.get('monitor_v26_attempts',0))
-        rank=(0 if missing else 1,0 if attempts==0 else 1,
-              row.get('last_monitor_attempt_at',''),row.get('name',''))
+        rank=(row.get('last_monitor_attempt_at',''),0 if missing else 1,
+              row.get('name',''))
         queues[shop].append((rank,row))
     for shop in queues:queues[shop].sort(key=lambda x:x[0])
     result=[]
@@ -115,58 +115,141 @@ def inspect_saved(page,product):
             'offer':offer,'blocked':False,'note':offer.get('reason','Merchant price')}
 
 def run(args):
+    """Check both merchants concurrently, but only one request at a time per merchant.
+
+    Every result is applied in the main thread, preserving product order/identity.
+    Checkpoints are local until GitHub Actions' integrity gate approves publication.
+    """
+    from concurrent.futures import ThreadPoolExecutor
+    from queue import Queue
     from playwright.sync_api import sync_playwright
+
     cat=read(args.catalog,None)
-    if not isinstance(cat,dict) or not isinstance(cat.get('items'),list):raise RuntimeError('Invalid catalogue')
-    allrows=cat['items']; now=datetime.now(timezone.utc)
-    targets=pick_items(allrows,min(max(int(args.limit),1),35),now)
-    found=set();stats=collections.Counter();price_updates=0;new_drops=[]
+    if not isinstance(cat,dict) or not isinstance(cat.get('items'),list):
+        raise RuntimeError('Invalid catalogue')
+    allrows=cat['items']
+    now=datetime.now(timezone.utc)
+    targets=pick_items(allrows,min(max(int(args.limit),1),1200),now)
+    if not targets:
+        print('NO_ELIGIBLE_PRODUCTS: all stored URLs were checked recently',flush=True)
+        return 0
     positions={(p['store'],p['url']):i for i,p in enumerate(allrows)}
-    # All changes kept in memory. Never publish partial failure as fresh catalogue.
-    if not targets:raise RuntimeError('No product is eligible for safe daily verification')
-    with sync_playwright() as pw:
-        browser=pw.chromium.launch(headless=True,args=['--no-sandbox'])
-        context={s:browser.new_context(locale='cs-CZ',timezone_id='Europe/Prague',viewport={'width':1366,'height':900}) for s in ('Košík','Rohlík')}
-        pages={s:c.new_page() for s,c in context.items()}
+    assert len(positions)==len(allrows), 'Duplicate product identities: STOP'
+    by_shop={s:[p for p in targets if p['store']==s] for s in ('Košík','Rohlík')}
+    events=Queue()
+    stats=collections.Counter()
+    blocked=set()
+    price_updates=0
+    new_drops=[]
+    processed=0
+    done=set()
+
+    def shop_worker(shop,rows):
+        if not rows:
+            events.put(('done',shop,None,None))
+            return
         try:
-            for i,row in enumerate(targets,1):
-                shop=row['store']
-                if shop in found:continue
-                time.sleep(max(float(args.delay),2.5))
-                try:result=inspect_saved(pages[shop],row)
-                except Exception as e:result={'status':'error','price':None,'blocked':False,'note':type(e).__name__+': '+str(e)[:120]}
-                if result.get('blocked'):found.add(shop)
-                at=datetime.now(timezone.utc).isoformat(timespec='seconds')
-                revised=apply_result(row,price=result.get('price'),source=result.get('source'),
-                      offer=result.get('offer'),status=result['status'],checked_at=at,note=result.get('note',''))
-                allrows[positions[(shop,row['url'])]]=revised
-                stats[shop+'|'+result['status']]+=1
-                if result['status']=='ok':
-                    price_updates+=1
-                    if revised.get('drop_since_previous_pct') and revised['drop_since_previous_pct']>=5:
-                        new_drops.append({'store':shop,'url':row['url'],'name':row.get('name'),
-                          'previous':revised['price_history_previous_czk'],'now':revised['price_czk'],
-                          'drop_pct':revised['drop_since_previous_pct'],'checked_at':at})
-                print(f'[{i}/{len(targets)}] {shop}: {row.get("name", "")[:44]} – {result["status"]}',flush=True)
+            with sync_playwright() as pw:
+                browser=pw.chromium.launch(headless=True,args=['--no-sandbox'])
+                try:
+                    context=browser.new_context(locale='cs-CZ',timezone_id='Europe/Prague',
+                                                viewport={'width':1366,'height':900})
+                    try:
+                        page=context.new_page()
+                        consecutive_errors=0
+                        for row in rows:
+                            # Never issue parallel requests to the same retailer.
+                            time.sleep(max(float(args.delay),2.5))
+                            try:
+                                result=inspect_saved(page,row)
+                            except Exception as exc:
+                                result={'status':'error','price':None,'blocked':False,
+                                        'note':type(exc).__name__+': '+str(exc)[:120]}
+                            events.put(('result',shop,row,result))
+                            if result.get('blocked'):
+                                events.put(('blocked',shop,None,None))
+                                break
+                            if result.get('status') in ('error','http_error','throttled'):
+                                consecutive_errors+=1
+                                if consecutive_errors>=4:
+                                    events.put(('blocked',shop,None,None))
+                                    break
+                            else:
+                                consecutive_errors=0
+                    finally:
+                        context.close()
+                finally:
+                    browser.close()
+        except Exception as exc:
+            events.put(('worker_error',shop,None,str(exc)[:220]))
         finally:
-            for c in context.values():c.close()
-            browser.close()
-    cat['last_price_monitor_at']=datetime.now(timezone.utc).isoformat(timespec='seconds')
-    cat['verified_current_cycle']=sum(p.get('price_status')=='ok' for p in allrows)
-    cat['monitor_v26']={'processed':sum(stats.values()),'updated_prices':price_updates,
-                        'blocked_stores':sorted(found),'statuses':dict(stats),'last_price_monitor_at':cat['last_price_monitor_at']}
-    # Keep source crawl date generated_at unchanged: a price check is not a new full catalogue scan.
-    report={'schema':'rk-user-monitor-v26','at':cat['last_price_monitor_at'],**cat['monitor_v26'],
-            'new_drops':new_drops,'remaining_missing':sum(p.get('price_status')!='ok' for p in allrows)}
-    save(args.catalog,cat);save(args.report,report)
-    summary={'scanned':sum(stats.values()),'updated':price_updates,'remaining':report['remaining_missing'], 'new_drops':len(new_drops),'blocked':sorted(found)}
-    print('MONITOR v26',json.dumps(summary,ensure_ascii=False),flush=True)
+            events.put(('done',shop,None,None))
+
+    def write_report():
+        cat['last_price_monitor_at']=datetime.now(timezone.utc).isoformat(timespec='seconds')
+        cat['verified_current_cycle']=sum(p.get('price_status')=='ok' for p in allrows)
+        cat['monitor_v26']={
+            'processed':processed,'updated_prices':price_updates,
+            'requested':len(targets),'blocked_stores':sorted(blocked),
+            'statuses':dict(stats),'last_price_monitor_at':cat['last_price_monitor_at'],
+            'checked_last_6h':sum(hours_since(p,now=datetime.now(timezone.utc))<=6 for p in allrows),
+            'verified_price_last_6h':sum(p.get('price_status')=='ok' and
+               hours_since(p,key='checked_at',now=datetime.now(timezone.utc))<=6 for p in allrows)}
+        report={'schema':'rk-user-monitor-v26','at':cat['last_price_monitor_at'],
+                **cat['monitor_v26'],'new_drops':new_drops,
+                'remaining_missing':sum(p.get('price_status')!='ok' for p in allrows)}
+        save(args.catalog,cat)
+        save(args.report,report)
+        return report
+
+    with ThreadPoolExecutor(max_workers=2) as executor:
+        jobs=[executor.submit(shop_worker,shop,rows) for shop,rows in by_shop.items()]
+        while len(done)<2:
+            event,shop,row,result=events.get()
+            if event=='done':
+                done.add(shop)
+                continue
+            if event=='blocked':
+                blocked.add(shop)
+                print(f'BACKOFF: {shop} blocked or repeatedly failing; other store continues',flush=True)
+                continue
+            if event=='worker_error':
+                blocked.add(shop)
+                stats[shop+'|worker_error']+=1
+                print(f'WORKER ERROR {shop}: {result}',flush=True)
+                continue
+            at=datetime.now(timezone.utc).isoformat(timespec='seconds')
+            revised=apply_result(row,price=result.get('price'),source=result.get('source'),
+                    offer=result.get('offer'),status=result['status'],checked_at=at,
+                    note=result.get('note',''))
+            allrows[positions[(shop,row['url'])]]=revised
+            stats[shop+'|'+result['status']]+=1
+            processed+=1
+            if result['status']=='ok':
+                price_updates+=1
+                if revised.get('drop_since_previous_pct') and revised['drop_since_previous_pct']>=5:
+                    new_drops.append({'store':shop,'url':row['url'],'name':row.get('name'),
+                        'previous':revised['price_history_previous_czk'],
+                        'now':revised['price_czk'],
+                        'drop_pct':revised['drop_since_previous_pct'],'checked_at':at})
+            print(f'[{processed}/{len(targets)}] {shop}: {row.get("name", "")[:44]} – {result["status"]}',flush=True)
+            if processed%100==0:
+                write_report()  # local checkpoint; integrity gate controls publication
+                print(f'CHECKPOINT: {processed}/{len(targets)}',flush=True)
+        for job in jobs:
+            job.result()
+    report=write_report()
+    print('MONITOR v26 FAST',json.dumps({
+        'scanned':processed,'requested':len(targets),'updated':price_updates,
+        'remaining':report['remaining_missing'],'blocked':sorted(blocked),
+        'verified_price_last_6h':cat['monitor_v26']['verified_price_last_6h']},
+        ensure_ascii=False),flush=True)
     return 0 if price_updates>=1 else 2
 
 if __name__=='__main__':
     p=argparse.ArgumentParser()
     p.add_argument('--catalog',default='docs/data/catalog_latest.json')
     p.add_argument('--report',default='docs/data/monitor_v26_report.json')
-    p.add_argument('--limit',type=int,default=24)
+    p.add_argument('--limit',type=int,default=1200)
     p.add_argument('--delay',type=float,default=3.3)
     raise SystemExit(run(p.parse_args()))
