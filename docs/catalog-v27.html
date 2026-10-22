@@ -10,6 +10,65 @@ main{max-width:1780px;margin:auto;padding:20px 24px}.notice{border:1px solid #ea
 @media(max-width:850px){main{padding:12px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.panel{padding:13px}.filters label{flex:1;min-width:145px}.stat strong{font-size:23px}}
 .quick{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:13px}.quick button{border:1px solid #cfdae7;background:#fff;border-radius:8px;padding:10px 13px;cursor:pointer;color:#263a56;font-weight:700}.quick button.active{color:#fff;background:#173f64;border-color:#173f64}.fav{background:none;border:0;font-size:23px;cursor:pointer;color:#a4b3c5}.fav.selected{color:#c38b22}.stamp{font-size:11px;color:#74849a}.meta{font-size:11px;color:#60738a;margin-top:5px}.del{color:#ba5a40;font-weight:700;white-space:nowrap}.light{color:#8998a8}.old{font-size:11px;color:#8998a8;text-decoration:line-through}.mobile{display:none}.mobile-card{background:white;border:1px solid #e3eaf1;border-radius:9px;padding:12px;margin-bottom:9px}.mobile-card h3{font-size:14px;margin:0 0 6px}.mobile-top{display:flex;justify-content:space-between;gap:8px}.mobile-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:8px;font-size:12px}.empty-note{text-align:center;color:#77869b;padding:20px}.filters .smallfilter{min-width:155px}
 @media(max-width:850px){.wrap{display:none}.mobile{display:block}.quick button{flex:1}.pager{justify-content:space-between}}
+
+/* UAT8 mobile-first product cards; desktop table stays unchanged. */
+.mobile-toolbar{display:none}
+.mobile-card__bar,.mobile-card__core,.mobile-card__bottom,.mobile-card__meta{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.mobile-card__bar{margin-bottom:12px}
+.mobile-card__shop{font-size:11px;font-weight:800;color:#2e5072;background:#ecf3fa;border-radius:999px;padding:5px 10px}
+.mobile-card__status{font-size:11px;font-weight:750;color:#885e21;background:#fff5df;border-radius:999px;padding:5px 9px}
+.mobile-card__status.verified{color:#19674d;background:#e9f7ef}
+.mobile-card__status.mismatch{color:#9e4239;background:#ffedeb}
+.mobile-card__core{align-items:flex-start;justify-content:flex-start}
+.mobile-card__photo{width:76px;height:76px;border:1px solid #e8edf3;object-fit:contain;background:#fff;border-radius:10px;flex-shrink:0;padding:4px}
+.mobile-card__photo--empty{display:flex;align-items:center;justify-content:center;background:#f4f7fa;color:#8795a5;font-size:11px}
+.mobile-card__identity{min-width:0;flex:1}
+.mobile-card__identity h3{font-size:14px;line-height:1.36;margin:0 0 6px;overflow-wrap:anywhere;color:#172c49}
+.mobile-card__category{font-size:12px;color:#506983;line-height:1.45}
+.mobile-card__bottom{margin-top:14px;border-top:1px solid #e9eef3;padding-top:12px;align-items:center}
+.mobile-card__price{font-size:20px;font-weight:850;letter-spacing:-.45px;color:#137954;white-space:nowrap}
+.mobile-card__price.missing{font-size:14px;letter-spacing:0;color:#986b24}
+.mobile-card__price-note{font-size:10px;color:#7b8999;margin-top:3px}
+.mobile-card__sale{font-size:11px;font-weight:750;color:#bb4e39}
+.mobile-card__link{background:#183f66;color:#fff!important;text-align:center;text-decoration:none;border-radius:9px;padding:11px 13px;font-size:12px;font-weight:800;white-space:nowrap;min-height:42px}
+.mobile-card__link:focus-visible,.mobile-toolbar button:focus-visible,.mobile-more summary:focus-visible{outline:3px solid #689bdd;outline-offset:2px}
+.mobile-more{margin-top:10px;border-top:1px dashed #e3e9f0;padding-top:9px}
+.mobile-more summary{cursor:pointer;color:#346187;font-size:12px;font-weight:750;list-style:revert;min-height:28px}
+.mobile-more__info{padding:5px 0 3px;font-size:11px;color:#61758d;overflow-wrap:anywhere;line-height:1.65}
+.mobile-card .fav{min-width:44px;min-height:44px;border-radius:9px;font-size:26px;flex-shrink:0}
+.mobile-card .fav:focus-visible{outline:3px solid #689bdd;outline-offset:2px}
+@media(max-width:850px){
+ html,body{width:100%;max-width:100%;overflow-x:clip}
+ header{padding:17px 16px 14px}h1{font-size:20px;line-height:1.2}header p{font-size:11px;line-height:1.5}
+ main{padding:12px 11px 22px}.notice{padding:10px 12px;font-size:11px;line-height:1.45;margin-bottom:10px}
+ .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin-bottom:10px}
+ .stat{padding:11px 9px;min-width:0}.stat strong{font-size:21px;letter-spacing:-.4px}.stat span{font-size:10px;line-height:1.28;display:block;margin-top:3px}
+ .shopcoverage{gap:7px;margin:0 0 12px}.shopcover{padding:10px 12px;min-width:0;flex:1 1 45%;font-size:11px}
+ .shopcover strong{font-size:11px}
+ .quick{display:flex;flex-wrap:nowrap;overflow-x:auto;scroll-snap-type:x proximity;scrollbar-width:none;-webkit-overflow-scrolling:touch;gap:7px;padding:0 1px 10px;margin:0 0 3px}
+ .quick::-webkit-scrollbar{display:none}.quick button{flex:0 0 auto;white-space:nowrap;scroll-snap-align:start;min-height:42px;font-size:12px;padding:10px 12px}
+ .panel{padding:12px;border-radius:12px}
+ .mobile-toolbar{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:10px}
+ .mobile-toolbar button{background:#eff4f9;color:#24486b;font-size:13px;font-weight:750;border:1px solid #d4e0ec;border-radius:9px;padding:10px 14px;min-height:43px;cursor:pointer}
+ .mobile-toolbar span{font-size:11px;color:#6e8096}
+ .filters{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+ .filters label,.filters .smallfilter,.filters .search{min-width:0;max-width:none;flex:none;width:100%;font-size:11px;line-height:1.3}
+ .filters select,.filters input{min-width:0;width:100%;height:44px;font-size:16px;padding:8px 9px}
+ .filters .search{grid-column:1/-1;grid-row:1}
+ .filters.is-collapsed>label:not(.search){display:none}
+ .summary{padding:12px 0;font-size:11px;line-height:1.4}
+ .wrap{display:none}.mobile{display:block}.mobile-card{padding:13px;margin-bottom:9px;border-radius:12px;box-shadow:0 1px 3px #1b355006}
+ .pager{position:relative;justify-content:space-between;gap:6px;margin-top:10px}
+ .pager button{min-height:44px;padding:10px 14px;font-size:12px}.pager button:disabled{opacity:.4}.pager span{font-size:11px;white-space:nowrap}
+ footer{font-size:10px;line-height:1.5;padding:14px 3px}
+}
+@media(max-width:370px){
+ .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .mobile-card__photo{width:65px;height:65px}
+ .mobile-card__price{font-size:18px}
+ .shopcover{flex-basis:100%}
+}
+@media(prefers-reduced-motion:reduce){.quick{scroll-behavior:auto}}
 </style>
 </head>
 <body>
@@ -26,7 +85,7 @@ main{max-width:1780px;margin:auto;padding:20px 24px}.notice{border:1px solid #ea
 <button type="button" data-view="missing">Bez ceny <span id="qMissing">—</span></button>
 <button type="button" data-view="review">Zařazení/pravidla k prověření <span id="qReview">—</span></button>
 </div>
-<section class="panel"><div class="filters">
+<section class="panel"><div class="mobile-toolbar"><button id="toggleMobileFilters" type="button" aria-expanded="false" aria-controls="mobileFilters">☷ Další filtry a řazení</button><span>Vyhledávání vždy po ruce</span></div><div class="filters is-collapsed" id="mobileFilters">
 <label>Obchod<select id="shop"><option value="">Oba obchody</option><option>Košík</option><option>Rohlík</option></select></label>
 <label>Ověřená kategorie e-shopu<select id="category"><option value="">Všechny kategorie</option></select></label>
 <label title="U výrobků bez potvrzené kategorie slouží pouze k procházení katalogu, nikoli k jejich automatickému zařazení.">Sledovaná skupina (původní pravidlo)<select id="rulecat"><option value="">Všechny sledované skupiny</option></select></label>
@@ -60,7 +119,7 @@ function selectView(k){view=k;document.querySelectorAll('[data-view]').forEach(b
 const fmt=x=>typeof x==='number'&&Number.isFinite(x)?x.toLocaleString('cs-CZ',{style:'currency',currency:'CZK'}):'Neověřeno';
 const node=(tag,text,cls)=>{const x=document.createElement(tag);if(text!==undefined)x.textContent=String(text);if(cls)x.className=cls;return x};
 function favoriteButton(p){let b=node('button',favs.has(key(p))?'★':'☆','fav'+(favs.has(key(p))?' selected':''));b.type='button';b.title=favs.has(key(p))?'Odebrat z oblíbených':'Přidat do oblíbených';b.setAttribute('aria-label',b.title);b.addEventListener('click',()=>{if(favs.has(key(p)))favs.delete(key(p));else favs.add(key(p));recordFavs();$('qFavs').textContent=favs.size;apply()});return b;}
-function render(){const start=page*100, list=subset.slice(start,start+100);$('rows').replaceChildren();$('cards').replaceChildren();
+function render(){const per=window.matchMedia('(max-width:850px)').matches?20:100;const pages=Math.max(1,Math.ceil(subset.length/per));page=Math.min(page,pages-1);const start=page*per, list=subset.slice(start,start+per);$('rows').replaceChildren();$('cards').replaceChildren();
  for(const p of list){const c=p.category_v27||{},t=p.price_diagnostic_v27||{},tr=node('tr');
  let td=node('td');td.append(favoriteButton(p));tr.append(td);
  td=node('td',p.store||'?');tr.append(td);
@@ -79,19 +138,48 @@ function render(){const start=page*100, list=subset.slice(start,start+100);$('ro
  tr.append(td);
  td=node('td',t.status==='ok'?'Evidována':(t.reason||'Neznámý stav'));tr.append(td);
  td=node('td');const a=node('a','Otevřít ↗');if(/^https:\/\/(?:www\.)?(?:kosik|rohlik)\.cz\//.test(p.url||'')){a.href=p.url;a.target='_blank';a.rel='noopener noreferrer';td.append(a)}tr.append(td);$('rows').append(tr);
- const card=node('article',undefined,'mobile-card'),top=node('div',undefined,'mobile-top');
- const name=node('h3',p.title||p.name||'—');top.append(name,favoriteButton(p));card.append(top);
- card.append(node('div',p.store+' · '+(c.display_category||'Ke kontrole'),'meta'));
- const data=node('div',undefined,'mobile-grid');
- data.append(node('div',isPrice(p)?fmt(p.price_czk):'Bez ceny','price'),node('div',promo(p)?'Sleva −'+p.discount_pct+' %':(c.status==='verified'?'✓ Pravidlo potvrzeno':c.status==='mismatch'?'⚠ Nesoulad pravidla':'? Varianta/kategorie k prověření'),'meta'));card.append(data);
- card.append(node('div',(p.store_category_path||[]).join(' › ')||'Bez kategorie e-shopu','path'));
- if(c.status!=='verified'&&c.expected_from_rules?.length)card.append(node('div','Původní sledování (neověřené): '+c.expected_from_rules.join(', '),'meta'));
- const link=node('a','Detail výrobku ↗');if(/^https:\/\/(?:www\.)?(?:kosik|rohlik)\.cz\//.test(p.url||'')){link.href=p.url;link.target='_blank';link.rel='noopener noreferrer';card.append(link)}$('cards').append(card);
+ const card=node('article',undefined,'mobile-card');
+ const bar=node('div',undefined,'mobile-card__bar');
+ bar.append(node('span',p.store||'E-shop','mobile-card__shop'));
+ const statusLabel=c.status==='verified'?'✓ Potvrzeno':c.status==='mismatch'?'⚠ Nesoulad':'◷ Ke kontrole';
+ bar.append(node('span',statusLabel,'mobile-card__status '+(c.status||'review')));
+ bar.append(favoriteButton(p));card.append(bar);
+ const core=node('div',undefined,'mobile-card__core');
+ const picUrl=String(p.image_url||'');
+ if(/^https:\/\//i.test(picUrl)){
+   const photo=node('img',undefined,'mobile-card__photo');photo.alt='';photo.loading='lazy';photo.src=picUrl;
+   photo.onerror=()=>photo.replaceWith(node('div','Bez foto','mobile-card__photo mobile-card__photo--empty'));
+   core.append(photo);
+ }else core.append(node('div','Bez foto','mobile-card__photo mobile-card__photo--empty'));
+ const identity=node('div',undefined,'mobile-card__identity');
+ identity.append(node('h3',p.title||p.name||'—'));
+ identity.append(node('div',c.display_category||'Kategorie k prověření','mobile-card__category'));
+ core.append(identity);card.append(core);
+ const bottom=node('div',undefined,'mobile-card__bottom');
+ const priceBox=node('div');
+ priceBox.append(node('div',isPrice(p)?fmt(p.price_czk):'Cena nezjištěna','mobile-card__price'+(isPrice(p)?'':' missing')));
+ priceBox.append(node('div',isPrice(p)?(freshPrice(p)?'Cena ≤ 72 h':'Starší cenový údaj'):'Cena není ověřená','mobile-card__price-note'));
+ if(promo(p))priceBox.append(node('div','Sleva −'+p.discount_pct+' %','mobile-card__sale'));
+ else if(drop(p))priceBox.append(node('div','Pokles −'+p.drop_since_previous_pct+' %','mobile-card__sale'));
+ bottom.append(priceBox);
+ if(/^https:\/\/(?:www\.)?(?:kosik|rohlik)\.cz\//.test(p.url||'')){
+   const link=node('a','Otevřít v e-shopu ↗','mobile-card__link');link.href=p.url;link.target='_blank';link.rel='noopener noreferrer';bottom.append(link);
+ }
+ card.append(bottom);
+ const more=node('details',undefined,'mobile-more');more.append(node('summary','Kategorie, stav a podrobnosti'));
+ const info=node('div',undefined,'mobile-more__info');
+ info.append(node('div','Kategorie prodejce: '+((p.store_category_path||[]).join(' › ')||'Neověřena')));
+ if(c.expected_from_rules?.length)info.append(node('div','Sledovaná skupina: '+c.expected_from_rules.join(', ')+' (původní pravidlo)'));
+ info.append(node('div','Shoda pravidla: '+statusLabel));
+ if(c.reason)info.append(node('div','Odůvodnění: '+c.reason));
+ if(t.status && t.status!=='ok')info.append(node('div','Diagnostika ceny: '+(t.reason||t.status)));
+ info.append(node('div','Poslední cena: '+(p.checked_at||'Bez data')));
+ more.append(info);card.append(more);$('cards').append(card);
  }
  if(!list.length){const td=node('td','Žádný výrobek neodpovídá filtrům.','empty-note');td.colSpan=8;const tr=node('tr');tr.append(td);$('rows').append(tr);$('cards').append(node('div','Žádný výrobek neodpovídá filtrům.','empty-note'));}
- $('shown').textContent=`Zobrazeno ${subset.length} ze ${catalog.items.length} výrobků. Strana ${page+1}/${Math.max(1,Math.ceil(subset.length/100))}.`;
- $('pages').textContent=`${page+1} / ${Math.max(1,Math.ceil(subset.length/100))}`;
- $('prev').disabled=page===0;$('next').disabled=(page+1)*100>=subset.length;
+ $('shown').textContent=`Zobrazeno ${subset.length} ze ${catalog.items.length} výrobků. Strana ${page+1}/${pages}.`;
+ $('pages').textContent=`${page+1} / ${pages}`;
+ $('prev').disabled=page===0;$('next').disabled=(page+1)*per>=subset.length;
 }
 function apply(){if(!catalog)return;const shop=$('shop').value,cat=$('category').value,rulecat=$('rulecat').value,cs=$('catstate').value,ps=$('pstate').value,q=$('q').value.toLocaleLowerCase('cs');
  subset=catalog.items.filter(p=>{
@@ -103,7 +191,8 @@ function apply(){if(!catalog)return;const shop=$('shop').value,cat=$('category')
  page=0;render();}
 for(const id of ['shop','category','rulecat','catstate','pstate','sort','q'])$(id).addEventListener(id==='q'?'input':'change',apply);
 document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>selectView(b.dataset.view)));
-$('prev').onclick=()=>{if(page>0){page--;render()}};$('next').onclick=()=>{if((page+1)*100<subset.length){page++;render()}};
+$('toggleMobileFilters').onclick=()=>{const box=$('mobileFilters'),button=$('toggleMobileFilters');const expanded=box.classList.toggle('is-collapsed')===false;button.setAttribute('aria-expanded',String(expanded));button.textContent=expanded?'☷ Skrýt další filtry':'☷ Další filtry a řazení'};window.matchMedia('(max-width:850px)').addEventListener('change',()=>{page=0;if(catalog)render()});
+$('prev').onclick=()=>{if(page>0){page--;render()}};$('next').onclick=()=>{const per=window.matchMedia('(max-width:850px)').matches?20:100;if((page+1)*per<subset.length){page++;render()}};
 (async()=>{try{const res=await fetch('data/catalog_v27.json?'+Date.now(),{cache:'no-store'});if(!res.ok)throw Error('HTTP '+res.status);
  catalog=await res.json();if(!Array.isArray(catalog.items)||catalog.schema!=='rk-v27-catalogue-preview-1')throw Error('Neplatný náhled v27');
  const a=catalog.v27_audit||{};
