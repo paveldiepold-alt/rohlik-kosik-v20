@@ -1,0 +1,99 @@
+name: Monitor slev v27 - Cenova diagnostika (bez zapisu)
+"on":
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: 'Pocet vybranych produktu, 1-25 (doporuceno 12)'
+        type: string
+        required: false
+        default: '12'
+      delay:
+        description: 'Mezera mezi pokusy, 4-60 sekund (doporuceno 4)'
+        type: string
+        required: false
+        default: '4'
+permissions:
+  contents: read
+concurrency:
+  group: rk-v20-catalog
+  cancel-in-progress: false
+jobs:
+  diagnose-prices:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    env:
+      INPUT_LIMIT: ${{ inputs.limit || '12' }}
+      INPUT_DELAY: ${{ inputs.delay || '4' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Unit tests and argument checks
+        run: |
+          set -euo pipefail
+          python -m unittest discover -s tests -p test_price_probe_v27.py -v
+          python - <<'PY'
+          import os
+          n=int(os.environ['INPUT_LIMIT']);delay=float(os.environ['INPUT_DELAY'])
+          assert 1<=n<=25 and 4<=delay<=60
+          PY
+      - name: Read source catalogue and certified parser from v26 branch
+        run: |
+          set -euo pipefail
+          mkdir -p .v27-price/deps
+          git fetch --no-tags origin '+refs/heads/fix/real-product-price-reading-v20:refs/remotes/origin/fix/real-product-price-reading-v20'
+          git show origin/fix/real-product-price-reading-v20:docs/data/catalog_latest.json > .v27-price/source.json
+          for f in monitor.py visible_price.py price_v22.py price_v23.py; do
+            git show "origin/fix/real-product-price-reading-v20:$f" > ".v27-price/deps/$f"
+          done
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          x=json.loads(Path('.v27-price/source.json').read_text())
+          assert len(x['items']) >= 1090
+          assert len({(p['store'],p['url']) for p in x['items']})==len(x['items'])
+          PY
+      - name: Install Chromium browser
+        run: |
+          python -m pip install --disable-pip-version-check playwright==1.56.0
+          python -m playwright install --with-deps chromium
+      - name: Read-only current price diagnosis
+        run: |
+          set -euo pipefail
+          before=$(sha256sum .v27-price/source.json | cut -d' ' -f1)
+          PYTHONPATH=.v27-price/deps:. python price_probe_v27.py \
+            --input .v27-price/source.json --report .v27-price/report.json \
+            --limit "$INPUT_LIMIT" --delay "$INPUT_DELAY"
+          after=$(sha256sum .v27-price/source.json | cut -d' ' -f1)
+          test "$before" = "$after"
+          test -z "$(git status --porcelain -- docs/data/catalog_latest.json docs/catalog.html)"
+      - name: Summarize observed price candidate results
+        if: always()
+        run: |
+          python - <<'PY'
+          import os,json
+          from pathlib import Path
+          p=Path('.v27-price/report.json')
+          lines=['## Monitor slev v27 – Diagnostika chybejicich cen','']
+          if p.exists():
+            d=json.loads(p.read_text())
+            for key in ('catalog_products','catalog_priced_before','catalog_missing_before','attempted','blocked_shops','statuses','candidate_prices_observed_but_not_written'):
+              lines.append(f'- **{key}:** {d.get(key)}')
+          else: lines.append('Běh skončil před vytvořením diagnostiky; zkontrolujte job log.')
+          lines.append('')
+          lines.append('ZÁMĚRNĚ BEZ ZÁPISU: žádná cena ani produkt v26 nebyly změněny.')
+          with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as f: f.write('\n'.join(lines)+'\n')
+          PY
+      - name: Preserve diagnostic artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: monitor-slev-v27-price-diagnostic
+          path: .v27-price/report.json
+          if-no-files-found: ignore
+          retention-days: 30

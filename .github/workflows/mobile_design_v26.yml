@@ -1,0 +1,90 @@
+name: Monitor slev - mobilni design v26 (manual)
+"on":
+  workflow_dispatch:
+    inputs:
+      deploy:
+        description: 'true = nasadit pouze HTML mobilni vzhled na verejnou v26; false = jen otestovat a ulozit nahled'
+        required: true
+        type: boolean
+        default: false
+permissions:
+  contents: write
+concurrency:
+  group: rk-v20-catalog
+  cancel-in-progress: false
+jobs:
+  mobile-layout:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Checkout development files from main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fetch latest published HTML and apply safe CSS/HTML-only patch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch --no-tags origin '+refs/heads/fix/real-product-price-reading-v20:refs/remotes/origin/fix/real-product-price-reading-v20'
+          mkdir -p .mobile-build
+          git show 'origin/fix/real-product-price-reading-v20:docs/catalog.html' > .mobile-build/original.html
+          python apply_v26_mobile_layout.py .mobile-build/original.html .mobile-build/catalog.html
+          python - <<'PY'
+          from pathlib import Path
+          old=Path('.mobile-build/original.html').read_text(encoding='utf-8')
+          new=Path('.mobile-build/catalog.html').read_text(encoding='utf-8')
+          assert new.count('id="mobileCards"') == 1
+          assert 'th:nth-child(4){width:31%}' in new
+          assert old.count('th:nth-child(3){width:31%}') == 1
+          assert "./data/catalog_latest.json?ts=" in new
+          assert "./data/catalog_latest.json?ts=" in old
+          assert new.count('<script>') == old.count('<script>')
+          assert 'mobileCards' not in old, 'Patch already installed; stop'
+          print('PASS: only frontend layout patch. Price catalogue is not opened for writing.')
+          js = new.split('<script>',1)[1].split('</script>',1)[0]
+          Path('.mobile-build/page.js').write_text(js,encoding='utf-8')
+          PY
+          node --check .mobile-build/page.js
+      - name: Upload HTML preview before deployment
+        uses: actions/upload-artifact@v4
+        with:
+          name: monitor-slev-v26-mobilni-nahled
+          path: .mobile-build/catalog.html
+          retention-days: 30
+      - name: Deploy only when deploy checkbox was explicitly set
+        if: ${{ inputs.deploy == true }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          BRANCH='fix/real-product-price-reading-v20'
+          git worktree add --detach .mobile-target "origin/${BRANCH}"
+          cp .mobile-build/catalog.html .mobile-target/docs/catalog.html
+          cd .mobile-target
+          git diff --check
+          paths=$(git diff --name-only)
+          test "$paths" = 'docs/catalog.html'
+          test -z "$(git status --porcelain -- docs/data/)"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- docs/catalog.html
+          git commit -m 'style: responsive mobile cards and column width correction [skip ci]'
+          git push origin "HEAD:refs/heads/${BRANCH}"
+      - name: Summary
+        if: always()
+        shell: bash
+        run: |
+          {
+            echo '## Monitor slev – mobilni layout'
+            echo ''
+            echo 'Publikovany katalog a ceny nejsou zmeneny.'
+            if [ '${{ inputs.deploy }}' = 'true' ]; then
+              echo 'Pozadovan deploy mobilniho HTML na verejnou v26 – zkontroluj stav deploy kroku.'
+            else
+              echo 'Pouze kontrolni spusteni, zadny zapis do v26. HTML je v artefaktu.'
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
