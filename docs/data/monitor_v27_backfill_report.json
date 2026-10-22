@@ -1,0 +1,130 @@
+{
+  "schema": "rk-v27-missing-price-backfill",
+  "started_at": "2026-10-22T06:05:00+00:00",
+  "finished_at": "2026-10-22T06:11:40+00:00",
+  "requested": 100,
+  "selected": 100,
+  "attempted": 100,
+  "newly_priced": 82,
+  "priced_before": 904,
+  "priced_after": 986,
+  "missing_before": 186,
+  "remaining_missing": 104,
+  "blocked_stores": [],
+  "statuses": {
+    "Rohlík|ok": 82,
+    "Rohlík|price_unverified": 18
+  },
+  "failure_examples": [
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1353703-farma-rodiny-nemcovy-kureci-stehna",
+      "status": "price_unverified",
+      "reason": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1315777-persil-color-praci-gel-0-99-l",
+      "status": "price_unverified",
+      "reason": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1293753-sedlcansky-hermelin-na-gril-s-grilovacim-korenim-4-ks",
+      "status": "price_unverified",
+      "reason": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1353891-kureci-stehna-spodni-od-ceskeho-vyrobce",
+      "status": "price_unverified",
+      "reason": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1316435-bio-avokado-k-dozrani-1-ks",
+      "status": "price_unverified",
+      "reason": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1384488-bio-maso-hovezi-svickova-z-plemene-dexter-ze-statku-roden",
+      "status": "price_unverified",
+      "reason": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1348941-paprika-zluta-1-ks",
+      "status": "price_unverified",
+      "reason": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1406563-kureci-stehenni-rizky-od-ceskeho-vyrobce",
+      "status": "price_unverified",
+      "reason": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1350165-paprika-cervena-1-ks",
+      "status": "price_unverified",
+      "reason": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1406564-kureci-stehna-od-ceskeho-vyrobce",
+      "status": "price_unverified",
+      "reason": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1349775-bio-banan-1-ks",
+      "status": "price_unverified",
+      "reason": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1350467-mrkev-cerstva-prana-1-ks-volna",
+      "status": "price_unverified",
+      "reason": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1409057-maso-hovezi-svickova",
+      "status": "price_unverified",
+      "reason": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1349777-banan-1-ks",
+      "status": "price_unverified",
+      "reason": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1350681-paprika-bila-1-ks",
+      "status": "price_unverified",
+      "reason": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1349785-banan-chiquita-1-ks",
+      "status": "price_unverified",
+      "reason": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1350683-paprika-zelena-1-ks",
+      "status": "price_unverified",
+      "reason": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1418577-campese-kureci-palicky-z-volneho-chovu",
+      "status": "price_unverified",
+      "reason": "Více různých možných aktuálních cen v detailu produktu; Konfliktní produktové ceny ve strukturovaných datech"
+    }
+  ],
+  "existing_verified_prices_untouched": true,
+  "catalogue_products_unchanged": true
+}
