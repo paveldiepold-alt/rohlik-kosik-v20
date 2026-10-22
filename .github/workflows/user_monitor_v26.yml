@@ -8,12 +8,12 @@ on:
   workflow_dispatch:
     inputs:
       limit:
-        description: 'Počet produktů ke kontrole (1-35)'
-        default: '35'
+        description: 'Počet produktů ke kontrole (1-1200, oba obchody souběžně)'
+        default: '1200'
         required: false
         type: string
   schedule:
-    - cron: '13 */3 * * *'
+    - cron: '13 */6 * * *'
 
 permissions:
   contents: write
@@ -25,7 +25,7 @@ concurrency:
 jobs:
   daily-prices:
     runs-on: ubuntu-24.04
-    timeout-minutes: 25
+    timeout-minutes: 180
     steps:
       - name: Checkout current published v26 data and parser
         uses: actions/checkout@v4
@@ -48,7 +48,7 @@ jobs:
           import hashlib, json, os, shutil
           from pathlib import Path
           limit = int(os.getenv('INPUT_LIMIT', '24'))
-          assert 1 <= limit <= 35, 'Limit must be 1..35'
+          assert 1 <= limit <= 1200, 'Limit must be 1..1200'
           source = Path('docs/data/catalog_latest.json')
           dashboard = Path('docs/catalog.html')
           assert source.is_file() and dashboard.is_file(), 'Published catalogue or HTML missing'
@@ -62,13 +62,14 @@ jobs:
           print('Before: products:', len(items), 'priced:', sum(x.get('price_status') == 'ok' for x in items))
           PY
         env:
-          INPUT_LIMIT: ${{ inputs.limit || '35' }}
+          INPUT_LIMIT: ${{ inputs.limit || '1200' }}
 
       - name: Verify promotion parser offline
         shell: bash
         run: |
           python -m unittest discover -s tests -p 'test_visible_price.py' -v
           python -m unittest discover -s tests -p 'test_maintenance_v26.py' -v
+          python -m unittest discover -s tests -p 'test_fast_refresh_v27.py' -v
 
       - name: Install price browser
         shell: bash
@@ -78,12 +79,13 @@ jobs:
           python -m pip install --disable-pip-version-check 'playwright==1.56.0'
           python -m playwright install chromium
 
-      - name: Check saved product URLs, never crawl unrelated products
+      - name: Check all saved product URLs with one worker per retailer
         id: price
         continue-on-error: true
+        timeout-minutes: 165
         shell: bash
         env:
-          CHECK_LIMIT: ${{ inputs.limit || '35' }}
+          CHECK_LIMIT: ${{ inputs.limit || '1200' }}
         run: |
           set -euo pipefail
           python maintenance_v26.py --limit "$CHECK_LIMIT" --delay 3.3
