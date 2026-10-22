@@ -1,5 +1,5 @@
 import unittest
-from visible_price import parse_display_price, choose_visible_price, VISIBLE_PRICE_JS
+from visible_price import parse_display_price, choose_visible_price, extract_rohlik_discount, VISIBLE_PRICE_JS
 from monitor import from_browser_payload
 
 
@@ -36,6 +36,17 @@ class VisibleProductPriceTests(unittest.TestCase):
                    'jsonld':['{"@type":"Product","offers":{"price":"63.90","priceCurrency":"CZK"}}'],
                    'meta': []}
         self.assertEqual(from_browser_payload(payload)[:2], (46.9, 'visible-product-detail'))
+
+    def test_rohlik_crossed_price_proves_promotion(self):
+        old = {**visible('129,90 Kč', 'original-price'), 'old': True}
+        self.assertEqual(extract_rohlik_discount(74.9, [visible('74,90 Kč'), old])['discount_pct'], 42.3)
+
+    def test_rohlik_rejects_ambiguous_or_unit_old_prices(self):
+        old = {**visible('129,90 Kč', 'original-price'), 'old': True}
+        self.assertIsNone(extract_rohlik_discount(74.9, [old, {**old, 'text': '149,90 Kč'}])['discount_pct'])
+        self.assertIsNone(extract_rohlik_discount(74.9, [{**old, 'unit': True}])['discount_pct'])
+        self.assertIsNone(extract_rohlik_discount(74.9, [{**old, 'detail': False}])['discount_pct'])
+        self.assertIsNone(extract_rohlik_discount(74.9, [old], '-15 %')['discount_pct'])
 
     def test_quantity_condition_exposed(self):
         p, src, note = choose_visible_price([visible('39 90 Kč',condition='Podmínka: od 2 ks')])

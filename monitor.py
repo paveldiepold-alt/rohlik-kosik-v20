@@ -13,7 +13,7 @@ import unicodedata
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse
-from visible_price import VISIBLE_PRICE_JS, choose_visible_price, choose_kosik_detail_price
+from visible_price import VISIBLE_PRICE_JS, choose_visible_price, choose_kosik_detail_price, extract_rohlik_discount
 
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "docs" / "data"
@@ -197,7 +197,7 @@ def browser_extract(page) -> dict:
     return payload
 
 
-def inspect(page, entry: dict, checked_at: str) -> dict:
+def inspect(page, entry: dict, checked_at: str, max_price_czk: float = PILOT_MAX_PRICE_CZK) -> dict:
     data = {'id': entry['id'], 'store': entry['store'], 'label': entry['label'], 'url': entry['url'],
             'checked_at': checked_at, 'status': 'unknown', 'price_czk': None, 'title': None,
             'source': None, 'note': '', 'http_status': None, 'postcode_verified': False}
@@ -259,14 +259,19 @@ def inspect(page, entry: dict, checked_at: str) -> dict:
             data['status'] = 'price_unverified'
             data['note'] = note
             return data
-        if not plausible_pilot_price(price):
+        if not plausible_pilot_price(price, cap=max_price_czk):
             data['status'] = 'price_unverified'
             data['note'] = (
                 f'Podezřelá cena {price:.2f} Kč přesahuje pilotní limit '
-                f'{PILOT_MAX_PRICE_CZK:.0f} Kč; nebude použita ani uložena.'
+                f'{max_price_czk:.0f} Kč; nebude použita ani uložena.'
             )
             return data
-        data.update(status='ok', price_czk=price, source=source, note=note)
+        offer = extract_rohlik_discount(price, payload.get('visible_prices', []),
+                                        payload.get('detail_text', '')) if source == 'visible-product-detail' else {}
+        data.update(status='ok', price_czk=price, source=source, note=note,
+                    original_price_czk=offer.get('original_price_czk'),
+                    discount_pct=offer.get('discount_pct'),
+                    offer_valid_until=offer.get('offer_valid_until'))
     except Exception as exc:
         data['status'] = 'error'
         data['note'] = f'{type(exc).__name__}: {str(exc)[:160]}'

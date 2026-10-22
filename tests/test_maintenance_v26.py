@@ -19,6 +19,12 @@ class MaintenanceTests(unittest.TestCase):
         x=self.row();x.update(discount_pct=30,offer_valid_until='2026-10-20')
         y=apply_result(x,status='ok',price=110,offer={},checked_at='2026-10-21T08:00:00+00:00')
         self.assertIsNone(y['discount_pct']);self.assertIsNone(y['offer_valid_until'])
+    def test_rohlik_offer_metadata_persisted(self):
+        x=self.row('Rohlík')
+        y=apply_result(x,status='ok',price=74.9,offer={'original_price_czk':129.9,'discount_pct':42.3},checked_at='2026-10-22T08:00:00+00:00')
+        self.assertEqual(y['original_price_czk'],129.9)
+        self.assertEqual(y['discount_pct'],42.3)
+
     def test_suppressed_retry_and_other_merchants(self):
         now=datetime(2026,10,21,8,tzinfo=timezone.utc)
         a=self.row();a['last_monitor_attempt_at']=(now-timedelta(hours=2)).isoformat()

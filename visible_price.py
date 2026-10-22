@@ -88,6 +88,45 @@ def choose_visible_price(nodes: list[dict[str, Any]]) -> tuple[float | None, str
     return selected, 'visible-product-detail', note
 
 
+def extract_rohlik_discount(current_price: float, candidates: list[dict], detail_text: str = '') -> dict:
+    """Only trust a unique visible crossed-out product-pack price.
+
+    No invented promotion from price history, unit prices, quantity discounts,
+    structured-data prices or recommendations elsewhere on the page.
+    """
+    empty = {'original_price_czk': None, 'discount_pct': None,
+             'offer_valid_until': None}
+    if not isinstance(current_price, (int, float)) or current_price <= 0:
+        return empty
+    old_prices = set()
+    for node in candidates or []:
+        if not isinstance(node, dict) or not node.get('detail') or not node.get('old'):
+            continue
+        if node.get('unit') or node.get('condition'):
+            continue
+        if float(node.get('distance') if node.get('distance') is not None else 9999) > 450:
+            continue
+        hint = str(node.get('hint') or '')
+        if re.search(r'(?i)unit[-_]?price|price[-_]?per[-_]?unit', hint):
+            continue
+        amount = parse_display_price(str(node.get('text') or ''))
+        if amount is not None:
+            old_prices.add(amount)
+    if len(old_prices) != 1:
+        return empty
+    old = old_prices.pop()
+    if old <= current_price or old > current_price * 7:
+        return empty
+    pct = round(100 * (1 - current_price / old), 1)
+    if not 1 <= pct <= 85:
+        return empty
+    explicit = re.search(r'(?<!\w)[−–-]\s*(\d{1,2})\s*%', str(detail_text or '')[:650])
+    if explicit and abs(float(explicit.group(1)) - pct) > 3:
+        return empty
+    return {'original_price_czk': old, 'discount_pct': pct,
+            'offer_valid_until': None}
+
+
 def choose_kosik_detail_price(text: str) -> tuple[float | None, str | None, str]:
     """Read Košík product's *own* price block, never search/recommendations.
 

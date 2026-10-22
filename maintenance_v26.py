@@ -51,7 +51,7 @@ def pick_items(items, limit=30, now=None):
     for shop in queues:queues[shop].sort(key=lambda x:x[0])
     result=[]
     # Košík has supplied full-pack prices more reliably. Still probe Rohlík cautiously.
-    order=['Košík','Košík','Košík','Rohlík']
+    order=['Košík','Rohlík']
     for i in range(max(limit*2,3)):
         shop=order[i%len(order)]
         if not queues[shop]:shop='Rohlík' if shop=='Košík' else 'Košík'
@@ -92,12 +92,14 @@ def inspect_saved(page,product):
     store=product['store'];now=datetime.now(timezone.utc).isoformat(timespec='seconds')
     if store=='Rohlík':
         report=inspect(page,{'id':product['url'],'store':store,
-                'label':product.get('title') or product.get('name'),'url':product['url']},now)
+                'label':product.get('title') or product.get('name'),'url':product['url']},now,max_price_czk=5000)
         status=report.get('status')
         return {'status':status,'price':report.get('price_czk'),
                 'source':report.get('source'),'note':report.get('note',''),
                 'blocked':report.get('http_status') in (403,429,503),
-                'offer':{}}
+                'offer':{'original_price_czk':report.get('original_price_czk'),
+                          'discount_pct':report.get('discount_pct'),
+                          'offer_valid_until':report.get('offer_valid_until')}}
     response=page.goto(product['url'],wait_until='domcontentloaded',timeout=25000)
     code=response.status if response else None
     if code in (403,429,503):return {'status':'throttled','price':None,'blocked':True,'note':'HTTP '+str(code)}
