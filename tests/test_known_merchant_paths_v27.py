@@ -31,12 +31,27 @@ class ObservedPathTests(unittest.TestCase):
         ('Másla a tuky', ['Plant Based','Alternativy mléčného a chlazeného','Rostlinné tuky a margaríny']),
     ]
     UNCERTAIN = [
-        ['Mléčné a chlazené','Sýry','Plísňové, zrající, pařené a uzené','Plísňové a zrající'],
-        ['Mléčné a chlazené','Sýry','Grilovací sýry, raclette, fondue','Grilovací sýry'],
         ['Maso a ryby','Vepřové maso','Uzené'],
         ['Zdraví a životní styl','Veggie','Sýry, krémy a tuky','Krémy'],
-        ['Speciální výživa','Bezlaktózové výrobky','Sýry bez laktózy'],
     ]
+    # UAT14: mapping a truthful *broader merchant shelf* is allowed, but must
+    # never certify the old watch-rule's more specific cheese type.
+    BROAD_SHELVES = [
+        ('Sýry / plísňové a zrající',
+         ['Mléčné a chlazené','Sýry','Plísňové, zrající, pařené a uzené','Plísňové a zrající']),
+        ('Sýry / grilovací',
+         ['Mléčné a chlazené','Sýry','Grilovací sýry, raclette, fondue','Grilovací sýry']),
+        ('Sýry / bez laktózy',
+         ['Speciální výživa','Bezlaktózové výrobky','Sýry bez laktózy']),
+    ]
+    def test_broad_shelves_have_honest_separate_labels(self):
+        for category,path in self.BROAD_SHELVES:
+            with self.subTest(path=path):
+                item=self.item(path)
+                self.assertEqual(merchant_category(item)[0], category)
+                result,review,_=compile_catalog({'items':[item], 'rules':[{'id':'W001','category':'Sýry / plísňové'}]})
+                self.assertNotEqual(result['items'][0]['category_v27']['status'],'verified')
+                self.assertEqual(review['count'],1)
     def item(self,path,source=SRC):
         return {'store_category_path':path,'category_source':source,'title':'IGNORE-PRODUCT-TITLE',
                 'name':'IGNORE-PRODUCT-NAME','store':'Rohlík','url':'https://www.rohlik.cz/example', 'rule_ids':['W001']}
