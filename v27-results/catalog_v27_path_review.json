@@ -1,11 +1,11 @@
 {
   "schema": "rk-v27-merchant-path-review",
-  "number_of_distinct_trusted_paths": 194,
-  "mapped_product_total": 683,
-  "unmapped_or_mismatched_path_count": 36,
+  "number_of_distinct_trusted_paths": 197,
+  "mapped_product_total": 770,
+  "unmapped_or_mismatched_path_count": 37,
   "without_trusted_path_by_shop": {
-    "Košík": 212,
-    "Rohlík": 146
+    "Košík": 171,
+    "Rohlík": 96
   },
   "note": "Old rule categories are references for audit only; never proof of merchant classification.",
   "paths": [
@@ -19,14 +19,14 @@
       ],
       "mapped_category": "Sýry / plísňové",
       "mapping_reason": "Plísňové sýry podle cesty prodejce",
-      "product_count": 22,
+      "product_count": 23,
       "old_rule_categories": {
-        "Sýry / plísňové": 22
+        "Sýry / plísňové": 23
       },
       "sample_product_urls": [
+        "https://www.kosik.cz/p795400-kral-syru-hermelin-zeleny-pepr-2-x-120g",
         "https://www.kosik.cz/p18697-kral-syru-hermelin-lahudkova-paprika",
-        "https://www.kosik.cz/p18717-kral-syru-hermelin-original",
-        "https://www.kosik.cz/p770068-kral-syru-hermelin-original-duopack-2x120-g"
+        "https://www.kosik.cz/p18717-kral-syru-hermelin-original"
       ],
       "needs_review": false
     },
@@ -40,14 +40,76 @@
       ],
       "mapped_category": "Uzeniny / šunky",
       "mapping_reason": "Šunky podle cesty prodejce",
-      "product_count": 20,
+      "product_count": 21,
       "old_rule_categories": {
-        "Uzeniny / šunky": 20
+        "Uzeniny / šunky": 21
       },
       "sample_product_urls": [
         "https://www.kosik.cz/p391634-chodura-dusena-sunka-se-snizenym-obsahem-soli-nejvyssi-jakosti-93-masa",
         "https://www.kosik.cz/p471463-chodura-dusena-sunka-zauzena-nejvyssi-jakosti-94-masa",
         "https://www.kosik.cz/p471473-chodura-pecena-sunka-nejvyssi-jakosti-96-masa"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Drogerie",
+        "Čisticí prostředky",
+        "Koupelna a WC",
+        "WC bloky"
+      ],
+      "mapped_category": "Úklid",
+      "mapping_reason": "Úklid podle cesty prodejce",
+      "product_count": 19,
+      "old_rule_categories": {
+        "Úklid": 19
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1423390-bref-color-aktiv-eucalyptus-wc-blok",
+        "https://www.rohlik.cz/1423389-bref-color-aktiv-flower-wc-blok",
+        "https://www.rohlik.cz/1327423-bref-color-aktiv-ocean-wc-blok"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Aviváže a vůně",
+        "Tekuté aviváže"
+      ],
+      "mapped_category": "Praní",
+      "mapping_reason": "Praní podle cesty prodejce",
+      "product_count": 17,
+      "old_rule_categories": {
+        "Praní": 17
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p795300-lenor-avivaz-fresh-pink-blossom-700-ml",
+        "https://www.kosik.cz/p795298-lenor-avivaz-fresh-wind-700-ml",
+        "https://www.kosik.cz/p798766-lenor-avivaz-gold-orchid-vanilla-675-ml"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Drogerie",
+        "Prací prostředky",
+        "Aviváže"
+      ],
+      "mapped_category": "Praní",
+      "mapping_reason": "Praní podle cesty prodejce",
+      "product_count": 15,
+      "old_rule_categories": {
+        "Praní": 15
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1469822-lenor-floral-bouquet-avivaz-0-987-l",
+        "https://www.rohlik.cz/1424794-lenor-fresh-air-fresh-wind-avivaz-1-064-l",
+        "https://www.rohlik.cz/1411384-lenor-fresh-air-pink-blossom-avivaz-0-7-l"
       ],
       "needs_review": false
     },
@@ -117,26 +179,6 @@
     {
       "shop": "Rohlík",
       "merchant_path": [
-        "Drogerie",
-        "Prací prostředky",
-        "Aviváže"
-      ],
-      "mapped_category": "Praní",
-      "mapping_reason": "Praní podle cesty prodejce",
-      "product_count": 13,
-      "old_rule_categories": {
-        "Praní": 13
-      },
-      "sample_product_urls": [
-        "https://www.rohlik.cz/1469822-lenor-floral-bouquet-avivaz-0-987-l",
-        "https://www.rohlik.cz/1424794-lenor-fresh-air-fresh-wind-avivaz-1-064-l",
-        "https://www.rohlik.cz/1411384-lenor-fresh-air-pink-blossom-avivaz-0-7-l"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Rohlík",
-      "merchant_path": [
         "Ovoce a zelenina",
         "Ovoce",
         "Banány a exotické ovoce"
@@ -179,20 +221,20 @@
       "shop": "Rohlík",
       "merchant_path": [
         "Drogerie",
-        "Čisticí prostředky",
-        "Koupelna a WC",
-        "WC bloky"
+        "Papírová a vatová hygiena",
+        "Ubrousky a utěrky",
+        "Kuchyňské utěrky"
       ],
-      "mapped_category": "Úklid",
-      "mapping_reason": "Úklid podle cesty prodejce",
+      "mapped_category": "Papírové utěrky",
+      "mapping_reason": "Papírové utěrky podle cesty prodejce",
       "product_count": 12,
       "old_rule_categories": {
-        "Úklid": 12
+        "Papírové utěrky": 12
       },
       "sample_product_urls": [
-        "https://www.rohlik.cz/1423390-bref-color-aktiv-eucalyptus-wc-blok",
-        "https://www.rohlik.cz/1423389-bref-color-aktiv-flower-wc-blok",
-        "https://www.rohlik.cz/1327423-bref-color-aktiv-ocean-wc-blok"
+        "https://www.rohlik.cz/1296499-linteo-classic-kuchynske-uterky-2vrstve",
+        "https://www.rohlik.cz/1301743-linteo-classic-kuchynske-uterky-xxl-2vrstve",
+        "https://www.rohlik.cz/1301741-linteo-kuchynske-uterky-2vrstve"
       ],
       "needs_review": false
     },
@@ -213,27 +255,6 @@
         "https://www.kosik.cz/p717960-harmony-kuchynske-uterky-everyday-family-mono-1-role",
         "https://www.kosik.cz/p171496-harmony-kuchynske-uterky-everyday-family-2vrstve-4-role",
         "https://www.kosik.cz/p291844-harmony-kuchynske-uterky-home-expert-mega-2vrstve-1-role"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Drogerie a kosmetika",
-        "Prací prostředky",
-        "Aviváže a vůně",
-        "Tekuté aviváže"
-      ],
-      "mapped_category": "Praní",
-      "mapping_reason": "Praní podle cesty prodejce",
-      "product_count": 11,
-      "old_rule_categories": {
-        "Praní": 11
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p770638-silan-aromatherapy-dreamy-lotus-avivaz-1-100-ml",
-        "https://www.kosik.cz/p770636-silan-aromatherapy-magic-magnolia-avivaz-1-100-ml",
-        "https://www.kosik.cz/p770642-silan-aromatherapy-relaxing-maldives-avivaz-1-100-ml"
       ],
       "needs_review": false
     },
@@ -261,27 +282,6 @@
     {
       "shop": "Rohlík",
       "merchant_path": [
-        "Drogerie",
-        "Papírová a vatová hygiena",
-        "Ubrousky a utěrky",
-        "Kuchyňské utěrky"
-      ],
-      "mapped_category": "Papírové utěrky",
-      "mapping_reason": "Papírové utěrky podle cesty prodejce",
-      "product_count": 11,
-      "old_rule_categories": {
-        "Papírové utěrky": 11
-      },
-      "sample_product_urls": [
-        "https://www.rohlik.cz/1296499-linteo-classic-kuchynske-uterky-2vrstve",
-        "https://www.rohlik.cz/1301743-linteo-classic-kuchynske-uterky-xxl-2vrstve",
-        "https://www.rohlik.cz/1301741-linteo-kuchynske-uterky-2vrstve"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Rohlík",
-      "merchant_path": [
         "Maso a ryby",
         "Drůbež",
         "Prsa a stehenní řízky",
@@ -297,6 +297,27 @@
         "https://www.rohlik.cz/1476819-amadori-bio-kureci-prsni-platky-innerfilet",
         "https://www.rohlik.cz/1413888-amadori-bio-kureci-prso",
         "https://www.rohlik.cz/1478059-banquet-kureci-prsa-sous-vide"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plátkové",
+        "Ementálský typ"
+      ],
+      "mapped_category": "Sýry / plátkové",
+      "mapping_reason": "Plátkové sýry podle cesty prodejce",
+      "product_count": 11,
+      "old_rule_categories": {
+        "Sýry / plátkové": 11
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1323577-leerdammer-caractere-finesse-syr-platky",
+        "https://www.rohlik.cz/1474651-leerdammer-caractere-platky",
+        "https://www.rohlik.cz/1474650-leerdammer-delacreme-platky"
       ],
       "needs_review": false
     },
@@ -323,6 +344,69 @@
     {
       "shop": "Košík",
       "merchant_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Gely",
+        "Univerzální"
+      ],
+      "mapped_category": "Praní",
+      "mapping_reason": "Praní podle cesty prodejce",
+      "product_count": 10,
+      "old_rule_categories": {
+        "Praní": 10
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p798828-ariel-gel-mountain-spring-1-8l",
+        "https://www.kosik.cz/p798838-ariel-gel-mountain-spring-2-7-l",
+        "https://www.kosik.cz/p795268-ariel-gel-sensitive-4-5-l"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Drogerie a kosmetika",
+        "Ústní hygiena",
+        "Zubní pasty",
+        "Bělící"
+      ],
+      "mapped_category": "Dentální hygiena",
+      "mapping_reason": "Dentální hygiena podle cesty prodejce",
+      "product_count": 9,
+      "old_rule_categories": {
+        "Dentální hygiena": 9
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p721714-colgate-advanced-white-baking-soda-vulcanic-ash-zubni-pasta",
+        "https://www.kosik.cz/p413419-colgate-advanced-white-charcoal-zubni-pasta-3x75ml",
+        "https://www.kosik.cz/p63857-colgate-advanced-whitening-zubni-pasta"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Tavené"
+      ],
+      "mapped_category": "Sýry / tavené",
+      "mapping_reason": "Tavené sýry podle cesty prodejce",
+      "product_count": 9,
+      "old_rule_categories": {
+        "Sýry / tavené": 8,
+        "Sýry / plísňové": 1
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p12777-madeta-jihoceske-lipno-syr-extra-smetanovy-64",
+        "https://www.kosik.cz/p721246-president-taveny-se-syrem-camembert-3x50g",
+        "https://www.kosik.cz/p279054-smetanito-s-tvarohem-3-ks"
+      ],
+      "needs_review": true
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
         "Uzeniny a lahůdky",
         "Šunky",
         "Drůbeží"
@@ -337,6 +421,27 @@
         "https://www.kosik.cz/p391624-chodura-fitnes-sunka-z-kurecich-prsou-se-snizenym-obsahem-soli-nejvyssi-jakosti-90-masa",
         "https://www.kosik.cz/p786724-le-co-kruti-prsni-sunka-nejvyssi-jakosti-92-masa",
         "https://www.kosik.cz/p175986-le-co-kruti-prsni-sunka-s-vitaminy-abc-92-masa"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Drogerie",
+        "Prací prostředky",
+        "Prací kapsle/tablety",
+        "Univerzální"
+      ],
+      "mapped_category": "Praní",
+      "mapping_reason": "Praní podle cesty prodejce",
+      "product_count": 9,
+      "old_rule_categories": {
+        "Praní": 9
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1425050-ariel-extra-clean-allin1-kapsle-na-prani",
+        "https://www.rohlik.cz/1432051-ariel-mountain-spring-allin1-kapsle-na-prani",
+        "https://www.rohlik.cz/1425042-ariel-mountain-spring-allin1-kapsle-na-prani"
       ],
       "needs_review": false
     },
@@ -360,6 +465,29 @@
         "https://www.rohlik.cz/1408923-maso-veprova-krkovice-v-celku"
       ],
       "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Smetanové, cottage a tavené",
+        "Tavené"
+      ],
+      "mapped_category": "Sýry / tavené",
+      "mapping_reason": "Tavené sýry podle cesty prodejce",
+      "product_count": 9,
+      "old_rule_categories": {
+        "Sýry / tavené": 7,
+        "Sýry / plátkové": 1,
+        "Sýry / plísňové": 1
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1419347-madeta-jihoceske-lipno-extra-smetanove",
+        "https://www.rohlik.cz/1468011-madeta-jihoceske-lipno-s-nivou",
+        "https://www.rohlik.cz/1292759-president-tavene-platky-emmental"
+      ],
+      "needs_review": true
     },
     {
       "shop": "Rohlík",
@@ -425,22 +553,44 @@
       "shop": "Košík",
       "merchant_path": [
         "Drogerie a kosmetika",
-        "Ústní hygiena",
-        "Zubní pasty",
-        "Bělící"
+        "Prací prostředky",
+        "Gely",
+        "Barevné prádlo"
       ],
-      "mapped_category": "Dentální hygiena",
-      "mapping_reason": "Dentální hygiena podle cesty prodejce",
+      "mapped_category": "Praní",
+      "mapping_reason": "Praní podle cesty prodejce",
       "product_count": 8,
       "old_rule_categories": {
-        "Dentální hygiena": 8
+        "Praní": 8
       },
       "sample_product_urls": [
-        "https://www.kosik.cz/p721714-colgate-advanced-white-baking-soda-vulcanic-ash-zubni-pasta",
-        "https://www.kosik.cz/p413419-colgate-advanced-white-charcoal-zubni-pasta-3x75ml",
-        "https://www.kosik.cz/p63857-colgate-advanced-whitening-zubni-pasta"
+        "https://www.kosik.cz/p798826-ariel-gel-color-1-8-l",
+        "https://www.kosik.cz/p800490-ariel-gel-color-2-7-l",
+        "https://www.kosik.cz/p795242-ariel-gel-color-4-5-l"
       ],
       "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Odstraňovače skvrn",
+        "Běžné"
+      ],
+      "mapped_category": "Praní",
+      "mapping_reason": "Praní podle cesty prodejce",
+      "product_count": 8,
+      "old_rule_categories": {
+        "Úklid": 2,
+        "Praní": 6
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p194405-savo-perex-beleni-pradla-kvetinova-vune",
+        "https://www.kosik.cz/p194425-savo-perex-beleni-pradla-svezi-vune",
+        "https://www.kosik.cz/p741296-vanish-oxi-action-extra-hygiene-tekuty-odstranovac-skvrn"
+      ],
+      "needs_review": true
     },
     {
       "shop": "Košík",
@@ -480,27 +630,6 @@
         "https://www.kosik.cz/p801002-emi-food-veprova-krkovice-duroc"
       ],
       "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Mléčné a chlazené",
-        "Sýry",
-        "Tavené"
-      ],
-      "mapped_category": "Sýry / tavené",
-      "mapping_reason": "Tavené sýry podle cesty prodejce",
-      "product_count": 8,
-      "old_rule_categories": {
-        "Sýry / tavené": 7,
-        "Sýry / plísňové": 1
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p12777-madeta-jihoceske-lipno-syr-extra-smetanovy-64",
-        "https://www.kosik.cz/p721246-president-taveny-se-syrem-camembert-3x50g",
-        "https://www.kosik.cz/p279054-smetanito-s-tvarohem-3-ks"
-      ],
-      "needs_review": true
     },
     {
       "shop": "Košík",
@@ -547,6 +676,48 @@
     {
       "shop": "Rohlík",
       "merchant_path": [
+        "Drogerie",
+        "Mytí nádobí",
+        "Tablety do myčky",
+        "Multifunkční"
+      ],
+      "mapped_category": "Úklid",
+      "mapping_reason": "Úklid podle cesty prodejce",
+      "product_count": 8,
+      "old_rule_categories": {
+        "Úklid": 8
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1478898-jar-original-lemon-tablety-do-mycky",
+        "https://www.rohlik.cz/1478902-jar-original-lemon-tablety-do-mycky",
+        "https://www.rohlik.cz/1423203-jar-platinum-lemon-kapsle-do-mycky"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Kosmetika",
+        "Ústní hygiena",
+        "Zubní pasty",
+        "Bělící"
+      ],
+      "mapped_category": "Dentální hygiena",
+      "mapping_reason": "Zubní pasty podle cesty e-shopu",
+      "product_count": 8,
+      "old_rule_categories": {
+        "Dentální hygiena": 8
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1404808-colgate-advanced-white-charcoal-belici-zubni-pasta",
+        "https://www.rohlik.cz/1473691-colgate-advanced-white-purple-zubni-pasta",
+        "https://www.rohlik.cz/1461851-colgate-max-white-one-belici-zubni-pasta"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
         "Maso a ryby",
         "Drůbež",
         "Stehna a čtvrtky",
@@ -568,29 +739,6 @@
     {
       "shop": "Rohlík",
       "merchant_path": [
-        "Mléčné a chlazené",
-        "Sýry",
-        "Smetanové, cottage a tavené",
-        "Tavené"
-      ],
-      "mapped_category": "Sýry / tavené",
-      "mapping_reason": "Tavené sýry podle cesty prodejce",
-      "product_count": 8,
-      "old_rule_categories": {
-        "Sýry / tavené": 6,
-        "Sýry / plátkové": 1,
-        "Sýry / plísňové": 1
-      },
-      "sample_product_urls": [
-        "https://www.rohlik.cz/1419347-madeta-jihoceske-lipno-extra-smetanove",
-        "https://www.rohlik.cz/1468011-madeta-jihoceske-lipno-s-nivou",
-        "https://www.rohlik.cz/1292759-president-tavene-platky-emmental"
-      ],
-      "needs_review": true
-    },
-    {
-      "shop": "Rohlík",
-      "merchant_path": [
         "Trvanlivé",
         "Těstoviny, Rýže, Luštěniny",
         "Těstoviny a kuskus",
@@ -608,6 +756,49 @@
         "https://www.rohlik.cz/1373785-panzani-fusilli"
       ],
       "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Kapsle",
+        "Univerzální"
+      ],
+      "mapped_category": "Praní",
+      "mapping_reason": "Praní podle cesty prodejce",
+      "product_count": 7,
+      "old_rule_categories": {
+        "Praní": 7
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p795274-ariel-kapsle-mountain-spring-sacek",
+        "https://www.kosik.cz/p795238-ariel-kapsle-mountain-spring-sacek",
+        "https://www.kosik.cz/p795276-ariel-plus-kapsle-extra-clean-box"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Drogerie",
+        "Prací prostředky",
+        "Prací gely",
+        "Barevné prádlo"
+      ],
+      "mapped_category": "Praní",
+      "mapping_reason": "Praní podle cesty prodejce",
+      "product_count": 7,
+      "old_rule_categories": {
+        "Praní": 6,
+        "Úklid": 1
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1424111-ariel-color-praci-gel-3-15-l",
+        "https://www.rohlik.cz/1444113-ariel-color-praci-gel-4-5-l",
+        "https://www.rohlik.cz/1315777-persil-color-praci-gel-0-99-l"
+      ],
+      "needs_review": true
     },
     {
       "shop": "Rohlík",
@@ -636,7 +827,7 @@
         "Drogerie",
         "Prací prostředky",
         "Prací kapsle/tablety",
-        "Univerzální"
+        "Barevné prádlo"
       ],
       "mapped_category": "Praní",
       "mapping_reason": "Praní podle cesty prodejce",
@@ -645,9 +836,30 @@
         "Praní": 7
       },
       "sample_product_urls": [
-        "https://www.rohlik.cz/1425050-ariel-extra-clean-allin1-kapsle-na-prani",
-        "https://www.rohlik.cz/1432051-ariel-mountain-spring-allin1-kapsle-na-prani",
-        "https://www.rohlik.cz/1425042-ariel-mountain-spring-allin1-kapsle-na-prani"
+        "https://www.rohlik.cz/1425039-ariel-color-allin1-kapsle-na-prani",
+        "https://www.rohlik.cz/1464111-ariel-color-allin1-kapsle-na-prani",
+        "https://www.rohlik.cz/1470039-persil-deep-clean-4v1-discs-color-praci-kapsle"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Drogerie",
+        "Čisticí prostředky",
+        "Koupelna a WC",
+        "Čištění WC"
+      ],
+      "mapped_category": "Úklid",
+      "mapping_reason": "Úklid podle cesty prodejce",
+      "product_count": 7,
+      "old_rule_categories": {
+        "Úklid": 7
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1336387-bref-power-aktiv-flower-wc-cistic",
+        "https://www.rohlik.cz/1336703-bref-power-aktiv-lemon-wc-cistic",
+        "https://www.rohlik.cz/1336385-bref-power-aktiv-ocean-wc-cistic"
       ],
       "needs_review": false
     },
@@ -657,7 +869,7 @@
         "Kosmetika",
         "Ústní hygiena",
         "Zubní pasty",
-        "Bělící"
+        "Běžné"
       ],
       "mapped_category": "Dentální hygiena",
       "mapping_reason": "Zubní pasty podle cesty e-shopu",
@@ -666,51 +878,9 @@
         "Dentální hygiena": 7
       },
       "sample_product_urls": [
-        "https://www.rohlik.cz/1404808-colgate-advanced-white-charcoal-belici-zubni-pasta",
-        "https://www.rohlik.cz/1461851-colgate-max-white-one-belici-zubni-pasta",
-        "https://www.rohlik.cz/1440332-colgate-max-white-purple-reveal-zubni-pasta"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Rohlík",
-      "merchant_path": [
-        "Mléčné a chlazené",
-        "Sýry",
-        "Plátkové",
-        "Ementálský typ"
-      ],
-      "mapped_category": "Sýry / plátkové",
-      "mapping_reason": "Plátkové sýry podle cesty prodejce",
-      "product_count": 7,
-      "old_rule_categories": {
-        "Sýry / plátkové": 7
-      },
-      "sample_product_urls": [
-        "https://www.rohlik.cz/1323577-leerdammer-caractere-finesse-syr-platky",
-        "https://www.rohlik.cz/1289779-leerdammer-lightlife-syr-platky",
-        "https://www.rohlik.cz/1323575-leerdammer-original-finesse-syr-platky"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Drogerie a kosmetika",
-        "Prací prostředky",
-        "Gely",
-        "Univerzální"
-      ],
-      "mapped_category": "Praní",
-      "mapping_reason": "Praní podle cesty prodejce",
-      "product_count": 6,
-      "old_rule_categories": {
-        "Praní": 6
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p770576-persil-expert-sensitive-praci-gel-pro-citlivou-pokozku",
-        "https://www.kosik.cz/p770606-persil-expert-sensitive-praci-gel-pro-citlivou-pokozku",
-        "https://www.kosik.cz/p770588-persil-expert-sensitive-praci-gel-pro-citlivou-pokozku"
+        "https://www.rohlik.cz/1304563-colgate-cavity-protection-zubni-pasta-proti-zubnimu-kazu",
+        "https://www.rohlik.cz/1304613-colgate-max-fresh-cooling-crystal-zubni-pasta",
+        "https://www.rohlik.cz/1473695-colgate-propolis-zubni-pasta-2-75-ml"
       ],
       "needs_review": false
     },
@@ -776,6 +946,27 @@
       "needs_review": false
     },
     {
+      "shop": "Košík",
+      "merchant_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Mozzarella a salátové",
+        "Mozzarella a burrata"
+      ],
+      "mapped_category": "Sýry / mozzarella a salátové",
+      "mapping_reason": "Mozzarella/salátové sýry podle cesty e-shopu",
+      "product_count": 6,
+      "old_rule_categories": {
+        "Sýry / mozzarella a salátové": 6
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p737734-galbani-burrata",
+        "https://www.kosik.cz/p15077-galbani-mozzarella",
+        "https://www.kosik.cz/p15067-galbani-mozzarella-light"
+      ],
+      "needs_review": false
+    },
+    {
       "shop": "Rohlík",
       "merchant_path": [
         "Drogerie",
@@ -800,45 +991,45 @@
     {
       "shop": "Rohlík",
       "merchant_path": [
-        "Drogerie",
-        "Prací prostředky",
-        "Prací gely",
-        "Barevné prádlo"
+        "Mléčné a chlazené",
+        "Sýry",
+        "Mozzarella, ricotta a salátové sýry",
+        "Mozzarella, burrata a ricotta"
       ],
-      "mapped_category": "Praní",
-      "mapping_reason": "Praní podle cesty prodejce",
+      "mapped_category": "Sýry / mozzarella a salátové",
+      "mapping_reason": "Mozzarella/salátové sýry podle cesty e-shopu",
       "product_count": 6,
       "old_rule_categories": {
-        "Praní": 5,
-        "Úklid": 1
+        "Sýry / mozzarella a salátové": 6
       },
       "sample_product_urls": [
-        "https://www.rohlik.cz/1424111-ariel-color-praci-gel-3-15-l",
-        "https://www.rohlik.cz/1444113-ariel-color-praci-gel-4-5-l",
-        "https://www.rohlik.cz/1315777-persil-color-praci-gel-0-99-l"
+        "https://www.rohlik.cz/1355871-galbani-burrata",
+        "https://www.rohlik.cz/1292433-galbani-mozzarella-light",
+        "https://www.rohlik.cz/1460032-galbani-mozzarella-mini-light"
       ],
-      "needs_review": true
+      "needs_review": false
     },
     {
       "shop": "Rohlík",
       "merchant_path": [
-        "Drogerie",
-        "Čisticí prostředky",
-        "Koupelna a WC",
-        "Čištění WC"
+        "Mléčné a chlazené",
+        "Sýry",
+        "Na gril, fondue a raclette",
+        "Na gril a pánev"
       ],
-      "mapped_category": "Úklid",
-      "mapping_reason": "Úklid podle cesty prodejce",
+      "mapped_category": null,
+      "mapping_reason": "Mléčná kategorie bez jednoznačného sledovaného typu",
       "product_count": 6,
       "old_rule_categories": {
-        "Úklid": 6
+        "Sýry / plísňové": 1,
+        "Sýry / tavené": 5
       },
       "sample_product_urls": [
-        "https://www.rohlik.cz/1336387-bref-power-aktiv-flower-wc-cistic",
-        "https://www.rohlik.cz/1336703-bref-power-aktiv-lemon-wc-cistic",
-        "https://www.rohlik.cz/1336385-bref-power-aktiv-ocean-wc-cistic"
+        "https://www.rohlik.cz/1293753-sedlcansky-hermelin-na-gril-s-grilovacim-korenim-4-ks",
+        "https://www.rohlik.cz/1420388-smetanito-syr-na-panev-a-gril",
+        "https://www.rohlik.cz/1439989-smetanito-syr-na-panev-a-gril-bylinky"
       ],
-      "needs_review": false
+      "needs_review": true
     },
     {
       "shop": "Rohlík",
@@ -883,6 +1074,27 @@
     {
       "shop": "Košík",
       "merchant_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Aviváže a vůně",
+        "Vonné doplňky"
+      ],
+      "mapped_category": "Praní",
+      "mapping_reason": "Praní podle cesty prodejce",
+      "product_count": 5,
+      "old_rule_categories": {
+        "Praní": 5
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p795306-lenor-perlicky-ruby-jasmin-195-g",
+        "https://www.kosik.cz/p795302-lenor-perlicky-spring-awakening-195-g",
+        "https://www.kosik.cz/p795310-lenor-unstoppables-perlicky-ariel-495-g"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
         "Mléčné a chlazené",
         "Sýry",
         "Grilovací sýry, raclette, fondue",
@@ -901,27 +1113,6 @@
         "https://www.kosik.cz/p655650-smetanito-syr-na-gril-a-na-panev-jemne-pikantni"
       ],
       "needs_review": true
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Mléčné a chlazené",
-        "Sýry",
-        "Mozzarella a salátové",
-        "Mozzarella a burrata"
-      ],
-      "mapped_category": "Sýry / mozzarella a salátové",
-      "mapping_reason": "Mozzarella/salátové sýry podle cesty e-shopu",
-      "product_count": 5,
-      "old_rule_categories": {
-        "Sýry / mozzarella a salátové": 5
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p737734-galbani-burrata",
-        "https://www.kosik.cz/p15077-galbani-mozzarella",
-        "https://www.kosik.cz/p15067-galbani-mozzarella-light"
-      ],
-      "needs_review": false
     },
     {
       "shop": "Košík",
@@ -971,6 +1162,48 @@
       "shop": "Rohlík",
       "merchant_path": [
         "Drogerie",
+        "Prací prostředky",
+        "Prací gely",
+        "Dětské"
+      ],
+      "mapped_category": "Praní",
+      "mapping_reason": "Praní podle cesty prodejce",
+      "product_count": 5,
+      "old_rule_categories": {
+        "Praní": 5
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1424100-ariel-sensitive-praci-gel-2-7-l",
+        "https://www.rohlik.cz/1438403-ariel-sensitive-praci-gel-4-5-l",
+        "https://www.rohlik.cz/1439906-persil-expert-sensitive-praci-gel-2-7-l"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Drogerie",
+        "Prací prostředky",
+        "Vonné perličky a parfémy",
+        "Vonné perličky"
+      ],
+      "mapped_category": "Praní",
+      "mapping_reason": "Praní podle cesty prodejce",
+      "product_count": 5,
+      "old_rule_categories": {
+        "Praní": 5
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1420988-lenor-floral-bouquet-perlicky-do-prani",
+        "https://www.rohlik.cz/1474632-lenor-gold-orchid-vanilla-vonne-perlicky-do-prani",
+        "https://www.rohlik.cz/1462126-lenor-spring-awakening-perlicky-do-prani"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Drogerie",
         "Čisticí prostředky",
         "Koupelna a WC",
         "Čištění koupelny"
@@ -985,27 +1218,6 @@
         "https://www.rohlik.cz/1377525-bref-cistic-do-koupelny",
         "https://www.rohlik.cz/1438760-cif-perfect-finish-sprej-na-vodni-kamen",
         "https://www.rohlik.cz/1325523-cif-univerzalni-sprej-na-vodni-kamen"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Rohlík",
-      "merchant_path": [
-        "Kosmetika",
-        "Ústní hygiena",
-        "Zubní pasty",
-        "Běžné"
-      ],
-      "mapped_category": "Dentální hygiena",
-      "mapping_reason": "Zubní pasty podle cesty e-shopu",
-      "product_count": 5,
-      "old_rule_categories": {
-        "Dentální hygiena": 5
-      },
-      "sample_product_urls": [
-        "https://www.rohlik.cz/1304563-colgate-cavity-protection-zubni-pasta-proti-zubnimu-kazu",
-        "https://www.rohlik.cz/1304613-colgate-max-fresh-cooling-crystal-zubni-pasta",
-        "https://www.rohlik.cz/1304567-colgate-triple-action-zubni-pasta"
       ],
       "needs_review": false
     },
@@ -1034,43 +1246,21 @@
       "merchant_path": [
         "Mléčné a chlazené",
         "Sýry",
-        "Mozzarella, ricotta a salátové sýry",
-        "Mozzarella, burrata a ricotta"
+        "Plátkové",
+        "Ostatní"
       ],
-      "mapped_category": "Sýry / mozzarella a salátové",
-      "mapping_reason": "Mozzarella/salátové sýry podle cesty e-shopu",
+      "mapped_category": "Sýry / plátkové",
+      "mapping_reason": "Plátkové sýry podle cesty prodejce",
       "product_count": 5,
       "old_rule_categories": {
-        "Sýry / mozzarella a salátové": 5
+        "Sýry / plátkové": 5
       },
       "sample_product_urls": [
-        "https://www.rohlik.cz/1355871-galbani-burrata",
-        "https://www.rohlik.cz/1292433-galbani-mozzarella-light",
-        "https://www.rohlik.cz/1460032-galbani-mozzarella-mini-light"
+        "https://www.rohlik.cz/1359573-madeta-lipanek-syr-48-platky",
+        "https://www.rohlik.cz/1321017-madeta-syraruv-vyber-moravsky-bochnik-45-platky",
+        "https://www.rohlik.cz/1405165-madeta-syraruv-vyber-tylzsky-syr-45-platky"
       ],
       "needs_review": false
-    },
-    {
-      "shop": "Rohlík",
-      "merchant_path": [
-        "Mléčné a chlazené",
-        "Sýry",
-        "Na gril, fondue a raclette",
-        "Na gril a pánev"
-      ],
-      "mapped_category": null,
-      "mapping_reason": "Mléčná kategorie bez jednoznačného sledovaného typu",
-      "product_count": 5,
-      "old_rule_categories": {
-        "Sýry / plísňové": 1,
-        "Sýry / tavené": 4
-      },
-      "sample_product_urls": [
-        "https://www.rohlik.cz/1293753-sedlcansky-hermelin-na-gril-s-grilovacim-korenim-4-ks",
-        "https://www.rohlik.cz/1420388-smetanito-syr-na-panev-a-gril",
-        "https://www.rohlik.cz/1439989-smetanito-syr-na-panev-a-gril-bylinky"
-      ],
-      "needs_review": true
     },
     {
       "shop": "Rohlík",
@@ -1137,7 +1327,7 @@
       "merchant_path": [
         "Drogerie a kosmetika",
         "Prací prostředky",
-        "Gely",
+        "Kapsle",
         "Barevné prádlo"
       ],
       "mapped_category": "Praní",
@@ -1147,9 +1337,9 @@
         "Praní": 4
       },
       "sample_product_urls": [
-        "https://www.kosik.cz/p770570-persil-color-praci-gel-na-barevne-pradlo",
-        "https://www.kosik.cz/p741410-persil-color-praci-gel-na-barevne-pradlo",
-        "https://www.kosik.cz/p778308-persil-color-praci-gel-na-barevne-pradlo"
+        "https://www.kosik.cz/p795278-ariel-kapsle-color-box",
+        "https://www.kosik.cz/p795250-ariel-kapsle-color-krabice",
+        "https://www.kosik.cz/p795272-ariel-kapsle-color-sacek"
       ],
       "needs_review": false
     },
@@ -1158,22 +1348,42 @@
       "merchant_path": [
         "Drogerie a kosmetika",
         "Prací prostředky",
-        "Odstraňovače skvrn",
-        "Běžné"
+        "Prášky",
+        "Barevné prádlo"
       ],
       "mapped_category": "Praní",
       "mapping_reason": "Praní podle cesty prodejce",
       "product_count": 4,
       "old_rule_categories": {
-        "Úklid": 2,
-        "Praní": 2
+        "Praní": 4
       },
       "sample_product_urls": [
-        "https://www.kosik.cz/p194405-savo-perex-beleni-pradla-kvetinova-vune",
-        "https://www.kosik.cz/p194425-savo-perex-beleni-pradla-svezi-vune",
-        "https://www.kosik.cz/p741296-vanish-oxi-action-extra-hygiene-tekuty-odstranovac-skvrn"
+        "https://www.kosik.cz/p795240-ariel-prasek-color-box-5-5-kg",
+        "https://www.kosik.cz/p741426-ariel-prasek-color-1-1-kg",
+        "https://www.kosik.cz/p770634-persil-color-praci-prasek-na-barevne-pradlo-box"
       ],
-      "needs_review": true
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Prášky",
+        "Univerzální"
+      ],
+      "mapped_category": "Praní",
+      "mapping_reason": "Praní podle cesty prodejce",
+      "product_count": 4,
+      "old_rule_categories": {
+        "Praní": 4
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p795256-ariel-prasek-mountain-spring-box-2-75-kg",
+        "https://www.kosik.cz/p770574-persil-expert-sensitive-praci-prasek-pro-citlivou-pokozku",
+        "https://www.kosik.cz/p782708-persil-praci-prasek-freshnes-by-silan"
+      ],
+      "needs_review": false
     },
     {
       "shop": "Košík",
@@ -1262,6 +1472,27 @@
     {
       "shop": "Košík",
       "merchant_path": [
+        "Trvanlivé",
+        "Sladké",
+        "Oplatky a sušenky",
+        "Oplatky"
+      ],
+      "mapped_category": "Sladké",
+      "mapping_reason": "Oplatky a sušenky podle cesty e-shopu",
+      "product_count": 4,
+      "old_rule_categories": {
+        "Sladké": 4
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p802836-orion-studentska-pecet-kakaova-oplatka-s-mlecnou-naplni",
+        "https://www.kosik.cz/p776516-orion-studentska-pecet-oplatka-s-kakaovou-naplni-macena-v-mlecne-cokolade",
+        "https://www.kosik.cz/p21877-opavia-fidorka-mlecna-s-kokosem-modra"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
         "Uzeniny a lahůdky",
         "Salámy",
         "Tvrdé",
@@ -1327,8 +1558,8 @@
       "merchant_path": [
         "Drogerie",
         "Prací prostředky",
-        "Prací gely",
-        "Dětské"
+        "Prací prášky",
+        "Univerzální"
       ],
       "mapped_category": "Praní",
       "mapping_reason": "Praní podle cesty prodejce",
@@ -1337,9 +1568,9 @@
         "Praní": 4
       },
       "sample_product_urls": [
-        "https://www.rohlik.cz/1424100-ariel-sensitive-praci-gel-2-7-l",
-        "https://www.rohlik.cz/1438403-ariel-sensitive-praci-gel-4-5-l",
-        "https://www.rohlik.cz/1439906-persil-expert-sensitive-praci-gel-2-7-l"
+        "https://www.rohlik.cz/1462124-ariel-alpine-fresh-praci-prasek-4-4-kg",
+        "https://www.rohlik.cz/1464146-persil-expert-freshness-by-silan-praci-prasek-4-95-kg",
+        "https://www.rohlik.cz/1479617-persil-expert-freshness-by-silan-praci-prasek-6-05-kg"
       ],
       "needs_review": false
     },
@@ -1347,41 +1578,41 @@
       "shop": "Rohlík",
       "merchant_path": [
         "Drogerie",
-        "Prací prostředky",
-        "Prací kapsle/tablety",
-        "Barevné prádlo"
+        "Čisticí prostředky",
+        "Na sklo a okna"
       ],
-      "mapped_category": "Praní",
-      "mapping_reason": "Praní podle cesty prodejce",
+      "mapped_category": "Úklid",
+      "mapping_reason": "Úklid podle cesty prodejce",
       "product_count": 4,
       "old_rule_categories": {
-        "Praní": 4
+        "Úklid": 3,
+        "Papír a hygiena": 1
       },
       "sample_product_urls": [
-        "https://www.rohlik.cz/1425039-ariel-color-allin1-kapsle-na-prani",
-        "https://www.rohlik.cz/1464111-ariel-color-allin1-kapsle-na-prani",
-        "https://www.rohlik.cz/1470039-persil-deep-clean-4v1-discs-color-praci-kapsle"
+        "https://www.rohlik.cz/1296249-clin-lemon-cistic-na-okna-s-alkoholem",
+        "https://www.rohlik.cz/1479619-clin-peony-cistic-na-okna",
+        "https://www.rohlik.cz/1353829-clin-pro-nature-cistic-na-okna"
       ],
-      "needs_review": false
+      "needs_review": true
     },
     {
       "shop": "Rohlík",
       "merchant_path": [
-        "Mléčné a chlazené",
-        "Sýry",
-        "Plátkové",
-        "Ostatní"
+        "Drogerie",
+        "Čisticí prostředky",
+        "Univerzální",
+        "Tekuté"
       ],
-      "mapped_category": "Sýry / plátkové",
-      "mapping_reason": "Plátkové sýry podle cesty prodejce",
+      "mapped_category": "Úklid",
+      "mapping_reason": "Úklid podle cesty prodejce",
       "product_count": 4,
       "old_rule_categories": {
-        "Sýry / plátkové": 4
+        "Úklid": 4
       },
       "sample_product_urls": [
-        "https://www.rohlik.cz/1359573-madeta-lipanek-syr-48-platky",
-        "https://www.rohlik.cz/1321017-madeta-syraruv-vyber-moravsky-bochnik-45-platky",
-        "https://www.rohlik.cz/1405165-madeta-syraruv-vyber-tylzsky-syr-45-platky"
+        "https://www.rohlik.cz/1295421-cif-cream-tekuty-pisek-original",
+        "https://www.rohlik.cz/1312313-cif-cream-tekuty-pisek-lemon",
+        "https://www.rohlik.cz/1389017-cif-max-power-grease-fighter"
       ],
       "needs_review": false
     },
@@ -1487,48 +1718,6 @@
         "https://www.kosik.cz/p3347-linteo-vlhceny-toaletni-papir-s-kyselinou-mlecnou",
         "https://www.kosik.cz/p731920-zewa-almond-milk-vlhceny-toaletni-papir",
         "https://www.kosik.cz/p731922-zewa-sensitive-vlhceny-toaletni-papir"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Drogerie a kosmetika",
-        "Prací prostředky",
-        "Prášky",
-        "Barevné prádlo"
-      ],
-      "mapped_category": "Praní",
-      "mapping_reason": "Praní podle cesty prodejce",
-      "product_count": 3,
-      "old_rule_categories": {
-        "Praní": 3
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p741426-ariel-prasek-color-1-1-kg",
-        "https://www.kosik.cz/p770634-persil-color-praci-prasek-na-barevne-pradlo-box",
-        "https://www.kosik.cz/p782710-persil-praci-prasek-color"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Drogerie a kosmetika",
-        "Prací prostředky",
-        "Prášky",
-        "Univerzální"
-      ],
-      "mapped_category": "Praní",
-      "mapping_reason": "Praní podle cesty prodejce",
-      "product_count": 3,
-      "old_rule_categories": {
-        "Praní": 3
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p770574-persil-expert-sensitive-praci-prasek-pro-citlivou-pokozku",
-        "https://www.kosik.cz/p782708-persil-praci-prasek-freshnes-by-silan",
-        "https://www.kosik.cz/p770578-persil-universal-praci-prasek"
       ],
       "needs_review": false
     },
@@ -1744,27 +1933,6 @@
     {
       "shop": "Košík",
       "merchant_path": [
-        "Trvanlivé",
-        "Sladké",
-        "Oplatky a sušenky",
-        "Oplatky"
-      ],
-      "mapped_category": "Sladké",
-      "mapping_reason": "Oplatky a sušenky podle cesty e-shopu",
-      "product_count": 3,
-      "old_rule_categories": {
-        "Sladké": 3
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p776516-orion-studentska-pecet-oplatka-s-kakaovou-naplni-macena-v-mlecne-cokolade",
-        "https://www.kosik.cz/p21877-opavia-fidorka-mlecna-s-kokosem-modra",
-        "https://www.kosik.cz/p21907-opavia-minonky-kakaove-oplatky"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
         "Uzeniny a lahůdky",
         "Šunky",
         "Vepřové",
@@ -1808,72 +1976,8 @@
       "shop": "Rohlík",
       "merchant_path": [
         "Drogerie",
-        "Prací prostředky",
-        "Prací prášky",
-        "Univerzální"
-      ],
-      "mapped_category": "Praní",
-      "mapping_reason": "Praní podle cesty prodejce",
-      "product_count": 3,
-      "old_rule_categories": {
-        "Praní": 3
-      },
-      "sample_product_urls": [
-        "https://www.rohlik.cz/1462124-ariel-alpine-fresh-praci-prasek-4-4-kg",
-        "https://www.rohlik.cz/1464146-persil-expert-freshness-by-silan-praci-prasek-4-95-kg",
-        "https://www.rohlik.cz/1295521-persil-expert-sensitive-praci-prasek-1-98-kg"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Rohlík",
-      "merchant_path": [
-        "Drogerie",
-        "Prací prostředky",
-        "Vonné perličky a parfémy",
-        "Vonné perličky"
-      ],
-      "mapped_category": "Praní",
-      "mapping_reason": "Praní podle cesty prodejce",
-      "product_count": 3,
-      "old_rule_categories": {
-        "Praní": 3
-      },
-      "sample_product_urls": [
-        "https://www.rohlik.cz/1420988-lenor-floral-bouquet-perlicky-do-prani",
-        "https://www.rohlik.cz/1462126-lenor-spring-awakening-perlicky-do-prani",
-        "https://www.rohlik.cz/1442246-lenor-unstoppables-fresh-vonne-perlicky"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Rohlík",
-      "merchant_path": [
-        "Drogerie",
         "Čisticí prostředky",
-        "Na sklo a okna"
-      ],
-      "mapped_category": "Úklid",
-      "mapping_reason": "Úklid podle cesty prodejce",
-      "product_count": 3,
-      "old_rule_categories": {
-        "Úklid": 2,
-        "Papír a hygiena": 1
-      },
-      "sample_product_urls": [
-        "https://www.rohlik.cz/1296249-clin-lemon-cistic-na-okna-s-alkoholem",
-        "https://www.rohlik.cz/1353829-clin-pro-nature-cistic-na-okna",
-        "https://www.rohlik.cz/1308283-linteo-vlhcene-cistici-ubrousky-na-bryle"
-      ],
-      "needs_review": true
-    },
-    {
-      "shop": "Rohlík",
-      "merchant_path": [
-        "Drogerie",
-        "Čisticí prostředky",
-        "Univerzální",
-        "Tekuté"
+        "Na podlahu a koberce"
       ],
       "mapped_category": "Úklid",
       "mapping_reason": "Úklid podle cesty prodejce",
@@ -1882,9 +1986,9 @@
         "Úklid": 3
       },
       "sample_product_urls": [
-        "https://www.rohlik.cz/1295421-cif-cream-tekuty-pisek-original",
-        "https://www.rohlik.cz/1312313-cif-cream-tekuty-pisek-lemon",
-        "https://www.rohlik.cz/1389017-cif-max-power-grease-fighter"
+        "https://www.rohlik.cz/1474749-savo-levandule-dezinfekce-a-cistic-na-podlahy",
+        "https://www.rohlik.cz/1312975-savo-podlahy-a-povrchy-drevo-a-laminat",
+        "https://www.rohlik.cz/1312977-savo-podlahy-a-povrchy-vune-oceanu"
       ],
       "needs_review": false
     },
@@ -1928,6 +2032,27 @@
         "https://www.rohlik.cz/1307869-linteo-detske-vlhcene-ubrousky-s-mesickem-lekarskym-120-ks"
       ],
       "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Kosmetika",
+        "Sprchové gely a mýdla a přísady do koupele",
+        "Sprchové gely",
+        "Pánské"
+      ],
+      "mapped_category": null,
+      "mapping_reason": "Cesta prodejce nemá schválené mapování",
+      "product_count": 3,
+      "old_rule_categories": {
+        "Kosmetika": 3
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1476755-axe-africa-sprchovy-gel",
+        "https://www.rohlik.cz/1476756-axe-black-sprchovy-gel",
+        "https://www.rohlik.cz/1476757-axe-dark-temptation-sprchovy-gel"
+      ],
+      "needs_review": true
     },
     {
       "shop": "Rohlík",
@@ -1988,6 +2113,27 @@
         "https://www.rohlik.cz/1293423-hellmann-s-majoneza-original",
         "https://www.rohlik.cz/1439918-hellmann-s-majoneza-original",
         "https://www.rohlik.cz/1297675-hellmann-s-majoneza-delikatni"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plátkové",
+        "Eidam"
+      ],
+      "mapped_category": "Sýry / plátkové",
+      "mapping_reason": "Plátkové sýry podle cesty prodejce",
+      "product_count": 3,
+      "old_rule_categories": {
+        "Sýry / plátkové": 3
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1471343-madeta-high-protein-eidam-pro-platky",
+        "https://www.rohlik.cz/1467839-madeta-jihocesky-eidam-30-platky",
+        "https://www.rohlik.cz/1467844-madeta-jihocesky-eidam-45-platky"
       ],
       "needs_review": false
     },
@@ -2108,6 +2254,25 @@
       "sample_product_urls": [
         "https://www.kosik.cz/p782388-parodontax-posileni-a-ochrana-dasni-fresh-mint-zubni-pasta-s-kyselinou-hyaluronovou",
         "https://www.kosik.cz/p782390-parodontax-posileni-a-ochrana-dasni-whitening-zubni-pasta-s-kyselinou-hyaluronovou"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Drogerie a kosmetika",
+        "Čistící přípravky",
+        "Okna"
+      ],
+      "mapped_category": "Úklid",
+      "mapping_reason": "Úklid podle cesty prodejce",
+      "product_count": 2,
+      "old_rule_categories": {
+        "Úklid": 2
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p800312-clin-horeca-lemon",
+        "https://www.kosik.cz/p113797-clin-pro-nature-mint-eucalyptus-cistic-oken"
       ],
       "needs_review": false
     },
@@ -2394,26 +2559,6 @@
       "shop": "Rohlík",
       "merchant_path": [
         "Drogerie",
-        "Mytí nádobí",
-        "Tablety do myčky",
-        "Multifunkční"
-      ],
-      "mapped_category": "Úklid",
-      "mapping_reason": "Úklid podle cesty prodejce",
-      "product_count": 2,
-      "old_rule_categories": {
-        "Úklid": 2
-      },
-      "sample_product_urls": [
-        "https://www.rohlik.cz/1423203-jar-platinum-lemon-kapsle-do-mycky",
-        "https://www.rohlik.cz/1424785-jar-platinum-plus-lemon-kapsle-do-mycky"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Rohlík",
-      "merchant_path": [
-        "Drogerie",
         "Papírová a vatová hygiena",
         "Toaletní papír",
         "4 vrstvý"
@@ -2427,6 +2572,26 @@
       "sample_product_urls": [
         "https://www.rohlik.cz/1318645-zewa-exclusive-ultra-soft-almond-toaletni-papir-4vrstvy-8-ks",
         "https://www.rohlik.cz/1307927-zewa-exclusive-ultra-soft-toaletni-papir-4vrstvy-8-ks"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Drogerie",
+        "Prací prostředky",
+        "Prací prášky",
+        "Barevné prádlo"
+      ],
+      "mapped_category": "Praní",
+      "mapping_reason": "Praní podle cesty prodejce",
+      "product_count": 2,
+      "old_rule_categories": {
+        "Praní": 2
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1464145-persil-color-praci-prasek-4-95-kg",
+        "https://www.rohlik.cz/1479618-persil-color-praci-prasek-6-05-kg"
       ],
       "needs_review": false
     },
@@ -2475,7 +2640,8 @@
       "merchant_path": [
         "Drogerie",
         "Čisticí prostředky",
-        "Na podlahu a koberce"
+        "Univerzální",
+        "Ve spreji/s rozprašovačem"
       ],
       "mapped_category": "Úklid",
       "mapping_reason": "Úklid podle cesty prodejce",
@@ -2484,8 +2650,8 @@
         "Úklid": 2
       },
       "sample_product_urls": [
-        "https://www.rohlik.cz/1312975-savo-podlahy-a-povrchy-drevo-a-laminat",
-        "https://www.rohlik.cz/1312977-savo-podlahy-a-povrchy-vune-oceanu"
+        "https://www.rohlik.cz/1464220-cif-cream-spray-original-kremova-cistici-pena",
+        "https://www.rohlik.cz/1476515-clin-crystal-cistic-oken"
       ],
       "needs_review": false
     },
@@ -2553,9 +2719,28 @@
       "shop": "Rohlík",
       "merchant_path": [
         "Mléčné a chlazené",
+        "Máslo, tuky a margaríny",
+        "Rostlinné tuky a margaríny"
+      ],
+      "mapped_category": "Másla a tuky",
+      "mapping_reason": "Jedlé máslo/tuky podle cesty prodejce",
+      "product_count": 2,
+      "old_rule_categories": {
+        "Másla a tuky": 2
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1412916-hera-classic-rostlinny-tuk",
+        "https://www.rohlik.cz/1477775-omega-rostlinny-tuk"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Mléčné a chlazené",
         "Sýry",
         "Plátkové",
-        "Eidam"
+        "Gouda"
       ],
       "mapped_category": "Sýry / plátkové",
       "mapping_reason": "Plátkové sýry podle cesty prodejce",
@@ -2564,8 +2749,8 @@
         "Sýry / plátkové": 2
       },
       "sample_product_urls": [
-        "https://www.rohlik.cz/1467839-madeta-jihocesky-eidam-30-platky",
-        "https://www.rohlik.cz/1467844-madeta-jihocesky-eidam-45-platky"
+        "https://www.rohlik.cz/1419346-madeta-syraruv-vyber-gouda-48-platky",
+        "https://www.rohlik.cz/1474653-president-gouda-platky"
       ],
       "needs_review": false
     },
@@ -2745,44 +2930,6 @@
       "shop": "Košík",
       "merchant_path": [
         "Drogerie a kosmetika",
-        "Prací prostředky",
-        "Kapsle",
-        "Barevné prádlo"
-      ],
-      "mapped_category": "Praní",
-      "mapping_reason": "Praní podle cesty prodejce",
-      "product_count": 1,
-      "old_rule_categories": {
-        "Praní": 1
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p778666-persil-power-caps-color-deep-clean-praci-kapsle"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Drogerie a kosmetika",
-        "Prací prostředky",
-        "Kapsle",
-        "Univerzální"
-      ],
-      "mapped_category": "Praní",
-      "mapping_reason": "Praní podle cesty prodejce",
-      "product_count": 1,
-      "old_rule_categories": {
-        "Praní": 1
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p778668-persil-persil-power-caps-universal-deep-clean-praci-kapsle"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Drogerie a kosmetika",
         "Péče o pleť",
         "Čištění a odličování",
         "Odličovací tampony a ubrousky"
@@ -2871,24 +3018,6 @@
       },
       "sample_product_urls": [
         "https://www.kosik.cz/p737478-colgate-herbal-white-zubni-pasta"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Drogerie a kosmetika",
-        "Čistící přípravky",
-        "Okna"
-      ],
-      "mapped_category": "Úklid",
-      "mapping_reason": "Úklid podle cesty prodejce",
-      "product_count": 1,
-      "old_rule_categories": {
-        "Úklid": 1
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p113797-clin-pro-nature-mint-eucalyptus-cistic-oken"
       ],
       "needs_review": false
     },
@@ -3386,25 +3515,6 @@
       "shop": "Rohlík",
       "merchant_path": [
         "Drogerie",
-        "Prací prostředky",
-        "Prací prášky",
-        "Barevné prádlo"
-      ],
-      "mapped_category": "Praní",
-      "mapping_reason": "Praní podle cesty prodejce",
-      "product_count": 1,
-      "old_rule_categories": {
-        "Praní": 1
-      },
-      "sample_product_urls": [
-        "https://www.rohlik.cz/1464145-persil-color-praci-prasek-4-95-kg"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Rohlík",
-      "merchant_path": [
-        "Drogerie",
         "Čisticí prostředky",
         "Na nábytek"
       ],
@@ -3434,25 +3544,6 @@
       },
       "sample_product_urls": [
         "https://www.rohlik.cz/1339845-cif-trouba-gril-cistici-sprej"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Rohlík",
-      "merchant_path": [
-        "Drogerie",
-        "Čisticí prostředky",
-        "Univerzální",
-        "Ve spreji/s rozprašovačem"
-      ],
-      "mapped_category": "Úklid",
-      "mapping_reason": "Úklid podle cesty prodejce",
-      "product_count": 1,
-      "old_rule_categories": {
-        "Úklid": 1
-      },
-      "sample_product_urls": [
-        "https://www.rohlik.cz/1464220-cif-cream-spray-original-kremova-cistici-pena"
       ],
       "needs_review": false
     },
@@ -3553,24 +3644,6 @@
       "shop": "Rohlík",
       "merchant_path": [
         "Mléčné a chlazené",
-        "Máslo, tuky a margaríny",
-        "Rostlinné tuky a margaríny"
-      ],
-      "mapped_category": "Másla a tuky",
-      "mapping_reason": "Jedlé máslo/tuky podle cesty prodejce",
-      "product_count": 1,
-      "old_rule_categories": {
-        "Másla a tuky": 1
-      },
-      "sample_product_urls": [
-        "https://www.rohlik.cz/1412916-hera-classic-rostlinny-tuk"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Rohlík",
-      "merchant_path": [
-        "Mléčné a chlazené",
         "Sýry",
         "Plátkové",
         "Cheddar"
@@ -3583,25 +3656,6 @@
       },
       "sample_product_urls": [
         "https://www.rohlik.cz/1295627-president-cheddar-platkovy-syr"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Rohlík",
-      "merchant_path": [
-        "Mléčné a chlazené",
-        "Sýry",
-        "Plátkové",
-        "Gouda"
-      ],
-      "mapped_category": "Sýry / plátkové",
-      "mapping_reason": "Plátkové sýry podle cesty prodejce",
-      "product_count": 1,
-      "old_rule_categories": {
-        "Sýry / plátkové": 1
-      },
-      "sample_product_urls": [
-        "https://www.rohlik.cz/1419346-madeta-syraruv-vyber-gouda-48-platky"
       ],
       "needs_review": false
     },
@@ -3850,6 +3904,26 @@
       },
       "sample_product_urls": [
         "https://www.rohlik.cz/1297827-orion-studentska-pecet-horka-cokolada-s-arasidy-rozinkami-a-zele"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Trvanlivé",
+        "Sladkosti",
+        "Čokolády",
+        "Mléčné čokolády",
+        "Mléčné čokolády ochucené"
+      ],
+      "mapped_category": "Sladké",
+      "mapping_reason": "Sladkosti podle cesty prodejce",
+      "product_count": 1,
+      "old_rule_categories": {
+        "Sladké": 1
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1479911-orion-studentska-pecet-bublinky-mlecna-a-prichut-karamelu"
       ],
       "needs_review": false
     },
