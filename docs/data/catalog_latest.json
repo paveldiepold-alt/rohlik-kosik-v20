@@ -2340,7 +2340,11 @@
         }
       ],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "last_monitor_attempt_at": "2026-10-22T07:48:49+00:00",
+      "monitor_v26_attempts": 1,
+      "monitor_v26_status": "title_mismatch",
+      "monitor_v26_note": "Product identity differs"
     },
     {
       "store": "Košík",
@@ -2365,7 +2369,11 @@
         }
       ],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "last_monitor_attempt_at": "2026-10-22T07:48:53+00:00",
+      "monitor_v26_attempts": 1,
+      "monitor_v26_status": "price_unverified",
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
     },
     {
       "store": "Košík",
@@ -2390,7 +2398,11 @@
         }
       ],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "last_monitor_attempt_at": "2026-10-22T07:48:58+00:00",
+      "monitor_v26_attempts": 1,
+      "monitor_v26_status": "price_unverified",
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
     },
     {
       "store": "Košík",
@@ -2415,7 +2427,11 @@
         }
       ],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "last_monitor_attempt_at": "2026-10-22T07:49:08+00:00",
+      "monitor_v26_attempts": 1,
+      "monitor_v26_status": "price_unverified",
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
     },
     {
       "store": "Košík",
@@ -2440,7 +2456,11 @@
         }
       ],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "last_monitor_attempt_at": "2026-10-22T07:49:13+00:00",
+      "monitor_v26_attempts": 1,
+      "monitor_v26_status": "price_unverified",
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
     },
     {
       "store": "Košík",
@@ -2465,7 +2485,11 @@
         }
       ],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "last_monitor_attempt_at": "2026-10-22T07:49:17+00:00",
+      "monitor_v26_attempts": 1,
+      "monitor_v26_status": "price_unverified",
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
     },
     {
       "store": "Košík",
@@ -2490,7 +2514,11 @@
         }
       ],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "last_monitor_attempt_at": "2026-10-22T07:49:27+00:00",
+      "monitor_v26_attempts": 1,
+      "monitor_v26_status": "price_unverified",
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
     },
     {
       "store": "Košík",
@@ -2505,12 +2533,22 @@
       "title": "Axe Jungle Fresh Deodorant",
       "price_czk": 104.9,
       "price_status": "ok",
-      "price_source": "kosik-product-text",
-      "checked_at": "2026-10-20T14:27:44+00:00",
+      "price_source": "monitor-v26:pack-plus-unit",
+      "checked_at": "2026-10-22T07:49:32+00:00",
       "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "last_monitor_attempt_at": "2026-10-22T07:49:32+00:00",
+      "monitor_v26_attempts": 1,
+      "monitor_v26_status": "ok",
+      "monitor_v26_note": "Cena balení ověřená jednotkovou cenou",
+      "original_price_czk": null,
+      "discount_pct": null,
+      "offer_valid_until": null,
+      "price_history_previous_czk": 104.9,
+      "price_history_previous_at": "2026-10-20T14:27:44+00:00",
+      "drop_since_previous_pct": null
     },
     {
       "store": "Košík",
@@ -2525,8 +2563,8 @@
       "title": "BIO Avokádo",
       "price_czk": 69.9,
       "price_status": "ok",
-      "price_source": "kosik-product-text",
-      "checked_at": "2026-10-20T14:02:24+00:00",
+      "price_source": "monitor-v26:pack-plus-unit",
+      "checked_at": "2026-10-22T07:49:37+00:00",
       "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
@@ -2540,7 +2578,17 @@
       "category_source": "jsonld_breadcrumb",
       "product_description": "Bio avokádo.&nbsp;&nbsp;",
       "taxonomy_checked_at": "2026-10-21T07:18:26+00:00",
-      "taxonomy_status": "verified"
+      "taxonomy_status": "verified",
+      "last_monitor_attempt_at": "2026-10-22T07:49:37+00:00",
+      "monitor_v26_attempts": 1,
+      "monitor_v26_status": "ok",
+      "monitor_v26_note": "Cena balení ověřená jednotkovou cenou",
+      "original_price_czk": null,
+      "discount_pct": null,
+      "offer_valid_until": null,
+      "price_history_previous_czk": 69.9,
+      "price_history_previous_at": "2026-10-20T14:02:24+00:00",
+      "drop_since_previous_pct": null
     },
     {
       "store": "Košík",
@@ -2555,8 +2603,8 @@
       "title": "BIO Banány",
       "price_czk": 32.9,
       "price_status": "ok",
-      "price_source": "kosik-product-text",
-      "checked_at": "2026-10-20T14:03:05+00:00",
+      "price_source": "monitor-v26:pack-plus-unit",
+      "checked_at": "2026-10-22T07:49:47+00:00",
       "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
@@ -2570,7 +2618,17 @@
       "category_source": "jsonld_breadcrumb",
       "product_description": "Bio banány.&nbsp;&nbsp;",
       "taxonomy_checked_at": "2026-10-21T07:18:27+00:00",
-      "taxonomy_status": "verified"
+      "taxonomy_status": "verified",
+      "last_monitor_attempt_at": "2026-10-22T07:49:47+00:00",
+      "monitor_v26_attempts": 1,
+      "monitor_v26_status": "ok",
+      "monitor_v26_note": "Cena balení ověřená jednotkovou cenou",
+      "original_price_czk": null,
+      "discount_pct": null,
+      "offer_valid_until": null,
+      "price_history_previous_czk": 32.9,
+      "price_history_previous_at": "2026-10-20T14:03:05+00:00",
+      "drop_since_previous_pct": null
     },
     {
       "store": "Košík",
@@ -2585,8 +2643,8 @@
       "title": "BIO Mrkev",
       "price_czk": 79.9,
       "price_status": "ok",
-      "price_source": "kosik-product-text",
-      "checked_at": "2026-10-20T14:15:07+00:00",
+      "price_source": "monitor-v26:pack-plus-unit",
+      "checked_at": "2026-10-22T07:49:51+00:00",
       "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
@@ -2600,7 +2658,17 @@
       "category_source": "jsonld_breadcrumb",
       "product_description": "Bio mrkev, 1 kg.O produktuZákladní kořenová zelenina, která nechybí snad skoro žádné domácnosti. Kořen je dužnatě zesílený, válcovitý nebo úzce kuželovitý,…",
       "taxonomy_checked_at": "2026-10-21T07:18:27+00:00",
-      "taxonomy_status": "verified"
+      "taxonomy_status": "verified",
+      "last_monitor_attempt_at": "2026-10-22T07:49:51+00:00",
+      "monitor_v26_attempts": 1,
+      "monitor_v26_status": "ok",
+      "monitor_v26_note": "Cena balení ověřená jednotkovou cenou",
+      "original_price_czk": null,
+      "discount_pct": null,
+      "offer_valid_until": null,
+      "price_history_previous_czk": 79.9,
+      "price_history_previous_at": "2026-10-20T14:15:07+00:00",
+      "drop_since_previous_pct": null
     },
     {
       "store": "Košík",
@@ -2615,8 +2683,8 @@
       "title": "BIO Okurka",
       "price_czk": 59.9,
       "price_status": "ok",
-      "price_source": "kosik-product-text",
-      "checked_at": "2026-10-20T14:11:50+00:00",
+      "price_source": "monitor-v26:pack-plus-unit",
+      "checked_at": "2026-10-22T07:49:56+00:00",
       "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
@@ -2630,7 +2698,17 @@
       "category_source": "jsonld_breadcrumb",
       "product_description": "Okurka hadovka, 1 ks.O produktuOkurka se řadí do čeledi tykvovitých. Pochází z vlhkých a teplých krajů, především z Indie. Dříve však okurky měly mít hořkou…",
       "taxonomy_checked_at": "2026-10-21T07:18:27+00:00",
-      "taxonomy_status": "verified"
+      "taxonomy_status": "verified",
+      "last_monitor_attempt_at": "2026-10-22T07:49:56+00:00",
+      "monitor_v26_attempts": 1,
+      "monitor_v26_status": "ok",
+      "monitor_v26_note": "Cena balení ověřená jednotkovou cenou",
+      "original_price_czk": null,
+      "discount_pct": null,
+      "offer_valid_until": null,
+      "price_history_previous_czk": 59.9,
+      "price_history_previous_at": "2026-10-20T14:11:50+00:00",
+      "drop_since_previous_pct": null
     },
     {
       "store": "Košík",
@@ -2645,8 +2723,8 @@
       "title": "BIO Paprika Ramiro, 2 ks",
       "price_czk": 74.9,
       "price_status": "ok",
-      "price_source": "kosik-product-text",
-      "checked_at": "2026-10-20T14:18:00+00:00",
+      "price_source": "monitor-v26:pack-plus-unit",
+      "checked_at": "2026-10-22T07:50:05+00:00",
       "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
@@ -2660,7 +2738,17 @@
       "category_source": "jsonld_breadcrumb",
       "product_description": "Paprika zeleninová červená odrůdy Ramiro.Kalibr: 75g+.O produktuRamiro je oblíbená odrůda papriky zeleninové mezi zahradníky nejspíše pro její příjemnou chuť a…",
       "taxonomy_checked_at": "2026-10-21T07:18:27+00:00",
-      "taxonomy_status": "verified"
+      "taxonomy_status": "verified",
+      "last_monitor_attempt_at": "2026-10-22T07:50:05+00:00",
+      "monitor_v26_attempts": 1,
+      "monitor_v26_status": "ok",
+      "monitor_v26_note": "Cena balení ověřená jednotkovou cenou",
+      "original_price_czk": null,
+      "discount_pct": null,
+      "offer_valid_until": null,
+      "price_history_previous_czk": 74.9,
+      "price_history_previous_at": "2026-10-20T14:18:00+00:00",
+      "drop_since_previous_pct": null
     },
     {
       "store": "Košík",
@@ -2673,10 +2761,10 @@
       "package_verified": null,
       "cycle": 1,
       "title": "BIO Paprika červená, balení",
-      "price_czk": 159.9,
+      "price_czk": 139.9,
       "price_status": "ok",
-      "price_source": "kosik-product-text",
-      "checked_at": "2026-10-20T14:17:44+00:00",
+      "price_source": "monitor-v26:discounted-pack",
+      "checked_at": "2026-10-22T07:50:10+00:00",
       "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
@@ -2690,7 +2778,17 @@
       "category_source": "jsonld_breadcrumb",
       "product_description": "BIO Zeleninová paprika červená. Jakost: I. Kalibr: 70 - 80mm O PRODUKTU Paprika patří do čeledi lilkovitých, jakožto i rajčata, lilek nebo brambory.…",
       "taxonomy_checked_at": "2026-10-21T07:18:28+00:00",
-      "taxonomy_status": "verified"
+      "taxonomy_status": "verified",
+      "last_monitor_attempt_at": "2026-10-22T07:50:10+00:00",
+      "monitor_v26_attempts": 1,
+      "monitor_v26_status": "ok",
+      "monitor_v26_note": "Cena balení, původní cena a sleva souhlasí",
+      "original_price_czk": 159.9,
+      "discount_pct": 12.5,
+      "offer_valid_until": "2026-10-23",
+      "price_history_previous_czk": 159.9,
+      "price_history_previous_at": "2026-10-20T14:17:44+00:00",
+      "drop_since_previous_pct": 12.5
     },
     {
       "store": "Košík",
@@ -2705,8 +2803,8 @@
       "title": "BIO Paprika žlutá, balení",
       "price_czk": 159.9,
       "price_status": "ok",
-      "price_source": "kosik-product-text",
-      "checked_at": "2026-10-20T14:17:42+00:00",
+      "price_source": "monitor-v26:pack-plus-unit",
+      "checked_at": "2026-10-22T07:50:15+00:00",
       "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
@@ -2720,7 +2818,17 @@
       "category_source": "jsonld_breadcrumb",
       "product_description": "BIO Zeleninová paprika žlutá Jakost: I. Kalibr: 50-70mm O PRODUKTU Paprika patří do čeledi lilkovitých, jakožto i rajčata, lilek nebo brambory. Papriky…",
       "taxonomy_checked_at": "2026-10-21T07:18:29+00:00",
-      "taxonomy_status": "verified"
+      "taxonomy_status": "verified",
+      "last_monitor_attempt_at": "2026-10-22T07:50:15+00:00",
+      "monitor_v26_attempts": 1,
+      "monitor_v26_status": "ok",
+      "monitor_v26_note": "Cena balení ověřená jednotkovou cenou",
+      "original_price_czk": null,
+      "discount_pct": null,
+      "offer_valid_until": null,
+      "price_history_previous_czk": 159.9,
+      "price_history_previous_at": "2026-10-20T14:17:42+00:00",
+      "drop_since_previous_pct": null
     },
     {
       "store": "Košík",
@@ -2760,7 +2868,11 @@
         }
       ],
       "taxonomy_status": "verified",
-      "taxonomy_attempts": 2
+      "taxonomy_attempts": 2,
+      "last_monitor_attempt_at": "2026-10-22T07:50:25+00:00",
+      "monitor_v26_attempts": 1,
+      "monitor_v26_status": "title_mismatch",
+      "monitor_v26_note": "Product identity differs"
     },
     {
       "store": "Košík",
@@ -2775,8 +2887,8 @@
       "title": "BIO Rajčata červená kulatá na stonku, balení",
       "price_czk": 134.9,
       "price_status": "ok",
-      "price_source": "kosik-product-text",
-      "checked_at": "2026-10-20T14:13:01+00:00",
+      "price_source": "monitor-v26:pack-plus-unit",
+      "checked_at": "2026-10-22T07:50:29+00:00",
       "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
@@ -2791,7 +2903,17 @@
       "category_source": "jsonld_breadcrumb",
       "product_description": "Rajče červené kulaté na stonku BIO, balení 500g. Jakost: I. Kalibr: 47 - 67mm O PRODUKTU Jedná se o dužnatou bobuli, která se řadí mezi zeleninu, patří do…",
       "taxonomy_checked_at": "2026-10-21T07:18:29+00:00",
-      "taxonomy_status": "verified"
+      "taxonomy_status": "verified",
+      "last_monitor_attempt_at": "2026-10-22T07:50:29+00:00",
+      "monitor_v26_attempts": 1,
+      "monitor_v26_status": "ok",
+      "monitor_v26_note": "Cena balení ověřená jednotkovou cenou",
+      "original_price_czk": null,
+      "discount_pct": null,
+      "offer_valid_until": null,
+      "price_history_previous_czk": 134.9,
+      "price_history_previous_at": "2026-10-20T14:13:01+00:00",
+      "drop_since_previous_pct": null
     },
     {
       "store": "Košík",
@@ -2804,10 +2926,10 @@
       "package_verified": null,
       "cycle": 1,
       "title": "Banán baby",
-      "price_czk": 29.9,
+      "price_czk": 44.9,
       "price_status": "ok",
-      "price_source": "kosik-product-text",
-      "checked_at": "2026-10-20T14:03:07+00:00",
+      "price_source": "monitor-v26:pack-plus-unit",
+      "checked_at": "2026-10-22T07:50:34+00:00",
       "note": "Běžná cena 1 ks z produktového detailu; místní dostupnost neověřena",
       "multibuy": [],
       "http_status": 200,
@@ -2821,7 +2943,17 @@
       "category_source": "jsonld_breadcrumb",
       "product_description": "Malé vzrůstem, ale plné chuti.Baby banány jsou charakteristické svou drobnou velikostí, jemnou dužinou a příjemně sladkou, výraznou banánovou chutí. Díky…",
       "taxonomy_checked_at": "2026-10-21T07:18:24+00:00",
-      "taxonomy_status": "verified"
+      "taxonomy_status": "verified",
+      "last_monitor_attempt_at": "2026-10-22T07:50:34+00:00",
+      "monitor_v26_attempts": 1,
+      "monitor_v26_status": "ok",
+      "monitor_v26_note": "Cena balení ověřená jednotkovou cenou",
+      "original_price_czk": null,
+      "discount_pct": null,
+      "offer_valid_until": null,
+      "price_history_previous_czk": 29.9,
+      "price_history_previous_at": "2026-10-20T14:03:07+00:00",
+      "drop_since_previous_pct": null
     },
     {
       "store": "Košík",
@@ -14664,12 +14796,22 @@
       "title": "Ariel Alpine Fresh prací prášek (4,4 kg)",
       "price_czk": 449.9,
       "price_status": "ok",
-      "price_source": "visible-product-detail",
-      "checked_at": "2026-10-20T15:41:22+00:00",
+      "price_source": "monitor-v26:visible-product-detail",
+      "checked_at": "2026-10-22T07:49:03+00:00",
       "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "last_monitor_attempt_at": "2026-10-22T07:49:03+00:00",
+      "monitor_v26_attempts": 1,
+      "monitor_v26_status": "ok",
+      "monitor_v26_note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "original_price_czk": null,
+      "discount_pct": null,
+      "offer_valid_until": null,
+      "price_history_previous_czk": 449.9,
+      "price_history_previous_at": "2026-10-20T15:41:22+00:00",
+      "drop_since_previous_pct": null
     },
     {
       "store": "Rohlík",
@@ -14684,12 +14826,22 @@
       "title": "Ariel Color Allin1 kapsle na praní",
       "price_czk": 499.9,
       "price_status": "ok",
-      "price_source": "visible-product-detail",
-      "checked_at": "2026-10-20T15:41:28+00:00",
+      "price_source": "monitor-v26:visible-product-detail",
+      "checked_at": "2026-10-22T07:49:23+00:00",
       "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "last_monitor_attempt_at": "2026-10-22T07:49:23+00:00",
+      "monitor_v26_attempts": 1,
+      "monitor_v26_status": "ok",
+      "monitor_v26_note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "original_price_czk": null,
+      "discount_pct": null,
+      "offer_valid_until": null,
+      "price_history_previous_czk": 499.9,
+      "price_history_previous_at": "2026-10-20T15:41:28+00:00",
+      "drop_since_previous_pct": null
     },
     {
       "store": "Rohlík",
@@ -14704,12 +14856,22 @@
       "title": "Ariel Color Allin1 kapsle na praní",
       "price_czk": 259.9,
       "price_status": "ok",
-      "price_source": "visible-product-detail",
-      "checked_at": "2026-10-20T15:41:29+00:00",
+      "price_source": "monitor-v26:visible-product-detail",
+      "checked_at": "2026-10-22T07:49:42+00:00",
       "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "last_monitor_attempt_at": "2026-10-22T07:49:42+00:00",
+      "monitor_v26_attempts": 1,
+      "monitor_v26_status": "ok",
+      "monitor_v26_note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "original_price_czk": null,
+      "discount_pct": null,
+      "offer_valid_until": null,
+      "price_history_previous_czk": 259.9,
+      "price_history_previous_at": "2026-10-20T15:41:29+00:00",
+      "drop_since_previous_pct": null
     },
     {
       "store": "Rohlík",
@@ -14748,12 +14910,22 @@
       "title": "Ariel Color prací gel (1,8 l)",
       "price_czk": 259.9,
       "price_status": "ok",
-      "price_source": "visible-product-detail",
-      "checked_at": "2026-10-20T15:41:07+00:00",
+      "price_source": "monitor-v26:visible-product-detail",
+      "checked_at": "2026-10-22T07:50:01+00:00",
       "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "last_monitor_attempt_at": "2026-10-22T07:50:01+00:00",
+      "monitor_v26_attempts": 1,
+      "monitor_v26_status": "ok",
+      "monitor_v26_note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "original_price_czk": null,
+      "discount_pct": null,
+      "offer_valid_until": null,
+      "price_history_previous_czk": 259.9,
+      "price_history_previous_at": "2026-10-20T15:41:07+00:00",
+      "drop_since_previous_pct": null
     },
     {
       "store": "Rohlík",
@@ -14798,12 +14970,22 @@
       "title": "Ariel Color prací gel (4,5 l)",
       "price_czk": 499.9,
       "price_status": "ok",
-      "price_source": "visible-product-detail",
-      "checked_at": "2026-10-20T15:41:14+00:00",
+      "price_source": "monitor-v26:visible-product-detail",
+      "checked_at": "2026-10-22T07:50:20+00:00",
       "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "last_monitor_attempt_at": "2026-10-22T07:50:20+00:00",
+      "monitor_v26_attempts": 1,
+      "monitor_v26_status": "ok",
+      "monitor_v26_note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
+      "original_price_czk": null,
+      "discount_pct": null,
+      "offer_valid_until": null,
+      "price_history_previous_czk": 499.9,
+      "price_history_previous_at": "2026-10-20T15:41:14+00:00",
+      "drop_since_previous_pct": null
     },
     {
       "store": "Rohlík",
@@ -14823,7 +15005,11 @@
       "note": "Zobrazená cena na detailu výrobku; lokalita nebyla ověřena",
       "multibuy": [],
       "http_status": 200,
-      "postcode_verified": false
+      "postcode_verified": false,
+      "last_monitor_attempt_at": "2026-10-22T07:50:39+00:00",
+      "monitor_v26_attempts": 1,
+      "monitor_v26_status": "price_unverified",
+      "monitor_v26_note": "Na detailu produktu nebyla jednoznačná běžná/akční cena; Konfliktní produktové ceny ve strukturovaných datech"
     },
     {
       "store": "Rohlík",
@@ -28302,16 +28488,19 @@
     },
     "review_total": 484
   },
-  "last_price_monitor_at": "2026-10-22T06:41:34+00:00",
+  "last_price_monitor_at": "2026-10-22T07:50:39+00:00",
   "monitor_v26": {
-    "processed": 35,
-    "updated_prices": 35,
+    "processed": 24,
+    "updated_prices": 15,
     "blocked_stores": [],
     "statuses": {
-      "Košík|ok": 27,
-      "Rohlík|ok": 8
+      "Košík|title_mismatch": 2,
+      "Košík|price_unverified": 6,
+      "Rohlík|ok": 5,
+      "Košík|ok": 10,
+      "Rohlík|price_unverified": 1
     },
-    "last_price_monitor_at": "2026-10-22T05:28:36+00:00"
+    "last_price_monitor_at": "2026-10-22T07:50:39+00:00"
   },
   "price_backfill_v27": {
     "finished_at": "2026-10-22T06:41:34+00:00",
