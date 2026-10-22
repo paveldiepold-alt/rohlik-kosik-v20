@@ -12,12 +12,56 @@ main{max-width:1780px;padding:18px 24px 40px;margin:auto}.notice{border:1px soli
 .progress{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:13px 0 14px}.lane{border:1px solid #e3eaf1;border-radius:8px;padding:10px;font-size:11px}.lane .head{display:flex;justify-content:space-between}.bar{height:7px;background:#e5ecf4;border-radius:10px;margin-top:7px;overflow:hidden}.bar i{display:block;height:100%;background:#448abd}
 .filters{display:grid;grid-template-columns:1fr 1.15fr 1.05fr 1.05fr 1fr 1fr 1.15fr 1.2fr;gap:10px;align-items:end;padding:12px 0}.field{display:flex;flex-direction:column;gap:5px;min-width:0}.field label{font-size:11px;font-weight:700;color:#53657c}.field :is(select,input){min-width:0;width:100%;height:38px;border:1px solid #cfd9e5;background:white;color:#263c59;border-radius:7px;padding:7px 9px;font-family:inherit;font-size:12px}.field input[type=number]{font-variant-numeric:tabular-nums}.field.wide{grid-column:span 2}
 .actions{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:6px 0 12px}.actions .count{font-size:12px;color:#60718a}.actions button,.pagination button{border:1px solid #c7d3e1;border-radius:7px;padding:7px 12px;background:#fff;color:#274764;cursor:pointer}.actions button:hover,.pagination button:hover{background:#ecf4fb}.pagination button:disabled{opacity:.35;cursor:default}.pagination{display:flex;gap:9px;align-items:center;justify-content:flex-end;margin-top:12px;font-size:12px}
-.tablewrap{overflow-x:auto}table{width:100%;border-collapse:collapse;table-layout:auto;font-size:12px}thead{position:sticky;top:0;z-index:2}th{text-align:left;white-space:nowrap;background:#eef2f7;color:#50617a;font-size:11px;padding:11px}td{padding:12px 11px;border-bottom:1px solid #e7ebf2;vertical-align:middle}th:nth-child(3){width:31%}th:nth-child(4),th:nth-child(5),th:nth-child(6){white-space:nowrap}.product{display:flex;align-items:center;gap:11px}.photo{width:48px;height:48px;object-fit:contain;border:1px solid #e4eaf2;border-radius:7px;background:#fff;flex-shrink:0}.name{font-weight:750;color:#1f304c}.sub{font-size:10px;color:#7c8ba0;margin-top:4px}.price{font-size:14px;font-weight:750;white-space:nowrap;color:#078454}.unknown{font-weight:700;color:#9b661c}.old{color:#8994a4;text-decoration:line-through;font-size:11px;white-space:nowrap}.discount{font-size:12px;color:#b64225;font-weight:750}.cond{font-size:11px;color:#355a79}.expired{color:#a46e65;font-weight:700}.muted{color:#7c8aa0;font-size:11px}.empty{text-align:center;color:#607189;padding:28px}a{color:#0b5ba5;text-decoration:none;font-weight:700}a:hover{text-decoration:underline}footer{font-size:11px;color:#6c7d92;line-height:1.7;margin-top:14px}.smallnote{color:#8995a6;font-size:11px}
+.tablewrap{overflow-x:auto}table{width:100%;border-collapse:collapse;table-layout:auto;font-size:12px}thead{position:sticky;top:0;z-index:2}th{text-align:left;white-space:nowrap;background:#eef2f7;color:#50617a;font-size:11px;padding:11px}td{padding:12px 11px;border-bottom:1px solid #e7ebf2;vertical-align:middle}th:nth-child(4){width:31%}th:nth-child(4),th:nth-child(5),th:nth-child(6){white-space:nowrap}.product{display:flex;align-items:center;gap:11px}.photo{width:48px;height:48px;object-fit:contain;border:1px solid #e4eaf2;border-radius:7px;background:#fff;flex-shrink:0}.name{font-weight:750;color:#1f304c}.sub{font-size:10px;color:#7c8ba0;margin-top:4px}.price{font-size:14px;font-weight:750;white-space:nowrap;color:#078454}.unknown{font-weight:700;color:#9b661c}.old{color:#8994a4;text-decoration:line-through;font-size:11px;white-space:nowrap}.discount{font-size:12px;color:#b64225;font-weight:750}.cond{font-size:11px;color:#355a79}.expired{color:#a46e65;font-weight:700}.muted{color:#7c8aa0;font-size:11px}.empty{text-align:center;color:#607189;padding:28px}a{color:#0b5ba5;text-decoration:none;font-weight:700}a:hover{text-decoration:underline}footer{font-size:11px;color:#6c7d92;line-height:1.7;margin-top:14px}.smallnote{color:#8995a6;font-size:11px}
 @media(max-width:1400px){.filters{grid-template-columns:repeat(4,minmax(0,1fr))}}@media(max-width:900px){main{padding:14px}.stats{grid-template-columns:repeat(2,1fr)}.filters{grid-template-columns:repeat(2,minmax(0,1fr))}.progress{grid-template-columns:1fr}.tablewrap{overflow:auto}table{min-width:990px}.stat strong{font-size:23px}}@media(max-width:520px){.field.wide{grid-column:span 2}header h1{font-size:20px}.panel{padding:12px}.top{align-items:flex-start;flex-direction:column}}
 
 .quick{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin:0 0 13px}.quick button{cursor:pointer;border:1px solid #cfdae7;background:#fff;color:#263a56;border-radius:9px;padding:11px 13px;font-size:13px;font-weight:700}.quick button:hover{background:#edf5fd}.quick button.quick-active,.quick button.quick-active:hover{background:#183f65;border-color:#183f65;color:#fff}.quicknote{font-size:11px;color:#718198;margin-left:auto;max-width:420px}
 .fav{border:0;background:transparent;color:#a5b3c3;font-size:22px;cursor:pointer;padding:3px 7px;border-radius:6px}.fav.on{color:#c88820}.fav:hover{background:#edf2f7}.age-warn{color:#9b6712;font-weight:700}.age-ok{color:#15815a}.trust{font-size:10px;color:#64738b;margin-top:3px}.sub .age-warn{font-size:10px}.empty-help{font-size:12px;color:#60718a;padding:10px 0}.favcol{width:30px;min-width:30px}
 @media(max-width:900px){.quicknote{margin-left:0}.quick button{flex:1}}
+
+/* Mobile catalogue cards + accessibility; legacy desktop filters still work. */
+.v26-mobile,.v26-mobile-tools{display:none}
+.v26-card{padding:13px;border:1px solid #e4eaf1;border-radius:12px;background:white;margin:0 0 9px}
+.v26-card-head,.v26-card-product,.v26-card-foot{display:flex;align-items:center;gap:10px}
+.v26-card-head{justify-content:space-between;margin-bottom:10px}
+.v26-card-store{border-radius:999px;background:#eef3f9;color:#294966;font-weight:750;font-size:11px;padding:6px 10px}
+.v26-card-product{align-items:flex-start}
+.v26-card-product .photo{width:72px;height:72px;border-radius:9px;flex-shrink:0;object-fit:contain}
+.v26-card-text{min-width:0;flex:1}
+.v26-card-name{font-size:14px;font-weight:780;line-height:1.4;color:#172c49;overflow-wrap:anywhere}
+.v26-card-category{font-size:11px;color:#506d86;margin-top:5px}
+.v26-card-foot{justify-content:space-between;margin-top:12px;border-top:1px solid #e9edf2;padding-top:11px}
+.v26-card-price{font-size:21px;font-weight:800;color:#087953;white-space:nowrap}
+.v26-card-price.missing{font-size:14px;color:#966b27}
+.v26-card-price-note{font-size:10px;color:#8492a3;margin-top:4px}
+.v26-card-link{font-size:12px;background:#173f66;color:white!important;border-radius:8px;padding:12px 13px;white-space:nowrap;text-decoration:none;min-height:42px;text-align:center}
+.v26-card-more{border-top:1px dashed #e6ebf2;margin-top:11px;padding-top:9px;font-size:11px;color:#5e758e}
+.v26-card-more summary{font-size:12px;cursor:pointer;color:#22547e;font-weight:750;min-height:27px}
+.v26-card-details{padding-top:6px;line-height:1.65;overflow-wrap:anywhere}
+.v26-card .fav{min-height:44px;min-width:44px;font-size:25px}
+@media(max-width:900px){
+ html,body{max-width:100%;overflow-x:clip}
+ header{padding:17px 14px}header h1{font-size:20px}header p{font-size:11px}
+ main{padding:12px 11px 22px}.notice{padding:11px 12px;font-size:11px;line-height:1.5}
+ .stats{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+ .stat{padding:11px 9px;min-width:0}.stat strong{font-size:21px}.stat span{font-size:10px;line-height:1.3}
+ .quick{flex-wrap:nowrap;overflow-x:auto;scroll-snap-type:x proximity;scrollbar-width:none;-webkit-overflow-scrolling:touch;gap:7px;padding-bottom:9px}
+ .quick::-webkit-scrollbar{display:none}.quick button{flex:0 0 auto;white-space:nowrap;scroll-snap-align:start;padding:11px 12px;min-height:43px;font-size:12px}
+ .panel{padding:12px}.top h2{font-size:16px}.progress{gap:7px}
+ .filters{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+ .field.wide{grid-column:1/-1;grid-row:1}
+ .filters .field :is(input,select){height:44px;font-size:16px}
+ .filters.v26-filter-collapsed .field:not(.wide){display:none}
+ .v26-mobile-tools{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:12px}
+ .v26-mobile-tools button{min-height:44px;padding:10px 13px;border:1px solid #d0dbe7;border-radius:9px;background:#eff4f9;color:#234768;font-weight:750;font-size:12px}
+ .v26-mobile-tools span{font-size:11px;color:#71839a}
+ .actions{gap:8px;align-items:flex-start}.actions .count{line-height:1.55;font-size:11px}
+ .actions #clear{white-space:nowrap;min-height:41px}
+ .tablewrap{display:none}.v26-mobile{display:block}
+ .pagination{justify-content:space-between}.pagination button{min-height:44px;font-size:12px;padding:10px 12px}
+ footer{font-size:10px;line-height:1.55}
+}
+@media(max-width:370px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.v26-card-product .photo{width:64px;height:64px}.v26-card-price{font-size:18px}}
 </style>
 </head>
 <body>
@@ -36,7 +80,7 @@ main{max-width:1780px;padding:18px 24px 40px;margin:auto}.notice{border:1px soli
 <section class="panel">
  <div class="top"><h2>Přehled a filtrování</h2><span class="pill" id="stamp">Čekám na data</span></div>
  <div class="progress" id="progress"></div>
- <div class="filters">
+ <div class="v26-mobile-tools"><button type="button" id="mobileFilters" aria-controls="filtersV26" aria-expanded="false">☷ Další filtry a řazení</button><span>20 výrobků na mobilní stránku</span></div><div class="filters v26-filter-collapsed" id="filtersV26">
   <div class="field"><label for="shop">Obchod</label><select id="shop"><option value="">Oba obchody</option><option>Rohlík</option><option>Košík</option></select></div>
   <div class="field"><label for="category">Kategorie</label><select id="category"><option value="">Všechny kategorie</option></select></div>
   <div class="field"><label for="brand">Značka</label><input id="brand" type="search" placeholder="Název značky..."></div>
@@ -51,7 +95,8 @@ main{max-width:1780px;padding:18px 24px 40px;margin:auto}.notice{border:1px soli
  </div>
  <div class="actions"><span class="count" id="shown">Načítám…</span><button id="clear" type="button">Vymazat filtry</button></div>
  <div class="tablewrap"><table><thead><tr><th title="Uložit mezi oblíbené">★</th><th>Obchod</th><th>Kategorie</th><th>Výrobek</th><th>Cena balení</th><th>Sleva</th><th>Podmínky / platnost</th><th>Produkt</th></tr></thead><tbody id="rows"><tr><td colspan="8" class="empty">Načítám produkty…</td></tr></tbody></table></div>
- <div class="pagination"><button id="prev" type="button">← Předchozí</button><span id="pageInfo">—</span><button id="next" type="button">Další →</button></div>
+ <div class="v26-mobile" id="mobileCards"></div>
+  <div class="pagination"><button id="prev" type="button">← Předchozí</button><span id="pageInfo">—</span><button id="next" type="button">Další →</button></div>
 </section>
 <footer><strong>Poznámka:</strong> Položky označené jako ověřené mají veřejně pozorovanou cenu, která nemusí být dnešní. Slevu označujeme jako aktuálně doloženou jen u cen ověřených v posledních 72 hodinách a s neprošlou platností. <span id="monitorStamp"></span> Údaje pocházejí z veřejných produktových stránek. Platnost slevy se uvádí pouze tehdy, když byla skutečně zjištěna. Není-li uveden konec akce, není tím potvrzena neomezená platnost. Některé starší ceny mohou vyžadovat nové ověření; ceny ani dostupnost pro PSČ 149 00 nejsou garantovány. Procenta slev nesrovnávají produkty různého balení.</footer>
 </main>
@@ -88,9 +133,18 @@ function chosen(){const f={shop:$('shop').value,category:$('category').value,bra
  if(f.validity==='valid'&&!(reduction!=null&&until&&until>=day)||f.validity==='date'&&!until||f.validity==='unknown'&&!!until||f.validity==='expired'&&!(until&&until<day))return false;
  if(f.until&&!(until&&until<=f.until))return false;return true});
  const sort=$('sort').value;list.sort((a,b)=>{if(sort==='low'||sort==='high'){const va=isPrice(a)?a.price_czk:null,vb=isPrice(b)?b.price_czk:null;if(va==null)return vb==null?0:1;if(vb==null)return -1;return sort==='low'?va-vb:vb-va}if(sort==='discount'||view==='deals'&&sort==='name')return (disc(b)||0)-(disc(a)||0);if(sort==='recent')return String(b.checked_at||'').localeCompare(String(a.checked_at||''));return String(a.name||a.title||'').localeCompare(String(b.name||b.title||''),'cs')});return list;}
-function render(){const list=chosen(),per=Number($('pagesize').value);const pages=Math.max(1,Math.ceil(list.length/per));page=Math.min(page,pages);const section=list.slice((page-1)*per,page*per);
+function render(){const list=chosen(),per=window.matchMedia('(max-width:900px)').matches?20:Number($('pagesize').value);const pages=Math.max(1,Math.ceil(list.length/per));page=Math.min(page,pages);const section=list.slice((page-1)*per,page*per);
  $('shown').textContent=`${view==='deals'?'Doložené aktuální akce':view==='favs'?'Uložené oblíbené':view==='drops'?'Poklesy oproti minulé kontrole':view==='missing'?'Výrobky bez ověřené ceny':'Produkty'}: ${nf(list.length)} · z celkem ${nf(db.items.length)} produktů · strana ${page} / ${pages}`;document.getElementById('qFavs').textContent=favs.size;
  $('rows').innerHTML=section.length?section.map(p=>{const d=disc(p);const price=isPrice(p);const key=productId(p);const saved=favs.has(key);const label=freshPrice(p)?'Cena ≤72 h':price?'Starší cena':'Bez ceny';const shopPath=(p.store_category_path||[]).join(' → ');const provenance=shopPath?'Kategorie e-shopu: '+shopPath:'Kategorie podle sledovacího pravidla (e-shop nepotvrzen)';const discHtml=datedPromo(p)?`<span class="discount">−${Number(d).toLocaleString('cs-CZ',{maximumFractionDigits:1})} %</span>`:d!=null?'<span class="age-warn">Starší údaj o slevě</span>':'—';const old=price&&typeof p.original_price_czk==='number'?`<div class="old">${money(p.original_price_czk)}</div>`:'';return `<tr><td class="favcol"><button class="fav ${saved?'on':''}" data-id="${esc(key)}" title="${saved?'Odebrat z oblíbených':'Přidat do oblíbených'}" aria-label="Oblíbené">${saved?'★':'☆'}</button></td><td><b>${esc(p.store)}</b></td><td>${esc(cats(p).join(', ')||'—')}</td><td><div class="product">${photo(p)}<div><div class="name">${esc(p.title||p.name)}</div><div class="sub">${esc((p.checked_at||'').replace('T',' ').slice(0,16))} · <span class="${freshPrice(p)?'age-ok':'age-warn'}">${label}</span></div><div class="trust" title="${esc(provenance)}">${shopPath?'✓ Kategorie prodejce':'◇ Kategorie dle pravidla'}</div></div></div></td><td><span class="${price?'price':'unknown'}">${money(price?p.price_czk:null)}</span>${old}</td><td>${discHtml}</td><td><span class="cond">${conditions(p)}</span></td><td><a href="${esc(/^https:\/\/(www\.)?(rohlik|kosik)\.cz\//.test(p.url||'')?p.url:'#')}" target="_blank" rel="noopener noreferrer">Otevřít ↗</a></td></tr>`}).join(''):'<tr><td colspan="8" class="empty">Pro zvolené filtry nejsou žádné výsledky.</td></tr>';
+
+ $('mobileCards').innerHTML=section.length?section.map(p=>{
+ const good=isPrice(p),id=productId(p),saved=favs.has(id),shopPath=(p.store_category_path||[]).join(' → ');
+ const url=/^https:\/\/(www\.)?(rohlik|kosik)\.cz\//.test(p.url||'')?p.url:'';
+ return `<article class="v26-card"><div class="v26-card-head"><span class="v26-card-store">${esc(p.store)}</span><button type="button" class="fav ${saved?'on':''}" data-id="${esc(id)}" aria-label="Oblíbené">${saved?'★':'☆'}</button></div>
+ <div class="v26-card-product">${photo(p)}<div class="v26-card-text"><div class="v26-card-name">${esc(p.title||p.name||'—')}</div><div class="v26-card-category">${esc(cats(p).join(', ')||'Kategorie k prověření')}</div></div></div>
+ <div class="v26-card-foot"><div><div class="v26-card-price ${good?'':'missing'}">${good?money(p.price_czk):'Cena nezjištěna'}</div><div class="v26-card-price-note">${freshPrice(p)?'Cena ≤ 72 h':good?'Starší cenové pozorování':'Bez potvrzené ceny'}</div>${datedPromo(p)?`<span class="discount">Sleva −${disc(p)} %</span>`:''}</div>${url?`<a class="v26-card-link" target="_blank" rel="noopener noreferrer" href="${esc(url)}">Otevřít v e-shopu ↗</a>`:''}</div>
+ <details class="v26-card-more"><summary>Podrobnosti výrobku a kategorie</summary><div class="v26-card-details"><div>${esc(shopPath?'Kategorie e-shopu: '+shopPath:'Kategorie dle sledovacího pravidla (neověřeno e-shopem)')}</div><div>${esc((p.checked_at||'Bez data').replace('T',' ').slice(0,19))}</div><div>Podmínky: ${conditions(p)}</div></div></details></article>`;
+ }).join(''):'<div class="empty">Žádné výrobky pro zvolené filtry.</div>';
  $('pageInfo').textContent=`${page} / ${pages}`;$('prev').disabled=page<=1;$('next').disabled=page>=pages;}
 async function load(){try{const rsp=await fetch('./data/catalog_latest.json?ts='+Date.now(),{cache:'no-store'});if(!rsp.ok)throw Error('HTTP '+rsp.status);db=await rsp.json();if(!Array.isArray(db.items))throw Error('Neplatný katalog');rules=new Map((db.rules||[]).map(r=>[r.id,r]));
  const ct=[...new Set((db.rules||[]).map(r=>r.category).filter(Boolean))],ordered=db.category_order||[];ct.sort((a,b)=>(ordered.indexOf(a)<0?999:ordered.indexOf(a))-(ordered.indexOf(b)<0?999:ordered.indexOf(b))||a.localeCompare(b,'cs'));
@@ -102,6 +156,9 @@ async function load(){try{const rsp=await fetch('./data/catalog_latest.json?ts='
 for(const id of ['shop','category','brand','state','minPrice','maxPrice','validity','sort','search','until','pagesize'])$(id).addEventListener(['brand','minPrice','maxPrice','search'].includes(id)?'input':'change',()=>{page=1;render()});
 $('clear').addEventListener('click',()=>{for(const id of ['shop','category','brand','state','minPrice','maxPrice','validity','search','until'])$(id).value='';$('sort').value='name';$('pagesize').value='100';page=1;render()});
 document.querySelectorAll('[data-quick]').forEach(b=>b.addEventListener('click',()=>selectQuick(b.dataset.quick)));
+$('mobileFilters').addEventListener('click',()=>{const f=$('filtersV26'),b=$('mobileFilters');const expanded=!f.classList.toggle('v26-filter-collapsed');b.setAttribute('aria-expanded',String(expanded));b.textContent=expanded?'☷ Skrýt další filtry':'☷ Další filtry a řazení'});
+window.matchMedia('(max-width:900px)').addEventListener('change',()=>{page=1;render()});
+$('mobileCards').addEventListener('click',e=>{const b=e.target.closest('button.fav');if(!b)return;const id=b.dataset.id;if(favs.has(id))favs.delete(id);else favs.add(id);storeFavs();render()});
 document.getElementById('rows').addEventListener('click',e=>{const b=e.target.closest('button.fav');if(!b)return;const id=b.dataset.id;if(favs.has(id))favs.delete(id);else favs.add(id);storeFavs();render()});
 $('prev').addEventListener('click',()=>{if(page>1){page--;render()}});$('next').addEventListener('click',()=>{page++;render()});load();
 </script>
