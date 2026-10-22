@@ -1,6 +1,6 @@
 {
   "schema": "rk-v27-category-review",
-  "count": 843,
+  "count": 804,
   "items": [
     {
       "store": "Košík",
@@ -1905,28 +1905,6 @@
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p248874-chodura-sunka-snidanova-standard-platky",
-      "name": "Chodura Šunka snídaňová standard plátky",
-      "rule_ids": [
-        "W007"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Uzeniny / šunky"
-      ],
-      "rule_checks": {
-        "W007": {
-          "expected": "Uzeniny / šunky",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
       "url": "https://www.kosik.cz/p97187-chodura-sunkovy-salam",
       "name": "Chodura Šunkový salám",
       "rule_ids": [
@@ -3175,28 +3153,6 @@
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p291844-harmony-kuchynske-uterky-home-expert-mega-2vrstve-1-role",
-      "name": "Harmony Kuchyňské utěrky Home Expert Mega 2vrstvé, 1 role",
-      "rule_ids": [
-        "W074"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Papírové utěrky"
-      ],
-      "rule_checks": {
-        "W074": {
-          "expected": "Papírové utěrky",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
       "url": "https://www.kosik.cz/p459210-hellmann-s-majoneza",
       "name": "Hellmann's Majonéza",
       "rule_ids": [
@@ -3461,94 +3417,6 @@
       "rule_checks": {
         "W072": {
           "expected": "Úklid",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p265964-kmotr-duo-salam-platky",
-      "name": "Kmotr Duo salám plátky",
-      "rule_ids": [
-        "W010"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Uzeniny / salámy"
-      ],
-      "rule_checks": {
-        "W010": {
-          "expected": "Uzeniny / salámy",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p265954-kmotr-lovecky-salam-platky",
-      "name": "Kmotr Lovecký salám plátky",
-      "rule_ids": [
-        "W010"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Uzeniny / salámy"
-      ],
-      "rule_checks": {
-        "W010": {
-          "expected": "Uzeniny / salámy",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p265924-kmotr-polican-salam-platky",
-      "name": "Kmotr Poličan salám plátky",
-      "rule_ids": [
-        "W010"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Uzeniny / salámy"
-      ],
-      "rule_checks": {
-        "W010": {
-          "expected": "Uzeniny / salámy",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p265914-kmotr-vysocina-salam-platky",
-      "name": "Kmotr Vysočina salám plátky",
-      "rule_ids": [
-        "W010"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Uzeniny / salámy"
-      ],
-      "rule_checks": {
-        "W010": {
-          "expected": "Uzeniny / salámy",
           "status": "review",
           "reason": "Kategorie neověřena u prodejce"
         }
@@ -4523,7 +4391,10 @@
       ],
       "status": "review",
       "merchant_category": null,
-      "merchant_path": [],
+      "merchant_path": [
+        "Děti",
+        "Vlhčené ubrousky"
+      ],
       "expected_categories": [
         "Papír a hygiena"
       ],
@@ -4534,7 +4405,7 @@
           "reason": "Kategorie neověřena u prodejce"
         }
       },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+      "reason": "Cesta prodejce nemá schválené mapování"
     },
     {
       "store": "Košík",
@@ -4589,7 +4460,10 @@
       ],
       "status": "review",
       "merchant_category": null,
-      "merchant_path": [],
+      "merchant_path": [
+        "Děti",
+        "Vlhčené ubrousky"
+      ],
       "expected_categories": [
         "Papír a hygiena"
       ],
@@ -4600,7 +4474,7 @@
           "reason": "Kategorie neověřena u prodejce"
         }
       },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+      "reason": "Cesta prodejce nemá schválené mapování"
     },
     {
       "store": "Košík",
@@ -4611,7 +4485,10 @@
       ],
       "status": "review",
       "merchant_category": null,
-      "merchant_path": [],
+      "merchant_path": [
+        "Děti",
+        "Vlhčené ubrousky"
+      ],
       "expected_categories": [
         "Papír a hygiena"
       ],
@@ -4622,7 +4499,7 @@
           "reason": "Kategorie neověřena u prodejce"
         }
       },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+      "reason": "Cesta prodejce nemá schválené mapování"
     },
     {
       "store": "Košík",
@@ -4633,7 +4510,10 @@
       ],
       "status": "review",
       "merchant_category": null,
-      "merchant_path": [],
+      "merchant_path": [
+        "Děti",
+        "Vlhčené ubrousky"
+      ],
       "expected_categories": [
         "Papír a hygiena"
       ],
@@ -4644,56 +4524,12 @@
           "reason": "Kategorie neověřena u prodejce"
         }
       },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p2967-linteo-classic-kuchynske-uterky-2vrstve-2-role",
-      "name": "Linteo Classic kuchyňské utěrky 2vrstvé, 2 role",
-      "rule_ids": [
-        "W074"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Papírové utěrky"
-      ],
-      "rule_checks": {
-        "W074": {
-          "expected": "Papírové utěrky",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+      "reason": "Cesta prodejce nemá schválené mapování"
     },
     {
       "store": "Košík",
       "url": "https://www.kosik.cz/p3207-linteo-kuchynske-uterky-classic-2vrstve",
       "name": "Linteo Kuchyňské utěrky Classic 2vrstvé",
-      "rule_ids": [
-        "W074"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Papírové utěrky"
-      ],
-      "rule_checks": {
-        "W074": {
-          "expected": "Papírové utěrky",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p3097-linteo-papirove-kuchynske-uterky-2vrstve-2-role",
-      "name": "Linteo Papírové kuchyňské utěrky 2vrstvé, 2 role",
       "rule_ids": [
         "W074"
       ],
@@ -4763,20 +4599,25 @@
       "rule_ids": [
         "W054"
       ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
+      "status": "mismatch",
+      "merchant_category": "Kosmetika",
+      "merchant_path": [
+        "Drogerie a kosmetika",
+        "Péče o pleť",
+        "Čištění a odličování",
+        "Odličovací tampony a ubrousky"
+      ],
       "expected_categories": [
         "Papír a hygiena"
       ],
       "rule_checks": {
         "W054": {
           "expected": "Papír a hygiena",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "status": "mismatch",
+          "reason": "Srovnání se společnou kategorií"
         }
       },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+      "reason": "Kosmetika podle cesty prodejce; nesoulad s pravidly: Papír a hygiena"
     },
     {
       "store": "Košík",
@@ -4875,7 +4716,11 @@
       ],
       "status": "review",
       "merchant_category": null,
-      "merchant_path": [],
+      "merchant_path": [
+        "Drogerie a kosmetika",
+        "Papírová a vatová hygiena",
+        "Vlhčené ubrousky"
+      ],
       "expected_categories": [
         "Papír a hygiena"
       ],
@@ -4886,7 +4731,7 @@
           "reason": "Kategorie neověřena u prodejce"
         }
       },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+      "reason": "Nesledovaná podkategorie drogerie"
     },
     {
       "store": "Košík",
@@ -4897,7 +4742,11 @@
       ],
       "status": "review",
       "merchant_category": null,
-      "merchant_path": [],
+      "merchant_path": [
+        "Drogerie a kosmetika",
+        "Dámská hygiena",
+        "Intimní hygiena"
+      ],
       "expected_categories": [
         "Papír a hygiena"
       ],
@@ -4908,7 +4757,7 @@
           "reason": "Kategorie neověřena u prodejce"
         }
       },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+      "reason": "Nesledovaná podkategorie drogerie"
     },
     {
       "store": "Košík",
@@ -5044,28 +4893,6 @@
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p243484-madeta-jihocesky-eidam-syr-20-platky",
-      "name": "Madeta Jihočeský Eidam sýr 20%, plátky",
-      "rule_ids": [
-        "W017"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Sýry / plátkové"
-      ],
-      "rule_checks": {
-        "W017": {
-          "expected": "Sýry / plátkové",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
       "url": "https://www.kosik.cz/p818740-madeta-protein-eidam-platky",
       "name": "Madeta Protein Eidam plátky",
       "rule_ids": [
@@ -5112,72 +4939,6 @@
       "store": "Košík",
       "url": "https://www.kosik.cz/p359534-madeta-syraruv-vyber-gouda-48-platky",
       "name": "Madeta Sýrařův výběr Gouda (48%) plátky",
-      "rule_ids": [
-        "W017"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Sýry / plátkové"
-      ],
-      "rule_checks": {
-        "W017": {
-          "expected": "Sýry / plátkové",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p254294-madeta-syraruv-vyber-moravsky-bochnik-45-platky",
-      "name": "Madeta Sýrařův výběr Moravský bochník (45%) plátky",
-      "rule_ids": [
-        "W017"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Sýry / plátkové"
-      ],
-      "rule_checks": {
-        "W017": {
-          "expected": "Sýry / plátkové",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p248824-madeta-syraruv-vyber-tylzsky-syr-45-platky",
-      "name": "Madeta Sýrařův výběr Tylžský sýr (45%) plátky",
-      "rule_ids": [
-        "W017"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Sýry / plátkové"
-      ],
-      "rule_checks": {
-        "W017": {
-          "expected": "Sýry / plátkové",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p248834-madeta-syraruv-vyber-tylzsky-syr-uzeny-45-platky",
-      "name": "Madeta Sýrařův výběr Tylžský sýr uzený (45%) plátky",
       "rule_ids": [
         "W017"
       ],
@@ -5662,28 +5423,6 @@
       "store": "Košík",
       "url": "https://www.kosik.cz/p76047-panzani-lasagne",
       "name": "Panzani Lasagne",
-      "rule_ids": [
-        "W052"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Těstoviny a rýže"
-      ],
-      "rule_checks": {
-        "W052": {
-          "expected": "Těstoviny a rýže",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p233464-panzani-mini-alfabeto-testoviny",
-      "name": "Panzani Mini Alfabeto těstoviny",
       "rule_ids": [
         "W052"
       ],
@@ -6452,28 +6191,6 @@
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p233474-ponnath-frankfurtske-parky-85-masa",
-      "name": "Ponnath Frankfurtské párky (85% masa)",
-      "rule_ids": [
-        "W014"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Uzeniny / párky a klobásy"
-      ],
-      "rule_checks": {
-        "W014": {
-          "expected": "Uzeniny / párky a klobásy",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
       "url": "https://www.kosik.cz/p725876-primas-farmarska-krkovice-na-gril-s-bylinkami",
       "name": "Primas Farmářská krkovice na gril s bylinkami",
       "rule_ids": [
@@ -7182,7 +6899,11 @@
       ],
       "status": "review",
       "merchant_category": null,
-      "merchant_path": [],
+      "merchant_path": [
+        "Mléčné a chlazené",
+        "Bez laktózy",
+        "Sýry"
+      ],
       "expected_categories": [
         "Sýry / plísňové"
       ],
@@ -7193,7 +6914,7 @@
           "reason": "Kategorie neověřena u prodejce"
         }
       },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+      "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
     },
     {
       "store": "Košík",
@@ -7664,52 +7385,8 @@
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p279054-smetanito-s-tvarohem-3-ks",
-      "name": "Smetanito S tvarohem 3 ks",
-      "rule_ids": [
-        "W020"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Sýry / tavené"
-      ],
-      "rule_checks": {
-        "W020": {
-          "expected": "Sýry / tavené",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
       "url": "https://www.kosik.cz/p802964-smetanito-se-sunkou-4ks",
       "name": "Smetanito Se šunkou 4ks",
-      "rule_ids": [
-        "W020"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Sýry / tavené"
-      ],
-      "rule_checks": {
-        "W020": {
-          "expected": "Sýry / tavené",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p260874-smetanito-smetanove-giga",
-      "name": "Smetanito Smetanové GIGA",
       "rule_ids": [
         "W020"
       ],
@@ -7957,7 +7634,12 @@
       ],
       "status": "review",
       "merchant_category": null,
-      "merchant_path": [],
+      "merchant_path": [
+        "Drogerie a kosmetika",
+        "Péče o vlasy",
+        "Šampony",
+        "Pánské"
+      ],
       "expected_categories": [
         "Kosmetika"
       ],
@@ -7968,7 +7650,7 @@
           "reason": "Kategorie neověřena u prodejce"
         }
       },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+      "reason": "Nesledovaná podkategorie drogerie"
     },
     {
       "store": "Košík",
@@ -8370,28 +8052,6 @@
       "store": "Košík",
       "url": "https://www.kosik.cz/p793098-vesela-krava-syr-a-krup-s-sunkovou-prichuti-35g-snack",
       "name": "Veselá Kráva Sýr a Křup s šunkovou příchutí 35g snack",
-      "rule_ids": [
-        "W021"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Sýry / tavené"
-      ],
-      "rule_checks": {
-        "W021": {
-          "expected": "Sýry / tavené",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p236414-vesela-krava-taveny-syr-s-ementalem-8-ks",
-      "name": "Veselá Kráva Tavený sýr s ementálem (8 ks)",
       "rule_ids": [
         "W021"
       ],
@@ -10627,28 +10287,6 @@
     },
     {
       "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1327423-bref-color-aktiv-ocean-wc-blok",
-      "name": "Bref Color Aktiv Ocean WC blok",
-      "rule_ids": [
-        "W066"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Úklid"
-      ],
-      "rule_checks": {
-        "W066": {
-          "expected": "Úklid",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Rohlík",
       "url": "https://www.rohlik.cz/1362039-bref-deluxe-jasmine-wc-blok",
       "name": "Bref DeLuxe Jasmine WC blok",
       "rule_ids": [
@@ -10715,28 +10353,6 @@
     },
     {
       "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1336387-bref-power-aktiv-flower-wc-cistic",
-      "name": "Bref Power Aktiv Flower WC čistič",
-      "rule_ids": [
-        "W066"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Úklid"
-      ],
-      "rule_checks": {
-        "W066": {
-          "expected": "Úklid",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Rohlík",
       "url": "https://www.rohlik.cz/1476517-bref-power-aktiv-fruitopia-wc-blok",
       "name": "Bref Power Aktiv Fruitopia WC blok",
       "rule_ids": [
@@ -10783,50 +10399,6 @@
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1450721-bref-power-aktiv-lemon-wc-blok",
       "name": "Bref Power Aktiv Lemon WC blok",
-      "rule_ids": [
-        "W066"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Úklid"
-      ],
-      "rule_checks": {
-        "W066": {
-          "expected": "Úklid",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1336703-bref-power-aktiv-lemon-wc-cistic",
-      "name": "Bref Power Aktiv Lemon WC čistič",
-      "rule_ids": [
-        "W066"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Úklid"
-      ],
-      "rule_checks": {
-        "W066": {
-          "expected": "Úklid",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1336385-bref-power-aktiv-ocean-wc-cistic",
-      "name": "Bref Power Aktiv Ocean WC čistič",
       "rule_ids": [
         "W066"
       ],
@@ -11387,72 +10959,6 @@
     },
     {
       "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1339845-cif-trouba-gril-cistici-sprej",
-      "name": "Cif Trouba & Gril čistící sprej",
-      "rule_ids": [
-        "W070"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Úklid"
-      ],
-      "rule_checks": {
-        "W070": {
-          "expected": "Úklid",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1325527-cif-ultrafast-cistici-sprej-na-mastnotu",
-      "name": "Cif Ultrafast Čistící sprej na mastnotu",
-      "rule_ids": [
-        "W070"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Úklid"
-      ],
-      "rule_checks": {
-        "W070": {
-          "expected": "Úklid",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1325523-cif-univerzalni-sprej-na-vodni-kamen",
-      "name": "Cif Univerzální sprej na vodní kámen",
-      "rule_ids": [
-        "W070"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Úklid"
-      ],
-      "rule_checks": {
-        "W070": {
-          "expected": "Úklid",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Rohlík",
       "url": "https://www.rohlik.cz/1350159-citron-1-ks",
       "name": "Citron 1 ks",
       "rule_ids": [
@@ -11603,28 +11109,6 @@
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1479619-clin-peony-cistic-na-okna",
       "name": "Clin Peony čistič na okna",
-      "rule_ids": [
-        "W071"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Úklid"
-      ],
-      "rule_checks": {
-        "W071": {
-          "expected": "Úklid",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1353829-clin-pro-nature-cistic-na-okna",
-      "name": "Clin Pro Nature čistič na okna",
       "rule_ids": [
         "W071"
       ],
@@ -12203,28 +11687,6 @@
     },
     {
       "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1349609-domestos-power-5-unicorn-edition-wc-blok-2-50-g",
-      "name": "Domestos Power 5 Unicorn edition WC blok 2×50 g",
-      "rule_ids": [
-        "W068"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Úklid"
-      ],
-      "rule_checks": {
-        "W068": {
-          "expected": "Úklid",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Rohlík",
       "url": "https://www.rohlik.cz/1469073-domestos-power-foam-floral-fresh-cistic-toalety",
       "name": "Domestos Power Foam Floral Fresh čistič toalety",
       "rule_ids": [
@@ -12372,7 +11834,12 @@
       ],
       "status": "review",
       "merchant_category": null,
-      "merchant_path": [],
+      "merchant_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Mozzarella, ricotta a salátové sýry",
+        "Mozzarella, burrata a ricotta"
+      ],
       "expected_categories": [
         "Sýry / mozzarella a salátové"
       ],
@@ -12383,7 +11850,7 @@
           "reason": "Kategorie neověřena u prodejce"
         }
       },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+      "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
     },
     {
       "store": "Rohlík",
@@ -12416,7 +11883,11 @@
       ],
       "status": "review",
       "merchant_category": null,
-      "merchant_path": [],
+      "merchant_path": [
+        "Speciální výživa",
+        "Bezlaktózové výrobky",
+        "Sýry bez laktózy"
+      ],
       "expected_categories": [
         "Sýry / mozzarella a salátové"
       ],
@@ -12427,7 +11898,7 @@
           "reason": "Kategorie neověřena u prodejce"
         }
       },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+      "reason": "Cesta prodejce nemá schválené mapování"
     },
     {
       "store": "Rohlík",
@@ -13682,28 +13153,6 @@
     },
     {
       "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1332245-le-co-sunka-dusena-v-pare-nejvyssi-jakosti-s-obsahem-masa-95",
-      "name": "LE&CO Šunka dušená v páře nejvyšší jakosti s obsahem masa 95 %",
-      "rule_ids": [
-        "W006"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Uzeniny / šunky"
-      ],
-      "rule_checks": {
-        "W006": {
-          "expected": "Uzeniny / šunky",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Rohlík",
       "url": "https://www.rohlik.cz/1469256-le-co-sunka-nejvyssi-jakosti",
       "name": "LE&CO Šunka nejvyšší jakosti",
       "rule_ids": [
@@ -13770,28 +13219,6 @@
     },
     {
       "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1323577-leerdammer-caractere-finesse-syr-platky",
-      "name": "Leerdammer Caractere Finesse sýr plátky",
-      "rule_ids": [
-        "W018"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Sýry / plátkové"
-      ],
-      "rule_checks": {
-        "W018": {
-          "expected": "Sýry / plátkové",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Rohlík",
       "url": "https://www.rohlik.cz/1474651-leerdammer-caractere-platky",
       "name": "Leerdammer Caractére plátky",
       "rule_ids": [
@@ -13816,28 +13243,6 @@
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1474650-leerdammer-delacreme-platky",
       "name": "Leerdammer Delacréme plátky",
-      "rule_ids": [
-        "W018"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Sýry / plátkové"
-      ],
-      "rule_checks": {
-        "W018": {
-          "expected": "Sýry / plátkové",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1323575-leerdammer-original-finesse-syr-platky",
-      "name": "Leerdammer Original Finesse sýr plátky",
       "rule_ids": [
         "W018"
       ],
@@ -14566,7 +13971,12 @@
       ],
       "status": "review",
       "merchant_category": null,
-      "merchant_path": [],
+      "merchant_path": [
+        "Kosmetika",
+        "Pleťová péče a dekorativní kosmetika",
+        "Čištění a odlíčení pleti",
+        "Odličovací tampony a vata"
+      ],
       "expected_categories": [
         "Papír a hygiena"
       ],
@@ -14577,7 +13987,7 @@
           "reason": "Kategorie neověřena u prodejce"
         }
       },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+      "reason": "Cesta prodejce nemá schválené mapování"
     },
     {
       "store": "Rohlík",
@@ -14887,28 +14297,6 @@
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1467845-madeta-jihocesky-eidam-uzeny-44-platky",
       "name": "Madeta Jihočeský eidam uzený 44% plátky",
-      "rule_ids": [
-        "W017"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Sýry / plátkové"
-      ],
-      "rule_checks": {
-        "W017": {
-          "expected": "Sýry / plátkové",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1359573-madeta-lipanek-syr-48-platky",
-      "name": "Madeta Lipánek sýr 48% plátky",
       "rule_ids": [
         "W017"
       ],
@@ -16298,7 +15686,12 @@
       ],
       "status": "review",
       "merchant_category": null,
-      "merchant_path": [],
+      "merchant_path": [
+        "Kosmetika",
+        "Ústní hygiena",
+        "Zubní pasty",
+        "Problémy s dásněmi"
+      ],
       "expected_categories": [
         "Dentální hygiena"
       ],
@@ -16309,7 +15702,7 @@
           "reason": "Kategorie neověřena u prodejce"
         }
       },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+      "reason": "Cesta prodejce nemá schválené mapování"
     },
     {
       "store": "Rohlík",
@@ -16753,28 +16146,6 @@
     },
     {
       "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1338217-persil-universal-praci-gel-1-98-l",
-      "name": "Persil Universal prací gel (1,98 l)",
-      "rule_ids": [
-        "W062"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Praní"
-      ],
-      "rule_checks": {
-        "W062": {
-          "expected": "Praní",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Rohlík",
       "url": "https://www.rohlik.cz/1438478-persil-universal-praci-gel-3-96-l",
       "name": "Persil Universal prací gel (3,96 l)",
       "rule_ids": [
@@ -16871,118 +16242,8 @@
     },
     {
       "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1321235-ponnath-bavorske-grilovaci-klobasky",
-      "name": "Ponnath Bavorské grilovací klobásky",
-      "rule_ids": [
-        "W014"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Uzeniny / párky a klobásy"
-      ],
-      "rule_checks": {
-        "W014": {
-          "expected": "Uzeniny / párky a klobásy",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Rohlík",
       "url": "https://www.rohlik.cz/1406119-ponnath-frankfurtske-parky",
       "name": "Ponnath Frankfurtské párky",
-      "rule_ids": [
-        "W014"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Uzeniny / párky a klobásy"
-      ],
-      "rule_checks": {
-        "W014": {
-          "expected": "Uzeniny / párky a klobásy",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1321249-ponnath-junior-salam-krajeny",
-      "name": "Ponnath Junior salám krájený",
-      "rule_ids": [
-        "W012"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Uzeniny / salámy"
-      ],
-      "rule_checks": {
-        "W012": {
-          "expected": "Uzeniny / salámy",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1321237-ponnath-kapiovy-salam-krajeny",
-      "name": "Ponnath Kapiový salám krájený",
-      "rule_ids": [
-        "W012"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Uzeniny / salámy"
-      ],
-      "rule_checks": {
-        "W012": {
-          "expected": "Uzeniny / salámy",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1321239-ponnath-videnske-miniparecky",
-      "name": "Ponnath Vídeňské minipárečky",
-      "rule_ids": [
-        "W014"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Uzeniny / párky a klobásy"
-      ],
-      "rule_checks": {
-        "W014": {
-          "expected": "Uzeniny / párky a klobásy",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1321243-ponnath-videnske-miniparecky-se-syrem",
-      "name": "Ponnath Vídeňské minipárečky se sýrem",
       "rule_ids": [
         "W014"
       ],
@@ -17032,7 +16293,12 @@
       ],
       "status": "review",
       "merchant_category": null,
-      "merchant_path": [],
+      "merchant_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plísňové, zrající, pařené a uzené",
+        "Plísňové a zrající"
+      ],
       "expected_categories": [
         "Sýry / plísňové"
       ],
@@ -17043,7 +16309,7 @@
           "reason": "Kategorie neověřena u prodejce"
         }
       },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+      "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
     },
     {
       "store": "Rohlík",
@@ -17054,7 +16320,12 @@
       ],
       "status": "review",
       "merchant_category": null,
-      "merchant_path": [],
+      "merchant_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plísňové, zrající, pařené a uzené",
+        "Plísňové a zrající"
+      ],
       "expected_categories": [
         "Sýry / plísňové"
       ],
@@ -17065,7 +16336,7 @@
           "reason": "Kategorie neověřena u prodejce"
         }
       },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+      "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
     },
     {
       "store": "Rohlík",
@@ -17076,7 +16347,12 @@
       ],
       "status": "review",
       "merchant_category": null,
-      "merchant_path": [],
+      "merchant_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plísňové, zrající, pařené a uzené",
+        "Plísňové a zrající"
+      ],
       "expected_categories": [
         "Sýry / plísňové"
       ],
@@ -17087,7 +16363,7 @@
           "reason": "Kategorie neověřena u prodejce"
         }
       },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+      "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
     },
     {
       "store": "Rohlík",
@@ -17120,7 +16396,12 @@
       ],
       "status": "review",
       "merchant_category": null,
-      "merchant_path": [],
+      "merchant_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plísňové, zrající, pařené a uzené",
+        "Plísňové a zrající"
+      ],
       "expected_categories": [
         "Sýry / plísňové"
       ],
@@ -17131,7 +16412,7 @@
           "reason": "Kategorie neověřena u prodejce"
         }
       },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+      "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
     },
     {
       "store": "Rohlík",
@@ -18275,50 +17556,6 @@
     },
     {
       "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1328433-silan-fresh-sky-avivaz-2-86-l",
-      "name": "Silan Fresh Sky aviváž (2,86 l)",
-      "rule_ids": [
-        "W064"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Praní"
-      ],
-      "rule_checks": {
-        "W064": {
-          "expected": "Praní",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1329625-silan-sensitive-avivaz-2-86-l",
-      "name": "Silan Sensitive aviváž (2,86 l)",
-      "rule_ids": [
-        "W064"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Praní"
-      ],
-      "rule_checks": {
-        "W064": {
-          "expected": "Praní",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Rohlík",
       "url": "https://www.rohlik.cz/1376833-silan-spring-lavender-avivaz-1-408-l",
       "name": "Silan Spring Lavender aviváž (1,408 l)",
       "rule_ids": [
@@ -18387,28 +17624,6 @@
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1444865-smetanito-neodolatelne-s-ementalem",
       "name": "Smetanito Neodolatelné s ementálem",
-      "rule_ids": [
-        "W020"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Sýry / tavené"
-      ],
-      "rule_checks": {
-        "W020": {
-          "expected": "Sýry / tavené",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1335239-smetanito-smetanove-giga-taveny-syr",
-      "name": "Smetanito Smetanové giga tavený sýr",
       "rule_ids": [
         "W020"
       ],

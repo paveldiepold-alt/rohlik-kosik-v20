@@ -1,11 +1,11 @@
 {
   "schema": "rk-v27-merchant-path-review",
-  "number_of_distinct_trusted_paths": 117,
-  "mapped_product_total": 340,
-  "unmapped_or_mismatched_path_count": 32,
+  "number_of_distinct_trusted_paths": 134,
+  "mapped_product_total": 380,
+  "unmapped_or_mismatched_path_count": 39,
   "without_trusted_path_by_shop": {
-    "Košík": 375,
-    "Rohlík": 336
+    "Košík": 349,
+    "Rohlík": 306
   },
   "note": "Old rule categories are references for audit only; never proof of merchant classification.",
   "paths": [
@@ -299,6 +299,26 @@
       "needs_review": false
     },
     {
+      "shop": "Košík",
+      "merchant_path": [
+        "Uzeniny a lahůdky",
+        "Párky, klobásy, špekáčky",
+        "Párky"
+      ],
+      "mapped_category": "Uzeniny / párky a klobásy",
+      "mapping_reason": "Párky/klobásy podle cesty prodejce",
+      "product_count": 8,
+      "old_rule_categories": {
+        "Uzeniny / párky a klobásy": 8
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p20137-kostelecke-uzeniny-javoricke-parky-original",
+        "https://www.kosik.cz/p20147-kostelecke-uzeniny-poctivy-vidensky-parek",
+        "https://www.kosik.cz/p20437-ponnath-bio-videnske-parky-84-masa"
+      ],
+      "needs_review": false
+    },
+    {
       "shop": "Rohlík",
       "merchant_path": [
         "Maso a ryby",
@@ -320,22 +340,43 @@
       "needs_review": false
     },
     {
-      "shop": "Košík",
+      "shop": "Rohlík",
       "merchant_path": [
-        "Uzeniny a lahůdky",
-        "Párky, klobásy, špekáčky",
-        "Párky"
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plísňové, zrající, pařené a uzené",
+        "Plísňové a zrající"
       ],
-      "mapped_category": "Uzeniny / párky a klobásy",
-      "mapping_reason": "Párky/klobásy podle cesty prodejce",
-      "product_count": 7,
+      "mapped_category": null,
+      "mapping_reason": "Mléčná kategorie bez jednoznačného sledovaného typu",
+      "product_count": 8,
       "old_rule_categories": {
-        "Uzeniny / párky a klobásy": 7
+        "Sýry / plísňové": 8
       },
       "sample_product_urls": [
-        "https://www.kosik.cz/p20137-kostelecke-uzeniny-javoricke-parky-original",
-        "https://www.kosik.cz/p20147-kostelecke-uzeniny-poctivy-vidensky-parek",
-        "https://www.kosik.cz/p20437-ponnath-bio-videnske-parky-84-masa"
+        "https://www.rohlik.cz/1319997-kral-syru-hermelin-provensalske-bylinky",
+        "https://www.rohlik.cz/1305761-kral-syru-hermelin-original",
+        "https://www.rohlik.cz/1328717-president-camembert"
+      ],
+      "needs_review": true
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Drogerie a kosmetika",
+        "Papírová a vatová hygiena",
+        "Kuchyňské utěrky"
+      ],
+      "mapped_category": "Papírové utěrky",
+      "mapping_reason": "Papírové utěrky podle cesty prodejce",
+      "product_count": 6,
+      "old_rule_categories": {
+        "Papírové utěrky": 6
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p171496-harmony-kuchynske-uterky-everyday-family-2vrstve-4-role",
+        "https://www.kosik.cz/p291844-harmony-kuchynske-uterky-home-expert-mega-2vrstve-1-role",
+        "https://www.kosik.cz/p2967-linteo-classic-kuchynske-uterky-2vrstve-2-role"
       ],
       "needs_review": false
     },
@@ -446,6 +487,69 @@
     {
       "shop": "Rohlík",
       "merchant_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plátkové",
+        "Ementálský typ"
+      ],
+      "mapped_category": "Sýry / plátkové",
+      "mapping_reason": "Plátkové sýry podle cesty prodejce",
+      "product_count": 6,
+      "old_rule_categories": {
+        "Sýry / plátkové": 6
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1323577-leerdammer-caractere-finesse-syr-platky",
+        "https://www.rohlik.cz/1289779-leerdammer-lightlife-syr-platky",
+        "https://www.rohlik.cz/1323575-leerdammer-original-finesse-syr-platky"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Drogerie",
+        "Čisticí prostředky",
+        "Koupelna a WC",
+        "WC bloky"
+      ],
+      "mapped_category": "Úklid",
+      "mapping_reason": "Úklid podle cesty prodejce",
+      "product_count": 5,
+      "old_rule_categories": {
+        "Úklid": 5
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1327423-bref-color-aktiv-ocean-wc-blok",
+        "https://www.rohlik.cz/1296239-bref-power-aktiv-lemon-wc-blok",
+        "https://www.rohlik.cz/1296247-bref-power-aktiv-levandule-wc-blok"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Drogerie",
+        "Čisticí prostředky",
+        "Koupelna a WC",
+        "Čištění WC"
+      ],
+      "mapped_category": "Úklid",
+      "mapping_reason": "Úklid podle cesty prodejce",
+      "product_count": 5,
+      "old_rule_categories": {
+        "Úklid": 5
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1336387-bref-power-aktiv-flower-wc-cistic",
+        "https://www.rohlik.cz/1336703-bref-power-aktiv-lemon-wc-cistic",
+        "https://www.rohlik.cz/1336385-bref-power-aktiv-ocean-wc-cistic"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
         "Maso a ryby",
         "Vepřové",
         "Panenka"
@@ -524,6 +628,45 @@
       "needs_review": false
     },
     {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Uzeniny a lahůdky",
+        "Šunky a slaniny",
+        "Vepřové"
+      ],
+      "mapped_category": "Uzeniny / šunky",
+      "mapping_reason": "Šunky podle cesty prodejce",
+      "product_count": 5,
+      "old_rule_categories": {
+        "Uzeniny / šunky": 5
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1318305-le-co-sunka-zvonarka-nejvyssi-jakosti-s-obsahem-masa-95",
+        "https://www.rohlik.cz/1332245-le-co-sunka-dusena-v-pare-nejvyssi-jakosti-s-obsahem-masa-95",
+        "https://www.rohlik.cz/1293133-le-co-sunka-dusena-vyberova-s-obsahem-masa-85"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Děti",
+        "Vlhčené ubrousky"
+      ],
+      "mapped_category": null,
+      "mapping_reason": "Cesta prodejce nemá schválené mapování",
+      "product_count": 4,
+      "old_rule_categories": {
+        "Papír a hygiena": 4
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p3027-linteo-baby-detske-vlhcene-ubrousky-s-mesickem",
+        "https://www.kosik.cz/p2897-linteo-baby-vlhcene-detske-ubrousky",
+        "https://www.kosik.cz/p2907-linteo-baby-vlhcene-ubrousky-s-aloe-vera-4x80-ks"
+      ],
+      "needs_review": true
+    },
+    {
       "shop": "Košík",
       "merchant_path": [
         "Maso a ryby",
@@ -540,6 +683,26 @@
         "https://www.kosik.cz/p802840-metro-chef-veprova-panenka-bez-retizku",
         "https://www.kosik.cz/p191655-moje-maso-bio-veprova-panenka",
         "https://www.kosik.cz/p297984-veprova-panenka-z-prasnic-bez-retizku"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Tavené"
+      ],
+      "mapped_category": "Sýry / tavené",
+      "mapping_reason": "Tavené sýry podle cesty prodejce",
+      "product_count": 4,
+      "old_rule_categories": {
+        "Sýry / tavené": 4
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p12777-madeta-jihoceske-lipno-syr-extra-smetanovy-64",
+        "https://www.kosik.cz/p279054-smetanito-s-tvarohem-3-ks",
+        "https://www.kosik.cz/p260874-smetanito-smetanove-giga"
       ],
       "needs_review": false
     },
@@ -608,6 +771,27 @@
       "needs_review": false
     },
     {
+      "shop": "Košík",
+      "merchant_path": [
+        "Uzeniny a lahůdky",
+        "Salámy",
+        "Tvrdé",
+        "Krájené"
+      ],
+      "mapped_category": "Uzeniny / salámy",
+      "mapping_reason": "Salámy podle cesty prodejce",
+      "product_count": 4,
+      "old_rule_categories": {
+        "Uzeniny / salámy": 4
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p265964-kmotr-duo-salam-platky",
+        "https://www.kosik.cz/p265954-kmotr-lovecky-salam-platky",
+        "https://www.kosik.cz/p265924-kmotr-polican-salam-platky"
+      ],
+      "needs_review": false
+    },
+    {
       "shop": "Rohlík",
       "merchant_path": [
         "Drogerie",
@@ -650,88 +834,6 @@
       "needs_review": true
     },
     {
-      "shop": "Rohlík",
-      "merchant_path": [
-        "Mléčné a chlazené",
-        "Sýry",
-        "Plátkové",
-        "Ementálský typ"
-      ],
-      "mapped_category": "Sýry / plátkové",
-      "mapping_reason": "Plátkové sýry podle cesty prodejce",
-      "product_count": 4,
-      "old_rule_categories": {
-        "Sýry / plátkové": 4
-      },
-      "sample_product_urls": [
-        "https://www.rohlik.cz/1289779-leerdammer-lightlife-syr-platky",
-        "https://www.rohlik.cz/1318145-leerdammer-original-platky",
-        "https://www.rohlik.cz/1303961-madeta-madeland-light-30-platky"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Rohlík",
-      "merchant_path": [
-        "Mléčné a chlazené",
-        "Sýry",
-        "Plísňové, zrající, pařené a uzené",
-        "Plísňové a zrající"
-      ],
-      "mapped_category": null,
-      "mapping_reason": "Mléčná kategorie bez jednoznačného sledovaného typu",
-      "product_count": 4,
-      "old_rule_categories": {
-        "Sýry / plísňové": 4
-      },
-      "sample_product_urls": [
-        "https://www.rohlik.cz/1319997-kral-syru-hermelin-provensalske-bylinky",
-        "https://www.rohlik.cz/1305761-kral-syru-hermelin-original",
-        "https://www.rohlik.cz/1294211-sedlcansky-hermelin-original"
-      ],
-      "needs_review": true
-    },
-    {
-      "shop": "Rohlík",
-      "merchant_path": [
-        "Uzeniny a lahůdky",
-        "Šunky a slaniny",
-        "Vepřové"
-      ],
-      "mapped_category": "Uzeniny / šunky",
-      "mapping_reason": "Šunky podle cesty prodejce",
-      "product_count": 4,
-      "old_rule_categories": {
-        "Uzeniny / šunky": 4
-      },
-      "sample_product_urls": [
-        "https://www.rohlik.cz/1318305-le-co-sunka-zvonarka-nejvyssi-jakosti-s-obsahem-masa-95",
-        "https://www.rohlik.cz/1293133-le-co-sunka-dusena-vyberova-s-obsahem-masa-85",
-        "https://www.rohlik.cz/1292717-le-co-sunka-od-kosti-nejvyssi-jakosti-s-obsahem-masa-95"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Drogerie a kosmetika",
-        "Papírová a vatová hygiena",
-        "Kuchyňské utěrky"
-      ],
-      "mapped_category": "Papírové utěrky",
-      "mapping_reason": "Papírové utěrky podle cesty prodejce",
-      "product_count": 3,
-      "old_rule_categories": {
-        "Papírové utěrky": 3
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p171496-harmony-kuchynske-uterky-everyday-family-2vrstve-4-role",
-        "https://www.kosik.cz/p192185-zewa-jumbo-kuchynske-uterky-2vrstve-1-role",
-        "https://www.kosik.cz/p192175-zewa-premium-flexisheets-kuchynske-uterky-2vrstve-2-role"
-      ],
-      "needs_review": false
-    },
-    {
       "shop": "Košík",
       "merchant_path": [
         "Mléčné a chlazené",
@@ -751,6 +853,27 @@
         "https://www.kosik.cz/p15147-galbani-mozzarella-mini"
       ],
       "needs_review": true
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plátkové",
+        "Eidam"
+      ],
+      "mapped_category": "Sýry / plátkové",
+      "mapping_reason": "Plátkové sýry podle cesty prodejce",
+      "product_count": 3,
+      "old_rule_categories": {
+        "Sýry / plátkové": 3
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p12827-madeta-eidam-jihocesky-platkovy-30",
+        "https://www.kosik.cz/p12837-madeta-jihocesky-eidam-platky-45",
+        "https://www.kosik.cz/p243484-madeta-jihocesky-eidam-syr-20-platky"
+      ],
+      "needs_review": false
     },
     {
       "shop": "Košík",
@@ -907,21 +1030,42 @@
       "merchant_path": [
         "Drogerie",
         "Čisticí prostředky",
-        "Koupelna a WC",
-        "WC bloky"
+        "Na sklo a okna"
       ],
       "mapped_category": "Úklid",
       "mapping_reason": "Úklid podle cesty prodejce",
       "product_count": 3,
       "old_rule_categories": {
-        "Úklid": 3
+        "Úklid": 2,
+        "Papír a hygiena": 1
       },
       "sample_product_urls": [
-        "https://www.rohlik.cz/1296239-bref-power-aktiv-lemon-wc-blok",
-        "https://www.rohlik.cz/1296247-bref-power-aktiv-levandule-wc-blok",
-        "https://www.rohlik.cz/1296241-bref-power-aktiv-ocean-wc-blok"
+        "https://www.rohlik.cz/1296249-clin-lemon-cistic-na-okna-s-alkoholem",
+        "https://www.rohlik.cz/1353829-clin-pro-nature-cistic-na-okna",
+        "https://www.rohlik.cz/1308283-linteo-vlhcene-cistici-ubrousky-na-bryle"
       ],
-      "needs_review": false
+      "needs_review": true
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Kosmetika",
+        "Ústní hygiena",
+        "Zubní pasty",
+        "Problémy s dásněmi"
+      ],
+      "mapped_category": null,
+      "mapping_reason": "Cesta prodejce nemá schválené mapování",
+      "product_count": 3,
+      "old_rule_categories": {
+        "Dentální hygiena": 3
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1294773-parodontax-classic-zubni-pasta-na-paradentozu",
+        "https://www.rohlik.cz/1294775-parodontax-whitening-zubni-pasta-na-paradentozu-a-bile-zuby",
+        "https://www.rohlik.cz/1339855-parodontax-whitening-zubni-pasta-na-paradentozu-a-kompletni-ochranu-zubu"
+      ],
+      "needs_review": true
     },
     {
       "shop": "Rohlík",
@@ -943,6 +1087,28 @@
         "https://www.rohlik.cz/1375189-nase-maso-hovezi-svickova-steaky"
       ],
       "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Smetanové, cottage a tavené",
+        "Tavené"
+      ],
+      "mapped_category": "Sýry / tavené",
+      "mapping_reason": "Tavené sýry podle cesty prodejce",
+      "product_count": 3,
+      "old_rule_categories": {
+        "Sýry / plátkové": 1,
+        "Sýry / tavené": 2
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1292759-president-tavene-platky-emmental",
+        "https://www.rohlik.cz/1335239-smetanito-smetanove-giga-taveny-syr",
+        "https://www.rohlik.cz/1317575-smetanito-smetanove-taveny-syr"
+      ],
+      "needs_review": true
     },
     {
       "shop": "Košík",
@@ -1026,9 +1192,29 @@
       "shop": "Košík",
       "merchant_path": [
         "Mléčné a chlazené",
+        "Bez laktózy",
+        "Sýry"
+      ],
+      "mapped_category": null,
+      "mapping_reason": "Mléčná kategorie bez jednoznačného sledovaného typu",
+      "product_count": 2,
+      "old_rule_categories": {
+        "Sýry / mozzarella a salátové": 1,
+        "Sýry / plísňové": 1
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p15497-galbani-mozzarella-lactose-free",
+        "https://www.kosik.cz/p302343-sedlcansky-hermelin-bez-laktozy"
+      ],
+      "needs_review": true
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Mléčné a chlazené",
         "Sýry",
         "Plátkové",
-        "Eidam"
+        "Holandského typu"
       ],
       "mapped_category": "Sýry / plátkové",
       "mapping_reason": "Plátkové sýry podle cesty prodejce",
@@ -1037,8 +1223,28 @@
         "Sýry / plátkové": 2
       },
       "sample_product_urls": [
-        "https://www.kosik.cz/p12827-madeta-eidam-jihocesky-platkovy-30",
-        "https://www.kosik.cz/p12837-madeta-jihocesky-eidam-platky-45"
+        "https://www.kosik.cz/p248824-madeta-syraruv-vyber-tylzsky-syr-45-platky",
+        "https://www.kosik.cz/p14777-president-maasdamer-platkovy-syr"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plátkové",
+        "Ostatní typy"
+      ],
+      "mapped_category": "Sýry / plátkové",
+      "mapping_reason": "Plátkové sýry podle cesty prodejce",
+      "product_count": 2,
+      "old_rule_categories": {
+        "Sýry / plátkové": 2
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p13077-madeta-lipanek-jemny-syr-platkovy",
+        "https://www.kosik.cz/p254294-madeta-syraruv-vyber-moravsky-bochnik-45-platky"
       ],
       "needs_review": false
     },
@@ -1167,6 +1373,25 @@
       "merchant_path": [
         "Drogerie",
         "Prací prostředky",
+        "Aviváže"
+      ],
+      "mapped_category": "Praní",
+      "mapping_reason": "Praní podle cesty prodejce",
+      "product_count": 2,
+      "old_rule_categories": {
+        "Praní": 2
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1328433-silan-fresh-sky-avivaz-2-86-l",
+        "https://www.rohlik.cz/1329625-silan-sensitive-avivaz-2-86-l"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Drogerie",
+        "Prací prostředky",
         "Prací gely",
         "Barevné prádlo"
       ],
@@ -1188,7 +1413,7 @@
         "Drogerie",
         "Čisticí prostředky",
         "Koupelna a WC",
-        "Čištění WC"
+        "Čištění koupelny"
       ],
       "mapped_category": "Úklid",
       "mapping_reason": "Úklid podle cesty prodejce",
@@ -1197,8 +1422,28 @@
         "Úklid": 2
       },
       "sample_product_urls": [
-        "https://www.rohlik.cz/1295383-savo-wc-gel-ocean",
-        "https://www.rohlik.cz/1298253-savo-wc-gel-turbo"
+        "https://www.rohlik.cz/1325523-cif-univerzalni-sprej-na-vodni-kamen",
+        "https://www.rohlik.cz/1299127-savo-proti-plisnim"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Drogerie",
+        "Čisticí prostředky",
+        "Kuchyň",
+        "Ve spreji / s rozprašovačem"
+      ],
+      "mapped_category": "Úklid",
+      "mapping_reason": "Úklid podle cesty prodejce",
+      "product_count": 2,
+      "old_rule_categories": {
+        "Úklid": 2
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1309543-cif-nerez-cistici-sprej",
+        "https://www.rohlik.cz/1325527-cif-ultrafast-cistici-sprej-na-mastnotu"
       ],
       "needs_review": false
     },
@@ -1220,26 +1465,6 @@
         "https://www.rohlik.cz/1312977-savo-podlahy-a-povrchy-vune-oceanu"
       ],
       "needs_review": false
-    },
-    {
-      "shop": "Rohlík",
-      "merchant_path": [
-        "Drogerie",
-        "Čisticí prostředky",
-        "Na sklo a okna"
-      ],
-      "mapped_category": "Úklid",
-      "mapping_reason": "Úklid podle cesty prodejce",
-      "product_count": 2,
-      "old_rule_categories": {
-        "Úklid": 1,
-        "Papír a hygiena": 1
-      },
-      "sample_product_urls": [
-        "https://www.rohlik.cz/1296249-clin-lemon-cistic-na-okna-s-alkoholem",
-        "https://www.rohlik.cz/1308283-linteo-vlhcene-cistici-ubrousky-na-bryle"
-      ],
-      "needs_review": true
     },
     {
       "shop": "Rohlík",
@@ -1303,26 +1528,6 @@
     {
       "shop": "Rohlík",
       "merchant_path": [
-        "Kosmetika",
-        "Ústní hygiena",
-        "Zubní pasty",
-        "Problémy s dásněmi"
-      ],
-      "mapped_category": null,
-      "mapping_reason": "Cesta prodejce nemá schválené mapování",
-      "product_count": 2,
-      "old_rule_categories": {
-        "Dentální hygiena": 2
-      },
-      "sample_product_urls": [
-        "https://www.rohlik.cz/1294773-parodontax-classic-zubni-pasta-na-paradentozu",
-        "https://www.rohlik.cz/1294775-parodontax-whitening-zubni-pasta-na-paradentozu-a-bile-zuby"
-      ],
-      "needs_review": true
-    },
-    {
-      "shop": "Rohlík",
-      "merchant_path": [
         "Maso a ryby",
         "Drůbež",
         "Prsa a stehenní řízky",
@@ -1364,21 +1569,40 @@
       "merchant_path": [
         "Mléčné a chlazené",
         "Sýry",
-        "Smetanové, cottage a tavené",
-        "Tavené"
+        "Mozzarella, ricotta a salátové sýry",
+        "Mozzarella, burrata a ricotta"
       ],
-      "mapped_category": "Sýry / tavené",
-      "mapping_reason": "Tavené sýry podle cesty prodejce",
+      "mapped_category": null,
+      "mapping_reason": "Mléčná kategorie bez jednoznačného sledovaného typu",
       "product_count": 2,
       "old_rule_categories": {
-        "Sýry / plátkové": 1,
-        "Sýry / tavené": 1
+        "Sýry / mozzarella a salátové": 2
       },
       "sample_product_urls": [
-        "https://www.rohlik.cz/1292759-president-tavene-platky-emmental",
-        "https://www.rohlik.cz/1317575-smetanito-smetanove-taveny-syr"
+        "https://www.rohlik.cz/1355871-galbani-burrata",
+        "https://www.rohlik.cz/1292433-galbani-mozzarella-light"
       ],
       "needs_review": true
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plátkové",
+        "Ostatní"
+      ],
+      "mapped_category": "Sýry / plátkové",
+      "mapping_reason": "Plátkové sýry podle cesty prodejce",
+      "product_count": 2,
+      "old_rule_categories": {
+        "Sýry / plátkové": 2
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1359573-madeta-lipanek-syr-48-platky",
+        "https://www.rohlik.cz/1321017-madeta-syraruv-vyber-moravsky-bochnik-45-platky"
+      ],
+      "needs_review": false
     },
     {
       "shop": "Rohlík",
@@ -1398,6 +1622,45 @@
         "https://www.rohlik.cz/1337183-mrkev-krajena-kostky"
       ],
       "needs_review": true
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Uzeniny a lahůdky",
+        "Párky, klobásy a špekáčky",
+        "Párky"
+      ],
+      "mapped_category": "Uzeniny / párky a klobásy",
+      "mapping_reason": "Párky/klobásy podle cesty prodejce",
+      "product_count": 2,
+      "old_rule_categories": {
+        "Uzeniny / párky a klobásy": 2
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1321239-ponnath-videnske-miniparecky",
+        "https://www.rohlik.cz/1321243-ponnath-videnske-miniparecky-se-syrem"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Uzeniny a lahůdky",
+        "Salámy",
+        "Měkké",
+        "Krájené"
+      ],
+      "mapped_category": "Uzeniny / salámy",
+      "mapping_reason": "Salámy podle cesty prodejce",
+      "product_count": 2,
+      "old_rule_categories": {
+        "Uzeniny / salámy": 2
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1321249-ponnath-junior-salam-krajeny",
+        "https://www.rohlik.cz/1321237-ponnath-kapiovy-salam-krajeny"
+      ],
+      "needs_review": false
     },
     {
       "shop": "Rohlík",
@@ -1434,6 +1697,80 @@
       },
       "sample_product_urls": [
         "https://www.kosik.cz/p121507-axe-ice-chill-deodorant-ve-spreji-pro-muze"
+      ],
+      "needs_review": true
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Drogerie a kosmetika",
+        "Dámská hygiena",
+        "Intimní hygiena"
+      ],
+      "mapped_category": null,
+      "mapping_reason": "Nesledovaná podkategorie drogerie",
+      "product_count": 1,
+      "old_rule_categories": {
+        "Papír a hygiena": 1
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p2997-linteo-vlhcene-ubrousky-pro-intimni-hygienu"
+      ],
+      "needs_review": true
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Drogerie a kosmetika",
+        "Papírová a vatová hygiena",
+        "Vlhčené ubrousky"
+      ],
+      "mapped_category": null,
+      "mapping_reason": "Nesledovaná podkategorie drogerie",
+      "product_count": 1,
+      "old_rule_categories": {
+        "Papír a hygiena": 1
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p3017-linteo-vlhcene-ubrousky-pro-denni-potrebu"
+      ],
+      "needs_review": true
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Drogerie a kosmetika",
+        "Péče o pleť",
+        "Čištění a odličování",
+        "Odličovací tampony a ubrousky"
+      ],
+      "mapped_category": "Kosmetika",
+      "mapping_reason": "Kosmetika podle cesty prodejce",
+      "product_count": 1,
+      "old_rule_categories": {
+        "Papír a hygiena": 1
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p3007-linteo-vlhcene-odlicovaci-ubrousky"
+      ],
+      "needs_review": true
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Drogerie a kosmetika",
+        "Péče o vlasy",
+        "Šampony",
+        "Pánské"
+      ],
+      "mapped_category": null,
+      "mapping_reason": "Nesledovaná podkategorie drogerie",
+      "product_count": 1,
+      "old_rule_categories": {
+        "Kosmetika": 1
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p304584-syoss-men-intense-power-sampon-pro-muze"
       ],
       "needs_review": true
     },
@@ -1543,24 +1880,6 @@
       },
       "sample_product_urls": [
         "https://www.kosik.cz/p725876-primas-farmarska-krkovice-na-gril-s-bylinkami"
-      ],
-      "needs_review": true
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Mléčné a chlazené",
-        "Bez laktózy",
-        "Sýry"
-      ],
-      "mapped_category": null,
-      "mapping_reason": "Mléčná kategorie bez jednoznačného sledovaného typu",
-      "product_count": 1,
-      "old_rule_categories": {
-        "Sýry / mozzarella a salátové": 1
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p15497-galbani-mozzarella-lactose-free"
       ],
       "needs_review": true
     },
@@ -1682,7 +2001,7 @@
         "Mléčné a chlazené",
         "Sýry",
         "Plátkové",
-        "Holandského typu"
+        "Uzené"
       ],
       "mapped_category": "Sýry / plátkové",
       "mapping_reason": "Plátkové sýry podle cesty prodejce",
@@ -1691,44 +2010,7 @@
         "Sýry / plátkové": 1
       },
       "sample_product_urls": [
-        "https://www.kosik.cz/p14777-president-maasdamer-platkovy-syr"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Mléčné a chlazené",
-        "Sýry",
-        "Plátkové",
-        "Ostatní typy"
-      ],
-      "mapped_category": "Sýry / plátkové",
-      "mapping_reason": "Plátkové sýry podle cesty prodejce",
-      "product_count": 1,
-      "old_rule_categories": {
-        "Sýry / plátkové": 1
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p13077-madeta-lipanek-jemny-syr-platkovy"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Mléčné a chlazené",
-        "Sýry",
-        "Tavené"
-      ],
-      "mapped_category": "Sýry / tavené",
-      "mapping_reason": "Tavené sýry podle cesty prodejce",
-      "product_count": 1,
-      "old_rule_categories": {
-        "Sýry / tavené": 1
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p12777-madeta-jihoceske-lipno-syr-extra-smetanovy-64"
+        "https://www.kosik.cz/p248834-madeta-syraruv-vyber-tylzsky-syr-uzeny-45-platky"
       ],
       "needs_review": false
     },
@@ -1748,6 +2030,24 @@
       },
       "sample_product_urls": [
         "https://www.kosik.cz/p196045-panzani-linguine"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Trvanlivé",
+        "Těstoviny a kuskus",
+        "Zavářky do polévky"
+      ],
+      "mapped_category": "Těstoviny a rýže",
+      "mapping_reason": "Těstoviny/rýže podle cesty prodejce",
+      "product_count": 1,
+      "old_rule_categories": {
+        "Těstoviny a rýže": 1
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p233464-panzani-mini-alfabeto-testoviny"
       ],
       "needs_review": false
     },
@@ -1804,6 +2104,25 @@
       },
       "sample_product_urls": [
         "https://www.kosik.cz/p20447-ponnath-spekacky"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Uzeniny a lahůdky",
+        "Šunky",
+        "Vepřové",
+        "Standardní"
+      ],
+      "mapped_category": "Uzeniny / šunky",
+      "mapping_reason": "Šunky podle cesty prodejce",
+      "product_count": 1,
+      "old_rule_categories": {
+        "Uzeniny / šunky": 1
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p248874-chodura-sunka-snidanova-standard-platky"
       ],
       "needs_review": false
     },
@@ -1888,6 +2207,25 @@
       "merchant_path": [
         "Drogerie",
         "Prací prostředky",
+        "Prací gely",
+        "Univerzální"
+      ],
+      "mapped_category": "Praní",
+      "mapping_reason": "Praní podle cesty prodejce",
+      "product_count": 1,
+      "old_rule_categories": {
+        "Praní": 1
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1338217-persil-universal-praci-gel-1-98-l"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Drogerie",
+        "Prací prostředky",
         "Prací prášky",
         "Univerzální"
       ],
@@ -1926,44 +2264,6 @@
       "merchant_path": [
         "Drogerie",
         "Čisticí prostředky",
-        "Koupelna a WC",
-        "Čištění koupelny"
-      ],
-      "mapped_category": "Úklid",
-      "mapping_reason": "Úklid podle cesty prodejce",
-      "product_count": 1,
-      "old_rule_categories": {
-        "Úklid": 1
-      },
-      "sample_product_urls": [
-        "https://www.rohlik.cz/1299127-savo-proti-plisnim"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Rohlík",
-      "merchant_path": [
-        "Drogerie",
-        "Čisticí prostředky",
-        "Kuchyň",
-        "Ve spreji / s rozprašovačem"
-      ],
-      "mapped_category": "Úklid",
-      "mapping_reason": "Úklid podle cesty prodejce",
-      "product_count": 1,
-      "old_rule_categories": {
-        "Úklid": 1
-      },
-      "sample_product_urls": [
-        "https://www.rohlik.cz/1309543-cif-nerez-cistici-sprej"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Rohlík",
-      "merchant_path": [
-        "Drogerie",
-        "Čisticí prostředky",
         "Na nábytek"
       ],
       "mapped_category": "Úklid",
@@ -1976,6 +2276,24 @@
         "https://www.rohlik.cz/1314041-linteo-vlhcene-uklidove-ubrousky-na-nabytek"
       ],
       "needs_review": true
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Drogerie",
+        "Čisticí prostředky",
+        "Trouby a grily"
+      ],
+      "mapped_category": "Úklid",
+      "mapping_reason": "Úklid podle cesty prodejce",
+      "product_count": 1,
+      "old_rule_categories": {
+        "Úklid": 1
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1339845-cif-trouba-gril-cistici-sprej"
+      ],
+      "needs_review": false
     },
     {
       "shop": "Rohlík",
@@ -2012,6 +2330,25 @@
       },
       "sample_product_urls": [
         "https://www.rohlik.cz/1314159-axe-africa-pansky-deodorant-ve-spreji"
+      ],
+      "needs_review": true
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Kosmetika",
+        "Pleťová péče a dekorativní kosmetika",
+        "Čištění a odlíčení pleti",
+        "Odličovací tampony a vata"
+      ],
+      "mapped_category": null,
+      "mapping_reason": "Cesta prodejce nemá schválené mapování",
+      "product_count": 1,
+      "old_rule_categories": {
+        "Papír a hygiena": 1
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1327347-linteo-vlhcene-ubrousky-odlicovaci-vyzivujici"
       ],
       "needs_review": true
     },
@@ -2075,25 +2412,6 @@
       "merchant_path": [
         "Mléčné a chlazené",
         "Sýry",
-        "Mozzarella, ricotta a salátové sýry",
-        "Mozzarella, burrata a ricotta"
-      ],
-      "mapped_category": null,
-      "mapping_reason": "Mléčná kategorie bez jednoznačného sledovaného typu",
-      "product_count": 1,
-      "old_rule_categories": {
-        "Sýry / mozzarella a salátové": 1
-      },
-      "sample_product_urls": [
-        "https://www.rohlik.cz/1292433-galbani-mozzarella-light"
-      ],
-      "needs_review": true
-    },
-    {
-      "shop": "Rohlík",
-      "merchant_path": [
-        "Mléčné a chlazené",
-        "Sýry",
         "Na gril, fondue a raclette",
         "Na gril a pánev"
       ],
@@ -2124,25 +2442,6 @@
       },
       "sample_product_urls": [
         "https://www.rohlik.cz/1295627-president-cheddar-platkovy-syr"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Rohlík",
-      "merchant_path": [
-        "Mléčné a chlazené",
-        "Sýry",
-        "Plátkové",
-        "Ostatní"
-      ],
-      "mapped_category": "Sýry / plátkové",
-      "mapping_reason": "Plátkové sýry podle cesty prodejce",
-      "product_count": 1,
-      "old_rule_categories": {
-        "Sýry / plátkové": 1
-      },
-      "sample_product_urls": [
-        "https://www.rohlik.cz/1321017-madeta-syraruv-vyber-moravsky-bochnik-45-platky"
       ],
       "needs_review": false
     },
@@ -2279,6 +2578,24 @@
     {
       "shop": "Rohlík",
       "merchant_path": [
+        "Speciální výživa",
+        "Bezlaktózové výrobky",
+        "Sýry bez laktózy"
+      ],
+      "mapped_category": null,
+      "mapping_reason": "Cesta prodejce nemá schválené mapování",
+      "product_count": 1,
+      "old_rule_categories": {
+        "Sýry / mozzarella a salátové": 1
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1327655-galbani-mozzarella-lactose-free"
+      ],
+      "needs_review": true
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
         "Trvanlivé",
         "Sladkosti",
         "Čokolády",
@@ -2311,6 +2628,24 @@
       },
       "sample_product_urls": [
         "https://www.rohlik.cz/1321223-ponnath-bio-videnske-parky"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Rohlík",
+      "merchant_path": [
+        "Uzeniny a lahůdky",
+        "Párky, klobásy a špekáčky",
+        "Klobásy"
+      ],
+      "mapped_category": "Uzeniny / párky a klobásy",
+      "mapping_reason": "Párky/klobásy podle cesty prodejce",
+      "product_count": 1,
+      "old_rule_categories": {
+        "Uzeniny / párky a klobásy": 1
+      },
+      "sample_product_urls": [
+        "https://www.rohlik.cz/1321235-ponnath-bavorske-grilovaci-klobasky"
       ],
       "needs_review": false
     }
