@@ -8,6 +8,9 @@ name: Monitor slev v27 - Izolovany sber kategorii (v26 read-only)
       - taxonomy_probe_v27.py
       - rule_path_v27.py
       - tests/test_*v27.py
+  schedule:
+    # Every six hours (UTC); respectful 100-product batches, never 6 runs at once.
+    - cron: '17 0,6,12,18 * * *'
   workflow_dispatch:
     inputs:
       limit:
@@ -31,7 +34,7 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 45
     env:
-      INPUT_LIMIT: ${{ inputs.limit || '60' }}
+      INPUT_LIMIT: ${{ inputs.limit || '100' }}
       INPUT_DELAY: ${{ inputs.delay || '3.3' }}
       BRANCH: feature/retailer-taxonomy-v27
     steps:
