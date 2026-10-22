@@ -1,16 +1,24 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-10-22T04:47:51+00:00",
-  "processed": 12,
-  "updated_prices": 10,
+  "at": "2026-10-22T05:28:36+00:00",
+  "processed": 35,
+  "updated_prices": 35,
   "blocked_stores": [],
   "statuses": {
-    "Košík|title_mismatch": 1,
-    "Košík|ok": 8,
-    "Rohlík|ok": 2,
-    "Rohlík|price_unverified": 1
+    "Košík|ok": 27,
+    "Rohlík|ok": 8
   },
-  "last_price_monitor_at": "2026-10-22T04:47:51+00:00",
-  "new_drops": [],
-  "remaining_missing": 194
+  "last_price_monitor_at": "2026-10-22T05:28:36+00:00",
+  "new_drops": [
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p718434-avokado-hass-ready-to-eat-2-ks",
+      "name": "Avokádo Hass \"Ready to Eat\", 2 ks",
+      "previous": 64.9,
+      "now": 44.9,
+      "drop_pct": 30.8,
+      "checked_at": "2026-10-22T05:28:27+00:00"
+    }
+  ],
+  "remaining_missing": 186
 }
