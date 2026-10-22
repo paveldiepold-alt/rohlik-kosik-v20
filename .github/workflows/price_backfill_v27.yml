@@ -1,0 +1,173 @@
+name: Monitor slev v27 - Hromadne doplneni chybejicich cen
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: 'Maximalni pocet neocenenych produktu v jedne davce (1-100)'
+        default: '80'
+        required: false
+        type: string
+      delay:
+        description: 'Minimalni odstup mezi pozadavky na jeden obchod, sekundy (3.3-60)'
+        default: '4.0'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rk-v20-catalog
+  cancel-in-progress: false
+
+jobs:
+  missing-price-backfill:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    env:
+      BATCH_LIMIT: ${{ inputs.limit || '80' }}
+      BATCH_DELAY: ${{ inputs.delay || '4.0' }}
+    steps:
+      - name: Checkout published v26 catalogue and verified price parser
+        uses: actions/checkout@v4
+        with:
+          ref: fix/real-product-price-reading-v20
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Fetch isolated v27 backfill script from main and test before networking
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p .price-v27
+          git fetch --no-tags origin '+refs/heads/main:refs/remotes/origin/main'
+          git show origin/main:price_backfill_v27.py > .price-v27/price_backfill_v27.py
+          git show origin/main:tests/test_price_backfill_v27.py > .price-v27/test_price_backfill_v27.py
+          python -m py_compile .price-v27/price_backfill_v27.py
+          PYTHONPATH=.:.price-v27 python -m unittest discover -s .price-v27 -p 'test_price_backfill_v27.py' -v
+          python - <<'PY'
+          import json, math, os, hashlib, shutil
+          from pathlib import Path
+          limit=int(os.environ['BATCH_LIMIT']); delay=float(os.environ['BATCH_DELAY'])
+          assert 1 <= limit <= 100, 'Allowed limit is 1..100'
+          assert math.isfinite(delay) and 3.3 <= delay <= 60, 'Allowed delay is 3.3..60'
+          source=Path('docs/data/catalog_latest.json')
+          dashboard=Path('docs/catalog.html')
+          assert source.is_file() and dashboard.is_file(), 'Published catalogue/dashboard is missing'
+          cat=json.loads(source.read_text(encoding='utf-8'))
+          rows=cat['items']; ids=[(r['store'],r['url']) for r in rows]
+          assert len(rows)>=1090 and len(ids)==len(set(ids)), 'Missing or duplicated products'
+          shutil.copyfile(source,'.price-v27/before.json')
+          Path('.price-v27/html.sha256').write_text(hashlib.sha256(dashboard.read_bytes()).hexdigest())
+          print('SOURCE:',len(rows),'products,',sum(r.get('price_status')=='ok' for r in rows),'priced')
+          PY
+
+      - name: Install browser
+        run: |
+          python -m pip install --disable-pip-version-check 'playwright==1.56.0'
+          python -m playwright install --with-deps chromium
+
+      - name: Prioritise missing Rohlík prices with rate-limit backoff
+        id: backfill
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -euo pipefail
+          PYTHONPATH=.:.price-v27 python .price-v27/price_backfill_v27.py \
+            --catalog docs/data/catalog_latest.json \
+            --report docs/data/monitor_v27_backfill_report.json \
+            --limit "$BATCH_LIMIT" --delay "$BATCH_DELAY"
+
+      - name: Strict products / prices / HTML integrity gate
+        id: integrity
+        if: steps.backfill.outcome == 'success'
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import hashlib,json,math
+          from pathlib import Path
+          before=json.loads(Path('.price-v27/before.json').read_text(encoding='utf8'))
+          after=json.loads(Path('docs/data/catalog_latest.json').read_text(encoding='utf8'))
+          report=json.loads(Path('docs/data/monitor_v27_backfill_report.json').read_text(encoding='utf8'))
+          old=before['items']; new=after['items']
+          assert len(old)==len(new) and len(old)>=1090
+          assert before['generated_at']==after['generated_at']
+          for a,b in zip(old,new):
+            key=lambda x:(x['store'],x['url'])
+            assert key(a)==key(b),'Missing/reordered product'
+            if a.get('price_status')=='ok':
+              assert a==b,('Verified product changed',key(a))
+            else:
+              price_fields={'price_czk','price_status','price_source','checked_at',
+                'original_price_czk','discount_pct','offer_valid_until','multibuy',
+                'price_history_previous_czk','price_history_previous_at','drop_since_previous_pct',
+                'last_monitor_attempt_at','monitor_v26_attempts','monitor_v26_status','monitor_v26_note'}
+              assert set(a).issubset(b),'Existing field was deleted'
+              for f,v in a.items():
+                if f not in price_fields: assert b.get(f)==v,(key(a),f)
+              for f in b:
+                if f not in a: assert f in price_fields,(key(a),f,'new field')
+          priced=lambda rows:sum(x.get('price_status')=='ok' and type(x.get('price_czk')) in (int,float)
+                         and math.isfinite(x['price_czk']) and x['price_czk']>0 for x in rows)
+          assert priced(new)-priced(old)==report['newly_priced']>0
+          assert report['remaining_missing']==len(new)-priced(new)
+          assert hashlib.sha256(Path('docs/catalog.html').read_bytes()).hexdigest()==Path('.price-v27/html.sha256').read_text(), 'HTML CHANGED'
+          print('PASS: new verified prices:',report['newly_priced'],
+                '| products:',len(new),'| remaining gaps:',report['remaining_missing'], '| dashboard intact')
+          PY
+          test -z "$(git status --porcelain -- docs/catalog.html)"
+
+      - name: Downloadable diagnostics even if prices could not be verified
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rk-v27-priority-missing-price-report
+          retention-days: 21
+          if-no-files-found: ignore
+          path: docs/data/monitor_v27_backfill_report.json
+
+      - name: Publish only newly verified price data
+        if: steps.backfill.outcome == 'success' && steps.integrity.outcome == 'success'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name github-actions[bot]
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- docs/data/catalog_latest.json docs/data/monitor_v27_backfill_report.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'prices: v27 missing-only backfill, preserve web design [skip ci]'
+            git push origin 'HEAD:refs/heads/fix/real-product-price-reading-v20'
+          fi
+
+      - name: Results
+        if: always()
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          p=Path('docs/data/monitor_v27_backfill_report.json')
+          output=['## Monitor slev v27 – cileny doplnek chybejicich cen','']
+          if p.exists():
+            d=json.loads(p.read_text(encoding='utf-8'))
+            for k in ('selected','attempted','newly_priced','remaining_missing','blocked_stores','statuses'):
+              output.append(f'- **{k}:** {d.get(k)}')
+          else:
+            output.append('Nevznikl novy report: zkontrolujte predchozi krok.')
+          output.append('\nDesign, kategorie a jiz overene ceny zustavaji beze zmeny.')
+          with open(os.environ['GITHUB_STEP_SUMMARY'],'a',encoding='utf-8') as f:
+            f.write('\n'.join(output)+'\n')
+          PY
+
+      - name: Reject empty/failed backfill rather than claim updated prices
+        if: steps.backfill.outcome != 'success' || steps.integrity.outcome != 'success'
+        run: |
+          echo '::error::No new safely verified prices published. Check diagnostic artifact and HTTP 429.'
+          exit 1
