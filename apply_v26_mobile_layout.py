@@ -80,7 +80,10 @@ def patch(src: str) -> str:
     single("const list=chosen(),per=Number($('pagesize').value);","const list=chosen(),per=window.matchMedia('(max-width:900px)').matches?20:Number($('pagesize').value);")
     single("$('pageInfo').textContent=`${page} / ${pages}`;", CARDS+" $('pageInfo').textContent=`${page} / ${pages}`;")
     single("document.getElementById('rows').addEventListener('click',e=>{", "$('mobileFilters').addEventListener('click',()=>{const f=$('filtersV26'),b=$('mobileFilters');const expanded=!f.classList.toggle('v26-filter-collapsed');b.setAttribute('aria-expanded',String(expanded));b.textContent=expanded?'☷ Skrýt další filtry':'☷ Další filtry a řazení'});\nwindow.matchMedia('(max-width:900px)').addEventListener('change',()=>{page=1;render()});\n$('mobileCards').addEventListener('click',e=>{const b=e.target.closest('button.fav');if(!b)return;const id=b.dataset.id;if(favs.has(id))favs.delete(id);else favs.add(id);storeFavs();render()});\ndocument.getElementById('rows').addEventListener('click',e=>{")
-    return src
+    # GitHub Actions rejects trailing spaces via `git diff --check`.
+    # Preserve all HTML, JavaScript, product references and price logic;
+    # normalize only horizontal whitespace at the end of generated lines.
+    return '\n'.join(line.rstrip(' \t') for line in src.split('\n'))
 
 if __name__=='__main__':
     if len(sys.argv)!=3:
