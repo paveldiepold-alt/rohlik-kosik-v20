@@ -1,6 +1,6 @@
 {
   "schema": "rk-v27-category-review",
-  "count": 332,
+  "count": 301,
   "items": [
     {
       "store": "Košík",
@@ -180,106 +180,8 @@
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p98697-axe-africa-pansky-deodorant-ve-spreji",
-      "name": "Axe Africa Pánský deodorant ve spreji",
-      "rule_ids": [
-        "W055"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Kosmetika"
-      ],
-      "rule_checks": {
-        "W055": {
-          "expected": "Kosmetika",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
       "url": "https://www.kosik.cz/p99157-axe-black-pansky-deodorant-ve-spreji",
       "name": "Axe Black Pánský deodorant ve spreji",
-      "rule_ids": [
-        "W055"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Kosmetika"
-      ],
-      "rule_checks": {
-        "W055": {
-          "expected": "Kosmetika",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p741634-axe-black-sprchovy-gel",
-      "name": "Axe Black Sprchový gel",
-      "rule_ids": [
-        "W055"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [
-        "Drogerie a kosmetika",
-        "Sprchové gely, mýdla, pěny",
-        "Sprchové gely",
-        "Pánské"
-      ],
-      "expected_categories": [
-        "Kosmetika"
-      ],
-      "rule_checks": {
-        "W055": {
-          "expected": "Kosmetika",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Nesledovaná podkategorie drogerie"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p740636-axe-dark-temptation-sprchovy-gel",
-      "name": "Axe Dark Temptation Sprchový gel",
-      "rule_ids": [
-        "W055"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [
-        "Drogerie a kosmetika",
-        "Sprchové gely, mýdla, pěny",
-        "Sprchové gely",
-        "Pánské"
-      ],
-      "expected_categories": [
-        "Kosmetika"
-      ],
-      "rule_checks": {
-        "W055": {
-          "expected": "Kosmetika",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Nesledovaná podkategorie drogerie"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p98107-axe-dark-temptation-sprchovy-gel",
-      "name": "Axe Dark temptation sprchový gel",
       "rule_ids": [
         "W055"
       ],
@@ -436,28 +338,6 @@
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p97097-chodura-bohemia-sunka-vyberova-platky-84-masa",
-      "name": "Chodura Bohemia Šunka výběrová plátky (84% masa)",
-      "rule_ids": [
-        "W007"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Uzeniny / šunky"
-      ],
-      "rule_checks": {
-        "W007": {
-          "expected": "Uzeniny / šunky",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
       "url": "https://www.kosik.cz/p233224-chodura-burgundska-sunka-nejvyssi-jakosti-96-masa",
       "name": "Chodura Burgundská šunka nejvyšší jakosti (96% masa)",
       "rule_ids": [
@@ -568,50 +448,6 @@
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p97137-chodura-moravska-sunka-vyberova-87-masa",
-      "name": "Chodura Moravská šunka výběrová (87% masa)",
-      "rule_ids": [
-        "W007"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Uzeniny / šunky"
-      ],
-      "rule_checks": {
-        "W007": {
-          "expected": "Uzeniny / šunky",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p97167-chodura-pivni-salam",
-      "name": "Chodura Pivní salám",
-      "rule_ids": [
-        "W011"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Uzeniny / salámy"
-      ],
-      "rule_checks": {
-        "W011": {
-          "expected": "Uzeniny / salámy",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
       "url": "https://www.kosik.cz/p471483-chodura-prazska-sunka-nejvyssi-jakosti-96-masa",
       "name": "Chodura Pražská šunka nejvyšší jakosti (96% masa)",
       "rule_ids": [
@@ -656,59 +492,20 @@
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p97207-chodura-videnske-parky-se-syrem-80-masa",
-      "name": "Chodura Vídeňské párky se sýrem (80% masa)",
-      "rule_ids": [
-        "W015"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Uzeniny / párky a klobásy"
-      ],
-      "rule_checks": {
-        "W015": {
-          "expected": "Uzeniny / párky a klobásy",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p97117-chodura-sunka-gurman-nejvyssi-jakosti-95-masa",
-      "name": "Chodura Šunka Gurmán nejvyšší jakosti (95% masa)",
-      "rule_ids": [
-        "W007"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Uzeniny / šunky"
-      ],
-      "rule_checks": {
-        "W007": {
-          "expected": "Uzeniny / šunky",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
       "url": "https://www.kosik.cz/p97187-chodura-sunkovy-salam",
       "name": "Chodura Šunkový salám",
       "rule_ids": [
         "W007",
         "W011"
       ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
+      "status": "mismatch",
+      "merchant_category": "Uzeniny / salámy",
+      "merchant_path": [
+        "Uzeniny a lahůdky",
+        "Salámy",
+        "Měkké",
+        "Krájené"
+      ],
       "expected_categories": [
         "Uzeniny / salámy",
         "Uzeniny / šunky"
@@ -716,43 +513,21 @@
       "rule_checks": {
         "W007": {
           "expected": "Uzeniny / šunky",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "status": "mismatch",
+          "reason": "Srovnání se společnou kategorií"
         },
         "W011": {
           "expected": "Uzeniny / salámy",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "status": "verified",
+          "reason": "Srovnání se společnou kategorií"
         }
       },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+      "reason": "Salámy podle cesty prodejce; nesoulad s pravidly: Uzeniny / salámy, Uzeniny / šunky"
     },
     {
       "store": "Košík",
       "url": "https://www.kosik.cz/p98057-cif-cream-lemon-kremovy-abrazivni-cistici-pripravek",
       "name": "Cif Cream Lemon krémový abrazivní čisticí přípravek",
-      "rule_ids": [
-        "W070"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Úklid"
-      ],
-      "rule_checks": {
-        "W070": {
-          "expected": "Úklid",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p98047-cif-cream-original-kremovy-abrazivni-cistici-pripravek",
-      "name": "Cif Cream Original krémový abrazivní čisticí přípravek",
       "rule_ids": [
         "W070"
       ],
@@ -1017,7 +792,7 @@
         "W026"
       ],
       "status": "review",
-      "merchant_category": null,
+      "merchant_category": "Sýry / bez laktózy",
       "merchant_path": [
         "Mléčné a chlazené",
         "Bez laktózy",
@@ -1030,32 +805,10 @@
         "W026": {
           "expected": "Sýry / mozzarella a salátové",
           "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "reason": "Širší kategorie prodejce nezaručuje konkrétní typ"
         }
       },
-      "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p98247-hera-classic",
-      "name": "Hera Classic",
-      "rule_ids": [
-        "W029"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Másla a tuky"
-      ],
-      "rule_checks": {
-        "W029": {
-          "expected": "Másla a tuky",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+      "reason": "Bezlaktózové sýry; konkrétní podtyp zatím není ověřen; konkrétní typ dle pravidel zatím nelze potvrdit: Sýry / mozzarella a salátové"
     },
     {
       "store": "Košík",
@@ -1878,7 +1631,7 @@
         "W051"
       ],
       "status": "review",
-      "merchant_category": null,
+      "merchant_category": "Sladké",
       "merchant_path": [
         "Trvanlivé",
         "Sladké",
@@ -1891,10 +1644,10 @@
         "W051": {
           "expected": "Sladké",
           "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "reason": "Kategorie prodejce potvrzuje sortiment, ale ne konkrétní variantu sledovaného pravidla"
         }
       },
-      "reason": "Nesledovaná podkategorie trvanlivých potravin"
+      "reason": "Sladké tyčinky podle cesty prodejce; konkrétní typ dle pravidel zatím nelze potvrdit: Sladké"
     },
     {
       "store": "Košík",
@@ -2653,160 +2406,6 @@
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p99087-savo-podlahy-a-povrchy-vune-kvetin",
-      "name": "Savo Podlahy a povrchy Vůně květin",
-      "rule_ids": [
-        "W069"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Úklid"
-      ],
-      "rule_checks": {
-        "W069": {
-          "expected": "Úklid",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p98787-savo-podlahy-a-povrchy-vune-oceanu",
-      "name": "Savo Podlahy a povrchy Vůně oceánu",
-      "rule_ids": [
-        "W069"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Úklid"
-      ],
-      "rule_checks": {
-        "W069": {
-          "expected": "Úklid",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p98017-savo-proti-plisnim",
-      "name": "Savo Proti plísním",
-      "rule_ids": [
-        "W069"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Úklid"
-      ],
-      "rule_checks": {
-        "W069": {
-          "expected": "Úklid",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p98027-savo-proti-plisnim-koupelna",
-      "name": "Savo Proti plísním koupelna",
-      "rule_ids": [
-        "W069"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Úklid"
-      ],
-      "rule_checks": {
-        "W069": {
-          "expected": "Úklid",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p99117-savo-wc-gel-na-vodni-kamen-turbo",
-      "name": "Savo WC gel na vodní kámen Turbo",
-      "rule_ids": [
-        "W069"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Úklid"
-      ],
-      "rule_checks": {
-        "W069": {
-          "expected": "Úklid",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p99107-savo-wc-cistic-ocean",
-      "name": "Savo WC čistič Oceán",
-      "rule_ids": [
-        "W069"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Úklid"
-      ],
-      "rule_checks": {
-        "W069": {
-          "expected": "Úklid",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p99057-savo-wc-cistic-citron",
-      "name": "Savo WC čistič Citron",
-      "rule_ids": [
-        "W069"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Úklid"
-      ],
-      "rule_checks": {
-        "W069": {
-          "expected": "Úklid",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
       "url": "https://www.kosik.cz/p795406-sedlcansky-hermelin-protein",
       "name": "Sedlčanský Hermelín PROTEIN",
       "rule_ids": [
@@ -2835,7 +2434,7 @@
         "W024"
       ],
       "status": "review",
-      "merchant_category": null,
+      "merchant_category": "Sýry / bez laktózy",
       "merchant_path": [
         "Mléčné a chlazené",
         "Bez laktózy",
@@ -2848,10 +2447,10 @@
         "W024": {
           "expected": "Sýry / plísňové",
           "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "reason": "Širší kategorie prodejce nezaručuje konkrétní typ"
         }
       },
-      "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
+      "reason": "Bezlaktózové sýry; konkrétní podtyp zatím není ověřen; konkrétní typ dle pravidel zatím nelze potvrdit: Sýry / plísňové"
     },
     {
       "store": "Košík",
@@ -2861,7 +2460,7 @@
         "W024"
       ],
       "status": "review",
-      "merchant_category": null,
+      "merchant_category": "Sýry / grilovací",
       "merchant_path": [
         "Mléčné a chlazené",
         "Sýry",
@@ -2875,32 +2474,10 @@
         "W024": {
           "expected": "Sýry / plísňové",
           "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "reason": "Širší kategorie prodejce nezaručuje konkrétní typ"
         }
       },
-      "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p98127-signal-family-care-daily-white-zubni-pasta",
-      "name": "Signal Family Care Daily white zubní pasta",
-      "rule_ids": [
-        "W057"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Dentální hygiena"
-      ],
-      "rule_checks": {
-        "W057": {
-          "expected": "Dentální hygiena",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+      "reason": "Grilovací sýry podle cesty prodejce, nikoliv automaticky tavené či plísňové; konkrétní typ dle pravidel zatím nelze potvrdit: Sýry / plísňové"
     },
     {
       "store": "Košík",
@@ -3020,7 +2597,7 @@
         "W020"
       ],
       "status": "review",
-      "merchant_category": null,
+      "merchant_category": "Sýry / grilovací",
       "merchant_path": [
         "Mléčné a chlazené",
         "Sýry",
@@ -3034,10 +2611,10 @@
         "W020": {
           "expected": "Sýry / tavené",
           "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "reason": "Širší kategorie prodejce nezaručuje konkrétní typ"
         }
       },
-      "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
+      "reason": "Grilovací sýry podle cesty prodejce, nikoliv automaticky tavené či plísňové; konkrétní typ dle pravidel zatím nelze potvrdit: Sýry / tavené"
     },
     {
       "store": "Košík",
@@ -3047,7 +2624,7 @@
         "W020"
       ],
       "status": "review",
-      "merchant_category": null,
+      "merchant_category": "Sýry / grilovací",
       "merchant_path": [
         "Mléčné a chlazené",
         "Sýry",
@@ -3061,10 +2638,10 @@
         "W020": {
           "expected": "Sýry / tavené",
           "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "reason": "Širší kategorie prodejce nezaručuje konkrétní typ"
         }
       },
-      "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
+      "reason": "Grilovací sýry podle cesty prodejce, nikoliv automaticky tavené či plísňové; konkrétní typ dle pravidel zatím nelze potvrdit: Sýry / tavené"
     },
     {
       "store": "Košík",
@@ -3074,7 +2651,7 @@
         "W020"
       ],
       "status": "review",
-      "merchant_category": null,
+      "merchant_category": "Sýry / grilovací",
       "merchant_path": [
         "Mléčné a chlazené",
         "Sýry",
@@ -3088,10 +2665,10 @@
         "W020": {
           "expected": "Sýry / tavené",
           "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "reason": "Širší kategorie prodejce nezaručuje konkrétní typ"
         }
       },
-      "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
+      "reason": "Grilovací sýry podle cesty prodejce, nikoliv automaticky tavené či plísňové; konkrétní typ dle pravidel zatím nelze potvrdit: Sýry / tavené"
     },
     {
       "store": "Košík",
@@ -3101,7 +2678,7 @@
         "W020"
       ],
       "status": "review",
-      "merchant_category": null,
+      "merchant_category": "Sýry / grilovací",
       "merchant_path": [
         "Mléčné a chlazené",
         "Sýry",
@@ -3115,10 +2692,10 @@
         "W020": {
           "expected": "Sýry / tavené",
           "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "reason": "Širší kategorie prodejce nezaručuje konkrétní typ"
         }
       },
-      "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
+      "reason": "Grilovací sýry podle cesty prodejce, nikoliv automaticky tavené či plísňové; konkrétní typ dle pravidel zatím nelze potvrdit: Sýry / tavené"
     },
     {
       "store": "Košík",
@@ -3199,7 +2776,7 @@
         "W021"
       ],
       "status": "review",
-      "merchant_category": null,
+      "merchant_category": "Sýry / bez laktózy",
       "merchant_path": [
         "Mléčné a chlazené",
         "Bez laktózy",
@@ -3212,10 +2789,10 @@
         "W021": {
           "expected": "Sýry / tavené",
           "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "reason": "Širší kategorie prodejce nezaručuje konkrétní typ"
         }
       },
-      "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
+      "reason": "Bezlaktózové sýry; konkrétní podtyp zatím není ověřen; konkrétní typ dle pravidel zatím nelze potvrdit: Sýry / tavené"
     },
     {
       "store": "Košík",
@@ -3819,249 +3396,6 @@
         }
       },
       "reason": "Ovoce podle cesty prodejce; konkrétní typ dle pravidel zatím nelze potvrdit: Ovoce"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1476755-axe-africa-sprchovy-gel",
-      "name": "Axe Africa sprchový gel",
-      "rule_ids": [
-        "W055"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [
-        "Kosmetika",
-        "Sprchové gely a mýdla a přísady do koupele",
-        "Sprchové gely",
-        "Pánské"
-      ],
-      "expected_categories": [
-        "Kosmetika"
-      ],
-      "rule_checks": {
-        "W055": {
-          "expected": "Kosmetika",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Cesta prodejce nemá schválené mapování"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1480511-axe-africa-sprchovy-gel",
-      "name": "Axe Africa sprchový gel",
-      "rule_ids": [
-        "W055"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [
-        "Kosmetika",
-        "Sprchové gely a mýdla a přísady do koupele",
-        "Sprchové gely",
-        "Pánské"
-      ],
-      "expected_categories": [
-        "Kosmetika"
-      ],
-      "rule_checks": {
-        "W055": {
-          "expected": "Kosmetika",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Cesta prodejce nemá schválené mapování"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1476756-axe-black-sprchovy-gel",
-      "name": "Axe Black sprchový gel",
-      "rule_ids": [
-        "W055"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [
-        "Kosmetika",
-        "Sprchové gely a mýdla a přísady do koupele",
-        "Sprchové gely",
-        "Pánské"
-      ],
-      "expected_categories": [
-        "Kosmetika"
-      ],
-      "rule_checks": {
-        "W055": {
-          "expected": "Kosmetika",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Cesta prodejce nemá schválené mapování"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1480492-axe-black-sprchovy-gel",
-      "name": "Axe Black sprchový gel",
-      "rule_ids": [
-        "W055"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [
-        "Kosmetika",
-        "Sprchové gely a mýdla a přísady do koupele",
-        "Sprchové gely",
-        "Pánské"
-      ],
-      "expected_categories": [
-        "Kosmetika"
-      ],
-      "rule_checks": {
-        "W055": {
-          "expected": "Kosmetika",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Cesta prodejce nemá schválené mapování"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1480502-axe-dark-temptation-sprchovy-gel",
-      "name": "Axe Dark Temptation sprchový gel",
-      "rule_ids": [
-        "W055"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [
-        "Kosmetika",
-        "Sprchové gely a mýdla a přísady do koupele",
-        "Sprchové gely",
-        "Pánské"
-      ],
-      "expected_categories": [
-        "Kosmetika"
-      ],
-      "rule_checks": {
-        "W055": {
-          "expected": "Kosmetika",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Cesta prodejce nemá schválené mapování"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1476757-axe-dark-temptation-sprchovy-gel",
-      "name": "Axe Dark Temptation sprchový gel",
-      "rule_ids": [
-        "W055"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [
-        "Kosmetika",
-        "Sprchové gely a mýdla a přísady do koupele",
-        "Sprchové gely",
-        "Pánské"
-      ],
-      "expected_categories": [
-        "Kosmetika"
-      ],
-      "rule_checks": {
-        "W055": {
-          "expected": "Kosmetika",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Cesta prodejce nemá schválené mapování"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1480510-axe-number-10-fifa-sprchovy-gel",
-      "name": "Axe Number 10 FIFA sprchový gel",
-      "rule_ids": [
-        "W055"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [
-        "Kosmetika",
-        "Sprchové gely a mýdla a přísady do koupele",
-        "Sprchové gely",
-        "Pánské"
-      ],
-      "expected_categories": [
-        "Kosmetika"
-      ],
-      "rule_checks": {
-        "W055": {
-          "expected": "Kosmetika",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Cesta prodejce nemá schválené mapování"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1480506-axe-premium-black-vanilla-sprchovy-gel",
-      "name": "Axe Premium Black Vanilla sprchový gel",
-      "rule_ids": [
-        "W055"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [
-        "Kosmetika",
-        "Sprchové gely a mýdla a přísady do koupele",
-        "Sprchové gely",
-        "Pánské"
-      ],
-      "expected_categories": [
-        "Kosmetika"
-      ],
-      "rule_checks": {
-        "W055": {
-          "expected": "Kosmetika",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Cesta prodejce nemá schválené mapování"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1480508-axe-premium-cherry-fizz-sprchovy-gel",
-      "name": "Axe Premium Cherry Fizz sprchový gel",
-      "rule_ids": [
-        "W055"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [
-        "Kosmetika",
-        "Sprchové gely a mýdla a přísady do koupele",
-        "Sprchové gely",
-        "Pánské"
-      ],
-      "expected_categories": [
-        "Kosmetika"
-      ],
-      "rule_checks": {
-        "W055": {
-          "expected": "Kosmetika",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Cesta prodejce nemá schválené mapování"
     },
     {
       "store": "Rohlík",
@@ -4865,7 +4199,7 @@
         "W026"
       ],
       "status": "review",
-      "merchant_category": null,
+      "merchant_category": "Sýry / bez laktózy",
       "merchant_path": [
         "Speciální výživa",
         "Bezlaktózové výrobky",
@@ -4878,10 +4212,10 @@
         "W026": {
           "expected": "Sýry / mozzarella a salátové",
           "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "reason": "Širší kategorie prodejce nezaručuje konkrétní typ"
         }
       },
-      "reason": "Cesta prodejce nemá schválené mapování"
+      "reason": "Bezlaktózové sýry; konkrétní podtyp zatím není ověřen; konkrétní typ dle pravidel zatím nelze potvrdit: Sýry / mozzarella a salátové"
     },
     {
       "store": "Rohlík",
@@ -5502,7 +4836,7 @@
         "W023"
       ],
       "status": "review",
-      "merchant_category": null,
+      "merchant_category": "Sýry / plísňové a zrající",
       "merchant_path": [
         "Mléčné a chlazené",
         "Sýry",
@@ -5516,10 +4850,10 @@
         "W023": {
           "expected": "Sýry / plísňové",
           "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "reason": "Širší kategorie prodejce nezaručuje konkrétní typ"
         }
       },
-      "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
+      "reason": "Širší skupina prodejce; přesný typ sýra zůstává k ověření; konkrétní typ dle pravidel zatím nelze potvrdit: Sýry / plísňové"
     },
     {
       "store": "Rohlík",
@@ -5529,7 +4863,7 @@
         "W023"
       ],
       "status": "review",
-      "merchant_category": null,
+      "merchant_category": "Sýry / plísňové a zrající",
       "merchant_path": [
         "Mléčné a chlazené",
         "Sýry",
@@ -5543,10 +4877,10 @@
         "W023": {
           "expected": "Sýry / plísňové",
           "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "reason": "Širší kategorie prodejce nezaručuje konkrétní typ"
         }
       },
-      "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
+      "reason": "Širší skupina prodejce; přesný typ sýra zůstává k ověření; konkrétní typ dle pravidel zatím nelze potvrdit: Sýry / plísňové"
     },
     {
       "store": "Rohlík",
@@ -5556,7 +4890,7 @@
         "W023"
       ],
       "status": "review",
-      "merchant_category": null,
+      "merchant_category": "Sýry / plísňové a zrající",
       "merchant_path": [
         "Mléčné a chlazené",
         "Sýry",
@@ -5570,10 +4904,10 @@
         "W023": {
           "expected": "Sýry / plísňové",
           "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "reason": "Širší kategorie prodejce nezaručuje konkrétní typ"
         }
       },
-      "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
+      "reason": "Širší skupina prodejce; přesný typ sýra zůstává k ověření; konkrétní typ dle pravidel zatím nelze potvrdit: Sýry / plísňové"
     },
     {
       "store": "Rohlík",
@@ -5583,7 +4917,7 @@
         "W023"
       ],
       "status": "review",
-      "merchant_category": null,
+      "merchant_category": "Sýry / plísňové a zrající",
       "merchant_path": [
         "Mléčné a chlazené",
         "Sýry",
@@ -5597,10 +4931,10 @@
         "W023": {
           "expected": "Sýry / plísňové",
           "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "reason": "Širší kategorie prodejce nezaručuje konkrétní typ"
         }
       },
-      "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
+      "reason": "Širší skupina prodejce; přesný typ sýra zůstává k ověření; konkrétní typ dle pravidel zatím nelze potvrdit: Sýry / plísňové"
     },
     {
       "store": "Rohlík",
@@ -5610,7 +4944,7 @@
         "W023"
       ],
       "status": "review",
-      "merchant_category": null,
+      "merchant_category": "Sýry / plísňové a zrající",
       "merchant_path": [
         "Mléčné a chlazené",
         "Sýry",
@@ -5624,10 +4958,10 @@
         "W023": {
           "expected": "Sýry / plísňové",
           "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "reason": "Širší kategorie prodejce nezaručuje konkrétní typ"
         }
       },
-      "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
+      "reason": "Širší skupina prodejce; přesný typ sýra zůstává k ověření; konkrétní typ dle pravidel zatím nelze potvrdit: Sýry / plísňové"
     },
     {
       "store": "Rohlík",
@@ -5637,7 +4971,7 @@
         "W023"
       ],
       "status": "review",
-      "merchant_category": null,
+      "merchant_category": "Sýry / plísňové a zrající",
       "merchant_path": [
         "Mléčné a chlazené",
         "Sýry",
@@ -5651,10 +4985,10 @@
         "W023": {
           "expected": "Sýry / plísňové",
           "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "reason": "Širší kategorie prodejce nezaručuje konkrétní typ"
         }
       },
-      "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
+      "reason": "Širší skupina prodejce; přesný typ sýra zůstává k ověření; konkrétní typ dle pravidel zatím nelze potvrdit: Sýry / plísňové"
     },
     {
       "store": "Rohlík",
@@ -6201,7 +5535,7 @@
         "W017"
       ],
       "status": "review",
-      "merchant_category": null,
+      "merchant_category": "Sýry / pařené a uzené",
       "merchant_path": [
         "Mléčné a chlazené",
         "Sýry",
@@ -6215,10 +5549,10 @@
         "W017": {
           "expected": "Sýry / plátkové",
           "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "reason": "Širší kategorie prodejce nezaručuje konkrétní typ"
         }
       },
-      "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
+      "reason": "Pařené a uzené sýry podle cesty prodejce; konkrétní typ dle pravidel zatím nelze potvrdit: Sýry / plátkové"
     },
     {
       "store": "Rohlík",
@@ -6835,87 +6169,6 @@
     },
     {
       "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1426457-panzani-kolinka-bezlepkova",
-      "name": "Panzani Kolínka bezlepková",
-      "rule_ids": [
-        "W052"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [
-        "Speciální výživa",
-        "Bezlepkové výrobky",
-        "Pečení a vaření",
-        "Těstoviny"
-      ],
-      "expected_categories": [
-        "Těstoviny a rýže"
-      ],
-      "rule_checks": {
-        "W052": {
-          "expected": "Těstoviny a rýže",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Cesta prodejce nemá schválené mapování"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1426458-panzani-penne-bezlepkove",
-      "name": "Panzani Penne bezlepkové",
-      "rule_ids": [
-        "W052"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [
-        "Speciální výživa",
-        "Bezlepkové výrobky",
-        "Pečení a vaření",
-        "Těstoviny"
-      ],
-      "expected_categories": [
-        "Těstoviny a rýže"
-      ],
-      "rule_checks": {
-        "W052": {
-          "expected": "Těstoviny a rýže",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Cesta prodejce nemá schválené mapování"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1426459-panzani-spaghetti-bezlepkove",
-      "name": "Panzani Spaghetti bezlepkové",
-      "rule_ids": [
-        "W052"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [
-        "Speciální výživa",
-        "Bezlepkové výrobky",
-        "Pečení a vaření",
-        "Těstoviny"
-      ],
-      "expected_categories": [
-        "Těstoviny a rýže"
-      ],
-      "rule_checks": {
-        "W052": {
-          "expected": "Těstoviny a rýže",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Cesta prodejce nemá schválené mapování"
-    },
-    {
-      "store": "Rohlík",
       "url": "https://www.rohlik.cz/1435418-pani-mrkev-blansirovane-mrkvove-kostky-baleni",
       "name": "Paní Mrkev – blanšírované mrkvové kostky, balení",
       "rule_ids": [
@@ -7208,7 +6461,7 @@
         "W025"
       ],
       "status": "review",
-      "merchant_category": null,
+      "merchant_category": "Sýry / plísňové a zrající",
       "merchant_path": [
         "Mléčné a chlazené",
         "Sýry",
@@ -7222,10 +6475,10 @@
         "W025": {
           "expected": "Sýry / plísňové",
           "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "reason": "Širší kategorie prodejce nezaručuje konkrétní typ"
         }
       },
-      "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
+      "reason": "Širší skupina prodejce; přesný typ sýra zůstává k ověření; konkrétní typ dle pravidel zatím nelze potvrdit: Sýry / plísňové"
     },
     {
       "store": "Rohlík",
@@ -7235,7 +6488,7 @@
         "W025"
       ],
       "status": "review",
-      "merchant_category": null,
+      "merchant_category": "Sýry / plísňové a zrající",
       "merchant_path": [
         "Mléčné a chlazené",
         "Sýry",
@@ -7249,10 +6502,10 @@
         "W025": {
           "expected": "Sýry / plísňové",
           "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "reason": "Širší kategorie prodejce nezaručuje konkrétní typ"
         }
       },
-      "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
+      "reason": "Širší skupina prodejce; přesný typ sýra zůstává k ověření; konkrétní typ dle pravidel zatím nelze potvrdit: Sýry / plísňové"
     },
     {
       "store": "Rohlík",
@@ -7262,7 +6515,7 @@
         "W025"
       ],
       "status": "review",
-      "merchant_category": null,
+      "merchant_category": "Sýry / plísňové a zrající",
       "merchant_path": [
         "Mléčné a chlazené",
         "Sýry",
@@ -7276,10 +6529,10 @@
         "W025": {
           "expected": "Sýry / plísňové",
           "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "reason": "Širší kategorie prodejce nezaručuje konkrétní typ"
         }
       },
-      "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
+      "reason": "Širší skupina prodejce; přesný typ sýra zůstává k ověření; konkrétní typ dle pravidel zatím nelze potvrdit: Sýry / plísňové"
     },
     {
       "store": "Rohlík",
@@ -7289,7 +6542,7 @@
         "W025"
       ],
       "status": "review",
-      "merchant_category": null,
+      "merchant_category": "Sýry / plísňové a zrající",
       "merchant_path": [
         "Mléčné a chlazené",
         "Sýry",
@@ -7303,10 +6556,10 @@
         "W025": {
           "expected": "Sýry / plísňové",
           "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "reason": "Širší kategorie prodejce nezaručuje konkrétní typ"
         }
       },
-      "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
+      "reason": "Širší skupina prodejce; přesný typ sýra zůstává k ověření; konkrétní typ dle pravidel zatím nelze potvrdit: Sýry / plísňové"
     },
     {
       "store": "Rohlík",
@@ -7316,7 +6569,7 @@
         "W025"
       ],
       "status": "review",
-      "merchant_category": null,
+      "merchant_category": "Sýry / plísňové a zrající",
       "merchant_path": [
         "Mléčné a chlazené",
         "Sýry",
@@ -7330,10 +6583,10 @@
         "W025": {
           "expected": "Sýry / plísňové",
           "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "reason": "Širší kategorie prodejce nezaručuje konkrétní typ"
         }
       },
-      "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
+      "reason": "Širší skupina prodejce; přesný typ sýra zůstává k ověření; konkrétní typ dle pravidel zatím nelze potvrdit: Sýry / plísňové"
     },
     {
       "store": "Rohlík",
@@ -7343,7 +6596,7 @@
         "W025"
       ],
       "status": "review",
-      "merchant_category": null,
+      "merchant_category": "Sýry / plísňové a zrající",
       "merchant_path": [
         "Mléčné a chlazené",
         "Sýry",
@@ -7357,10 +6610,10 @@
         "W025": {
           "expected": "Sýry / plísňové",
           "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "reason": "Širší kategorie prodejce nezaručuje konkrétní typ"
         }
       },
-      "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
+      "reason": "Širší skupina prodejce; přesný typ sýra zůstává k ověření; konkrétní typ dle pravidel zatím nelze potvrdit: Sýry / plísňové"
     },
     {
       "store": "Rohlík",
@@ -7476,8 +6729,8 @@
       "rule_ids": [
         "W031"
       ],
-      "status": "review",
-      "merchant_category": null,
+      "status": "mismatch",
+      "merchant_category": "Rostlinné alternativy / smetany",
       "merchant_path": [
         "Plant Based",
         "Alternativy mléčného a chlazeného",
@@ -7490,11 +6743,11 @@
       "rule_checks": {
         "W031": {
           "expected": "Másla a tuky",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "status": "mismatch",
+          "reason": "Srovnání se společnou kategorií"
         }
       },
-      "reason": "Cesta prodejce nemá schválené mapování"
+      "reason": "Rostlinné smetany podle cesty prodejce; nesoulad s pravidly: Másla a tuky"
     },
     {
       "store": "Rohlík",
@@ -7503,8 +6756,8 @@
       "rule_ids": [
         "W031"
       ],
-      "status": "review",
-      "merchant_category": null,
+      "status": "mismatch",
+      "merchant_category": "Rostlinné alternativy / smetany",
       "merchant_path": [
         "Plant Based",
         "Alternativy mléčného a chlazeného",
@@ -7517,11 +6770,11 @@
       "rule_checks": {
         "W031": {
           "expected": "Másla a tuky",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "status": "mismatch",
+          "reason": "Srovnání se společnou kategorií"
         }
       },
-      "reason": "Cesta prodejce nemá schválené mapování"
+      "reason": "Rostlinné smetany podle cesty prodejce; nesoulad s pravidly: Másla a tuky"
     },
     {
       "store": "Rohlík",
@@ -7530,8 +6783,8 @@
       "rule_ids": [
         "W031"
       ],
-      "status": "review",
-      "merchant_category": null,
+      "status": "mismatch",
+      "merchant_category": "Mléčné / smetany",
       "merchant_path": [
         "Mléčné a chlazené",
         "Smetany, šlehačky a tvarohy",
@@ -7543,11 +6796,11 @@
       "rule_checks": {
         "W031": {
           "expected": "Másla a tuky",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "status": "mismatch",
+          "reason": "Srovnání se společnou kategorií"
         }
       },
-      "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
+      "reason": "Smetany jsou oddělené od másel a tuků; nesoulad s pravidly: Másla a tuky"
     },
     {
       "store": "Rohlík",
@@ -7556,8 +6809,8 @@
       "rule_ids": [
         "W031"
       ],
-      "status": "review",
-      "merchant_category": null,
+      "status": "mismatch",
+      "merchant_category": "Mléčné / smetany",
       "merchant_path": [
         "Mléčné a chlazené",
         "Smetany, šlehačky a tvarohy",
@@ -7569,11 +6822,11 @@
       "rule_checks": {
         "W031": {
           "expected": "Másla a tuky",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "status": "mismatch",
+          "reason": "Srovnání se společnou kategorií"
         }
       },
-      "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
+      "reason": "Smetany jsou oddělené od másel a tuků; nesoulad s pravidly: Másla a tuky"
     },
     {
       "store": "Rohlík",
@@ -7691,7 +6944,7 @@
         "W024"
       ],
       "status": "review",
-      "merchant_category": null,
+      "merchant_category": "Sýry / plísňové a zrající",
       "merchant_path": [
         "Mléčné a chlazené",
         "Sýry",
@@ -7705,10 +6958,10 @@
         "W024": {
           "expected": "Sýry / plísňové",
           "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "reason": "Širší kategorie prodejce nezaručuje konkrétní typ"
         }
       },
-      "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
+      "reason": "Širší skupina prodejce; přesný typ sýra zůstává k ověření; konkrétní typ dle pravidel zatím nelze potvrdit: Sýry / plísňové"
     },
     {
       "store": "Rohlík",
@@ -7718,7 +6971,7 @@
         "W024"
       ],
       "status": "review",
-      "merchant_category": null,
+      "merchant_category": "Sýry / plísňové a zrající",
       "merchant_path": [
         "Mléčné a chlazené",
         "Sýry",
@@ -7732,10 +6985,10 @@
         "W024": {
           "expected": "Sýry / plísňové",
           "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "reason": "Širší kategorie prodejce nezaručuje konkrétní typ"
         }
       },
-      "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
+      "reason": "Širší skupina prodejce; přesný typ sýra zůstává k ověření; konkrétní typ dle pravidel zatím nelze potvrdit: Sýry / plísňové"
     },
     {
       "store": "Rohlík",
@@ -7745,7 +6998,7 @@
         "W024"
       ],
       "status": "review",
-      "merchant_category": null,
+      "merchant_category": "Sýry / bez laktózy",
       "merchant_path": [
         "Speciální výživa",
         "Bezlaktózové výrobky",
@@ -7758,10 +7011,10 @@
         "W024": {
           "expected": "Sýry / plísňové",
           "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "reason": "Širší kategorie prodejce nezaručuje konkrétní typ"
         }
       },
-      "reason": "Cesta prodejce nemá schválené mapování"
+      "reason": "Bezlaktózové sýry; konkrétní podtyp zatím není ověřen; konkrétní typ dle pravidel zatím nelze potvrdit: Sýry / plísňové"
     },
     {
       "store": "Rohlík",
@@ -7771,7 +7024,7 @@
         "W024"
       ],
       "status": "review",
-      "merchant_category": null,
+      "merchant_category": "Sýry / grilovací",
       "merchant_path": [
         "Mléčné a chlazené",
         "Sýry",
@@ -7785,10 +7038,10 @@
         "W024": {
           "expected": "Sýry / plísňové",
           "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "reason": "Širší kategorie prodejce nezaručuje konkrétní typ"
         }
       },
-      "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
+      "reason": "Grilovací sýry podle cesty prodejce, nikoliv automaticky tavené či plísňové; konkrétní typ dle pravidel zatím nelze potvrdit: Sýry / plísňové"
     },
     {
       "store": "Rohlík",
@@ -7798,7 +7051,7 @@
         "W024"
       ],
       "status": "review",
-      "merchant_category": null,
+      "merchant_category": "Sýry / plísňové a zrající",
       "merchant_path": [
         "Mléčné a chlazené",
         "Sýry",
@@ -7812,10 +7065,10 @@
         "W024": {
           "expected": "Sýry / plísňové",
           "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "reason": "Širší kategorie prodejce nezaručuje konkrétní typ"
         }
       },
-      "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
+      "reason": "Širší skupina prodejce; přesný typ sýra zůstává k ověření; konkrétní typ dle pravidel zatím nelze potvrdit: Sýry / plísňové"
     },
     {
       "store": "Rohlík",
@@ -7825,7 +7078,7 @@
         "W024"
       ],
       "status": "review",
-      "merchant_category": null,
+      "merchant_category": "Sýry / plísňové a zrající",
       "merchant_path": [
         "Mléčné a chlazené",
         "Sýry",
@@ -7839,10 +7092,10 @@
         "W024": {
           "expected": "Sýry / plísňové",
           "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "reason": "Širší kategorie prodejce nezaručuje konkrétní typ"
         }
       },
-      "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
+      "reason": "Širší skupina prodejce; přesný typ sýra zůstává k ověření; konkrétní typ dle pravidel zatím nelze potvrdit: Sýry / plísňové"
     },
     {
       "store": "Rohlík",
@@ -7852,7 +7105,7 @@
         "W024"
       ],
       "status": "review",
-      "merchant_category": null,
+      "merchant_category": "Sýry / plísňové a zrající",
       "merchant_path": [
         "Mléčné a chlazené",
         "Sýry",
@@ -7866,10 +7119,10 @@
         "W024": {
           "expected": "Sýry / plísňové",
           "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "reason": "Širší kategorie prodejce nezaručuje konkrétní typ"
         }
       },
-      "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
+      "reason": "Širší skupina prodejce; přesný typ sýra zůstává k ověření; konkrétní typ dle pravidel zatím nelze potvrdit: Sýry / plísňové"
     },
     {
       "store": "Rohlík",
@@ -7879,7 +7132,7 @@
         "W020"
       ],
       "status": "review",
-      "merchant_category": null,
+      "merchant_category": "Sýry / grilovací",
       "merchant_path": [
         "Mléčné a chlazené",
         "Sýry",
@@ -7893,10 +7146,10 @@
         "W020": {
           "expected": "Sýry / tavené",
           "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "reason": "Širší kategorie prodejce nezaručuje konkrétní typ"
         }
       },
-      "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
+      "reason": "Grilovací sýry podle cesty prodejce, nikoliv automaticky tavené či plísňové; konkrétní typ dle pravidel zatím nelze potvrdit: Sýry / tavené"
     },
     {
       "store": "Rohlík",
@@ -7906,7 +7159,7 @@
         "W020"
       ],
       "status": "review",
-      "merchant_category": null,
+      "merchant_category": "Sýry / grilovací",
       "merchant_path": [
         "Mléčné a chlazené",
         "Sýry",
@@ -7920,10 +7173,10 @@
         "W020": {
           "expected": "Sýry / tavené",
           "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "reason": "Širší kategorie prodejce nezaručuje konkrétní typ"
         }
       },
-      "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
+      "reason": "Grilovací sýry podle cesty prodejce, nikoliv automaticky tavené či plísňové; konkrétní typ dle pravidel zatím nelze potvrdit: Sýry / tavené"
     },
     {
       "store": "Rohlík",
@@ -7933,7 +7186,7 @@
         "W020"
       ],
       "status": "review",
-      "merchant_category": null,
+      "merchant_category": "Sýry / grilovací",
       "merchant_path": [
         "Mléčné a chlazené",
         "Sýry",
@@ -7947,10 +7200,10 @@
         "W020": {
           "expected": "Sýry / tavené",
           "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "reason": "Širší kategorie prodejce nezaručuje konkrétní typ"
         }
       },
-      "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
+      "reason": "Grilovací sýry podle cesty prodejce, nikoliv automaticky tavené či plísňové; konkrétní typ dle pravidel zatím nelze potvrdit: Sýry / tavené"
     },
     {
       "store": "Rohlík",
@@ -7960,7 +7213,7 @@
         "W020"
       ],
       "status": "review",
-      "merchant_category": null,
+      "merchant_category": "Sýry / grilovací",
       "merchant_path": [
         "Mléčné a chlazené",
         "Sýry",
@@ -7974,10 +7227,10 @@
         "W020": {
           "expected": "Sýry / tavené",
           "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "reason": "Širší kategorie prodejce nezaručuje konkrétní typ"
         }
       },
-      "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
+      "reason": "Grilovací sýry podle cesty prodejce, nikoliv automaticky tavené či plísňové; konkrétní typ dle pravidel zatím nelze potvrdit: Sýry / tavené"
     },
     {
       "store": "Rohlík",
@@ -7987,7 +7240,7 @@
         "W020"
       ],
       "status": "review",
-      "merchant_category": null,
+      "merchant_category": "Sýry / grilovací",
       "merchant_path": [
         "Mléčné a chlazené",
         "Sýry",
@@ -8001,10 +7254,10 @@
         "W020": {
           "expected": "Sýry / tavené",
           "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "reason": "Širší kategorie prodejce nezaručuje konkrétní typ"
         }
       },
-      "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
+      "reason": "Grilovací sýry podle cesty prodejce, nikoliv automaticky tavené či plísňové; konkrétní typ dle pravidel zatím nelze potvrdit: Sýry / tavené"
     },
     {
       "store": "Rohlík",
@@ -8093,7 +7346,7 @@
         "W021"
       ],
       "status": "review",
-      "merchant_category": null,
+      "merchant_category": "Sýry / snacky a dětské",
       "merchant_path": [
         "Mléčné a chlazené",
         "Sýry",
@@ -8106,10 +7359,10 @@
         "W021": {
           "expected": "Sýry / tavené",
           "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "reason": "Širší kategorie prodejce nezaručuje konkrétní typ"
         }
       },
-      "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
+      "reason": "Snacky a dětské sýry podle cesty prodejce; konkrétní typ dle pravidel zatím nelze potvrdit: Sýry / tavené"
     },
     {
       "store": "Rohlík",
@@ -8119,7 +7372,7 @@
         "W021"
       ],
       "status": "review",
-      "merchant_category": null,
+      "merchant_category": "Sýry / snacky a dětské",
       "merchant_path": [
         "Mléčné a chlazené",
         "Sýry",
@@ -8132,10 +7385,10 @@
         "W021": {
           "expected": "Sýry / tavené",
           "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "reason": "Širší kategorie prodejce nezaručuje konkrétní typ"
         }
       },
-      "reason": "Mléčná kategorie bez jednoznačného sledovaného typu"
+      "reason": "Snacky a dětské sýry podle cesty prodejce; konkrétní typ dle pravidel zatím nelze potvrdit: Sýry / tavené"
     },
     {
       "store": "Rohlík",
