@@ -1,0 +1,146 @@
+name: Monitor slev v27 - Rozdeleni kontrol (75 / 189 / 37)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/review_ui_v27.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rk-v20-catalog
+  cancel-in-progress: false
+
+jobs:
+  review-ui:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Checkout LIVE dashboard (existing categories/prices unchanged)
+        uses: actions/checkout@v4
+        with:
+          ref: fix/real-product-price-reading-v20
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Apply strictly scoped review UI patch (idempotent)
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib
+          import json
+
+          page = Path('docs/catalog.html')
+          catalog = Path('docs/data/catalog_latest.json')
+          taxonomy = Path('docs/data/taxonomy_v27_public.json')
+          assert page.is_file() and catalog.is_file() and taxonomy.is_file(), 'Published catalogue, taxonomy overlay or HTML missing'
+          protected = {str(p): hashlib.sha256(p.read_bytes()).hexdigest() for p in (catalog, taxonomy)}
+
+          html = page.read_text(encoding='utf-8')
+          old = html
+
+          def replace_once(before, after):
+              global html
+              matches=html.count(before)
+              assert matches == 1, f'STOP – unsupported HTML structure, expected one match but found {matches}: {before[:90]}'
+              html=html.replace(before, after, 1)
+
+          already = 'value="rule-review"' in html
+          if not already:
+              replace_once(
+                '<option value="review">Ke kontrole (včetně nesouladu)</option><option value="mismatch">',
+                '<option value="review">Všechny položky k prověření</option><option value="rule-review">Kategorie potvrzena, pravidlo k prověření</option><option value="mismatch">')
+              replace_once(
+                "if(f.categoryStatus==='review'&&p.category_v27?.status==='verified')return false;if(f.categoryStatus==='mismatch'",
+                "if(f.categoryStatus==='review'&&p.category_v27?.status==='verified')return false;if(f.categoryStatus==='rule-review'&&!(p.category_v27?.status==='review'&&Boolean(p.category_v27?.category)))return false;if(f.categoryStatus==='mismatch'")
+              replace_once(
+                "const missing=rows.length-mapped,review=rows.length-verified;",
+                "const missing=rows.length-mapped;\n const ruleReview=rows.filter(p=>p.category_v27.status==='review'&&Boolean(p.category_v27.category)).length;\n const mismatch=rows.filter(p=>p.category_v27.status==='mismatch').length;")
+              replace_once(
+                "$('taxKpiReview').textContent=nf(review)+' k ověření včetně neshod; výrobky zůstávají v katalogu';",
+                "$('taxKpiReview').textContent=nf(missing)+' bez kategorie · '+nf(ruleReview)+' k ověření pravidla · '+nf(mismatch)+' nesouladů';")
+              replace_once(
+                "const m=data.counts?.mapped||0,v=data.counts?.verified||0;\n  const review=db.items.length-v;\n  box.textContent='Kategorie dle e-shopu: '+nf(m)+' / '+nf(db.items.length)+'; plně ověřeno '+nf(v)+\n   '; ke kontrole '+nf(review)+'. Neověřené a nesouhlasící položky zůstávají v katalogu.';",
+                "const m=db.items.filter(p=>Boolean(p.category_v27?.category)).length;\n  const v=db.items.filter(p=>p.category_v27?.status==='verified').length;\n  const ruleReview=db.items.filter(p=>p.category_v27?.status==='review'&&Boolean(p.category_v27?.category)).length;\n  const mismatch=db.items.filter(p=>p.category_v27?.status==='mismatch').length;\n  const missing=db.items.length-m;\n  box.textContent='Kategorie dle e-shopu: '+nf(m)+' / '+nf(db.items.length)+'; plně ověřeno '+nf(v)+\n   '; pravidlo k ověření '+nf(ruleReview)+'; nesoulad '+nf(mismatch)+'; bez kategorie '+nf(missing)+'.';")
+          else:
+              assert html.count('value="rule-review"') == 1, 'STOP – partial/duplicate UI integration'
+              assert "const ruleReview=db.items.filter(p=>p.category_v27?.status==='review'" in html, 'STOP – partial prior patch'
+
+          for required in ('id="mobileCards"', 'id="taxonomyV27Status"', 'id="taxKpiUnmapped"',
+                           'id="taxKpiVerified"', 'await loadCategoryOverlay()',
+                           "'./data/catalog_latest.json?ts='+Date.now()", 'const active=p=>datedPromo(p)'):
+              assert required in html, f'STOP – missing existing UI feature: {required}'
+          assert html.count('<script>') == html.count('</script>') == 1, 'STOP – unexpected scripts'
+
+          items=json.loads(taxonomy.read_text(encoding='utf-8'))['items']
+          base=json.loads(catalog.read_text(encoding='utf-8'))
+          assert len(items) == len(base['items']) >= 1090
+          assert [(x['store'], x['url']) for x in items] == [(x['store'], x['url']) for x in base['items']], 'STOP – identity/order mismatch'
+          verified=sum(x['category_v27']['status']=='verified' for x in items)
+          review_mapped=sum(x['category_v27']['status']=='review' and bool(x['category_v27'].get('category')) for x in items)
+          mismatch=sum(x['category_v27']['status']=='mismatch' for x in items)
+          unmapped=sum(not x['category_v27'].get('category') for x in items)
+          assert verified + review_mapped + mismatch + unmapped == len(items), 'STOP – classification counts inconsistent'
+          assert set(x['category_v27']['status'] for x in items) <= {'verified','review','mismatch'}
+
+          page.write_text(html, encoding='utf-8')
+          assert all(hashlib.sha256(Path(p).read_bytes()).hexdigest() == digest for p,digest in protected.items()), 'STOP – protected data changed'
+          Path('.review_ui_v27_summary').write_text(json.dumps({'products':len(items),'verified':verified,'rule_review':review_mapped,
+            'mismatch':mismatch,'unmapped':unmapped,'html_changed':html!=old,'prices_unchanged':True},ensure_ascii=False),encoding='utf-8')
+          print('CATEGORY UI SAFE',json.dumps({'products':len(items),'verified':verified,'rule_review':review_mapped,
+            'mismatch':mismatch,'unmapped':unmapped,'html_changed':html!=old,'prices_unchanged':True},ensure_ascii=False))
+          Path('.review_ui_v27_script.js').write_text(html.split('<script>',1)[1].split('</script>',1)[0],encoding='utf-8')
+          PY
+
+      - name: Validate JavaScript, immutable prices and exact changed files
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --check .review_ui_v27_script.js
+          git diff --check
+          python - <<'PY'
+          from pathlib import Path
+          import json, subprocess
+          report=json.loads(Path('.review_ui_v27_summary').read_text(encoding='utf8'))
+          assert report['prices_unchanged'] and report['products']>=1090
+          changed=subprocess.check_output(['git','diff','--name-only'],text=True).splitlines()
+          assert set(changed) <= {'docs/catalog.html'}, f'Unexpected changed files: {changed}'
+          assert report['verified']+report['rule_review']+report['mismatch']+report['unmapped']==report['products']
+          print('PASS, only HTML changed:', changed, report)
+          PY
+
+      - name: Publish only dashboard HTML
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- docs/catalog.html
+          if ! git diff --cached --quiet; then
+            git commit -m 'ui: split v27 review into missing taxonomy, rule review and conflicts [skip ci]'
+            git push origin 'HEAD:refs/heads/fix/real-product-price-reading-v20'
+          else
+            echo 'Already deployed; nothing to write.'
+          fi
+
+      - name: Summary
+        if: always()
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          p=Path('.review_ui_v27_summary')
+          with open(os.environ['GITHUB_STEP_SUMMARY'],'a',encoding='utf8') as f:
+            f.write('## Monitor slev v27 – přehled kontrol\n\n')
+            if p.exists():
+              r=json.loads(p.read_text(encoding='utf8'))
+              for k,v in r.items(): f.write(f'- **{k}:** {v}\n')
+              f.write('\nŽádné ceny, pravidla ani zdrojová data nebyly měněny.\n')
+            else:
+              f.write('Patch nebyl dokončen, web zůstává nedotčen.\n')
+          PY
