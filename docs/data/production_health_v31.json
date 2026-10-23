@@ -1,0 +1,64 @@
+{
+  "schema": "rk-production-health-v31",
+  "generated_at": "2026-10-23T15:47:01+00:00",
+  "quality": "attention",
+  "products": 1090,
+  "store_counts": {
+    "Košík": 556,
+    "Rohlík": 534
+  },
+  "stored_prices_ok": 1058,
+  "stored_prices_unverified": 32,
+  "ordinary_verified_discounts": 390,
+  "fresh_verified_quantity_offers": 75,
+  "verified_distinct_offers": 465,
+  "overlap_between_types": 0,
+  "saved_quantity_offers": 87,
+  "quantity_statuses": {
+    "title_mismatch": 12,
+    "verified": 75
+  },
+  "quantity_current_stored_price_mismatch": 3,
+  "quantity_current_stored_price_mismatch_examples": [
+    {
+      "store": "Košík",
+      "name": "Dobrá voda Neperlivá Bílé hrozny 6 x 1,5l",
+      "url": "https://www.kosik.cz/p48787-dobra-voda-neperliva-bile-hrozny-6-x-1-5l",
+      "catalog_single_price_czk": 119.9,
+      "quantity_verified_single_price_czk": 129.9,
+      "verified_at": "2026-10-23T15:41:45+00:00"
+    },
+    {
+      "store": "Košík",
+      "name": "Dobrá voda Neperlivá Malina 6 x 1.5 L",
+      "url": "https://www.kosik.cz/p48797-dobra-voda-neperliva-malina-6-x-1-5-l",
+      "catalog_single_price_czk": 119.9,
+      "quantity_verified_single_price_czk": 129.9,
+      "verified_at": "2026-10-23T15:41:50+00:00"
+    },
+    {
+      "store": "Košík",
+      "name": "Dobrá voda Neperlivá Mandarinka 6 x 1,5l",
+      "url": "https://www.kosik.cz/p820466-dobra-voda-neperliva-mandarinka-6-x-1-5l",
+      "catalog_single_price_czk": 119.9,
+      "quantity_verified_single_price_czk": 129.9,
+      "verified_at": "2026-10-23T15:41:55+00:00"
+    }
+  ],
+  "quantity_current_pack_prices_display_only": true,
+  "price_monitor_last_at": "2026-10-23T13:28:03+00:00",
+  "price_monitor_age_hours": 2.32,
+  "postcode_verified_products": 0,
+  "category_statuses": {
+    "review": 256,
+    "verified": 796,
+    "mismatch": 38
+  },
+  "categories_with_merchant_mapping": 1024,
+  "warnings": [
+    "Verified current single-unit prices differ from original stored prices; dashboard uses fresh evidence and retains history",
+    "Availability and actual price for a delivery postcode are not verified",
+    "Some products still lack a confirmed stored price"
+  ],
+  "methodology": "Current discounts require price checked within 72h; quantity offers require independently verified merchant product/offer within 36h. Old catalog prices are not rewritten. All offers deduplicated by merchant and exact product URL."
+}
