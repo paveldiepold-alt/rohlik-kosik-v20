@@ -462,8 +462,8 @@
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
       "v27_category_probe_status": "category_missing",
       "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-22T08:44:24+00:00",
-      "v27_category_probe_attempts": 1
+      "v27_category_checked_at": "2026-10-23T09:42:04+00:00",
+      "v27_category_probe_attempts": 2
     },
     {
       "store": "Košík",
@@ -4724,8 +4724,8 @@
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
       "v27_category_probe_status": "category_missing",
       "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-22T08:39:42+00:00",
-      "v27_category_probe_attempts": 1
+      "v27_category_checked_at": "2026-10-23T09:41:42+00:00",
+      "v27_category_probe_attempts": 2
     },
     {
       "store": "Košík",
@@ -5046,8 +5046,8 @@
       "drop_since_previous_pct": null,
       "v27_category_probe_status": "category_missing",
       "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-22T08:41:50+00:00",
-      "v27_category_probe_attempts": 1
+      "v27_category_checked_at": "2026-10-23T09:41:51+00:00",
+      "v27_category_probe_attempts": 2
     },
     {
       "store": "Košík",
@@ -6485,10 +6485,19 @@
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "v27_category_probe_status": "category_missing",
-      "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-22T09:24:17+00:00",
-      "v27_category_probe_attempts": 1
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-23T09:42:13+00:00",
+      "v27_category_probe_attempts": 2,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Ústní hygiena",
+        "Zubní pasty",
+        "Bělící"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Je klinicky prokázáno, že zubní pasta Colgate Advanced White s aktivním uhlím účinně odstraňuje skvrny na povrchu a obnovuje přirozenou bělost zubů již za 14…",
+      "taxonomy_checked_at": "2026-10-23T09:42:13+00:00"
     },
     {
       "store": "Košík",
@@ -7089,8 +7098,8 @@
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
       "v27_category_probe_status": "category_missing",
       "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-22T08:42:17+00:00",
-      "v27_category_probe_attempts": 1
+      "v27_category_checked_at": "2026-10-23T09:41:56+00:00",
+      "v27_category_probe_attempts": 2
     },
     {
       "store": "Košík",
@@ -12140,8 +12149,8 @@
       "drop_since_previous_pct": null,
       "v27_category_probe_status": "category_missing",
       "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-22T08:37:15+00:00",
-      "v27_category_probe_attempts": 1
+      "v27_category_checked_at": "2026-10-23T09:41:28+00:00",
+      "v27_category_probe_attempts": 2
     },
     {
       "store": "Košík",
@@ -12387,8 +12396,8 @@
       "drop_since_previous_pct": null,
       "v27_category_probe_status": "category_missing",
       "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-22T08:37:35+00:00",
-      "v27_category_probe_attempts": 1
+      "v27_category_checked_at": "2026-10-23T09:41:33+00:00",
+      "v27_category_probe_attempts": 2
     },
     {
       "store": "Košík",
@@ -12627,10 +12636,19 @@
       "price_history_previous_czk": 38.9,
       "price_history_previous_at": "2026-10-23T01:04:54+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_probe_status": "category_missing",
-      "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-22T08:42:44+00:00",
-      "v27_category_probe_attempts": 1
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-23T09:42:00+00:00",
+      "v27_category_probe_attempts": 2,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Papírová a vatová hygiena",
+        "Toaletní papíry",
+        "Vlhčené"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Nákup až ke dveřím na pár kliků. Doprava zdarma na velké nákupy, nový akční leták každý týden a spousta odměn ve věrnostních klubech.",
+      "taxonomy_checked_at": "2026-10-23T09:42:00+00:00"
     },
     {
       "store": "Košík",
@@ -12663,8 +12681,8 @@
       "drop_since_previous_pct": null,
       "v27_category_probe_status": "category_missing",
       "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-22T08:37:05+00:00",
-      "v27_category_probe_attempts": 1
+      "v27_category_checked_at": "2026-10-23T09:41:23+00:00",
+      "v27_category_probe_attempts": 2
     },
     {
       "store": "Košík",
@@ -15398,10 +15416,19 @@
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "v27_category_probe_status": "category_missing",
-      "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-22T09:23:40+00:00",
-      "v27_category_probe_attempts": 1
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-23T09:42:09+00:00",
+      "v27_category_probe_attempts": 2,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Ústní hygiena",
+        "Zubní pasty",
+        "Proti paradontóze"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Zubní pasta ke každodennímu použití s obsahem fluoridu pro zdravé dásně a silné zuby.Základem zdravých zubů jsou zdravé dásně.Zdravé dásně nekrvácí. Stopy krve…",
+      "taxonomy_checked_at": "2026-10-23T09:42:09+00:00"
     },
     {
       "store": "Košík",
@@ -18352,8 +18379,8 @@
       "drop_since_previous_pct": null,
       "v27_category_probe_status": "category_missing",
       "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-22T08:41:22+00:00",
-      "v27_category_probe_attempts": 1
+      "v27_category_checked_at": "2026-10-23T09:41:47+00:00",
+      "v27_category_probe_attempts": 2
     },
     {
       "store": "Košík",
@@ -22514,10 +22541,18 @@
       "price_history_previous_czk": 59.9,
       "price_history_previous_at": "2026-10-23T01:22:35+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_probe_status": "category_missing",
-      "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-22T08:39:14+00:00",
-      "v27_category_probe_attempts": 1
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-23T09:41:38+00:00",
+      "v27_category_probe_attempts": 2,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Tavené"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Sýr a křup je praktický snack kombinující jemný a krémový tavený sýr s křupavými tyčinkami. Díky praktickému balení si můžete snadno užít rychlou a chutnou…",
+      "taxonomy_checked_at": "2026-10-23T09:41:38+00:00"
     },
     {
       "store": "Košík",
@@ -46712,6 +46747,6 @@
   },
   "v27_probe_control": {
     "shop_backoff_until": {},
-    "last_batch_at": "2026-10-23T07:30:37+00:00"
+    "last_batch_at": "2026-10-23T09:42:13+00:00"
   }
 }

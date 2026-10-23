@@ -1,6 +1,6 @@
 {
   "schema": "rk-v27-category-review",
-  "count": 301,
+  "count": 298,
   "items": [
     {
       "store": "Košík",
@@ -594,28 +594,6 @@
       "store": "Košík",
       "url": "https://www.kosik.cz/p818746-colgate-max-white-one-coffee-tea-wine-zubni-pasta",
       "name": "Colgate Max White One Coffee, Tea & Wine Zubní pasta",
-      "rule_ids": [
-        "W058"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Dentální hygiena"
-      ],
-      "rule_checks": {
-        "W058": {
-          "expected": "Dentální hygiena",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p65427-colgate-zubni-pasta-advanced-whitening-charcoal",
-      "name": "Colgate Zubní Pasta Advanced Whitening Charcoal",
       "rule_ids": [
         "W058"
       ],
@@ -1372,8 +1350,13 @@
         "W054"
       ],
       "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
+      "merchant_category": "Papír a hygiena",
+      "merchant_path": [
+        "Drogerie a kosmetika",
+        "Papírová a vatová hygiena",
+        "Toaletní papíry",
+        "Vlhčené"
+      ],
       "expected_categories": [
         "Papír a hygiena"
       ],
@@ -1381,10 +1364,10 @@
         "W054": {
           "expected": "Papír a hygiena",
           "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "reason": "Kategorie prodejce potvrzuje sortiment, ale ne konkrétní variantu sledovaného pravidla"
         }
       },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+      "reason": "Papírová a vlhčená hygiena podle cesty e-shopu; konkrétní typ dle pravidel zatím nelze potvrdit: Papír a hygiena"
     },
     {
       "store": "Košík",
@@ -2062,28 +2045,6 @@
       "rule_checks": {
         "W052": {
           "expected": "Těstoviny a rýže",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p64167-parodontax-extra-fresh-zubni-pasta",
-      "name": "Parodontax Extra Fresh zubní pasta",
-      "rule_ids": [
-        "W059"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Dentální hygiena"
-      ],
-      "rule_checks": {
-        "W059": {
-          "expected": "Dentální hygiena",
           "status": "review",
           "reason": "Kategorie neověřena u prodejce"
         }
@@ -2798,28 +2759,6 @@
         }
       },
       "reason": "Bezlaktózové sýry; konkrétní podtyp zatím není ověřen; konkrétní typ dle pravidel zatím nelze potvrdit: Sýry / tavené"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p374164-vesela-krava-syr-a-krup-s-tycinkami-s-pizza-prichuti-rodinne-baleni-4x35g",
-      "name": "Veselá Kráva Sýr a Křup s tyčinkami s pizza příchutí - Rodinné balení 4x35g",
-      "rule_ids": [
-        "W021"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Sýry / tavené"
-      ],
-      "rule_checks": {
-        "W021": {
-          "expected": "Sýry / tavené",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
     },
     {
       "store": "Košík",

@@ -1,10 +1,10 @@
 {
   "schema": "rk-v27-merchant-path-review",
   "number_of_distinct_trusted_paths": 213,
-  "mapped_product_total": 1016,
+  "mapped_product_total": 1020,
   "unmapped_or_mismatched_path_count": 38,
   "without_trusted_path_by_shop": {
-    "Košík": 64,
+    "Košík": 60,
     "Rohlík": 1
   },
   "note": "Old rule categories are references for audit only; never proof of merchant classification.",
@@ -114,6 +114,27 @@
       "needs_review": false
     },
     {
+      "shop": "Košík",
+      "merchant_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Tavené"
+      ],
+      "mapped_category": "Sýry / tavené",
+      "mapping_reason": "Tavené sýry podle cesty prodejce",
+      "product_count": 17,
+      "old_rule_categories": {
+        "Sýry / tavené": 16,
+        "Sýry / plísňové": 1
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p12777-madeta-jihoceske-lipno-syr-extra-smetanovy-64",
+        "https://www.kosik.cz/p721246-president-taveny-se-syrem-camembert-3x50g",
+        "https://www.kosik.cz/p810846-smetanito-high-protein-3ks"
+      ],
+      "needs_review": true
+    },
+    {
       "shop": "Rohlík",
       "merchant_path": [
         "Drogerie",
@@ -175,27 +196,6 @@
         "https://www.kosik.cz/p818070-bref-color-auto-active-chlorine-wc-blok-3x-50-g"
       ],
       "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Mléčné a chlazené",
-        "Sýry",
-        "Tavené"
-      ],
-      "mapped_category": "Sýry / tavené",
-      "mapping_reason": "Tavené sýry podle cesty prodejce",
-      "product_count": 16,
-      "old_rule_categories": {
-        "Sýry / tavené": 15,
-        "Sýry / plísňové": 1
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p12777-madeta-jihoceske-lipno-syr-extra-smetanovy-64",
-        "https://www.kosik.cz/p721246-president-taveny-se-syrem-camembert-3x50g",
-        "https://www.kosik.cz/p810846-smetanito-high-protein-3ks"
-      ],
-      "needs_review": true
     },
     {
       "shop": "Košík",
@@ -263,6 +263,27 @@
     {
       "shop": "Košík",
       "merchant_path": [
+        "Drogerie a kosmetika",
+        "Ústní hygiena",
+        "Zubní pasty",
+        "Bělící"
+      ],
+      "mapped_category": "Dentální hygiena",
+      "mapping_reason": "Dentální hygiena podle cesty prodejce",
+      "product_count": 14,
+      "old_rule_categories": {
+        "Dentální hygiena": 14
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p721714-colgate-advanced-white-baking-soda-vulcanic-ash-zubni-pasta",
+        "https://www.kosik.cz/p413419-colgate-advanced-white-charcoal-zubni-pasta-3x75ml",
+        "https://www.kosik.cz/p63857-colgate-advanced-whitening-zubni-pasta"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
         "Ovoce a zelenina",
         "Zelenina",
         "Papriky a chilli papričky",
@@ -319,27 +340,6 @@
         "https://www.kosik.cz/p795274-ariel-kapsle-mountain-spring-sacek",
         "https://www.kosik.cz/p795238-ariel-kapsle-mountain-spring-sacek",
         "https://www.kosik.cz/p820206-ariel-kapsle-spring-awakening"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Drogerie a kosmetika",
-        "Ústní hygiena",
-        "Zubní pasty",
-        "Bělící"
-      ],
-      "mapped_category": "Dentální hygiena",
-      "mapping_reason": "Dentální hygiena podle cesty prodejce",
-      "product_count": 13,
-      "old_rule_categories": {
-        "Dentální hygiena": 13
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p721714-colgate-advanced-white-baking-soda-vulcanic-ash-zubni-pasta",
-        "https://www.kosik.cz/p413419-colgate-advanced-white-charcoal-zubni-pasta-3x75ml",
-        "https://www.kosik.cz/p63857-colgate-advanced-whitening-zubni-pasta"
       ],
       "needs_review": false
     },
@@ -1681,6 +1681,27 @@
     {
       "shop": "Košík",
       "merchant_path": [
+        "Drogerie a kosmetika",
+        "Papírová a vatová hygiena",
+        "Toaletní papíry",
+        "Vlhčené"
+      ],
+      "mapped_category": "Papír a hygiena",
+      "mapping_reason": "Papírová a vlhčená hygiena podle cesty e-shopu",
+      "product_count": 4,
+      "old_rule_categories": {
+        "Papír a hygiena": 4
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p557136-linteo-vlhceny-toaletni-papir-aqua-sensitive",
+        "https://www.kosik.cz/p3347-linteo-vlhceny-toaletni-papir-s-kyselinou-mlecnou",
+        "https://www.kosik.cz/p731920-zewa-almond-milk-vlhceny-toaletni-papir"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
         "Maso a ryby",
         "Vepřové maso",
         "Panenka"
@@ -2035,27 +2056,6 @@
       "shop": "Košík",
       "merchant_path": [
         "Drogerie a kosmetika",
-        "Papírová a vatová hygiena",
-        "Toaletní papíry",
-        "Vlhčené"
-      ],
-      "mapped_category": "Papír a hygiena",
-      "mapping_reason": "Papírová a vlhčená hygiena podle cesty e-shopu",
-      "product_count": 3,
-      "old_rule_categories": {
-        "Papír a hygiena": 3
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p3347-linteo-vlhceny-toaletni-papir-s-kyselinou-mlecnou",
-        "https://www.kosik.cz/p731920-zewa-almond-milk-vlhceny-toaletni-papir",
-        "https://www.kosik.cz/p731922-zewa-sensitive-vlhceny-toaletni-papir"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Drogerie a kosmetika",
         "Sprchové gely, mýdla, pěny",
         "Sprchové gely",
         "Pánské"
@@ -2070,6 +2070,27 @@
         "https://www.kosik.cz/p741634-axe-black-sprchovy-gel",
         "https://www.kosik.cz/p740636-axe-dark-temptation-sprchovy-gel",
         "https://www.kosik.cz/p98107-axe-dark-temptation-sprchovy-gel"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Drogerie a kosmetika",
+        "Ústní hygiena",
+        "Zubní pasty",
+        "Proti paradontóze"
+      ],
+      "mapped_category": "Dentální hygiena",
+      "mapping_reason": "Dentální hygiena podle cesty prodejce",
+      "product_count": 3,
+      "old_rule_categories": {
+        "Dentální hygiena": 3
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p64167-parodontax-extra-fresh-zubni-pasta",
+        "https://www.kosik.cz/p782388-parodontax-posileni-a-ochrana-dasni-fresh-mint-zubni-pasta-s-kyselinou-hyaluronovou",
+        "https://www.kosik.cz/p782390-parodontax-posileni-a-ochrana-dasni-whitening-zubni-pasta-s-kyselinou-hyaluronovou"
       ],
       "needs_review": false
     },
@@ -2594,26 +2615,6 @@
       "sample_product_urls": [
         "https://www.kosik.cz/p816640-colgate-detska-zubni-pasta-harry-potter-bubbling-cauldron-6-9-let",
         "https://www.kosik.cz/p816656-colgate-zubni-pasta-total-junior"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Drogerie a kosmetika",
-        "Ústní hygiena",
-        "Zubní pasty",
-        "Proti paradontóze"
-      ],
-      "mapped_category": "Dentální hygiena",
-      "mapping_reason": "Dentální hygiena podle cesty prodejce",
-      "product_count": 2,
-      "old_rule_categories": {
-        "Dentální hygiena": 2
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p782388-parodontax-posileni-a-ochrana-dasni-fresh-mint-zubni-pasta-s-kyselinou-hyaluronovou",
-        "https://www.kosik.cz/p782390-parodontax-posileni-a-ochrana-dasni-whitening-zubni-pasta-s-kyselinou-hyaluronovou"
       ],
       "needs_review": false
     },

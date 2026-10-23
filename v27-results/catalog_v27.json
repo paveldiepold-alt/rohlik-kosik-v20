@@ -462,8 +462,8 @@
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
       "v27_category_probe_status": "category_missing",
       "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-22T08:44:24+00:00",
-      "v27_category_probe_attempts": 1,
+      "v27_category_checked_at": "2026-10-23T09:42:04+00:00",
+      "v27_category_probe_attempts": 2,
       "category_v27": {
         "status": "review",
         "evidence_state": "merchant_path_missing",
@@ -6863,8 +6863,8 @@
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
       "v27_category_probe_status": "category_missing",
       "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-22T08:39:42+00:00",
-      "v27_category_probe_attempts": 1,
+      "v27_category_checked_at": "2026-10-23T09:41:42+00:00",
+      "v27_category_probe_attempts": 2,
       "category_v27": {
         "status": "review",
         "evidence_state": "merchant_path_missing",
@@ -7369,8 +7369,8 @@
       "drop_since_previous_pct": null,
       "v27_category_probe_status": "category_missing",
       "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-22T08:41:50+00:00",
-      "v27_category_probe_attempts": 1,
+      "v27_category_checked_at": "2026-10-23T09:41:51+00:00",
+      "v27_category_probe_attempts": 2,
       "category_v27": {
         "status": "review",
         "evidence_state": "merchant_path_missing",
@@ -9619,28 +9619,37 @@
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "v27_category_probe_status": "category_missing",
-      "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-22T09:24:17+00:00",
-      "v27_category_probe_attempts": 1,
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-23T09:42:13+00:00",
+      "v27_category_probe_attempts": 2,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Ústní hygiena",
+        "Zubní pasty",
+        "Bělící"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Je klinicky prokázáno, že zubní pasta Colgate Advanced White s aktivním uhlím účinně odstraňuje skvrny na povrchu a obnovuje přirozenou bělost zubů již za 14…",
+      "taxonomy_checked_at": "2026-10-23T09:42:13+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": "category_missing",
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Dentální hygiena",
+        "display_category": "Dentální hygiena",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Dentální hygiena"
         ],
         "rule_checks": {
           "W058": {
             "expected": "Dentální hygiena",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Dentální hygiena podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -10545,8 +10554,8 @@
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
       "v27_category_probe_status": "category_missing",
       "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-22T08:42:17+00:00",
-      "v27_category_probe_attempts": 1,
+      "v27_category_checked_at": "2026-10-23T09:41:56+00:00",
+      "v27_category_probe_attempts": 2,
       "category_v27": {
         "status": "review",
         "evidence_state": "merchant_path_missing",
@@ -18356,8 +18365,8 @@
       "drop_since_previous_pct": null,
       "v27_category_probe_status": "category_missing",
       "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-22T08:37:15+00:00",
-      "v27_category_probe_attempts": 1,
+      "v27_category_checked_at": "2026-10-23T09:41:28+00:00",
+      "v27_category_probe_attempts": 2,
       "category_v27": {
         "status": "review",
         "evidence_state": "merchant_path_missing",
@@ -18741,8 +18750,8 @@
       "drop_since_previous_pct": null,
       "v27_category_probe_status": "category_missing",
       "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-22T08:37:35+00:00",
-      "v27_category_probe_attempts": 1,
+      "v27_category_checked_at": "2026-10-23T09:41:33+00:00",
+      "v27_category_probe_attempts": 2,
       "category_v27": {
         "status": "review",
         "evidence_state": "merchant_path_missing",
@@ -19119,17 +19128,26 @@
       "price_history_previous_czk": 38.9,
       "price_history_previous_at": "2026-10-23T01:04:54+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_probe_status": "category_missing",
-      "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-22T08:42:44+00:00",
-      "v27_category_probe_attempts": 1,
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-23T09:42:00+00:00",
+      "v27_category_probe_attempts": 2,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Papírová a vatová hygiena",
+        "Toaletní papíry",
+        "Vlhčené"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Nákup až ke dveřím na pár kliků. Doprava zdarma na velké nákupy, nový akční leták každý týden a spousta odměn ve věrnostních klubech.",
+      "taxonomy_checked_at": "2026-10-23T09:42:00+00:00",
       "category_v27": {
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": "category_missing",
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Papír a hygiena",
+        "display_category": "Papír a hygiena",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Papír a hygiena"
         ],
@@ -19137,10 +19155,10 @@
           "W054": {
             "expected": "Papír a hygiena",
             "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "reason": "Kategorie prodejce potvrzuje sortiment, ale ne konkrétní variantu sledovaného pravidla"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Papírová a vlhčená hygiena podle cesty e-shopu; konkrétní typ dle pravidel zatím nelze potvrdit: Papír a hygiena"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -19178,8 +19196,8 @@
       "drop_since_previous_pct": null,
       "v27_category_probe_status": "category_missing",
       "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-22T08:37:05+00:00",
-      "v27_category_probe_attempts": 1,
+      "v27_category_checked_at": "2026-10-23T09:41:23+00:00",
+      "v27_category_probe_attempts": 2,
       "category_v27": {
         "status": "review",
         "evidence_state": "merchant_path_missing",
@@ -23477,28 +23495,37 @@
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "v27_category_probe_status": "category_missing",
-      "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-22T09:23:40+00:00",
-      "v27_category_probe_attempts": 1,
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-23T09:42:09+00:00",
+      "v27_category_probe_attempts": 2,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Ústní hygiena",
+        "Zubní pasty",
+        "Proti paradontóze"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Zubní pasta ke každodennímu použití s obsahem fluoridu pro zdravé dásně a silné zuby.Základem zdravých zubů jsou zdravé dásně.Zdravé dásně nekrvácí. Stopy krve…",
+      "taxonomy_checked_at": "2026-10-23T09:42:09+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": "category_missing",
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Dentální hygiena",
+        "display_category": "Dentální hygiena",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Dentální hygiena"
         ],
         "rule_checks": {
           "W059": {
             "expected": "Dentální hygiena",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Dentální hygiena podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -28018,8 +28045,8 @@
       "drop_since_previous_pct": null,
       "v27_category_probe_status": "category_missing",
       "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-22T08:41:22+00:00",
-      "v27_category_probe_attempts": 1,
+      "v27_category_checked_at": "2026-10-23T09:41:47+00:00",
+      "v27_category_probe_attempts": 2,
       "category_v27": {
         "status": "review",
         "evidence_state": "merchant_path_missing",
@@ -34480,28 +34507,36 @@
       "price_history_previous_czk": 59.9,
       "price_history_previous_at": "2026-10-23T01:22:35+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_probe_status": "category_missing",
-      "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-22T08:39:14+00:00",
-      "v27_category_probe_attempts": 1,
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-23T09:41:38+00:00",
+      "v27_category_probe_attempts": 2,
+      "store_category_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Tavené"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Sýr a křup je praktický snack kombinující jemný a krémový tavený sýr s křupavými tyčinkami. Díky praktickému balení si můžete snadno užít rychlou a chutnou…",
+      "taxonomy_checked_at": "2026-10-23T09:41:38+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": "category_missing",
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Sýry / tavené",
+        "display_category": "Sýry / tavené",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Sýry / tavené"
         ],
         "rule_checks": {
           "W021": {
             "expected": "Sýry / tavené",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Tavené sýry podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -71803,7 +71838,7 @@
   },
   "v27_probe_control": {
     "shop_backoff_until": {},
-    "last_batch_at": "2026-10-23T07:30:37+00:00"
+    "last_batch_at": "2026-10-23T09:42:13+00:00"
   },
   "v27_audit": {
     "rules_configured": 75,
@@ -71822,7 +71857,7 @@
     ],
     "unknown_rule_ids": [],
     "schema": "rk-v27-taxonomy-audit",
-    "generated_at": "2026-10-23T07:30:38+00:00",
+    "generated_at": "2026-10-23T09:42:14+00:00",
     "source_generated_at": "2026-10-21T14:12:55+00:00",
     "products_before": 1090,
     "products_after": 1090,
@@ -71830,18 +71865,18 @@
     "priced_after": 1057,
     "missing_prices": 33,
     "category_statuses": {
-      "review": 263,
-      "verified": 789,
+      "review": 260,
+      "verified": 792,
       "mismatch": 38
     },
     "rule_match_statuses": {
-      "review": 263,
-      "verified": 793,
+      "review": 260,
+      "verified": 796,
       "mismatch": 38
     },
-    "merchant_category_mapped": 1016,
-    "merchant_category_unmapped": 74,
-    "products_with_merchant_category_but_rule_review": 189,
+    "merchant_category_mapped": 1020,
+    "merchant_category_unmapped": 70,
+    "products_with_merchant_category_but_rule_review": 190,
     "products_with_merchant_category_but_rule_mismatch": 38,
     "price_diagnostics": {
       "ok": 1057,
@@ -71871,12 +71906,12 @@
       "Košík": 556,
       "Rohlík": 534
     },
-    "review_count": 301,
-    "retailer_path_present": 1026,
-    "retailer_path_missing": 64,
-    "trusted_retailer_path": 1025,
+    "review_count": 298,
+    "retailer_path_present": 1030,
+    "retailer_path_missing": 60,
+    "trusted_retailer_path": 1029,
     "trusted_but_unmapped": 9,
-    "untrusted_or_missing_path": 65,
+    "untrusted_or_missing_path": 61,
     "source_price_evidence_unchanged": true,
     "source_items_unchanged": true,
     "category_mapping_method": "trusted merchant path only; specific rule checks for meat and produce; no titles"
