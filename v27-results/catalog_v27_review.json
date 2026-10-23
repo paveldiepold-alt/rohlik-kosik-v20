@@ -1068,20 +1068,25 @@
       "rule_ids": [
         "W006"
       ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
+      "status": "mismatch",
+      "merchant_category": "Uzeniny / salámy",
+      "merchant_path": [
+        "Uzeniny a lahůdky",
+        "Salámy",
+        "Měkké",
+        "Krájené"
+      ],
       "expected_categories": [
         "Uzeniny / šunky"
       ],
       "rule_checks": {
         "W006": {
           "expected": "Uzeniny / šunky",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "status": "mismatch",
+          "reason": "Srovnání se společnou kategorií"
         }
       },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+      "reason": "Salámy podle cesty prodejce; nesoulad s pravidly: Uzeniny / šunky"
     },
     {
       "store": "Košík",

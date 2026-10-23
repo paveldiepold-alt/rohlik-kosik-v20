@@ -9951,10 +9951,19 @@
       "price_history_previous_czk": 24.9,
       "price_history_previous_at": "2026-10-22T18:10:07+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_probe_status": "category_missing",
-      "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-22T03:06:06+00:00",
-      "v27_category_probe_attempts": 1
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-23T03:41:22+00:00",
+      "v27_category_probe_attempts": 2,
+      "store_category_path": [
+        "Uzeniny a lahůdky",
+        "Salámy",
+        "Měkké",
+        "Krájené"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Ručně skládané šunkové koleno, shaved. Velmi najemno nakrájená vepřová šunka pro milovníky masných delikates. Jedná se o tepelně opracovaný výrobek balený v…",
+      "taxonomy_checked_at": "2026-10-23T03:41:22+00:00"
     },
     {
       "store": "Košík",
@@ -46667,6 +46676,6 @@
   },
   "v27_probe_control": {
     "shop_backoff_until": {},
-    "last_batch_at": "2026-10-23T01:33:56+00:00"
+    "last_batch_at": "2026-10-23T03:41:22+00:00"
   }
 }

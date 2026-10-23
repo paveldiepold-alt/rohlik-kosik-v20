@@ -14994,28 +14994,37 @@
       "price_history_previous_czk": 24.9,
       "price_history_previous_at": "2026-10-22T18:10:07+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_probe_status": "category_missing",
-      "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-22T03:06:06+00:00",
-      "v27_category_probe_attempts": 1,
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-23T03:41:22+00:00",
+      "v27_category_probe_attempts": 2,
+      "store_category_path": [
+        "Uzeniny a lahůdky",
+        "Salámy",
+        "Měkké",
+        "Krájené"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Ručně skládané šunkové koleno, shaved. Velmi najemno nakrájená vepřová šunka pro milovníky masných delikates. Jedná se o tepelně opracovaný výrobek balený v…",
+      "taxonomy_checked_at": "2026-10-23T03:41:22+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": "category_missing",
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "mismatch",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Uzeniny / salámy",
+        "display_category": "Uzeniny / salámy",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Uzeniny / šunky"
         ],
         "rule_checks": {
           "W006": {
             "expected": "Uzeniny / šunky",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "mismatch",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Salámy podle cesty prodejce; nesoulad s pravidly: Uzeniny / šunky"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -71758,7 +71767,7 @@
   },
   "v27_probe_control": {
     "shop_backoff_until": {},
-    "last_batch_at": "2026-10-23T01:33:56+00:00"
+    "last_batch_at": "2026-10-23T03:41:22+00:00"
   },
   "v27_audit": {
     "rules_configured": 75,
@@ -71777,7 +71786,7 @@
     ],
     "unknown_rule_ids": [],
     "schema": "rk-v27-taxonomy-audit",
-    "generated_at": "2026-10-23T01:33:57+00:00",
+    "generated_at": "2026-10-23T03:41:23+00:00",
     "source_generated_at": "2026-10-21T14:12:55+00:00",
     "products_before": 1090,
     "products_after": 1090,
@@ -71785,19 +71794,19 @@
     "priced_after": 1052,
     "missing_prices": 38,
     "category_statuses": {
-      "review": 264,
+      "review": 263,
       "verified": 789,
-      "mismatch": 37
+      "mismatch": 38
     },
     "rule_match_statuses": {
-      "review": 264,
+      "review": 263,
       "verified": 793,
-      "mismatch": 37
+      "mismatch": 38
     },
-    "merchant_category_mapped": 1015,
-    "merchant_category_unmapped": 75,
+    "merchant_category_mapped": 1016,
+    "merchant_category_unmapped": 74,
     "products_with_merchant_category_but_rule_review": 189,
-    "products_with_merchant_category_but_rule_mismatch": 37,
+    "products_with_merchant_category_but_rule_mismatch": 38,
     "price_diagnostics": {
       "ok": 1052,
       "price_read_unverified": 38
@@ -71827,11 +71836,11 @@
       "Rohlík": 534
     },
     "review_count": 301,
-    "retailer_path_present": 1025,
-    "retailer_path_missing": 65,
-    "trusted_retailer_path": 1024,
+    "retailer_path_present": 1026,
+    "retailer_path_missing": 64,
+    "trusted_retailer_path": 1025,
     "trusted_but_unmapped": 9,
-    "untrusted_or_missing_path": 66,
+    "untrusted_or_missing_path": 65,
     "source_price_evidence_unchanged": true,
     "source_items_unchanged": true,
     "category_mapping_method": "trusted merchant path only; specific rule checks for meat and produce; no titles"

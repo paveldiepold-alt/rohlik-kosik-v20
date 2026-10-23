@@ -1,10 +1,10 @@
 {
   "schema": "rk-v27-merchant-path-review",
   "number_of_distinct_trusted_paths": 213,
-  "mapped_product_total": 1015,
+  "mapped_product_total": 1016,
   "unmapped_or_mismatched_path_count": 38,
   "without_trusted_path_by_shop": {
-    "Košík": 65,
+    "Košík": 64,
     "Rohlík": 1
   },
   "note": "Old rule categories are references for audit only; never proof of merchant classification.",
@@ -1034,6 +1034,28 @@
       "merchant_path": [
         "Uzeniny a lahůdky",
         "Salámy",
+        "Měkké",
+        "Krájené"
+      ],
+      "mapped_category": "Uzeniny / salámy",
+      "mapping_reason": "Salámy podle cesty prodejce",
+      "product_count": 7,
+      "old_rule_categories": {
+        "Uzeniny / šunky": 3,
+        "Uzeniny / salámy": 5
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p97187-chodura-sunkovy-salam",
+        "https://www.kosik.cz/p380344-krahulik-gothajsky-salam-krajeny",
+        "https://www.kosik.cz/p380334-krahulik-junior-salam-krajeny"
+      ],
+      "needs_review": true
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Uzeniny a lahůdky",
+        "Salámy",
         "Tvrdé",
         "Krájené"
       ],
@@ -1238,28 +1260,6 @@
         "https://www.kosik.cz/p15067-galbani-mozzarella-light"
       ],
       "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Uzeniny a lahůdky",
-        "Salámy",
-        "Měkké",
-        "Krájené"
-      ],
-      "mapped_category": "Uzeniny / salámy",
-      "mapping_reason": "Salámy podle cesty prodejce",
-      "product_count": 6,
-      "old_rule_categories": {
-        "Uzeniny / šunky": 2,
-        "Uzeniny / salámy": 5
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p97187-chodura-sunkovy-salam",
-        "https://www.kosik.cz/p380344-krahulik-gothajsky-salam-krajeny",
-        "https://www.kosik.cz/p380334-krahulik-junior-salam-krajeny"
-      ],
-      "needs_review": true
     },
     {
       "shop": "Rohlík",
