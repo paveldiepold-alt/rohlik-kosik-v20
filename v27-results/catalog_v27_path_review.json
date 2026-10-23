@@ -1,10 +1,10 @@
 {
   "schema": "rk-v27-merchant-path-review",
   "number_of_distinct_trusted_paths": 213,
-  "mapped_product_total": 1024,
+  "mapped_product_total": 1042,
   "unmapped_or_mismatched_path_count": 38,
   "without_trusted_path_by_shop": {
-    "Košík": 56,
+    "Košík": 38,
     "Rohlík": 1
   },
   "note": "Old rule categories are references for audit only; never proof of merchant classification.",
@@ -19,9 +19,9 @@
       ],
       "mapped_category": "Praní",
       "mapping_reason": "Praní podle cesty prodejce",
-      "product_count": 26,
+      "product_count": 27,
       "old_rule_categories": {
-        "Praní": 26
+        "Praní": 27
       },
       "sample_product_urls": [
         "https://www.kosik.cz/p812438-lenor-avivaz-amethyst-flower-bouquet-duopack-2x-987-ml",
@@ -40,14 +40,14 @@
       ],
       "mapped_category": "Sýry / plísňové",
       "mapping_reason": "Plísňové sýry podle cesty prodejce",
-      "product_count": 23,
+      "product_count": 25,
       "old_rule_categories": {
-        "Sýry / plísňové": 23
+        "Sýry / plísňové": 25
       },
       "sample_product_urls": [
+        "https://www.kosik.cz/p795404-kral-syru-hermelin-lahudkova-paprika-2-x-120g",
         "https://www.kosik.cz/p795400-kral-syru-hermelin-zeleny-pepr-2-x-120g",
-        "https://www.kosik.cz/p18697-kral-syru-hermelin-lahudkova-paprika",
-        "https://www.kosik.cz/p18717-kral-syru-hermelin-original"
+        "https://www.kosik.cz/p18697-kral-syru-hermelin-lahudkova-paprika"
       ],
       "needs_review": false
     },
@@ -93,6 +93,27 @@
       "needs_review": false
     },
     {
+      "shop": "Košík",
+      "merchant_path": [
+        "Drogerie a kosmetika",
+        "Čistící přípravky",
+        "Toaleta",
+        "WC bloky a gely"
+      ],
+      "mapped_category": "Úklid",
+      "mapping_reason": "Úklid podle cesty prodejce",
+      "product_count": 19,
+      "old_rule_categories": {
+        "Úklid": 19
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p821564-bref-auto-active-gel-blooming-fresh-wc-cistic",
+        "https://www.kosik.cz/p485178-bref-brilliant-gel-arctic-ocean-gelovy-wc-blok-3x42-g",
+        "https://www.kosik.cz/p818070-bref-color-auto-active-chlorine-wc-blok-3x-50-g"
+      ],
+      "needs_review": false
+    },
+    {
       "shop": "Rohlík",
       "merchant_path": [
         "Drogerie",
@@ -122,9 +143,9 @@
       ],
       "mapped_category": "Sýry / tavené",
       "mapping_reason": "Tavené sýry podle cesty prodejce",
-      "product_count": 17,
+      "product_count": 18,
       "old_rule_categories": {
-        "Sýry / tavené": 16,
+        "Sýry / tavené": 17,
         "Sýry / plísňové": 1
       },
       "sample_product_urls": [
@@ -198,27 +219,6 @@
       "needs_review": false
     },
     {
-      "shop": "Košík",
-      "merchant_path": [
-        "Drogerie a kosmetika",
-        "Čistící přípravky",
-        "Toaleta",
-        "WC bloky a gely"
-      ],
-      "mapped_category": "Úklid",
-      "mapping_reason": "Úklid podle cesty prodejce",
-      "product_count": 16,
-      "old_rule_categories": {
-        "Úklid": 16
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p821564-bref-auto-active-gel-blooming-fresh-wc-cistic",
-        "https://www.kosik.cz/p485178-bref-brilliant-gel-arctic-ocean-gelovy-wc-blok-3x42-g",
-        "https://www.kosik.cz/p818070-bref-color-auto-active-chlorine-wc-blok-3x-50-g"
-      ],
-      "needs_review": false
-    },
-    {
       "shop": "Rohlík",
       "merchant_path": [
         "Drogerie",
@@ -264,6 +264,47 @@
       "shop": "Košík",
       "merchant_path": [
         "Drogerie a kosmetika",
+        "Papírová a vatová hygiena",
+        "Kuchyňské utěrky"
+      ],
+      "mapped_category": "Papírové utěrky",
+      "mapping_reason": "Papírové utěrky podle cesty prodejce",
+      "product_count": 14,
+      "old_rule_categories": {
+        "Papírové utěrky": 14
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p813574-fine-life-kuchynske-uterky-3vrstve-8-roli",
+        "https://www.kosik.cz/p717960-harmony-kuchynske-uterky-everyday-family-mono-1-role",
+        "https://www.kosik.cz/p171496-harmony-kuchynske-uterky-everyday-family-2vrstve-4-role"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Kapsle",
+        "Univerzální"
+      ],
+      "mapped_category": "Praní",
+      "mapping_reason": "Praní podle cesty prodejce",
+      "product_count": 14,
+      "old_rule_categories": {
+        "Praní": 14
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p795274-ariel-kapsle-mountain-spring-sacek",
+        "https://www.kosik.cz/p795238-ariel-kapsle-mountain-spring-sacek",
+        "https://www.kosik.cz/p820206-ariel-kapsle-spring-awakening"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Drogerie a kosmetika",
         "Ústní hygiena",
         "Zubní pasty",
         "Bělící"
@@ -299,47 +340,6 @@
         "https://www.kosik.cz/p793992-bio-paprika-ramiro-2-ks",
         "https://www.kosik.cz/p73137-bio-paprika-cervena-baleni",
         "https://www.kosik.cz/p367374-bio-paprika-zluta-baleni"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Drogerie a kosmetika",
-        "Papírová a vatová hygiena",
-        "Kuchyňské utěrky"
-      ],
-      "mapped_category": "Papírové utěrky",
-      "mapping_reason": "Papírové utěrky podle cesty prodejce",
-      "product_count": 13,
-      "old_rule_categories": {
-        "Papírové utěrky": 13
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p717960-harmony-kuchynske-uterky-everyday-family-mono-1-role",
-        "https://www.kosik.cz/p171496-harmony-kuchynske-uterky-everyday-family-2vrstve-4-role",
-        "https://www.kosik.cz/p291844-harmony-kuchynske-uterky-home-expert-mega-2vrstve-1-role"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Drogerie a kosmetika",
-        "Prací prostředky",
-        "Kapsle",
-        "Univerzální"
-      ],
-      "mapped_category": "Praní",
-      "mapping_reason": "Praní podle cesty prodejce",
-      "product_count": 13,
-      "old_rule_categories": {
-        "Praní": 13
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p795274-ariel-kapsle-mountain-spring-sacek",
-        "https://www.kosik.cz/p795238-ariel-kapsle-mountain-spring-sacek",
-        "https://www.kosik.cz/p820206-ariel-kapsle-spring-awakening"
       ],
       "needs_review": false
     },
@@ -533,6 +533,49 @@
       "needs_review": false
     },
     {
+      "shop": "Košík",
+      "merchant_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Gely",
+        "Barevné prádlo"
+      ],
+      "mapped_category": "Praní",
+      "mapping_reason": "Praní podle cesty prodejce",
+      "product_count": 10,
+      "old_rule_categories": {
+        "Praní": 10
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p820202-ariel-gel-color",
+        "https://www.kosik.cz/p798826-ariel-gel-color-1-8-l",
+        "https://www.kosik.cz/p800490-ariel-gel-color-2-7-l"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Odstraňovače skvrn",
+        "Běžné"
+      ],
+      "mapped_category": "Praní",
+      "mapping_reason": "Praní podle cesty prodejce",
+      "product_count": 10,
+      "old_rule_categories": {
+        "Úklid": 2,
+        "Praní": 8
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p194405-savo-perex-beleni-pradla-kvetinova-vune",
+        "https://www.kosik.cz/p194425-savo-perex-beleni-pradla-svezi-vune",
+        "https://www.kosik.cz/p741296-vanish-oxi-action-extra-hygiene-tekuty-odstranovac-skvrn"
+      ],
+      "needs_review": true
+    },
+    {
       "shop": "Rohlík",
       "merchant_path": [
         "Drogerie",
@@ -594,49 +637,6 @@
         "https://www.kosik.cz/p823564-lenor-perlicky-winter"
       ],
       "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Drogerie a kosmetika",
-        "Prací prostředky",
-        "Gely",
-        "Barevné prádlo"
-      ],
-      "mapped_category": "Praní",
-      "mapping_reason": "Praní podle cesty prodejce",
-      "product_count": 9,
-      "old_rule_categories": {
-        "Praní": 9
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p798826-ariel-gel-color-1-8-l",
-        "https://www.kosik.cz/p800490-ariel-gel-color-2-7-l",
-        "https://www.kosik.cz/p795242-ariel-gel-color-4-5-l"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Drogerie a kosmetika",
-        "Prací prostředky",
-        "Odstraňovače skvrn",
-        "Běžné"
-      ],
-      "mapped_category": "Praní",
-      "mapping_reason": "Praní podle cesty prodejce",
-      "product_count": 9,
-      "old_rule_categories": {
-        "Úklid": 2,
-        "Praní": 7
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p194405-savo-perex-beleni-pradla-kvetinova-vune",
-        "https://www.kosik.cz/p194425-savo-perex-beleni-pradla-svezi-vune",
-        "https://www.kosik.cz/p741296-vanish-oxi-action-extra-hygiene-tekuty-odstranovac-skvrn"
-      ],
-      "needs_review": true
     },
     {
       "shop": "Košík",
@@ -1013,6 +1013,48 @@
       "shop": "Košík",
       "merchant_path": [
         "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Prášky",
+        "Barevné prádlo"
+      ],
+      "mapped_category": "Praní",
+      "mapping_reason": "Praní podle cesty prodejce",
+      "product_count": 7,
+      "old_rule_categories": {
+        "Praní": 7
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p795254-ariel-prasek-color-box-2-75-kg",
+        "https://www.kosik.cz/p795240-ariel-prasek-color-box-5-5-kg",
+        "https://www.kosik.cz/p741426-ariel-prasek-color-1-1-kg"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Prášky",
+        "Univerzální"
+      ],
+      "mapped_category": "Praní",
+      "mapping_reason": "Praní podle cesty prodejce",
+      "product_count": 7,
+      "old_rule_categories": {
+        "Praní": 7
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p800550-ariel-professional-regular-prasek-na-prani",
+        "https://www.kosik.cz/p795256-ariel-prasek-mountain-spring-box-2-75-kg",
+        "https://www.kosik.cz/p813462-persil-expert-freshness-by-silan-praci-prasek"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Drogerie a kosmetika",
         "Čistící přípravky",
         "Univerzální"
       ],
@@ -1046,6 +1088,27 @@
         "https://www.kosik.cz/p740498-flora-light",
         "https://www.kosik.cz/p740504-flora-original",
         "https://www.kosik.cz/p743114-rama-slana"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plátkové",
+        "Holandského typu"
+      ],
+      "mapped_category": "Sýry / plátkové",
+      "mapping_reason": "Plátkové sýry podle cesty prodejce",
+      "product_count": 7,
+      "old_rule_categories": {
+        "Sýry / plátkové": 7
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p806104-leerdammer-caractere-platky",
+        "https://www.kosik.cz/p806102-leerdammer-delacreme-platky",
+        "https://www.kosik.cz/p85527-leerdammer-original-finesse-platky"
       ],
       "needs_review": false
     },
@@ -1160,41 +1223,20 @@
       "shop": "Košík",
       "merchant_path": [
         "Drogerie a kosmetika",
-        "Prací prostředky",
-        "Prášky",
-        "Barevné prádlo"
+        "Papírová a vatová hygiena",
+        "Toaletní papíry",
+        "3 vrstvé"
       ],
-      "mapped_category": "Praní",
-      "mapping_reason": "Praní podle cesty prodejce",
+      "mapped_category": "Papír a hygiena",
+      "mapping_reason": "Papírová a vlhčená hygiena podle cesty e-shopu",
       "product_count": 6,
       "old_rule_categories": {
-        "Praní": 6
+        "Papír a hygiena": 6
       },
       "sample_product_urls": [
-        "https://www.kosik.cz/p795240-ariel-prasek-color-box-5-5-kg",
-        "https://www.kosik.cz/p741426-ariel-prasek-color-1-1-kg",
-        "https://www.kosik.cz/p813464-persil-color-praci-prasek"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Drogerie a kosmetika",
-        "Prací prostředky",
-        "Prášky",
-        "Univerzální"
-      ],
-      "mapped_category": "Praní",
-      "mapping_reason": "Praní podle cesty prodejce",
-      "product_count": 6,
-      "old_rule_categories": {
-        "Praní": 6
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p795256-ariel-prasek-mountain-spring-box-2-75-kg",
-        "https://www.kosik.cz/p813462-persil-expert-freshness-by-silan-praci-prasek",
-        "https://www.kosik.cz/p813452-persil-expert-freshness-by-silan-praci-prasek"
+        "https://www.kosik.cz/p816728-zewa-classic-soft-toaletni-papir-3vrstvy-16-roli",
+        "https://www.kosik.cz/p82357-zewa-deluxe-camomile-comfort-toaletni-papir-3vrstvy-16-roli",
+        "https://www.kosik.cz/p82387-zewa-deluxe-camomile-comfort-toaletni-papir-3vrstvy-8-roli"
       ],
       "needs_review": false
     },
@@ -1391,27 +1433,6 @@
       "shop": "Košík",
       "merchant_path": [
         "Drogerie a kosmetika",
-        "Papírová a vatová hygiena",
-        "Toaletní papíry",
-        "3 vrstvé"
-      ],
-      "mapped_category": "Papír a hygiena",
-      "mapping_reason": "Papírová a vlhčená hygiena podle cesty e-shopu",
-      "product_count": 5,
-      "old_rule_categories": {
-        "Papír a hygiena": 5
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p816728-zewa-classic-soft-toaletni-papir-3vrstvy-16-roli",
-        "https://www.kosik.cz/p82357-zewa-deluxe-camomile-comfort-toaletni-papir-3vrstvy-16-roli",
-        "https://www.kosik.cz/p82387-zewa-deluxe-camomile-comfort-toaletni-papir-3vrstvy-8-roli"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Drogerie a kosmetika",
         "Ústní hygiena",
         "Zubní pasty",
         "Pro svěží dech"
@@ -1470,27 +1491,6 @@
         "https://www.kosik.cz/p655650-smetanito-syr-na-gril-a-na-panev-jemne-pikantni"
       ],
       "needs_review": true
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Mléčné a chlazené",
-        "Sýry",
-        "Plátkové",
-        "Holandského typu"
-      ],
-      "mapped_category": "Sýry / plátkové",
-      "mapping_reason": "Plátkové sýry podle cesty prodejce",
-      "product_count": 5,
-      "old_rule_categories": {
-        "Sýry / plátkové": 5
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p806102-leerdammer-delacreme-platky",
-        "https://www.kosik.cz/p85527-leerdammer-original-finesse-platky",
-        "https://www.kosik.cz/p789220-leerdammer-protein-platky"
-      ],
-      "needs_review": false
     },
     {
       "shop": "Košík",
@@ -1716,6 +1716,27 @@
         "https://www.kosik.cz/p802840-metro-chef-veprova-panenka-bez-retizku",
         "https://www.kosik.cz/p191655-moje-maso-bio-veprova-panenka",
         "https://www.kosik.cz/p297984-veprova-panenka-z-prasnic-bez-retizku"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plátkové",
+        "Eidam"
+      ],
+      "mapped_category": "Sýry / plátkové",
+      "mapping_reason": "Plátkové sýry podle cesty prodejce",
+      "product_count": 4,
+      "old_rule_categories": {
+        "Sýry / plátkové": 4
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p12827-madeta-eidam-jihocesky-platkovy-30",
+        "https://www.kosik.cz/p12837-madeta-jihocesky-eidam-platky-45",
+        "https://www.kosik.cz/p243484-madeta-jihocesky-eidam-syr-20-platky"
       ],
       "needs_review": false
     },
@@ -2200,27 +2221,6 @@
     {
       "shop": "Košík",
       "merchant_path": [
-        "Mléčné a chlazené",
-        "Sýry",
-        "Plátkové",
-        "Eidam"
-      ],
-      "mapped_category": "Sýry / plátkové",
-      "mapping_reason": "Plátkové sýry podle cesty prodejce",
-      "product_count": 3,
-      "old_rule_categories": {
-        "Sýry / plátkové": 3
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p12827-madeta-eidam-jihocesky-platkovy-30",
-        "https://www.kosik.cz/p12837-madeta-jihocesky-eidam-platky-45",
-        "https://www.kosik.cz/p243484-madeta-jihocesky-eidam-syr-20-platky"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
         "Nápoje",
         "Vody",
         "Minerální",
@@ -2301,6 +2301,28 @@
         "https://www.kosik.cz/p724392-bio-rajcata-cervena",
         "https://www.kosik.cz/p457490-bio-rajcata-cervena-kulata-na-stonku-baleni",
         "https://www.kosik.cz/p793258-rajcata-cervena-kerikova-vanicka"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Trvanlivé",
+        "Sladké",
+        "Čokolády",
+        "Mléčná čokoláda",
+        "S oříšky"
+      ],
+      "mapped_category": "Sladké",
+      "mapping_reason": "Sladkosti podle cesty prodejce",
+      "product_count": 3,
+      "old_rule_categories": {
+        "Sladké": 3
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p738526-orion-studentska-pecet-mlecna-cokolada-boruvka-cookies",
+        "https://www.kosik.cz/p808716-orion-studentska-pecet-mlecna-cokolada-a-lentilky-s-arasidy-a-zele",
+        "https://www.kosik.cz/p698853-orion-studentska-pecet-mlecna-cokolada-s-arasidy-rozinkami-a-zele"
       ],
       "needs_review": false
     },
@@ -2850,27 +2872,6 @@
       "sample_product_urls": [
         "https://www.kosik.cz/p818546-rajcata-ovalna-vanicka",
         "https://www.kosik.cz/p797728-rajcata-vanicka"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Trvanlivé",
-        "Sladké",
-        "Čokolády",
-        "Mléčná čokoláda",
-        "S oříšky"
-      ],
-      "mapped_category": "Sladké",
-      "mapping_reason": "Sladkosti podle cesty prodejce",
-      "product_count": 2,
-      "old_rule_categories": {
-        "Sladké": 2
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p738526-orion-studentska-pecet-mlecna-cokolada-boruvka-cookies",
-        "https://www.kosik.cz/p698853-orion-studentska-pecet-mlecna-cokolada-s-arasidy-rozinkami-a-zele"
       ],
       "needs_review": false
     },
