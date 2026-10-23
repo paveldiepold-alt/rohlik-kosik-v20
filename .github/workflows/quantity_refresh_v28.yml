@@ -397,7 +397,7 @@ jobs:
           python -m pip install --disable-pip-version-check 'playwright==1.56.0'
           python -m playwright install chromium
 
-      - name: Recheck only saved Košík Multikup product URLs
+      - name: export PYTHONPATH="$PWD${PYTHONPATH:+:$PYTHONPATH}"
         id: verify
         shell: bash
         timeout-minutes: 38
