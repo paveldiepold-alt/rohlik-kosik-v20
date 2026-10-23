@@ -125,6 +125,18 @@ jobs:
                           if m and 2<=int(m[1])<=24:
                               v=amount(prev)
                               if v is not None:candidates.append({'min_qty':int(m[1]),'price_czk':v})
+              if one is None and not candidates and any('nakupte více za méně' in x.casefold() for x in cleaned):
+                  for i,line in enumerate(cleaned):
+                      mm=re.fullmatch(r'od\s*(\d+)\s*ks',line,re.I)
+                      if not mm or not 2<=int(mm[1])<=24 or i<2:continue
+                      pct=re.search(r'[-−]\s*(\d{1,2})\s*%',cleaned[i-1])
+                      if not pct or ' do ' in cleaned[i-1].casefold():continue
+                      sale=amount(re.sub(r'\s*(?:Kč|CZK)\s*$','',cleaned[i-2],flags=re.I))
+                      if sale is None:continue
+                      for following in cleaned[i+1:i+4]:
+                          base=amount(re.sub(r'\s*(?:Kč|CZK)\s*$','',following,flags=re.I))
+                          if base and base>sale and abs(100*(1-sale/base)-int(pct[1]))<=2.5:
+                              return {'pack_price_czk':base,'tiers':[{'min_qty':int(mm[1]),'price_czk':sale}]}
               if one is None or not candidates:
                   return None
               dedup={x['min_qty']:x for x in candidates if x['price_czk']<one}
@@ -157,29 +169,122 @@ jobs:
               if result['status']=='verified':
                   out['multibuy_v28_verified_at']=now
                   out['multibuy_v28_verified_offer']=copy.deepcopy(result['offer'])
+              out['multibuy_v28_source_url']=result.get('source_url')
               return out
 
 
+          # v29: Product-scoped fallback for Košík Multikup category cards.
+          # A merchant category card MUST link to the exact /p<ID> from our catalog.
+          LISTING_JS = r'''(productId) => {
+            const ids = (root) => {
+              const result = new Set();
+              for (const a of root.querySelectorAll('a[href]')) {
+                try {
+                  const u = new URL(a.href, location.href);
+                  if (!/(^|\.)kosik\.cz$/i.test(u.hostname)) continue;
+                  const m = /^\/p(\d+)(?:-|\/|$)/i.exec(u.pathname);
+                  if (m) result.add(m[1]);
+                } catch (_) {}
+              }
+              return result;
+            };
+            const links = [...document.querySelectorAll('a[href]')].filter(a => {
+              try {
+                const u = new URL(a.href, location.href);
+                const m = /^\/p(\d+)(?:-|\/|$)/i.exec(u.pathname);
+                return /(^|\.)kosik\.cz$/i.test(u.hostname) && m && m[1] === productId;
+              } catch (_) { return false; }
+            });
+            for (const link of links) {
+              let node = link;
+              for (let level = 0; node && level < 8; level++, node = node.parentElement) {
+                const text = (node.innerText || '').trim();
+                if (text.length < 25 || text.length > 850) continue;
+                if (!/od\s*[2-9]\d*\s*ks/i.test(text) || !/za\s*1\s*ks/i.test(text)) continue;
+                const contained = ids(node);
+                if (contained.size !== 1 || !contained.has(productId)) continue;
+                return {text,productId,href:link.href,source:location.href};
+              }
+            }
+            return null;
+          }'''
+
+          def product_id(url):
+              # Use exact retailer SKU to prevent accepting prices for variants.
+              m=re.search(r'/p(\d+)(?:-|/|$)',urlparse(url).path,re.I)
+              return m.group(1) if m else None
+
+          def listing_candidates(page):
+              # From the product's breadcrumb: Multikup section scoped to that category.
+              paths=page.evaluate(r'''() => [...document.querySelectorAll('a[href]')]
+                .map(a => {try{return new URL(a.href,location.href).pathname}catch(e){return ''}})
+                .filter(x => /^\/c\d+(?:-[^/]+)?$/i.test(x)).slice(0,32)''')
+              result=[]
+              for path in reversed(paths[-4:]):
+                  special='/s5_'+path.lstrip('/')
+                  url='https://www.kosik.cz'+special
+                  if url not in result: result.append(url)
+              result.append('https://www.kosik.cz/s5-multikup')
+              return result[:4]
+
+          def from_listing(page,row,candidates):
+              pid=product_id(row.get('url',''))
+              if not pid:
+                  return {'status':'invalid_product_id','note':'Missing trusted Košík SKU in URL','blocked':False}
+              errors=[]
+              for location in candidates:
+                  try:
+                      rsp=page.goto(location,wait_until='domcontentloaded',timeout=18000)
+                      code=rsp.status if rsp else None
+                      if code in (403,429,503):
+                          return {'status':'throttled','note':f'Multikup listing HTTP {code}','blocked':True}
+                      if code!=200:
+                          errors.append('HTTP '+str(code)); continue
+                      page.wait_for_timeout(500)
+                      for offset in range(4):
+                          card=page.evaluate(LISTING_JS,pid)
+                          if card:
+                              offer=parse_header_quantity(card['text'])
+                              if offer is not None:
+                                  return {'status':'verified','offer':offer,
+                                          'note':'SKU-linked Multikup card, explicit 1ks and quantity price',
+                                          'source_url':location,'blocked':False}
+                              return {'status':'ambiguous_card','note':'Matched product SKU but price terms ambiguous','blocked':False}
+                          if offset<3:
+                              page.evaluate('window.scrollBy(0,1100)')
+                              page.wait_for_timeout(300)
+                  except Exception as exc:
+                      errors.append(type(exc).__name__)
+              return {'status':'not_observed','note':'No SKU-linked current Multikup card ('+','.join(errors[:2])+')','blocked':False}
+
           def inspect(page,row):
+              # Preserve original detail verification; fallback checks SKU-linked Multikup listings.
               from price_v23 import product_identity
               try:
                   response=page.goto(row['url'],wait_until='domcontentloaded',timeout=25000)
                   code=response.status if response else None
                   if code in (403,429,503):
-                      return {'status':'throttled','note':'HTTP '+str(code),'blocked':True}
+                      return {'status':'throttled','note':'Product detail HTTP '+str(code),'blocked':True}
                   if code!=200:
-                      return {'status':'http_error','note':'HTTP '+str(code),'blocked':False}
-                  page.wait_for_timeout(650)
+                      return {'status':'http_error','note':'Product detail HTTP '+str(code),'blocked':False}
+                  page.wait_for_timeout(550)
                   data=page.evaluate(HEADER_JS)
-                  if not product_identity(row.get('title') or row.get('name'),data.get('title')):
-                      return {'status':'title_mismatch','note':'Product H1 mismatch','blocked':False}
-                  offer=parse_header_quantity(data.get('text'))
-                  if offer is None:
-                      return {'status':'not_observed','note':'No complete product-scoped quantity + pack-price evidence','blocked':False}
-                  old=row.get('price_czk')
-                  if type(old) not in (int,float) or abs(old-offer['pack_price_czk'])>0.011:
-                      return {'status':'changed_pack_price','note':f"New single-pack price {offer['pack_price_czk']} Kč differs from catalog",'blocked':False}
-                  return {'status':'verified','offer':offer,'note':'Own product H1; explicit quantity and single-pack price','blocked':False}
+                  target=product_id(row['url'])
+                  actual=product_id(page.url)
+                  if not target or actual != target:
+                      return {'status':'sku_redirect','note':'Product detail redirected to different SKU','blocked':False}
+                  same_title=product_identity(row.get('title') or row.get('name'),data.get('title'))
+                  offer=parse_header_quantity(data.get('text')) if same_title else None
+                  if offer is not None:
+                      return {'status':'verified','offer':offer,'note':'Exact product detail and explicit quantity / regular price','source_url':row['url'],'blocked':False}
+                  # A valid price in a current regular promotion is not automatically a Multikup.
+                  # Check SKU-linked merchant category cards instead of rejecting 87 offers here.
+                  candidates=listing_candidates(page)
+                  result=from_listing(page,row,candidates)
+                  if result['status']=='not_observed' and not same_title:
+                      result['status']='title_mismatch'
+                      result['note']='Title differs; SKU-linked Multikup card not found'
+                  return result
               except Exception as e:
                   return {'status':'error','note':f'{type(e).__name__}: {str(e)[:90]}','blocked':False}
 
@@ -192,10 +297,14 @@ jobs:
               ids=[(x.get('store'),x.get('url')) for x in items]
               if len(ids)!=len(set(ids)) or len(ids)<1090:
                   raise ValueError('Identity collision or unexpectedly small catalogue')
-              selected=[(i,row) for i,row in enumerate(items) if eligible(row)][:limit]
+              selected=sorted([(i,row) for i,row in enumerate(items) if eligible(row)],key=lambda x:x[1].get('multibuy_v28_last_attempt_at',''))[:limit]
+              started=time.monotonic()
               stats=Counter();attempted=0;blocked=False
               for index,row in selected:
                   if blocked:break
+                  if time.monotonic()-started>30*60:
+                      stats['time_budget_remaining']=len(selected)-attempted
+                      break
                   sleep(delay)
                   res=scanner(row)
                   at=datetime.now(timezone.utc).isoformat(timespec='seconds')
@@ -205,7 +314,7 @@ jobs:
               # Strict preservation: no prior field or entire product record can disappear.
               for prev,new in zip(before['items'],out['items']):
                   for k,v in prev.items():
-                      if k not in new or (k not in {'multibuy_v28_last_attempt_at','multibuy_v28_status','multibuy_v28_note','multibuy_v28_verified_at','multibuy_v28_verified_offer'} and new[k]!=v):
+                      if k not in new or (k not in {'multibuy_v28_last_attempt_at','multibuy_v28_status','multibuy_v28_note','multibuy_v28_verified_at','multibuy_v28_verified_offer','multibuy_v28_source_url'} and new[k]!=v):
                           raise AssertionError('Unexpected modification of existing commerce field: '+str(k))
               report={'schema':'rk-v28-quantity-evidence','at':datetime.now(timezone.utc).isoformat(timespec='seconds'),
                  'products':len(items),'selected':len(selected),'attempted':attempted,
@@ -301,6 +410,27 @@ jobs:
               if new!=old:page.write_text(new,encoding='utf8')
               print('quantity_v28 UI patched:',new!=old)
           PYV28_patch_ui_v28_py
+          cat > .v28/patch_ui_v29.py <<'PYV29_UI'
+          # v29: independent evidence prices, even when stored regular price changed.
+          from pathlib import Path
+          import sys
+          p=Path(sys.argv[1]); html=p.read_text('utf8')
+          old="typeof e.pack_price_czk==='number'&&Math.abs(e.pack_price_czk-p.price_czk)<0.011"
+          new="typeof e.pack_price_czk==='number'&&e.pack_price_czk>0"
+          if old in html:
+              assert html.count(old)==1
+              html=html.replace(old,new)
+          else:
+              assert new in html, 'Unsupported HTML template'
+          src="const tiers=(!pending&&p.multibuy_v28_verified_offer?.tiers)||p.multibuy;"
+          tgt=src+"if(!pending&&p.multibuy_v28_verified_offer?.pack_price_czk)result.push('Ověřená cena 1 ks: '+money(p.multibuy_v28_verified_offer.pack_price_czk));"
+          if src in html and tgt not in html:
+              assert html.count(src)==1
+              html=html.replace(src,tgt)
+          assert 'id="qMultiConfirmed"' in html and 'data-quick="multi-verified"' in html
+          assert 'await loadCategoryOverlay()' in html and 'const savedMulti=' in html
+          p.write_text(html,'utf8')
+          PYV29_UI
           cat > .v28/test_quantity_v28.py <<'PYV28_test_quantity_v28_py'
           import copy,unittest
           from quantity_v28 import amount,parse_header_quantity,apply_result,process
@@ -369,6 +499,27 @@ jobs:
           if __name__=='__main__':unittest.main()
           PYV28_test_ui_v28_py
 
+          cat > .v28/test_v29.py <<'PYV29_TEST'
+          import unittest
+          from quantity_v28 import parse_header_quantity, product_id
+          class AdditionalWebEvidence(unittest.TestCase):
+              def test_exact_sku_id(self):
+                  self.assertEqual(product_id('https://www.kosik.cz/p233224-chodura-burgundska'), '233224')
+                  self.assertNotEqual(product_id('https://www.kosik.cz/p233224-chodura'), '233225')
+                  self.assertIsNone(product_id('https://www.kosik.cz/c233224-sunky'))
+              def test_listing_price(self):
+                  t='35 90 od 2 ks\n39,90 Kč za 1 ks\nChodura Burgundská šunka'
+                  self.assertEqual(parse_header_quantity(t),{'pack_price_czk':39.9,'tiers':[{'min_qty':2,'price_czk':35.9}]})
+              def test_price_can_change_without_changing_saved_catalog(self):
+                  t='34 90 od 2 ks\n42,90 Kč za 1 ks'
+                  self.assertEqual(parse_header_quantity(t)['pack_price_czk'],42.9)
+              def test_regular_sale_not_quantity(self):
+                  self.assertIsNone(parse_header_quantity('79 90\n114,90\n-30 % do 31. 10.\n0,91 Kč/m'))
+              def test_detail_multikup_percent_format(self):
+                  sample='88 m\nNakupte více za méně\n84,90 Kč\n-26 %\nod 2 ks\n114 90\n1,31 Kč/m'
+                  self.assertEqual(parse_header_quantity(sample),{'pack_price_czk':114.9,'tiers':[{'min_qty':2,'price_czk':84.9}]})
+          PYV29_TEST
+
       - name: Run offline regression tests and snapshot data
         shell: bash
         run: |
@@ -412,6 +563,7 @@ jobs:
             --report .v28/quantity_v28_report.json \
             --limit 120 --delay 3.5
           python .v28/patch_ui_v28.py docs/catalog.html
+          python .v28/patch_ui_v29.py docs/catalog.html
           python - <<'PY'
           from pathlib import Path
           page=Path('docs/catalog.html').read_text('utf8')
@@ -441,7 +593,7 @@ jobs:
               assert set(old).issubset(new),f'Existing fields disappeared: {old.get("url")}'
               for key,value in old.items():
                   if key not in {'multibuy_v28_last_attempt_at','multibuy_v28_status','multibuy_v28_note',
-                                 'multibuy_v28_verified_at','multibuy_v28_verified_offer'}:
+                                 'multibuy_v28_verified_at','multibuy_v28_verified_offer','multibuy_v28_source_url'}:
                       assert new[key]==value,(old.get('url'),key)
               for key in protected:
                   assert new.get(key)==old.get(key),(old.get('url'),key)
