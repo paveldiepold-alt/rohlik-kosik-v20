@@ -685,6 +685,477 @@ jobs:
                   sample='88 m\nNakupte více za méně\n84,90 Kč\n-26 %\nod 2 ks\n114 90\n1,31 Kč/m'
                   self.assertEqual(parse_header_quantity(sample),{'pack_price_czk':114.9,'tiers':[{'min_qty':2,'price_czk':84.9}]})
           PYV29_TEST
+          cat > .v28/production_v31.py <<'PYV31_PRODUCTION'
+          #!/usr/bin/env python3
+          """Production v31: strict, non-destructive catalogue health check and UI single-pack reconciliation.
+
+          This does NOT rewrite any original catalog price, historical discount or category.
+          A verified quantity price supersedes the older saved single-unit price only in the UI
+          for the 36-hour evidence lifetime; every discrepancy is retained in the audit.
+          """
+          from __future__ import annotations
+          import argparse
+          from collections import Counter
+          from datetime import datetime, timezone
+          import json
+          from pathlib import Path
+          import re
+          from urllib.parse import urlparse
+          from zoneinfo import ZoneInfo
+
+          BASELINE=1090
+          HOURS_QUANTITY=36
+          HOURS_REGULAR=72
+
+
+          def _timestamp(value):
+              if not isinstance(value,str) or 'T' not in value:return None
+              try:
+                  dt=datetime.fromisoformat(value.replace('Z','+00:00'))
+                  return dt.astimezone(timezone.utc) if dt.tzinfo else None
+              except (ValueError,OverflowError):return None
+
+
+          def age_hours(stamp,now):
+              dt=_timestamp(stamp)
+              return (now-dt).total_seconds()/3600 if dt else float('inf')
+
+
+          def _value(v):
+              return type(v) in (int,float) and 0.01 < v < 100000
+
+
+          def _saved_offer(row):
+              price=row.get('price_czk')
+              return _value(price) and isinstance(row.get('multibuy'),list) and any(
+                  isinstance(x,dict) and type(x.get('min_qty')) is int and 2<=x['min_qty']<=24
+                  and _value(x.get('price_czk')) and x['price_czk']<price
+                  for x in row['multibuy'])
+
+
+          def confirmed(row,now):
+              """Only source-backed, SKU-linked, recent, internally consistent offers."""
+              if not _saved_offer(row) or row.get('store')!='Košík' or row.get('multibuy_v28_status')!='verified':return False
+              ts=row.get('multibuy_v28_verified_at')
+              if not 0 <= age_hours(ts,now) <= HOURS_QUANTITY:return False
+              source=row.get('multibuy_v28_source_url')
+              if not isinstance(source,str):return False
+              try:
+                  u=urlparse(source)
+                  if u.scheme!='https' or u.hostname not in ('www.kosik.cz','kosik.cz') or u.username or u.password:return False
+                  if not re.match(r'^/(?:p\d+[-/]|s5(?:_|-|/))',u.path):return False
+              except ValueError:return False
+              offer=row.get('multibuy_v28_verified_offer')
+              if not isinstance(offer,dict):return False
+              base=offer.get('pack_price_czk')
+              if not _value(base):return False
+              tiers=offer.get('tiers')
+              if not isinstance(tiers,list) or not tiers:return False
+              prev_qty=1;prev_price=base
+              for x in tiers:
+                  if not isinstance(x,dict):return False
+                  qty=x.get('min_qty');price=x.get('price_czk')
+                  if type(qty) is not int or not prev_qty<qty<=24:return False
+                  if not _value(price) or price>=base or price>prev_price:return False
+                  prev_qty=qty;prev_price=price
+              return True
+
+
+          def regular_promo(row,now):
+              price=row.get('price_czk');old=row.get('original_price_czk');disc=row.get('discount_pct')
+              if row.get('price_status')!='ok' or not (_value(price) and _value(old)) or old<=price:return False
+              if type(disc) not in (int,float) or disc<=0:return False
+              if not 0<=age_hours(row.get('checked_at'),now)<=HOURS_REGULAR:return False
+              until=row.get('offer_valid_until')
+              if until and (not isinstance(until,str) or until<now.astimezone(ZoneInfo('Europe/Prague')).date().isoformat()):return False
+              return True
+
+
+          def build_audit(catalog,taxonomy,now=None,min_products=BASELINE):
+              now=now or datetime.now(timezone.utc)
+              items=catalog['items'];overlay=taxonomy['items']
+              if len(items)<min_products or len(overlay)!=len(items):raise ValueError('Unexpected catalog or taxonomy size')
+              key=lambda p:(p.get('store'),p.get('url'))
+              keys=[key(p) for p in items]
+              if len(set(keys))!=len(keys) or set(keys)!={key(p) for p in overlay}:
+                  raise ValueError('Product identities mismatch or duplicate')
+              verified=[p for p in items if confirmed(p,now)]
+              normal=[p for p in items if regular_promo(p,now)]
+              combined={key(p) for p in verified}|{key(p) for p in normal}
+              mismatch=[]
+              for p in verified:
+                  base=p['multibuy_v28_verified_offer']['pack_price_czk']
+                  if abs(base-p['price_czk'])>0.011:
+                      mismatch.append({'store':p['store'],'name':p.get('name',p.get('title','')),'url':p['url'],
+                                       'catalog_single_price_czk':p['price_czk'],
+                                       'quantity_verified_single_price_czk':base,
+                                       'verified_at':p.get('multibuy_v28_verified_at')})
+              status=Counter(p.get('multibuy_v28_status','not_checked') for p in items if _saved_offer(p))
+              categories=Counter(p.get('category_v27',{}).get('status','unknown') for p in overlay)
+              price_age=age_hours(catalog.get('last_price_monitor_at'),now)
+              warnings=[]
+              if price_age>12:warnings.append('Price scan is older than 12 hours')
+              if mismatch:warnings.append('Verified current single-unit prices differ from original stored prices; dashboard uses fresh evidence and retains history')
+              postcode=sum(p.get('postcode_verified') is True for p in items)
+              if postcode==0:warnings.append('Availability and actual price for a delivery postcode are not verified')
+              if len(items)-sum(p.get('price_status')=='ok' for p in items)>0:warnings.append('Some products still lack a confirmed stored price')
+              mapped=sum(bool(p.get('category_v27',{}).get('category')) for p in overlay)
+              report={
+                'schema':'rk-production-health-v31','generated_at':now.isoformat(timespec='seconds'),
+                'quality':'attention' if warnings else 'ok',
+                'products':len(items),'store_counts':dict(Counter(p.get('store') for p in items)),
+                'stored_prices_ok':sum(p.get('price_status')=='ok' for p in items),
+                'stored_prices_unverified':sum(p.get('price_status')!='ok' for p in items),
+                'ordinary_verified_discounts':len(normal),'fresh_verified_quantity_offers':len(verified),
+                'verified_distinct_offers':len(combined),'overlap_between_types':len(normal)+len(verified)-len(combined),
+                'saved_quantity_offers':sum(_saved_offer(p) for p in items),
+                'quantity_statuses':dict(status),
+                'quantity_current_stored_price_mismatch':len(mismatch),
+                'quantity_current_stored_price_mismatch_examples':mismatch[:20],
+                'quantity_current_pack_prices_display_only':True,
+                'price_monitor_last_at':catalog.get('last_price_monitor_at'),
+                'price_monitor_age_hours':round(price_age,2) if price_age!=float('inf') else None,
+                'postcode_verified_products':postcode,
+                'category_statuses':dict(categories),'categories_with_merchant_mapping':mapped,
+                'warnings':warnings,
+                'methodology':'Current discounts require price checked within 72h; quantity offers require independently verified merchant product/offer within 36h. Old catalog prices are not rewritten. All offers deduplicated by merchant and exact product URL.'
+              }
+              return report
+
+
+          def patch_html(html):
+              marker='const effectiveSinglePrice=p=>'
+              if marker in html:
+                  needed=('effectiveSinglePrice(p)','Cena ověřena z Multikupu','data/production_health_v31.json')
+                  if not all(x in html for x in needed):raise ValueError('Partial production v31 HTML integration')
+                  return html
+              def once(old,new):
+                  nonlocal html
+                  n=html.count(old)
+                  if n!=1:raise ValueError(f'Unexpected template: {old[:95]} matches={n}')
+                  html=html.replace(old,new,1)
+              once('const actualDrop=p=>',
+                   "const effectiveSinglePrice=p=>!multiUnconfirmed(p)&&p.multibuy_v28_verified_offer?.pack_price_czk>0?p.multibuy_v28_verified_offer.pack_price_czk:(isPrice(p)?p.price_czk:null);\nconst effectiveCheckedAt=p=>!multiUnconfirmed(p)&&p.multibuy_v28_verified_at?p.multibuy_v28_verified_at:p.checked_at;\nconst actualDrop=p=>")
+              once('money(price?p.price_czk:null)','money(effectiveSinglePrice(p))')
+              once('good?money(p.price_czk):\'Cena nezjištěna\'','good?money(effectiveSinglePrice(p)):\'Cena nezjištěna\'')
+              once("const label=freshPrice(p)?'Cena ≤72 h':price?'Starší cena':'Bez ceny';",
+                   "const label=!multiUnconfirmed(p)?'Cena ověřena z Multikupu':freshPrice(p)?'Cena ≤72 h':price?'Starší cena':'Bez ceny';")
+              once("${freshPrice(p)?'Cena ≤ 72 h':good?'Starší cenové pozorování':'Bez potvrzené ceny'}",
+                   "${!multiUnconfirmed(p)?'Cena ověřena z Multikupu':freshPrice(p)?'Cena ≤ 72 h':good?'Starší cenové pozorování':'Bez potvrzené ceny'}")
+              once("${esc((p.checked_at||'').replace('T',' ').slice(0,16))}",
+                   "${esc((effectiveCheckedAt(p)||'').replace('T',' ').slice(0,16))}")
+              once("${esc((p.checked_at||'Bez data').replace('T',' ').slice(0,19))}",
+                   "${esc((effectiveCheckedAt(p)||'Bez data').replace('T',' ').slice(0,19))}")
+              once("${freshPrice(p)?'age-ok':'age-warn'}", "${!multiUnconfirmed(p)||freshPrice(p)?'age-ok':'age-warn'}")
+              once("String(b.checked_at||'').localeCompare(String(a.checked_at||''))",
+                   "String(effectiveCheckedAt(b)||'').localeCompare(String(effectiveCheckedAt(a)||''))")
+              once('!price||p.price_czk<f.min||p.price_czk>f.max',
+                   '!price||effectiveSinglePrice(p)<f.min||effectiveSinglePrice(p)>f.max')
+              once('const va=isPrice(a)?a.price_czk:null,vb=isPrice(b)?b.price_czk:null;',
+                   'const va=effectiveSinglePrice(a),vb=effectiveSinglePrice(b);')
+              once('<span id="offersV27Status" class="quicknote" role="status" aria-live="polite">Načítám podmíněné nabídky…</span>',
+                   '<span id="offersV27Status" class="quicknote" role="status" aria-live="polite">Načítám podmíněné nabídky…</span> <a class="quicknote" href="data/production_health_v31.json" target="_blank" rel="noopener noreferrer">Audit kvality dat ↗</a>')
+              for part in ('id="mobileCards"','const verifiedOffer=p=>','id="qMultiConfirmed"','await loadCategoryOverlay()'):
+                  if part not in html:raise ValueError('Critical feature lost '+part)
+              return html
+
+
+          def main():
+              p=argparse.ArgumentParser();p.add_argument('--catalog',required=True);p.add_argument('--taxonomy',required=True)
+              p.add_argument('--html',required=True);p.add_argument('--report',required=True)
+              opt=p.parse_args()
+              cat=json.loads(Path(opt.catalog).read_text('utf8'))
+              tax=json.loads(Path(opt.taxonomy).read_text('utf8'))
+              audit=build_audit(cat,tax)
+              html=Path(opt.html);before=html.read_text('utf8');new=patch_html(before)
+              # Write only after all checks pass and report is serializable.
+              output=json.dumps(audit,ensure_ascii=False,indent=2)+'\n'
+              target=Path(opt.report);target.parent.mkdir(parents=True,exist_ok=True)
+              target.write_text(output,encoding='utf8')
+              if before!=new:html.write_text(new,encoding='utf8')
+              print(json.dumps({k:v for k,v in audit.items() if k not in ('quantity_current_stored_price_mismatch_examples','warnings','methodology')},ensure_ascii=False))
+              for w in audit['warnings']:print('QUALITY WARNING:',w)
+
+          if __name__=='__main__':main()
+          PYV31_PRODUCTION
+          cat > .v28/discovery_v31.py <<'PYV31_DISCOVERY'
+          #!/usr/bin/env python3
+          """Evidence-only discovery of additional Košík Multikup promotions.
+
+          Scans existing, already trusted SKU-linked merchant listing URLs and stages only
+          candidates from exact /p<ID> cards in our 1,090-product catalog. No catalogue
+          prices, promotions, totals, or identities are changed by this module.
+          """
+          from __future__ import annotations
+          import argparse
+          from datetime import datetime, timezone
+          import json
+          from pathlib import Path
+          import re
+          import time
+          from urllib.parse import urlparse
+          from quantity_v28 import parse_header_quantity,product_id
+
+          DISCOVER_JS=r'''() => {
+            const found=new Map();
+            const sku=(href)=>{try{const u=new URL(href,location.href);if(!/(^|\.)kosik\.cz$/i.test(u.hostname))return null;const m=/^\/p(\d+)(?:-|\/|$)/i.exec(u.pathname);return m?m[1]:null;}catch(e){return null;}};
+            for(const link of document.querySelectorAll('a[href]')){
+              const id=sku(link.href);if(!id||found.has(id))continue;
+              for(let node=link,k=0;node&&k<8;node=node.parentElement,k++){
+                const text=(node.innerText||'').trim();
+                if(text.length<25||text.length>850)continue;
+                if(!/od\s*[2-9]\d*\s*ks/i.test(text)||!/za\s*1\s*ks/i.test(text))continue;
+                const ids=new Set([...node.querySelectorAll('a[href]')].map(a=>sku(a.href)).filter(Boolean));
+                if(ids.size!==1||!ids.has(id))continue;
+                found.set(id,{sku:id,text,href:link.href});break;
+              }
+            }
+            return [...found.values()].slice(0,150);
+          }'''
+
+          def trusted_source(url):
+              if not isinstance(url,str):return False
+              try:
+                  u=urlparse(url)
+                  return u.scheme=='https' and u.hostname in ('www.kosik.cz','kosik.cz') and not u.username and not u.password and bool(re.match(r'^/s5(?:_|-|/)',u.path))
+              except ValueError:return False
+
+          def listing_sources(items):
+              return sorted({p.get('multibuy_v28_source_url') for p in items if p.get('store')=='Košík' and trusted_source(p.get('multibuy_v28_source_url'))})
+
+          def select_sources(sources,now,max_pages=8):
+              if not sources:return []
+              # Two 12-hour windows cycle across all known merchant categories.
+              period=now.toordinal()*2+(now.hour//12)
+              start=(period*max_pages)%len(sources)
+              return [sources[(start+i)%len(sources)] for i in range(min(max_pages,len(sources)))]
+
+          def scan_rows(rows,by_sku,source,seen):
+              proposals=[]
+              for rec in rows:
+                  if not isinstance(rec,dict):continue
+                  pid=str(rec.get('sku',''))
+                  row=by_sku.get(pid)
+                  if row is None or pid in seen or row.get('store')!='Košík':continue
+                  if isinstance(row.get('multibuy'),list) and row['multibuy']:continue
+                  href=rec.get('href')
+                  if product_id(href or '')!=pid:continue
+                  offer=parse_header_quantity(rec.get('text'))
+                  if not offer:continue
+                  base=offer['pack_price_czk'];tiers=offer['tiers']
+                  if not tiers or not all(t['price_czk']<base for t in tiers):continue
+                  seen.add(pid)
+                  proposals.append({'name':row.get('name') or row.get('title'),'url':row['url'],'sku':pid,
+                                    'source':source,'pack_price_czk':base,'tiers':tiers,
+                                    'status':'candidate_pending_independent_recheck'})
+              return proposals
+
+          def discover(db,max_pages=8,delay=3.3):
+              from playwright.sync_api import sync_playwright
+              now=datetime.now(timezone.utc)
+              items=db['items'];sku_map={}
+              for row in items:
+                  if row.get('store')=='Košík':
+                      pid=product_id(row.get('url',''))
+                      if pid in sku_map:raise ValueError(f'Duplicate Košík SKU {pid}')
+                      if pid:sku_map[pid]=row
+              sources=listing_sources(items)
+              chosen=select_sources(sources,now,max_pages)
+              report={'schema':'rk-v31-multibuy-discovery-staging','at':now.isoformat(timespec='seconds'),
+                      'total_trusted_listing_sources':len(sources),'selected_listing_sources':len(chosen),
+                      'checked_pages':0,'blocked':False,'errors':[],'candidates':[],'new_candidates':0,
+                      'note':'Review-only! These candidates are NOT added to confirmed promotions or to the product catalogue.'}
+              seen=set()
+              if not chosen:return report
+              with sync_playwright() as pw:
+                  browser=pw.chromium.launch(headless=True,args=['--no-sandbox'])
+                  try:
+                      ctx=browser.new_context(locale='cs-CZ',timezone_id='Europe/Prague',viewport={'width':1366,'height':900})
+                      page=ctx.new_page()
+                      for source in chosen:
+                          if not trusted_source(source):raise AssertionError('Untrusted source in candidate list')
+                          time.sleep(delay)
+                          try:
+                              rsp=page.goto(source,wait_until='domcontentloaded',timeout=20000)
+                              code=rsp.status if rsp else None
+                              if code in (403,429,503):
+                                  report['blocked']=True;report['errors'].append(f'HTTP {code}');break
+                              if code!=200:
+                                  report['errors'].append('HTTP '+str(code)+' '+source);continue
+                              report['checked_pages']+=1
+                              for scroll in range(5):
+                                  page.wait_for_timeout(300)
+                                  rows=page.evaluate(DISCOVER_JS)
+                                  report['candidates']+=scan_rows(rows,sku_map,source,seen)
+                                  if scroll<4:page.evaluate('window.scrollBy(0,1050)')
+                          except Exception as exc:
+                              report['errors'].append(type(exc).__name__+': '+str(exc)[:90])
+                      ctx.close()
+                  finally:browser.close()
+              report['new_candidates']=len(report['candidates'])
+              return report
+
+          def main():
+              pa=argparse.ArgumentParser()
+              pa.add_argument('--catalog',required=True);pa.add_argument('--report',required=True)
+              pa.add_argument('--pages',type=int,default=8);pa.add_argument('--delay',type=float,default=3.3)
+              args=pa.parse_args()
+              if not 1<=args.pages<=12 or not 3.3<=args.delay<=30:raise SystemExit('Unsafe discovery batch')
+              db=json.loads(Path(args.catalog).read_text('utf8'))
+              rep=discover(db,args.pages,args.delay)
+              target=Path(args.report);target.parent.mkdir(parents=True,exist_ok=True)
+              target.write_text(json.dumps(rep,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
+              print(json.dumps({k:v for k,v in rep.items() if k!='candidates'},ensure_ascii=False))
+
+          if __name__=='__main__':main()
+          PYV31_DISCOVERY
+          cat > .v28/test_production_v31.py <<'PYV31_TEST'
+          import copy
+          from datetime import datetime,timezone,timedelta
+          import unittest
+          from production_v31 import build_audit,confirmed,regular_promo,patch_html
+          from discovery_v31 import trusted_source,listing_sources,select_sources,scan_rows
+
+          NOW=datetime(2026,10,23,16,0,tzinfo=timezone.utc)
+
+          def product(n,shop='Košík'):
+              return {'store':shop,'url':('https://www.kosik.cz/p' if shop=='Košík' else 'https://www.rohlik.cz/')+str(n)+'-test',
+                      'name':f'Test {n}', 'price_status':'ok','price_czk':39.9,'checked_at':NOW.isoformat(),
+                      'multibuy':[], 'original_price_czk':None,'discount_pct':None}
+
+          def verified(n):
+              p=product(n);p['multibuy']=[{'min_qty':2,'price_czk':35.9}]
+              p['multibuy_v28_status']='verified';p['multibuy_v28_verified_at']=NOW.isoformat()
+              p['multibuy_v28_source_url']='https://www.kosik.cz/s5_c97097-sunky'
+              p['multibuy_v28_verified_offer']={'pack_price_czk':39.9,'tiers':[{'min_qty':2,'price_czk':35.9}]}
+              return p
+
+          def data(items):
+              cat={'items':items,'last_price_monitor_at':NOW.isoformat()}
+              tax={'items':[{'store':p['store'],'url':p['url'],'category_v27':{'status':'verified','category':'Potraviny'}} for p in items]}
+              return cat,tax
+
+          class Quality(unittest.TestCase):
+              def test_recent_verified(self):self.assertTrue(confirmed(verified(2),NOW))
+              def test_evidence_expired(self):
+                  p=verified(2);p['multibuy_v28_verified_at']=(NOW-timedelta(hours=37)).isoformat()
+                  self.assertFalse(confirmed(p,NOW))
+              def test_untrusted_listing_rejected(self):
+                  p=verified(2);p['multibuy_v28_source_url']='https://evil.kosik.cz/s5_fake'
+                  self.assertFalse(confirmed(p,NOW))
+              def test_pack_must_be_higher(self):
+                  p=verified(2);p['multibuy_v28_verified_offer']['tiers'][0]['price_czk']=40.0
+                  self.assertFalse(confirmed(p,NOW))
+              def test_partial_evidence_rejected(self):
+                  p=verified(2);p['multibuy_v28_verified_offer']['tiers']=[]
+                  self.assertFalse(confirmed(p,NOW))
+              def test_stale_regular_offer_not_counted(self):
+                  p=product(3);p['original_price_czk']=49.9;p['discount_pct']=20
+                  self.assertTrue(regular_promo(p,NOW))
+                  p['checked_at']=(NOW-timedelta(hours=74)).isoformat()
+                  self.assertFalse(regular_promo(p,NOW))
+              def test_count_dedup(self):
+                  a=verified(1);a['original_price_czk']=49.9;a['discount_pct']=20
+                  b=product(2);b['original_price_czk']=49.9;b['discount_pct']=20
+                  x,y=data([a,b]);v=build_audit(x,y,NOW,min_products=2)
+                  self.assertEqual((v['ordinary_verified_discounts'],v['fresh_verified_quantity_offers'],v['verified_distinct_offers'],v['overlap_between_types']),(2,1,2,1))
+              def test_price_mismatch_audited_not_changed(self):
+                  p=verified(1);p['price_czk']=37.9
+                  cat,tax=data([p]);saved=copy.deepcopy(cat)
+                  r=build_audit(cat,tax,NOW,min_products=1)
+                  self.assertEqual(r['quantity_current_stored_price_mismatch'],1)
+                  self.assertEqual(cat,saved)
+              def test_category_identity_guard(self):
+                  x,y=data([verified(1)]);y['items'][0]['url']='https://wrong/url'
+                  with self.assertRaises(ValueError):build_audit(x,y,NOW,min_products=1)
+              def test_duplicate_identity_guard(self):
+                  p=verified(1);x,y=data([p,copy.deepcopy(p)])
+                  with self.assertRaises(ValueError):build_audit(x,y,NOW,min_products=2)
+              def test_realistic_1090_baseline_390_plus_84(self):
+                  products=[product(i+1,'Košík' if i<556 else 'Rohlík') for i in range(1090)]
+                  for i in range(390):
+                      products[i]['original_price_czk']=49.9
+                      products[i]['discount_pct']=20.0
+                  for i in range(390,477):
+                      products[i]['multibuy']=[{'min_qty':2,'price_czk':35.9}]
+                      if i<474:
+                          products[i].update(multibuy_v28_status='verified',
+                              multibuy_v28_verified_at=NOW.isoformat(),
+                              multibuy_v28_source_url='https://www.kosik.cz/s5_c1-food',
+                              multibuy_v28_verified_offer={'pack_price_czk':39.9,'tiers':[{'min_qty':2,'price_czk':35.9}]})
+                          if i<394:
+                              products[i]['price_czk']=37.9
+                  for i in range(1058,1090):products[i]['price_status']='price_unverified'
+                  cat,tax=data(products)
+                  result=build_audit(cat,tax,NOW)
+                  self.assertEqual(result['verified_distinct_offers'],474)
+                  self.assertEqual(result['ordinary_verified_discounts'],390)
+                  self.assertEqual(result['fresh_verified_quantity_offers'],84)
+                  self.assertEqual(result['quantity_current_stored_price_mismatch'],4)
+                  self.assertEqual(result['saved_quantity_offers'],87)
+                  self.assertEqual(result['stored_prices_ok'],1058)
+
+              def test_postcode_unsupported_flagged(self):
+                  p=verified(1);x,y=data([p]);r=build_audit(x,y,NOW,min_products=1)
+                  self.assertEqual(r['postcode_verified_products'],0)
+                  self.assertIn('Availability and actual price for a delivery postcode are not verified',r['warnings'])
+
+          class Html(unittest.TestCase):
+              def fixture(self):
+                  return '''<span id="offersV27Status" class="quicknote" role="status" aria-live="polite">Načítám podmíněné nabídky…</span>
+          const verifiedOffer=p=>datedPromo(p)||(savedMulti(p)&&!multiUnconfirmed(p));
+          const actualDrop=p=>freshPrice(p);
+          ${money(price?p.price_czk:null)}
+          ${good?money(p.price_czk):'Cena nezjištěna'}
+          const label=freshPrice(p)?'Cena ≤72 h':price?'Starší cena':'Bez ceny';
+          ${freshPrice(p)?'Cena ≤ 72 h':good?'Starší cenové pozorování':'Bez potvrzené ceny'}
+          ${esc((p.checked_at||'').replace('T',' ').slice(0,16))}
+          ${esc((p.checked_at||'Bez data').replace('T',' ').slice(0,19))}
+          ${freshPrice(p)?'age-ok':'age-warn'}
+          String(b.checked_at||'').localeCompare(String(a.checked_at||''))
+          !price||p.price_czk<f.min||p.price_czk>f.max
+          const va=isPrice(a)?a.price_czk:null,vb=isPrice(b)?b.price_czk:null;
+          id="mobileCards" id="qMultiConfirmed" await loadCategoryOverlay()'''
+              def test_html_replacement(self):
+                  p=patch_html(self.fixture())
+                  self.assertIn("good?money(effectiveSinglePrice(p))",p)
+                  self.assertIn('Cena ověřena z Multikupu',p)
+                  self.assertIn('data/production_health_v31.json',p)
+                  self.assertNotIn('good?money(p.price_czk)',p)
+              def test_html_idempotent(self):
+                  p=patch_html(self.fixture());self.assertEqual(p,patch_html(p))
+              def test_bad_template_fails(self):
+                  with self.assertRaises(ValueError):patch_html('not a dashboard')
+
+          class Discovery(unittest.TestCase):
+              def test_trusted_url(self):
+                  self.assertTrue(trusted_source('https://www.kosik.cz/s5_c97097-sunky'))
+                  self.assertFalse(trusted_source('https://kosik.cz.evil.org/s5_fake'))
+                  self.assertFalse(trusted_source('http://www.kosik.cz/s5_fake'))
+              def test_collect_only_exact_sku_and_no_old_quantity(self):
+                  source='https://www.kosik.cz/s5_c97097-sunky'
+                  old=verified(1);old['multibuy_v28_source_url']=source
+                  new=product(2)
+                  map_by_id={'1':old,'2':new}
+                  rows=[{'sku':'1','href':old['url'],'text':'39 90 od 2 ks\n49,90 Kč za 1 ks'},
+                        {'sku':'2','href':new['url'],'text':'35 90 od 2 ks\n39,90 Kč za 1 ks'},
+                        {'sku':'3','href':'https://www.kosik.cz/p3-untracked','text':'35 90 od 2 ks\n39,90 Kč za 1 ks'}]
+                  found=scan_rows(rows,map_by_id,source,set())
+                  self.assertEqual(len(found),1)
+                  self.assertEqual(found[0]['sku'],'2')
+                  self.assertEqual(found[0]['status'],'candidate_pending_independent_recheck')
+              def test_staged_only(self):
+                  src='https://www.kosik.cz/s5_c97097-sunky';p=product(2)
+                  before=copy.deepcopy(p)
+                  scan_rows([{'sku':'2','href':p['url'],'text':'35 90 od 2 ks\n39,90 Kč za 1 ks'}],{'2':p},src,set())
+                  self.assertEqual(p,before)
+              def test_rotation(self):
+                  a=['https://www.kosik.cz/s5_'+str(i) for i in range(13)]
+                  self.assertEqual(len(select_sources(a,NOW,max_pages=8)),8)
+                  self.assertNotEqual(select_sources(a,NOW,max_pages=8),select_sources(a,NOW+timedelta(hours=12),max_pages=8))
+
+          if __name__=='__main__':unittest.main()
+          PYV31_TEST
 
       - name: Run offline regression tests and snapshot data
         shell: bash
@@ -776,6 +1247,67 @@ jobs:
           PY
           git diff --check
 
+
+      - name: Production v31 - audit data freshness and display verified single-pack prices
+        id: production
+        if: steps.verify.outcome == 'success' && steps.integrity.outcome == 'success'
+        shell: bash
+        run: |
+          set -euo pipefail
+          export PYTHONPATH="$PWD/.v28:$PWD${PYTHONPATH:+:$PYTHONPATH}"
+          python .v28/production_v31.py \
+            --catalog docs/data/catalog_latest.json \
+            --taxonomy docs/data/taxonomy_v27_public.json \
+            --html docs/catalog.html \
+            --report docs/data/production_health_v31.json
+          python - <<'PY'
+          import json,subprocess
+          from pathlib import Path
+          report=json.loads(Path('docs/data/production_health_v31.json').read_text('utf8'))
+          assert report['products']>=1090
+          assert report['verified_distinct_offers']<=report['ordinary_verified_discounts']+report['fresh_verified_quantity_offers']
+          assert report['stored_prices_ok']+report['stored_prices_unverified']==report['products']
+          assert report['postcode_verified_products']<=report['products']
+          assert report['quantity_current_pack_prices_display_only']
+          html=Path('docs/catalog.html').read_text('utf8')
+          assert 'const effectiveSinglePrice=p=>' in html
+          assert 'data/production_health_v31.json' in html
+          Path('.v28/page_script.js').write_text(html.split('<script>',1)[1].split('</script>',1)[0],encoding='utf8')
+          changed=set(subprocess.check_output(['git','diff','--name-only'],text=True).splitlines())
+          assert changed <= {'docs/catalog.html','docs/data/catalog_latest.json','docs/data/production_health_v31.json'},changed
+          unknown=set(subprocess.check_output(['git','ls-files','--others','--exclude-standard','docs/data'],text=True).splitlines())
+          assert unknown <= {'docs/data/production_health_v31.json'},unknown
+          print('PRODUCTION V31 PASS:',report['verified_distinct_offers'],'offers,',report['quantity_current_stored_price_mismatch'],'current/catalog base-price mismatches')
+          PY
+          node --check .v28/page_script.js
+          git diff --check
+
+      - name: v31 - stage evidence of NEW quantity offers (never publish as verified)
+        id: discovery
+        if: steps.production.outcome == 'success'
+        shell: bash
+        timeout-minutes: 10
+        continue-on-error: true
+        run: |
+          set -euo pipefail
+          export PYTHONPATH="$PWD/.v28:$PWD${PYTHONPATH:+:$PYTHONPATH}"
+          python .v28/discovery_v31.py \
+            --catalog docs/data/catalog_latest.json \
+            --report .v28/discovery_v31_staging.json \
+            --pages 8 --delay 3.5
+          test -z "$(git status --porcelain -- docs/data/taxonomy_v27_public.json)"
+
+      - name: Upload production and discovery diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rk-v31-production-audit-and-candidates
+          retention-days: 21
+          if-no-files-found: warn
+          path: |
+            docs/data/production_health_v31.json
+            .v28/discovery_v31_staging.json
+
       - name: Preserve status report even when merchant blocks requests
         if: always()
         uses: actions/upload-artifact@v4
@@ -786,13 +1318,13 @@ jobs:
           path: .v28/quantity_v28_report.json
 
       - name: Publish only verified diagnostic fields and additive HTML
-        if: steps.verify.outcome == 'success' && steps.integrity.outcome == 'success'
+        if: steps.verify.outcome == 'success' && steps.integrity.outcome == 'success' && steps.production.outcome == 'success'
         shell: bash
         run: |
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- docs/data/catalog_latest.json docs/catalog.html
+          git add -- docs/data/catalog_latest.json docs/catalog.html docs/data/production_health_v31.json
           if ! git diff --cached --quiet; then
             git commit -m 'v28: verify stored Košík quantity offers without guessing prices [skip ci]'
             git push origin HEAD:refs/heads/fix/real-product-price-reading-v20
@@ -820,6 +1352,6 @@ jobs:
           PY
 
       - name: Fail when verification or integrity guard fails
-        if: steps.verify.outcome != 'success' || steps.integrity.outcome != 'success'
+        if: steps.verify.outcome != 'success' || steps.integrity.outcome != 'success' || steps.production.outcome != 'success'
         shell: bash
         run: exit 1
