@@ -101,7 +101,7 @@ main{max-width:1780px;padding:18px 24px 40px;margin:auto}.notice{border:1px soli
  <div class="v26-mobile-tools"><button type="button" id="mobileFilters" aria-controls="filtersV26" aria-expanded="false">☷ Další filtry a řazení</button><span>20 výrobků na mobilní stránku</span></div><div class="filters v26-filter-collapsed" id="filtersV26">
   <div class="field"><label for="shop">Obchod</label><select id="shop"><option value="">Oba obchody</option><option>Rohlík</option><option>Košík</option></select></div>
   <div class="field"><label for="category">Kategorie</label><select id="category"><option value="">Všechny kategorie</option></select></div>
-   <div class="field"><label for="categoryStatus">Stav kategorie</label><select id="categoryStatus"><option value="">Všechny stavy</option><option value="verified">Plně ověřené</option><option value="review">Ke kontrole (včetně nesouladu)</option><option value="mismatch">Nesoulad se sledováním</option><option value="unmapped">Bez potvrzené kategorie</option></select></div>
+   <div class="field"><label for="categoryStatus">Stav kategorie</label><select id="categoryStatus"><option value="">Všechny stavy</option><option value="verified">Plně ověřené</option><option value="review">Všechny položky k prověření</option><option value="rule-review">Kategorie potvrzena, pravidlo k prověření</option><option value="mismatch">Nesoulad se sledováním</option><option value="unmapped">Bez potvrzené kategorie</option></select></div>
   <div class="field"><label for="brand">Značka</label><input id="brand" type="search" placeholder="Název značky..."></div>
   <div class="field"><label for="state">Zobrazení / sleva</label><select id="state"><option value="">Všechny produkty</option><option value="priced">S ověřenou cenou</option><option value="missing">Bez ceny</option><option value="sale">Aktuálně zlevněné</option><option value="20">Sleva alespoň 20 %</option><option value="30">Sleva alespoň 30 %</option><option value="40">Sleva alespoň 40 %</option><option value="quantity">Množstevní nabídka</option></select></div>
   <div class="field"><label for="minPrice">Cena od (Kč)</label><input id="minPrice" type="number" min="0" step="1" placeholder="Od"></div>
@@ -150,7 +150,7 @@ const photo=p=>/^https:\/\//.test(p.image_url||'')?`<img class="photo" loading="
 const conditions=p=>{let result=[];if(Array.isArray(p.multibuy))for(const x of p.multibuy){if(Number(x.min_qty)>=2&&typeof x.price_czk==='number')result.push(`od ${Number(x.min_qty)} ks za ${money(x.price_czk)}`)}if(p.offer_valid_until){const expired=p.offer_valid_until<today();const fmt=p.offer_valid_until.split('-').reverse().join('.');result.push(`<span class="${expired?'expired':'cond'}">${expired?'Akce skončila':'Platí do'} ${fmt}</span>`)}else if(disc(p)!=null)result.push('Datum konce neuvedeno');return result.length?result.join(' · '):'—'};
 function chosen(){const f={shop:$('shop').value,category:$('category').value,categoryStatus:$('categoryStatus').value,brand:$('brand').value.trim().toLowerCase(),state:$('state').value,min:Number($('minPrice').value||0),max:$('maxPrice').value?Number($('maxPrice').value):Infinity,validity:$('validity').value,until:$('until').value,search:$('search').value.trim().toLowerCase()};
  const day=today();let list=(db.items||[]).filter(p=>{if(view==='deals'&&!datedPromo(p))return false;if(view==='favs'&&!favs.has(productId(p)))return false;if(view==='drops'&&!actualDrop(p))return false;if(view==='missing'&&isPrice(p))return false;const price=isPrice(p);const reduction=disc(p);const until=p.offer_valid_until;const quantity=Array.isArray(p.multibuy)&&p.multibuy.length>0;
- if(f.shop&&p.store!==f.shop)return false;if(f.category&&!cats(p).includes(f.category))return false;if(f.categoryStatus==='verified'&&p.category_v27?.status!=='verified')return false;if(f.categoryStatus==='review'&&p.category_v27?.status==='verified')return false;if(f.categoryStatus==='mismatch'&&p.category_v27?.status!=='mismatch')return false;if(f.categoryStatus==='unmapped'&&p.category_v27?.category)return false;
+ if(f.shop&&p.store!==f.shop)return false;if(f.category&&!cats(p).includes(f.category))return false;if(f.categoryStatus==='verified'&&p.category_v27?.status!=='verified')return false;if(f.categoryStatus==='review'&&p.category_v27?.status==='verified')return false;if(f.categoryStatus==='rule-review'&&!(p.category_v27?.status==='review'&&Boolean(p.category_v27?.category)))return false;if(f.categoryStatus==='mismatch'&&p.category_v27?.status!=='mismatch')return false;if(f.categoryStatus==='unmapped'&&p.category_v27?.category)return false;
  if(f.brand&&!String(p.brand||p.title||p.name||'').toLowerCase().includes(f.brand))return false;
  if(f.search&&!`${p.name||''} ${p.title||''} ${p.brand||''} ${p.product_description||''} ${cats(p).join(' ')}`.toLowerCase().includes(f.search))return false;
  if(f.state==='priced'&&!price||f.state==='missing'&&price||f.state==='sale'&&!active(p)||['20','30','40'].includes(f.state)&&!(active(p)&&reduction>=Number(f.state))||f.state==='quantity'&&!quantity)return false;
@@ -186,13 +186,15 @@ function renderTaxonomyKpisV27(){
  }
  const mapped=rows.filter(p=>Boolean(p.category_v27.category)).length;
  const verified=rows.filter(p=>p.category_v27.status==='verified').length;
- const missing=rows.length-mapped,review=rows.length-verified;
+ const missing=rows.length-mapped;
+ const ruleReview=rows.filter(p=>p.category_v27.status==='review'&&Boolean(p.category_v27.category)).length;
+ const mismatch=rows.filter(p=>p.category_v27.status==='mismatch').length;
  const pct=Math.round(mapped*1000/rows.length)/10;
  $('taxKpiMapped').textContent=nf(mapped);
  $('taxKpiVerified').textContent=nf(verified);
  $('taxKpiUnmapped').textContent=nf(missing);
  $('taxKpiCoverage').textContent=pct.toLocaleString('cs-CZ',{maximumFractionDigits:1})+' % z '+nf(rows.length)+' výrobků';
- $('taxKpiReview').textContent=nf(review)+' k ověření včetně neshod; výrobky zůstávají v katalogu';
+ $('taxKpiReview').textContent=nf(missing)+' bez kategorie · '+nf(ruleReview)+' k ověření pravidla · '+nf(mismatch)+' nesouladů';
  fill.style.width=pct+'%';bar.setAttribute('aria-valuenow',String(pct));
 }
 async function loadCategoryOverlay(){
@@ -211,10 +213,13 @@ async function loadCategoryOverlay(){
    p.store_category_path=tax.store_category_path||[];
    p.category_source=tax.category_source||null;
   }
-  const m=data.counts?.mapped||0,v=data.counts?.verified||0;
-  const review=db.items.length-v;
+  const m=db.items.filter(p=>Boolean(p.category_v27?.category)).length;
+  const v=db.items.filter(p=>p.category_v27?.status==='verified').length;
+  const ruleReview=db.items.filter(p=>p.category_v27?.status==='review'&&Boolean(p.category_v27?.category)).length;
+  const mismatch=db.items.filter(p=>p.category_v27?.status==='mismatch').length;
+  const missing=db.items.length-m;
   box.textContent='Kategorie dle e-shopu: '+nf(m)+' / '+nf(db.items.length)+'; plně ověřeno '+nf(v)+
-   '; ke kontrole '+nf(review)+'. Neověřené a nesouhlasící položky zůstávají v katalogu.';
+   '; pravidlo k ověření '+nf(ruleReview)+'; nesoulad '+nf(mismatch)+'; bez kategorie '+nf(missing)+'.';
  }catch(e){
   for(const p of db.items){delete p.category_v27;}
   box.textContent='Kategorie e-shopů nejsou ověřené ('+e.message+'). Položky jsou ponechány ke kontrole; ceny se zobrazují beze změny.';
