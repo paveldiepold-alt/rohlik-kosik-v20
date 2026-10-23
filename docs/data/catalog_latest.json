@@ -460,7 +460,7 @@
       "monitor_v26_attempts": 5,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:21:25+00:00",
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:54:36+00:00",
       "multibuy_v28_status": "title_mismatch",
       "multibuy_v28_note": "Title differs; SKU-linked Multikup card not found",
       "multibuy_v28_source_url": null
@@ -493,10 +493,20 @@
       "monitor_v26_attempts": 5,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:21:31+00:00",
-      "multibuy_v28_status": "title_mismatch",
-      "multibuy_v28_note": "Title differs; SKU-linked Multikup card not found",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:54:41+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c11115-kuchynske-uterky",
+      "multibuy_v28_verified_at": "2026-10-23T14:54:41+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 26.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 22.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -2356,10 +2366,20 @@
       "monitor_v26_attempts": 5,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:21:38+00:00",
-      "multibuy_v28_status": "title_mismatch",
-      "multibuy_v28_note": "Title differs; SKU-linked Multikup card not found",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:54:47+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c1484-spreje",
+      "multibuy_v28_verified_at": "2026-10-23T14:54:47+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 104.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 82.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -2389,10 +2409,20 @@
       "monitor_v26_attempts": 5,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:21:44+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:54:52+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c1484-spreje",
+      "multibuy_v28_verified_at": "2026-10-23T14:54:52+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 104.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 82.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -2422,10 +2452,20 @@
       "monitor_v26_attempts": 5,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:21:52+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:54:57+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c1517-panske",
+      "multibuy_v28_verified_at": "2026-10-23T14:54:57+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 119.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 84.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -2455,10 +2495,20 @@
       "monitor_v26_attempts": 5,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:21:58+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:55:03+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c1517-panske",
+      "multibuy_v28_verified_at": "2026-10-23T14:55:03+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 119.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 84.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -2488,10 +2538,20 @@
       "monitor_v26_attempts": 5,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:22:04+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:55:08+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c1484-spreje",
+      "multibuy_v28_verified_at": "2026-10-23T14:55:08+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 104.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 82.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -2521,10 +2581,20 @@
       "monitor_v26_attempts": 5,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:22:11+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:55:14+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c1517-panske",
+      "multibuy_v28_verified_at": "2026-10-23T14:55:14+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 109.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 84.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -2554,10 +2624,20 @@
       "monitor_v26_attempts": 5,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:22:17+00:00",
-      "multibuy_v28_status": "title_mismatch",
-      "multibuy_v28_note": "Title differs; SKU-linked Multikup card not found",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:55:19+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c1484-spreje",
+      "multibuy_v28_verified_at": "2026-10-23T14:55:19+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 104.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 82.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -3769,10 +3849,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:22:24+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:55:25+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c36301-sunky",
+      "multibuy_v28_verified_at": "2026-10-23T14:55:25+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 39.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 35.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -3806,10 +3896,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:22:30+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:55:31+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5-multikup",
+      "multibuy_v28_verified_at": "2026-10-23T14:55:31+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 39.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 35.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -3963,10 +4063,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:22:36+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:55:37+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c36301-sunky",
+      "multibuy_v28_verified_at": "2026-10-23T14:55:37+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 39.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 35.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -4026,10 +4136,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:22:42+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:55:42+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c36298-parky-klobasy-slaniny",
+      "multibuy_v28_verified_at": "2026-10-23T14:55:42+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 79.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 59.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -4063,10 +4183,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:22:48+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:55:48+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c36301-sunky",
+      "multibuy_v28_verified_at": "2026-10-23T14:55:48+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 39.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 35.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -4100,10 +4230,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:22:53+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:55:53+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c36301-sunky",
+      "multibuy_v28_verified_at": "2026-10-23T14:55:53+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 39.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 35.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -4317,10 +4457,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:22:59+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:55:58+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c36301-sunky",
+      "multibuy_v28_verified_at": "2026-10-23T14:55:58+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 41.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 36.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -4415,10 +4565,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:23:05+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:56:04+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c36300-salamy",
+      "multibuy_v28_verified_at": "2026-10-23T14:56:04+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 24.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 22.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -4448,10 +4608,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:23:11+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:56:09+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c1465-koupelna",
+      "multibuy_v28_verified_at": "2026-10-23T14:56:09+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 89.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 69.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -4481,10 +4651,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:23:17+00:00",
-      "multibuy_v28_status": "title_mismatch",
-      "multibuy_v28_note": "Title differs; SKU-linked Multikup card not found",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:56:15+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c1465-koupelna",
+      "multibuy_v28_verified_at": "2026-10-23T14:56:15+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 89.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 69.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -4883,10 +5063,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:23:23+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:56:21+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c3492-belici",
+      "multibuy_v28_verified_at": "2026-10-23T14:56:21+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 67.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 52.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -4916,10 +5106,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:23:29+00:00",
-      "multibuy_v28_status": "title_mismatch",
-      "multibuy_v28_note": "Title differs; SKU-linked Multikup card not found",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:56:26+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c20885-multipacky-zubni-pasty",
+      "multibuy_v28_verified_at": "2026-10-23T14:56:26+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 184.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 144.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -4949,10 +5149,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:23:35+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:56:31+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c3492-belici",
+      "multibuy_v28_verified_at": "2026-10-23T14:56:31+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 67.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 52.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -5012,10 +5222,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:23:41+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:56:37+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c11050-proti-zubnimu-kazu",
+      "multibuy_v28_verified_at": "2026-10-23T14:56:37+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 54.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 39.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -5135,10 +5355,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:23:46+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:56:42+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c11100-pro-svezi-dech",
+      "multibuy_v28_verified_at": "2026-10-23T14:56:42+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 84.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 52.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -5168,10 +5398,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:23:52+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:56:48+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c3492-belici",
+      "multibuy_v28_verified_at": "2026-10-23T14:56:48+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 119.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 94.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -5261,10 +5501,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:23:58+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:56:54+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c11100-pro-svezi-dech",
+      "multibuy_v28_verified_at": "2026-10-23T14:56:54+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 54.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 39.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -5294,10 +5544,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:24:04+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:56:59+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c3496-univerzalni-pece",
+      "multibuy_v28_verified_at": "2026-10-23T14:56:59+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 54.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 39.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -5357,10 +5617,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:24:09+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:57:05+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c3492-belici",
+      "multibuy_v28_verified_at": "2026-10-23T14:57:05+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 69.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 56.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -5390,10 +5660,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:24:15+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:57:10+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c3492-belici",
+      "multibuy_v28_verified_at": "2026-10-23T14:57:10+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 84.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 52.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -5711,10 +5991,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:24:21+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:57:15+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c11280-ochucene",
+      "multibuy_v28_verified_at": "2026-10-23T14:57:15+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 129.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 94.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -5764,10 +6054,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:24:27+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:57:21+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c11280-ochucene",
+      "multibuy_v28_verified_at": "2026-10-23T14:57:21+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 129.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 94.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -5797,10 +6097,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:24:32+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:57:26+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c11280-ochucene",
+      "multibuy_v28_verified_at": "2026-10-23T14:57:26+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 129.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 94.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -5830,10 +6140,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:24:38+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:57:32+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c11280-ochucene",
+      "multibuy_v28_verified_at": "2026-10-23T14:57:32+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 129.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 94.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -6552,9 +6872,9 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:24:44+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:57:38+00:00",
+      "multibuy_v28_status": "title_mismatch",
+      "multibuy_v28_note": "Title differs; SKU-linked Multikup card not found",
       "multibuy_v28_source_url": null
     },
     {
@@ -7319,10 +7639,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:24:50+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:57:43+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c8304-krajene",
+      "multibuy_v28_verified_at": "2026-10-23T14:57:43+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 21.9,
+        "tiers": [
+          {
+            "min_qty": 3,
+            "price_czk": 15.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -7352,10 +7682,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:24:56+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:57:49+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c8304-krajene",
+      "multibuy_v28_verified_at": "2026-10-23T14:57:49+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 21.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 16.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -7708,10 +8048,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:25:02+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:57:54+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c36997-uzeniny-a-lahudky-bez-lepku",
+      "multibuy_v28_verified_at": "2026-10-23T14:57:54+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 46.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 42.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -7745,10 +8095,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:25:07+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:58:00+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c2538-drubezi",
+      "multibuy_v28_verified_at": "2026-10-23T14:58:00+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 49.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 43.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -7808,10 +8168,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:25:13+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:58:05+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c37024-svaciny",
+      "multibuy_v28_verified_at": "2026-10-23T14:58:05+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 44.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 32.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -7875,10 +8245,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:25:19+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:58:11+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c18970-nejvyssi-jakosti",
+      "multibuy_v28_verified_at": "2026-10-23T14:58:11+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 44.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 39.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -7942,10 +8322,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:25:25+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:58:16+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c18970-nejvyssi-jakosti",
+      "multibuy_v28_verified_at": "2026-10-23T14:58:16+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 44.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 39.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -8044,10 +8434,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:25:31+00:00",
-      "multibuy_v28_status": "title_mismatch",
-      "multibuy_v28_note": "Title differs; SKU-linked Multikup card not found",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:58:21+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c2538-drubezi",
+      "multibuy_v28_verified_at": "2026-10-23T14:58:21+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 47.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 39.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -8141,10 +8541,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:25:37+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:58:27+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c18970-nejvyssi-jakosti",
+      "multibuy_v28_verified_at": "2026-10-23T14:58:27+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 44.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 39.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -8178,10 +8588,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:25:43+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:58:32+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c37024-svaciny",
+      "multibuy_v28_verified_at": "2026-10-23T14:58:32+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 46.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 42.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -8215,10 +8635,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:25:49+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:58:38+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c18970-nejvyssi-jakosti",
+      "multibuy_v28_verified_at": "2026-10-23T14:58:38+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 46.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 42.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -8372,10 +8802,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:25:54+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:58:43+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c2538-drubezi",
+      "multibuy_v28_verified_at": "2026-10-23T14:58:43+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 47.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 42.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -8448,10 +8888,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:26:00+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:58:49+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c18970-nejvyssi-jakosti",
+      "multibuy_v28_verified_at": "2026-10-23T14:58:49+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 45.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 39.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -8485,10 +8935,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:26:06+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:58:54+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c18970-nejvyssi-jakosti",
+      "multibuy_v28_verified_at": "2026-10-23T14:58:54+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 46.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 42.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -8518,10 +8978,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:26:11+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:59:00+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c37024-svaciny",
+      "multibuy_v28_verified_at": "2026-10-23T14:59:00+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 44.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 34.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -8585,10 +9055,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:26:17+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:59:05+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c18970-nejvyssi-jakosti",
+      "multibuy_v28_verified_at": "2026-10-23T14:59:05+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 46.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 42.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -9471,10 +9951,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:26:23+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:59:11+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c36206-ubrousky",
+      "multibuy_v28_verified_at": "2026-10-23T14:59:11+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 44.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 35.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -9594,10 +10084,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:26:30+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:59:16+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c36206-ubrousky",
+      "multibuy_v28_verified_at": "2026-10-23T14:59:16+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 169.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 134.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -9627,10 +10127,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:26:35+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:59:21+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c36206-ubrousky",
+      "multibuy_v28_verified_at": "2026-10-23T14:59:21+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 49.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 39.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -9718,10 +10228,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:26:41+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:59:27+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c11115-kuchynske-uterky",
+      "multibuy_v28_verified_at": "2026-10-23T14:59:27+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 32.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 28.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -9811,10 +10331,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:26:47+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:59:32+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c3292-vlhcene-ubrousky",
+      "multibuy_v28_verified_at": "2026-10-23T14:59:32+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 44.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 32.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -10024,10 +10554,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:26:53+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:59:38+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c36206-ubrousky",
+      "multibuy_v28_verified_at": "2026-10-23T14:59:38+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 23.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 16.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -11320,10 +11860,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:26:59+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:59:44+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c36350-sladkosti-pro-deti",
+      "multibuy_v28_verified_at": "2026-10-23T14:59:44+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 19.9,
+        "tiers": [
+          {
+            "min_qty": 3,
+            "price_czk": 13.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -11353,10 +11903,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:27:05+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:59:49+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c10145-s-prichuti",
+      "multibuy_v28_verified_at": "2026-10-23T14:59:49+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 129.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 94.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -11386,10 +11946,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:27:11+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T14:59:55+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c37227-susenky-a-oplatky",
+      "multibuy_v28_verified_at": "2026-10-23T14:59:55+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 19.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 14.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -11419,10 +11989,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:27:17+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T15:00:00+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c10225-s-prichuti",
+      "multibuy_v28_verified_at": "2026-10-23T15:00:00+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 29.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 23.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -11452,10 +12032,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:27:22+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T15:00:06+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c10225-s-prichuti",
+      "multibuy_v28_verified_at": "2026-10-23T15:00:06+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 59.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 39.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -11485,10 +12075,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:27:28+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T15:00:11+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c10225-s-prichuti",
+      "multibuy_v28_verified_at": "2026-10-23T15:00:11+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 59.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 39.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -11518,10 +12118,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:27:34+00:00",
-      "multibuy_v28_status": "title_mismatch",
-      "multibuy_v28_note": "Title differs; SKU-linked Multikup card not found",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T15:00:17+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c10225-s-prichuti",
+      "multibuy_v28_verified_at": "2026-10-23T15:00:17+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 129.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 94.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -11551,10 +12161,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:27:40+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T15:00:22+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c10225-s-prichuti",
+      "multibuy_v28_verified_at": "2026-10-23T15:00:22+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 59.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 39.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -11584,10 +12204,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:27:45+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T15:00:27+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c10225-s-prichuti",
+      "multibuy_v28_verified_at": "2026-10-23T15:00:27+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 59.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 39.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -11617,10 +12247,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:27:52+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T15:00:34+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c37227-susenky-a-oplatky",
+      "multibuy_v28_verified_at": "2026-10-23T15:00:34+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 19.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 14.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -11650,10 +12290,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:27:57+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T15:00:39+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c10145-s-prichuti",
+      "multibuy_v28_verified_at": "2026-10-23T15:00:39+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 104.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 79.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -11683,10 +12333,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:28:03+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T15:00:44+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c10225-s-prichuti",
+      "multibuy_v28_verified_at": "2026-10-23T15:00:44+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 104.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 79.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -11790,10 +12450,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:28:09+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T15:00:50+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c36771-mlsali-jste-jako-mali",
+      "multibuy_v28_verified_at": "2026-10-23T15:00:50+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 19.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 17.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -11823,10 +12493,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:28:15+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T15:00:56+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c37227-susenky-a-oplatky",
+      "multibuy_v28_verified_at": "2026-10-23T15:00:56+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 19.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 15.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -11886,10 +12566,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:28:21+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T15:01:01+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c10685-farfalle",
+      "multibuy_v28_verified_at": "2026-10-23T15:01:01+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 57.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 44.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -11949,10 +12639,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:28:27+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T15:01:07+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c10720-spagety-a-linguine",
+      "multibuy_v28_verified_at": "2026-10-23T15:01:07+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 57.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 44.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -12012,10 +12712,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:28:33+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T15:01:12+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c10715-penne",
+      "multibuy_v28_verified_at": "2026-10-23T15:01:12+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 57.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 44.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -12045,10 +12755,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:28:38+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T15:01:18+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c10720-spagety-a-linguine",
+      "multibuy_v28_verified_at": "2026-10-23T15:01:18+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 57.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 44.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -12478,10 +13198,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:28:44+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T15:01:23+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c3495-proti-paradontoze",
+      "multibuy_v28_verified_at": "2026-10-23T15:01:23+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 134.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 104.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -12511,10 +13241,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:28:49+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T15:01:29+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c3495-proti-paradontoze",
+      "multibuy_v28_verified_at": "2026-10-23T15:01:29+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 194.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 154.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -12574,10 +13314,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:28:55+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T15:01:34+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c11045-na-citlive-zuby",
+      "multibuy_v28_verified_at": "2026-10-23T15:01:34+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 169.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 134.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -14384,10 +15134,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:29:00+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T15:01:40+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c954-tavene",
+      "multibuy_v28_verified_at": "2026-10-23T15:01:40+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 74.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 64.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -14421,10 +15181,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:29:06+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T15:01:45+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c954-tavene",
+      "multibuy_v28_verified_at": "2026-10-23T15:01:45+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 74.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 64.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -14458,10 +15228,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:29:12+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T15:01:51+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c37137-slane-snidane",
+      "multibuy_v28_verified_at": "2026-10-23T15:01:51+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 48.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 44.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -16282,10 +17062,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:29:18+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T15:01:56+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c3492-belici",
+      "multibuy_v28_verified_at": "2026-10-23T15:01:56+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 44.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 34.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -18319,9 +19109,9 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:29:23+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
+      "multibuy_v28_last_attempt_at": "2026-10-23T15:02:03+00:00",
+      "multibuy_v28_status": "title_mismatch",
+      "multibuy_v28_note": "Title differs; SKU-linked Multikup card not found",
       "multibuy_v28_source_url": null
     },
     {
@@ -18442,10 +19232,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:29:29+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T15:02:08+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c2407-vlhcene",
+      "multibuy_v28_verified_at": "2026-10-23T15:02:08+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 89.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 69.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -18655,10 +19455,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:29:35+00:00",
-      "multibuy_v28_status": "title_mismatch",
-      "multibuy_v28_note": "Title differs; SKU-linked Multikup card not found",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T15:02:14+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c9560-3vrstve",
+      "multibuy_v28_verified_at": "2026-10-23T15:02:14+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 59.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 39.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -18688,10 +19498,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:29:41+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T15:02:19+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c9545-3vrstve",
+      "multibuy_v28_verified_at": "2026-10-23T15:02:19+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 64.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 42.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -18776,10 +19596,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:29:46+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T15:02:25+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c36778-5-vrstve",
+      "multibuy_v28_verified_at": "2026-10-23T15:02:25+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 179.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 144.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
@@ -18839,10 +19669,20 @@
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
       "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
-      "multibuy_v28_last_attempt_at": "2026-10-23T14:29:52+00:00",
-      "multibuy_v28_status": "ambiguous_card",
-      "multibuy_v28_note": "Matched product SKU but price terms ambiguous",
-      "multibuy_v28_source_url": null
+      "multibuy_v28_last_attempt_at": "2026-10-23T15:02:30+00:00",
+      "multibuy_v28_status": "verified",
+      "multibuy_v28_note": "SKU-linked Multikup card, explicit 1ks and quantity price",
+      "multibuy_v28_source_url": "https://www.kosik.cz/s5_c2407-vlhcene",
+      "multibuy_v28_verified_at": "2026-10-23T15:02:30+00:00",
+      "multibuy_v28_verified_offer": {
+        "pack_price_czk": 89.9,
+        "tiers": [
+          {
+            "min_qty": 2,
+            "price_czk": 69.9
+          }
+        ]
+      }
     },
     {
       "store": "Košík",
