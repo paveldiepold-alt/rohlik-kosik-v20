@@ -3952,10 +3952,6 @@
           }
         ]
       },
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_checked_at": "2026-10-23T19:28:33+00:00",
-      "v27_category_probe_attempts": 2,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Deodoranty a antiperspiranty",
@@ -3965,6 +3961,10 @@
       "category_source": "jsonld_breadcrumb",
       "product_description": "Axe Black deodorant pro muže poskytuje dlouhotrvající ochranu proti zápachu, na kterou se může každý muž spolehnout. Oblíbená vůně vyjadřuje eleganci, dynamiku…",
       "taxonomy_checked_at": "2026-10-23T19:28:33+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-23T19:28:33+00:00",
+      "v27_category_probe_attempts": 2,
       "category_v27": {
         "status": "verified",
         "evidence_state": "mapped",
@@ -6820,10 +6820,6 @@
       "price_history_previous_czk": 37.9,
       "price_history_previous_at": "2026-10-23T12:44:18+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_checked_at": "2026-10-23T19:28:10+00:00",
-      "v27_category_probe_attempts": 2,
       "store_category_path": [
         "Uzeniny a lahůdky",
         "Šunky",
@@ -6833,6 +6829,10 @@
       "category_source": "jsonld_breadcrumb",
       "product_description": "Nákup až ke dveřím na pár kliků. Doprava zdarma na velké nákupy, nový akční leták každý týden a spousta odměn ve věrnostních klubech.",
       "taxonomy_checked_at": "2026-10-23T19:28:10+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-23T19:28:10+00:00",
+      "v27_category_probe_attempts": 2,
       "category_v27": {
         "status": "verified",
         "evidence_state": "mapped",
@@ -8145,10 +8145,6 @@
           }
         ]
       },
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_checked_at": "2026-10-23T19:28:19+00:00",
-      "v27_category_probe_attempts": 2,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Čistící přípravky",
@@ -8157,6 +8153,10 @@
       "category_source": "jsonld_breadcrumb",
       "product_description": "Cif Cream Lemon je krémový abrazivní čisticí přípravek s citrónovou vůní. Snadno uvolní nečistoty a vyčistí i zdánlivě nevyčistitelné v celém domě, včetně…",
       "taxonomy_checked_at": "2026-10-23T19:28:19+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-23T19:28:19+00:00",
+      "v27_category_probe_attempts": 2,
       "category_v27": {
         "status": "verified",
         "evidence_state": "mapped",
@@ -30604,10 +30604,6 @@
       "price_history_previous_czk": 69.9,
       "price_history_previous_at": "2026-10-23T13:10:47+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_checked_at": "2026-10-23T19:28:29+00:00",
-      "v27_category_probe_attempts": 2,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Čistící přípravky",
@@ -30616,6 +30612,10 @@
       "category_source": "jsonld_breadcrumb",
       "product_description": "Účinně a šetrně odstraňuje mastnotu i usazené nečistoty ze všech omyvatelných ploch v kuchyni. Čištěné povrchy zanechává lesklé a příjemně voní. Používejte na…",
       "taxonomy_checked_at": "2026-10-23T19:28:29+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-23T19:28:29+00:00",
+      "v27_category_probe_attempts": 2,
       "category_v27": {
         "status": "verified",
         "evidence_state": "mapped",
@@ -73336,7 +73336,7 @@
   },
   "v27_probe_control": {
     "shop_backoff_until": {},
-    "last_batch_at": "2026-10-23T19:28:33+00:00"
+    "last_batch_at": "2026-10-23T21:40:19+00:00"
   },
   "v27_audit": {
     "rules_configured": 75,
@@ -73355,7 +73355,7 @@
     ],
     "unknown_rule_ids": [],
     "schema": "rk-v27-taxonomy-audit",
-    "generated_at": "2026-10-23T19:28:34+00:00",
+    "generated_at": "2026-10-23T21:40:20+00:00",
     "source_generated_at": "2026-10-21T14:12:55+00:00",
     "products_before": 1090,
     "products_after": 1090,
