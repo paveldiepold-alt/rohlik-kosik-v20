@@ -90,6 +90,59 @@ jobs:
               return round(v,2) if 0.5<=v<=50000 else None
 
 
+
+          def parse_detail_multikup(lines):
+              """Parse a product-scoped Košík 'Multikup – množstevní sleva' panel.
+
+              Real shop text renders in BOTH patterns:
+                 35,90 Kč od 2 ks / –10 % / 31,90 Kč od 3 ks / –20 % / 39 90
+                 35,90 Kč / -10 % / od 2 ks / 39 90
+              The caller takes only the target product's pre-Add-to-cart header.
+              A related variant, unit price, or non-Multikup promotion is insufficient.
+              """
+              heads=[i for i,ln in enumerate(lines) if re.search(r'(?i)\bmultikup\b.*množstevní\s+sleva',ln)]
+              if len(heads)!=1:return None
+              block=lines[heads[0]+1:heads[0]+25]
+              records=[]
+              for i,ln in enumerate(block):
+                  # Košík's actual product display often places Kč before 'od N ks'.
+                  inline=re.fullmatch(r'(.+?)\s*(?:Kč|CZK)?\s+od\s*(\d+)\s*ks',ln,re.I)
+                  if inline:
+                      qty=int(inline[2])
+                      sale=amount(re.sub(r'\s*(?:Kč|CZK)\s*$','',inline[1],flags=re.I).strip())
+                      if sale is None or not 2<=qty<=24:continue
+                      # Discount percentage is displayed on the line immediately below.
+                      adjacent=block[i+1] if i+1<len(block) else ''
+                      pct=re.fullmatch(r'[−–—-]\s*(\d{1,2})\s*%',adjacent)
+                      records.append((qty,sale,int(pct[1]) if pct else None,i+int(pct is not None)))
+                      continue
+                  qtyline=re.fullmatch(r'od\s*(\d+)\s*ks',ln,re.I)
+                  if not qtyline or not 2<=int(qtyline[1])<=24:continue
+                  # Alternative: amount / -N % / od N ks on three lines.
+                  if i<2:continue
+                  pct=re.fullmatch(r'[−–—-]\s*(\d{1,2})\s*%',block[i-1])
+                  if not pct:continue
+                  sale=amount(re.sub(r'\s*(?:Kč|CZK)\s*$','',block[i-2],flags=re.I).strip())
+                  if sale is not None:records.append((int(qtyline[1]),sale,int(pct[1]),i))
+              if not records:return None
+              # Only a whole-package amount after the last price tier, not Kč/kg or
+              # a price for a related/alternative SKU. The calling header stops at Add-to-cart.
+              end=max(x[3] for x in records)
+              base=None
+              for ln in block[end+1:end+5]:
+                  if re.search(r'(?i)(?:kč|czk)\s*/\s*(?:kg|l|ks|m|g|ml|100\s*g)',ln):break
+                  v=amount(re.sub(r'\s*(?:Kč|CZK)\s*$','',ln,flags=re.I).strip())
+                  if v is not None:
+                      base=v;break
+              if base is None:return None
+              if len({x[0] for x in records})!=len(records):return None
+              for qty,sale,pct,_ in records:
+                  if sale>=base:return None
+                  if pct is not None and (not 1<=pct<=90 or abs(100*(1-sale/base)-pct)>2.5):return None
+              ordered=[{'min_qty':qty,'price_czk':sale} for qty,sale,pct,_ in sorted(records)]
+              if any(b['price_czk']>a['price_czk'] for a,b in zip(ordered,ordered[1:])):return None
+              return {'pack_price_czk':base,'tiers':ordered}
+
           def parse_header_quantity(text):
               """Require explicit quantity, one-item pack price and strictly better cost.
 
@@ -105,6 +158,10 @@ jobs:
                   if STOP.match(line):break
                   cleaned.append(line)
                   if len(cleaned)>=32:break
+              # Košík product detail uses an explicit multi-tier card with percentages.
+              # Only within the exact product's price header, not related products.
+              detail=parse_detail_multikup(cleaned)
+              if detail is not None:return detail
               candidates=[];one=None
               for line in cleaned:
                   found=ONE.search(line)
@@ -116,6 +173,27 @@ jobs:
                       price=amount(match.group('sale'))
                       if 2<=qty<=24 and price is not None:
                           candidates.append({'min_qty':qty,'price_czk':price})
+              # Browser text may split the whole-crown and heller price onto separate lines:
+              # '35' + '90' + 'od 2 ks', or '39' + '90' + 'Kč za 1 ks'.
+              # Require explicit adjacent quantity labels to avoid unit-price confusion.
+              if one is None:
+                  for i,line in enumerate(cleaned):
+                      if re.fullmatch(r'(?i)(?:Kč|CZK)\s+za\s+1\s*ks',line):
+                          for n in (1,2):
+                              if i>=n:
+                                  v=amount(' '.join(cleaned[i-n:i]))
+                                  if v is not None:one=v;break
+                          if one is not None:break
+              if not candidates:
+                  for i,line in enumerate(cleaned):
+                      mm=re.fullmatch(r'od\s*(\d+)\s*ks',line,re.I)
+                      if not mm or not 2<=int(mm[1])<=24:continue
+                      for n in (2,1):
+                          if i>=n:
+                              v=amount(' '.join(cleaned[i-n:i]))
+                              if v is not None:
+                                  candidates.append({'min_qty':int(mm[1]),'price_czk':v})
+                                  break
               # Some rendering places the price and the condition on consecutive lines.
               # Preserve specificity: we only accept a 2-decimal pair directly before 'od N ks'.
               if not candidates:
@@ -249,7 +327,7 @@ jobs:
                                   return {'status':'verified','offer':offer,
                                           'note':'SKU-linked Multikup card, explicit 1ks and quantity price',
                                           'source_url':location,'blocked':False}
-                              return {'status':'ambiguous_card','note':'Matched product SKU but price terms ambiguous','blocked':False}
+                              return {'status':'ambiguous_card','note':'SKU matched; ambiguous text: '+re.sub(r'\s+',' ',card.get('text',''))[:100],'blocked':False}
                           if offset<3:
                               page.evaluate('window.scrollBy(0,1100)')
                               page.wait_for_timeout(300)
@@ -431,6 +509,41 @@ jobs:
           assert 'await loadCategoryOverlay()' in html and 'const savedMulti=' in html
           p.write_text(html,'utf8')
           PYV29_UI
+          cat > .v28/patch_ui_combined_v30.py <<'PYV30_UI'
+          """Count fresh, confirmed quantity promotions alongside ordinary verified discounts.
+          No historical offers in the confirmed KPI. Never modify prices or categories.
+          """
+          import sys
+          from pathlib import Path
+
+          def upgrade(html):
+              def switch(a,b):
+                  nonlocal html
+                  if b in html:
+                      if html.count(b)!=1:raise ValueError('HTML duplicated: '+b[:70])
+                      return
+                  if a not in html or html.count(a)!=1:
+                      raise ValueError('HTML unexpected/partially patched: '+a[:70])
+                  html=html.replace(a,b,1)
+              switch('const actualDrop=p=>',
+                     'const verifiedOffer=p=>datedPromo(p)||(savedMulti(p)&&!multiUnconfirmed(p));\nconst actualDrop=p=>')
+              switch("if(view==='deals'&&!datedPromo(p))", "if(view==='deals'&&!verifiedOffer(p))")
+              switch("$('qDeals').textContent=nf(db.items.filter(datedPromo).length)",
+                     "$('qDeals').textContent=nf(db.items.filter(verifiedOffer).length)")
+              switch("$('nDiscounts').textContent=nf(db.items.filter(datedPromo).length)",
+                     "$('nDiscounts').textContent=nf(db.items.filter(verifiedOffer).length)")
+              switch('<span>Akce s doloženou slevou</span>', '<span>Ověřené akce celkem</span>')
+              switch("'Akce: '+nf(regular)+' běžných slev + '+nf(onlyMulti)+' dalších množstevních nabídek'+' (z nich '+nf(unconfirmed)+' bez aktuálního potvrzení). Celkem potenciálně '+nf(regular+onlyMulti)+'; neznamená to stejně tolik platných dnešních slev.'",
+                     "'Ověřené akce: '+nf(db.items.filter(verifiedOffer).length)+' (běžné slevy '+nf(regular)+' + další aktuálně potvrzené množstevní '+nf(conditional.filter(p=>!multiUnconfirmed(p)&&!datedPromo(p)).length)+'). Neověřených historických množstevních nabídek: '+nf(unconfirmed)+'.'")
+              for tag in ('id="qMultiConfirmed"','await loadCategoryOverlay()','const verifiedOffer=p=>'):
+                  if tag not in html:raise ValueError('Missing essential dashboard feature '+tag)
+              return html
+
+          if __name__=='__main__':
+              p=Path(sys.argv[1]);old=p.read_text('utf8');new=upgrade(old)
+              if new!=old:p.write_text(new,encoding='utf8')
+              print('Verified-offer union UI updated:',new!=old)
+          PYV30_UI
           cat > .v28/test_quantity_v28.py <<'PYV28_test_quantity_v28_py'
           import copy,unittest
           from quantity_v28 import amount,parse_header_quantity,apply_result,process
@@ -444,6 +557,31 @@ jobs:
             self.assertEqual(len(parse_header_quantity(t)['tiers']),2)
            def test_price_separate_line(self):
             self.assertEqual(parse_header_quantity('29 90\nod 2 ks\n31,90 Kč za 1 ks')['tiers'][0]['price_czk'],29.9)
+           def test_real_chodura_kosik_multikup(self):
+            # From https://www.kosik.cz/p97097-chodura-bohemia-sunka-vyberova-platky-84-masa
+            t='100 g\nMultikup – množstevní sleva\n35,90 Kč od 2 ks\n–10 %\n31,90 Kč od 3 ks\n–20 %\n39 90\n399,00 Kč/kg\nDo košíku'
+            self.assertEqual(parse_header_quantity(t),{'pack_price_czk':39.9,'tiers':[{'min_qty':2,'price_czk':35.9},{'min_qty':3,'price_czk':31.9}]})
+           def test_real_chodura_wrong_percent_rejected(self):
+            t='Multikup – množstevní sleva\n35,90 Kč od 2 ks\n–33 %\n39 90\n399,00 Kč/kg'
+            self.assertIsNone(parse_header_quantity(t))
+           def test_real_cif_variant_not_counted(self):
+            t='500 ml\n46 90\n89,90\n-47 % do 30. 8.\n93,80 Kč/l\nDo košíku\nVarianty v Multikupu\n89,90'
+            self.assertIsNone(parse_header_quantity(t))
+           def test_no_base_package_price_rejected(self):
+            t='Multikup – množstevní sleva\n35,90 Kč od 2 ks\n–10 %\n399,00 Kč/kg\nDo košíku'
+            self.assertIsNone(parse_header_quantity(t))
+           def test_current_multikup_detail_two_tiers(self):
+            t='100 g\nMultikup – množstevní sleva\n31,90 Kč\n-20 %\nod 3 ks\n35,90 Kč\n-10 %\nod 2 ks\n39 90\n399,00 Kč/kg\nDo košíku'
+            self.assertEqual(parse_header_quantity(t),{'pack_price_czk':39.9,'tiers':[{'min_qty':2,'price_czk':35.9},{'min_qty':3,'price_czk':31.9}]})
+           def test_multikup_detail_percentage_must_match(self):
+            t='Multikup – množstevní sleva\n31,90 Kč\n-40 %\nod 3 ks\n39 90\n399,00 Kč/kg'
+            self.assertIsNone(parse_header_quantity(t))
+           def test_multikup_detail_must_have_heading(self):
+            t='31,90 Kč\n-20 %\nod 3 ks\n39 90\n399,00 Kč/kg'
+            self.assertIsNone(parse_header_quantity(t))
+           def test_listing_split_money(self):
+            t='Multikup\n35\n90\nod 2 ks\n39,90 Kč za 1 ks\n100 g'
+            self.assertEqual(parse_header_quantity(t),{'pack_price_czk':39.9,'tiers':[{'min_qty':2,'price_czk':35.9}]})
            def test_regular_sale_not_quantity(self):
             self.assertIsNone(parse_header_quantity('79 90\n114,90\n-30 % do 31. 10.\n0,91 Kč/m\nDo košíku'))
            def test_no_fake_quantity_from_related(self):
@@ -498,6 +636,34 @@ jobs:
             with self.assertRaises(ValueError):patch('nothing')
           if __name__=='__main__':unittest.main()
           PYV28_test_ui_v28_py
+          cat > .v28/test_ui_combined_v30.py <<'PYV30_TEST'
+          import unittest
+          from patch_ui_combined_v30 import upgrade
+          class CombinedOfferTests(unittest.TestCase):
+              def page(self):
+                  return ("""<span>Akce s doloženou slevou</span><span id="qMultiConfirmed"></span>
+                  <script>const savedMulti=p=>true;const multiUnconfirmed=p=>false;
+                  const actualDrop=p=>true;
+                  if(view==='deals'&&!datedPromo(p))return false;
+                  $('qDeals').textContent=nf(db.items.filter(datedPromo).length);
+                  $('nDiscounts').textContent=nf(db.items.filter(datedPromo).length);
+                  const regular=db.items.filter(datedPromo).length,conditional=db.items.filter(savedMulti);
+                  const unconfirmed=conditional.filter(multiUnconfirmed).length;
+                  const onlyMulti=conditional.filter(p=>!datedPromo(p)).length;
+                  $('offersV27Status').textContent='Akce: '+nf(regular)+' běžných slev + '+nf(onlyMulti)+' dalších množstevních nabídek'+' (z nich '+nf(unconfirmed)+' bez aktuálního potvrzení). Celkem potenciálně '+nf(regular+onlyMulti)+'; neznamená to stejně tolik platných dnešních slev.';
+                  await loadCategoryOverlay()</script>""")
+              def test_verified_union_uses_unique_products(self):
+                  page=upgrade(self.page())
+                  self.assertIn('datedPromo(p)||(savedMulti(p)&&!multiUnconfirmed(p))',page)
+                  self.assertIn("$('qDeals').textContent=nf(db.items.filter(verifiedOffer).length)",page)
+                  self.assertIn('Ověřené akce celkem',page)
+                  self.assertIn('Neověřených historických množstevních nabídek',page)
+              def test_idempotence(self):
+                  first=upgrade(self.page())
+                  self.assertEqual(first,upgrade(first))
+              def test_incomplete_html_is_not_written(self):
+                  with self.assertRaises(ValueError): upgrade('not a dashboard')
+          PYV30_TEST
 
           cat > .v28/test_v29.py <<'PYV29_TEST'
           import unittest
@@ -564,6 +730,7 @@ jobs:
             --limit 120 --delay 3.5
           python .v28/patch_ui_v28.py docs/catalog.html
           python .v28/patch_ui_v29.py docs/catalog.html
+          python .v28/patch_ui_combined_v30.py docs/catalog.html
           python - <<'PY'
           from pathlib import Path
           page=Path('docs/catalog.html').read_text('utf8')
