@@ -397,12 +397,16 @@ jobs:
           python -m pip install --disable-pip-version-check 'playwright==1.56.0'
           python -m playwright install chromium
 
-      - name: export PYTHONPATH="$PWD${PYTHONPATH:+:$PYTHONPATH}"
+      - name: Recheck only saved Košík Multikup product URLs
         id: verify
         shell: bash
         timeout-minutes: 38
         run: |
           set -euo pipefail
+          # The monitor lives under .v28/, while price_v23.py lives at the repo root.
+          # Explicitly expose the checkout root to child-script imports.
+          export PYTHONPATH="$PWD${PYTHONPATH:+:$PYTHONPATH}"
+          python -c "from price_v23 import product_identity; assert callable(product_identity)"
           python .v28/quantity_v28.py \
             --catalog docs/data/catalog_latest.json \
             --report .v28/quantity_v28_report.json \
