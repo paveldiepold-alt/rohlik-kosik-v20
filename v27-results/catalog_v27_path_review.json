@@ -1,10 +1,10 @@
 {
   "schema": "rk-v27-merchant-path-review",
   "number_of_distinct_trusted_paths": 213,
-  "mapped_product_total": 1020,
+  "mapped_product_total": 1024,
   "unmapped_or_mismatched_path_count": 38,
   "without_trusted_path_by_shop": {
-    "Košík": 60,
+    "Košík": 56,
     "Rohlík": 1
   },
   "note": "Old rule categories are references for audit only; never proof of merchant classification.",
@@ -180,6 +180,27 @@
       "shop": "Košík",
       "merchant_path": [
         "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Gely",
+        "Univerzální"
+      ],
+      "mapped_category": "Praní",
+      "mapping_reason": "Praní podle cesty prodejce",
+      "product_count": 16,
+      "old_rule_categories": {
+        "Praní": 16
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p798828-ariel-gel-mountain-spring-1-8l",
+        "https://www.kosik.cz/p798838-ariel-gel-mountain-spring-2-7-l",
+        "https://www.kosik.cz/p823554-ariel-gel-pro-winter-dream-4-05l"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Drogerie a kosmetika",
         "Čistící přípravky",
         "Toaleta",
         "WC bloky a gely"
@@ -194,27 +215,6 @@
         "https://www.kosik.cz/p821564-bref-auto-active-gel-blooming-fresh-wc-cistic",
         "https://www.kosik.cz/p485178-bref-brilliant-gel-arctic-ocean-gelovy-wc-blok-3x42-g",
         "https://www.kosik.cz/p818070-bref-color-auto-active-chlorine-wc-blok-3x-50-g"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Drogerie a kosmetika",
-        "Prací prostředky",
-        "Gely",
-        "Univerzální"
-      ],
-      "mapped_category": "Praní",
-      "mapping_reason": "Praní podle cesty prodejce",
-      "product_count": 15,
-      "old_rule_categories": {
-        "Praní": 15
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p798828-ariel-gel-mountain-spring-1-8l",
-        "https://www.kosik.cz/p798838-ariel-gel-mountain-spring-2-7-l",
-        "https://www.kosik.cz/p823554-ariel-gel-pro-winter-dream-4-05l"
       ],
       "needs_review": false
     },
@@ -600,6 +600,27 @@
       "merchant_path": [
         "Drogerie a kosmetika",
         "Prací prostředky",
+        "Gely",
+        "Barevné prádlo"
+      ],
+      "mapped_category": "Praní",
+      "mapping_reason": "Praní podle cesty prodejce",
+      "product_count": 9,
+      "old_rule_categories": {
+        "Praní": 9
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p798826-ariel-gel-color-1-8-l",
+        "https://www.kosik.cz/p800490-ariel-gel-color-2-7-l",
+        "https://www.kosik.cz/p795242-ariel-gel-color-4-5-l"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Drogerie a kosmetika",
+        "Prací prostředky",
         "Odstraňovače skvrn",
         "Běžné"
       ],
@@ -799,27 +820,6 @@
         "https://www.rohlik.cz/1325193-bio-cherry-rajcata-vanicka",
         "https://www.rohlik.cz/1408285-cherry-rajcata-baleni",
         "https://www.rohlik.cz/1466689-kunraticka-stodola-rajcata-cherry-na-vetvicce-odr-red-egg-strapec"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Drogerie a kosmetika",
-        "Prací prostředky",
-        "Gely",
-        "Barevné prádlo"
-      ],
-      "mapped_category": "Praní",
-      "mapping_reason": "Praní podle cesty prodejce",
-      "product_count": 8,
-      "old_rule_categories": {
-        "Praní": 8
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p798826-ariel-gel-color-1-8-l",
-        "https://www.kosik.cz/p800490-ariel-gel-color-2-7-l",
-        "https://www.kosik.cz/p795242-ariel-gel-color-4-5-l"
       ],
       "needs_review": false
     },
@@ -1032,6 +1032,26 @@
     {
       "shop": "Košík",
       "merchant_path": [
+        "Mléčné a chlazené",
+        "Máslo, margaríny, tuky",
+        "Rostlinné tuky a margaríny"
+      ],
+      "mapped_category": "Másla a tuky",
+      "mapping_reason": "Jedlé máslo/tuky podle cesty prodejce",
+      "product_count": 7,
+      "old_rule_categories": {
+        "Másla a tuky": 7
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p740498-flora-light",
+        "https://www.kosik.cz/p740504-flora-original",
+        "https://www.kosik.cz/p743114-rama-slana"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
         "Uzeniny a lahůdky",
         "Salámy",
         "Měkké",
@@ -1217,26 +1237,6 @@
         "https://www.kosik.cz/p787182-emi-food-kureci-prsa-bez-kosti-volny-chov",
         "https://www.kosik.cz/p680992-rabbit-venkovske-prsni-rizky-bez-kuze",
         "https://www.kosik.cz/p794876-ronsard-bio-kureci-prsa-bez-kosti-a-kuze"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Mléčné a chlazené",
-        "Máslo, margaríny, tuky",
-        "Rostlinné tuky a margaríny"
-      ],
-      "mapped_category": "Másla a tuky",
-      "mapping_reason": "Jedlé máslo/tuky podle cesty prodejce",
-      "product_count": 6,
-      "old_rule_categories": {
-        "Másla a tuky": 6
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p740498-flora-light",
-        "https://www.kosik.cz/p740504-flora-original",
-        "https://www.kosik.cz/p722392-rama-100-rostlinna-neslana"
       ],
       "needs_review": false
     },
@@ -2877,6 +2877,26 @@
     {
       "shop": "Košík",
       "merchant_path": [
+        "Trvanlivé",
+        "Těstoviny a kuskus",
+        "Těstoviny podle tvaru",
+        "Špagety a linguine"
+      ],
+      "mapped_category": "Těstoviny a rýže",
+      "mapping_reason": "Těstoviny/rýže podle cesty prodejce",
+      "product_count": 2,
+      "old_rule_categories": {
+        "Těstoviny a rýže": 2
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p74807-panzani-express-spaghetti",
+        "https://www.kosik.cz/p196045-panzani-linguine"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
         "Zdraví a životní styl",
         "Veggie",
         "Sýry, krémy a tuky",
@@ -3603,25 +3623,6 @@
       },
       "sample_product_urls": [
         "https://www.kosik.cz/p76047-panzani-lasagne"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Trvanlivé",
-        "Těstoviny a kuskus",
-        "Těstoviny podle tvaru",
-        "Špagety a linguine"
-      ],
-      "mapped_category": "Těstoviny a rýže",
-      "mapping_reason": "Těstoviny/rýže podle cesty prodejce",
-      "product_count": 1,
-      "old_rule_categories": {
-        "Těstoviny a rýže": 1
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p196045-panzani-linguine"
       ],
       "needs_review": false
     },

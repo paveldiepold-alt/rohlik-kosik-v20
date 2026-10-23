@@ -1,6 +1,6 @@
 {
   "schema": "rk-v27-category-review",
-  "count": 298,
+  "count": 294,
   "items": [
     {
       "store": "Košík",
@@ -1987,28 +1987,6 @@
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p74807-panzani-express-spaghetti",
-      "name": "Panzani Express Spaghetti",
-      "rule_ids": [
-        "W052"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Těstoviny a rýže"
-      ],
-      "rule_checks": {
-        "W052": {
-          "expected": "Těstoviny a rýže",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
       "url": "https://www.kosik.cz/p74837-panzani-penne-rigate",
       "name": "Panzani Penne Rigate",
       "rule_ids": [
@@ -2045,50 +2023,6 @@
       "rule_checks": {
         "W052": {
           "expected": "Těstoviny a rýže",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p770584-persil-color-praci-gel-na-barevne-pradlo",
-      "name": "Persil Color prací gel na barevné prádlo",
-      "rule_ids": [
-        "W062"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Praní"
-      ],
-      "rule_checks": {
-        "W062": {
-          "expected": "Praní",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p770586-persil-expert-freshness-lavender-praci-gel",
-      "name": "Persil Expert Freshness Lavender prací gel",
-      "rule_ids": [
-        "W062"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Praní"
-      ],
-      "rule_checks": {
-        "W062": {
-          "expected": "Praní",
           "status": "review",
           "reason": "Kategorie neověřena u prodejce"
         }
@@ -2212,28 +2146,6 @@
       "rule_checks": {
         "W034": {
           "expected": "Nápoje / vody",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p743114-rama-slana",
-      "name": "Rama  slaná",
-      "rule_ids": [
-        "W031"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Másla a tuky"
-      ],
-      "rule_checks": {
-        "W031": {
-          "expected": "Másla a tuky",
           "status": "review",
           "reason": "Kategorie neověřena u prodejce"
         }
