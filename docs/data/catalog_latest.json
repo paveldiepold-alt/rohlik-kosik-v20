@@ -459,7 +459,10 @@
       "last_monitor_attempt_at": "2026-10-23T07:21:28+00:00",
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:37:08+00:00",
+      "multibuy_v28_status": "title_mismatch",
+      "multibuy_v28_note": "Product H1 mismatch"
     },
     {
       "store": "Košík",
@@ -488,7 +491,10 @@
       "last_monitor_attempt_at": "2026-10-23T07:21:32+00:00",
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:37:12+00:00",
+      "multibuy_v28_status": "title_mismatch",
+      "multibuy_v28_note": "Product H1 mismatch"
     },
     {
       "store": "Košík",
@@ -2347,7 +2353,10 @@
       "last_monitor_attempt_at": "2026-10-23T07:24:49+00:00",
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:37:17+00:00",
+      "multibuy_v28_status": "title_mismatch",
+      "multibuy_v28_note": "Product H1 mismatch"
     },
     {
       "store": "Košík",
@@ -2376,7 +2385,10 @@
       "last_monitor_attempt_at": "2026-10-23T07:24:53+00:00",
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:37:21+00:00",
+      "multibuy_v28_status": "title_mismatch",
+      "multibuy_v28_note": "Product H1 mismatch"
     },
     {
       "store": "Košík",
@@ -2405,7 +2417,10 @@
       "last_monitor_attempt_at": "2026-10-23T07:24:58+00:00",
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:37:26+00:00",
+      "multibuy_v28_status": "title_mismatch",
+      "multibuy_v28_note": "Product H1 mismatch"
     },
     {
       "store": "Košík",
@@ -2434,7 +2449,10 @@
       "last_monitor_attempt_at": "2026-10-23T07:25:03+00:00",
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:37:30+00:00",
+      "multibuy_v28_status": "title_mismatch",
+      "multibuy_v28_note": "Product H1 mismatch"
     },
     {
       "store": "Košík",
@@ -2463,7 +2481,10 @@
       "last_monitor_attempt_at": "2026-10-23T07:25:07+00:00",
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:37:35+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -2492,7 +2513,10 @@
       "last_monitor_attempt_at": "2026-10-23T07:25:12+00:00",
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:37:39+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -2521,7 +2545,10 @@
       "last_monitor_attempt_at": "2026-10-23T07:25:16+00:00",
       "monitor_v26_attempts": 4,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:37:44+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -3732,7 +3759,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:45:28+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:37:48+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -3765,7 +3795,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:45:33+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:37:52+00:00",
+      "multibuy_v28_status": "title_mismatch",
+      "multibuy_v28_note": "Product H1 mismatch"
     },
     {
       "store": "Košík",
@@ -3918,7 +3951,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:45:56+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:37:57+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -3977,7 +4013,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:46:05+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:38:01+00:00",
+      "multibuy_v28_status": "title_mismatch",
+      "multibuy_v28_note": "Product H1 mismatch"
     },
     {
       "store": "Košík",
@@ -4010,7 +4049,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:46:10+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:38:06+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -4043,7 +4085,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:46:14+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:38:10+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -4256,7 +4301,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:46:46+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:38:15+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -4350,7 +4398,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:47:00+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:38:19+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -4379,7 +4430,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:47:05+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:38:24+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -4408,7 +4462,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:47:09+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:38:28+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -4806,7 +4863,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:48:05+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:38:33+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -4835,7 +4895,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:48:09+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:38:37+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -4864,7 +4927,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:48:14+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:38:41+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -4923,7 +4989,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:48:23+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:38:46+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -5042,7 +5111,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:48:42+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:38:50+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -5071,7 +5143,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:48:46+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:38:55+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -5160,7 +5235,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:49:00+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:38:59+00:00",
+      "multibuy_v28_status": "title_mismatch",
+      "multibuy_v28_note": "Product H1 mismatch"
     },
     {
       "store": "Košík",
@@ -5189,7 +5267,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:49:05+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:39:03+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -5248,7 +5329,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:49:14+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:39:08+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -5277,7 +5361,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:49:19+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:39:12+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -5594,7 +5681,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:50:05+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:39:17+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -5643,7 +5733,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:50:09+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:39:21+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -5672,7 +5765,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:50:14+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:39:26+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -5701,7 +5797,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:50:18+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:39:30+00:00",
+      "multibuy_v28_status": "title_mismatch",
+      "multibuy_v28_note": "Product H1 mismatch"
     },
     {
       "store": "Košík",
@@ -6419,7 +6518,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:51:55+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:39:34+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -7182,7 +7284,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:53:45+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:39:39+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -7211,7 +7316,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:53:50+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:39:43+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -7563,7 +7671,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:54:40+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:39:48+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -7596,7 +7707,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:54:45+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:39:52+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -7655,7 +7769,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:54:54+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:39:57+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -7718,7 +7835,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:55:03+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:40:01+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -7781,7 +7901,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:55:13+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:40:05+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -7879,7 +8002,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:55:26+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:40:10+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -7972,7 +8098,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:55:41+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:40:14+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -8005,7 +8134,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:55:45+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:40:19+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -8038,7 +8170,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:55:50+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:40:23+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -8191,7 +8326,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:56:13+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:40:28+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -8263,7 +8401,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:56:22+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:40:32+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -8296,7 +8437,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:56:27+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:40:36+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -8325,7 +8469,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:56:31+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:40:41+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -8388,7 +8535,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:56:40+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:40:45+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -9270,7 +9420,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:58:54+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:40:50+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -9389,7 +9542,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:59:12+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:40:54+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -9418,7 +9574,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:59:17+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:40:59+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -9505,7 +9664,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:59:31+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:41:03+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -9594,7 +9756,10 @@
       "last_monitor_attempt_at": "2026-10-23T06:59:45+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:41:07+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -9803,7 +9968,10 @@
       "last_monitor_attempt_at": "2026-10-23T07:00:17+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:41:12+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -11095,7 +11263,10 @@
       "last_monitor_attempt_at": "2026-10-23T07:03:07+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:41:16+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -11124,7 +11295,10 @@
       "last_monitor_attempt_at": "2026-10-23T07:03:12+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:41:21+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -11153,7 +11327,10 @@
       "last_monitor_attempt_at": "2026-10-23T07:03:16+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:41:25+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -11182,7 +11359,10 @@
       "last_monitor_attempt_at": "2026-10-23T07:03:21+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:41:30+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -11211,7 +11391,10 @@
       "last_monitor_attempt_at": "2026-10-23T07:03:26+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:41:34+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -11240,7 +11423,10 @@
       "last_monitor_attempt_at": "2026-10-23T07:03:30+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:41:38+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -11269,7 +11455,10 @@
       "last_monitor_attempt_at": "2026-10-23T07:03:35+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:41:43+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -11298,7 +11487,10 @@
       "last_monitor_attempt_at": "2026-10-23T07:03:40+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:41:47+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -11327,7 +11519,10 @@
       "last_monitor_attempt_at": "2026-10-23T07:03:44+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:41:52+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -11356,7 +11551,10 @@
       "last_monitor_attempt_at": "2026-10-23T07:03:49+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:41:56+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -11385,7 +11583,10 @@
       "last_monitor_attempt_at": "2026-10-23T07:03:53+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:42:00+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -11414,7 +11615,10 @@
       "last_monitor_attempt_at": "2026-10-23T07:03:58+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:42:05+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -11517,7 +11721,10 @@
       "last_monitor_attempt_at": "2026-10-23T07:04:12+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:42:09+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -11546,7 +11753,10 @@
       "last_monitor_attempt_at": "2026-10-23T07:04:16+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:42:14+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -11605,7 +11815,10 @@
       "last_monitor_attempt_at": "2026-10-23T07:04:26+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:42:18+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -11664,7 +11877,10 @@
       "last_monitor_attempt_at": "2026-10-23T07:04:35+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:42:23+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -11723,7 +11939,10 @@
       "last_monitor_attempt_at": "2026-10-23T07:04:44+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:42:27+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -11752,7 +11971,10 @@
       "last_monitor_attempt_at": "2026-10-23T07:04:49+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:42:32+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -12181,7 +12403,10 @@
       "last_monitor_attempt_at": "2026-10-23T07:05:39+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:42:36+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -12210,7 +12435,10 @@
       "last_monitor_attempt_at": "2026-10-23T07:05:44+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:42:40+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -12269,7 +12497,10 @@
       "last_monitor_attempt_at": "2026-10-23T07:05:53+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:42:45+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -14075,7 +14306,10 @@
       "last_monitor_attempt_at": "2026-10-23T07:10:15+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:42:49+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -14108,7 +14342,10 @@
       "last_monitor_attempt_at": "2026-10-23T07:10:20+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:42:54+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -14141,7 +14378,10 @@
       "last_monitor_attempt_at": "2026-10-23T07:10:25+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:42:58+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -15961,7 +16201,10 @@
       "last_monitor_attempt_at": "2026-10-23T07:14:28+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:43:02+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -17994,7 +18237,10 @@
       "last_monitor_attempt_at": "2026-10-23T07:19:04+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:43:07+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -18113,7 +18359,10 @@
       "last_monitor_attempt_at": "2026-10-23T07:19:23+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:43:11+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -18322,7 +18571,10 @@
       "last_monitor_attempt_at": "2026-10-23T07:19:55+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:43:16+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -18351,7 +18603,10 @@
       "last_monitor_attempt_at": "2026-10-23T07:20:00+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:43:20+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -18435,7 +18690,10 @@
       "last_monitor_attempt_at": "2026-10-23T07:20:09+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:43:25+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
@@ -18494,7 +18752,10 @@
       "last_monitor_attempt_at": "2026-10-23T07:20:18+00:00",
       "monitor_v26_attempts": 3,
       "monitor_v26_status": "price_unverified",
-      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena"
+      "monitor_v26_note": "Různé kandidátní ceny; cena celého balení nepotvrzena",
+      "multibuy_v28_last_attempt_at": "2026-10-23T10:43:29+00:00",
+      "multibuy_v28_status": "not_observed",
+      "multibuy_v28_note": "No complete product-scoped quantity + pack-price evidence"
     },
     {
       "store": "Košík",
