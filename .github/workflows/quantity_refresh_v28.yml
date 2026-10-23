@@ -1,0 +1,502 @@
+name: Monitor slev v28 - Aktualni mnozstevni nabidky
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/quantity_refresh_v28.yml'
+  schedule:
+    - cron: '37 1,13 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rk-v20-catalog
+  cancel-in-progress: false
+
+jobs:
+  quantity-evidence:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 55
+    steps:
+      - name: Checkout published data and dashboard (not main)
+        uses: actions/checkout@v4
+        with:
+          ref: fix/real-product-price-reading-v20
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Setup Python and Node
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Create isolated monitor and regression tests
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p .v28
+          cat > .v28/quantity_v28.py <<'PYV28_quantity_v28_py'
+          #!/usr/bin/env python3
+          """Conservative, read-only re-verification of stored Košík quantity offers.
+
+          Never writes existing prices, history, discounts or saved multibuy terms.
+          Adds only independent v28 evidence, so an older quantity offer is not
+          misrepresented as currently confirmed.
+          """
+          from __future__ import annotations
+          import argparse
+          import copy
+          from collections import Counter
+          from datetime import datetime, timezone
+          import json
+          from pathlib import Path
+          import re
+          import time
+          from urllib.parse import urlparse
+
+          MIN_DELAY = 3.3
+          MONEY = r'(?:\d{1,3}(?:[ \u00a0\u202f]\d{3})*|\d{1,5})(?:[., ]\d{2})'
+          MULTI = re.compile(r'(?P<sale>'+MONEY+r')\s*od\s*(?P<qty>\d+)\s*ks\b', re.I)
+          ONE = re.compile(r'(?P<price>'+MONEY+r')\s*K[cč]\s*za\s*1\s*ks\b', re.I)
+          STOP = re.compile(r'(?i)^(?:do košíku|související varianty|další varianty|podobné produkty|produkty značky|popis produktu|značka\s*:)')
+          HEADER_JS = r'''() => {
+            const h=document.querySelector('h1');
+            if (!h) return {title:'',text:''};
+            const title=(h.innerText||h.textContent||'').trim();
+            const main=h.closest('main')||document.querySelector('main')||document.body;
+            const raw=main.innerText||'';
+            const pos=raw.indexOf(title);
+            if(pos<0)return {title,text:''};
+            const rest=raw.slice(pos+title.length,pos+title.length+1500);
+            // Never inspect prices from related products after the first Add-to-cart.
+            const stop=/(?:^|\n)\s*(?:Do košíku|Související varianty(?: v Multikupu)?|Další varianty|Podobné produkty|Značka\s*:)/im.exec(rest);
+            return {title,text:stop?rest.slice(0,stop.index):rest};
+          }'''
+
+
+          def amount(s):
+              s=str(s or '').replace('\u00a0',' ').replace('\u202f',' ').strip()
+              if not s:return None
+              if re.fullmatch(r'\d{1,5}[,.]\d{2}',s):
+                  v=float(s.replace(',','.'))
+              elif re.fullmatch(r'(?:\d{1,3}(?: \d{3})*|\d{1,5}) \d{2}',s):
+                  parts=s.split(' ')
+                  v=float(''.join(parts[:-1]))+int(parts[-1])/100
+              else:
+                  return None
+              return round(v,2) if 0.5<=v<=50000 else None
+
+
+          def parse_header_quantity(text):
+              """Require explicit quantity, one-item pack price and strictly better cost.
+
+              Generic unit-price labels, related items and crossed prices alone do not
+              substantiate a Multikup. No name-based guessing is allowed.
+              """
+              if not isinstance(text,str):return None
+              text=text.replace('\u00a0',' ').replace('\u202f',' ')
+              lines=[re.sub(r'\s+',' ',line).strip() for line in text.splitlines()]
+              cleaned=[]
+              for line in lines:
+                  if not line: continue
+                  if STOP.match(line):break
+                  cleaned.append(line)
+                  if len(cleaned)>=32:break
+              candidates=[];one=None
+              for line in cleaned:
+                  found=ONE.search(line)
+                  if found:
+                      one=amount(found.group('price'))
+                  match=MULTI.search(line)
+                  if match:
+                      qty=int(match.group('qty'))
+                      price=amount(match.group('sale'))
+                      if 2<=qty<=24 and price is not None:
+                          candidates.append({'min_qty':qty,'price_czk':price})
+              # Some rendering places the price and the condition on consecutive lines.
+              # Preserve specificity: we only accept a 2-decimal pair directly before 'od N ks'.
+              if not candidates:
+                  for prev,nxt in zip(cleaned,cleaned[1:]):
+                      if re.fullmatch(r'\d{1,5}[., ]\d{2}',prev):
+                          m=re.fullmatch(r'od\s*(\d+)\s*ks',nxt,re.I)
+                          if m and 2<=int(m[1])<=24:
+                              v=amount(prev)
+                              if v is not None:candidates.append({'min_qty':int(m[1]),'price_czk':v})
+              if one is None or not candidates:
+                  return None
+              dedup={x['min_qty']:x for x in candidates if x['price_czk']<one}
+              if not dedup:
+                  return None
+              offers=[dedup[k] for k in sorted(dedup)]
+              # Quantity-dependent prices must be monotonically nonincreasing.
+              if any(b['price_czk']>a['price_czk'] for a,b in zip(offers,offers[1:])):
+                  return None
+              return {'pack_price_czk':one,'tiers':offers}
+
+
+          def eligible(row):
+              if row.get('store')!='Košík' or not isinstance(row.get('multibuy'),list) or not row['multibuy']:
+                  return False
+              u=row.get('url','')
+              try:
+                  p=urlparse(u)
+                  return p.scheme=='https' and p.hostname in ('www.kosik.cz','kosik.cz') and not p.username and not p.password
+              except (ValueError,TypeError):
+                  return False
+
+
+          def apply_result(row,result,now):
+              """Annotate independently; never change any preexisting commerce fields."""
+              out=dict(row)
+              out['multibuy_v28_last_attempt_at']=now
+              out['multibuy_v28_status']=result['status']
+              out['multibuy_v28_note']=str(result.get('note',''))[:180]
+              if result['status']=='verified':
+                  out['multibuy_v28_verified_at']=now
+                  out['multibuy_v28_verified_offer']=copy.deepcopy(result['offer'])
+              return out
+
+
+          def inspect(page,row):
+              from price_v23 import product_identity
+              try:
+                  response=page.goto(row['url'],wait_until='domcontentloaded',timeout=25000)
+                  code=response.status if response else None
+                  if code in (403,429,503):
+                      return {'status':'throttled','note':'HTTP '+str(code),'blocked':True}
+                  if code!=200:
+                      return {'status':'http_error','note':'HTTP '+str(code),'blocked':False}
+                  page.wait_for_timeout(650)
+                  data=page.evaluate(HEADER_JS)
+                  if not product_identity(row.get('title') or row.get('name'),data.get('title')):
+                      return {'status':'title_mismatch','note':'Product H1 mismatch','blocked':False}
+                  offer=parse_header_quantity(data.get('text'))
+                  if offer is None:
+                      return {'status':'not_observed','note':'No complete product-scoped quantity + pack-price evidence','blocked':False}
+                  old=row.get('price_czk')
+                  if type(old) not in (int,float) or abs(old-offer['pack_price_czk'])>0.011:
+                      return {'status':'changed_pack_price','note':f"New single-pack price {offer['pack_price_czk']} Kč differs from catalog",'blocked':False}
+                  return {'status':'verified','offer':offer,'note':'Own product H1; explicit quantity and single-pack price','blocked':False}
+              except Exception as e:
+                  return {'status':'error','note':f'{type(e).__name__}: {str(e)[:90]}','blocked':False}
+
+
+          def process(db, scanner, *, limit=120, delay=3.3, sleep=time.sleep):
+              """Scanner callback is injectible for deterministic offline tests."""
+              before=copy.deepcopy(db)
+              out=copy.deepcopy(db)
+              items=out['items']
+              ids=[(x.get('store'),x.get('url')) for x in items]
+              if len(ids)!=len(set(ids)) or len(ids)<1090:
+                  raise ValueError('Identity collision or unexpectedly small catalogue')
+              selected=[(i,row) for i,row in enumerate(items) if eligible(row)][:limit]
+              stats=Counter();attempted=0;blocked=False
+              for index,row in selected:
+                  if blocked:break
+                  sleep(delay)
+                  res=scanner(row)
+                  at=datetime.now(timezone.utc).isoformat(timespec='seconds')
+                  items[index]=apply_result(row,res,at)
+                  attempted+=1;stats[res['status']]+=1
+                  if res.get('blocked'):blocked=True
+              # Strict preservation: no prior field or entire product record can disappear.
+              for prev,new in zip(before['items'],out['items']):
+                  for k,v in prev.items():
+                      if k not in new or (k not in {'multibuy_v28_last_attempt_at','multibuy_v28_status','multibuy_v28_note','multibuy_v28_verified_at','multibuy_v28_verified_offer'} and new[k]!=v):
+                          raise AssertionError('Unexpected modification of existing commerce field: '+str(k))
+              report={'schema':'rk-v28-quantity-evidence','at':datetime.now(timezone.utc).isoformat(timespec='seconds'),
+                 'products':len(items),'selected':len(selected),'attempted':attempted,
+                 'statuses':dict(stats),'blocked':blocked,
+                 'currently_confirmed':sum(
+                   eligible(x) and x.get('multibuy_v28_status')=='verified' and
+                   (lambda t: t is not None and 0 <= (datetime.now(timezone.utc)-t).total_seconds()<=36*3600)(
+                      datetime.fromisoformat(x['multibuy_v28_verified_at'].replace('Z','+00:00'))
+                      if isinstance(x.get('multibuy_v28_verified_at'),str) and 'T' in x.get('multibuy_v28_verified_at','') else None)
+                   for x in items),
+                 'historical_quantity_offers':sum(eligible(x) for x in items),
+                 'original_price_fields_preserved':True}
+              return out,report
+
+
+          def main():
+              parser=argparse.ArgumentParser()
+              parser.add_argument('--catalog',default='docs/data/catalog_latest.json')
+              parser.add_argument('--report',default='docs/data/quantity_v28_report.json')
+              parser.add_argument('--limit',type=int,default=120)
+              parser.add_argument('--delay',type=float,default=3.3)
+              args=parser.parse_args()
+              if not 1<=args.limit<=120 or not MIN_DELAY<=args.delay<=30:
+                  raise SystemExit('Unsafe limit/delay')
+              from playwright.sync_api import sync_playwright
+              with open(args.catalog,encoding='utf8') as f: db=json.load(f)
+              with sync_playwright() as pw:
+                  browser=pw.chromium.launch(headless=True,args=['--no-sandbox'])
+                  try:
+                      ctx=browser.new_context(locale='cs-CZ',timezone_id='Europe/Prague',viewport={'width':1366,'height':900})
+                      page=ctx.new_page()
+                      out,rep=process(db,lambda row:inspect(page,row),limit=args.limit,delay=args.delay)
+                      ctx.close()
+                  finally:browser.close()
+              p=Path(args.report);p.parent.mkdir(parents=True,exist_ok=True)
+              p.write_text(json.dumps(rep,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
+              # Report-only on a blocked/zero-attempt run; never regress price observations.
+              if rep['attempted']>0:
+                  dst=Path(args.catalog); tmp=dst.with_suffix('.json.tmp')
+                  tmp.write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf8');tmp.replace(dst)
+              print(json.dumps(rep,ensure_ascii=False))
+
+          if __name__=='__main__':main()
+          PYV28_quantity_v28_py
+          cat > .v28/patch_ui_v28.py <<'PYV28_patch_ui_v28_py'
+          #!/usr/bin/env python3
+          """Idempotent v28 quantity-verification UI integration, HTML-only."""
+          import argparse
+          from pathlib import Path
+
+          OLD = "const multiUnconfirmed=p=>!freshPrice(p)||(String(p.last_monitor_attempt_at||'')>String(p.checked_at||'')&&p.monitor_v26_status!=='ok');"
+          NEW = """const multiUnconfirmed=p=>{
+           const e=p.multibuy_v28_verified_offer,ts=Date.parse(p.multibuy_v28_verified_at||'');
+           return !(p.multibuy_v28_status==='verified'&&Number.isFinite(ts)&&Date.now()>=ts&&
+           (Date.now()-ts)<=36*3600000&&e&&Array.isArray(e.tiers)&&e.tiers.length>0&&
+           typeof e.pack_price_czk==='number'&&Math.abs(e.pack_price_czk-p.price_czk)<0.011);
+          };"""
+          OLD_COND = "if(Array.isArray(p.multibuy))for(const x of p.multibuy){if(Number(x.min_qty)>=2&&typeof x.price_czk==='number')result.push(`od ${Number(x.min_qty)} ks za ${money(x.price_czk)}`+(multiUnconfirmed(p)?' (poslední kontrola nepotvrdila)':''))}"
+          NEW_COND = """const pending=multiUnconfirmed(p);
+           const tiers=(!pending&&p.multibuy_v28_verified_offer?.tiers)||p.multibuy;
+           if(Array.isArray(tiers))for(const x of tiers){if(Number(x.min_qty)>=2&&typeof x.price_czk==='number')
+           result.push(`od ${Number(x.min_qty)} ks za ${money(x.price_czk)}`+
+           (pending?' (uloženo dříve, nyní nepotvrzeno)':' (aktuálně ověřeno)'))}"""
+
+
+          def patch(html):
+              if 'const multiUnconfirmed=p=>{\n const e=p.multibuy_v28_verified_offer' in html:
+                  assert 'aktuálně ověřeno' in html and 'id="qMultiConfirmed"' in html
+                  return html
+              patches=[
+                (OLD,NEW),(OLD_COND,NEW_COND),
+                ('id="qMulti">—</span></button>',
+                 'id="qMulti">—</span></button>\n'
+                 '  <button type="button" data-quick="multi-verified" title="Jen nově potvrzené množstevní ceny.">✓ Množstevní potvrzené <span id="qMultiConfirmed">—</span></button>'),
+                ("if(view==='multi'&&!savedMulti(p))return false;if(view==='favs'",
+                 "if(view==='multi'&&!savedMulti(p))return false;if(view==='multi-verified'&&(!savedMulti(p)||multiUnconfirmed(p)))return false;if(view==='favs'"),
+                ("view==='multi'?'Uložené množstevní nabídky – platnost je nutno ověřit':view==='favs'",
+                 "view==='multi'?'Uložené množstevní nabídky – platnost je nutno ověřit':view==='multi-verified'?'Aktuálně potvrzené množstevní nabídky':view==='favs'"),
+                ("$('qMulti').textContent=nf(db.items.filter(savedMulti).length);$('qDrops')",
+                 "$('qMulti').textContent=nf(db.items.filter(savedMulti).length);$('qMultiConfirmed').textContent=nf(db.items.filter(p=>savedMulti(p)&&!multiUnconfirmed(p)).length);$('qDrops')")
+              ]
+              for before,after in patches:
+                  count=html.count(before)
+                  if count!=1:raise ValueError(f'Unexpected HTML template; anchor count {count}: {before[:100]}')
+                  html=html.replace(before,after,1)
+              for anchor in ['id="mobileCards"', 'id="qMulti"', "await loadCategoryOverlay()", "const savedMulti=",'id="taxKpiVerified"']:
+                  if anchor not in html:raise ValueError('Existing dashboard feature missing: '+anchor)
+              return html
+
+          if __name__=='__main__':
+              pa=argparse.ArgumentParser();pa.add_argument('html');args=pa.parse_args()
+              page=Path(args.html);old=page.read_text('utf8');new=patch(old)
+              if new!=old:page.write_text(new,encoding='utf8')
+              print('quantity_v28 UI patched:',new!=old)
+          PYV28_patch_ui_v28_py
+          cat > .v28/test_quantity_v28.py <<'PYV28_test_quantity_v28_py'
+          import copy,unittest
+          from quantity_v28 import amount,parse_header_quantity,apply_result,process
+
+          class QuantityTests(unittest.TestCase):
+           def test_kosik_display_format(self):
+            t='''150 ml\n29 90 od 2 ks\n31,90 Kč za 1 ks\n63,80 Kč/l\nDo košíku\nSouvisející varianty v Multikupu\n12 90 od 2 ks'''
+            self.assertEqual(parse_header_quantity(t),{'pack_price_czk':31.9,'tiers':[{'min_qty':2,'price_czk':29.9}]})
+           def test_multiple_tiers(self):
+            t='39 90 od 2 ks\n31 90 od 3 ks\n49,90 Kč za 1 ks\n0,45 Kč/g'
+            self.assertEqual(len(parse_header_quantity(t)['tiers']),2)
+           def test_price_separate_line(self):
+            self.assertEqual(parse_header_quantity('29 90\nod 2 ks\n31,90 Kč za 1 ks')['tiers'][0]['price_czk'],29.9)
+           def test_regular_sale_not_quantity(self):
+            self.assertIsNone(parse_header_quantity('79 90\n114,90\n-30 % do 31. 10.\n0,91 Kč/m\nDo košíku'))
+           def test_no_fake_quantity_from_related(self):
+            self.assertIsNone(parse_header_quantity('99 90\nDo košíku\nSouvisející varianty v Multikupu\n29 90 od 2 ks\n31,90 Kč za 1 ks'))
+           def test_strict_requires_one_pack_price(self):
+            self.assertIsNone(parse_header_quantity('59 90 od 2 ks\n49,90 Kč/kg'))
+           def test_unit_price_not_accepted_as_single(self):
+            self.assertIsNone(parse_header_quantity('19 90 od 2 ks\n22,90 Kč/ks'))
+           def test_not_discount_when_qty_more_expensive(self):
+            self.assertIsNone(parse_header_quantity('49 90 od 2 ks\n31,90 Kč za 1 ks'))
+           def test_amount_split(self):
+            self.assertEqual(amount('1 199 00'),1199.0)
+            self.assertEqual(amount('129,90'),129.9)
+            self.assertEqual(amount('39 90'),39.9)
+            self.assertIsNone(amount('99 Kč/kg'))
+           def test_never_erase_original_commerce_data(self):
+            original={'store':'Košík','url':'https://www.kosik.cz/p000-test','name':'Test A','price_czk':39.9,'price_status':'ok','discount_pct':None,'multibuy':[{'min_qty':2,'price_czk':33.9}], 'checked_at':'2026-10-20T12:00:00+00:00'}
+            rows=[original]+[{'store':'Rohlík','url':f'https://www.rohlik.cz/{i}', 'price_czk':10} for i in range(1089)]
+            src={'items':rows,'generated_at':'test'}
+            old=copy.deepcopy(src)
+            out,rep=process(src,lambda p:{'status':'verified','offer':{'pack_price_czk':39.9,'tiers':[{'min_qty':2,'price_czk':33.9}]},'note':'yes'},sleep=lambda s:None)
+            self.assertEqual(src,old)
+            self.assertEqual(rep['historical_quantity_offers'],1)
+            self.assertEqual(rep['currently_confirmed'],1)
+            for key in old['items'][0]: self.assertEqual(out['items'][0][key],old['items'][0][key])
+            self.assertEqual(out['items'][0]['multibuy_v28_status'],'verified')
+            out2,rep2=process(out,lambda p:{'status':'not_observed','note':'no conditions'},sleep=lambda s:None)
+            self.assertEqual(out2['items'][0]['multibuy_v28_status'],'not_observed')
+            self.assertEqual(out2['items'][0]['multibuy_v28_verified_offer'],out['items'][0]['multibuy_v28_verified_offer'])
+            self.assertEqual(rep2['currently_confirmed'],0)
+           def test_throttle_stops_after_one(self):
+            r={'store':'Košík','price_status':'ok','multibuy':[{'min_qty':2,'price_czk':20}]}
+            rows=[dict(r,url=f'https://www.kosik.cz/p{i}') for i in range(2)] + [dict(store='Rohlík',url=f'https://www.rohlik.cz/{i}') for i in range(1088)]
+            out,rep=process({'items':rows},lambda p:{'status':'throttled','blocked':True},sleep=lambda s:None)
+            self.assertEqual(rep['attempted'],1)
+            self.assertTrue(rep['blocked'])
+
+          if __name__=='__main__':unittest.main()
+          PYV28_test_quantity_v28_py
+          cat > .v28/test_ui_v28.py <<'PYV28_test_ui_v28_py'
+          import unittest
+          from patch_ui_v28 import patch,OLD,OLD_COND
+          class UI(unittest.TestCase):
+           def test_patch_once_and_again(self):
+            html='<span id="qMulti">—</span></button><div id="taxKpiVerified"></div><div id="mobileCards"></div><script>const savedMulti=()=>true;'+OLD+';const conditions=p=>{'+OLD_COND+'};' + "if(view==='multi'&&!savedMulti(p))return false;if(view==='favs'" + "view==='multi'?'Uložené množstevní nabídky – platnost je nutno ověřit':view==='favs'" + "$('qMulti').textContent=nf(db.items.filter(savedMulti).length);$('qDrops')" +'await loadCategoryOverlay();view===\'multi\';</script>'
+            p=patch(html)
+            self.assertIn('const multiUnconfirmed=p=>{',p)
+            self.assertIn('aktuálně ověřeno',p)
+            self.assertIn('id="qMultiConfirmed"',p)
+            self.assertEqual(p,patch(p))
+           def test_missing_anchor_is_safe(self):
+            with self.assertRaises(ValueError):patch('nothing')
+          if __name__=='__main__':unittest.main()
+          PYV28_test_ui_v28_py
+
+      - name: Run offline regression tests and snapshot data
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd .v28
+          python -m unittest discover -s . -p 'test_*.py' -v
+          cd ..
+          mkdir -p .v28/safety
+          python - <<'PY'
+          import hashlib,json
+          from pathlib import Path
+          sources=['docs/data/catalog_latest.json','docs/data/taxonomy_v27_public.json','docs/catalog.html']
+          for s in sources:assert Path(s).is_file(),s
+          price=json.loads(Path(sources[0]).read_text('utf8'))
+          tax=json.loads(Path(sources[1]).read_text('utf8'))
+          assert len(price['items'])>=1090 and len(tax['items'])==len(price['items'])
+          assert len({(p['store'],p['url']) for p in price['items']})==len(price['items'])
+          Path('.v28/safety/sha256.json').write_text(json.dumps({s:hashlib.sha256(Path(s).read_bytes()).hexdigest() for s in sources}),encoding='utf8')
+          PY
+
+      - name: Install limited browser
+        shell: bash
+        timeout-minutes: 8
+        run: |
+          set -euo pipefail
+          python -m pip install --disable-pip-version-check 'playwright==1.56.0'
+          python -m playwright install chromium
+
+      - name: Recheck only saved Košík Multikup product URLs
+        id: verify
+        shell: bash
+        timeout-minutes: 38
+        run: |
+          set -euo pipefail
+          python .v28/quantity_v28.py \
+            --catalog docs/data/catalog_latest.json \
+            --report .v28/quantity_v28_report.json \
+            --limit 120 --delay 3.5
+          python .v28/patch_ui_v28.py docs/catalog.html
+          python - <<'PY'
+          from pathlib import Path
+          page=Path('docs/catalog.html').read_text('utf8')
+          script=page.split('<script>',1)[1].split('</script>',1)[0]
+          Path('.v28/page_script.js').write_text(script,encoding='utf8')
+          PY
+          node --check .v28/page_script.js
+
+      - name: Strict integrity check - prices and taxonomy untouched
+        id: integrity
+        if: steps.verify.outcome == 'success'
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import hashlib,json,subprocess
+          from pathlib import Path
+          from tempfile import TemporaryDirectory
+          before=json.loads(subprocess.check_output(['git','show','HEAD:docs/data/catalog_latest.json'],text=True))
+          after=json.loads(Path('docs/data/catalog_latest.json').read_text('utf8'))
+          protected={'price_czk','price_status','price_source','checked_at','original_price_czk','discount_pct',
+                     'multibuy','offer_valid_until','price_history_previous_czk','price_history_previous_at',
+                     'drop_since_previous_pct','name','title','url','store','rule_ids','store_category_path','category_source'}
+          b=before['items'];a=after['items']
+          assert len(b)==len(a)>=1090
+          for old,new in zip(b,a):
+              assert set(old).issubset(new),f'Existing fields disappeared: {old.get("url")}'
+              for key,value in old.items():
+                  if key not in {'multibuy_v28_last_attempt_at','multibuy_v28_status','multibuy_v28_note',
+                                 'multibuy_v28_verified_at','multibuy_v28_verified_offer'}:
+                      assert new[key]==value,(old.get('url'),key)
+              for key in protected:
+                  assert new.get(key)==old.get(key),(old.get('url'),key)
+          for key,val in before.items():
+              if key!='items':assert after.get(key)==val,('catalog field changed',key)
+          baselines=json.loads(Path('.v28/safety/sha256.json').read_text('utf8'))
+          assert hashlib.sha256(Path('docs/data/taxonomy_v27_public.json').read_bytes()).hexdigest()==baselines['docs/data/taxonomy_v27_public.json']
+          changed=subprocess.check_output(['git','diff','--name-only'],text=True).splitlines()
+          assert set(changed)<= {'docs/catalog.html','docs/data/catalog_latest.json'},changed
+          rep=json.loads(Path('.v28/quantity_v28_report.json').read_text('utf8'))
+          assert rep['products']==len(b) and rep['original_price_fields_preserved']
+          print('STRICT PASS: 1090 identities, all prices / categories preserved, changed:',changed)
+          PY
+          git diff --check
+
+      - name: Preserve status report even when merchant blocks requests
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rk-v28-quantity-verification-report
+          retention-days: 14
+          if-no-files-found: ignore
+          path: .v28/quantity_v28_report.json
+
+      - name: Publish only verified diagnostic fields and additive HTML
+        if: steps.verify.outcome == 'success' && steps.integrity.outcome == 'success'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- docs/data/catalog_latest.json docs/catalog.html
+          if ! git diff --cached --quiet; then
+            git commit -m 'v28: verify stored Košík quantity offers without guessing prices [skip ci]'
+            git push origin HEAD:refs/heads/fix/real-product-price-reading-v20
+          else
+            echo 'No monitored changes to publish.'
+          fi
+
+      - name: Report actual confirmation rate
+        if: always()
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          f=Path('.v28/quantity_v28_report.json')
+          with open(os.environ['GITHUB_STEP_SUMMARY'],'a',encoding='utf8') as out:
+              out.write('## Monitor slev v28 – skutečné ověření Multikupu\n\n')
+              if f.exists():
+                  d=json.loads(f.read_text('utf8'))
+                  for key in ('historical_quantity_offers','selected','attempted','currently_confirmed','statuses','blocked'):
+                      out.write(f'- **{key}:** {d.get(key)}\n')
+                  out.write('\nOvěření je oddělené od původních cen. Nezjištěné nabídky nejsou platné akce.\n')
+              else:
+                  out.write('Sběr neposkytl report – změny nebyly publikovány.\n')
+          PY
+
+      - name: Fail when verification or integrity guard fails
+        if: steps.verify.outcome != 'success' || steps.integrity.outcome != 'success'
+        shell: bash
+        run: exit 1
