@@ -1,6 +1,6 @@
 {
   "schema": "rk-v27-category-review",
-  "count": 278,
+  "count": 274,
   "items": [
     {
       "store": "Košík",
@@ -92,28 +92,6 @@
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p99157-axe-black-pansky-deodorant-ve-spreji",
-      "name": "Axe Black Pánský deodorant ve spreji",
-      "rule_ids": [
-        "W055"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Kosmetika"
-      ],
-      "rule_checks": {
-        "W055": {
-          "expected": "Kosmetika",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
       "url": "https://www.kosik.cz/p712666-boruvky-kanadske-vanicka",
       "name": "Borůvky kanadské, vanička",
       "rule_ids": [
@@ -186,28 +164,6 @@
       "store": "Košík",
       "url": "https://www.kosik.cz/p233224-chodura-burgundska-sunka-nejvyssi-jakosti-96-masa",
       "name": "Chodura Burgundská šunka nejvyšší jakosti (96% masa)",
-      "rule_ids": [
-        "W007"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Uzeniny / šunky"
-      ],
-      "rule_checks": {
-        "W007": {
-          "expected": "Uzeniny / šunky",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p97107-chodura-dusena-sunka-excellent-nejvyssi-jakosti-platky-93-masa",
-      "name": "Chodura Dušená šunka Excellent nejvyšší jakosti plátky (93% masa)",
       "rule_ids": [
         "W007"
       ],
@@ -369,28 +325,6 @@
         }
       },
       "reason": "Salámy podle cesty prodejce; nesoulad s pravidly: Uzeniny / salámy, Uzeniny / šunky"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p98057-cif-cream-lemon-kremovy-abrazivni-cistici-pripravek",
-      "name": "Cif Cream Lemon krémový abrazivní čisticí přípravek",
-      "rule_ids": [
-        "W070"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Úklid"
-      ],
-      "rule_checks": {
-        "W070": {
-          "expected": "Úklid",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
     },
     {
       "store": "Košík",
@@ -1947,28 +1881,6 @@
         }
       },
       "reason": "Cesta prodejce nemá schválené mapování"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p98807-savo-kuchyn-sprej",
-      "name": "Savo Kuchyň sprej",
-      "rule_ids": [
-        "W069"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Úklid"
-      ],
-      "rule_checks": {
-        "W069": {
-          "expected": "Úklid",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
     },
     {
       "store": "Košík",

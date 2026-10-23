@@ -1,10 +1,10 @@
 {
   "schema": "rk-v27-merchant-path-review",
-  "number_of_distinct_trusted_paths": 213,
-  "mapped_product_total": 1042,
+  "number_of_distinct_trusted_paths": 214,
+  "mapped_product_total": 1046,
   "unmapped_or_mismatched_path_count": 38,
   "without_trusted_path_by_shop": {
-    "Košík": 38,
+    "Košík": 34,
     "Rohlík": 1
   },
   "note": "Old rule categories are references for audit only; never proof of merchant classification.",
@@ -61,14 +61,14 @@
       ],
       "mapped_category": "Uzeniny / šunky",
       "mapping_reason": "Šunky podle cesty prodejce",
-      "product_count": 22,
+      "product_count": 23,
       "old_rule_categories": {
-        "Uzeniny / šunky": 22
+        "Uzeniny / šunky": 23
       },
       "sample_product_urls": [
+        "https://www.kosik.cz/p97107-chodura-dusena-sunka-excellent-nejvyssi-jakosti-platky-93-masa",
         "https://www.kosik.cz/p391634-chodura-dusena-sunka-se-snizenym-obsahem-soli-nejvyssi-jakosti-93-masa",
-        "https://www.kosik.cz/p471463-chodura-dusena-sunka-zauzena-nejvyssi-jakosti-94-masa",
-        "https://www.kosik.cz/p471473-chodura-pecena-sunka-nejvyssi-jakosti-96-masa"
+        "https://www.kosik.cz/p471463-chodura-dusena-sunka-zauzena-nejvyssi-jakosti-94-masa"
       ],
       "needs_review": false
     },
@@ -826,6 +826,26 @@
     {
       "shop": "Košík",
       "merchant_path": [
+        "Drogerie a kosmetika",
+        "Čistící přípravky",
+        "Univerzální"
+      ],
+      "mapped_category": "Úklid",
+      "mapping_reason": "Úklid podle cesty prodejce",
+      "product_count": 8,
+      "old_rule_categories": {
+        "Úklid": 8
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p98057-cif-cream-lemon-kremovy-abrazivni-cistici-pripravek",
+        "https://www.kosik.cz/p98047-cif-cream-original-kremovy-abrazivni-cistici-pripravek",
+        "https://www.kosik.cz/p194375-savo-original-dezinfekce"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
         "Děti",
         "Vlhčené ubrousky"
       ],
@@ -1048,26 +1068,6 @@
         "https://www.kosik.cz/p800550-ariel-professional-regular-prasek-na-prani",
         "https://www.kosik.cz/p795256-ariel-prasek-mountain-spring-box-2-75-kg",
         "https://www.kosik.cz/p813462-persil-expert-freshness-by-silan-praci-prasek"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Drogerie a kosmetika",
-        "Čistící přípravky",
-        "Univerzální"
-      ],
-      "mapped_category": "Úklid",
-      "mapping_reason": "Úklid podle cesty prodejce",
-      "product_count": 7,
-      "old_rule_categories": {
-        "Úklid": 7
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p98047-cif-cream-original-kremovy-abrazivni-cistici-pripravek",
-        "https://www.kosik.cz/p194375-savo-original-dezinfekce",
-        "https://www.kosik.cz/p194455-savo-original-dezinfekce"
       ],
       "needs_review": false
     },
@@ -1433,6 +1433,27 @@
       "shop": "Košík",
       "merchant_path": [
         "Drogerie a kosmetika",
+        "Deodoranty a antiperspiranty",
+        "Pánské",
+        "Spreje"
+      ],
+      "mapped_category": "Kosmetika",
+      "mapping_reason": "Kosmetický sortiment podle cesty e-shopu",
+      "product_count": 5,
+      "old_rule_categories": {
+        "Kosmetika": 5
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p98697-axe-africa-pansky-deodorant-ve-spreji",
+        "https://www.kosik.cz/p99157-axe-black-pansky-deodorant-ve-spreji",
+        "https://www.kosik.cz/p442580-axe-dark-temptation-deodorant-ve-spreji"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Drogerie a kosmetika",
         "Ústní hygiena",
         "Zubní pasty",
         "Pro svěží dech"
@@ -1654,27 +1675,6 @@
         "https://www.rohlik.cz/1294911-bio-okurka-hadovka-1-ks-cca-300-g",
         "https://www.rohlik.cz/1340323-mini-okurky-baleni",
         "https://www.rohlik.cz/1294559-okurka-hadovka-cca-300-g"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Drogerie a kosmetika",
-        "Deodoranty a antiperspiranty",
-        "Pánské",
-        "Spreje"
-      ],
-      "mapped_category": "Kosmetika",
-      "mapping_reason": "Kosmetický sortiment podle cesty e-shopu",
-      "product_count": 4,
-      "old_rule_categories": {
-        "Kosmetika": 4
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p98697-axe-africa-pansky-deodorant-ve-spreji",
-        "https://www.kosik.cz/p442580-axe-dark-temptation-deodorant-ve-spreji",
-        "https://www.kosik.cz/p121507-axe-ice-chill-deodorant-ve-spreji-pro-muze"
       ],
       "needs_review": false
     },
@@ -3416,6 +3416,24 @@
       },
       "sample_product_urls": [
         "https://www.kosik.cz/p737478-colgate-herbal-white-zubni-pasta"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Drogerie a kosmetika",
+        "Čistící přípravky",
+        "Kuchyň"
+      ],
+      "mapped_category": "Úklid",
+      "mapping_reason": "Úklid podle cesty prodejce",
+      "product_count": 1,
+      "old_rule_categories": {
+        "Úklid": 1
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p98807-savo-kuchyn-sprej"
       ],
       "needs_review": false
     },

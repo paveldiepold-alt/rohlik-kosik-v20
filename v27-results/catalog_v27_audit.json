@@ -15,30 +15,30 @@
   ],
   "unknown_rule_ids": [],
   "schema": "rk-v27-taxonomy-audit",
-  "generated_at": "2026-10-23T15:50:37+00:00",
+  "generated_at": "2026-10-23T19:28:34+00:00",
   "source_generated_at": "2026-10-21T14:12:55+00:00",
   "products_before": 1090,
   "products_after": 1090,
-  "priced_before": 1058,
-  "priced_after": 1058,
-  "missing_prices": 32,
+  "priced_before": 1059,
+  "priced_after": 1059,
+  "missing_prices": 31,
   "category_statuses": {
-    "review": 240,
-    "verified": 812,
-    "mismatch": 38
-  },
-  "rule_match_statuses": {
-    "review": 240,
+    "review": 236,
     "verified": 816,
     "mismatch": 38
   },
-  "merchant_category_mapped": 1042,
-  "merchant_category_unmapped": 48,
+  "rule_match_statuses": {
+    "review": 236,
+    "verified": 820,
+    "mismatch": 38
+  },
+  "merchant_category_mapped": 1046,
+  "merchant_category_unmapped": 44,
   "products_with_merchant_category_but_rule_review": 192,
   "products_with_merchant_category_but_rule_mismatch": 38,
   "price_diagnostics": {
-    "ok": 1058,
-    "price_read_unverified": 32
+    "ok": 1059,
+    "price_read_unverified": 31
   },
   "price_by_shop": {
     "Košík": {
@@ -52,11 +52,11 @@
     },
     "Rohlík": {
       "total": 534,
-      "priced": 504,
-      "missing": 30,
+      "priced": 505,
+      "missing": 29,
       "diagnostics": {
-        "ok": 504,
-        "price_read_unverified": 30
+        "ok": 505,
+        "price_read_unverified": 29
       }
     }
   },
@@ -64,12 +64,12 @@
     "Košík": 556,
     "Rohlík": 534
   },
-  "review_count": 278,
-  "retailer_path_present": 1052,
-  "retailer_path_missing": 38,
-  "trusted_retailer_path": 1051,
+  "review_count": 274,
+  "retailer_path_present": 1056,
+  "retailer_path_missing": 34,
+  "trusted_retailer_path": 1055,
   "trusted_but_unmapped": 9,
-  "untrusted_or_missing_path": 39,
+  "untrusted_or_missing_path": 35,
   "source_price_evidence_unchanged": true,
   "source_items_unchanged": true,
   "category_mapping_method": "trusted merchant path only; specific rule checks for meat and produce; no titles"
