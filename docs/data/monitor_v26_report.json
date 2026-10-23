@@ -1,40 +1,138 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-10-23T07:29:48+00:00",
+  "at": "2026-10-23T13:28:03+00:00",
   "processed": 1090,
-  "updated_prices": 920,
+  "updated_prices": 928,
   "requested": 1090,
   "blocked_stores": [],
   "statuses": {
-    "Košík|title_mismatch": 3,
-    "Rohlík|ok": 464,
-    "Košík|ok": 456,
-    "Košík|price_unverified": 95,
+    "Košík|ok": 458,
+    "Rohlík|ok": 470,
+    "Košík|price_unverified": 96,
     "Košík|http_error": 2,
-    "Rohlík|price_unverified": 70
+    "Rohlík|price_unverified": 64
   },
-  "last_price_monitor_at": "2026-10-23T07:29:48+00:00",
+  "last_price_monitor_at": "2026-10-23T13:28:03+00:00",
   "checked_last_6h": 1090,
-  "verified_price_last_6h": 921,
+  "verified_price_last_6h": 929,
   "new_drops": [
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p78177-chiquita-banan-1-ks",
-      "name": "Chiquita Banán, 1 ks",
-      "previous": 12.17,
-      "now": 8.46,
-      "drop_pct": 30.5,
-      "checked_at": "2026-10-23T06:45:24+00:00"
+      "url": "https://www.kosik.cz/p19027-kral-syru-hermelin-provensalske-bylinky",
+      "name": "Král Sýrů Hermelín provensálské bylinky",
+      "previous": 57.9,
+      "now": 44.9,
+      "drop_pct": 22.5,
+      "checked_at": "2026-10-23T12:52:53+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p805304-paprika-cervena-kapie-1-ks",
-      "name": "Paprika červená kapie, 1 ks",
-      "previous": 8.99,
-      "now": 6.74,
+      "url": "https://www.kosik.cz/p796576-le-co-varena-sunka-ve-vlastni-stave-98-masa",
+      "name": "Le & Co Vařená šunka ve vlastní šťávě (98% masa)",
+      "previous": 39.9,
+      "now": 32.9,
+      "drop_pct": 17.5,
+      "checked_at": "2026-10-23T12:54:10+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p819094-metro-chef-mrkev-karotka-prana-1-ks",
+      "name": "Metro Chef Mrkev karotka praná, 1 ks",
+      "previous": 3.24,
+      "now": 2.99,
+      "drop_pct": 7.7,
+      "checked_at": "2026-10-23T13:00:38+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p803198-paprika-zelena-1-ks",
+      "name": "Paprika zelená, 1 ks",
+      "previous": 10.18,
+      "now": 9.58,
+      "drop_pct": 5.9,
+      "checked_at": "2026-10-23T13:03:40+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p794752-paprika-cervena-1-ks",
+      "name": "Paprika červená, 1 ks",
+      "previous": 19.98,
+      "now": 18.98,
+      "drop_pct": 5.0,
+      "checked_at": "2026-10-23T13:03:58+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p803200-paprika-zluta-1-ks",
+      "name": "Paprika žlutá, 1 ks",
+      "previous": 12.99,
+      "now": 9.99,
+      "drop_pct": 23.1,
+      "checked_at": "2026-10-23T13:04:02+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1420389-smetanito-syr-na-panev-a-gril-jemne-pikantni",
+      "name": "Smetanito Sýr na pánev a gril jemně pikantní",
+      "previous": 89.9,
+      "now": 59.9,
+      "drop_pct": 33.4,
+      "checked_at": "2026-10-23T13:07:10+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p814280-rajcata-cherry-zelena-kerikova-vanicka",
+      "name": "Rajčata Cherry zelená keříková, vanička",
+      "previous": 129.9,
+      "now": 109.9,
+      "drop_pct": 15.4,
+      "checked_at": "2026-10-23T13:09:39+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p308914-rajcata-cherry-vanicka",
+      "name": "Rajčata Cherry, vanička",
+      "previous": 114.9,
+      "now": 99.9,
+      "drop_pct": 13.1,
+      "checked_at": "2026-10-23T13:09:48+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1331029-citrony-balene-sit",
+      "name": "Citrony balené, síť",
+      "previous": 39.9,
+      "now": 29.92,
       "drop_pct": 25.0,
-      "checked_at": "2026-10-23T07:05:21+00:00"
+      "checked_at": "2026-10-23T13:17:10+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p791112-bio-okurka",
+      "name": "BIO Okurka",
+      "previous": 59.9,
+      "now": 39.9,
+      "drop_pct": 33.4,
+      "checked_at": "2026-10-23T13:23:54+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p724392-bio-rajcata-cervena",
+      "name": "BIO Rajčata červená",
+      "previous": 139.9,
+      "now": 79.9,
+      "drop_pct": 42.9,
+      "checked_at": "2026-10-23T13:24:12+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p457490-bio-rajcata-cervena-kulata-na-stonku-baleni",
+      "name": "BIO Rajčata červená kulatá na stonku, balení",
+      "previous": 134.9,
+      "now": 99.9,
+      "drop_pct": 25.9,
+      "checked_at": "2026-10-23T13:24:17+00:00"
     }
   ],
-  "remaining_missing": 33
+  "remaining_missing": 32
 }
