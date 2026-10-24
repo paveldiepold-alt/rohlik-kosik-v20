@@ -1,65 +1,39 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-10-24T13:25:17+00:00",
+  "at": "2026-10-24T19:21:11+00:00",
   "processed": 1090,
-  "updated_prices": 932,
+  "updated_prices": 927,
   "requested": 1090,
   "blocked_stores": [],
   "statuses": {
-    "Košík|ok": 458,
-    "Rohlík|ok": 474,
+    "Rohlík|ok": 473,
+    "Košík|title_mismatch": 3,
+    "Košík|ok": 454,
     "Košík|price_unverified": 96,
-    "Košík|http_error": 2,
-    "Rohlík|price_unverified": 60
+    "Košík|http_error": 3,
+    "Rohlík|price_unverified": 61
   },
-  "last_price_monitor_at": "2026-10-24T13:25:17+00:00",
+  "last_price_monitor_at": "2026-10-24T19:21:11+00:00",
   "checked_last_6h": 1090,
-  "verified_price_last_6h": 932,
+  "verified_price_last_6h": 927,
   "new_drops": [
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p78177-chiquita-banan-1-ks",
-      "name": "Chiquita Banán, 1 ks",
-      "previous": 10.58,
-      "now": 10.05,
-      "drop_pct": 5.0,
-      "checked_at": "2026-10-24T12:41:18+00:00"
+      "url": "https://www.kosik.cz/p819094-metro-chef-mrkev-karotka-prana-1-ks",
+      "name": "Metro Chef Mrkev karotka praná, 1 ks",
+      "previous": 3.24,
+      "now": 2.74,
+      "drop_pct": 15.4,
+      "checked_at": "2026-10-24T18:53:21+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p805304-paprika-cervena-kapie-1-ks",
-      "name": "Paprika červená kapie, 1 ks",
-      "previous": 6.49,
-      "now": 5.99,
-      "drop_pct": 7.7,
-      "checked_at": "2026-10-24T13:01:02+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p794752-paprika-cervena-1-ks",
-      "name": "Paprika červená, 1 ks",
-      "previous": 20.98,
-      "now": 17.98,
-      "drop_pct": 14.3,
-      "checked_at": "2026-10-24T13:01:11+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p725876-primas-farmarska-krkovice-na-gril-s-bylinkami",
-      "name": "Primas Farmářská krkovice na gril s bylinkami",
-      "previous": 105.26,
-      "now": 83.81,
-      "drop_pct": 20.4,
-      "checked_at": "2026-10-24T13:04:32+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p82357-zewa-deluxe-camomile-comfort-toaletni-papir-3vrstvy-16-roli",
-      "name": "Zewa Deluxe Camomile Comfort toaletní papír 3vrstvý, 16 rolí",
-      "previous": 169.9,
-      "now": 139.9,
-      "drop_pct": 17.7,
-      "checked_at": "2026-10-24T13:15:05+00:00"
+      "url": "https://www.kosik.cz/p803198-paprika-zelena-1-ks",
+      "name": "Paprika zelená, 1 ks",
+      "previous": 10.78,
+      "now": 8.39,
+      "drop_pct": 22.2,
+      "checked_at": "2026-10-24T18:56:24+00:00"
     }
   ],
   "remaining_missing": 28
