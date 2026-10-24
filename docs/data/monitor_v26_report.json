@@ -1,57 +1,48 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-10-24T01:36:07+00:00",
+  "at": "2026-10-24T07:25:33+00:00",
   "processed": 1090,
-  "updated_prices": 925,
+  "updated_prices": 931,
   "requested": 1090,
   "blocked_stores": [],
   "statuses": {
-    "Košík|title_mismatch": 1,
-    "Rohlík|ok": 468,
-    "Košík|ok": 457,
+    "Rohlík|ok": 475,
+    "Košík|title_mismatch": 2,
+    "Košík|ok": 456,
     "Košík|price_unverified": 96,
     "Košík|http_error": 2,
-    "Rohlík|price_unverified": 66
+    "Rohlík|price_unverified": 59
   },
-  "last_price_monitor_at": "2026-10-24T01:36:07+00:00",
+  "last_price_monitor_at": "2026-10-24T07:25:33+00:00",
   "checked_last_6h": 1090,
-  "verified_price_last_6h": 925,
+  "verified_price_last_6h": 932,
   "new_drops": [
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p471473-chodura-pecena-sunka-nejvyssi-jakosti-96-masa",
-      "name": "Chodura Pečená šunka nejvyšší jakosti (96% masa)",
-      "previous": 39.9,
-      "now": 29.9,
-      "drop_pct": 25.1,
-      "checked_at": "2026-10-24T00:53:46+00:00"
+      "url": "https://www.kosik.cz/p802840-metro-chef-veprova-panenka-bez-retizku",
+      "name": "Metro Chef Vepřová panenka bez řetízku",
+      "previous": 148.14,
+      "now": 108.24,
+      "drop_pct": 26.9,
+      "checked_at": "2026-10-24T06:58:27+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p819094-metro-chef-mrkev-karotka-prana-1-ks",
-      "name": "Metro Chef Mrkev karotka praná, 1 ks",
-      "previous": 2.99,
-      "now": 2.74,
-      "drop_pct": 8.4,
-      "checked_at": "2026-10-24T01:09:25+00:00"
+      "url": "https://www.kosik.cz/p805304-paprika-cervena-kapie-1-ks",
+      "name": "Paprika červená kapie, 1 ks",
+      "previous": 8.44,
+      "now": 6.49,
+      "drop_pct": 23.1,
+      "checked_at": "2026-10-24T07:01:20+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p327284-metro-chef-veprova-krkovice-bez-kosti",
-      "name": "Metro Chef Vepřová krkovice bez kosti",
-      "previous": 213.89,
-      "now": 201.9,
-      "drop_pct": 5.6,
-      "checked_at": "2026-10-24T01:09:34+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p803198-paprika-zelena-1-ks",
-      "name": "Paprika zelená, 1 ks",
-      "previous": 10.18,
-      "now": 7.79,
-      "drop_pct": 23.5,
-      "checked_at": "2026-10-24T01:12:27+00:00"
+      "url": "https://www.kosik.cz/p429165-authentic-veprova-krkovice-bez-kosti",
+      "name": "Authentic Vepřová krkovice bez kosti​",
+      "previous": 267.7,
+      "now": 226.5,
+      "drop_pct": 15.4,
+      "checked_at": "2026-10-24T07:20:16+00:00"
     }
   ],
   "remaining_missing": 28
