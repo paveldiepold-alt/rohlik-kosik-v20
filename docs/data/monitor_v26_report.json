@@ -1,48 +1,38 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-10-25T01:27:46+00:00",
+  "at": "2026-10-25T07:25:18+00:00",
   "processed": 1090,
-  "updated_prices": 926,
+  "updated_prices": 930,
   "requested": 1090,
   "blocked_stores": [],
   "statuses": {
-    "Rohlík|ok": 472,
-    "Košík|title_mismatch": 5,
-    "Rohlík|price_unverified": 62,
-    "Košík|ok": 454,
-    "Košík|http_error": 3,
-    "Košík|price_unverified": 94
+    "Košík|ok": 459,
+    "Rohlík|ok": 471,
+    "Rohlík|price_unverified": 63,
+    "Košík|price_unverified": 94,
+    "Košík|http_error": 3
   },
-  "last_price_monitor_at": "2026-10-25T01:27:46+00:00",
+  "last_price_monitor_at": "2026-10-25T07:25:18+00:00",
   "checked_last_6h": 1090,
-  "verified_price_last_6h": 926,
+  "verified_price_last_6h": 930,
   "new_drops": [
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p794752-paprika-cervena-1-ks",
-      "name": "Paprika červená, 1 ks",
-      "previous": 19.98,
-      "now": 17.98,
-      "drop_pct": 10.0,
-      "checked_at": "2026-10-25T01:04:15+00:00"
+      "url": "https://www.kosik.cz/p78217-banan-1-ks",
+      "name": "Banán, 1 ks",
+      "previous": 7.98,
+      "now": 6.78,
+      "drop_pct": 15.0,
+      "checked_at": "2026-10-25T06:40:37+00:00"
     },
     {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1425200-veprova-krkovice-bez-kosti-platky-4-ks",
-      "name": "Vepřová krkovice bez kosti plátky, 4 ks",
-      "previous": 131.94,
-      "now": 122.94,
-      "drop_pct": 6.8,
-      "checked_at": "2026-10-25T01:08:33+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1424111-ariel-color-praci-gel-3-15-l",
-      "name": "Ariel Color prací gel (3,15 l)",
-      "previous": 519.95,
-      "now": 479.96,
-      "drop_pct": 7.7,
-      "checked_at": "2026-10-25T01:10:58+00:00"
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p78177-chiquita-banan-1-ks",
+      "name": "Chiquita Banán, 1 ks",
+      "previous": 11.11,
+      "now": 10.05,
+      "drop_pct": 9.5,
+      "checked_at": "2026-10-25T06:42:15+00:00"
     }
   ],
   "remaining_missing": 28
