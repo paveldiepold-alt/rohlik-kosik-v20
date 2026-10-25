@@ -1,39 +1,48 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-10-24T19:21:11+00:00",
+  "at": "2026-10-25T01:27:46+00:00",
   "processed": 1090,
-  "updated_prices": 927,
+  "updated_prices": 926,
   "requested": 1090,
   "blocked_stores": [],
   "statuses": {
-    "Rohlík|ok": 473,
-    "Košík|title_mismatch": 3,
+    "Rohlík|ok": 472,
+    "Košík|title_mismatch": 5,
+    "Rohlík|price_unverified": 62,
     "Košík|ok": 454,
-    "Košík|price_unverified": 96,
     "Košík|http_error": 3,
-    "Rohlík|price_unverified": 61
+    "Košík|price_unverified": 94
   },
-  "last_price_monitor_at": "2026-10-24T19:21:11+00:00",
+  "last_price_monitor_at": "2026-10-25T01:27:46+00:00",
   "checked_last_6h": 1090,
-  "verified_price_last_6h": 927,
+  "verified_price_last_6h": 926,
   "new_drops": [
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p819094-metro-chef-mrkev-karotka-prana-1-ks",
-      "name": "Metro Chef Mrkev karotka praná, 1 ks",
-      "previous": 3.24,
-      "now": 2.74,
-      "drop_pct": 15.4,
-      "checked_at": "2026-10-24T18:53:21+00:00"
+      "url": "https://www.kosik.cz/p794752-paprika-cervena-1-ks",
+      "name": "Paprika červená, 1 ks",
+      "previous": 19.98,
+      "now": 17.98,
+      "drop_pct": 10.0,
+      "checked_at": "2026-10-25T01:04:15+00:00"
     },
     {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p803198-paprika-zelena-1-ks",
-      "name": "Paprika zelená, 1 ks",
-      "previous": 10.78,
-      "now": 8.39,
-      "drop_pct": 22.2,
-      "checked_at": "2026-10-24T18:56:24+00:00"
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1425200-veprova-krkovice-bez-kosti-platky-4-ks",
+      "name": "Vepřová krkovice bez kosti plátky, 4 ks",
+      "previous": 131.94,
+      "now": 122.94,
+      "drop_pct": 6.8,
+      "checked_at": "2026-10-25T01:08:33+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1424111-ariel-color-praci-gel-3-15-l",
+      "name": "Ariel Color prací gel (3,15 l)",
+      "previous": 519.95,
+      "now": 479.96,
+      "drop_pct": 7.7,
+      "checked_at": "2026-10-25T01:10:58+00:00"
     }
   ],
   "remaining_missing": 28
