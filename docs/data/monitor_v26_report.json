@@ -1,112 +1,20 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-10-26T15:35:04+00:00",
-  "processed": 1090,
-  "updated_prices": 922,
-  "requested": 1090,
+  "at": "2026-10-26T18:51:31+00:00",
+  "processed": 32,
+  "updated_prices": 29,
+  "requested": 32,
   "blocked_stores": [],
   "statuses": {
-    "Rohlík|ok": 470,
-    "Košík|title_mismatch": 4,
-    "Rohlík|price_unverified": 64,
-    "Košík|ok": 452,
-    "Košík|price_unverified": 96,
-    "Košík|http_error": 4
+    "Košík|title_mismatch": 1,
+    "Rohlík|ok": 14,
+    "Košík|ok": 15,
+    "Rohlík|price_unverified": 1,
+    "Košík|price_unverified": 1
   },
-  "last_price_monitor_at": "2026-10-26T15:35:04+00:00",
+  "last_price_monitor_at": "2026-10-26T18:51:31+00:00",
   "checked_last_6h": 1090,
-  "verified_price_last_6h": 922,
-  "new_drops": [
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p78177-chiquita-banan-1-ks",
-      "name": "Chiquita Banán, 1 ks",
-      "previous": 10.05,
-      "now": 8.99,
-      "drop_pct": 10.5,
-      "checked_at": "2026-10-26T14:50:33+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1317247-boruvky-baleni",
-      "name": "Borůvky, balení",
-      "previous": 59.9,
-      "now": 44.92,
-      "drop_pct": 25.0,
-      "checked_at": "2026-10-26T14:51:08+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p97077-chodura-teleci-parky-v-prirodnim-strivku-80-masa",
-      "name": "Chodura Telecí párky v přírodním střívku (80% masa)",
-      "previous": 169.9,
-      "now": 124.9,
-      "drop_pct": 26.5,
-      "checked_at": "2026-10-26T14:51:46+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p18707-kral-syru-hermelin-zeleny-pepr",
-      "name": "Král Sýrů Hermelín zelený pepř",
-      "previous": 57.9,
-      "now": 44.9,
-      "drop_pct": 22.5,
-      "checked_at": "2026-10-26T14:59:28+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p447240-metro-chef-veprova-krkovice-bez-kosti-6-platku",
-      "name": "Metro Chef Vepřová krkovice bez kosti, 6 plátků",
-      "previous": 218.41,
-      "now": 206.91,
-      "drop_pct": 5.3,
-      "checked_at": "2026-10-26T15:07:24+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p809514-paprika-bila-1-ks",
-      "name": "Paprika bílá, 1 ks",
-      "previous": 7.19,
-      "now": 5.59,
-      "drop_pct": 22.3,
-      "checked_at": "2026-10-26T15:09:59+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p770270-paprika-bila-vanicka",
-      "name": "Paprika bílá, vanička",
-      "previous": 49.9,
-      "now": 37.9,
-      "drop_pct": 24.0,
-      "checked_at": "2026-10-26T15:10:04+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p794752-paprika-cervena-1-ks",
-      "name": "Paprika červená, 1 ks",
-      "previous": 21.98,
-      "now": 16.98,
-      "drop_pct": 22.7,
-      "checked_at": "2026-10-26T15:10:31+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p789218-president-camembert-delicatesse",
-      "name": "Président Camembert Délicatesse",
-      "previous": 84.9,
-      "now": 62.9,
-      "drop_pct": 25.9,
-      "checked_at": "2026-10-26T15:14:20+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p795666-avokado-hass-ready-to-eat-1-ks",
-      "name": "Avokádo Hass \"ready to eat\", 1 ks",
-      "previous": 59.9,
-      "now": 39.9,
-      "drop_pct": 33.4,
-      "checked_at": "2026-10-26T15:29:32+00:00"
-    }
-  ],
+  "verified_price_last_6h": 924,
+  "new_drops": [],
   "remaining_missing": 28
 }
