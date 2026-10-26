@@ -1,10 +1,10 @@
 {
   "schema": "rk-v27-merchant-path-review",
   "number_of_distinct_trusted_paths": 215,
-  "mapped_product_total": 1060,
+  "mapped_product_total": 1066,
   "unmapped_or_mismatched_path_count": 38,
   "without_trusted_path_by_shop": {
-    "Košík": 20,
+    "Košík": 14,
     "Rohlík": 1
   },
   "note": "Old rule categories are references for audit only; never proof of merchant classification.",
@@ -122,9 +122,9 @@
       ],
       "mapped_category": "Sýry / tavené",
       "mapping_reason": "Tavené sýry podle cesty prodejce",
-      "product_count": 19,
+      "product_count": 20,
       "old_rule_categories": {
-        "Sýry / tavené": 18,
+        "Sýry / tavené": 19,
         "Sýry / plísňové": 1
       },
       "sample_product_urls": [
@@ -239,6 +239,27 @@
       "needs_review": false
     },
     {
+      "shop": "Košík",
+      "merchant_path": [
+        "Drogerie a kosmetika",
+        "Ústní hygiena",
+        "Zubní pasty",
+        "Bělící"
+      ],
+      "mapped_category": "Dentální hygiena",
+      "mapping_reason": "Dentální hygiena podle cesty prodejce",
+      "product_count": 15,
+      "old_rule_categories": {
+        "Dentální hygiena": 15
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p721714-colgate-advanced-white-baking-soda-vulcanic-ash-zubni-pasta",
+        "https://www.kosik.cz/p413419-colgate-advanced-white-charcoal-zubni-pasta-3x75ml",
+        "https://www.kosik.cz/p63857-colgate-advanced-whitening-zubni-pasta"
+      ],
+      "needs_review": false
+    },
+    {
       "shop": "Rohlík",
       "merchant_path": [
         "Drogerie",
@@ -298,27 +319,6 @@
         "https://www.kosik.cz/p795274-ariel-kapsle-mountain-spring-sacek",
         "https://www.kosik.cz/p795238-ariel-kapsle-mountain-spring-sacek",
         "https://www.kosik.cz/p820206-ariel-kapsle-spring-awakening"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Drogerie a kosmetika",
-        "Ústní hygiena",
-        "Zubní pasty",
-        "Bělící"
-      ],
-      "mapped_category": "Dentální hygiena",
-      "mapping_reason": "Dentální hygiena podle cesty prodejce",
-      "product_count": 14,
-      "old_rule_categories": {
-        "Dentální hygiena": 14
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p721714-colgate-advanced-white-baking-soda-vulcanic-ash-zubni-pasta",
-        "https://www.kosik.cz/p413419-colgate-advanced-white-charcoal-zubni-pasta-3x75ml",
-        "https://www.kosik.cz/p63857-colgate-advanced-whitening-zubni-pasta"
       ],
       "needs_review": false
     },
@@ -827,6 +827,27 @@
       "shop": "Košík",
       "merchant_path": [
         "Drogerie a kosmetika",
+        "Prací prostředky",
+        "Kapsle",
+        "Barevné prádlo"
+      ],
+      "mapped_category": "Praní",
+      "mapping_reason": "Praní podle cesty prodejce",
+      "product_count": 8,
+      "old_rule_categories": {
+        "Praní": 8
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p820204-ariel-kapsle-color",
+        "https://www.kosik.cz/p795278-ariel-kapsle-color-box",
+        "https://www.kosik.cz/p795250-ariel-kapsle-color-krabice"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Drogerie a kosmetika",
         "Čistící přípravky",
         "Univerzální"
       ],
@@ -879,6 +900,47 @@
         "https://www.kosik.cz/p127127-authentic-veprova-krkovice-bez-kosti",
         "https://www.kosik.cz/p429165-authentic-veprova-krkovice-bez-kosti",
         "https://www.kosik.cz/p801002-emi-food-veprova-krkovice-duroc"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Mléčné a chlazené",
+        "Máslo, margaríny, tuky",
+        "Rostlinné tuky a margaríny"
+      ],
+      "mapped_category": "Másla a tuky",
+      "mapping_reason": "Jedlé máslo/tuky podle cesty prodejce",
+      "product_count": 8,
+      "old_rule_categories": {
+        "Másla a tuky": 8
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p740500-flora-gold",
+        "https://www.kosik.cz/p740498-flora-light",
+        "https://www.kosik.cz/p740504-flora-original"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Plátkové",
+        "Holandského typu"
+      ],
+      "mapped_category": "Sýry / plátkové",
+      "mapping_reason": "Plátkové sýry podle cesty prodejce",
+      "product_count": 8,
+      "old_rule_categories": {
+        "Sýry / plátkové": 8
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p806104-leerdammer-caractere-platky",
+        "https://www.kosik.cz/p806102-leerdammer-delacreme-platky",
+        "https://www.kosik.cz/p85527-leerdammer-original-finesse-platky"
       ],
       "needs_review": false
     },
@@ -1013,27 +1075,6 @@
       "merchant_path": [
         "Drogerie a kosmetika",
         "Prací prostředky",
-        "Kapsle",
-        "Barevné prádlo"
-      ],
-      "mapped_category": "Praní",
-      "mapping_reason": "Praní podle cesty prodejce",
-      "product_count": 7,
-      "old_rule_categories": {
-        "Praní": 7
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p820204-ariel-kapsle-color",
-        "https://www.kosik.cz/p795278-ariel-kapsle-color-box",
-        "https://www.kosik.cz/p795250-ariel-kapsle-color-krabice"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Drogerie a kosmetika",
-        "Prací prostředky",
         "Prášky",
         "Barevné prádlo"
       ],
@@ -1068,47 +1109,6 @@
         "https://www.kosik.cz/p800550-ariel-professional-regular-prasek-na-prani",
         "https://www.kosik.cz/p795256-ariel-prasek-mountain-spring-box-2-75-kg",
         "https://www.kosik.cz/p813462-persil-expert-freshness-by-silan-praci-prasek"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Mléčné a chlazené",
-        "Máslo, margaríny, tuky",
-        "Rostlinné tuky a margaríny"
-      ],
-      "mapped_category": "Másla a tuky",
-      "mapping_reason": "Jedlé máslo/tuky podle cesty prodejce",
-      "product_count": 7,
-      "old_rule_categories": {
-        "Másla a tuky": 7
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p740498-flora-light",
-        "https://www.kosik.cz/p740504-flora-original",
-        "https://www.kosik.cz/p743114-rama-slana"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Mléčné a chlazené",
-        "Sýry",
-        "Plátkové",
-        "Holandského typu"
-      ],
-      "mapped_category": "Sýry / plátkové",
-      "mapping_reason": "Plátkové sýry podle cesty prodejce",
-      "product_count": 7,
-      "old_rule_categories": {
-        "Sýry / plátkové": 7
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p806104-leerdammer-caractere-platky",
-        "https://www.kosik.cz/p806102-leerdammer-delacreme-platky",
-        "https://www.kosik.cz/p85527-leerdammer-original-finesse-platky"
       ],
       "needs_review": false
     },
@@ -1281,6 +1281,28 @@
         "https://www.kosik.cz/p794876-ronsard-bio-kureci-prsa-bez-kosti-a-kuze"
       ],
       "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Grilovací sýry, raclette, fondue",
+        "Grilovací sýry"
+      ],
+      "mapped_category": "Sýry / grilovací",
+      "mapping_reason": "Grilovací sýry podle cesty prodejce, nikoliv automaticky tavené či plísňové",
+      "product_count": 6,
+      "old_rule_categories": {
+        "Sýry / plísňové": 1,
+        "Sýry / tavené": 5
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p206472-sedlcansky-hermelin-na-gril-original-s-grilovacim-korenim-4x100g",
+        "https://www.kosik.cz/p655640-smetanito-syr-na-gril-a-na-panev",
+        "https://www.kosik.cz/p655650-smetanito-syr-na-gril-a-na-panev-jemne-pikantni"
+      ],
+      "needs_review": true
     },
     {
       "shop": "Košík",
@@ -1531,28 +1553,6 @@
         "https://www.kosik.cz/p89667-clin-lemon-cistic-oken"
       ],
       "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Mléčné a chlazené",
-        "Sýry",
-        "Grilovací sýry, raclette, fondue",
-        "Grilovací sýry"
-      ],
-      "mapped_category": "Sýry / grilovací",
-      "mapping_reason": "Grilovací sýry podle cesty prodejce, nikoliv automaticky tavené či plísňové",
-      "product_count": 5,
-      "old_rule_categories": {
-        "Sýry / plísňové": 1,
-        "Sýry / tavené": 4
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p206472-sedlcansky-hermelin-na-gril-original-s-grilovacim-korenim-4x100g",
-        "https://www.kosik.cz/p655640-smetanito-syr-na-gril-a-na-panev",
-        "https://www.kosik.cz/p655650-smetanito-syr-na-gril-a-na-panev-jemne-pikantni"
-      ],
-      "needs_review": true
     },
     {
       "shop": "Košík",

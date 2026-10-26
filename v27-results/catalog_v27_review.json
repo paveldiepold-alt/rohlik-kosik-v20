@@ -1,6 +1,6 @@
 {
   "schema": "rk-v27-category-review",
-  "count": 266,
+  "count": 261,
   "items": [
     {
       "store": "Košík",
@@ -18,28 +18,6 @@
       "rule_checks": {
         "W074": {
           "expected": "Papírové utěrky",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p795236-ariel-kapsle-color-sacek",
-      "name": "Ariel Kapsle Color, sáček",
-      "rule_ids": [
-        "W061"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Praní"
-      ],
-      "rule_checks": {
-        "W061": {
-          "expected": "Praní",
           "status": "review",
           "reason": "Kategorie neověřena u prodejce"
         }
@@ -262,28 +240,6 @@
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p818746-colgate-max-white-one-coffee-tea-wine-zubni-pasta",
-      "name": "Colgate Max White One Coffee, Tea & Wine Zubní pasta",
-      "rule_ids": [
-        "W058"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Dentální hygiena"
-      ],
-      "rule_checks": {
-        "W058": {
-          "expected": "Dentální hygiena",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
       "url": "https://www.kosik.cz/p48787-dobra-voda-neperliva-bile-hrozny-6-x-1-5l",
       "name": "Dobrá voda Neperlivá Bílé hrozny 6 x 1,5l",
       "rule_ids": [
@@ -393,28 +349,6 @@
         }
       },
       "reason": "Vody podle cesty prodejce; nesoulad s pravidly: Nápoje / vody"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p740500-flora-gold",
-      "name": "Flora Gold",
-      "rule_ids": [
-        "W032"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Másla a tuky"
-      ],
-      "rule_checks": {
-        "W032": {
-          "expected": "Másla a tuky",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
     },
     {
       "store": "Košík",
@@ -1602,28 +1536,6 @@
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p806106-president-protein-platky-20",
-      "name": "Président PROTEIN plátky 20%",
-      "rule_ids": [
-        "W019"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Sýry / plátkové"
-      ],
-      "rule_checks": {
-        "W019": {
-          "expected": "Sýry / plátkové",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
       "url": "https://www.kosik.cz/p721246-president-taveny-se-syrem-camembert-3x50g",
       "name": "Président Tavený se sýrem Camembert 3x50g",
       "rule_ids": [
@@ -1909,28 +1821,6 @@
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p793102-smetanito-strivko-s-ementalem-taveny-syr",
-      "name": "Smetanito Střívko s ementálem tavený sýr",
-      "rule_ids": [
-        "W020"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Sýry / tavené"
-      ],
-      "rule_checks": {
-        "W020": {
-          "expected": "Sýry / tavené",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
       "url": "https://www.kosik.cz/p655640-smetanito-syr-na-gril-a-na-panev",
       "name": "Smetanito Sýr na gril a na pánev",
       "rule_ids": [
@@ -2045,8 +1935,13 @@
         "W020"
       ],
       "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
+      "merchant_category": "Sýry / grilovací",
+      "merchant_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Grilovací sýry, raclette, fondue",
+        "Grilovací sýry"
+      ],
       "expected_categories": [
         "Sýry / tavené"
       ],
@@ -2054,10 +1949,10 @@
         "W020": {
           "expected": "Sýry / tavené",
           "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "reason": "Širší kategorie prodejce nezaručuje konkrétní typ"
         }
       },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+      "reason": "Grilovací sýry podle cesty prodejce, nikoliv automaticky tavené či plísňové; konkrétní typ dle pravidel zatím nelze potvrdit: Sýry / tavené"
     },
     {
       "store": "Košík",
