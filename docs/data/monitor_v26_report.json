@@ -1,75 +1,75 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-10-25T19:20:52+00:00",
+  "at": "2026-10-26T01:43:38+00:00",
   "processed": 1090,
-  "updated_prices": 920,
+  "updated_prices": 917,
   "requested": 1090,
   "blocked_stores": [],
   "statuses": {
-    "Rohlík|ok": 466,
-    "Košík|title_mismatch": 3,
-    "Košík|ok": 454,
-    "Rohlík|price_unverified": 68,
-    "Košík|price_unverified": 95,
+    "Košík|title_mismatch": 1,
+    "Rohlík|ok": 464,
+    "Košík|ok": 453,
+    "Rohlík|price_unverified": 70,
+    "Košík|price_unverified": 98,
     "Košík|http_error": 4
   },
-  "last_price_monitor_at": "2026-10-25T19:20:52+00:00",
+  "last_price_monitor_at": "2026-10-26T01:43:38+00:00",
   "checked_last_6h": 1090,
-  "verified_price_last_6h": 920,
+  "verified_price_last_6h": 917,
   "new_drops": [
     {
       "store": "Košík",
       "url": "https://www.kosik.cz/p78177-chiquita-banan-1-ks",
       "name": "Chiquita Banán, 1 ks",
-      "previous": 10.05,
-      "now": 9.52,
-      "drop_pct": 5.3,
-      "checked_at": "2026-10-25T18:36:47+00:00"
+      "previous": 9.52,
+      "now": 8.99,
+      "drop_pct": 5.6,
+      "checked_at": "2026-10-26T00:59:10+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p809514-paprika-bila-1-ks",
-      "name": "Paprika bílá, 1 ks",
-      "previous": 6.39,
-      "now": 5.59,
-      "drop_pct": 12.5,
-      "checked_at": "2026-10-25T18:56:10+00:00"
+      "url": "https://www.kosik.cz/p819094-metro-chef-mrkev-karotka-prana-1-ks",
+      "name": "Metro Chef Mrkev karotka praná, 1 ks",
+      "previous": 2.99,
+      "now": 2.49,
+      "drop_pct": 16.7,
+      "checked_at": "2026-10-26T01:15:48+00:00"
     },
     {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p805304-paprika-cervena-kapie-1-ks",
-      "name": "Paprika červená kapie, 1 ks",
-      "previous": 8.24,
-      "now": 7.49,
-      "drop_pct": 9.1,
-      "checked_at": "2026-10-25T18:56:33+00:00"
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1316261-vanish-oxi-action-gel-na-odstraneni-skvrn",
+      "name": "Vanish Oxi Action gel na odstranění skvrn",
+      "previous": 199.9,
+      "now": 144.9,
+      "drop_pct": 27.5,
+      "checked_at": "2026-10-26T01:23:10+00:00"
     },
     {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p794752-paprika-cervena-1-ks",
-      "name": "Paprika červená, 1 ks",
-      "previous": 19.98,
-      "now": 18.98,
-      "drop_pct": 5.0,
-      "checked_at": "2026-10-25T18:56:42+00:00"
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1318711-vanish-oxi-action-odstranovac-skvrn-na-bilem-pradle",
+      "name": "Vanish Oxi Action odstraňovač skvrn na bílém prádle",
+      "previous": 169.9,
+      "now": 149.9,
+      "drop_pct": 11.8,
+      "checked_at": "2026-10-26T01:23:15+00:00"
     },
     {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p803200-paprika-zluta-1-ks",
-      "name": "Paprika žlutá, 1 ks",
-      "previous": 15.98,
-      "now": 14.99,
-      "drop_pct": 6.2,
-      "checked_at": "2026-10-25T18:56:47+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p816728-zewa-classic-soft-toaletni-papir-3vrstvy-16-roli",
-      "name": "Zewa Classic Soft Toaletní papír 3vrstvý, 16 rolí",
-      "previous": 139.9,
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1295689-vanish-oxi-action-odstranovac-skvrn-ve-spreji",
+      "name": "Vanish Oxi Action odstraňovač skvrn ve spreji",
+      "previous": 169.9,
       "now": 129.9,
-      "drop_pct": 7.1,
-      "checked_at": "2026-10-25T19:10:33+00:00"
+      "drop_pct": 23.5,
+      "checked_at": "2026-10-26T01:23:20+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1303595-vanish-powergel-odstranovac-skvrn-pred-pranim",
+      "name": "Vanish Powergel odstraňovač skvrn před praním",
+      "previous": 149.9,
+      "now": 129.9,
+      "drop_pct": 13.3,
+      "checked_at": "2026-10-26T01:23:46+00:00"
     }
   ],
   "remaining_missing": 28
