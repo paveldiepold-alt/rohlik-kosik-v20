@@ -5039,10 +5039,19 @@
       "price_history_previous_czk": 36.9,
       "price_history_previous_at": "2026-10-26T06:50:42+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_probe_status": "category_missing",
-      "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-23T19:28:15+00:00",
-      "v27_category_probe_attempts": 2
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-26T21:41:15+00:00",
+      "v27_category_probe_attempts": 3,
+      "store_category_path": [
+        "Uzeniny a lahůdky",
+        "Šunky",
+        "Vepřové",
+        "Výběrové"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Balení obsahuje 100 g plátků šunky výběrové Chodura Medová šunka . Vyráběna dle originální receptury z vepřové kýty, kdy jemná chuť lesního medu proniká…",
+      "taxonomy_checked_at": "2026-10-26T21:41:15+00:00"
     },
     {
       "store": "Košík",
@@ -5088,8 +5097,8 @@
       },
       "v27_category_probe_status": "category_missing",
       "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-23T19:28:06+00:00",
-      "v27_category_probe_attempts": 2
+      "v27_category_checked_at": "2026-10-26T21:41:11+00:00",
+      "v27_category_probe_attempts": 3
     },
     {
       "store": "Košík",
@@ -5409,10 +5418,18 @@
       "price_history_previous_czk": 169.9,
       "price_history_previous_at": "2026-10-26T06:51:19+00:00",
       "drop_since_previous_pct": 26.5,
-      "v27_category_probe_status": "category_missing",
-      "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-23T19:28:01+00:00",
-      "v27_category_probe_attempts": 2
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-26T21:41:06+00:00",
+      "v27_category_probe_attempts": 3,
+      "store_category_path": [
+        "Uzeniny a lahůdky",
+        "Párky, klobásy, špekáčky",
+        "Párky"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Telecí párky v přírodním střívku s min. 80% masa. To nejkvalitnější maso spolu s pečlivě vybranými surovinami dělají z našich párků opravdovou lahůdku. Tepelně…",
+      "taxonomy_checked_at": "2026-10-26T21:41:06+00:00"
     },
     {
       "store": "Košík",
@@ -6135,8 +6152,8 @@
       "drop_since_previous_pct": null,
       "v27_category_probe_status": "category_missing",
       "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-23T19:27:56+00:00",
-      "v27_category_probe_attempts": 2
+      "v27_category_checked_at": "2026-10-26T21:41:02+00:00",
+      "v27_category_probe_attempts": 3
     },
     {
       "store": "Košík",
@@ -21862,10 +21879,19 @@
       "price_history_previous_czk": 44.9,
       "price_history_previous_at": "2026-10-26T07:18:39+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_probe_status": "category_missing",
-      "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-23T19:28:24+00:00",
-      "v27_category_probe_attempts": 2
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-26T21:41:19+00:00",
+      "v27_category_probe_attempts": 3,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Ústní hygiena",
+        "Zubní pasty",
+        "S bylinnými výtažky"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Pasta zajišťující dlouhotrvajcí svěžest. Zubní pasta Signal Family Herbal Fresh obsahuje bohatou směs přírodních výtažků, mezi kterými jsou máta, šalvěj, myrha…",
+      "taxonomy_checked_at": "2026-10-26T21:41:19+00:00"
     },
     {
       "store": "Košík",
@@ -48449,6 +48475,6 @@
   },
   "v27_probe_control": {
     "shop_backoff_until": {},
-    "last_batch_at": "2026-10-26T18:54:05+00:00"
+    "last_batch_at": "2026-10-26T21:41:19+00:00"
   }
 }

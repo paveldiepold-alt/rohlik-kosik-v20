@@ -15,7 +15,7 @@
   ],
   "unknown_rule_ids": [],
   "schema": "rk-v27-taxonomy-audit",
-  "generated_at": "2026-10-26T18:54:06+00:00",
+  "generated_at": "2026-10-26T21:41:20+00:00",
   "source_generated_at": "2026-10-21T14:12:55+00:00",
   "products_before": 1090,
   "products_after": 1090,
@@ -23,17 +23,17 @@
   "priced_after": 1062,
   "missing_prices": 28,
   "category_statuses": {
-    "verified": 829,
-    "review": 220,
+    "verified": 832,
+    "review": 217,
     "mismatch": 41
   },
   "rule_match_statuses": {
-    "verified": 833,
-    "review": 220,
+    "verified": 836,
+    "review": 217,
     "mismatch": 41
   },
-  "merchant_category_mapped": 1066,
-  "merchant_category_unmapped": 24,
+  "merchant_category_mapped": 1069,
+  "merchant_category_unmapped": 21,
   "products_with_merchant_category_but_rule_review": 196,
   "products_with_merchant_category_but_rule_mismatch": 41,
   "price_diagnostics": {
@@ -64,12 +64,12 @@
     "Košík": 556,
     "Rohlík": 534
   },
-  "review_count": 261,
-  "retailer_path_present": 1076,
-  "retailer_path_missing": 14,
-  "trusted_retailer_path": 1075,
+  "review_count": 258,
+  "retailer_path_present": 1079,
+  "retailer_path_missing": 11,
+  "trusted_retailer_path": 1078,
   "trusted_but_unmapped": 9,
-  "untrusted_or_missing_path": 15,
+  "untrusted_or_missing_path": 12,
   "source_price_evidence_unchanged": true,
   "source_items_unchanged": true,
   "category_mapping_method": "trusted merchant path only; specific rule checks for meat and produce; no titles"

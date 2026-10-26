@@ -1,6 +1,6 @@
 {
   "schema": "rk-v27-category-review",
-  "count": 261,
+  "count": 258,
   "items": [
     {
       "store": "Košík",
@@ -96,28 +96,6 @@
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p97127-chodura-medova-sunka-vyberova-87-masa",
-      "name": "Chodura Medová šunka výběrová (87% masa)",
-      "rule_ids": [
-        "W007"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Uzeniny / šunky"
-      ],
-      "rule_checks": {
-        "W007": {
-          "expected": "Uzeniny / šunky",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
       "url": "https://www.kosik.cz/p97087-chodura-mini-salamky",
       "name": "Chodura Mini salámky",
       "rule_ids": [
@@ -132,28 +110,6 @@
       "rule_checks": {
         "W011": {
           "expected": "Uzeniny / salámy",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p97077-chodura-teleci-parky-v-prirodnim-strivku-80-masa",
-      "name": "Chodura Telecí párky v přírodním střívku (80% masa)",
-      "rule_ids": [
-        "W015"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Uzeniny / párky a klobásy"
-      ],
-      "rule_checks": {
-        "W015": {
-          "expected": "Uzeniny / párky a klobásy",
           "status": "review",
           "reason": "Kategorie neověřena u prodejce"
         }
@@ -1774,28 +1730,6 @@
         }
       },
       "reason": "Grilovací sýry podle cesty prodejce, nikoliv automaticky tavené či plísňové; konkrétní typ dle pravidel zatím nelze potvrdit: Sýry / plísňové"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p98137-signal-family-care-herbal-fresh-zubni-pasta",
-      "name": "Signal Family Care Herbal Fresh zubní pasta",
-      "rule_ids": [
-        "W057"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Dentální hygiena"
-      ],
-      "rule_checks": {
-        "W057": {
-          "expected": "Dentální hygiena",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
     },
     {
       "store": "Košík",

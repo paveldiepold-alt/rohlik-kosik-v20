@@ -1,10 +1,10 @@
 {
   "schema": "rk-v27-merchant-path-review",
   "number_of_distinct_trusted_paths": 215,
-  "mapped_product_total": 1066,
+  "mapped_product_total": 1069,
   "unmapped_or_mismatched_path_count": 38,
   "without_trusted_path_by_shop": {
-    "Košík": 14,
+    "Košík": 11,
     "Rohlík": 1
   },
   "note": "Old rule categories are references for audit only; never proof of merchant classification.",
@@ -576,6 +576,26 @@
       "needs_review": true
     },
     {
+      "shop": "Košík",
+      "merchant_path": [
+        "Uzeniny a lahůdky",
+        "Párky, klobásy, špekáčky",
+        "Párky"
+      ],
+      "mapped_category": "Uzeniny / párky a klobásy",
+      "mapping_reason": "Párky/klobásy podle cesty prodejce",
+      "product_count": 10,
+      "old_rule_categories": {
+        "Uzeniny / párky a klobásy": 10
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p97077-chodura-teleci-parky-v-prirodnim-strivku-80-masa",
+        "https://www.kosik.cz/p97207-chodura-videnske-parky-se-syrem-80-masa",
+        "https://www.kosik.cz/p20137-kostelecke-uzeniny-javoricke-parky-original"
+      ],
+      "needs_review": false
+    },
+    {
       "shop": "Rohlík",
       "merchant_path": [
         "Drogerie",
@@ -635,26 +655,6 @@
         "https://www.kosik.cz/p795306-lenor-perlicky-ruby-jasmin-195-g",
         "https://www.kosik.cz/p795302-lenor-perlicky-spring-awakening-195-g",
         "https://www.kosik.cz/p823564-lenor-perlicky-winter"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Uzeniny a lahůdky",
-        "Párky, klobásy, špekáčky",
-        "Párky"
-      ],
-      "mapped_category": "Uzeniny / párky a klobásy",
-      "mapping_reason": "Párky/klobásy podle cesty prodejce",
-      "product_count": 9,
-      "old_rule_categories": {
-        "Uzeniny / párky a klobásy": 9
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p97207-chodura-videnske-parky-se-syrem-80-masa",
-        "https://www.kosik.cz/p20137-kostelecke-uzeniny-javoricke-parky-original",
-        "https://www.kosik.cz/p20147-kostelecke-uzeniny-poctivy-vidensky-parek"
       ],
       "needs_review": false
     },
@@ -1326,6 +1326,27 @@
       "needs_review": false
     },
     {
+      "shop": "Košík",
+      "merchant_path": [
+        "Uzeniny a lahůdky",
+        "Šunky",
+        "Vepřové",
+        "Výběrové"
+      ],
+      "mapped_category": "Uzeniny / šunky",
+      "mapping_reason": "Šunky podle cesty prodejce",
+      "product_count": 6,
+      "old_rule_categories": {
+        "Uzeniny / šunky": 6
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p97097-chodura-bohemia-sunka-vyberova-platky-84-masa",
+        "https://www.kosik.cz/p97127-chodura-medova-sunka-vyberova-87-masa",
+        "https://www.kosik.cz/p97137-chodura-moravska-sunka-vyberova-87-masa"
+      ],
+      "needs_review": false
+    },
+    {
       "shop": "Rohlík",
       "merchant_path": [
         "Drogerie",
@@ -1572,27 +1593,6 @@
         "https://www.kosik.cz/p819282-orion-koko-oplatka",
         "https://www.kosik.cz/p802836-orion-studentska-pecet-kakaova-oplatka-s-mlecnou-naplni",
         "https://www.kosik.cz/p776516-orion-studentska-pecet-oplatka-s-kakaovou-naplni-macena-v-mlecne-cokolade"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Uzeniny a lahůdky",
-        "Šunky",
-        "Vepřové",
-        "Výběrové"
-      ],
-      "mapped_category": "Uzeniny / šunky",
-      "mapping_reason": "Šunky podle cesty prodejce",
-      "product_count": 5,
-      "old_rule_categories": {
-        "Uzeniny / šunky": 5
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p97097-chodura-bohemia-sunka-vyberova-platky-84-masa",
-        "https://www.kosik.cz/p97137-chodura-moravska-sunka-vyberova-87-masa",
-        "https://www.kosik.cz/p19687-le-co-shaved-dusena-sunka-vyberova-80-masa"
       ],
       "needs_review": false
     },
@@ -2161,6 +2161,27 @@
       "shop": "Košík",
       "merchant_path": [
         "Drogerie a kosmetika",
+        "Ústní hygiena",
+        "Zubní pasty",
+        "S bylinnými výtažky"
+      ],
+      "mapped_category": "Dentální hygiena",
+      "mapping_reason": "Dentální hygiena podle cesty prodejce",
+      "product_count": 3,
+      "old_rule_categories": {
+        "Dentální hygiena": 3
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p721706-colgate-propolis-zubni-pasta",
+        "https://www.kosik.cz/p816636-colgate-zubni-pasta-herbal",
+        "https://www.kosik.cz/p98137-signal-family-care-herbal-fresh-zubni-pasta"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Drogerie a kosmetika",
         "Čistící přípravky",
         "Koupelna"
       ],
@@ -2637,26 +2658,6 @@
       "sample_product_urls": [
         "https://www.kosik.cz/p816640-colgate-detska-zubni-pasta-harry-potter-bubbling-cauldron-6-9-let",
         "https://www.kosik.cz/p816656-colgate-zubni-pasta-total-junior"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Drogerie a kosmetika",
-        "Ústní hygiena",
-        "Zubní pasty",
-        "S bylinnými výtažky"
-      ],
-      "mapped_category": "Dentální hygiena",
-      "mapping_reason": "Dentální hygiena podle cesty prodejce",
-      "product_count": 2,
-      "old_rule_categories": {
-        "Dentální hygiena": 2
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p721706-colgate-propolis-zubni-pasta",
-        "https://www.kosik.cz/p816636-colgate-zubni-pasta-herbal"
       ],
       "needs_review": false
     },
