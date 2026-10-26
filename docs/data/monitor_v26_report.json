@@ -1,75 +1,47 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-10-26T01:43:38+00:00",
+  "at": "2026-10-26T07:32:51+00:00",
   "processed": 1090,
   "updated_prices": 917,
   "requested": 1090,
   "blocked_stores": [],
   "statuses": {
-    "Košík|title_mismatch": 1,
-    "Rohlík|ok": 464,
-    "Košík|ok": 453,
-    "Rohlík|price_unverified": 70,
+    "Košík|ok": 454,
+    "Rohlík|ok": 463,
+    "Rohlík|price_unverified": 71,
     "Košík|price_unverified": 98,
     "Košík|http_error": 4
   },
-  "last_price_monitor_at": "2026-10-26T01:43:38+00:00",
+  "last_price_monitor_at": "2026-10-26T07:32:51+00:00",
   "checked_last_6h": 1090,
   "verified_price_last_6h": 917,
   "new_drops": [
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p78177-chiquita-banan-1-ks",
-      "name": "Chiquita Banán, 1 ks",
-      "previous": 9.52,
-      "now": 8.99,
-      "drop_pct": 5.6,
-      "checked_at": "2026-10-26T00:59:10+00:00"
+      "url": "https://www.kosik.cz/p78217-banan-1-ks",
+      "name": "Banán, 1 ks",
+      "previous": 6.78,
+      "now": 6.38,
+      "drop_pct": 5.9,
+      "checked_at": "2026-10-26T06:48:28+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p819094-metro-chef-mrkev-karotka-prana-1-ks",
-      "name": "Metro Chef Mrkev karotka praná, 1 ks",
-      "previous": 2.99,
-      "now": 2.49,
-      "drop_pct": 16.7,
-      "checked_at": "2026-10-26T01:15:48+00:00"
+      "url": "https://www.kosik.cz/p803198-paprika-zelena-1-ks",
+      "name": "Paprika zelená, 1 ks",
+      "previous": 10.78,
+      "now": 9.58,
+      "drop_pct": 11.1,
+      "checked_at": "2026-10-26T07:09:30+00:00"
     },
     {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1316261-vanish-oxi-action-gel-na-odstraneni-skvrn",
-      "name": "Vanish Oxi Action gel na odstranění skvrn",
-      "previous": 199.9,
-      "now": 144.9,
-      "drop_pct": 27.5,
-      "checked_at": "2026-10-26T01:23:10+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1318711-vanish-oxi-action-odstranovac-skvrn-na-bilem-pradle",
-      "name": "Vanish Oxi Action odstraňovač skvrn na bílém prádle",
-      "previous": 169.9,
-      "now": 149.9,
-      "drop_pct": 11.8,
-      "checked_at": "2026-10-26T01:23:15+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1295689-vanish-oxi-action-odstranovac-skvrn-ve-spreji",
-      "name": "Vanish Oxi Action odstraňovač skvrn ve spreji",
-      "previous": 169.9,
-      "now": 129.9,
-      "drop_pct": 23.5,
-      "checked_at": "2026-10-26T01:23:20+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1303595-vanish-powergel-odstranovac-skvrn-pred-pranim",
-      "name": "Vanish Powergel odstraňovač skvrn před praním",
-      "previous": 149.9,
-      "now": 129.9,
-      "drop_pct": 13.3,
-      "checked_at": "2026-10-26T01:23:46+00:00"
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p805304-paprika-cervena-kapie-1-ks",
+      "name": "Paprika červená kapie, 1 ks",
+      "previous": 8.24,
+      "now": 7.49,
+      "drop_pct": 9.1,
+      "checked_at": "2026-10-26T07:09:39+00:00"
     }
   ],
   "remaining_missing": 28
