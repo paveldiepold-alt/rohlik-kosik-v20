@@ -464,28 +464,36 @@
       "multibuy_v28_status": "title_mismatch",
       "multibuy_v28_note": "Title differs; SKU-linked Multikup card not found",
       "multibuy_v28_source_url": null,
-      "v27_category_probe_status": "category_missing",
-      "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-23T09:42:04+00:00",
-      "v27_category_probe_attempts": 2,
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-26T09:51:59+00:00",
+      "v27_category_probe_attempts": 3,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Papírová a vatová hygiena",
+        "Kuchyňské utěrky"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Kuchyňské utěrky 2-vrstvé, 50 útržků.ARO – levně, ale kvalitně.Značka&nbsp;ARO&nbsp;je privátní značkou makro. ARO&nbsp;nabízí&nbsp;široký sortiment…",
+      "taxonomy_checked_at": "2026-10-26T09:51:59+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": "category_missing",
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Papírové utěrky",
+        "display_category": "Papírové utěrky",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Papírové utěrky"
         ],
         "rule_checks": {
           "W074": {
             "expected": "Papírové utěrky",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Papírové utěrky podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -6772,10 +6780,6 @@
           }
         ]
       },
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_checked_at": "2026-10-26T07:33:29+00:00",
-      "v27_category_probe_attempts": 3,
       "store_category_path": [
         "Uzeniny a lahůdky",
         "Šunky",
@@ -6785,6 +6789,10 @@
       "category_source": "jsonld_breadcrumb",
       "product_description": "Burgundská šunka nejvyšší jakosti značky Chodura. Bez lepku. Tepelně opracovaný masný výrobek s minimálním obsahem masa 96 %. O výrobci Tradice značky Chodura…",
       "taxonomy_checked_at": "2026-10-26T07:33:29+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-26T07:33:29+00:00",
+      "v27_category_probe_attempts": 3,
       "category_v27": {
         "status": "verified",
         "evidence_state": "mapped",
@@ -7118,28 +7126,37 @@
           }
         ]
       },
-      "v27_category_probe_status": "category_missing",
-      "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-23T09:41:42+00:00",
-      "v27_category_probe_attempts": 2,
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-26T09:51:42+00:00",
+      "v27_category_probe_attempts": 3,
+      "store_category_path": [
+        "Uzeniny a lahůdky",
+        "Šunky",
+        "Vepřové",
+        "Nejvyšší jakosti"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Šunka se sníženým obsahem soli, krájená, balena v ochranné atmosféře. Obsah masa 96%. O značce Značka Chodura je symbolem uzenářského mistrovství a smyslu pro…",
+      "taxonomy_checked_at": "2026-10-26T09:51:42+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": "category_missing",
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Uzeniny / šunky",
+        "display_category": "Uzeniny / šunky",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Uzeniny / šunky"
         ],
         "rule_checks": {
           "W007": {
             "expected": "Uzeniny / šunky",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Šunky podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -7663,28 +7680,37 @@
       "price_history_previous_czk": 39.9,
       "price_history_previous_at": "2026-10-26T01:00:19+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_probe_status": "category_missing",
-      "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-23T09:41:51+00:00",
-      "v27_category_probe_attempts": 2,
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-26T09:51:50+00:00",
+      "v27_category_probe_attempts": 3,
+      "store_category_path": [
+        "Uzeniny a lahůdky",
+        "Šunky",
+        "Vepřové",
+        "Nejvyšší jakosti"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Šunka nejvyšší jakosti (min. 96% masa), která je určena těm, kteří hledají nevšední kulinářský zážitek. U té pravé nesmí chybět ani tenká vrstva tukového krytí…",
+      "taxonomy_checked_at": "2026-10-26T09:51:50+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": "category_missing",
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Uzeniny / šunky",
+        "display_category": "Uzeniny / šunky",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Uzeniny / šunky"
         ],
         "rule_checks": {
           "W007": {
             "expected": "Uzeniny / šunky",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Šunky podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -11108,28 +11134,38 @@
           }
         ]
       },
-      "v27_category_probe_status": "category_missing",
-      "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-23T09:41:56+00:00",
-      "v27_category_probe_attempts": 2,
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-26T09:51:55+00:00",
+      "v27_category_probe_attempts": 3,
+      "store_category_path": [
+        "Nápoje",
+        "Vody",
+        "Minerální",
+        "Ochucené",
+        "Neperlivé"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Ochucená minerální voda nesycená s nízkým obsahem minerálních látek s příchutí jahody. Pochází z průzračného pramene v Novohradských horách a nabízí vyvážené…",
+      "taxonomy_checked_at": "2026-10-26T09:51:55+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": "category_missing",
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "mismatch",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Nápoje / vody",
+        "display_category": "Nápoje / vody",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Nápoje / vody"
         ],
         "rule_checks": {
           "W035": {
             "expected": "Nápoje / vody",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "mismatch",
+            "reason": "Prodejce výslovně řadí výrobek mezi ochucené vody"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Vody podle cesty prodejce; nesoulad s pravidly: Nápoje / vody"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -19241,28 +19277,36 @@
       "price_history_previous_czk": 89.9,
       "price_history_previous_at": "2026-10-26T01:13:08+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_probe_status": "category_missing",
-      "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-23T09:41:28+00:00",
-      "v27_category_probe_attempts": 2,
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-26T09:51:34+00:00",
+      "v27_category_probe_attempts": 3,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Papírová a vatová hygiena",
+        "Kuchyňské utěrky"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Jemné bílé kuchyňské utěrky Linteo XXL jsou baleny po 1&nbsp;kuse, kde tato role má návin jako 5&nbsp;klasických rolí. Balení je praktické a šetří váš čas i…",
+      "taxonomy_checked_at": "2026-10-26T09:51:34+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": "category_missing",
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "verified",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Papírové utěrky",
+        "display_category": "Papírové utěrky",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Papírové utěrky"
         ],
         "rule_checks": {
           "W074": {
             "expected": "Papírové utěrky",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "verified",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Papírové utěrky podle cesty prodejce"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -19654,28 +19698,36 @@
       "price_history_previous_czk": 34.9,
       "price_history_previous_at": "2026-10-26T01:13:35+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_probe_status": "category_missing",
-      "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-23T09:41:33+00:00",
-      "v27_category_probe_attempts": 2,
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-26T09:51:38+00:00",
+      "v27_category_probe_attempts": 3,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Čistící přípravky",
+        "Čisticí ubrousky"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Vlhčené ubrousky Linteo do kuchyně jsou vhodné pro jednoduché udržování čistoty ve vaší kuchyni.V současné chvíli probíhá změna vizuálu u tohoto výrobku. Zboží…",
+      "taxonomy_checked_at": "2026-10-26T09:51:38+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": "category_missing",
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "mismatch",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Úklid",
+        "display_category": "Úklid",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Papír a hygiena"
         ],
         "rule_checks": {
           "W054": {
             "expected": "Papír a hygiena",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "mismatch",
+            "reason": "Srovnání se společnou kategorií"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Úklid podle cesty prodejce; nesoulad s pravidly: Papír a hygiena"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -20114,17 +20166,26 @@
       "price_history_previous_czk": 38.9,
       "price_history_previous_at": "2026-10-26T01:14:07+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_probe_status": "category_missing",
-      "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-23T09:41:23+00:00",
-      "v27_category_probe_attempts": 2,
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-26T09:51:29+00:00",
+      "v27_category_probe_attempts": 3,
+      "store_category_path": [
+        "Drogerie a kosmetika",
+        "Papírová a vatová hygiena",
+        "Toaletní papíry",
+        "Vlhčené"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Nákup až ke dveřím na pár kliků. Doprava zdarma na velké nákupy, nový akční leták každý týden a spousta odměn ve věrnostních klubech.",
+      "taxonomy_checked_at": "2026-10-26T09:51:29+00:00",
       "category_v27": {
         "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": "category_missing",
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Papír a hygiena",
+        "display_category": "Papír a hygiena",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Papír a hygiena"
         ],
@@ -20132,10 +20193,10 @@
           "W054": {
             "expected": "Papír a hygiena",
             "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "reason": "Kategorie prodejce potvrzuje sortiment, ale ne konkrétní variantu sledovaného pravidla"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Papírová a vlhčená hygiena podle cesty e-shopu; konkrétní typ dle pravidel zatím nelze potvrdit: Papír a hygiena"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -20365,10 +20426,6 @@
       "price_history_previous_czk": 41.9,
       "price_history_previous_at": "2026-10-26T01:14:25+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_checked_at": "2026-10-26T07:33:38+00:00",
-      "v27_category_probe_attempts": 3,
       "store_category_path": [
         "Mléčné a chlazené",
         "Sýry",
@@ -20377,6 +20434,10 @@
       "category_source": "jsonld_breadcrumb",
       "product_description": "Trio nejoblíbenějších chutí tavených sýrů Lipno v jednom balení - 8 porcí.&nbsp;Šunkový, smetanový a s Nivou.&nbsp;Tavený sýr prošel tepelnou úpravou. Poměr…",
       "taxonomy_checked_at": "2026-10-26T07:33:38+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-26T07:33:38+00:00",
+      "v27_category_probe_attempts": 3,
       "category_v27": {
         "status": "verified",
         "evidence_state": "mapped",
@@ -29362,28 +29423,37 @@
       "price_history_previous_czk": 144.9,
       "price_history_previous_at": "2026-10-26T01:24:30+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_probe_status": "category_missing",
-      "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-23T09:41:47+00:00",
-      "v27_category_probe_attempts": 2,
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-26T09:51:46+00:00",
+      "v27_category_probe_attempts": 3,
+      "store_category_path": [
+        "Nápoje",
+        "Vody",
+        "Pramenité a stolní",
+        "Ochucené"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Z hlubin panenské přírody v Rajecké dolině vyvěrá nás nejvzácnější poklad – pramenitá voda Rajec, jež je základem našich přírodně ochucených vod s pravými…",
+      "taxonomy_checked_at": "2026-10-26T09:51:46+00:00",
       "category_v27": {
-        "status": "review",
-        "evidence_state": "merchant_path_missing",
-        "probe_status": "category_missing",
-        "category": null,
-        "display_category": "Ke kontrole",
-        "source": null,
+        "status": "mismatch",
+        "evidence_state": "mapped",
+        "probe_status": "category_found",
+        "category": "Nápoje / vody",
+        "display_category": "Nápoje / vody",
+        "source": "jsonld_breadcrumb",
         "expected_from_rules": [
           "Nápoje / vody"
         ],
         "rule_checks": {
           "W034": {
             "expected": "Nápoje / vody",
-            "status": "review",
-            "reason": "Kategorie neověřena u prodejce"
+            "status": "mismatch",
+            "reason": "Prodejce výslovně řadí výrobek mezi ochucené vody"
           }
         },
-        "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+        "reason": "Vody podle cesty prodejce; nesoulad s pravidly: Nápoje / vody"
       },
       "price_diagnostic_v27": {
         "status": "ok",
@@ -37986,10 +38056,6 @@
       "price_history_previous_czk": 124.9,
       "price_history_previous_at": "2026-10-26T01:34:04+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_checked_at": "2026-10-26T07:33:33+00:00",
-      "v27_category_probe_attempts": 3,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Papírová a vatová hygiena",
@@ -37998,6 +38064,10 @@
       "category_source": "jsonld_breadcrumb",
       "product_description": "V současné chvíli probíhá změna vizuálu u tohoto výrobku. Zboží vám bude dodáno dle aktuální skladové zásoby.Tyto dvouvrstvé kuchyňské utěrky přinášejí tu…",
       "taxonomy_checked_at": "2026-10-26T07:33:33+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-26T07:33:33+00:00",
+      "v27_category_probe_attempts": 3,
       "category_v27": {
         "status": "verified",
         "evidence_state": "mapped",
@@ -73418,7 +73488,7 @@
   },
   "v27_probe_control": {
     "shop_backoff_until": {},
-    "last_batch_at": "2026-10-26T07:33:38+00:00"
+    "last_batch_at": "2026-10-26T09:51:59+00:00"
   },
   "v27_audit": {
     "rules_configured": 75,
@@ -73437,7 +73507,7 @@
     ],
     "unknown_rule_ids": [],
     "schema": "rk-v27-taxonomy-audit",
-    "generated_at": "2026-10-26T07:33:39+00:00",
+    "generated_at": "2026-10-26T09:51:59+00:00",
     "source_generated_at": "2026-10-21T14:12:55+00:00",
     "products_before": 1090,
     "products_after": 1090,
@@ -73445,19 +73515,19 @@
     "priced_after": 1062,
     "missing_prices": 28,
     "category_statuses": {
-      "review": 232,
-      "verified": 820,
-      "mismatch": 38
+      "verified": 824,
+      "review": 225,
+      "mismatch": 41
     },
     "rule_match_statuses": {
-      "review": 232,
-      "verified": 824,
-      "mismatch": 38
+      "verified": 828,
+      "review": 225,
+      "mismatch": 41
     },
-    "merchant_category_mapped": 1052,
-    "merchant_category_unmapped": 38,
-    "products_with_merchant_category_but_rule_review": 194,
-    "products_with_merchant_category_but_rule_mismatch": 38,
+    "merchant_category_mapped": 1060,
+    "merchant_category_unmapped": 30,
+    "products_with_merchant_category_but_rule_review": 195,
+    "products_with_merchant_category_but_rule_mismatch": 41,
     "price_diagnostics": {
       "ok": 1062,
       "price_read_unverified": 28
@@ -73486,12 +73556,12 @@
       "Košík": 556,
       "Rohlík": 534
     },
-    "review_count": 270,
-    "retailer_path_present": 1062,
-    "retailer_path_missing": 28,
-    "trusted_retailer_path": 1061,
+    "review_count": 266,
+    "retailer_path_present": 1070,
+    "retailer_path_missing": 20,
+    "trusted_retailer_path": 1069,
     "trusted_but_unmapped": 9,
-    "untrusted_or_missing_path": 29,
+    "untrusted_or_missing_path": 21,
     "source_price_evidence_unchanged": true,
     "source_items_unchanged": true,
     "category_mapping_method": "trusted merchant path only; specific rule checks for meat and produce; no titles"

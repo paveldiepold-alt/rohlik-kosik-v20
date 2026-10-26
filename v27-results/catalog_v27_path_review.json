@@ -1,10 +1,10 @@
 {
   "schema": "rk-v27-merchant-path-review",
-  "number_of_distinct_trusted_paths": 214,
-  "mapped_product_total": 1052,
+  "number_of_distinct_trusted_paths": 215,
+  "mapped_product_total": 1060,
   "unmapped_or_mismatched_path_count": 38,
   "without_trusted_path_by_shop": {
-    "Košík": 28,
+    "Košík": 20,
     "Rohlík": 1
   },
   "note": "Old rule categories are references for audit only; never proof of merchant classification.",
@@ -33,6 +33,27 @@
     {
       "shop": "Košík",
       "merchant_path": [
+        "Uzeniny a lahůdky",
+        "Šunky",
+        "Vepřové",
+        "Nejvyšší jakosti"
+      ],
+      "mapped_category": "Uzeniny / šunky",
+      "mapping_reason": "Šunky podle cesty prodejce",
+      "product_count": 26,
+      "old_rule_categories": {
+        "Uzeniny / šunky": 26
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p233224-chodura-burgundska-sunka-nejvyssi-jakosti-96-masa",
+        "https://www.kosik.cz/p97107-chodura-dusena-sunka-excellent-nejvyssi-jakosti-platky-93-masa",
+        "https://www.kosik.cz/p391634-chodura-dusena-sunka-se-snizenym-obsahem-soli-nejvyssi-jakosti-93-masa"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
         "Mléčné a chlazené",
         "Sýry",
         "Plísňové",
@@ -48,27 +69,6 @@
         "https://www.kosik.cz/p795404-kral-syru-hermelin-lahudkova-paprika-2-x-120g",
         "https://www.kosik.cz/p795400-kral-syru-hermelin-zeleny-pepr-2-x-120g",
         "https://www.kosik.cz/p18697-kral-syru-hermelin-lahudkova-paprika"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Uzeniny a lahůdky",
-        "Šunky",
-        "Vepřové",
-        "Nejvyšší jakosti"
-      ],
-      "mapped_category": "Uzeniny / šunky",
-      "mapping_reason": "Šunky podle cesty prodejce",
-      "product_count": 24,
-      "old_rule_categories": {
-        "Uzeniny / šunky": 24
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p233224-chodura-burgundska-sunka-nejvyssi-jakosti-96-masa",
-        "https://www.kosik.cz/p97107-chodura-dusena-sunka-excellent-nejvyssi-jakosti-platky-93-masa",
-        "https://www.kosik.cz/p391634-chodura-dusena-sunka-se-snizenym-obsahem-soli-nejvyssi-jakosti-93-masa"
       ],
       "needs_review": false
     },
@@ -156,6 +156,26 @@
       "needs_review": false
     },
     {
+      "shop": "Košík",
+      "merchant_path": [
+        "Drogerie a kosmetika",
+        "Papírová a vatová hygiena",
+        "Kuchyňské utěrky"
+      ],
+      "mapped_category": "Papírové utěrky",
+      "mapping_reason": "Papírové utěrky podle cesty prodejce",
+      "product_count": 17,
+      "old_rule_categories": {
+        "Papírové utěrky": 17
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p635600-aro-kuchynske-uterky-2-vrstve-8-roli",
+        "https://www.kosik.cz/p813574-fine-life-kuchynske-uterky-3vrstve-8-roli",
+        "https://www.kosik.cz/p717960-harmony-kuchynske-uterky-everyday-family-mono-1-role"
+      ],
+      "needs_review": false
+    },
+    {
       "shop": "Rohlík",
       "merchant_path": [
         "Drogerie",
@@ -215,26 +235,6 @@
         "https://www.kosik.cz/p798828-ariel-gel-mountain-spring-1-8l",
         "https://www.kosik.cz/p798838-ariel-gel-mountain-spring-2-7-l",
         "https://www.kosik.cz/p823554-ariel-gel-pro-winter-dream-4-05l"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Drogerie a kosmetika",
-        "Papírová a vatová hygiena",
-        "Kuchyňské utěrky"
-      ],
-      "mapped_category": "Papírové utěrky",
-      "mapping_reason": "Papírové utěrky podle cesty prodejce",
-      "product_count": 15,
-      "old_rule_categories": {
-        "Papírové utěrky": 15
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p813574-fine-life-kuchynske-uterky-3vrstve-8-roli",
-        "https://www.kosik.cz/p717960-harmony-kuchynske-uterky-everyday-family-mono-1-role",
-        "https://www.kosik.cz/p171496-harmony-kuchynske-uterky-everyday-family-2vrstve-4-role"
       ],
       "needs_review": false
     },
@@ -1474,6 +1474,27 @@
       "shop": "Košík",
       "merchant_path": [
         "Drogerie a kosmetika",
+        "Papírová a vatová hygiena",
+        "Toaletní papíry",
+        "Vlhčené"
+      ],
+      "mapped_category": "Papír a hygiena",
+      "mapping_reason": "Papírová a vlhčená hygiena podle cesty e-shopu",
+      "product_count": 5,
+      "old_rule_categories": {
+        "Papír a hygiena": 5
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p557136-linteo-vlhceny-toaletni-papir-aqua-sensitive",
+        "https://www.kosik.cz/p3107-linteo-vlhceny-toaletni-papir-s-dubovou-kurou",
+        "https://www.kosik.cz/p3347-linteo-vlhceny-toaletni-papir-s-kyselinou-mlecnou"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Drogerie a kosmetika",
         "Ústní hygiena",
         "Zubní pasty",
         "Pro svěží dech"
@@ -1702,22 +1723,21 @@
       "shop": "Košík",
       "merchant_path": [
         "Drogerie a kosmetika",
-        "Papírová a vatová hygiena",
-        "Toaletní papíry",
-        "Vlhčené"
+        "Čistící přípravky",
+        "Čisticí ubrousky"
       ],
-      "mapped_category": "Papír a hygiena",
-      "mapping_reason": "Papírová a vlhčená hygiena podle cesty e-shopu",
+      "mapped_category": "Úklid",
+      "mapping_reason": "Úklid podle cesty prodejce",
       "product_count": 4,
       "old_rule_categories": {
         "Papír a hygiena": 4
       },
       "sample_product_urls": [
-        "https://www.kosik.cz/p557136-linteo-vlhceny-toaletni-papir-aqua-sensitive",
-        "https://www.kosik.cz/p3347-linteo-vlhceny-toaletni-papir-s-kyselinou-mlecnou",
-        "https://www.kosik.cz/p731920-zewa-almond-milk-vlhceny-toaletni-papir"
+        "https://www.kosik.cz/p3247-linteo-univerzalni-vlhcene-ubrousky",
+        "https://www.kosik.cz/p3257-linteo-vlhcene-ubrousky-do-kuchyne",
+        "https://www.kosik.cz/p3467-linteo-vlhcene-ubrousky-na-nabytek"
       ],
-      "needs_review": false
+      "needs_review": true
     },
     {
       "shop": "Košík",
@@ -1757,6 +1777,28 @@
         "https://www.kosik.cz/p12827-madeta-eidam-jihocesky-platkovy-30",
         "https://www.kosik.cz/p12837-madeta-jihocesky-eidam-platky-45",
         "https://www.kosik.cz/p243484-madeta-jihocesky-eidam-syr-20-platky"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Nápoje",
+        "Vody",
+        "Minerální",
+        "Ochucené",
+        "Neperlivé"
+      ],
+      "mapped_category": "Nápoje / vody",
+      "mapping_reason": "Vody podle cesty prodejce",
+      "product_count": 4,
+      "old_rule_categories": {
+        "Nápoje / vody": 4
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p48787-dobra-voda-neperliva-bile-hrozny-6-x-1-5l",
+        "https://www.kosik.cz/p48797-dobra-voda-neperliva-malina-6-x-1-5-l",
+        "https://www.kosik.cz/p820466-dobra-voda-neperliva-mandarinka-6-x-1-5l"
       ],
       "needs_review": false
     },
@@ -2159,26 +2201,6 @@
     {
       "shop": "Košík",
       "merchant_path": [
-        "Drogerie a kosmetika",
-        "Čistící přípravky",
-        "Čisticí ubrousky"
-      ],
-      "mapped_category": "Úklid",
-      "mapping_reason": "Úklid podle cesty prodejce",
-      "product_count": 3,
-      "old_rule_categories": {
-        "Papír a hygiena": 3
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p3247-linteo-univerzalni-vlhcene-ubrousky",
-        "https://www.kosik.cz/p3467-linteo-vlhcene-ubrousky-na-nabytek",
-        "https://www.kosik.cz/p3277-linteo-vlhcene-ubrousky-na-cisteni-bryli"
-      ],
-      "needs_review": true
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
         "Mléčné a chlazené",
         "Bez laktózy",
         "Sýry"
@@ -2215,28 +2237,6 @@
         "https://www.kosik.cz/p459210-hellmann-s-majoneza",
         "https://www.kosik.cz/p459230-hellmann-s-majoneza",
         "https://www.kosik.cz/p459240-hellmann-s-majoneza"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Nápoje",
-        "Vody",
-        "Minerální",
-        "Ochucené",
-        "Neperlivé"
-      ],
-      "mapped_category": "Nápoje / vody",
-      "mapping_reason": "Vody podle cesty prodejce",
-      "product_count": 3,
-      "old_rule_categories": {
-        "Nápoje / vody": 3
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p48787-dobra-voda-neperliva-bile-hrozny-6-x-1-5l",
-        "https://www.kosik.cz/p48797-dobra-voda-neperliva-malina-6-x-1-5-l",
-        "https://www.kosik.cz/p820466-dobra-voda-neperliva-mandarinka-6-x-1-5l"
       ],
       "needs_review": false
     },
@@ -3546,6 +3546,25 @@
       },
       "sample_product_urls": [
         "https://www.kosik.cz/p248834-madeta-syraruv-vyber-tylzsky-syr-uzeny-45-platky"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Nápoje",
+        "Vody",
+        "Pramenité a stolní",
+        "Ochucené"
+      ],
+      "mapped_category": "Nápoje / vody",
+      "mapping_reason": "Vody podle cesty prodejce",
+      "product_count": 1,
+      "old_rule_categories": {
+        "Nápoje / vody": 1
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p46207-rajec-pramenita-voda-materidouska-nesycena-6-x-1-5l"
       ],
       "needs_review": false
     },

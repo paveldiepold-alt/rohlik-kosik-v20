@@ -1,19 +1,18 @@
 {
   "schema": "rk-v27-category-probe",
-  "at": "2026-10-26T07:33:38+00:00",
+  "at": "2026-10-26T09:51:59+00:00",
   "total": 1090,
   "source_generated_at": "2026-10-21T14:12:55+00:00",
-  "selected_initial": 4,
-  "attempted": 4,
+  "selected_initial": 8,
+  "attempted": 8,
   "blocked_stores": [],
   "preexisting_shop_backoffs": [],
   "shop_backoff_until": {},
   "statuses": {
-    "Košík|category_missing": 1,
-    "Košík|category_found": 3
+    "Košík|category_found": 8
   },
-  "still_without_category": 38,
-  "still_needing_probe": 29,
+  "still_without_category": 30,
+  "still_needing_probe": 21,
   "trusted_but_unmapped": 9,
   "prices_unchanged": true,
   "source_file_untouched": true

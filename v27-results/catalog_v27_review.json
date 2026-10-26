@@ -1,29 +1,7 @@
 {
   "schema": "rk-v27-category-review",
-  "count": 270,
+  "count": 266,
   "items": [
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p635600-aro-kuchynske-uterky-2-vrstve-8-roli",
-      "name": "ARO Kuchyňské utěrky 2-vrstvé 8 Rolí",
-      "rule_ids": [
-        "W074"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Papírové utěrky"
-      ],
-      "rule_checks": {
-        "W074": {
-          "expected": "Papírové utěrky",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
     {
       "store": "Košík",
       "url": "https://www.kosik.cz/p733270-aro-kuchynske-uterky-2vrstve-2-role",
@@ -140,28 +118,6 @@
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p391574-chodura-grilovana-sunka-se-snizenym-obsahem-soli-nejvyssi-jakosti-96-masa",
-      "name": "Chodura Grilovaná šunka se sníženým obsahem soli nejvyšší jakosti (96% masa)",
-      "rule_ids": [
-        "W007"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Uzeniny / šunky"
-      ],
-      "rule_checks": {
-        "W007": {
-          "expected": "Uzeniny / šunky",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
       "url": "https://www.kosik.cz/p97127-chodura-medova-sunka-vyberova-87-masa",
       "name": "Chodura Medová šunka výběrová (87% masa)",
       "rule_ids": [
@@ -198,28 +154,6 @@
       "rule_checks": {
         "W011": {
           "expected": "Uzeniny / salámy",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p471483-chodura-prazska-sunka-nejvyssi-jakosti-96-masa",
-      "name": "Chodura Pražská šunka nejvyšší jakosti (96% masa)",
-      "rule_ids": [
-        "W007"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Uzeniny / šunky"
-      ],
-      "rule_checks": {
-        "W007": {
-          "expected": "Uzeniny / šunky",
           "status": "review",
           "reason": "Kategorie neověřena u prodejce"
         }
@@ -439,20 +373,26 @@
       "rule_ids": [
         "W035"
       ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
+      "status": "mismatch",
+      "merchant_category": "Nápoje / vody",
+      "merchant_path": [
+        "Nápoje",
+        "Vody",
+        "Minerální",
+        "Ochucené",
+        "Neperlivé"
+      ],
       "expected_categories": [
         "Nápoje / vody"
       ],
       "rule_checks": {
         "W035": {
           "expected": "Nápoje / vody",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "status": "mismatch",
+          "reason": "Prodejce výslovně řadí výrobek mezi ochucené vody"
         }
       },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+      "reason": "Vody podle cesty prodejce; nesoulad s pravidly: Nápoje / vody"
     },
     {
       "store": "Košík",
@@ -821,28 +761,6 @@
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p3207-linteo-kuchynske-uterky-classic-2vrstve",
-      "name": "Linteo Kuchyňské utěrky Classic 2vrstvé",
-      "rule_ids": [
-        "W074"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Papírové utěrky"
-      ],
-      "rule_checks": {
-        "W074": {
-          "expected": "Papírové utěrky",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
       "url": "https://www.kosik.cz/p3247-linteo-univerzalni-vlhcene-ubrousky",
       "name": "Linteo Univerzální vlhčené ubrousky",
       "rule_ids": [
@@ -927,20 +845,24 @@
       "rule_ids": [
         "W054"
       ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
+      "status": "mismatch",
+      "merchant_category": "Úklid",
+      "merchant_path": [
+        "Drogerie a kosmetika",
+        "Čistící přípravky",
+        "Čisticí ubrousky"
+      ],
       "expected_categories": [
         "Papír a hygiena"
       ],
       "rule_checks": {
         "W054": {
           "expected": "Papír a hygiena",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "status": "mismatch",
+          "reason": "Srovnání se společnou kategorií"
         }
       },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+      "reason": "Úklid podle cesty prodejce; nesoulad s pravidly: Papír a hygiena"
     },
     {
       "store": "Košík",
@@ -1055,8 +977,13 @@
         "W054"
       ],
       "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
+      "merchant_category": "Papír a hygiena",
+      "merchant_path": [
+        "Drogerie a kosmetika",
+        "Papírová a vatová hygiena",
+        "Toaletní papíry",
+        "Vlhčené"
+      ],
       "expected_categories": [
         "Papír a hygiena"
       ],
@@ -1064,10 +991,10 @@
         "W054": {
           "expected": "Papír a hygiena",
           "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "reason": "Kategorie prodejce potvrzuje sortiment, ale ne konkrétní variantu sledovaného pravidla"
         }
       },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+      "reason": "Papírová a vlhčená hygiena podle cesty e-shopu; konkrétní typ dle pravidel zatím nelze potvrdit: Papír a hygiena"
     },
     {
       "store": "Košík",
@@ -1755,20 +1682,25 @@
       "rule_ids": [
         "W034"
       ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
+      "status": "mismatch",
+      "merchant_category": "Nápoje / vody",
+      "merchant_path": [
+        "Nápoje",
+        "Vody",
+        "Pramenité a stolní",
+        "Ochucené"
+      ],
       "expected_categories": [
         "Nápoje / vody"
       ],
       "rule_checks": {
         "W034": {
           "expected": "Nápoje / vody",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "status": "mismatch",
+          "reason": "Prodejce výslovně řadí výrobek mezi ochucené vody"
         }
       },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+      "reason": "Vody podle cesty prodejce; nesoulad s pravidly: Nápoje / vody"
     },
     {
       "store": "Košík",
