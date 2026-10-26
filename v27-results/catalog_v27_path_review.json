@@ -1,10 +1,10 @@
 {
   "schema": "rk-v27-merchant-path-review",
   "number_of_distinct_trusted_paths": 214,
-  "mapped_product_total": 1046,
+  "mapped_product_total": 1049,
   "unmapped_or_mismatched_path_count": 38,
   "without_trusted_path_by_shop": {
-    "Košík": 34,
+    "Košík": 31,
     "Rohlík": 1
   },
   "note": "Old rule categories are references for audit only; never proof of merchant classification.",
@@ -102,9 +102,9 @@
       ],
       "mapped_category": "Úklid",
       "mapping_reason": "Úklid podle cesty prodejce",
-      "product_count": 19,
+      "product_count": 20,
       "old_rule_categories": {
-        "Úklid": 19
+        "Úklid": 20
       },
       "sample_product_urls": [
         "https://www.kosik.cz/p821564-bref-auto-active-gel-blooming-fresh-wc-cistic",
@@ -1454,6 +1454,26 @@
       "shop": "Košík",
       "merchant_path": [
         "Drogerie a kosmetika",
+        "Mytí nádobí",
+        "Ruční mytí"
+      ],
+      "mapped_category": "Úklid",
+      "mapping_reason": "Úklid podle cesty prodejce",
+      "product_count": 5,
+      "old_rule_categories": {
+        "Úklid": 5
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p104617-jar-citron",
+        "https://www.kosik.cz/p104647-jar-citron",
+        "https://www.kosik.cz/p123787-jar-lemon-myci-prostredek-na-nadobi-2x-900-ml"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Drogerie a kosmetika",
         "Ústní hygiena",
         "Zubní pasty",
         "Pro svěží dech"
@@ -2050,26 +2070,6 @@
         "https://www.kosik.cz/p738432-wilkinson-sword-pronto-jednorazove-holitka-5-ks",
         "https://www.kosik.cz/p738438-wilkinson-xtreme-3-black-holitka-3-1-ks-pro-muze",
         "https://www.kosik.cz/p643010-wilkinson-xtreme-3-sensitive-holitka-3-1-ks-pro-muze"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Drogerie a kosmetika",
-        "Mytí nádobí",
-        "Ruční mytí"
-      ],
-      "mapped_category": "Úklid",
-      "mapping_reason": "Úklid podle cesty prodejce",
-      "product_count": 3,
-      "old_rule_categories": {
-        "Úklid": 3
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p104617-jar-citron",
-        "https://www.kosik.cz/p104647-jar-citron",
-        "https://www.kosik.cz/p823568-jar-prostredek-na-nadobi-lemon-lim"
       ],
       "needs_review": false
     },

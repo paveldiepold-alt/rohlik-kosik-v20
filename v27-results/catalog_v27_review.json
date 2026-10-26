@@ -1,6 +1,6 @@
 {
   "schema": "rk-v27-category-review",
-  "count": 274,
+  "count": 273,
   "items": [
     {
       "store": "Košík",
@@ -115,28 +115,6 @@
         }
       },
       "reason": "Ovoce podle cesty prodejce; konkrétní typ dle pravidel zatím nelze potvrdit: Ovoce"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p113457-bref-pronature-mint-eucalyptus-tuhy-wc-blok-3x50g",
-      "name": "Bref ProNature Mint & Eucalyptus tuhý WC blok 3x50g",
-      "rule_ids": [
-        "W066"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Úklid"
-      ],
-      "rule_checks": {
-        "W066": {
-          "expected": "Úklid",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
     },
     {
       "store": "Košík",
@@ -660,8 +638,12 @@
         "W072"
       ],
       "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
+      "merchant_category": "Úklid",
+      "merchant_path": [
+        "Drogerie a kosmetika",
+        "Mytí nádobí",
+        "Ruční mytí"
+      ],
       "expected_categories": [
         "Úklid"
       ],
@@ -669,10 +651,10 @@
         "W072": {
           "expected": "Úklid",
           "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "reason": "Kategorie prodejce potvrzuje sortiment, ale ne konkrétní variantu sledovaného pravidla"
         }
       },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+      "reason": "Úklid podle cesty prodejce; konkrétní typ dle pravidel zatím nelze potvrdit: Úklid"
     },
     {
       "store": "Košík",
@@ -709,8 +691,12 @@
         "W072"
       ],
       "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
+      "merchant_category": "Úklid",
+      "merchant_path": [
+        "Drogerie a kosmetika",
+        "Mytí nádobí",
+        "Ruční mytí"
+      ],
       "expected_categories": [
         "Úklid"
       ],
@@ -718,10 +704,10 @@
         "W072": {
           "expected": "Úklid",
           "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
+          "reason": "Kategorie prodejce potvrzuje sortiment, ale ne konkrétní variantu sledovaného pravidla"
         }
       },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
+      "reason": "Úklid podle cesty prodejce; konkrétní typ dle pravidel zatím nelze potvrdit: Úklid"
     },
     {
       "store": "Košík",
