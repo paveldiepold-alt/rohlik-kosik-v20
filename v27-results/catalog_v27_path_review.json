@@ -1,10 +1,10 @@
 {
   "schema": "rk-v27-merchant-path-review",
   "number_of_distinct_trusted_paths": 214,
-  "mapped_product_total": 1049,
+  "mapped_product_total": 1052,
   "unmapped_or_mismatched_path_count": 38,
   "without_trusted_path_by_shop": {
-    "Košík": 31,
+    "Košík": 28,
     "Rohlík": 1
   },
   "note": "Old rule categories are references for audit only; never proof of merchant classification.",
@@ -61,14 +61,14 @@
       ],
       "mapped_category": "Uzeniny / šunky",
       "mapping_reason": "Šunky podle cesty prodejce",
-      "product_count": 23,
+      "product_count": 24,
       "old_rule_categories": {
-        "Uzeniny / šunky": 23
+        "Uzeniny / šunky": 24
       },
       "sample_product_urls": [
+        "https://www.kosik.cz/p233224-chodura-burgundska-sunka-nejvyssi-jakosti-96-masa",
         "https://www.kosik.cz/p97107-chodura-dusena-sunka-excellent-nejvyssi-jakosti-platky-93-masa",
-        "https://www.kosik.cz/p391634-chodura-dusena-sunka-se-snizenym-obsahem-soli-nejvyssi-jakosti-93-masa",
-        "https://www.kosik.cz/p471463-chodura-dusena-sunka-zauzena-nejvyssi-jakosti-94-masa"
+        "https://www.kosik.cz/p391634-chodura-dusena-sunka-se-snizenym-obsahem-soli-nejvyssi-jakosti-93-masa"
       ],
       "needs_review": false
     },
@@ -114,6 +114,27 @@
       "needs_review": false
     },
     {
+      "shop": "Košík",
+      "merchant_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Tavené"
+      ],
+      "mapped_category": "Sýry / tavené",
+      "mapping_reason": "Tavené sýry podle cesty prodejce",
+      "product_count": 19,
+      "old_rule_categories": {
+        "Sýry / tavené": 18,
+        "Sýry / plísňové": 1
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p252434-madeta-jihoceske-lipno-trio",
+        "https://www.kosik.cz/p12777-madeta-jihoceske-lipno-syr-extra-smetanovy-64",
+        "https://www.kosik.cz/p721246-president-taveny-se-syrem-camembert-3x50g"
+      ],
+      "needs_review": true
+    },
+    {
       "shop": "Rohlík",
       "merchant_path": [
         "Drogerie",
@@ -133,27 +154,6 @@
         "https://www.rohlik.cz/1327423-bref-color-aktiv-ocean-wc-blok"
       ],
       "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Mléčné a chlazené",
-        "Sýry",
-        "Tavené"
-      ],
-      "mapped_category": "Sýry / tavené",
-      "mapping_reason": "Tavené sýry podle cesty prodejce",
-      "product_count": 18,
-      "old_rule_categories": {
-        "Sýry / tavené": 17,
-        "Sýry / plísňové": 1
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p12777-madeta-jihoceske-lipno-syr-extra-smetanovy-64",
-        "https://www.kosik.cz/p721246-president-taveny-se-syrem-camembert-3x50g",
-        "https://www.kosik.cz/p810846-smetanito-high-protein-3ks"
-      ],
-      "needs_review": true
     },
     {
       "shop": "Rohlík",
@@ -219,6 +219,26 @@
       "needs_review": false
     },
     {
+      "shop": "Košík",
+      "merchant_path": [
+        "Drogerie a kosmetika",
+        "Papírová a vatová hygiena",
+        "Kuchyňské utěrky"
+      ],
+      "mapped_category": "Papírové utěrky",
+      "mapping_reason": "Papírové utěrky podle cesty prodejce",
+      "product_count": 15,
+      "old_rule_categories": {
+        "Papírové utěrky": 15
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p813574-fine-life-kuchynske-uterky-3vrstve-8-roli",
+        "https://www.kosik.cz/p717960-harmony-kuchynske-uterky-everyday-family-mono-1-role",
+        "https://www.kosik.cz/p171496-harmony-kuchynske-uterky-everyday-family-2vrstve-4-role"
+      ],
+      "needs_review": false
+    },
+    {
       "shop": "Rohlík",
       "merchant_path": [
         "Drogerie",
@@ -259,26 +279,6 @@
         "https://www.rohlik.cz/1407743-chodura-mini-salamky"
       ],
       "needs_review": true
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Drogerie a kosmetika",
-        "Papírová a vatová hygiena",
-        "Kuchyňské utěrky"
-      ],
-      "mapped_category": "Papírové utěrky",
-      "mapping_reason": "Papírové utěrky podle cesty prodejce",
-      "product_count": 14,
-      "old_rule_categories": {
-        "Papírové utěrky": 14
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p813574-fine-life-kuchynske-uterky-3vrstve-8-roli",
-        "https://www.kosik.cz/p717960-harmony-kuchynske-uterky-everyday-family-mono-1-role",
-        "https://www.kosik.cz/p171496-harmony-kuchynske-uterky-everyday-family-2vrstve-4-role"
-      ],
-      "needs_review": false
     },
     {
       "shop": "Košík",

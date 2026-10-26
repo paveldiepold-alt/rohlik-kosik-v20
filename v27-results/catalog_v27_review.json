@@ -1,6 +1,6 @@
 {
   "schema": "rk-v27-category-review",
-  "count": 273,
+  "count": 270,
   "items": [
     {
       "store": "Košík",
@@ -132,28 +132,6 @@
       "rule_checks": {
         "W066": {
           "expected": "Úklid",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p233224-chodura-burgundska-sunka-nejvyssi-jakosti-96-masa",
-      "name": "Chodura Burgundská šunka nejvyšší jakosti (96% masa)",
-      "rule_ids": [
-        "W007"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Uzeniny / šunky"
-      ],
-      "rule_checks": {
-        "W007": {
-          "expected": "Uzeniny / šunky",
           "status": "review",
           "reason": "Kategorie neověřena u prodejce"
         }
@@ -1117,28 +1095,6 @@
         }
       },
       "reason": "Papírová a vlhčená hygiena podle cesty e-shopu; konkrétní typ dle pravidel zatím nelze potvrdit: Papír a hygiena"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p252434-madeta-jihoceske-lipno-trio",
-      "name": "Madeta Jihočeské Lipno TRIO",
-      "rule_ids": [
-        "W022"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Sýry / tavené"
-      ],
-      "rule_checks": {
-        "W022": {
-          "expected": "Sýry / tavené",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
     },
     {
       "store": "Košík",
@@ -2657,28 +2613,6 @@
         }
       },
       "reason": "Papírová a vlhčená hygiena podle cesty e-shopu; konkrétní typ dle pravidel zatím nelze potvrdit: Papír a hygiena"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p233874-zewa-wisch-weg-original-kuchynske-uterky-4-role",
-      "name": "Zewa Wisch&Weg Original kuchyňské utěrky, 4 role",
-      "rule_ids": [
-        "W074"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Papírové utěrky"
-      ],
-      "rule_checks": {
-        "W074": {
-          "expected": "Papírové utěrky",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
     },
     {
       "store": "Rohlík",
