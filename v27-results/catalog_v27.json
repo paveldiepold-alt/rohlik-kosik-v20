@@ -6427,10 +6427,6 @@
       "price_history_previous_czk": 89.9,
       "price_history_previous_at": "2026-10-25T18:36:34+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_checked_at": "2026-10-26T01:44:14+00:00",
-      "v27_category_probe_attempts": 3,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Čistící přípravky",
@@ -6440,6 +6436,10 @@
       "category_source": "jsonld_breadcrumb",
       "product_description": "Nákup až ke dveřím na pár kliků. Doprava zdarma na velké nákupy, nový akční leták každý týden a spousta odměn ve věrnostních klubech.",
       "taxonomy_checked_at": "2026-10-26T01:44:14+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-26T01:44:14+00:00",
+      "v27_category_probe_attempts": 3,
       "category_v27": {
         "status": "verified",
         "evidence_state": "mapped",
@@ -13300,10 +13300,6 @@
       "price_history_previous_czk": 159.9,
       "price_history_previous_at": "2026-10-25T18:44:10+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_checked_at": "2026-10-26T01:44:23+00:00",
-      "v27_category_probe_attempts": 3,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Mytí nádobí",
@@ -13312,6 +13308,10 @@
       "category_source": "jsonld_breadcrumb",
       "product_description": "Prostředek na mytí nádobí Jar Lemon má takové čisticí účinky, kterým můžete vždy důvěřovat. Ať už se jedná o talíře a skleničky nebo hrnce a pánve – účinné…",
       "taxonomy_checked_at": "2026-10-26T01:44:23+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-26T01:44:23+00:00",
+      "v27_category_probe_attempts": 3,
       "category_v27": {
         "status": "review",
         "evidence_state": "mapped",
@@ -13431,10 +13431,6 @@
       "price_history_previous_czk": 429.0,
       "price_history_previous_at": "2026-10-25T18:44:19+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_checked_at": "2026-10-26T01:44:10+00:00",
-      "v27_category_probe_attempts": 3,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Mytí nádobí",
@@ -13443,6 +13439,10 @@
       "category_source": "jsonld_breadcrumb",
       "product_description": "Jar Professional Lemon je tekutý prostředek pro mytí a odmáčení nádobí, hrnců a pánví, kuchyňských potřeb a dalších povrchů. Dlouhotrvající účinné řešení mytí…",
       "taxonomy_checked_at": "2026-10-26T01:44:10+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-10-26T01:44:10+00:00",
+      "v27_category_probe_attempts": 3,
       "category_v27": {
         "status": "review",
         "evidence_state": "mapped",
@@ -73394,7 +73394,7 @@
   },
   "v27_probe_control": {
     "shop_backoff_until": {},
-    "last_batch_at": "2026-10-26T01:44:23+00:00"
+    "last_batch_at": "2026-10-26T03:42:31+00:00"
   },
   "v27_audit": {
     "rules_configured": 75,
@@ -73413,7 +73413,7 @@
     ],
     "unknown_rule_ids": [],
     "schema": "rk-v27-taxonomy-audit",
-    "generated_at": "2026-10-26T01:44:24+00:00",
+    "generated_at": "2026-10-26T03:42:32+00:00",
     "source_generated_at": "2026-10-21T14:12:55+00:00",
     "products_before": 1090,
     "products_after": 1090,
