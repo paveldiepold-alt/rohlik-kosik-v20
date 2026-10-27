@@ -1,101 +1,48 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-10-27T13:31:59+00:00",
+  "at": "2026-10-27T19:31:42+00:00",
   "processed": 1090,
-  "updated_prices": 925,
+  "updated_prices": 921,
   "requested": 1090,
   "blocked_stores": [],
   "statuses": {
     "Košík|ok": 455,
-    "Rohlík|ok": 470,
+    "Rohlík|ok": 466,
     "Košík|http_error": 4,
-    "Košík|price_unverified": 97,
-    "Rohlík|price_unverified": 64
+    "Košík|price_unverified": 96,
+    "Rohlík|price_unverified": 68,
+    "Košík|title_mismatch": 1
   },
-  "last_price_monitor_at": "2026-10-27T13:31:59+00:00",
+  "last_price_monitor_at": "2026-10-27T19:31:42+00:00",
   "checked_last_6h": 1090,
-  "verified_price_last_6h": 925,
+  "verified_price_last_6h": 921,
   "new_drops": [
     {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1317247-boruvky-baleni",
-      "name": "Borůvky, balení",
-      "previous": 59.9,
-      "now": 44.92,
-      "drop_pct": 25.0,
-      "checked_at": "2026-10-27T12:47:41+00:00"
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p794752-paprika-cervena-1-ks",
+      "name": "Paprika červená, 1 ks",
+      "previous": 17.98,
+      "now": 16.98,
+      "drop_pct": 5.6,
+      "checked_at": "2026-10-27T19:06:59+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p796576-le-co-varena-sunka-ve-vlastni-stave-98-masa",
-      "name": "Le & Co Vařená šunka ve vlastní šťávě (98% masa)",
-      "previous": 32.9,
-      "now": 26.9,
-      "drop_pct": 18.2,
-      "checked_at": "2026-10-27T12:57:10+00:00"
+      "url": "https://www.kosik.cz/p803200-paprika-zluta-1-ks",
+      "name": "Paprika žlutá, 1 ks",
+      "previous": 13.99,
+      "now": 12.99,
+      "drop_pct": 7.1,
+      "checked_at": "2026-10-27T19:07:04+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p106337-masna-rosovice-hovezi-svickova",
-      "name": "Masna Rosovice Hovězí svíčková",
-      "previous": 942.25,
-      "now": 892.66,
-      "drop_pct": 5.3,
-      "checked_at": "2026-10-27T13:03:22+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1317817-persil-expert-sensitive-praci-gel-4-5-l",
-      "name": "Persil Expert Sensitive prací gel (4,5 l)",
-      "previous": 439.9,
-      "now": 389.9,
-      "drop_pct": 11.4,
-      "checked_at": "2026-10-27T13:04:36+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1317815-persil-lavender-freshness-praci-gel-4-5-l",
-      "name": "Persil Lavender Freshness prací gel (4,5 l)",
-      "previous": 439.9,
-      "now": 389.9,
-      "drop_pct": 11.4,
-      "checked_at": "2026-10-27T13:04:51+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p803198-paprika-zelena-1-ks",
-      "name": "Paprika zelená, 1 ks",
-      "previous": 10.18,
-      "now": 9.58,
-      "drop_pct": 5.9,
-      "checked_at": "2026-10-27T13:06:37+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p680992-rabbit-venkovske-prsni-rizky-bez-kuze",
-      "name": "Rabbit Venkovské prsní řízky bez kůže",
-      "previous": 219.92,
-      "now": 208.92,
-      "drop_pct": 5.0,
-      "checked_at": "2026-10-27T13:12:03+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p181035-selska-kureci-stehna",
-      "name": "Selská kuřecí stehna",
-      "previous": 92.16,
-      "now": 87.4,
-      "drop_pct": 5.2,
-      "checked_at": "2026-10-27T13:15:40+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p793238-avokado-hass-3-ks",
-      "name": "Avokádo Hass, 3 ks",
-      "previous": 119.9,
-      "now": 99.9,
-      "drop_pct": 16.7,
-      "checked_at": "2026-10-27T13:25:54+00:00"
+      "url": "https://www.kosik.cz/p712666-boruvky-kanadske-vanicka",
+      "name": "Borůvky kanadské, vanička",
+      "previous": 49.9,
+      "now": 39.9,
+      "drop_pct": 20.0,
+      "checked_at": "2026-10-27T19:27:42+00:00"
     }
   ],
   "remaining_missing": 28
