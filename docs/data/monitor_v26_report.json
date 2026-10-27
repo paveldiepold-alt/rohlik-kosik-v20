@@ -1,20 +1,346 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-10-26T18:51:31+00:00",
-  "processed": 32,
-  "updated_prices": 29,
-  "requested": 32,
+  "at": "2026-10-27T01:32:39+00:00",
+  "processed": 1090,
+  "updated_prices": 913,
+  "requested": 1090,
   "blocked_stores": [],
   "statuses": {
-    "Košík|title_mismatch": 1,
-    "Rohlík|ok": 14,
-    "Košík|ok": 15,
-    "Rohlík|price_unverified": 1,
-    "Košík|price_unverified": 1
+    "Košík|ok": 446,
+    "Rohlík|ok": 467,
+    "Košík|http_error": 4,
+    "Košík|price_unverified": 96,
+    "Rohlík|price_unverified": 67,
+    "Košík|title_mismatch": 10
   },
-  "last_price_monitor_at": "2026-10-26T18:51:31+00:00",
+  "last_price_monitor_at": "2026-10-27T01:32:39+00:00",
   "checked_last_6h": 1090,
-  "verified_price_last_6h": 924,
-  "new_drops": [],
+  "verified_price_last_6h": 913,
+  "new_drops": [
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1295421-cif-cream-tekuty-pisek-original",
+      "name": "Cif Cream Tekutý písek Original",
+      "previous": 89.9,
+      "now": 79.9,
+      "drop_pct": 11.1,
+      "checked_at": "2026-10-27T00:50:42+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1389017-cif-max-power-grease-fighter",
+      "name": "Cif Max Power Grease Fighter",
+      "previous": 89.9,
+      "now": 79.9,
+      "drop_pct": 11.1,
+      "checked_at": "2026-10-27T00:51:07+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1474737-cif-pink-cistici-krem",
+      "name": "Cif Pink čistící krém",
+      "previous": 89.9,
+      "now": 79.9,
+      "drop_pct": 11.1,
+      "checked_at": "2026-10-27T00:51:17+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1404808-colgate-advanced-white-charcoal-belici-zubni-pasta",
+      "name": "Colgate Advanced White Charcoal bělicí zubní pasta",
+      "previous": 70.9,
+      "now": 56.9,
+      "drop_pct": 19.7,
+      "checked_at": "2026-10-27T00:51:43+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1473691-colgate-advanced-white-purple-zubni-pasta",
+      "name": "Colgate Advanced White Purple zubní pasta",
+      "previous": 70.9,
+      "now": 56.9,
+      "drop_pct": 19.7,
+      "checked_at": "2026-10-27T00:51:48+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1423239-colgate-max-white-ultra-freshness-pearls-belici-zubni-pasta",
+      "name": "Colgate Max White Ultra Freshness Pearls bělicí zubní pasta",
+      "previous": 174.9,
+      "now": 154.9,
+      "drop_pct": 11.4,
+      "checked_at": "2026-10-27T00:52:14+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1304613-colgate-max-fresh-cooling-crystal-zubni-pasta",
+      "name": "Colgate Max fresh cooling crystal zubní pasta",
+      "previous": 70.9,
+      "now": 56.9,
+      "drop_pct": 19.7,
+      "checked_at": "2026-10-27T00:52:19+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1473695-colgate-propolis-zubni-pasta-2-75-ml",
+      "name": "Colgate Propolis zubní pasta, 2×75 ml",
+      "previous": 79.9,
+      "now": 74.9,
+      "drop_pct": 6.3,
+      "checked_at": "2026-10-27T00:52:24+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1473694-colgate-triple-action-original-mint-zubni-pasta-2-75-ml",
+      "name": "Colgate Triple Action Original Mint zubní pasta, 2×75 ml",
+      "previous": 79.9,
+      "now": 72.9,
+      "drop_pct": 8.8,
+      "checked_at": "2026-10-27T00:52:34+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1470072-galbani-mozzarella-perline-perlicky",
+      "name": "Galbani Mozzarella perline perličky",
+      "previous": 53.4,
+      "now": 34.9,
+      "drop_pct": 34.6,
+      "checked_at": "2026-10-27T00:54:37+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1466137-galbani-mozzarella-protein",
+      "name": "Galbani Mozzarella protein",
+      "previous": 42.9,
+      "now": 31.9,
+      "drop_pct": 25.6,
+      "checked_at": "2026-10-27T00:54:47+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1314777-hrozny-bile-bezsemenne-baleni",
+      "name": "Hrozny bílé bezsemenné, balení",
+      "previous": 59.9,
+      "now": 49.9,
+      "drop_pct": 16.7,
+      "checked_at": "2026-10-27T00:55:43+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1296499-linteo-classic-kuchynske-uterky-2vrstve",
+      "name": "Linteo Classic Kuchyňské utěrky 2vrstvé",
+      "previous": 29.9,
+      "now": 22.9,
+      "drop_pct": 23.4,
+      "checked_at": "2026-10-27T00:57:44+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1301743-linteo-classic-kuchynske-uterky-xxl-2vrstve",
+      "name": "Linteo Classic Kuchyňské utěrky XXL 2vrstvé",
+      "previous": 84.9,
+      "now": 59.9,
+      "drop_pct": 29.4,
+      "checked_at": "2026-10-27T00:57:49+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1471344-madeta-high-protein-madeland-platky",
+      "name": "Madeta High protein Madeland plátky",
+      "previous": 40.9,
+      "now": 35.9,
+      "drop_pct": 12.2,
+      "checked_at": "2026-10-27T00:59:26+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/712167-madeta-madeland-45-original-platky",
+      "name": "Madeta Madeland 45% original plátky",
+      "previous": 42.9,
+      "now": 35.9,
+      "drop_pct": 16.3,
+      "checked_at": "2026-10-27T01:00:02+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1303961-madeta-madeland-light-30-platky",
+      "name": "Madeta Madeland light 30% plátky",
+      "previous": 42.9,
+      "now": 35.9,
+      "drop_pct": 16.3,
+      "checked_at": "2026-10-27T01:00:07+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/719965-opavia-minonky-kakaove-oplatky",
+      "name": "Opavia Miňonky Kakaové oplatky",
+      "previous": 20.9,
+      "now": 16.9,
+      "drop_pct": 19.1,
+      "checked_at": "2026-10-27T01:01:48+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1325731-papriky-padrone-na-gril-baleni",
+      "name": "Papriky Padrone na gril, balení",
+      "previous": 70.9,
+      "now": 49.9,
+      "drop_pct": 29.6,
+      "checked_at": "2026-10-27T01:03:34+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1464145-persil-color-praci-prasek-4-95-kg",
+      "name": "Persil Color prací prášek (4,95 kg)",
+      "previous": 489.9,
+      "now": 389.9,
+      "drop_pct": 20.4,
+      "checked_at": "2026-10-27T01:04:14+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1470039-persil-deep-clean-4v1-discs-color-praci-kapsle",
+      "name": "Persil Deep Clean 4v1 Discs Color prací kapsle",
+      "previous": 489.9,
+      "now": 389.9,
+      "drop_pct": 20.4,
+      "checked_at": "2026-10-27T01:04:24+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1413472-persil-deep-clean-4v1-discs-universal-praci-kapsle",
+      "name": "Persil Deep Clean 4v1 Discs Universal prací kapsle",
+      "previous": 489.9,
+      "now": 389.9,
+      "drop_pct": 20.4,
+      "checked_at": "2026-10-27T01:04:29+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p819094-metro-chef-mrkev-karotka-prana-1-ks",
+      "name": "Metro Chef Mrkev karotka praná, 1 ks",
+      "previous": 2.99,
+      "now": 2.74,
+      "drop_pct": 8.4,
+      "checked_at": "2026-10-27T01:04:34+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1464146-persil-expert-freshness-by-silan-praci-prasek-4-95-kg",
+      "name": "Persil Expert Freshness by Silan prací prášek (4,95 kg)",
+      "previous": 489.9,
+      "now": 389.9,
+      "drop_pct": 20.4,
+      "checked_at": "2026-10-27T01:04:54+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1439254-rama-crema-15-rostlinna-na-vareni",
+      "name": "Rama Crema 15% rostlinná na vaření",
+      "previous": 39.4,
+      "now": 24.9,
+      "drop_pct": 36.8,
+      "checked_at": "2026-10-27T01:07:08+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1439253-rama-crema-31-rostlinna-na-slehani",
+      "name": "Rama Crema 31% rostlinná na šlehání",
+      "previous": 43.9,
+      "now": 31.9,
+      "drop_pct": 27.3,
+      "checked_at": "2026-10-27T01:07:13+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p794752-paprika-cervena-1-ks",
+      "name": "Paprika červená, 1 ks",
+      "previous": 16.98,
+      "now": 15.98,
+      "drop_pct": 5.9,
+      "checked_at": "2026-10-27T01:07:55+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p803200-paprika-zluta-1-ks",
+      "name": "Paprika žlutá, 1 ks",
+      "previous": 14.99,
+      "now": 9.99,
+      "drop_pct": 33.4,
+      "checked_at": "2026-10-27T01:08:00+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1293157-vesela-krava-syr-a-krup-4-35-g",
+      "name": "Veselá Kráva Sýr a křup 4×35 g",
+      "previous": 72.9,
+      "now": 62.9,
+      "drop_pct": 13.7,
+      "checked_at": "2026-10-27T01:12:13+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/713477-vesela-krava-lahodna-taveny-syr",
+      "name": "Veselá kráva Lahodná Tavený sýr",
+      "previous": 47.9,
+      "now": 36.9,
+      "drop_pct": 23.0,
+      "checked_at": "2026-10-27T01:12:18+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1460565-vesela-krava-syr-a-krup-s-prichuti-pizza-4-35-g",
+      "name": "Veselá kráva Sýr a křup s příchutí pizza 4×35 g",
+      "previous": 72.9,
+      "now": 62.9,
+      "drop_pct": 13.7,
+      "checked_at": "2026-10-27T01:12:22+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1459116-zewa-deluxe-camomile-comfort-toaletni-papir-3vrstvy-8-ks",
+      "name": "Zewa Deluxe Camomile Comfort toaletní papír 3vrstvý, 8 ks",
+      "previous": 129.9,
+      "now": 99.9,
+      "drop_pct": 23.1,
+      "checked_at": "2026-10-27T01:12:58+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1307943-zewa-deluxe-delicate-care-toaletni-papir-3vrstvy-8-ks",
+      "name": "Zewa Deluxe Delicate Care toaletní papír 3vrstvý, 8 ks",
+      "previous": 129.9,
+      "now": 99.9,
+      "drop_pct": 23.1,
+      "checked_at": "2026-10-27T01:13:08+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1322665-rajcata-cherry-vanicka",
+      "name": "Rajčata cherry, vanička",
+      "previous": 44.9,
+      "now": 31.9,
+      "drop_pct": 29.0,
+      "checked_at": "2026-10-27T01:17:55+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1332623-president-camembert-l-aromatique",
+      "name": "Président Camembert L´Aromatique",
+      "previous": 99.9,
+      "now": 79.9,
+      "drop_pct": 20.0,
+      "checked_at": "2026-10-27T01:19:26+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1312313-cif-cream-tekuty-pisek-lemon",
+      "name": "Cif Cream Tekutý písek lemon",
+      "previous": 89.9,
+      "now": 79.9,
+      "drop_pct": 11.1,
+      "checked_at": "2026-10-27T01:19:41+00:00"
+    }
+  ],
   "remaining_missing": 28
 }
