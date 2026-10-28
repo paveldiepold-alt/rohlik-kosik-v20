@@ -1,471 +1,84 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-10-28T01:42:21+00:00",
+  "at": "2026-10-28T07:41:20+00:00",
   "processed": 1090,
-  "updated_prices": 900,
+  "updated_prices": 897,
   "requested": 1090,
   "blocked_stores": [],
   "statuses": {
     "Rohlík|ok": 461,
-    "Košík|title_mismatch": 8,
-    "Košík|ok": 439,
+    "Košík|title_mismatch": 11,
+    "Košík|ok": 436,
     "Košík|http_error": 4,
     "Rohlík|price_unverified": 73,
     "Košík|price_unverified": 105
   },
-  "last_price_monitor_at": "2026-10-28T01:42:21+00:00",
+  "last_price_monitor_at": "2026-10-28T07:41:20+00:00",
   "checked_last_6h": 1090,
-  "verified_price_last_6h": 900,
+  "verified_price_last_6h": 897,
   "new_drops": [
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p97097-chodura-bohemia-sunka-vyberova-platky-84-masa",
-      "name": "Chodura Bohemia Šunka výběrová plátky (84% masa)",
-      "previous": 39.9,
-      "now": 19.9,
-      "drop_pct": 50.1,
-      "checked_at": "2026-10-28T00:57:32+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p813260-chodura-pivni-salam-se-syrem",
-      "name": "Chodura Pivní salám se sýrem",
-      "previous": 34.9,
-      "now": 31.9,
-      "drop_pct": 8.6,
-      "checked_at": "2026-10-28T00:58:27+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p813258-chodura-pivni-salam-se-zelenym-peprem",
-      "name": "Chodura Pivní salám se zeleným pepřem",
-      "previous": 34.9,
-      "now": 31.9,
-      "drop_pct": 8.6,
-      "checked_at": "2026-10-28T00:58:31+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p794638-citron-1-ks",
-      "name": "Citron, 1 ks",
-      "previous": 16.78,
-      "now": 7.18,
-      "drop_pct": 57.2,
-      "checked_at": "2026-10-28T00:59:27+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p721714-colgate-advanced-white-baking-soda-vulcanic-ash-zubni-pasta",
-      "name": "Colgate Advanced White Baking Soda & Vulcanic Ash zubní pasta",
-      "previous": 67.9,
-      "now": 44.9,
-      "drop_pct": 33.9,
-      "checked_at": "2026-10-28T01:00:09+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p413419-colgate-advanced-white-charcoal-zubni-pasta-3x75ml",
-      "name": "Colgate Advanced White Charcoal zubní pasta 3x75ml",
-      "previous": 184.9,
-      "now": 129.9,
-      "drop_pct": 29.7,
-      "checked_at": "2026-10-28T01:00:13+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p63857-colgate-advanced-whitening-zubni-pasta",
-      "name": "Colgate Advanced Whitening Zubní pasta",
-      "previous": 67.9,
-      "now": 42.9,
-      "drop_pct": 36.8,
-      "checked_at": "2026-10-28T01:00:18+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p818754-colgate-belici-serum-purple-zubni-pasta",
-      "name": "Colgate Bělící sérum + Purple zubní pasta",
-      "previous": 449.0,
-      "now": 329.0,
-      "drop_pct": 26.7,
-      "checked_at": "2026-10-28T01:00:22+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p721708-colgate-cavity-protection-fresh-mint-zubni-pasta",
-      "name": "Colgate Cavity Protection Fresh Mint zubní pasta",
-      "previous": 54.9,
-      "now": 29.9,
-      "drop_pct": 45.5,
-      "checked_at": "2026-10-28T01:00:27+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p816642-colgate-detska-zubni-pasta-bluey-0-5-let",
-      "name": "Colgate Dětská zubní pasta Bluey 0–5 let",
-      "previous": 69.9,
-      "now": 49.9,
-      "drop_pct": 28.6,
-      "checked_at": "2026-10-28T01:00:31+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p816640-colgate-detska-zubni-pasta-harry-potter-bubbling-cauldron-6-9-let",
-      "name": "Colgate Dětská zubní pasta Harry Potter Bubbling Cauldron 6–9 let",
-      "previous": 69.9,
-      "now": 49.9,
-      "drop_pct": 28.6,
-      "checked_at": "2026-10-28T01:00:36+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p335754-colgate-max-fresh-cooling-crystals-zubni-pasta",
-      "name": "Colgate Max Fresh Cooling Crystals zubní pasta",
-      "previous": 84.9,
-      "now": 44.9,
-      "drop_pct": 47.1,
-      "checked_at": "2026-10-28T01:00:45+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p65137-colgate-max-white-luminous-zubni-pasta",
-      "name": "Colgate Max White Luminous zubní pasta",
-      "previous": 119.9,
+      "url": "https://www.kosik.cz/p818746-colgate-max-white-one-coffee-tea-wine-zubni-pasta",
+      "name": "Colgate Max White One Coffee, Tea & Wine Zubní pasta",
+      "previous": 104.9,
       "now": 79.9,
-      "drop_pct": 33.4,
-      "checked_at": "2026-10-28T01:00:50+00:00"
+      "drop_pct": 23.8,
+      "checked_at": "2026-10-28T06:58:42+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p721720-colgate-max-white-ultra-fresh-pearls-belici-zubni-pasta",
-      "name": "Colgate Max White Ultra Fresh Pearls bělicí zubní pasta",
-      "previous": 159.9,
-      "now": 119.9,
-      "drop_pct": 25.0,
-      "checked_at": "2026-10-28T01:00:59+00:00"
+      "url": "https://www.kosik.cz/p819094-metro-chef-mrkev-karotka-prana-1-ks",
+      "name": "Metro Chef Mrkev karotka praná, 1 ks",
+      "previous": 3.24,
+      "now": 2.99,
+      "drop_pct": 7.7,
+      "checked_at": "2026-10-28T07:11:59+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p721706-colgate-propolis-zubni-pasta",
-      "name": "Colgate Propolis zubní pasta",
-      "previous": 54.9,
-      "now": 29.9,
-      "drop_pct": 45.5,
-      "checked_at": "2026-10-28T01:01:04+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p721712-colgate-triple-action-original-mint-zubni-pasta",
-      "name": "Colgate Triple Action Original Mint zubní pasta",
-      "previous": 54.9,
-      "now": 29.9,
-      "drop_pct": 45.5,
-      "checked_at": "2026-10-28T01:01:08+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p721710-colgate-whitening-zubni-pasta",
-      "name": "Colgate Whitening zubní pasta",
-      "previous": 54.9,
-      "now": 29.9,
-      "drop_pct": 45.5,
-      "checked_at": "2026-10-28T01:01:13+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p65427-colgate-zubni-pasta-advanced-whitening-charcoal",
-      "name": "Colgate Zubní Pasta Advanced Whitening Charcoal",
-      "previous": 69.9,
-      "now": 42.9,
-      "drop_pct": 38.6,
-      "checked_at": "2026-10-28T01:01:17+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p797632-colgate-zubni-pasta-advanced-white-purple",
-      "name": "Colgate Zubní pasta Advanced White Purple",
-      "previous": 84.9,
-      "now": 42.9,
-      "drop_pct": 49.5,
-      "checked_at": "2026-10-28T01:01:22+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p816636-colgate-zubni-pasta-herbal",
-      "name": "Colgate Zubní pasta Herbal",
-      "previous": 54.9,
-      "now": 39.9,
-      "drop_pct": 27.3,
-      "checked_at": "2026-10-28T01:01:26+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p335744-colgate-zubni-pasta-max-white",
-      "name": "Colgate Zubní pasta Max White",
-      "previous": 64.9,
-      "now": 42.9,
-      "drop_pct": 33.9,
-      "checked_at": "2026-10-28T01:01:31+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p816648-colgate-zubni-pasta-max-white-purple-reveal",
-      "name": "Colgate Zubní pasta Max White Purple Reveal",
-      "previous": 134.9,
-      "now": 79.9,
-      "drop_pct": 40.8,
-      "checked_at": "2026-10-28T01:01:35+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p816638-colgate-zubni-pasta-max-white-sparkle-diamonds",
-      "name": "Colgate Zubní pasta Max White Sparkle Diamonds",
-      "previous": 64.9,
-      "now": 42.9,
-      "drop_pct": 33.9,
-      "checked_at": "2026-10-28T01:01:40+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p816656-colgate-zubni-pasta-total-junior",
-      "name": "Colgate Zubní pasta Total Junior",
-      "previous": 69.9,
-      "now": 49.9,
-      "drop_pct": 28.6,
-      "checked_at": "2026-10-28T01:01:45+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p816654-colgate-zubni-pasta-total-original",
-      "name": "Colgate Zubní pasta Total Original",
+      "url": "https://www.kosik.cz/p76047-panzani-lasagne",
+      "name": "Panzani Lasagne",
       "previous": 94.9,
       "now": 69.9,
       "drop_pct": 26.3,
-      "checked_at": "2026-10-28T01:01:49+00:00"
+      "checked_at": "2026-10-28T07:14:23+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p336084-colgate-zubni-pasta-total-whitening",
-      "name": "Colgate Zubní pasta Total Whitening",
-      "previous": 94.9,
-      "now": 69.9,
-      "drop_pct": 26.3,
-      "checked_at": "2026-10-28T01:01:54+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p816644-colgate-zubni-pasta-triple-action",
-      "name": "Colgate Zubní pasta Triple Action",
-      "previous": 74.9,
-      "now": 49.9,
-      "drop_pct": 33.4,
-      "checked_at": "2026-10-28T01:01:58+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p816646-colgate-zubni-pasta-triple-action",
-      "name": "Colgate Zubní pasta Triple Action",
-      "previous": 94.9,
-      "now": 59.9,
-      "drop_pct": 36.9,
-      "checked_at": "2026-10-28T01:02:03+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p740884-domestos-24h-plus-pine-cistici-prostredek",
-      "name": "Domestos 24h Plus Pine čistící prostředek",
-      "previous": 99.9,
-      "now": 94.9,
-      "drop_pct": 5.0,
-      "checked_at": "2026-10-28T01:02:26+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p20137-kostelecke-uzeniny-javoricke-parky-original",
-      "name": "Kostelecké Uzeniny Javořické párky original",
-      "previous": 46.9,
-      "now": 29.9,
-      "drop_pct": 36.2,
-      "checked_at": "2026-10-28T01:05:29+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p20147-kostelecke-uzeniny-poctivy-vidensky-parek",
-      "name": "Kostelecké Uzeniny Poctivý vídeňský párek",
-      "previous": 79.9,
-      "now": 59.9,
-      "drop_pct": 25.0,
-      "checked_at": "2026-10-28T01:05:43+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p380344-krahulik-gothajsky-salam-krajeny",
-      "name": "Krahulík Gothajský salám krájený",
-      "previous": 21.9,
-      "now": 16.9,
-      "drop_pct": 22.8,
-      "checked_at": "2026-10-28T01:05:47+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p380334-krahulik-junior-salam-krajeny",
-      "name": "Krahulík Junior salám krájený",
-      "previous": 21.9,
-      "now": 16.9,
-      "drop_pct": 22.8,
-      "checked_at": "2026-10-28T01:05:52+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p359534-madeta-syraruv-vyber-gouda-48-platky",
-      "name": "Madeta Sýrařův výběr Gouda (48%) plátky",
-      "previous": 37.9,
-      "now": 29.9,
-      "drop_pct": 21.1,
-      "checked_at": "2026-10-28T01:13:24+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p254294-madeta-syraruv-vyber-moravsky-bochnik-45-platky",
-      "name": "Madeta Sýrařův výběr Moravský bochník (45%) plátky",
-      "previous": 37.9,
-      "now": 29.9,
-      "drop_pct": 21.1,
-      "checked_at": "2026-10-28T01:13:29+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p248824-madeta-syraruv-vyber-tylzsky-syr-45-platky",
-      "name": "Madeta Sýrařův výběr Tylžský sýr (45%) plátky",
-      "previous": 37.9,
-      "now": 29.9,
-      "drop_pct": 21.1,
-      "checked_at": "2026-10-28T01:13:34+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p248834-madeta-syraruv-vyber-tylzsky-syr-uzeny-45-platky",
-      "name": "Madeta Sýrařův výběr Tylžský sýr uzený (45%) plátky",
-      "previous": 37.9,
-      "now": 29.9,
-      "drop_pct": 21.1,
-      "checked_at": "2026-10-28T01:13:38+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p802840-metro-chef-veprova-panenka-bez-retizku",
-      "name": "Metro Chef Vepřová panenka bez řetízku",
-      "previous": 176.73,
-      "now": 108.73,
-      "drop_pct": 38.5,
-      "checked_at": "2026-10-28T01:14:24+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p296834-mrkev-s-nati-svazek",
-      "name": "Mrkev s natí, svazek",
-      "previous": 39.9,
-      "now": 22.9,
-      "drop_pct": 42.6,
-      "checked_at": "2026-10-28T01:14:52+00:00"
+      "url": "https://www.kosik.cz/p809514-paprika-bila-1-ks",
+      "name": "Paprika bílá, 1 ks",
+      "previous": 7.19,
+      "now": 5.59,
+      "drop_pct": 22.3,
+      "checked_at": "2026-10-28T07:14:50+00:00"
     },
     {
       "store": "Košík",
       "url": "https://www.kosik.cz/p803198-paprika-zelena-1-ks",
       "name": "Paprika zelená, 1 ks",
-      "previous": 9.58,
-      "now": 8.99,
-      "drop_pct": 6.2,
-      "checked_at": "2026-10-28T01:17:09+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p20507-ponnath-libove-parky",
-      "name": "Ponnath Libové párky",
-      "previous": 79.9,
-      "now": 59.9,
-      "drop_pct": 25.0,
-      "checked_at": "2026-10-28T01:20:21+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p20447-ponnath-spekacky",
-      "name": "Ponnath Špekáčky",
-      "previous": 59.9,
-      "now": 49.9,
-      "drop_pct": 16.7,
-      "checked_at": "2026-10-28T01:20:39+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p717966-rabbit-reznictvi-kureci-stehna-rizek-mlety",
-      "name": "Rabbit řeznictví Kuřecí stehna řízek mletý",
-      "previous": 94.9,
-      "now": 79.9,
-      "drop_pct": 15.8,
-      "checked_at": "2026-10-28T01:22:42+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p793102-smetanito-strivko-s-ementalem-taveny-syr",
-      "name": "Smetanito Střívko s ementálem tavený sýr",
-      "previous": 25.9,
-      "now": 19.9,
-      "drop_pct": 23.2,
-      "checked_at": "2026-10-28T01:27:58+00:00"
+      "previous": 8.99,
+      "now": 8.39,
+      "drop_pct": 6.7,
+      "checked_at": "2026-10-28T07:15:04+00:00"
     },
     {
       "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1320523-avokado-hass-male-ready-to-eat-1-ks",
-      "name": "Avokádo Hass malé \"ready to eat\" 1 ks",
-      "previous": 36.9,
-      "now": 34.9,
-      "drop_pct": 5.4,
-      "checked_at": "2026-10-28T01:28:53+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p85577-vesela-krava-lahodna-xl-taveny-syr-16-ks",
-      "name": "Veselá Kráva Lahodná XL Tavený sýr (16 ks)",
-      "previous": 94.9,
-      "now": 69.9,
-      "drop_pct": 26.3,
-      "checked_at": "2026-10-28T01:29:47+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p793098-vesela-krava-syr-a-krup-s-sunkovou-prichuti-35g-snack",
-      "name": "Veselá Kráva Sýr a Křup s šunkovou příchutí 35g snack",
-      "previous": 19.9,
-      "now": 16.9,
-      "drop_pct": 15.1,
-      "checked_at": "2026-10-28T01:30:06+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p82337-zewa-deluxe-delicate-care-toaletni-papir-3vrstvy-8-roli",
-      "name": "Zewa Deluxe Delicate Care toaletní papír, 3vrstvý, 8 rolí",
-      "previous": 154.9,
-      "now": 139.9,
-      "drop_pct": 9.7,
-      "checked_at": "2026-10-28T01:31:42+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p429165-authentic-veprova-krkovice-bez-kosti",
-      "name": "Authentic Vepřová krkovice bez kosti​",
-      "previous": 278.09,
-      "now": 203.19,
-      "drop_pct": 26.9,
-      "checked_at": "2026-10-28T01:36:17+00:00"
+      "url": "https://www.rohlik.cz/1473494-sutcha-spiz-veprova-panenka-a-svestka-se-slaninou",
+      "name": "Sutcha Špíz vepřová panenka a švestka se slaninou",
+      "previous": 227.35,
+      "now": 199.49,
+      "drop_pct": 12.3,
+      "checked_at": "2026-10-28T07:19:07+00:00"
     },
     {
       "store": "Košík",
       "url": "https://www.kosik.cz/p78217-banan-1-ks",
       "name": "Banán, 1 ks",
-      "previous": 7.98,
-      "now": 7.58,
-      "drop_pct": 5.0,
-      "checked_at": "2026-10-28T01:38:07+00:00"
+      "previous": 7.58,
+      "now": 6.38,
+      "drop_pct": 15.8,
+      "checked_at": "2026-10-28T07:36:18+00:00"
     }
   ],
   "remaining_missing": 28
