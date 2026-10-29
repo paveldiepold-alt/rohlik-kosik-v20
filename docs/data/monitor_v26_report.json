@@ -1,84 +1,66 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-10-28T19:36:28+00:00",
+  "at": "2026-10-29T01:41:38+00:00",
   "processed": 1090,
-  "updated_prices": 911,
+  "updated_prices": 917,
   "requested": 1090,
   "blocked_stores": [],
   "statuses": {
+    "Rohlík|ok": 474,
     "Košík|title_mismatch": 1,
-    "Rohlík|ok": 466,
-    "Košík|ok": 445,
+    "Košík|ok": 443,
     "Košík|http_error": 4,
-    "Rohlík|price_unverified": 68,
-    "Košík|price_unverified": 106
+    "Rohlík|price_unverified": 60,
+    "Košík|price_unverified": 108
   },
-  "last_price_monitor_at": "2026-10-28T19:36:28+00:00",
+  "last_price_monitor_at": "2026-10-29T01:41:38+00:00",
   "checked_last_6h": 1090,
-  "verified_price_last_6h": 911,
+  "verified_price_last_6h": 917,
   "new_drops": [
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p78177-chiquita-banan-1-ks",
-      "name": "Chiquita Banán, 1 ks",
-      "previous": 10.58,
-      "now": 10.05,
-      "drop_pct": 5.0,
-      "checked_at": "2026-10-28T18:51:07+00:00"
+      "url": "https://www.kosik.cz/p809514-paprika-bila-1-ks",
+      "name": "Paprika bílá, 1 ks",
+      "previous": 6.39,
+      "now": 4.79,
+      "drop_pct": 25.0,
+      "checked_at": "2026-10-29T01:16:12+00:00"
     },
     {
       "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1466686-kunraticka-stodola-hrozny-ruzove-bezpeckove-volne-odr-sweet-celebration-strapec",
-      "name": "Kunratická stodola – Hrozny růžové bezpeckové volně (odr. Sweet celebration), střapec",
-      "previous": 490.04,
-      "now": 449.01,
-      "drop_pct": 8.4,
-      "checked_at": "2026-10-28T19:00:31+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p819094-metro-chef-mrkev-karotka-prana-1-ks",
-      "name": "Metro Chef Mrkev karotka praná, 1 ks",
-      "previous": 3.24,
-      "now": 2.74,
-      "drop_pct": 15.4,
-      "checked_at": "2026-10-28T19:07:45+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p805304-paprika-cervena-kapie-1-ks",
-      "name": "Paprika červená kapie, 1 ks",
-      "previous": 9.74,
-      "now": 8.99,
-      "drop_pct": 7.7,
-      "checked_at": "2026-10-28T19:10:58+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p803200-paprika-zluta-1-ks",
-      "name": "Paprika žlutá, 1 ks",
-      "previous": 13.99,
-      "now": 10.99,
-      "drop_pct": 21.4,
-      "checked_at": "2026-10-28T19:11:11+00:00"
+      "url": "https://www.rohlik.cz/1292759-president-tavene-platky-emmental",
+      "name": "Président Tavené plátky Emmental",
+      "previous": 74.9,
+      "now": 49.9,
+      "drop_pct": 33.4,
+      "checked_at": "2026-10-29T01:25:43+00:00"
     },
     {
       "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1482633-campese-kureci-vykostena-stehna-z-volneho-chovu",
-      "name": "Campese Kuřecí vykostěná stehna z volného chovu",
-      "previous": 173.93,
-      "now": 157.27,
-      "drop_pct": 9.6,
-      "checked_at": "2026-10-28T19:27:06+00:00"
+      "url": "https://www.rohlik.cz/1474653-president-gouda-platky",
+      "name": "Président Gouda plátky",
+      "previous": 414.9,
+      "now": 279.0,
+      "drop_pct": 32.8,
+      "checked_at": "2026-10-29T01:32:12+00:00"
     },
     {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p78217-banan-1-ks",
-      "name": "Banán, 1 ks",
-      "previous": 7.58,
-      "now": 7.18,
-      "drop_pct": 5.3,
-      "checked_at": "2026-10-28T19:31:48+00:00"
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1474654-president-emmental-platky",
+      "name": "Président Emmental plátky",
+      "previous": 394.9,
+      "now": 279.0,
+      "drop_pct": 29.3,
+      "checked_at": "2026-10-29T01:32:33+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/712895-president-cheddar-syr-toast-platky",
+      "name": "Président Cheddar sýr toast plátky",
+      "previous": 74.9,
+      "now": 49.9,
+      "drop_pct": 33.4,
+      "checked_at": "2026-10-29T01:32:48+00:00"
     }
   ],
   "remaining_missing": 26
