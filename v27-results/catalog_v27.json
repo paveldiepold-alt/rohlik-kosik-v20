@@ -73603,7 +73603,7 @@
   },
   "v27_probe_control": {
     "shop_backoff_until": {},
-    "last_batch_at": "2026-10-29T07:41:36+00:00"
+    "last_batch_at": "2026-10-29T09:56:28+00:00"
   },
   "v27_audit": {
     "rules_configured": 75,
@@ -73622,7 +73622,7 @@
     ],
     "unknown_rule_ids": [],
     "schema": "rk-v27-taxonomy-audit",
-    "generated_at": "2026-10-29T07:41:37+00:00",
+    "generated_at": "2026-10-29T09:56:29+00:00",
     "source_generated_at": "2026-10-21T14:12:55+00:00",
     "products_before": 1090,
     "products_after": 1090,
