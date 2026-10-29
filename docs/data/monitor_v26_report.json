@@ -1,61 +1,58 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-10-29T13:43:47+00:00",
-  "processed": 859,
-  "updated_prices": 734,
+  "at": "2026-10-29T19:39:21+00:00",
+  "processed": 1090,
+  "updated_prices": 917,
   "requested": 1090,
-  "blocked_stores": [
-    "Košík"
-  ],
+  "blocked_stores": [],
   "statuses": {
-    "Rohlík|ok": 472,
-    "Košík|ok": 262,
-    "Košík|title_mismatch": 4,
-    "Rohlík|price_unverified": 62,
-    "Košík|price_unverified": 54,
-    "Košík|http_error": 4,
-    "Košík|throttled": 1
+    "Rohlík|ok": 474,
+    "Košík|title_mismatch": 1,
+    "Košík|ok": 443,
+    "Košík|price_unverified": 107,
+    "Rohlík|price_unverified": 60,
+    "Košík|http_error": 5
   },
-  "last_price_monitor_at": "2026-10-29T13:43:47+00:00",
-  "checked_last_6h": 859,
-  "verified_price_last_6h": 734,
+  "last_price_monitor_at": "2026-10-29T19:39:21+00:00",
+  "checked_last_6h": 1090,
+  "verified_price_last_6h": 917,
   "new_drops": [
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p429165-authentic-veprova-krkovice-bez-kosti",
-      "name": "Authentic Vepřová krkovice bez kosti​",
-      "previous": 203.19,
-      "now": 191.8,
-      "drop_pct": 5.6,
-      "checked_at": "2026-10-29T13:05:55+00:00"
+      "url": "https://www.kosik.cz/p803198-paprika-zelena-1-ks",
+      "name": "Paprika zelená, 1 ks",
+      "previous": 10.78,
+      "now": 8.99,
+      "drop_pct": 16.6,
+      "checked_at": "2026-10-29T18:59:59+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p78217-banan-1-ks",
-      "name": "Banán, 1 ks",
-      "previous": 7.18,
-      "now": 6.78,
-      "drop_pct": 5.6,
-      "checked_at": "2026-10-29T13:07:46+00:00"
+      "url": "https://www.kosik.cz/p794752-paprika-cervena-1-ks",
+      "name": "Paprika červená, 1 ks",
+      "previous": 16.98,
+      "now": 13.99,
+      "drop_pct": 17.6,
+      "checked_at": "2026-10-29T19:00:18+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p78177-chiquita-banan-1-ks",
-      "name": "Chiquita Banán, 1 ks",
-      "previous": 11.11,
-      "now": 10.05,
-      "drop_pct": 9.5,
-      "checked_at": "2026-10-29T13:09:26+00:00"
+      "url": "https://www.kosik.cz/p85427-vesela-krava-syr-a-krup-prirodni-snack",
+      "name": "Veselá Kráva Sýr a Křup přírodní snack",
+      "previous": 19.9,
+      "now": 15.9,
+      "drop_pct": 20.1,
+      "checked_at": "2026-10-29T19:12:44+00:00"
     },
     {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1322665-rajcata-cherry-vanicka",
-      "name": "Rajčata cherry, vanička",
-      "previous": 44.9,
-      "now": 34.9,
-      "drop_pct": 22.3,
-      "checked_at": "2026-10-29T13:28:45+00:00"
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p794638-citron-1-ks",
+      "name": "Citron, 1 ks",
+      "previous": 5.19,
+      "now": 3.99,
+      "drop_pct": 23.1,
+      "checked_at": "2026-10-29T19:24:40+00:00"
     }
   ],
-  "remaining_missing": 26
+  "remaining_missing": 25
 }
