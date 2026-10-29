@@ -1,66 +1,68 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-10-29T01:41:38+00:00",
-  "processed": 1090,
-  "updated_prices": 917,
+  "at": "2026-10-29T07:41:09+00:00",
+  "processed": 940,
+  "updated_prices": 793,
   "requested": 1090,
-  "blocked_stores": [],
+  "blocked_stores": [
+    "Košík"
+  ],
   "statuses": {
-    "Rohlík|ok": 474,
-    "Košík|title_mismatch": 1,
-    "Košík|ok": 443,
-    "Košík|http_error": 4,
-    "Rohlík|price_unverified": 60,
-    "Košík|price_unverified": 108
+    "Košík|ok": 316,
+    "Rohlík|ok": 477,
+    "Košík|http_error": 1,
+    "Rohlík|price_unverified": 57,
+    "Košík|price_unverified": 88,
+    "Košík|throttled": 1
   },
-  "last_price_monitor_at": "2026-10-29T01:41:38+00:00",
-  "checked_last_6h": 1090,
-  "verified_price_last_6h": 917,
+  "last_price_monitor_at": "2026-10-29T07:41:09+00:00",
+  "checked_last_6h": 940,
+  "verified_price_last_6h": 793,
   "new_drops": [
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p809514-paprika-bila-1-ks",
-      "name": "Paprika bílá, 1 ks",
-      "previous": 6.39,
-      "now": 4.79,
-      "drop_pct": 25.0,
-      "checked_at": "2026-10-29T01:16:12+00:00"
+      "url": "https://www.kosik.cz/p78177-chiquita-banan-1-ks",
+      "name": "Chiquita Banán, 1 ks",
+      "previous": 12.17,
+      "now": 11.11,
+      "drop_pct": 8.7,
+      "checked_at": "2026-10-29T06:56:40+00:00"
     },
     {
       "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1292759-president-tavene-platky-emmental",
-      "name": "Président Tavené plátky Emmental",
-      "previous": 74.9,
-      "now": 49.9,
-      "drop_pct": 33.4,
-      "checked_at": "2026-10-29T01:25:43+00:00"
+      "url": "https://www.rohlik.cz/1466686-kunraticka-stodola-hrozny-ruzove-bezpeckove-volne-odr-sweet-celebration-strapec",
+      "name": "Kunratická stodola – Hrozny růžové bezpeckové volně (odr. Sweet celebration), střapec",
+      "previous": 449.01,
+      "now": 419.66,
+      "drop_pct": 6.5,
+      "checked_at": "2026-10-29T07:05:54+00:00"
     },
     {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1474653-president-gouda-platky",
-      "name": "Président Gouda plátky",
-      "previous": 414.9,
-      "now": 279.0,
-      "drop_pct": 32.8,
-      "checked_at": "2026-10-29T01:32:12+00:00"
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p819094-metro-chef-mrkev-karotka-prana-1-ks",
+      "name": "Metro Chef Mrkev karotka praná, 1 ks",
+      "previous": 2.99,
+      "now": 2.74,
+      "drop_pct": 8.4,
+      "checked_at": "2026-10-29T07:13:09+00:00"
     },
     {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1474654-president-emmental-platky",
-      "name": "Président Emmental plátky",
-      "previous": 394.9,
-      "now": 279.0,
-      "drop_pct": 29.3,
-      "checked_at": "2026-10-29T01:32:33+00:00"
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p805304-paprika-cervena-kapie-1-ks",
+      "name": "Paprika červená kapie, 1 ks",
+      "previous": 9.74,
+      "now": 8.99,
+      "drop_pct": 7.7,
+      "checked_at": "2026-10-29T07:16:19+00:00"
     },
     {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/712895-president-cheddar-syr-toast-platky",
-      "name": "Président Cheddar sýr toast plátky",
-      "previous": 74.9,
-      "now": 49.9,
-      "drop_pct": 33.4,
-      "checked_at": "2026-10-29T01:32:48+00:00"
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p794752-paprika-cervena-1-ks",
+      "name": "Paprika červená, 1 ks",
+      "previous": 17.98,
+      "now": 16.98,
+      "drop_pct": 5.6,
+      "checked_at": "2026-10-29T07:16:28+00:00"
     }
   ],
   "remaining_missing": 26
