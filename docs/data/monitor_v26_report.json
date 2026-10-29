@@ -1,68 +1,60 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-10-29T07:41:09+00:00",
-  "processed": 940,
-  "updated_prices": 793,
+  "at": "2026-10-29T13:43:47+00:00",
+  "processed": 859,
+  "updated_prices": 734,
   "requested": 1090,
   "blocked_stores": [
     "Košík"
   ],
   "statuses": {
-    "Košík|ok": 316,
-    "Rohlík|ok": 477,
-    "Košík|http_error": 1,
-    "Rohlík|price_unverified": 57,
-    "Košík|price_unverified": 88,
+    "Rohlík|ok": 472,
+    "Košík|ok": 262,
+    "Košík|title_mismatch": 4,
+    "Rohlík|price_unverified": 62,
+    "Košík|price_unverified": 54,
+    "Košík|http_error": 4,
     "Košík|throttled": 1
   },
-  "last_price_monitor_at": "2026-10-29T07:41:09+00:00",
-  "checked_last_6h": 940,
-  "verified_price_last_6h": 793,
+  "last_price_monitor_at": "2026-10-29T13:43:47+00:00",
+  "checked_last_6h": 859,
+  "verified_price_last_6h": 734,
   "new_drops": [
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p429165-authentic-veprova-krkovice-bez-kosti",
+      "name": "Authentic Vepřová krkovice bez kosti​",
+      "previous": 203.19,
+      "now": 191.8,
+      "drop_pct": 5.6,
+      "checked_at": "2026-10-29T13:05:55+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p78217-banan-1-ks",
+      "name": "Banán, 1 ks",
+      "previous": 7.18,
+      "now": 6.78,
+      "drop_pct": 5.6,
+      "checked_at": "2026-10-29T13:07:46+00:00"
+    },
     {
       "store": "Košík",
       "url": "https://www.kosik.cz/p78177-chiquita-banan-1-ks",
       "name": "Chiquita Banán, 1 ks",
-      "previous": 12.17,
-      "now": 11.11,
-      "drop_pct": 8.7,
-      "checked_at": "2026-10-29T06:56:40+00:00"
+      "previous": 11.11,
+      "now": 10.05,
+      "drop_pct": 9.5,
+      "checked_at": "2026-10-29T13:09:26+00:00"
     },
     {
       "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1466686-kunraticka-stodola-hrozny-ruzove-bezpeckove-volne-odr-sweet-celebration-strapec",
-      "name": "Kunratická stodola – Hrozny růžové bezpeckové volně (odr. Sweet celebration), střapec",
-      "previous": 449.01,
-      "now": 419.66,
-      "drop_pct": 6.5,
-      "checked_at": "2026-10-29T07:05:54+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p819094-metro-chef-mrkev-karotka-prana-1-ks",
-      "name": "Metro Chef Mrkev karotka praná, 1 ks",
-      "previous": 2.99,
-      "now": 2.74,
-      "drop_pct": 8.4,
-      "checked_at": "2026-10-29T07:13:09+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p805304-paprika-cervena-kapie-1-ks",
-      "name": "Paprika červená kapie, 1 ks",
-      "previous": 9.74,
-      "now": 8.99,
-      "drop_pct": 7.7,
-      "checked_at": "2026-10-29T07:16:19+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p794752-paprika-cervena-1-ks",
-      "name": "Paprika červená, 1 ks",
-      "previous": 17.98,
-      "now": 16.98,
-      "drop_pct": 5.6,
-      "checked_at": "2026-10-29T07:16:28+00:00"
+      "url": "https://www.rohlik.cz/1322665-rajcata-cherry-vanicka",
+      "name": "Rajčata cherry, vanička",
+      "previous": 44.9,
+      "now": 34.9,
+      "drop_pct": 22.3,
+      "checked_at": "2026-10-29T13:28:45+00:00"
     }
   ],
   "remaining_missing": 26
