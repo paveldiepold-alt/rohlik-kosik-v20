@@ -1,57 +1,66 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-10-29T19:39:21+00:00",
+  "at": "2026-10-30T01:43:46+00:00",
   "processed": 1090,
-  "updated_prices": 917,
+  "updated_prices": 895,
   "requested": 1090,
   "blocked_stores": [],
   "statuses": {
-    "Rohlík|ok": 474,
-    "Košík|title_mismatch": 1,
-    "Košík|ok": 443,
-    "Košík|price_unverified": 107,
-    "Rohlík|price_unverified": 60,
+    "Rohlík|ok": 475,
+    "Košík|title_mismatch": 27,
+    "Košík|ok": 420,
+    "Rohlík|price_unverified": 59,
+    "Košík|price_unverified": 104,
     "Košík|http_error": 5
   },
-  "last_price_monitor_at": "2026-10-29T19:39:21+00:00",
+  "last_price_monitor_at": "2026-10-30T01:43:46+00:00",
   "checked_last_6h": 1090,
-  "verified_price_last_6h": 917,
+  "verified_price_last_6h": 895,
   "new_drops": [
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p819094-metro-chef-mrkev-karotka-prana-1-ks",
+      "name": "Metro Chef Mrkev karotka praná, 1 ks",
+      "previous": 3.49,
+      "now": 2.99,
+      "drop_pct": 14.3,
+      "checked_at": "2026-10-30T01:01:47+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p776516-orion-studentska-pecet-oplatka-s-kakaovou-naplni-macena-v-mlecne-cokolade",
+      "name": "ORION Studentská pečeť Oplatka s kakaovou náplní máčená v mléčné čokoládě",
+      "previous": 19.9,
+      "now": 14.9,
+      "drop_pct": 25.1,
+      "checked_at": "2026-10-30T01:03:30+00:00"
+    },
     {
       "store": "Košík",
       "url": "https://www.kosik.cz/p803198-paprika-zelena-1-ks",
       "name": "Paprika zelená, 1 ks",
-      "previous": 10.78,
-      "now": 8.99,
-      "drop_pct": 16.6,
-      "checked_at": "2026-10-29T18:59:59+00:00"
+      "previous": 8.99,
+      "now": 8.39,
+      "drop_pct": 6.7,
+      "checked_at": "2026-10-30T01:04:55+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p794752-paprika-cervena-1-ks",
-      "name": "Paprika červená, 1 ks",
-      "previous": 16.98,
-      "now": 13.99,
-      "drop_pct": 17.6,
-      "checked_at": "2026-10-29T19:00:18+00:00"
+      "url": "https://www.kosik.cz/p78217-banan-1-ks",
+      "name": "Banán, 1 ks",
+      "previous": 7.98,
+      "now": 6.78,
+      "drop_pct": 15.0,
+      "checked_at": "2026-10-30T01:26:20+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p85427-vesela-krava-syr-a-krup-prirodni-snack",
-      "name": "Veselá Kráva Sýr a Křup přírodní snack",
-      "previous": 19.9,
-      "now": 15.9,
-      "drop_pct": 20.1,
-      "checked_at": "2026-10-29T19:12:44+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p794638-citron-1-ks",
-      "name": "Citron, 1 ks",
-      "previous": 5.19,
-      "now": 3.99,
-      "drop_pct": 23.1,
-      "checked_at": "2026-10-29T19:24:40+00:00"
+      "url": "https://www.kosik.cz/p78177-chiquita-banan-1-ks",
+      "name": "Chiquita Banán, 1 ks",
+      "previous": 10.58,
+      "now": 10.05,
+      "drop_pct": 5.0,
+      "checked_at": "2026-10-30T01:28:02+00:00"
     }
   ],
   "remaining_missing": 25
