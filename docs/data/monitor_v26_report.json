@@ -1,66 +1,66 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-10-30T13:41:50+00:00",
+  "at": "2026-10-30T19:33:48+00:00",
   "processed": 1090,
   "updated_prices": 921,
   "requested": 1090,
   "blocked_stores": [],
   "statuses": {
-    "Košík|title_mismatch": 1,
-    "Rohlík|ok": 478,
-    "Košík|ok": 443,
-    "Košík|price_unverified": 108,
-    "Rohlík|price_unverified": 56,
-    "Košík|http_error": 4
+    "Košík|title_mismatch": 2,
+    "Rohlík|ok": 479,
+    "Košík|ok": 442,
+    "Košík|price_unverified": 107,
+    "Rohlík|price_unverified": 55,
+    "Košík|http_error": 5
   },
-  "last_price_monitor_at": "2026-10-30T13:41:50+00:00",
+  "last_price_monitor_at": "2026-10-30T19:33:48+00:00",
   "checked_last_6h": 1090,
   "verified_price_last_6h": 921,
   "new_drops": [
     {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1317247-boruvky-baleni",
-      "name": "Borůvky, balení",
-      "previous": 59.9,
-      "now": 44.92,
-      "drop_pct": 25.0,
-      "checked_at": "2026-10-30T12:57:30+00:00"
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p819094-metro-chef-mrkev-karotka-prana-1-ks",
+      "name": "Metro Chef Mrkev karotka praná, 1 ks",
+      "previous": 3.24,
+      "now": 2.74,
+      "drop_pct": 15.4,
+      "checked_at": "2026-10-30T18:52:37+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p106337-masna-rosovice-hovezi-svickova",
-      "name": "Masna Rosovice Hovězí svíčková",
-      "previous": 892.66,
-      "now": 812.07,
-      "drop_pct": 9.0,
-      "checked_at": "2026-10-30T12:59:59+00:00"
+      "url": "https://www.kosik.cz/p809514-paprika-bila-1-ks",
+      "name": "Paprika bílá, 1 ks",
+      "previous": 7.19,
+      "now": 6.39,
+      "drop_pct": 11.1,
+      "checked_at": "2026-10-30T18:55:27+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p803198-paprika-zelena-1-ks",
-      "name": "Paprika zelená, 1 ks",
-      "previous": 11.98,
-      "now": 8.99,
-      "drop_pct": 25.0,
-      "checked_at": "2026-10-30T13:03:15+00:00"
+      "url": "https://www.kosik.cz/p803200-paprika-zluta-1-ks",
+      "name": "Paprika žlutá, 1 ks",
+      "previous": 12.99,
+      "now": 10.99,
+      "drop_pct": 15.4,
+      "checked_at": "2026-10-30T18:56:03+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p805304-paprika-cervena-kapie-1-ks",
-      "name": "Paprika červená kapie, 1 ks",
-      "previous": 8.24,
-      "now": 7.49,
-      "drop_pct": 9.1,
-      "checked_at": "2026-10-30T13:03:24+00:00"
+      "url": "https://www.kosik.cz/p78217-banan-1-ks",
+      "name": "Banán, 1 ks",
+      "previous": 7.58,
+      "now": 6.38,
+      "drop_pct": 15.8,
+      "checked_at": "2026-10-30T19:16:43+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p794752-paprika-cervena-1-ks",
-      "name": "Paprika červená, 1 ks",
-      "previous": 13.99,
-      "now": 11.04,
-      "drop_pct": 21.1,
-      "checked_at": "2026-10-30T13:03:33+00:00"
+      "url": "https://www.kosik.cz/p78177-chiquita-banan-1-ks",
+      "name": "Chiquita Banán, 1 ks",
+      "previous": 10.58,
+      "now": 8.46,
+      "drop_pct": 20.0,
+      "checked_at": "2026-10-30T19:18:23+00:00"
     }
   ],
   "remaining_missing": 25
