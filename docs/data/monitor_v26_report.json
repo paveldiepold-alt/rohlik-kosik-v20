@@ -1,57 +1,57 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-10-31T01:43:47+00:00",
+  "at": "2026-10-31T07:38:44+00:00",
   "processed": 1090,
-  "updated_prices": 914,
+  "updated_prices": 915,
   "requested": 1090,
   "blocked_stores": [],
   "statuses": {
+    "Košík|title_mismatch": 4,
     "Rohlík|ok": 477,
-    "Košík|title_mismatch": 8,
-    "Košík|ok": 437,
-    "Košík|price_unverified": 106,
+    "Košík|ok": 438,
+    "Košík|price_unverified": 108,
     "Rohlík|price_unverified": 57,
-    "Košík|http_error": 5
+    "Košík|http_error": 6
   },
-  "last_price_monitor_at": "2026-10-31T01:43:47+00:00",
+  "last_price_monitor_at": "2026-10-31T07:38:44+00:00",
   "checked_last_6h": 1090,
-  "verified_price_last_6h": 914,
+  "verified_price_last_6h": 915,
   "new_drops": [
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p809514-paprika-bila-1-ks",
-      "name": "Paprika bílá, 1 ks",
-      "previous": 6.39,
-      "now": 4.79,
-      "drop_pct": 25.0,
-      "checked_at": "2026-10-31T01:05:16+00:00"
+      "url": "https://www.kosik.cz/p805304-paprika-cervena-kapie-1-ks",
+      "name": "Paprika červená kapie, 1 ks",
+      "previous": 7.49,
+      "now": 6.74,
+      "drop_pct": 10.0,
+      "checked_at": "2026-10-31T06:59:30+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1473494-sutcha-spiz-veprova-panenka-a-svestka-se-slaninou",
+      "name": "Sutcha Špíz vepřová panenka a švestka se slaninou",
+      "previous": 199.49,
+      "now": 182.89,
+      "drop_pct": 8.3,
+      "checked_at": "2026-10-31T07:16:34+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p803198-paprika-zelena-1-ks",
-      "name": "Paprika zelená, 1 ks",
-      "previous": 10.78,
-      "now": 10.18,
+      "url": "https://www.kosik.cz/p78217-banan-1-ks",
+      "name": "Banán, 1 ks",
+      "previous": 7.18,
+      "now": 6.38,
+      "drop_pct": 11.1,
+      "checked_at": "2026-10-31T07:20:29+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p78177-chiquita-banan-1-ks",
+      "name": "Chiquita Banán, 1 ks",
+      "previous": 9.52,
+      "now": 8.99,
       "drop_pct": 5.6,
-      "checked_at": "2026-10-31T01:05:30+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1424110-ariel-mountain-spring-praci-gel-3-15-l",
-      "name": "Ariel Mountain Spring prací gel (3,15 l)",
-      "previous": 599.93,
-      "now": 559.94,
-      "drop_pct": 6.7,
-      "checked_at": "2026-10-31T01:26:11+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1481793-chlazena-kureci-prsa-s-kosti-a-s-kuzi-supreme-2-ks-v-baleni",
-      "name": "Chlazená kuřecí prsa s kostí a s kůží supreme 2 ks v balení",
-      "previous": 224.02,
-      "now": 200.81,
-      "drop_pct": 10.4,
-      "checked_at": "2026-10-31T01:34:13+00:00"
+      "checked_at": "2026-10-31T07:22:10+00:00"
     }
   ],
   "remaining_missing": 25
