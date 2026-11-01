@@ -1,48 +1,57 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-11-01T07:43:54+00:00",
+  "at": "2026-11-01T13:37:56+00:00",
   "processed": 1090,
-  "updated_prices": 917,
+  "updated_prices": 906,
   "requested": 1090,
   "blocked_stores": [],
   "statuses": {
-    "Košík|title_mismatch": 2,
-    "Rohlík|ok": 474,
-    "Košík|ok": 443,
-    "Košík|price_unverified": 105,
-    "Rohlík|price_unverified": 60,
+    "Rohlík|ok": 468,
+    "Košík|title_mismatch": 9,
+    "Košík|ok": 438,
+    "Košík|price_unverified": 103,
+    "Rohlík|price_unverified": 66,
     "Košík|http_error": 6
   },
-  "last_price_monitor_at": "2026-11-01T07:43:54+00:00",
+  "last_price_monitor_at": "2026-11-01T13:37:56+00:00",
   "checked_last_6h": 1090,
-  "verified_price_last_6h": 917,
+  "verified_price_last_6h": 907,
   "new_drops": [
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p776516-orion-studentska-pecet-oplatka-s-kakaovou-naplni-macena-v-mlecne-cokolade",
-      "name": "ORION Studentská pečeť Oplatka s kakaovou náplní máčená v mléčné čokoládě",
-      "previous": 19.9,
-      "now": 14.9,
-      "drop_pct": 25.1,
-      "checked_at": "2026-11-01T07:02:56+00:00"
+      "url": "https://www.kosik.cz/p819094-metro-chef-mrkev-karotka-prana-1-ks",
+      "name": "Metro Chef Mrkev karotka praná, 1 ks",
+      "previous": 3.24,
+      "now": 2.99,
+      "drop_pct": 7.7,
+      "checked_at": "2026-11-01T12:55:14+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p805304-paprika-cervena-kapie-1-ks",
-      "name": "Paprika červená kapie, 1 ks",
-      "previous": 7.49,
-      "now": 6.74,
-      "drop_pct": 10.0,
-      "checked_at": "2026-11-01T07:04:28+00:00"
+      "url": "https://www.kosik.cz/p803200-paprika-zluta-1-ks",
+      "name": "Paprika žlutá, 1 ks",
+      "previous": 13.99,
+      "now": 12.99,
+      "drop_pct": 7.1,
+      "checked_at": "2026-11-01T12:58:43+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p78217-banan-1-ks",
-      "name": "Banán, 1 ks",
-      "previous": 7.18,
-      "now": 6.38,
-      "drop_pct": 11.1,
-      "checked_at": "2026-11-01T07:25:28+00:00"
+      "url": "https://www.kosik.cz/p78177-chiquita-banan-1-ks",
+      "name": "Chiquita Banán, 1 ks",
+      "previous": 9.52,
+      "now": 8.99,
+      "drop_pct": 5.6,
+      "checked_at": "2026-11-01T13:21:13+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p391624-chodura-fitnes-sunka-z-kurecich-prsou-se-snizenym-obsahem-soli-nejvyssi-jakosti-90-masa",
+      "name": "Chodura Fitnes šunka z kuřecích prsou se sníženým obsahem soli, nejvyšší jakosti (90% masa)",
+      "previous": 37.9,
+      "now": 29.9,
+      "drop_pct": 21.1,
+      "checked_at": "2026-11-01T13:21:41+00:00"
     }
   ],
   "remaining_missing": 24
