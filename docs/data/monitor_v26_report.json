@@ -1,102 +1,48 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-11-01T01:52:07+00:00",
+  "at": "2026-11-01T07:43:54+00:00",
   "processed": 1090,
-  "updated_prices": 921,
+  "updated_prices": 917,
   "requested": 1090,
   "blocked_stores": [],
   "statuses": {
-    "Rohlík|ok": 477,
-    "Košík|title_mismatch": 1,
-    "Košík|ok": 444,
+    "Košík|title_mismatch": 2,
+    "Rohlík|ok": 474,
+    "Košík|ok": 443,
     "Košík|price_unverified": 105,
-    "Rohlík|price_unverified": 57,
+    "Rohlík|price_unverified": 60,
     "Košík|http_error": 6
   },
-  "last_price_monitor_at": "2026-11-01T01:52:07+00:00",
+  "last_price_monitor_at": "2026-11-01T07:43:54+00:00",
   "checked_last_6h": 1090,
-  "verified_price_last_6h": 921,
+  "verified_price_last_6h": 917,
   "new_drops": [
     {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1440616-persil-color-praci-gel-4-5-l",
-      "name": "Persil Color prací gel (4,5 l)",
-      "previous": 439.9,
-      "now": 399.9,
-      "drop_pct": 9.1,
-      "checked_at": "2026-11-01T01:23:13+00:00"
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p776516-orion-studentska-pecet-oplatka-s-kakaovou-naplni-macena-v-mlecne-cokolade",
+      "name": "ORION Studentská pečeť Oplatka s kakaovou náplní máčená v mléčné čokoládě",
+      "previous": 19.9,
+      "now": 14.9,
+      "drop_pct": 25.1,
+      "checked_at": "2026-11-01T07:02:56+00:00"
     },
     {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1479616-persil-discs-4v1-color-praci-kapsle",
-      "name": "Persil Discs 4v1 Color prací kapsle",
-      "previous": 579.9,
-      "now": 549.0,
-      "drop_pct": 5.3,
-      "checked_at": "2026-11-01T01:23:38+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1479617-persil-expert-freshness-by-silan-praci-prasek-6-05-kg",
-      "name": "Persil Expert Freshness by Silan prací prášek (6,05 kg)",
-      "previous": 549.9,
-      "now": 494.9,
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p805304-paprika-cervena-kapie-1-ks",
+      "name": "Paprika červená kapie, 1 ks",
+      "previous": 7.49,
+      "now": 6.74,
       "drop_pct": 10.0,
-      "checked_at": "2026-11-01T01:24:04+00:00"
+      "checked_at": "2026-11-01T07:04:28+00:00"
     },
     {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1483896-silan-aromatherapy-tokyo-avivaz-2-772-l",
-      "name": "Silan Aromatherapy Tokyo aviváž (2,772 l)",
-      "previous": 189.9,
-      "now": 169.9,
-      "drop_pct": 10.5,
-      "checked_at": "2026-11-01T01:28:45+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1469256-le-co-sunka-nejvyssi-jakosti",
-      "name": "LE&CO Šunka nejvyšší jakosti",
-      "previous": 99.9,
-      "now": 84.91,
-      "drop_pct": 15.0,
-      "checked_at": "2026-11-01T01:41:24+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1484400-lenor-winter-dream-avivaz-2-65-l",
-      "name": "Lenor Winter Dream aviváž (2,65 l)",
-      "previous": 189.9,
-      "now": 159.9,
-      "drop_pct": 15.8,
-      "checked_at": "2026-11-01T01:45:31+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1484396-ariel-winter-dream-praci-gel-1-8-l",
-      "name": "Ariel Winter dream prací gel (1,8 l)",
-      "previous": 309.9,
-      "now": 259.9,
-      "drop_pct": 16.1,
-      "checked_at": "2026-11-01T01:48:07+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1483690-jar-platinum-plus-lemon-kapsle-do-mycky",
-      "name": "Jar Platinum Plus Lemon kapsle do myčky",
-      "previous": 709.9,
-      "now": 659.9,
-      "drop_pct": 7.0,
-      "checked_at": "2026-11-01T01:48:17+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1484398-ariel-winter-dream-allin1-kapsle-na-prani",
-      "name": "Ariel Winter dream Allin1 kapsle na praní",
-      "previous": 309.9,
-      "now": 259.9,
-      "drop_pct": 16.1,
-      "checked_at": "2026-11-01T01:48:58+00:00"
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p78217-banan-1-ks",
+      "name": "Banán, 1 ks",
+      "previous": 7.18,
+      "now": 6.38,
+      "drop_pct": 11.1,
+      "checked_at": "2026-11-01T07:25:28+00:00"
     }
   ],
   "remaining_missing": 24
