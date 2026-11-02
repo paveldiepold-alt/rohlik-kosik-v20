@@ -1,6 +1,6 @@
 {
   "schema": "rk-v27-category-review",
-  "count": 254,
+  "count": 253,
   "items": [
     {
       "store": "Košík",
@@ -66,28 +66,6 @@
       "rule_checks": {
         "W066": {
           "expected": "Úklid",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p97087-chodura-mini-salamky",
-      "name": "Chodura Mini salámky",
-      "rule_ids": [
-        "W011"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Uzeniny / salámy"
-      ],
-      "rule_checks": {
-        "W011": {
-          "expected": "Uzeniny / salámy",
           "status": "review",
           "reason": "Kategorie neověřena u prodejce"
         }

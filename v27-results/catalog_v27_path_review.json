@@ -1,10 +1,10 @@
 {
   "schema": "rk-v27-merchant-path-review",
-  "number_of_distinct_trusted_paths": 216,
-  "mapped_product_total": 1074,
+  "number_of_distinct_trusted_paths": 217,
+  "mapped_product_total": 1075,
   "unmapped_or_mismatched_path_count": 38,
   "without_trusted_path_by_shop": {
-    "Košík": 6,
+    "Košík": 5,
     "Rohlík": 1
   },
   "note": "Old rule categories are references for audit only; never proof of merchant classification.",
@@ -3756,6 +3756,25 @@
       },
       "sample_product_urls": [
         "https://www.kosik.cz/p20447-ponnath-spekacky"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Uzeniny a lahůdky",
+        "Salámy",
+        "Tvrdé",
+        "Snack a mini"
+      ],
+      "mapped_category": "Uzeniny / salámy",
+      "mapping_reason": "Salámy podle cesty prodejce",
+      "product_count": 1,
+      "old_rule_categories": {
+        "Uzeniny / salámy": 1
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p97087-chodura-mini-salamky"
       ],
       "needs_review": false
     },

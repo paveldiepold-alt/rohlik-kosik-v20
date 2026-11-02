@@ -519,10 +519,6 @@
           }
         ]
       },
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_checked_at": "2026-11-02T19:42:28+00:00",
-      "v27_category_probe_attempts": 4,
       "store_category_path": [
         "Drogerie a kosmetika",
         "Papírová a vatová hygiena",
@@ -530,7 +526,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Jak už název napovídá, je to klasika, která nesmí v kuchyni chybět. Jsou vhodné pro styk s potravinami, například pro osušení ovoce nebo zeleniny. Vhodné jsou…",
-      "taxonomy_checked_at": "2026-11-02T19:42:28+00:00"
+      "taxonomy_checked_at": "2026-11-02T19:42:28+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-11-02T19:42:28+00:00",
+      "v27_category_probe_attempts": 4
     },
     {
       "store": "Košík",
@@ -5100,10 +5100,19 @@
           }
         ]
       },
-      "v27_category_probe_status": "category_missing",
-      "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-26T21:41:11+00:00",
-      "v27_category_probe_attempts": 3
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-11-02T21:48:17+00:00",
+      "v27_category_probe_attempts": 4,
+      "store_category_path": [
+        "Uzeniny a lahůdky",
+        "Salámy",
+        "Tvrdé",
+        "Snack a mini"
+      ],
+      "category_source": "jsonld_breadcrumb",
+      "product_description": "Delikátní salámky v party balení. Nejlépe si je vychutnáte s pivem nebo vínem. O výrobci Tradice značky Chodura sahá až do roku 1919 do oblasti severní Moravy,…",
+      "taxonomy_checked_at": "2026-11-02T21:48:17+00:00"
     },
     {
       "store": "Košík",
@@ -6157,8 +6166,8 @@
       "drop_since_previous_pct": null,
       "v27_category_probe_status": "category_missing",
       "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-10-26T21:41:02+00:00",
-      "v27_category_probe_attempts": 3
+      "v27_category_checked_at": "2026-11-02T21:48:13+00:00",
+      "v27_category_probe_attempts": 4
     },
     {
       "store": "Košík",
@@ -15342,10 +15351,6 @@
           }
         ]
       },
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_checked_at": "2026-11-02T19:42:49+00:00",
-      "v27_category_probe_attempts": 4,
       "store_category_path": [
         "Trvanlivé",
         "Sladké",
@@ -15355,7 +15360,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Studentská pečeť mléčná čokoláda s bublinkami.Jemná mléčná čokoláda Studentská pečeť s nadýchanými bublinkami, které vytvářejí lehkou a křupavou strukturu…",
-      "taxonomy_checked_at": "2026-11-02T19:42:49+00:00"
+      "taxonomy_checked_at": "2026-11-02T19:42:49+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-11-02T19:42:49+00:00",
+      "v27_category_probe_attempts": 4
     },
     {
       "store": "Košík",
@@ -16293,10 +16302,6 @@
           }
         ]
       },
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_checked_at": "2026-11-02T19:42:40+00:00",
-      "v27_category_probe_attempts": 4,
       "store_category_path": [
         "Trvanlivé",
         "Těstoviny a kuskus",
@@ -16305,7 +16310,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Semolinové těstoviny Penne Rigate jsou dokonalým základem romantické italské večeře. Díky svému tvaru se hodí jako ideální příprava k italským omáčkám. Jako…",
-      "taxonomy_checked_at": "2026-11-02T19:42:40+00:00"
+      "taxonomy_checked_at": "2026-11-02T19:42:40+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-11-02T19:42:40+00:00",
+      "v27_category_probe_attempts": 4
     },
     {
       "store": "Košík",
@@ -16349,10 +16358,6 @@
           }
         ]
       },
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_checked_at": "2026-11-02T19:42:45+00:00",
-      "v27_category_probe_attempts": 4,
       "store_category_path": [
         "Trvanlivé",
         "Těstoviny a kuskus",
@@ -16361,7 +16366,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Těstoviny semolinové sušené.&nbsp;Spaghetti jako typický symbol Itálie se odlišují svou univerzálností, délkou a tvarem. Ať už jen s olivovým olejem a bazalkou…",
-      "taxonomy_checked_at": "2026-11-02T19:42:45+00:00"
+      "taxonomy_checked_at": "2026-11-02T19:42:45+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-11-02T19:42:45+00:00",
+      "v27_category_probe_attempts": 4
     },
     {
       "store": "Košík",
@@ -48567,6 +48576,6 @@
   },
   "v27_probe_control": {
     "shop_backoff_until": {},
-    "last_batch_at": "2026-11-02T19:42:49+00:00"
+    "last_batch_at": "2026-11-02T21:48:17+00:00"
   }
 }
