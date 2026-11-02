@@ -1,6 +1,6 @@
 {
   "schema": "rk-v27-category-review",
-  "count": 258,
+  "count": 257,
   "items": [
     {
       "store": "Košík",
@@ -912,28 +912,6 @@
         }
       },
       "reason": "Papírová a vlhčená hygiena podle cesty e-shopu; konkrétní typ dle pravidel zatím nelze potvrdit: Papír a hygiena"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p229874-madeta-jihoceske-lipno-se-sunkou-60",
-      "name": "Madeta Jihočeské Lipno se šunkou 60%",
-      "rule_ids": [
-        "W022"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Sýry / tavené"
-      ],
-      "rule_checks": {
-        "W022": {
-          "expected": "Sýry / tavené",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
     },
     {
       "store": "Košík",

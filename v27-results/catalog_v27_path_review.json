@@ -1,10 +1,10 @@
 {
   "schema": "rk-v27-merchant-path-review",
   "number_of_distinct_trusted_paths": 215,
-  "mapped_product_total": 1069,
+  "mapped_product_total": 1070,
   "unmapped_or_mismatched_path_count": 38,
   "without_trusted_path_by_shop": {
-    "Košík": 11,
+    "Košík": 10,
     "Rohlík": 1
   },
   "note": "Old rule categories are references for audit only; never proof of merchant classification.",
@@ -73,6 +73,27 @@
       "needs_review": false
     },
     {
+      "shop": "Košík",
+      "merchant_path": [
+        "Mléčné a chlazené",
+        "Sýry",
+        "Tavené"
+      ],
+      "mapped_category": "Sýry / tavené",
+      "mapping_reason": "Tavené sýry podle cesty prodejce",
+      "product_count": 21,
+      "old_rule_categories": {
+        "Sýry / tavené": 20,
+        "Sýry / plísňové": 1
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p252434-madeta-jihoceske-lipno-trio",
+        "https://www.kosik.cz/p229874-madeta-jihoceske-lipno-se-sunkou-60",
+        "https://www.kosik.cz/p12777-madeta-jihoceske-lipno-syr-extra-smetanovy-64"
+      ],
+      "needs_review": true
+    },
+    {
       "shop": "Rohlík",
       "merchant_path": [
         "Drogerie",
@@ -112,27 +133,6 @@
         "https://www.kosik.cz/p818070-bref-color-auto-active-chlorine-wc-blok-3x-50-g"
       ],
       "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Mléčné a chlazené",
-        "Sýry",
-        "Tavené"
-      ],
-      "mapped_category": "Sýry / tavené",
-      "mapping_reason": "Tavené sýry podle cesty prodejce",
-      "product_count": 20,
-      "old_rule_categories": {
-        "Sýry / tavené": 19,
-        "Sýry / plísňové": 1
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p252434-madeta-jihoceske-lipno-trio",
-        "https://www.kosik.cz/p12777-madeta-jihoceske-lipno-syr-extra-smetanovy-64",
-        "https://www.kosik.cz/p721246-president-taveny-se-syrem-camembert-3x50g"
-      ],
-      "needs_review": true
     },
     {
       "shop": "Rohlík",
