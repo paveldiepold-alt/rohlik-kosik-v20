@@ -1,10 +1,10 @@
 {
   "schema": "rk-v27-merchant-path-review",
-  "number_of_distinct_trusted_paths": 215,
-  "mapped_product_total": 1070,
+  "number_of_distinct_trusted_paths": 216,
+  "mapped_product_total": 1074,
   "unmapped_or_mismatched_path_count": 38,
   "without_trusted_path_by_shop": {
-    "Košík": 10,
+    "Košík": 6,
     "Rohlík": 1
   },
   "note": "Old rule categories are references for audit only; never proof of merchant classification.",
@@ -164,14 +164,14 @@
       ],
       "mapped_category": "Papírové utěrky",
       "mapping_reason": "Papírové utěrky podle cesty prodejce",
-      "product_count": 17,
+      "product_count": 18,
       "old_rule_categories": {
-        "Papírové utěrky": 17
+        "Papírové utěrky": 18
       },
       "sample_product_urls": [
         "https://www.kosik.cz/p635600-aro-kuchynske-uterky-2-vrstve-8-roli",
-        "https://www.kosik.cz/p813574-fine-life-kuchynske-uterky-3vrstve-8-roli",
-        "https://www.kosik.cz/p717960-harmony-kuchynske-uterky-everyday-family-mono-1-role"
+        "https://www.kosik.cz/p733270-aro-kuchynske-uterky-2vrstve-2-role",
+        "https://www.kosik.cz/p813574-fine-life-kuchynske-uterky-3vrstve-8-roli"
       ],
       "needs_review": false
     },
@@ -1867,6 +1867,28 @@
       "needs_review": false
     },
     {
+      "shop": "Košík",
+      "merchant_path": [
+        "Trvanlivé",
+        "Sladké",
+        "Čokolády",
+        "Mléčná čokoláda",
+        "S příchutí"
+      ],
+      "mapped_category": "Sladké",
+      "mapping_reason": "Sladkosti podle cesty prodejce",
+      "product_count": 4,
+      "old_rule_categories": {
+        "Sladké": 4
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p814402-orion-studentska-pecet-bublinky-mlecna",
+        "https://www.kosik.cz/p814380-orion-studentska-pecet-bublinky-mlecna-a-bile-bublinky",
+        "https://www.kosik.cz/p814378-orion-studentska-pecet-bublinky-mlecna-s-karamelovou-prichuti"
+      ],
+      "needs_review": false
+    },
+    {
       "shop": "Rohlík",
       "merchant_path": [
         "Drogerie",
@@ -2351,21 +2373,20 @@
       "shop": "Košík",
       "merchant_path": [
         "Trvanlivé",
-        "Sladké",
-        "Čokolády",
-        "Mléčná čokoláda",
-        "S příchutí"
+        "Těstoviny a kuskus",
+        "Těstoviny podle tvaru",
+        "Špagety a linguine"
       ],
-      "mapped_category": "Sladké",
-      "mapping_reason": "Sladkosti podle cesty prodejce",
+      "mapped_category": "Těstoviny a rýže",
+      "mapping_reason": "Těstoviny/rýže podle cesty prodejce",
       "product_count": 3,
       "old_rule_categories": {
-        "Sladké": 3
+        "Těstoviny a rýže": 3
       },
       "sample_product_urls": [
-        "https://www.kosik.cz/p814380-orion-studentska-pecet-bublinky-mlecna-a-bile-bublinky",
-        "https://www.kosik.cz/p814378-orion-studentska-pecet-bublinky-mlecna-s-karamelovou-prichuti",
-        "https://www.kosik.cz/p733196-orion-studentska-pecet-mlecna-cokolada-s-jojo-zele-arasidy-a-rozinkami"
+        "https://www.kosik.cz/p74807-panzani-express-spaghetti",
+        "https://www.kosik.cz/p196045-panzani-linguine",
+        "https://www.kosik.cz/p74847-panzani-spaghetti-semolinove-susene-testoviny"
       ],
       "needs_review": false
     },
@@ -2873,26 +2894,6 @@
       "sample_product_urls": [
         "https://www.kosik.cz/p818546-rajcata-ovalna-vanicka",
         "https://www.kosik.cz/p797728-rajcata-vanicka"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Trvanlivé",
-        "Těstoviny a kuskus",
-        "Těstoviny podle tvaru",
-        "Špagety a linguine"
-      ],
-      "mapped_category": "Těstoviny a rýže",
-      "mapping_reason": "Těstoviny/rýže podle cesty prodejce",
-      "product_count": 2,
-      "old_rule_categories": {
-        "Těstoviny a rýže": 2
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p74807-panzani-express-spaghetti",
-        "https://www.kosik.cz/p196045-panzani-linguine"
       ],
       "needs_review": false
     },
@@ -3662,6 +3663,25 @@
       },
       "sample_product_urls": [
         "https://www.kosik.cz/p76047-panzani-lasagne"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
+        "Trvanlivé",
+        "Těstoviny a kuskus",
+        "Těstoviny podle tvaru",
+        "Penne"
+      ],
+      "mapped_category": "Těstoviny a rýže",
+      "mapping_reason": "Těstoviny/rýže podle cesty prodejce",
+      "product_count": 1,
+      "old_rule_categories": {
+        "Těstoviny a rýže": 1
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p74837-panzani-penne-rigate"
       ],
       "needs_review": false
     },
