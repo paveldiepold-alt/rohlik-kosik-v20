@@ -13913,10 +13913,6 @@
       "price_history_previous_czk": 41.9,
       "price_history_previous_at": "2026-11-02T01:06:13+00:00",
       "drop_since_previous_pct": null,
-      "v27_category_probe_status": "category_found",
-      "v27_category_probe_note": "jsonld_breadcrumb",
-      "v27_category_checked_at": "2026-11-02T08:12:43+00:00",
-      "v27_category_probe_attempts": 4,
       "store_category_path": [
         "Mléčné a chlazené",
         "Sýry",
@@ -13924,7 +13920,11 @@
       ],
       "category_source": "jsonld_breadcrumb",
       "product_description": "Nákup až ke dveřím na pár kliků. Doprava zdarma na velké nákupy, nový akční leták každý týden a spousta odměn ve věrnostních klubech.",
-      "taxonomy_checked_at": "2026-11-02T08:12:43+00:00"
+      "taxonomy_checked_at": "2026-11-02T08:12:43+00:00",
+      "v27_category_probe_status": "category_found",
+      "v27_category_probe_note": "jsonld_breadcrumb",
+      "v27_category_checked_at": "2026-11-02T08:12:43+00:00",
+      "v27_category_probe_attempts": 4
     },
     {
       "store": "Košík",
@@ -48532,6 +48532,6 @@
   },
   "v27_probe_control": {
     "shop_backoff_until": {},
-    "last_batch_at": "2026-11-02T08:12:44+00:00"
+    "last_batch_at": "2026-11-02T10:12:50+00:00"
   }
 }
