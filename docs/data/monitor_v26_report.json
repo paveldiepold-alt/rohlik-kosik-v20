@@ -1,291 +1,48 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-11-03T01:45:06+00:00",
+  "at": "2026-11-03T07:54:13+00:00",
   "processed": 1090,
-  "updated_prices": 912,
+  "updated_prices": 916,
   "requested": 1090,
   "blocked_stores": [],
   "statuses": {
-    "Rohlík|ok": 471,
     "Košík|title_mismatch": 1,
-    "Košík|ok": 441,
-    "Košík|price_unverified": 109,
-    "Rohlík|price_unverified": 63,
+    "Rohlík|ok": 476,
+    "Košík|ok": 440,
+    "Košík|price_unverified": 110,
+    "Rohlík|price_unverified": 58,
     "Košík|http_error": 5
   },
-  "last_price_monitor_at": "2026-11-03T01:45:06+00:00",
+  "last_price_monitor_at": "2026-11-03T07:54:13+00:00",
   "checked_last_6h": 1090,
-  "verified_price_last_6h": 912,
+  "verified_price_last_6h": 916,
   "new_drops": [
     {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1363235-chodura-excelent-dusena-sunka-s-obsahem-masa-93",
-      "name": "Chodura Excelent Dušená šunka s obsahem masa 93 %",
-      "previous": 42.4,
-      "now": 24.9,
-      "drop_pct": 41.3,
-      "checked_at": "2026-11-03T01:02:48+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1483585-domestos-bleach-foam-mint-fresh-cistic-toalety",
-      "name": "Domestos Bleach Foam Mint Fresh čistič toalety",
-      "previous": 124.9,
-      "now": 82.9,
-      "drop_pct": 33.6,
-      "checked_at": "2026-11-03T01:06:08+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1474748-domestos-power-foam-zadny-vodni-kamen",
-      "name": "Domestos Power Foam žádný vodní kámen",
-      "previous": 94.9,
-      "now": 82.9,
-      "drop_pct": 12.6,
-      "checked_at": "2026-11-03T01:06:38+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1327655-galbani-mozzarella-lactose-free",
-      "name": "Galbani Mozzarella Lactose free",
-      "previous": 49.9,
-      "now": 31.9,
-      "drop_pct": 36.1,
-      "checked_at": "2026-11-03T01:07:18+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1292433-galbani-mozzarella-light",
-      "name": "Galbani Mozzarella light",
-      "previous": 41.9,
-      "now": 24.9,
-      "drop_pct": 40.6,
-      "checked_at": "2026-11-03T01:07:24+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/761863-galbani-mozzarella-mini",
-      "name": "Galbani Mozzarella mini",
-      "previous": 53.4,
-      "now": 39.9,
-      "drop_pct": 25.3,
-      "checked_at": "2026-11-03T01:07:28+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1460032-galbani-mozzarella-mini-light",
-      "name": "Galbani Mozzarella mini light",
-      "previous": 53.4,
-      "now": 41.9,
-      "drop_pct": 21.5,
-      "checked_at": "2026-11-03T01:07:33+00:00"
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p809514-paprika-bila-1-ks",
+      "name": "Paprika bílá, 1 ks",
+      "previous": 7.19,
+      "now": 6.39,
+      "drop_pct": 11.1,
+      "checked_at": "2026-11-03T07:16:32+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p794752-paprika-cervena-1-ks",
-      "name": "Paprika červená, 1 ks",
-      "previous": 18.98,
-      "now": 17.98,
-      "drop_pct": 5.3,
-      "checked_at": "2026-11-03T01:07:39+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1474649-galbani-mozzarella-perline-perlicky",
-      "name": "Galbani Mozzarella perline perličky",
-      "previous": 289.0,
-      "now": 199.9,
-      "drop_pct": 30.8,
-      "checked_at": "2026-11-03T01:07:43+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1439918-hellmann-s-majoneza-original",
-      "name": "Hellmann's Majonéza Original",
-      "previous": 109.9,
-      "now": 64.9,
-      "drop_pct": 40.9,
-      "checked_at": "2026-11-03T01:08:23+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1294755-mrkev-s-nati-svazek-cca-500-g",
-      "name": "Mrkev s natí, svazek (cca 500 g)",
-      "previous": 39.9,
-      "now": 19.9,
-      "drop_pct": 50.1,
-      "checked_at": "2026-11-03T01:14:13+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1321239-ponnath-videnske-miniparecky",
-      "name": "Ponnath Vídeňské minipárečky",
-      "previous": 74.9,
-      "now": 54.9,
-      "drop_pct": 26.7,
-      "checked_at": "2026-11-03T01:19:24+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1321243-ponnath-videnske-miniparecky-se-syrem",
-      "name": "Ponnath Vídeňské minipárečky se sýrem",
-      "previous": 74.9,
-      "now": 54.9,
-      "drop_pct": 26.7,
-      "checked_at": "2026-11-03T01:19:29+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1444865-smetanito-neodolatelne-s-ementalem",
-      "name": "Smetanito Neodolatelné s ementálem",
-      "previous": 59.9,
-      "now": 46.9,
-      "drop_pct": 21.7,
-      "checked_at": "2026-11-03T01:22:59+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1420386-smetanito-taveny-syr-kremovy",
-      "name": "Smetanito Tavený sýr krémový",
-      "previous": 59.9,
-      "now": 46.9,
-      "drop_pct": 21.7,
-      "checked_at": "2026-11-03T01:23:34+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1422379-zewa-deluxe-design-big-pack-papirove-kapesniky-3vrstve-box",
-      "name": "Zewa Deluxe Design big pack papírové kapesníky 3vrstvé box",
-      "previous": 95.9,
-      "now": 69.9,
-      "drop_pct": 27.1,
-      "checked_at": "2026-11-03T01:25:57+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1307957-zewa-jumbo-kuchynske-uterky-2vrstve",
-      "name": "Zewa Jumbo kuchyňské utěrky 2vrstvé",
-      "previous": 164.9,
-      "now": 109.9,
-      "drop_pct": 33.4,
-      "checked_at": "2026-11-03T01:26:22+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1375577-zewa-premium-jumbo-kuchynske-uterky-3vrstve",
-      "name": "Zewa Premium Jumbo kuchyňské utěrky 3vrstvé",
-      "previous": 164.9,
-      "now": 109.9,
-      "drop_pct": 33.4,
-      "checked_at": "2026-11-03T01:26:32+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1307951-zewa-wisch-weg-kuchynske-uterky-2vrstve",
-      "name": "Zewa Wisch&Weg kuchyňské utěrky 2vrstvé",
-      "previous": 80.9,
-      "now": 54.9,
-      "drop_pct": 32.1,
-      "checked_at": "2026-11-03T01:26:42+00:00"
+      "url": "https://www.kosik.cz/p805304-paprika-cervena-kapie-1-ks",
+      "name": "Paprika červená kapie, 1 ks",
+      "previous": 6.74,
+      "now": 5.99,
+      "drop_pct": 11.1,
+      "checked_at": "2026-11-03T07:16:55+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p78217-banan-1-ks",
-      "name": "Banán, 1 ks",
-      "previous": 7.18,
-      "now": 5.19,
-      "drop_pct": 27.7,
-      "checked_at": "2026-11-03T01:28:15+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p78177-chiquita-banan-1-ks",
-      "name": "Chiquita Banán, 1 ks",
-      "previous": 9.52,
-      "now": 8.99,
-      "drop_pct": 5.6,
-      "checked_at": "2026-11-03T01:29:54+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1328719-president-camembert-chilli-papricky",
-      "name": "Président Camembert chilli papričky",
-      "previous": 47.9,
-      "now": 31.9,
-      "drop_pct": 33.4,
-      "checked_at": "2026-11-03T01:30:23+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1328721-president-camembert-zeleny-pepr",
-      "name": "Président Camembert zelený pepř",
-      "previous": 38.9,
-      "now": 31.9,
-      "drop_pct": 18.0,
-      "checked_at": "2026-11-03T01:31:22+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1321589-avokado-balene-sit",
-      "name": "Avokádo balené, síť",
-      "previous": 80.9,
-      "now": 59.9,
-      "drop_pct": 26.0,
-      "checked_at": "2026-11-03T01:32:32+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1331029-citrony-balene-sit",
-      "name": "Citrony balené, síť",
-      "previous": 39.9,
+      "url": "https://www.kosik.cz/p721374-bio-banany",
+      "name": "BIO Banány",
+      "previous": 34.9,
       "now": 29.9,
-      "drop_pct": 25.1,
-      "checked_at": "2026-11-03T01:33:07+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1466130-president-camembert-kremovy",
-      "name": "Président Camembert krémový",
-      "previous": 49.9,
-      "now": 39.9,
-      "drop_pct": 20.0,
-      "checked_at": "2026-11-03T01:33:52+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1423203-jar-platinum-lemon-kapsle-do-mycky",
-      "name": "Jar Platinum Lemon kapsle do myčky",
-      "previous": 659.9,
-      "now": 564.9,
-      "drop_pct": 14.4,
-      "checked_at": "2026-11-03T01:34:47+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1469073-domestos-power-foam-floral-fresh-cistic-toalety",
-      "name": "Domestos Power Foam Floral Fresh čistič toalety",
-      "previous": 94.9,
-      "now": 82.9,
-      "drop_pct": 12.6,
-      "checked_at": "2026-11-03T01:35:52+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1482633-campese-kureci-vykostena-stehna-z-volneho-chovu",
-      "name": "Campese Kuřecí vykostěná stehna z volného chovu",
-      "previous": 173.38,
-      "now": 135.55,
-      "drop_pct": 21.8,
-      "checked_at": "2026-11-03T01:35:57+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1478902-jar-original-lemon-tablety-do-mycky",
-      "name": "Jar Original Lemon tablety do myčky",
-      "previous": 659.9,
-      "now": 599.9,
-      "drop_pct": 9.1,
-      "checked_at": "2026-11-03T01:37:23+00:00"
+      "drop_pct": 14.3,
+      "checked_at": "2026-11-03T07:36:48+00:00"
     }
   ],
   "remaining_missing": 24
