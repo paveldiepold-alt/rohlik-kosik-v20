@@ -1,93 +1,57 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-11-03T13:45:23+00:00",
+  "at": "2026-11-03T19:39:14+00:00",
   "processed": 1090,
-  "updated_prices": 916,
+  "updated_prices": 923,
   "requested": 1090,
   "blocked_stores": [],
   "statuses": {
-    "Košík|title_mismatch": 5,
-    "Rohlík|ok": 478,
-    "Košík|ok": 438,
+    "Košík|title_mismatch": 2,
+    "Rohlík|ok": 482,
+    "Košík|ok": 441,
     "Košík|price_unverified": 108,
-    "Rohlík|price_unverified": 56,
+    "Rohlík|price_unverified": 52,
     "Košík|http_error": 5
   },
-  "last_price_monitor_at": "2026-11-03T13:45:23+00:00",
+  "last_price_monitor_at": "2026-11-03T19:39:14+00:00",
   "checked_last_6h": 1090,
-  "verified_price_last_6h": 916,
+  "verified_price_last_6h": 923,
   "new_drops": [
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p819094-metro-chef-mrkev-karotka-prana-1-ks",
-      "name": "Metro Chef Mrkev karotka praná, 1 ks",
-      "previous": 3.24,
-      "now": 2.74,
-      "drop_pct": 15.4,
-      "checked_at": "2026-11-03T13:04:13+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1355871-galbani-burrata",
-      "name": "Galbani Burrata",
-      "previous": 74.9,
-      "now": 64.9,
-      "drop_pct": 13.4,
-      "checked_at": "2026-11-03T13:07:07+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p803198-paprika-zelena-1-ks",
-      "name": "Paprika zelená, 1 ks",
-      "previous": 11.38,
-      "now": 8.99,
-      "drop_pct": 21.0,
-      "checked_at": "2026-11-03T13:07:18+00:00"
+      "url": "https://www.kosik.cz/p809514-paprika-bila-1-ks",
+      "name": "Paprika bílá, 1 ks",
+      "previous": 6.39,
+      "now": 5.59,
+      "drop_pct": 12.5,
+      "checked_at": "2026-11-03T19:01:37+00:00"
     },
     {
       "store": "Košík",
       "url": "https://www.kosik.cz/p803200-paprika-zluta-1-ks",
       "name": "Paprika žlutá, 1 ks",
-      "previous": 18.98,
-      "now": 17.98,
-      "drop_pct": 5.3,
-      "checked_at": "2026-11-03T13:07:41+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p681102-rabbit-kureci-stehenni-rizek-bez-kuze",
-      "name": "Rabbit Kuřecí stehenní řízek bez kůže",
-      "previous": 109.95,
-      "now": 100.31,
-      "drop_pct": 8.8,
-      "checked_at": "2026-11-03T13:12:35+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p78217-banan-1-ks",
-      "name": "Banán, 1 ks",
-      "previous": 6.38,
-      "now": 5.59,
-      "drop_pct": 12.4,
-      "checked_at": "2026-11-03T13:28:32+00:00"
+      "previous": 17.98,
+      "now": 12.99,
+      "drop_pct": 27.8,
+      "checked_at": "2026-11-03T19:02:13+00:00"
     },
     {
       "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1296929-rajcata-cherry-na-vetvicce-vanicka",
-      "name": "Rajčata cherry na větvičce, vanička",
-      "previous": 114.9,
-      "now": 86.17,
-      "drop_pct": 25.0,
-      "checked_at": "2026-11-03T13:28:58+00:00"
+      "url": "https://www.rohlik.cz/1435418-pani-mrkev-blansirovane-mrkvove-kostky-baleni",
+      "name": "Paní Mrkev – blanšírované mrkvové kostky, balení",
+      "previous": 49.9,
+      "now": 39.9,
+      "drop_pct": 20.0,
+      "checked_at": "2026-11-03T19:10:37+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p795400-kral-syru-hermelin-zeleny-pepr-2-x-120g",
-      "name": "Král Sýrů Hermelín Zelený pepř 2 x 120g",
-      "previous": 114.9,
-      "now": 89.9,
-      "drop_pct": 21.8,
-      "checked_at": "2026-11-03T13:38:49+00:00"
+      "url": "https://www.kosik.cz/p78177-chiquita-banan-1-ks",
+      "name": "Chiquita Banán, 1 ks",
+      "previous": 10.58,
+      "now": 8.99,
+      "drop_pct": 15.0,
+      "checked_at": "2026-11-03T19:24:28+00:00"
     }
   ],
   "remaining_missing": 24
