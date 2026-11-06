@@ -1,75 +1,57 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-11-06T01:52:57+00:00",
+  "at": "2026-11-06T08:00:50+00:00",
   "processed": 1090,
-  "updated_prices": 881,
+  "updated_prices": 889,
   "requested": 1090,
   "blocked_stores": [],
   "statuses": {
-    "Rohlík|ok": 460,
-    "Košík|title_mismatch": 4,
-    "Košík|ok": 421,
-    "Košík|price_unverified": 125,
-    "Rohlík|price_unverified": 74,
-    "Košík|http_error": 6
+    "Rohlík|ok": 463,
+    "Košík|title_mismatch": 1,
+    "Košík|ok": 426,
+    "Košík|price_unverified": 122,
+    "Rohlík|price_unverified": 71,
+    "Košík|http_error": 7
   },
-  "last_price_monitor_at": "2026-11-06T01:52:57+00:00",
+  "last_price_monitor_at": "2026-11-06T08:00:50+00:00",
   "checked_last_6h": 1090,
-  "verified_price_last_6h": 881,
+  "verified_price_last_6h": 889,
   "new_drops": [
     {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1314777-hrozny-bile-bezsemenne-baleni",
-      "name": "Hrozny bílé bezsemenné, balení",
-      "previous": 69.9,
-      "now": 59.9,
-      "drop_pct": 14.3,
-      "checked_at": "2026-11-06T01:16:39+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1483960-madeta-gurman-taveny-salamovy-syr-uzeny-platky",
-      "name": "Madeta Gurmán tavený salámový sýr uzený plátky",
-      "previous": 35.9,
-      "now": 32.9,
-      "drop_pct": 8.4,
-      "checked_at": "2026-11-06T01:20:07+00:00"
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p819094-metro-chef-mrkev-karotka-prana-1-ks",
+      "name": "Metro Chef Mrkev karotka praná, 1 ks",
+      "previous": 3.24,
+      "now": 2.99,
+      "drop_pct": 7.7,
+      "checked_at": "2026-11-06T07:19:58+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p795666-avokado-hass-ready-to-eat-1-ks",
-      "name": "Avokádo Hass \"ready to eat\", 1 ks",
-      "previous": 59.9,
-      "now": 49.9,
-      "drop_pct": 16.7,
-      "checked_at": "2026-11-06T01:34:45+00:00"
+      "url": "https://www.kosik.cz/p776516-orion-studentska-pecet-oplatka-s-kakaovou-naplni-macena-v-mlecne-cokolade",
+      "name": "ORION Studentská pečeť Oplatka s kakaovou náplní máčená v mléčné čokoládě",
+      "previous": 19.9,
+      "now": 14.9,
+      "drop_pct": 25.1,
+      "checked_at": "2026-11-06T07:21:39+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p78217-banan-1-ks",
-      "name": "Banán, 1 ks",
-      "previous": 7.18,
-      "now": 6.78,
-      "drop_pct": 5.6,
-      "checked_at": "2026-11-06T01:36:26+00:00"
+      "url": "https://www.kosik.cz/p78177-chiquita-banan-1-ks",
+      "name": "Chiquita Banán, 1 ks",
+      "previous": 12.7,
+      "now": 8.99,
+      "drop_pct": 29.2,
+      "checked_at": "2026-11-06T07:45:32+00:00"
     },
     {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1294923-president-emmental-platkovy-syr",
-      "name": "Président Emmental plátkový sýr",
-      "previous": 52.9,
-      "now": 42.9,
-      "drop_pct": 18.9,
-      "checked_at": "2026-11-06T01:38:07+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1320523-avokado-hass-male-ready-to-eat-1-ks",
-      "name": "Avokádo Hass malé \"ready to eat\" 1 ks",
-      "previous": 36.9,
-      "now": 34.9,
-      "drop_pct": 5.4,
-      "checked_at": "2026-11-06T01:39:42+00:00"
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p787182-emi-food-kureci-prsa-bez-kosti-volny-chov",
+      "name": "EMI Food Kuřecí prsa bez kosti, volný chov",
+      "previous": 199.9,
+      "now": 159.9,
+      "drop_pct": 20.0,
+      "checked_at": "2026-11-06T07:50:38+00:00"
     }
   ],
   "remaining_missing": 23
