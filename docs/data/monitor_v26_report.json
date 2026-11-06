@@ -1,66 +1,38 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-11-06T13:51:01+00:00",
+  "at": "2026-11-06T19:38:33+00:00",
   "processed": 1090,
-  "updated_prices": 875,
+  "updated_prices": 895,
   "requested": 1090,
   "blocked_stores": [],
   "statuses": {
-    "Rohlík|ok": 454,
-    "Košík|title_mismatch": 7,
-    "Košík|ok": 421,
-    "Košík|price_unverified": 121,
-    "Rohlík|price_unverified": 80,
+    "Košík|ok": 427,
+    "Rohlík|ok": 468,
+    "Košík|price_unverified": 122,
+    "Rohlík|price_unverified": 66,
     "Košík|http_error": 7
   },
-  "last_price_monitor_at": "2026-11-06T13:51:01+00:00",
+  "last_price_monitor_at": "2026-11-06T19:38:33+00:00",
   "checked_last_6h": 1090,
-  "verified_price_last_6h": 876,
+  "verified_price_last_6h": 895,
   "new_drops": [
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p802840-metro-chef-veprova-panenka-bez-retizku",
-      "name": "Metro Chef Vepřová panenka bez řetízku",
-      "previous": 168.94,
-      "now": 103.94,
-      "drop_pct": 38.5,
-      "checked_at": "2026-11-06T13:08:44+00:00"
+      "url": "https://www.kosik.cz/p819094-metro-chef-mrkev-karotka-prana-1-ks",
+      "name": "Metro Chef Mrkev karotka praná, 1 ks",
+      "previous": 3.49,
+      "now": 2.99,
+      "drop_pct": 14.3,
+      "checked_at": "2026-11-06T18:57:51+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p803198-paprika-zelena-1-ks",
-      "name": "Paprika zelená, 1 ks",
-      "previous": 11.98,
-      "now": 11.38,
-      "drop_pct": 5.0,
-      "checked_at": "2026-11-06T13:11:31+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p803200-paprika-zluta-1-ks",
-      "name": "Paprika žlutá, 1 ks",
-      "previous": 12.99,
-      "now": 10.99,
-      "drop_pct": 15.4,
-      "checked_at": "2026-11-06T13:11:54+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p78217-banan-1-ks",
-      "name": "Banán, 1 ks",
-      "previous": 7.18,
-      "now": 6.78,
-      "drop_pct": 5.6,
-      "checked_at": "2026-11-06T13:32:43+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1368369-olivchicken-olivove-kure-kureci-stehna",
-      "name": "OliVChicken Olivové kuře - kuřecí stehna",
-      "previous": 188.29,
-      "now": 150.63,
-      "drop_pct": 20.0,
-      "checked_at": "2026-11-06T13:36:17+00:00"
+      "url": "https://www.kosik.cz/p805304-paprika-cervena-kapie-1-ks",
+      "name": "Paprika červená kapie, 1 ks",
+      "previous": 12.59,
+      "now": 11.69,
+      "drop_pct": 7.1,
+      "checked_at": "2026-11-06T19:01:02+00:00"
     }
   ],
   "remaining_missing": 23
