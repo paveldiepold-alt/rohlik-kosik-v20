@@ -1,30 +1,57 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-11-07T13:36:11+00:00",
+  "at": "2026-11-07T19:30:46+00:00",
   "processed": 1090,
-  "updated_prices": 889,
+  "updated_prices": 896,
   "requested": 1090,
   "blocked_stores": [],
   "statuses": {
-    "Košík|title_mismatch": 1,
-    "Rohlík|ok": 463,
-    "Košík|ok": 426,
+    "Rohlík|ok": 471,
+    "Košík|title_mismatch": 2,
+    "Košík|ok": 425,
     "Košík|price_unverified": 120,
-    "Rohlík|price_unverified": 71,
+    "Rohlík|price_unverified": 63,
     "Košík|http_error": 9
   },
-  "last_price_monitor_at": "2026-11-07T13:36:11+00:00",
+  "last_price_monitor_at": "2026-11-07T19:30:46+00:00",
   "checked_last_6h": 1090,
-  "verified_price_last_6h": 892,
+  "verified_price_last_6h": 896,
   "new_drops": [
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p819094-metro-chef-mrkev-karotka-prana-1-ks",
+      "name": "Metro Chef Mrkev karotka praná, 1 ks",
+      "previous": 3.73,
+      "now": 3.24,
+      "drop_pct": 13.1,
+      "checked_at": "2026-11-07T18:49:41+00:00"
+    },
     {
       "store": "Košík",
       "url": "https://www.kosik.cz/p794752-paprika-cervena-1-ks",
       "name": "Paprika červená, 1 ks",
-      "previous": 23.98,
-      "now": 20.98,
-      "drop_pct": 12.5,
-      "checked_at": "2026-11-07T12:58:34+00:00"
+      "previous": 20.98,
+      "now": 17.98,
+      "drop_pct": 14.3,
+      "checked_at": "2026-11-07T18:53:02+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p78177-chiquita-banan-1-ks",
+      "name": "Chiquita Banán, 1 ks",
+      "previous": 10.58,
+      "now": 9.52,
+      "drop_pct": 10.0,
+      "checked_at": "2026-11-07T19:15:16+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p794638-citron-1-ks",
+      "name": "Citron, 1 ks",
+      "previous": 4.54,
+      "now": 4.19,
+      "drop_pct": 7.7,
+      "checked_at": "2026-11-07T19:17:15+00:00"
     }
   ],
   "remaining_missing": 21
