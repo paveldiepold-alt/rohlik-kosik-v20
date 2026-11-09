@@ -1,14 +1,16 @@
 {
   "schema": "rk-v27-category-probe",
-  "at": "2026-11-08T21:43:04+00:00",
+  "at": "2026-11-09T01:53:55+00:00",
   "total": 1090,
   "source_generated_at": "2026-10-21T14:12:55+00:00",
-  "selected_initial": 0,
-  "attempted": 0,
+  "selected_initial": 1,
+  "attempted": 1,
   "blocked_stores": [],
   "preexisting_shop_backoffs": [],
   "shop_backoff_until": {},
-  "statuses": {},
+  "statuses": {
+    "Košík|category_missing": 1
+  },
   "still_without_category": 15,
   "still_needing_probe": 6,
   "trusted_but_unmapped": 9,
