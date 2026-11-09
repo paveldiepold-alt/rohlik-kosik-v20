@@ -1,6 +1,6 @@
 {
   "schema": "rk-v27-category-review",
-  "count": 253,
+  "count": 251,
   "items": [
     {
       "store": "Košík",
@@ -121,28 +121,6 @@
       ],
       "rule_checks": {
         "W070": {
-          "expected": "Úklid",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p89477-clin-multishine-cistic-oken",
-      "name": "Clin MultiShine čistič oken",
-      "rule_ids": [
-        "W071"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Úklid"
-      ],
-      "rule_checks": {
-        "W071": {
           "expected": "Úklid",
           "status": "review",
           "reason": "Kategorie neověřena u prodejce"
@@ -1626,28 +1604,6 @@
         }
       },
       "reason": "Grilovací sýry podle cesty prodejce, nikoliv automaticky tavené či plísňové; konkrétní typ dle pravidel zatím nelze potvrdit: Sýry / plísňové"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p735980-silan-avivaz-aromatherapy-fascinating-frangipani-2-7l",
-      "name": "Silan Aviváž Aromatherapy Fascinating Frangipani 2,7l",
-      "rule_ids": [
-        "W064"
-      ],
-      "status": "review",
-      "merchant_category": null,
-      "merchant_path": [],
-      "expected_categories": [
-        "Praní"
-      ],
-      "rule_checks": {
-        "W064": {
-          "expected": "Praní",
-          "status": "review",
-          "reason": "Kategorie neověřena u prodejce"
-        }
-      },
-      "reason": "Chybí dostatečná cesta kategorie prodejce (min. 2 úrovně)"
     },
     {
       "store": "Košík",

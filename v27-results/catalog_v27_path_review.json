@@ -1,10 +1,10 @@
 {
   "schema": "rk-v27-merchant-path-review",
   "number_of_distinct_trusted_paths": 217,
-  "mapped_product_total": 1075,
+  "mapped_product_total": 1077,
   "unmapped_or_mismatched_path_count": 38,
   "without_trusted_path_by_shop": {
-    "Košík": 5,
+    "Košík": 3,
     "Rohlík": 1
   },
   "note": "Old rule categories are references for audit only; never proof of merchant classification.",
@@ -19,9 +19,9 @@
       ],
       "mapped_category": "Praní",
       "mapping_reason": "Praní podle cesty prodejce",
-      "product_count": 27,
+      "product_count": 28,
       "old_rule_categories": {
-        "Praní": 27
+        "Praní": 28
       },
       "sample_product_urls": [
         "https://www.kosik.cz/p812438-lenor-avivaz-amethyst-flower-bouquet-duopack-2x-987-ml",
@@ -661,6 +661,26 @@
     {
       "shop": "Košík",
       "merchant_path": [
+        "Drogerie a kosmetika",
+        "Čistící přípravky",
+        "Univerzální"
+      ],
+      "mapped_category": "Úklid",
+      "mapping_reason": "Úklid podle cesty prodejce",
+      "product_count": 9,
+      "old_rule_categories": {
+        "Úklid": 9
+      },
+      "sample_product_urls": [
+        "https://www.kosik.cz/p98057-cif-cream-lemon-kremovy-abrazivni-cistici-pripravek",
+        "https://www.kosik.cz/p98047-cif-cream-original-kremovy-abrazivni-cistici-pripravek",
+        "https://www.kosik.cz/p89477-clin-multishine-cistic-oken"
+      ],
+      "needs_review": false
+    },
+    {
+      "shop": "Košík",
+      "merchant_path": [
         "Uzeniny a lahůdky",
         "Šunky",
         "Drůbeží"
@@ -841,26 +861,6 @@
         "https://www.kosik.cz/p820204-ariel-kapsle-color",
         "https://www.kosik.cz/p795278-ariel-kapsle-color-box",
         "https://www.kosik.cz/p795250-ariel-kapsle-color-krabice"
-      ],
-      "needs_review": false
-    },
-    {
-      "shop": "Košík",
-      "merchant_path": [
-        "Drogerie a kosmetika",
-        "Čistící přípravky",
-        "Univerzální"
-      ],
-      "mapped_category": "Úklid",
-      "mapping_reason": "Úklid podle cesty prodejce",
-      "product_count": 8,
-      "old_rule_categories": {
-        "Úklid": 8
-      },
-      "sample_product_urls": [
-        "https://www.kosik.cz/p98057-cif-cream-lemon-kremovy-abrazivni-cistici-pripravek",
-        "https://www.kosik.cz/p98047-cif-cream-original-kremovy-abrazivni-cistici-pripravek",
-        "https://www.kosik.cz/p194375-savo-original-dezinfekce"
       ],
       "needs_review": false
     },
