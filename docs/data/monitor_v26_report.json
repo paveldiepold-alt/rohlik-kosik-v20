@@ -1,57 +1,75 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-11-09T01:53:20+00:00",
+  "at": "2026-11-09T08:13:53+00:00",
   "processed": 1090,
-  "updated_prices": 883,
+  "updated_prices": 892,
   "requested": 1090,
   "blocked_stores": [],
   "statuses": {
-    "Košík|title_mismatch": 11,
+    "Košík|ok": 422,
     "Rohlík|ok": 470,
-    "Košík|ok": 413,
-    "Košík|price_unverified": 124,
+    "Košík|title_mismatch": 1,
+    "Košík|price_unverified": 125,
     "Rohlík|price_unverified": 64,
     "Košík|http_error": 8
   },
-  "last_price_monitor_at": "2026-11-09T01:53:20+00:00",
+  "last_price_monitor_at": "2026-11-09T08:13:53+00:00",
   "checked_last_6h": 1090,
-  "verified_price_last_6h": 883,
+  "verified_price_last_6h": 892,
   "new_drops": [
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p776516-orion-studentska-pecet-oplatka-s-kakaovou-naplni-macena-v-mlecne-cokolade",
-      "name": "ORION Studentská pečeť Oplatka s kakaovou náplní máčená v mléčné čokoládě",
-      "previous": 19.9,
-      "now": 14.9,
-      "drop_pct": 25.1,
-      "checked_at": "2026-11-09T01:13:24+00:00"
-    },
     {
       "store": "Košík",
       "url": "https://www.kosik.cz/p805304-paprika-cervena-kapie-1-ks",
       "name": "Paprika červená kapie, 1 ks",
-      "previous": 10.79,
-      "now": 8.99,
-      "drop_pct": 16.7,
-      "checked_at": "2026-11-09T01:14:56+00:00"
+      "previous": 8.99,
+      "now": 8.09,
+      "drop_pct": 10.0,
+      "checked_at": "2026-11-09T07:35:28+00:00"
     },
     {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1424110-ariel-mountain-spring-praci-gel-3-15-l",
-      "name": "Ariel Mountain Spring prací gel (3,15 l)",
-      "previous": 559.94,
-      "now": 519.95,
-      "drop_pct": 7.1,
-      "checked_at": "2026-11-09T01:35:38+00:00"
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p680992-rabbit-venkovske-prsni-rizky-bez-kuze",
+      "name": "Rabbit Venkovské prsní řízky bez kůže",
+      "previous": 214.42,
+      "now": 171.52,
+      "drop_pct": 20.0,
+      "checked_at": "2026-11-09T07:40:49+00:00"
     },
     {
       "store": "Košík",
       "url": "https://www.kosik.cz/p78217-banan-1-ks",
       "name": "Banán, 1 ks",
-      "previous": 7.98,
-      "now": 7.58,
-      "drop_pct": 5.0,
-      "checked_at": "2026-11-09T01:36:00+00:00"
+      "previous": 7.58,
+      "now": 6.78,
+      "drop_pct": 10.6,
+      "checked_at": "2026-11-09T07:56:22+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p78177-chiquita-banan-1-ks",
+      "name": "Chiquita Banán, 1 ks",
+      "previous": 10.58,
+      "now": 9.52,
+      "drop_pct": 10.0,
+      "checked_at": "2026-11-09T07:58:02+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p12277-citrony-sit",
+      "name": "Citrony, síť",
+      "previous": 39.9,
+      "now": 24.9,
+      "drop_pct": 37.6,
+      "checked_at": "2026-11-09T08:00:11+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p721400-hrozny-cervene-bezsemenne",
+      "name": "Hrozny červené, bezsemenné",
+      "previous": 64.9,
+      "now": 54.9,
+      "drop_pct": 15.4,
+      "checked_at": "2026-11-09T08:05:06+00:00"
     }
   ],
   "remaining_missing": 21
