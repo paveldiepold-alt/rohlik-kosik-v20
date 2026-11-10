@@ -1,75 +1,47 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-11-10T13:47:34+00:00",
+  "at": "2026-11-10T19:38:41+00:00",
   "processed": 1090,
-  "updated_prices": 880,
+  "updated_prices": 888,
   "requested": 1090,
   "blocked_stores": [],
   "statuses": {
-    "Košík|title_mismatch": 2,
-    "Rohlík|ok": 459,
-    "Košík|ok": 421,
+    "Košík|ok": 423,
+    "Rohlík|ok": 465,
     "Košík|price_unverified": 123,
-    "Rohlík|price_unverified": 75,
+    "Rohlík|price_unverified": 69,
     "Košík|http_error": 10
   },
-  "last_price_monitor_at": "2026-11-10T13:47:34+00:00",
+  "last_price_monitor_at": "2026-11-10T19:38:41+00:00",
   "checked_last_6h": 1090,
-  "verified_price_last_6h": 881,
+  "verified_price_last_6h": 888,
   "new_drops": [
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p819094-metro-chef-mrkev-karotka-prana-1-ks",
-      "name": "Metro Chef Mrkev karotka praná, 1 ks",
-      "previous": 2.99,
-      "now": 2.79,
-      "drop_pct": 6.7,
-      "checked_at": "2026-11-10T13:05:59+00:00"
+      "url": "https://www.kosik.cz/p809514-paprika-bila-1-ks",
+      "name": "Paprika bílá, 1 ks",
+      "previous": 6.29,
+      "now": 5.59,
+      "drop_pct": 11.1,
+      "checked_at": "2026-11-10T19:00:38+00:00"
     },
     {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p805304-paprika-cervena-kapie-1-ks",
-      "name": "Paprika červená kapie, 1 ks",
-      "previous": 9.89,
-      "now": 8.99,
-      "drop_pct": 9.1,
-      "checked_at": "2026-11-10T13:09:09+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p794752-paprika-cervena-1-ks",
-      "name": "Paprika červená, 1 ks",
-      "previous": 16.98,
-      "now": 15.98,
-      "drop_pct": 5.9,
-      "checked_at": "2026-11-10T13:09:18+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p712666-boruvky-kanadske-vanicka",
-      "name": "Borůvky kanadské, vanička",
-      "previous": 59.9,
-      "now": 44.9,
-      "drop_pct": 25.0,
-      "checked_at": "2026-11-10T13:29:57+00:00"
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1469422-kunraticka-stodola-hrozny-bile-volne-strapec",
+      "name": "Kunratická stodola – Hrozny bílé volné, střapec",
+      "previous": 474.0,
+      "now": 383.62,
+      "drop_pct": 19.1,
+      "checked_at": "2026-11-10T19:03:41+00:00"
     },
     {
       "store": "Košík",
       "url": "https://www.kosik.cz/p78177-chiquita-banan-1-ks",
       "name": "Chiquita Banán, 1 ks",
-      "previous": 10.05,
-      "now": 8.99,
-      "drop_pct": 10.5,
-      "checked_at": "2026-11-10T13:31:32+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p794638-citron-1-ks",
-      "name": "Citron, 1 ks",
-      "previous": 4.54,
-      "now": 3.49,
-      "drop_pct": 23.1,
-      "checked_at": "2026-11-10T13:33:31+00:00"
+      "previous": 8.99,
+      "now": 8.46,
+      "drop_pct": 5.9,
+      "checked_at": "2026-11-10T19:23:14+00:00"
     }
   ],
   "remaining_missing": 21
