@@ -1,47 +1,372 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-11-10T19:38:41+00:00",
+  "at": "2026-11-11T01:49:26+00:00",
   "processed": 1090,
-  "updated_prices": 888,
+  "updated_prices": 880,
   "requested": 1090,
   "blocked_stores": [],
   "statuses": {
-    "Košík|ok": 423,
-    "Rohlík|ok": 465,
-    "Košík|price_unverified": 123,
-    "Rohlík|price_unverified": 69,
-    "Košík|http_error": 10
+    "Rohlík|ok": 461,
+    "Košík|title_mismatch": 3,
+    "Košík|ok": 419,
+    "Košík|price_unverified": 126,
+    "Rohlík|price_unverified": 73,
+    "Košík|http_error": 8
   },
-  "last_price_monitor_at": "2026-11-10T19:38:41+00:00",
+  "last_price_monitor_at": "2026-11-11T01:49:26+00:00",
   "checked_last_6h": 1090,
-  "verified_price_last_6h": 888,
+  "verified_price_last_6h": 880,
   "new_drops": [
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p809514-paprika-bila-1-ks",
-      "name": "Paprika bílá, 1 ks",
-      "previous": 6.29,
-      "now": 5.59,
-      "drop_pct": 11.1,
-      "checked_at": "2026-11-10T19:00:38+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1469422-kunraticka-stodola-hrozny-bile-volne-strapec",
-      "name": "Kunratická stodola – Hrozny bílé volné, střapec",
-      "previous": 474.0,
-      "now": 383.62,
-      "drop_pct": 19.1,
-      "checked_at": "2026-11-10T19:03:41+00:00"
+      "url": "https://www.kosik.cz/p3207-linteo-kuchynske-uterky-classic-2vrstve",
+      "name": "Linteo Kuchyňské utěrky Classic 2vrstvé",
+      "previous": 89.9,
+      "now": 59.9,
+      "drop_pct": 33.4,
+      "checked_at": "2026-11-11T01:05:56+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p78177-chiquita-banan-1-ks",
-      "name": "Chiquita Banán, 1 ks",
+      "url": "https://www.kosik.cz/p3097-linteo-papirove-kuchynske-uterky-2vrstve-2-role",
+      "name": "Linteo Papírové kuchyňské utěrky 2vrstvé, 2 role",
+      "previous": 32.9,
+      "now": 24.9,
+      "drop_pct": 24.3,
+      "checked_at": "2026-11-11T01:06:00+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p12827-madeta-eidam-jihocesky-platkovy-30",
+      "name": "Madeta Eidam jihočeský plátkový (30%)",
+      "previous": 36.9,
+      "now": 21.9,
+      "drop_pct": 40.7,
+      "checked_at": "2026-11-11T01:07:08+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p12677-madeta-jihoceske-maslo-82",
+      "name": "Madeta Jihočeské máslo (82%)",
+      "previous": 59.9,
+      "now": 54.9,
+      "drop_pct": 8.3,
+      "checked_at": "2026-11-11T01:07:26+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p12837-madeta-jihocesky-eidam-platky-45",
+      "name": "Madeta Jihočeský Eidam plátky (45%)",
+      "previous": 36.9,
+      "now": 21.9,
+      "drop_pct": 40.7,
+      "checked_at": "2026-11-11T01:07:30+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p243484-madeta-jihocesky-eidam-syr-20-platky",
+      "name": "Madeta Jihočeský Eidam sýr 20%, plátky",
+      "previous": 36.9,
+      "now": 21.9,
+      "drop_pct": 40.7,
+      "checked_at": "2026-11-11T01:07:35+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p819094-metro-chef-mrkev-karotka-prana-1-ks",
+      "name": "Metro Chef Mrkev karotka praná, 1 ks",
+      "previous": 2.79,
+      "now": 2.59,
+      "drop_pct": 7.2,
+      "checked_at": "2026-11-11T01:08:34+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p214094-mrkev-prana-baleni",
+      "name": "Mrkev praná, balení",
+      "previous": 18.9,
+      "now": 14.9,
+      "drop_pct": 21.2,
+      "checked_at": "2026-11-11T01:09:14+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p74817-panzani-farfalle",
+      "name": "Panzani Farfalle",
+      "previous": 57.9,
+      "now": 44.9,
+      "drop_pct": 22.5,
+      "checked_at": "2026-11-11T01:10:49+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p196045-panzani-linguine",
+      "name": "Panzani Linguine",
+      "previous": 57.9,
+      "now": 44.9,
+      "drop_pct": 22.5,
+      "checked_at": "2026-11-11T01:10:58+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p74847-panzani-spaghetti-semolinove-susene-testoviny",
+      "name": "Panzani Spaghetti semolinové sušené těstoviny",
+      "previous": 57.9,
+      "now": 44.9,
+      "drop_pct": 22.5,
+      "checked_at": "2026-11-11T01:11:12+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p739160-paprika-mix",
+      "name": "Paprika mix",
+      "previous": 69.9,
+      "now": 54.9,
+      "drop_pct": 21.5,
+      "checked_at": "2026-11-11T01:11:30+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p805304-paprika-cervena-kapie-1-ks",
+      "name": "Paprika červená kapie, 1 ks",
       "previous": 8.99,
-      "now": 8.46,
-      "drop_pct": 5.9,
-      "checked_at": "2026-11-10T19:23:14+00:00"
+      "now": 8.09,
+      "drop_pct": 10.0,
+      "checked_at": "2026-11-11T01:11:44+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p20457-ponnath-videnske-miniparecky-85-masa",
+      "name": "Ponnath Vídeňské minipárečky (85% masa)",
+      "previous": 74.9,
+      "now": 49.9,
+      "drop_pct": 33.4,
+      "checked_at": "2026-11-11T01:14:54+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p20467-ponnath-videnske-miniparecky-se-syrem",
+      "name": "Ponnath Vídeňské minipárečky se sýrem",
+      "previous": 74.9,
+      "now": 49.9,
+      "drop_pct": 33.4,
+      "checked_at": "2026-11-11T01:14:58+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p770638-silan-aromatherapy-dreamy-lotus-avivaz-1-100-ml",
+      "name": "Silan Aromatherapy Dreamy Lotus aviváž, 1 100 ml",
+      "previous": 119.9,
+      "now": 89.9,
+      "drop_pct": 25.0,
+      "checked_at": "2026-11-11T01:20:57+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p770636-silan-aromatherapy-magic-magnolia-avivaz-1-100-ml",
+      "name": "Silan Aromatherapy Magic Magnolia aviváž, 1 100 ml",
+      "previous": 119.9,
+      "now": 89.9,
+      "drop_pct": 25.0,
+      "checked_at": "2026-11-11T01:21:02+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p770642-silan-aromatherapy-relaxing-maldives-avivaz-1-100-ml",
+      "name": "Silan Aromatherapy Relaxing Maldives aviváž, 1 100 ml",
+      "previous": 119.9,
+      "now": 89.9,
+      "drop_pct": 25.0,
+      "checked_at": "2026-11-11T01:21:11+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p770652-silan-fresh-sky-avivaz-1408-ml",
+      "name": "Silan Fresh Sky aviváž, 1408 ml",
+      "previous": 119.9,
+      "now": 89.9,
+      "drop_pct": 25.0,
+      "checked_at": "2026-11-11T01:21:47+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p770656-silan-sensitive-baby-avivaz-1408-ml",
+      "name": "Silan Sensitive & Baby aviváž, 1408 ml",
+      "previous": 119.9,
+      "now": 89.9,
+      "drop_pct": 25.0,
+      "checked_at": "2026-11-11T01:21:52+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p770654-silan-spring-lavender-avivaz-1-408-ml",
+      "name": "Silan Spring Lavender aviváž, 1 408 ml",
+      "previous": 119.9,
+      "now": 89.9,
+      "drop_pct": 25.0,
+      "checked_at": "2026-11-11T01:21:56+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p85637-vesela-krava-bez-laktozy-taveny-syr-8-ks",
+      "name": "Veselá Kráva Bez laktózy Tavený sýr (8 ks)",
+      "previous": 52.9,
+      "now": 39.9,
+      "drop_pct": 24.6,
+      "checked_at": "2026-11-11T01:23:59+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p85557-vesela-krava-lahodna-taveny-syr-8-ks",
+      "name": "Veselá Kráva Lahodná Tavený sýr (8 ks)",
+      "previous": 52.9,
+      "now": 39.9,
+      "drop_pct": 24.6,
+      "checked_at": "2026-11-11T01:24:04+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p793098-vesela-krava-syr-a-krup-s-sunkovou-prichuti-35g-snack",
+      "name": "Veselá Kráva Sýr a Křup s šunkovou příchutí 35g snack",
+      "previous": 19.9,
+      "now": 15.9,
+      "drop_pct": 20.1,
+      "checked_at": "2026-11-11T01:24:26+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p236414-vesela-krava-taveny-syr-s-ementalem-8-ks",
+      "name": "Veselá Kráva Tavený sýr s ementálem (8 ks)",
+      "previous": 52.9,
+      "now": 39.9,
+      "drop_pct": 24.6,
+      "checked_at": "2026-11-11T01:24:31+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p85567-vesela-krava-taveny-syr-se-sunkou-8-ks",
+      "name": "Veselá Kráva Tavený sýr se Šunkou (8 ks)",
+      "previous": 52.9,
+      "now": 39.9,
+      "drop_pct": 24.6,
+      "checked_at": "2026-11-11T01:24:35+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p626019-vodnanske-kure-kureci-horni-stehna",
+      "name": "Vodňanské Kuře Kuřecí horní stehna",
+      "previous": 74.9,
+      "now": 59.9,
+      "drop_pct": 20.0,
+      "checked_at": "2026-11-11T01:24:40+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p816732-zewa-just-1-toaletni-papir-5vrstvy-6-roli",
+      "name": "Zewa Just 1 Toaletní papír 5vrstvý, 6 rolí",
+      "previous": 179.9,
+      "now": 139.9,
+      "drop_pct": 22.2,
+      "checked_at": "2026-11-11T01:26:20+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p733270-aro-kuchynske-uterky-2vrstve-2-role",
+      "name": "ARO Kuchyňské utěrky 2vrstvé 2 Role",
+      "previous": 26.9,
+      "now": 22.9,
+      "drop_pct": 14.9,
+      "checked_at": "2026-11-11T01:27:42+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p78217-banan-1-ks",
+      "name": "Banán, 1 ks",
+      "previous": 7.58,
+      "now": 7.18,
+      "drop_pct": 5.3,
+      "checked_at": "2026-11-11T01:32:24+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1294923-president-emmental-platkovy-syr",
+      "name": "Président Emmental plátkový sýr",
+      "previous": 42.9,
+      "now": 29.9,
+      "drop_pct": 30.3,
+      "checked_at": "2026-11-11T01:34:40+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p12277-citrony-sit",
+      "name": "Citrony, síť",
+      "previous": 39.9,
+      "now": 19.9,
+      "drop_pct": 50.1,
+      "checked_at": "2026-11-11T01:36:10+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p721720-colgate-max-white-ultra-fresh-pearls-belici-zubni-pasta",
+      "name": "Colgate Max White Ultra Fresh Pearls bělicí zubní pasta",
+      "previous": 174.9,
+      "now": 159.9,
+      "drop_pct": 8.6,
+      "checked_at": "2026-11-11T01:37:32+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p740500-flora-gold",
+      "name": "Flora Gold",
+      "previous": 94.9,
+      "now": 89.9,
+      "drop_pct": 5.3,
+      "checked_at": "2026-11-11T01:39:39+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p740504-flora-original",
+      "name": "Flora Original",
+      "previous": 94.9,
+      "now": 89.9,
+      "drop_pct": 5.3,
+      "checked_at": "2026-11-11T01:39:48+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/712935-president-gouda-platky",
+      "name": "Président Gouda plátky",
+      "previous": 51.9,
+      "now": 29.9,
+      "drop_pct": 42.4,
+      "checked_at": "2026-11-11T01:41:03+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p20147-kostelecke-uzeniny-poctivy-vidensky-parek",
+      "name": "Kostelecké Uzeniny Poctivý vídeňský párek",
+      "previous": 79.9,
+      "now": 59.9,
+      "drop_pct": 25.0,
+      "checked_at": "2026-11-11T01:42:14+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p19927-le-co-veprova-sunka-pro-deti-nejvyssi-jakosti-92-masa",
+      "name": "Le & Co Vepřová šunka pro děti nejvyšší jakosti (92% masa)",
+      "previous": 46.9,
+      "now": 22.9,
+      "drop_pct": 51.2,
+      "checked_at": "2026-11-11T01:44:17+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p19817-le-co-sunka-bohemia-shaved-vyberova-80-masa",
+      "name": "Le & Co Šunka Bohemia Shaved výběrová (80% masa)",
+      "previous": 41.9,
+      "now": 37.9,
+      "drop_pct": 9.5,
+      "checked_at": "2026-11-11T01:44:26+00:00"
     }
   ],
   "remaining_missing": 21
