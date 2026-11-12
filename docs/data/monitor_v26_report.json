@@ -1,65 +1,57 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-11-11T19:43:16+00:00",
+  "at": "2026-11-12T01:57:00+00:00",
   "processed": 1090,
-  "updated_prices": 885,
+  "updated_prices": 880,
   "requested": 1090,
   "blocked_stores": [],
   "statuses": {
-    "Košík|ok": 422,
-    "Rohlík|ok": 463,
-    "Košík|price_unverified": 126,
-    "Rohlík|price_unverified": 71,
-    "Košík|http_error": 8
+    "Košík|title_mismatch": 1,
+    "Rohlík|ok": 462,
+    "Košík|ok": 418,
+    "Košík|price_unverified": 128,
+    "Rohlík|price_unverified": 72,
+    "Košík|http_error": 9
   },
-  "last_price_monitor_at": "2026-11-11T19:43:16+00:00",
+  "last_price_monitor_at": "2026-11-12T01:57:00+00:00",
   "checked_last_6h": 1090,
-  "verified_price_last_6h": 885,
+  "verified_price_last_6h": 880,
   "new_drops": [
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p819094-metro-chef-mrkev-karotka-prana-1-ks",
-      "name": "Metro Chef Mrkev karotka praná, 1 ks",
-      "previous": 2.59,
-      "now": 2.19,
-      "drop_pct": 15.4,
-      "checked_at": "2026-11-11T19:02:25+00:00"
+      "url": "https://www.kosik.cz/p809514-paprika-bila-1-ks",
+      "name": "Paprika bílá, 1 ks",
+      "previous": 6.39,
+      "now": 5.59,
+      "drop_pct": 12.5,
+      "checked_at": "2026-11-12T01:19:09+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1318729-vanish-oxi-action-powerspray-na-textil",
+      "name": "Vanish Oxi Action powerspray na textil",
+      "previous": 169.9,
+      "now": 149.9,
+      "drop_pct": 11.8,
+      "checked_at": "2026-11-12T01:36:19+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p794752-paprika-cervena-1-ks",
-      "name": "Paprika červená, 1 ks",
-      "previous": 15.28,
-      "now": 7.19,
-      "drop_pct": 52.9,
-      "checked_at": "2026-11-11T19:05:44+00:00"
+      "url": "https://www.kosik.cz/p78217-banan-1-ks",
+      "name": "Banán, 1 ks",
+      "previous": 7.98,
+      "now": 6.38,
+      "drop_pct": 20.1,
+      "checked_at": "2026-11-12T01:40:04+00:00"
     },
     {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p803200-paprika-zluta-1-ks",
-      "name": "Paprika žlutá, 1 ks",
-      "previous": 16.49,
-      "now": 13.19,
-      "drop_pct": 20.0,
-      "checked_at": "2026-11-11T19:05:49+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p78177-chiquita-banan-1-ks",
-      "name": "Chiquita Banán, 1 ks",
-      "previous": 10.05,
-      "now": 8.99,
-      "drop_pct": 10.5,
-      "checked_at": "2026-11-11T19:27:57+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p794638-citron-1-ks",
-      "name": "Citron, 1 ks",
-      "previous": 6.99,
-      "now": 6.29,
-      "drop_pct": 10.0,
-      "checked_at": "2026-11-11T19:29:55+00:00"
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1385663-president-maasdamer-platkovy-syr",
+      "name": "Président Maasdamer plátkový sýr",
+      "previous": 52.9,
+      "now": 29.9,
+      "drop_pct": 43.5,
+      "checked_at": "2026-11-12T01:45:44+00:00"
     }
   ],
   "remaining_missing": 21
