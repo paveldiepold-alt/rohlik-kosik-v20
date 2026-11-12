@@ -1,58 +1,58 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-11-12T01:57:00+00:00",
+  "at": "2026-11-12T08:06:22+00:00",
   "processed": 1090,
-  "updated_prices": 880,
+  "updated_prices": 884,
   "requested": 1090,
   "blocked_stores": [],
   "statuses": {
+    "Rohlík|ok": 464,
     "Košík|title_mismatch": 1,
-    "Rohlík|ok": 462,
-    "Košík|ok": 418,
-    "Košík|price_unverified": 128,
-    "Rohlík|price_unverified": 72,
+    "Košík|ok": 420,
+    "Košík|price_unverified": 126,
+    "Rohlík|price_unverified": 70,
     "Košík|http_error": 9
   },
-  "last_price_monitor_at": "2026-11-12T01:57:00+00:00",
+  "last_price_monitor_at": "2026-11-12T08:06:22+00:00",
   "checked_last_6h": 1090,
-  "verified_price_last_6h": 880,
+  "verified_price_last_6h": 884,
   "new_drops": [
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p809514-paprika-bila-1-ks",
-      "name": "Paprika bílá, 1 ks",
-      "previous": 6.39,
-      "now": 5.59,
-      "drop_pct": 12.5,
-      "checked_at": "2026-11-12T01:19:09+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1318729-vanish-oxi-action-powerspray-na-textil",
-      "name": "Vanish Oxi Action powerspray na textil",
-      "previous": 169.9,
-      "now": 149.9,
-      "drop_pct": 11.8,
-      "checked_at": "2026-11-12T01:36:19+00:00"
+      "url": "https://www.kosik.cz/p819094-metro-chef-mrkev-karotka-prana-1-ks",
+      "name": "Metro Chef Mrkev karotka praná, 1 ks",
+      "previous": 3.49,
+      "now": 3.24,
+      "drop_pct": 7.2,
+      "checked_at": "2026-11-12T07:24:05+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p78217-banan-1-ks",
-      "name": "Banán, 1 ks",
-      "previous": 7.98,
-      "now": 6.38,
-      "drop_pct": 20.1,
-      "checked_at": "2026-11-12T01:40:04+00:00"
+      "url": "https://www.kosik.cz/p776516-orion-studentska-pecet-oplatka-s-kakaovou-naplni-macena-v-mlecne-cokolade",
+      "name": "ORION Studentská pečeť Oplatka s kakaovou náplní máčená v mléčné čokoládě",
+      "previous": 19.9,
+      "now": 14.9,
+      "drop_pct": 25.1,
+      "checked_at": "2026-11-12T07:25:45+00:00"
     },
     {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1385663-president-maasdamer-platkovy-syr",
-      "name": "Président Maasdamer plátkový sýr",
-      "previous": 52.9,
-      "now": 29.9,
-      "drop_pct": 43.5,
-      "checked_at": "2026-11-12T01:45:44+00:00"
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p725876-primas-farmarska-krkovice-na-gril-s-bylinkami",
+      "name": "Primas Farmářská krkovice na gril s bylinkami",
+      "previous": 102.56,
+      "now": 81.66,
+      "drop_pct": 20.4,
+      "checked_at": "2026-11-12T07:30:48+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p97077-chodura-teleci-parky-v-prirodnim-strivku-80-masa",
+      "name": "Chodura Telecí párky v přírodním střívku (80% masa)",
+      "previous": 169.9,
+      "now": 139.9,
+      "drop_pct": 17.7,
+      "checked_at": "2026-11-12T07:51:09+00:00"
     }
   ],
-  "remaining_missing": 21
+  "remaining_missing": 20
 }
