@@ -1,57 +1,56 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-11-12T08:06:22+00:00",
+  "at": "2026-11-12T13:58:54+00:00",
   "processed": 1090,
-  "updated_prices": 884,
+  "updated_prices": 888,
   "requested": 1090,
   "blocked_stores": [],
   "statuses": {
-    "Rohlík|ok": 464,
-    "Košík|title_mismatch": 1,
-    "Košík|ok": 420,
+    "Košík|ok": 421,
+    "Rohlík|ok": 467,
     "Košík|price_unverified": 126,
-    "Rohlík|price_unverified": 70,
+    "Rohlík|price_unverified": 67,
     "Košík|http_error": 9
   },
-  "last_price_monitor_at": "2026-11-12T08:06:22+00:00",
+  "last_price_monitor_at": "2026-11-12T13:58:54+00:00",
   "checked_last_6h": 1090,
-  "verified_price_last_6h": 884,
+  "verified_price_last_6h": 888,
   "new_drops": [
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p819094-metro-chef-mrkev-karotka-prana-1-ks",
-      "name": "Metro Chef Mrkev karotka praná, 1 ks",
-      "previous": 3.49,
-      "now": 3.24,
-      "drop_pct": 7.2,
-      "checked_at": "2026-11-12T07:24:05+00:00"
+      "url": "https://www.kosik.cz/p732696-mrkev-fialova",
+      "name": "Mrkev fialová",
+      "previous": 59.9,
+      "now": 49.9,
+      "drop_pct": 16.7,
+      "checked_at": "2026-11-12T13:18:26+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p776516-orion-studentska-pecet-oplatka-s-kakaovou-naplni-macena-v-mlecne-cokolade",
-      "name": "ORION Studentská pečeť Oplatka s kakaovou náplní máčená v mléčné čokoládě",
-      "previous": 19.9,
-      "now": 14.9,
-      "drop_pct": 25.1,
-      "checked_at": "2026-11-12T07:25:45+00:00"
+      "url": "https://www.kosik.cz/p809514-paprika-bila-1-ks",
+      "name": "Paprika bílá, 1 ks",
+      "previous": 7.99,
+      "now": 6.39,
+      "drop_pct": 20.0,
+      "checked_at": "2026-11-12T13:20:38+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p725876-primas-farmarska-krkovice-na-gril-s-bylinkami",
-      "name": "Primas Farmářská krkovice na gril s bylinkami",
-      "previous": 102.56,
-      "now": 81.66,
-      "drop_pct": 20.4,
-      "checked_at": "2026-11-12T07:30:48+00:00"
+      "url": "https://www.kosik.cz/p309074-rajcata-cherry-mix",
+      "name": "Rajčata Cherry mix",
+      "previous": 124.9,
+      "now": 114.9,
+      "drop_pct": 8.0,
+      "checked_at": "2026-11-12T13:26:34+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p97077-chodura-teleci-parky-v-prirodnim-strivku-80-masa",
-      "name": "Chodura Telecí párky v přírodním střívku (80% masa)",
-      "previous": 169.9,
-      "now": 139.9,
-      "drop_pct": 17.7,
-      "checked_at": "2026-11-12T07:51:09+00:00"
+      "url": "https://www.kosik.cz/p794638-citron-1-ks",
+      "name": "Citron, 1 ks",
+      "previous": 7.69,
+      "now": 6.99,
+      "drop_pct": 9.1,
+      "checked_at": "2026-11-12T13:45:13+00:00"
     }
   ],
   "remaining_missing": 20
