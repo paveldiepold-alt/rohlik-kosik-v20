@@ -1,84 +1,39 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-11-13T01:55:26+00:00",
+  "at": "2026-11-13T08:03:28+00:00",
   "processed": 1090,
-  "updated_prices": 846,
+  "updated_prices": 884,
   "requested": 1090,
   "blocked_stores": [],
   "statuses": {
-    "Košík|title_mismatch": 42,
-    "Rohlík|ok": 461,
-    "Košík|ok": 385,
-    "Košík|price_unverified": 119,
-    "Rohlík|price_unverified": 73,
-    "Košík|http_error": 10
+    "Košík|title_mismatch": 1,
+    "Rohlík|ok": 466,
+    "Košík|ok": 418,
+    "Košík|price_unverified": 126,
+    "Rohlík|price_unverified": 68,
+    "Košík|http_error": 11
   },
-  "last_price_monitor_at": "2026-11-13T01:55:26+00:00",
+  "last_price_monitor_at": "2026-11-13T08:03:28+00:00",
   "checked_last_6h": 1090,
-  "verified_price_last_6h": 846,
+  "verified_price_last_6h": 884,
   "new_drops": [
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p803198-paprika-zelena-1-ks",
-      "name": "Paprika zelená, 1 ks",
-      "previous": 19.78,
-      "now": 18.68,
-      "drop_pct": 5.6,
-      "checked_at": "2026-11-13T01:17:12+00:00"
+      "url": "https://www.kosik.cz/p20507-ponnath-libove-parky",
+      "name": "Ponnath Libové párky",
+      "previous": 84.9,
+      "now": 74.9,
+      "drop_pct": 11.8,
+      "checked_at": "2026-11-13T07:27:47+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p794752-paprika-cervena-1-ks",
-      "name": "Paprika červená, 1 ks",
-      "previous": 27.48,
-      "now": 23.08,
-      "drop_pct": 16.0,
-      "checked_at": "2026-11-13T01:17:30+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1328717-president-camembert",
-      "name": "Président Camembert",
-      "previous": 38.9,
-      "now": 36.9,
-      "drop_pct": 5.1,
-      "checked_at": "2026-11-13T01:39:39+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p78177-chiquita-banan-1-ks",
-      "name": "Chiquita Banán, 1 ks",
-      "previous": 10.58,
-      "now": 10.05,
-      "drop_pct": 5.0,
-      "checked_at": "2026-11-13T01:40:11+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1328719-president-camembert-chilli-papricky",
-      "name": "Président Camembert chilli papričky",
-      "previous": 47.9,
-      "now": 43.9,
-      "drop_pct": 8.4,
-      "checked_at": "2026-11-13T01:40:34+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1328721-president-camembert-zeleny-pepr",
-      "name": "Président Camembert zelený pepř",
-      "previous": 38.9,
-      "now": 36.9,
-      "drop_pct": 5.1,
-      "checked_at": "2026-11-13T01:41:34+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p794638-citron-1-ks",
-      "name": "Citron, 1 ks",
-      "previous": 7.69,
-      "now": 5.99,
-      "drop_pct": 22.1,
-      "checked_at": "2026-11-13T01:42:14+00:00"
+      "url": "https://www.kosik.cz/p78217-banan-1-ks",
+      "name": "Banán, 1 ks",
+      "previous": 7.98,
+      "now": 6.38,
+      "drop_pct": 20.1,
+      "checked_at": "2026-11-13T07:45:36+00:00"
     }
   ],
   "remaining_missing": 20
