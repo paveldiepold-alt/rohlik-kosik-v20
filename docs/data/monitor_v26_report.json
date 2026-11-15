@@ -1,57 +1,39 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-11-14T19:32:10+00:00",
+  "at": "2026-11-15T01:50:52+00:00",
   "processed": 1090,
-  "updated_prices": 879,
+  "updated_prices": 886,
   "requested": 1090,
   "blocked_stores": [],
   "statuses": {
-    "Rohlík|ok": 472,
-    "Košík|title_mismatch": 8,
-    "Košík|ok": 407,
-    "Rohlík|price_unverified": 62,
-    "Košík|price_unverified": 126,
-    "Košík|http_error": 15
+    "Košík|title_mismatch": 3,
+    "Rohlík|ok": 473,
+    "Košík|ok": 413,
+    "Rohlík|price_unverified": 61,
+    "Košík|price_unverified": 127,
+    "Košík|http_error": 13
   },
-  "last_price_monitor_at": "2026-11-14T19:32:10+00:00",
+  "last_price_monitor_at": "2026-11-15T01:50:52+00:00",
   "checked_last_6h": 1090,
-  "verified_price_last_6h": 880,
+  "verified_price_last_6h": 886,
   "new_drops": [
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p809514-paprika-bila-1-ks",
-      "name": "Paprika bílá, 1 ks",
-      "previous": 7.19,
-      "now": 6.39,
-      "drop_pct": 11.1,
-      "checked_at": "2026-11-14T18:52:48+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p794752-paprika-cervena-1-ks",
-      "name": "Paprika červená, 1 ks",
-      "previous": 18.68,
-      "now": 17.58,
-      "drop_pct": 5.9,
-      "checked_at": "2026-11-14T18:53:21+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p78217-banan-1-ks",
-      "name": "Banán, 1 ks",
-      "previous": 7.98,
-      "now": 6.78,
-      "drop_pct": 15.0,
-      "checked_at": "2026-11-14T19:14:08+00:00"
+      "url": "https://www.kosik.cz/p803198-paprika-zelena-1-ks",
+      "name": "Paprika zelená, 1 ks",
+      "previous": 21.98,
+      "now": 19.78,
+      "drop_pct": 10.0,
+      "checked_at": "2026-11-15T01:13:09+00:00"
     },
     {
       "store": "Košík",
       "url": "https://www.kosik.cz/p78177-chiquita-banan-1-ks",
       "name": "Chiquita Banán, 1 ks",
-      "previous": 10.05,
-      "now": 8.99,
-      "drop_pct": 10.5,
-      "checked_at": "2026-11-14T19:15:48+00:00"
+      "previous": 8.99,
+      "now": 8.46,
+      "drop_pct": 5.9,
+      "checked_at": "2026-11-15T01:35:48+00:00"
     }
   ],
   "remaining_missing": 20
