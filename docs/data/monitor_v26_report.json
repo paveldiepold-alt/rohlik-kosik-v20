@@ -1,48 +1,75 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-11-15T19:32:58+00:00",
+  "at": "2026-11-16T02:10:55+00:00",
   "processed": 1090,
-  "updated_prices": 881,
+  "updated_prices": 882,
   "requested": 1090,
   "blocked_stores": [],
   "statuses": {
-    "Košík|ok": 410,
-    "Rohlík|ok": 471,
-    "Rohlík|price_unverified": 63,
-    "Košík|price_unverified": 128,
-    "Košík|http_error": 12,
-    "Košík|title_mismatch": 6
+    "Rohlík|ok": 465,
+    "Košík|ok": 417,
+    "Rohlík|price_unverified": 69,
+    "Košík|price_unverified": 125,
+    "Košík|http_error": 13,
+    "Košík|title_mismatch": 1
   },
-  "last_price_monitor_at": "2026-11-15T19:32:58+00:00",
+  "last_price_monitor_at": "2026-11-16T02:10:55+00:00",
   "checked_last_6h": 1090,
-  "verified_price_last_6h": 881,
+  "verified_price_last_6h": 882,
   "new_drops": [
     {
       "store": "Košík",
       "url": "https://www.kosik.cz/p819094-metro-chef-mrkev-karotka-prana-1-ks",
       "name": "Metro Chef Mrkev karotka praná, 1 ks",
-      "previous": 3.98,
-      "now": 3.24,
-      "drop_pct": 18.6,
-      "checked_at": "2026-11-15T18:51:58+00:00"
+      "previous": 3.24,
+      "now": 2.74,
+      "drop_pct": 15.4,
+      "checked_at": "2026-11-16T01:29:54+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p794752-paprika-cervena-1-ks",
-      "name": "Paprika červená, 1 ks",
+      "url": "https://www.kosik.cz/p802840-metro-chef-veprova-panenka-bez-retizku",
+      "name": "Metro Chef Vepřová panenka bez řetízku",
+      "previous": 161.14,
+      "now": 140.35,
+      "drop_pct": 12.9,
+      "checked_at": "2026-11-16T01:30:11+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p803198-paprika-zelena-1-ks",
+      "name": "Paprika zelená, 1 ks",
       "previous": 21.98,
       "now": 19.78,
       "drop_pct": 10.0,
-      "checked_at": "2026-11-15T18:55:18+00:00"
+      "checked_at": "2026-11-16T01:32:56+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p794638-citron-1-ks",
-      "name": "Citron, 1 ks",
-      "previous": 7.79,
-      "now": 6.59,
-      "drop_pct": 15.4,
-      "checked_at": "2026-11-15T19:19:42+00:00"
+      "url": "https://www.kosik.cz/p625939-vodnanske-kure-kureci-prsni-rizky",
+      "name": "Vodňanské Kuře Kuřecí prsní řízky",
+      "previous": 143.94,
+      "now": 136.74,
+      "drop_pct": 5.0,
+      "checked_at": "2026-11-16T01:46:18+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p78217-banan-1-ks",
+      "name": "Banán, 1 ks",
+      "previous": 8.38,
+      "now": 7.18,
+      "drop_pct": 14.3,
+      "checked_at": "2026-11-16T01:53:56+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/800393-le-co-sunka-nejvyssi-jakosti-shaved-s-obsahem-masa-93",
+      "name": "LE&CO Šunka nejvyšší jakosti shaved s obsahem masa 93 %",
+      "previous": 44.9,
+      "now": 29.9,
+      "drop_pct": 33.4,
+      "checked_at": "2026-11-16T02:01:03+00:00"
     }
   ],
   "remaining_missing": 20
