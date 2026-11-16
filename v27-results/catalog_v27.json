@@ -2760,8 +2760,8 @@
       "drop_since_previous_pct": null,
       "v27_category_probe_status": "http_error",
       "v27_category_probe_note": "HTTP 404",
-      "v27_category_checked_at": "2026-11-09T21:53:50+00:00",
-      "v27_category_probe_attempts": 5,
+      "v27_category_checked_at": "2026-11-16T21:55:28+00:00",
+      "v27_category_probe_attempts": 6,
       "category_v27": {
         "status": "review",
         "evidence_state": "merchant_path_missing",
@@ -6515,8 +6515,8 @@
       "monitor_v26_note": "HTTP 404",
       "v27_category_probe_status": "http_error",
       "v27_category_probe_note": "HTTP 404",
-      "v27_category_checked_at": "2026-11-09T21:53:59+00:00",
-      "v27_category_probe_attempts": 5,
+      "v27_category_checked_at": "2026-11-16T21:55:36+00:00",
+      "v27_category_probe_attempts": 6,
       "category_v27": {
         "status": "review",
         "evidence_state": "merchant_path_missing",
@@ -45025,8 +45025,8 @@
       "drop_since_previous_pct": null,
       "v27_category_probe_status": "category_missing",
       "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-11-09T21:53:55+00:00",
-      "v27_category_probe_attempts": 5,
+      "v27_category_checked_at": "2026-11-16T21:55:33+00:00",
+      "v27_category_probe_attempts": 6,
       "category_v27": {
         "status": "review",
         "evidence_state": "merchant_path_missing",
@@ -73708,7 +73708,7 @@
   },
   "v27_probe_control": {
     "shop_backoff_until": {},
-    "last_batch_at": "2026-11-16T19:00:55+00:00"
+    "last_batch_at": "2026-11-16T21:55:36+00:00"
   },
   "v27_audit": {
     "rules_configured": 75,
@@ -73727,7 +73727,7 @@
     ],
     "unknown_rule_ids": [],
     "schema": "rk-v27-taxonomy-audit",
-    "generated_at": "2026-11-16T19:00:55+00:00",
+    "generated_at": "2026-11-16T21:55:37+00:00",
     "source_generated_at": "2026-10-21T14:12:55+00:00",
     "products_before": 1090,
     "products_after": 1090,

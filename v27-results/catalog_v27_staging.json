@@ -2093,8 +2093,8 @@
       "drop_since_previous_pct": null,
       "v27_category_probe_status": "http_error",
       "v27_category_probe_note": "HTTP 404",
-      "v27_category_checked_at": "2026-11-09T21:53:50+00:00",
-      "v27_category_probe_attempts": 5
+      "v27_category_checked_at": "2026-11-16T21:55:28+00:00",
+      "v27_category_probe_attempts": 6
     },
     {
       "store": "Košík",
@@ -4583,8 +4583,8 @@
       "monitor_v26_note": "HTTP 404",
       "v27_category_probe_status": "http_error",
       "v27_category_probe_note": "HTTP 404",
-      "v27_category_checked_at": "2026-11-09T21:53:59+00:00",
-      "v27_category_probe_attempts": 5
+      "v27_category_checked_at": "2026-11-16T21:55:36+00:00",
+      "v27_category_probe_attempts": 6
     },
     {
       "store": "Košík",
@@ -29921,8 +29921,8 @@
       "drop_since_previous_pct": null,
       "v27_category_probe_status": "category_missing",
       "v27_category_probe_note": "Chybí důvěryhodný breadcrumb",
-      "v27_category_checked_at": "2026-11-09T21:53:55+00:00",
-      "v27_category_probe_attempts": 5
+      "v27_category_checked_at": "2026-11-16T21:55:33+00:00",
+      "v27_category_probe_attempts": 6
     },
     {
       "store": "Rohlík",
@@ -48617,6 +48617,6 @@
   },
   "v27_probe_control": {
     "shop_backoff_until": {},
-    "last_batch_at": "2026-11-16T19:00:55+00:00"
+    "last_batch_at": "2026-11-16T21:55:36+00:00"
   }
 }
