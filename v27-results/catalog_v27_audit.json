@@ -15,7 +15,7 @@
   ],
   "unknown_rule_ids": [],
   "schema": "rk-v27-taxonomy-audit",
-  "generated_at": "2026-11-17T03:59:49+00:00",
+  "generated_at": "2026-11-17T08:07:32+00:00",
   "source_generated_at": "2026-10-21T14:12:55+00:00",
   "products_before": 1090,
   "products_after": 1090,
@@ -38,8 +38,7 @@
   "products_with_merchant_category_but_rule_mismatch": 41,
   "price_diagnostics": {
     "ok": 1070,
-    "identity_mismatch": 1,
-    "price_read_unverified": 19
+    "price_read_unverified": 20
   },
   "price_by_shop": {
     "Košík": {
@@ -48,7 +47,7 @@
       "missing": 1,
       "diagnostics": {
         "ok": 555,
-        "identity_mismatch": 1
+        "price_read_unverified": 1
       }
     },
     "Rohlík": {
