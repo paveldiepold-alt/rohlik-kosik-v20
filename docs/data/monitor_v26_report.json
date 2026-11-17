@@ -1,56 +1,273 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-11-16T15:52:34+00:00",
+  "at": "2026-11-17T01:56:26+00:00",
   "processed": 1090,
-  "updated_prices": 730,
+  "updated_prices": 736,
   "requested": 1090,
   "blocked_stores": [],
   "statuses": {
-    "Košík|ok": 417,
-    "Rohlík|ok": 313,
-    "Rohlík|price_unverified": 221,
-    "Košík|price_unverified": 125,
-    "Košík|http_error": 14
+    "Rohlík|ok": 449,
+    "Košík|title_mismatch": 178,
+    "Košík|ok": 287,
+    "Rohlík|price_unverified": 85,
+    "Košík|price_unverified": 78,
+    "Košík|http_error": 13
   },
-  "last_price_monitor_at": "2026-11-16T15:52:34+00:00",
+  "last_price_monitor_at": "2026-11-17T01:56:26+00:00",
   "checked_last_6h": 1090,
-  "verified_price_last_6h": 730,
+  "verified_price_last_6h": 736,
   "new_drops": [
     {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p734870-mrkev-baby-barevna-s-nati",
-      "name": "Mrkev Baby barevná s natí",
-      "previous": 174.9,
-      "now": 149.9,
-      "drop_pct": 14.3,
-      "checked_at": "2026-11-16T15:12:13+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p803198-paprika-zelena-1-ks",
-      "name": "Paprika zelená, 1 ks",
-      "previous": 23.08,
-      "now": 20.88,
-      "drop_pct": 9.5,
-      "checked_at": "2026-11-16T15:14:47+00:00"
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1476757-axe-dark-temptation-sprchovy-gel",
+      "name": "Axe Dark Temptation sprchový gel",
+      "previous": 114.9,
+      "now": 94.9,
+      "drop_pct": 17.4,
+      "checked_at": "2026-11-17T01:11:15+00:00"
     },
     {
       "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1412812-moddia-kuchynske-uterky-3vrstve",
-      "name": "Moddia Kuchyňské utěrky 3vrstvé",
-      "previous": 71.91,
-      "now": 45.96,
-      "drop_pct": 36.1,
-      "checked_at": "2026-11-16T15:21:00+00:00"
+      "url": "https://www.rohlik.cz/1480501-axe-number-10-fifa-deodorant-sprej",
+      "name": "Axe Number 10 FIFA deodorant sprej",
+      "previous": 99.9,
+      "now": 89.9,
+      "drop_pct": 10.0,
+      "checked_at": "2026-11-17T01:11:20+00:00"
     },
     {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p795666-avokado-hass-ready-to-eat-1-ks",
-      "name": "Avokádo Hass \"ready to eat\", 1 ks",
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1480510-axe-number-10-fifa-sprchovy-gel",
+      "name": "Axe Number 10 FIFA sprchový gel",
+      "previous": 114.9,
+      "now": 94.9,
+      "drop_pct": 17.4,
+      "checked_at": "2026-11-17T01:11:25+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1407764-chodura-medova-sunka-vyberova-87",
+      "name": "Chodura Medová šunka výběrová 87 %",
+      "previous": 39.9,
+      "now": 31.9,
+      "drop_pct": 20.1,
+      "checked_at": "2026-11-17T01:13:25+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1363307-chodura-mini-parecky-pro-deti",
+      "name": "Chodura Mini párečky pro děti",
       "previous": 49.9,
       "now": 39.9,
       "drop_pct": 20.0,
-      "checked_at": "2026-11-16T15:33:53+00:00"
+      "checked_at": "2026-11-17T01:13:30+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p776516-orion-studentska-pecet-oplatka-s-kakaovou-naplni-macena-v-mlecne-cokolade",
+      "name": "ORION Studentská pečeť Oplatka s kakaovou náplní máčená v mléčné čokoládě",
+      "previous": 19.9,
+      "now": 14.9,
+      "drop_pct": 25.1,
+      "checked_at": "2026-11-17T01:16:40+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p803200-paprika-zluta-1-ks",
+      "name": "Paprika žlutá, 1 ks",
+      "previous": 16.49,
+      "now": 15.39,
+      "drop_pct": 6.7,
+      "checked_at": "2026-11-17T01:18:33+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1412916-hera-classic-rostlinny-tuk",
+      "name": "Hera classic rostlinný tuk",
+      "previous": 44.9,
+      "now": 23.9,
+      "drop_pct": 46.8,
+      "checked_at": "2026-11-17T01:19:09+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1404253-kmotr-kmotrova-vysocina-krajena",
+      "name": "Kmotr Kmotrova Vysočina krájená",
+      "previous": 29.9,
+      "now": 22.9,
+      "drop_pct": 23.4,
+      "checked_at": "2026-11-17T01:19:49+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1372027-kmotr-lovecky-salam-krajeny",
+      "name": "Kmotr Lovecký salám krájený",
+      "previous": 29.9,
+      "now": 22.9,
+      "drop_pct": 23.4,
+      "checked_at": "2026-11-17T01:19:54+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1404277-kmotr-polican-krajeny",
+      "name": "Kmotr Poličan krájený",
+      "previous": 29.9,
+      "now": 22.9,
+      "drop_pct": 23.4,
+      "checked_at": "2026-11-17T01:19:59+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1301743-linteo-classic-kuchynske-uterky-xxl-2vrstve",
+      "name": "Linteo Classic Kuchyňské utěrky XXL 2vrstvé",
+      "previous": 84.9,
+      "now": 49.9,
+      "drop_pct": 41.2,
+      "checked_at": "2026-11-17T01:21:26+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1301783-linteo-vlhcene-uklidove-ubrousky-univerzalni",
+      "name": "Linteo Vlhčené úklidové ubrousky univerzální",
+      "previous": 42.9,
+      "now": 32.9,
+      "drop_pct": 23.3,
+      "checked_at": "2026-11-17T01:22:23+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1301779-linteo-vlhceny-toaletni-papir-s-dubovou-kurou-splachovatelny",
+      "name": "Linteo Vlhčený toaletní papír s dubovou kůrou splachovatelný",
+      "previous": 49.9,
+      "now": 39.9,
+      "drop_pct": 20.0,
+      "checked_at": "2026-11-17T01:22:33+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p625939-vodnanske-kure-kureci-prsni-rizky",
+      "name": "Vodňanské Kuře Kuřecí prsní řízky",
+      "previous": 136.74,
+      "now": 129.55,
+      "drop_pct": 5.3,
+      "checked_at": "2026-11-17T01:32:05+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1424110-ariel-mountain-spring-praci-gel-3-15-l",
+      "name": "Ariel Mountain Spring prací gel (3,15 l)",
+      "previous": 519.95,
+      "now": 479.96,
+      "drop_pct": 7.7,
+      "checked_at": "2026-11-17T01:38:35+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p78177-chiquita-banan-1-ks",
+      "name": "Chiquita Banán, 1 ks",
+      "previous": 10.58,
+      "now": 10.05,
+      "drop_pct": 5.0,
+      "checked_at": "2026-11-17T01:41:47+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1318189-citrony-chemicky-neosetrene-baleni",
+      "name": "Citrony chemicky neošetřené, balení",
+      "previous": 69.9,
+      "now": 49.9,
+      "drop_pct": 28.6,
+      "checked_at": "2026-11-17T01:42:03+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1332245-le-co-sunka-dusena-v-pare-nejvyssi-jakosti-s-obsahem-masa-95",
+      "name": "LE&CO Šunka dušená v páře nejvyšší jakosti s obsahem masa 95 %",
+      "previous": 41.9,
+      "now": 24.9,
+      "drop_pct": 40.6,
+      "checked_at": "2026-11-17T01:44:24+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1438413-lenor-fresh-air-sensitive-avivaz-0-7-l",
+      "name": "Lenor Fresh Air Sensitive aviváž (0,7 l)",
+      "previous": 129.9,
+      "now": 119.9,
+      "drop_pct": 7.7,
+      "checked_at": "2026-11-17T01:44:39+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1474650-leerdammer-delacreme-platky",
+      "name": "Leerdammer Delacréme plátky",
+      "previous": 64.9,
+      "now": 44.9,
+      "drop_pct": 30.8,
+      "checked_at": "2026-11-17T01:45:35+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1442296-lenor-sensitive-avivaz-1-239-l",
+      "name": "Lenor Sensitive aviváž (1,239 l)",
+      "previous": 109.9,
+      "now": 99.9,
+      "drop_pct": 9.1,
+      "checked_at": "2026-11-17T01:45:50+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1474651-leerdammer-caractere-platky",
+      "name": "Leerdammer Caractére plátky",
+      "previous": 64.9,
+      "now": 44.9,
+      "drop_pct": 30.8,
+      "checked_at": "2026-11-17T01:45:56+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1314159-axe-africa-pansky-deodorant-ve-spreji",
+      "name": "Axe Africa pánský deodorant ve spreji",
+      "previous": 99.9,
+      "now": 89.9,
+      "drop_pct": 10.0,
+      "checked_at": "2026-11-17T01:55:50+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1476755-axe-africa-sprchovy-gel",
+      "name": "Axe Africa sprchový gel",
+      "previous": 114.9,
+      "now": 94.9,
+      "drop_pct": 17.4,
+      "checked_at": "2026-11-17T01:55:56+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1480497-axe-black-deodorant-sprej",
+      "name": "Axe Black deodorant sprej",
+      "previous": 99.9,
+      "now": 89.9,
+      "drop_pct": 10.0,
+      "checked_at": "2026-11-17T01:56:01+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1476756-axe-black-sprchovy-gel",
+      "name": "Axe Black sprchový gel",
+      "previous": 114.9,
+      "now": 94.9,
+      "drop_pct": 17.4,
+      "checked_at": "2026-11-17T01:56:06+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1442876-axe-dark-temptation-pansky-deodorant-ve-spreji",
+      "name": "Axe Dark Temptation pánský deodorant ve spreji",
+      "previous": 99.9,
+      "now": 89.9,
+      "drop_pct": 10.0,
+      "checked_at": "2026-11-17T01:56:26+00:00"
     }
   ],
   "remaining_missing": 20
