@@ -1,22 +1,553 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-11-17T13:51:48+00:00",
-  "processed": 558,
-  "updated_prices": 418,
+  "at": "2026-11-18T01:40:09+00:00",
+  "processed": 1090,
+  "updated_prices": 873,
   "requested": 1090,
-  "blocked_stores": [
-    "Rohlík"
-  ],
+  "blocked_stores": [],
   "statuses": {
-    "Košík|ok": 417,
-    "Rohlík|ok": 1,
-    "Rohlík|http_error": 1,
-    "Košík|price_unverified": 126,
+    "Rohlík|ok": 460,
+    "Košík|title_mismatch": 6,
+    "Košík|ok": 413,
+    "Košík|price_unverified": 124,
+    "Rohlík|price_unverified": 74,
     "Košík|http_error": 13
   },
-  "last_price_monitor_at": "2026-11-17T13:51:48+00:00",
-  "checked_last_6h": 733,
-  "verified_price_last_6h": 546,
-  "new_drops": [],
-  "remaining_missing": 20
+  "last_price_monitor_at": "2026-11-18T01:40:09+00:00",
+  "checked_last_6h": 1090,
+  "verified_price_last_6h": 873,
+  "new_drops": [
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p811776-lenor-unstoppables-perlicky-spring-awakening-735-g",
+      "name": "Lenor Unstoppables Perličky Spring Awakening (735 g)",
+      "previous": 499.0,
+      "now": 399.0,
+      "drop_pct": 20.0,
+      "checked_at": "2026-11-18T00:55:18+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p795304-lenor-unstoppables-perlicky-fresh-195-g",
+      "name": "Lenor Unstoppables perličky Fresh, 195 g",
+      "previous": 199.9,
+      "now": 119.9,
+      "drop_pct": 40.0,
+      "checked_at": "2026-11-18T00:55:27+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p793552-okurka-hadovka-1-ks",
+      "name": "Okurka hadovka, 1 ks",
+      "previous": 24.9,
+      "now": 14.9,
+      "drop_pct": 40.2,
+      "checked_at": "2026-11-18T01:00:47+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p809514-paprika-bila-1-ks",
+      "name": "Paprika bílá, 1 ks",
+      "previous": 7.19,
+      "now": 6.39,
+      "drop_pct": 11.1,
+      "checked_at": "2026-11-18T01:01:42+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p803198-paprika-zelena-1-ks",
+      "name": "Paprika zelená, 1 ks",
+      "previous": 21.98,
+      "now": 18.68,
+      "drop_pct": 15.0,
+      "checked_at": "2026-11-18T01:01:56+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p794752-paprika-cervena-1-ks",
+      "name": "Paprika červená, 1 ks",
+      "previous": 19.78,
+      "now": 17.58,
+      "drop_pct": 11.1,
+      "checked_at": "2026-11-18T01:02:15+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p64167-parodontax-extra-fresh-zubni-pasta",
+      "name": "Parodontax Extra Fresh zubní pasta",
+      "previous": 134.9,
+      "now": 89.9,
+      "drop_pct": 33.4,
+      "checked_at": "2026-11-18T01:02:24+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p782388-parodontax-posileni-a-ochrana-dasni-fresh-mint-zubni-pasta-s-kyselinou-hyaluronovou",
+      "name": "Parodontax Posílení a ochrana dásní Fresh Mint, Zubní pasta s kyselinou hyaluronovou",
+      "previous": 194.9,
+      "now": 99.9,
+      "drop_pct": 48.7,
+      "checked_at": "2026-11-18T01:02:29+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p782390-parodontax-posileni-a-ochrana-dasni-whitening-zubni-pasta-s-kyselinou-hyaluronovou",
+      "name": "Parodontax Posílení a ochrana dásní Whitening Zubní pasta s kyselinou hyaluronovou",
+      "previous": 164.9,
+      "now": 99.9,
+      "drop_pct": 39.4,
+      "checked_at": "2026-11-18T01:02:33+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p778308-persil-color-praci-gel-na-barevne-pradlo",
+      "name": "Persil Color prací gel na barevné prádlo",
+      "previous": 579.0,
+      "now": 449.0,
+      "drop_pct": 22.5,
+      "checked_at": "2026-11-18T01:02:52+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p770584-persil-color-praci-gel-na-barevne-pradlo",
+      "name": "Persil Color prací gel na barevné prádlo",
+      "previous": 449.0,
+      "now": 379.9,
+      "drop_pct": 15.4,
+      "checked_at": "2026-11-18T01:02:56+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p821560-persil-deep-clean-color-praci-prasek-3-3kg",
+      "name": "Persil Deep Clean Color prací prášek 3,3kg",
+      "previous": 464.0,
+      "now": 379.9,
+      "drop_pct": 18.1,
+      "checked_at": "2026-11-18T01:03:10+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p821558-persil-deep-clean-expert-freshness-praci-prasek-2-97kg",
+      "name": "Persil Deep Clean Expert Freshness prací prášek 2,97kg",
+      "previous": 464.0,
+      "now": 379.9,
+      "drop_pct": 18.1,
+      "checked_at": "2026-11-18T01:03:15+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p821562-persil-discs-4in1-deep-clean-universal-praci-kapsle",
+      "name": "Persil Discs 4in1 Deep Clean Universal prací kapsle",
+      "previous": 464.0,
+      "now": 379.9,
+      "drop_pct": 18.1,
+      "checked_at": "2026-11-18T01:03:19+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p770586-persil-expert-freshness-lavender-praci-gel",
+      "name": "Persil Expert Freshness Lavender prací gel",
+      "previous": 469.0,
+      "now": 379.9,
+      "drop_pct": 19.0,
+      "checked_at": "2026-11-18T01:03:33+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p778310-persil-expert-lavender-praci-gel-na-barevne-pradlo",
+      "name": "Persil Expert Lavender prací gel na barevné prádlo",
+      "previous": 579.0,
+      "now": 449.0,
+      "drop_pct": 22.5,
+      "checked_at": "2026-11-18T01:03:47+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p770588-persil-expert-sensitive-praci-gel-pro-citlivou-pokozku",
+      "name": "Persil Expert Sensitive prací gel pro citlivou pokožku",
+      "previous": 469.0,
+      "now": 379.9,
+      "drop_pct": 19.0,
+      "checked_at": "2026-11-18T01:03:55+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p778666-persil-power-caps-color-deep-clean-praci-kapsle",
+      "name": "Persil Power Caps Color Deep Clean prací kapsle",
+      "previous": 439.0,
+      "now": 379.9,
+      "drop_pct": 13.5,
+      "checked_at": "2026-11-18T01:04:04+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p778668-persil-persil-power-caps-universal-deep-clean-praci-kapsle",
+      "name": "Persil Power Caps Universal Deep Clean prací kapsle",
+      "previous": 439.0,
+      "now": 379.9,
+      "drop_pct": 13.5,
+      "checked_at": "2026-11-18T01:04:09+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p782710-persil-praci-prasek-color",
+      "name": "Persil Prací prášek Color",
+      "previous": 599.0,
+      "now": 449.0,
+      "drop_pct": 25.0,
+      "checked_at": "2026-11-18T01:04:13+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p782708-persil-praci-prasek-freshnes-by-silan",
+      "name": "Persil Prací prášek Freshnes by Silan",
+      "previous": 579.0,
+      "now": 449.0,
+      "drop_pct": 22.5,
+      "checked_at": "2026-11-18T01:04:18+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p778312-persil-sensitive-praci-gel-pro-citlivou-pokozku",
+      "name": "Persil Sensitive prací gel pro citlivou pokožku",
+      "previous": 579.0,
+      "now": 449.0,
+      "drop_pct": 22.5,
+      "checked_at": "2026-11-18T01:04:23+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p770582-persil-universal-praci-gel",
+      "name": "Persil Universal prací gel",
+      "previous": 449.0,
+      "now": 379.9,
+      "drop_pct": 15.4,
+      "checked_at": "2026-11-18T01:04:36+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p681102-rabbit-kureci-stehenni-rizek-bez-kuze",
+      "name": "Rabbit Kuřecí stehenní řízek bez kůže",
+      "previous": 92.59,
+      "now": 87.95,
+      "drop_pct": 5.0,
+      "checked_at": "2026-11-18T01:07:13+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p681062-rabbit-kureci-stehna-horni",
+      "name": "Rabbit Kuřecí stehna horní",
+      "previous": 72.44,
+      "now": 60.84,
+      "drop_pct": 16.0,
+      "checked_at": "2026-11-18T01:07:18+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p681072-rabbit-kureci-stehna-spodni",
+      "name": "Rabbit Kuřecí stehna spodní",
+      "previous": 63.74,
+      "now": 53.88,
+      "drop_pct": 15.5,
+      "checked_at": "2026-11-18T01:07:22+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p717966-rabbit-reznictvi-kureci-stehna-rizek-mlety",
+      "name": "Rabbit řeznictví Kuřecí stehna řízek mletý",
+      "previous": 94.9,
+      "now": 79.9,
+      "drop_pct": 15.8,
+      "checked_at": "2026-11-18T01:07:32+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p181035-selska-kureci-stehna",
+      "name": "Selská kuřecí stehna",
+      "previous": 92.16,
+      "now": 72.44,
+      "drop_pct": 21.4,
+      "checked_at": "2026-11-18T01:11:04+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p181045-selsky-kureci-prsni-rizek",
+      "name": "Selský kuřecí prsní řízek",
+      "previous": 142.45,
+      "now": 118.45,
+      "drop_pct": 16.8,
+      "checked_at": "2026-11-18T01:11:08+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p802964-smetanito-se-sunkou-4ks",
+      "name": "Smetanito Se šunkou 4ks",
+      "previous": 69.9,
+      "now": 49.9,
+      "drop_pct": 28.6,
+      "checked_at": "2026-11-18T01:12:41+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p260874-smetanito-smetanove-giga",
+      "name": "Smetanito Smetanové GIGA",
+      "previous": 69.9,
+      "now": 49.9,
+      "drop_pct": 28.6,
+      "checked_at": "2026-11-18T01:12:45+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p793102-smetanito-strivko-s-ementalem-taveny-syr",
+      "name": "Smetanito Střívko s ementálem tavený sýr",
+      "previous": 34.9,
+      "now": 25.9,
+      "drop_pct": 25.8,
+      "checked_at": "2026-11-18T01:12:50+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p655640-smetanito-syr-na-gril-a-na-panev",
+      "name": "Smetanito Sýr na gril a na pánev",
+      "previous": 99.9,
+      "now": 79.9,
+      "drop_pct": 20.0,
+      "checked_at": "2026-11-18T01:12:55+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p655650-smetanito-syr-na-gril-a-na-panev-jemne-pikantni",
+      "name": "Smetanito Sýr na gril a na pánev  jemně pikantní",
+      "previous": 99.9,
+      "now": 79.9,
+      "drop_pct": 20.0,
+      "checked_at": "2026-11-18T01:12:59+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p779000-smetanito-syr-na-gril-a-na-panev-burger",
+      "name": "Smetanito Sýr na gril a na pánev burger",
+      "previous": 99.9,
+      "now": 79.9,
+      "drop_pct": 20.0,
+      "checked_at": "2026-11-18T01:13:04+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p793092-smetanito-syr-na-gril-a-na-panev-gyros",
+      "name": "Smetanito Sýr na gril a na pánev gyros",
+      "previous": 99.9,
+      "now": 79.9,
+      "drop_pct": 20.0,
+      "checked_at": "2026-11-18T01:13:13+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p429165-authentic-veprova-krkovice-bez-kosti",
+      "name": "Authentic Vepřová krkovice bez kosti​",
+      "previous": 267.7,
+      "now": 144.1,
+      "drop_pct": 46.2,
+      "checked_at": "2026-11-18T01:21:15+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p78217-banan-1-ks",
+      "name": "Banán, 1 ks",
+      "previous": 7.58,
+      "now": 5.98,
+      "drop_pct": 21.1,
+      "checked_at": "2026-11-18T01:23:05+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p97167-chodura-pivni-salam",
+      "name": "Chodura Pivní salám",
+      "previous": 29.9,
+      "now": 22.9,
+      "drop_pct": 23.4,
+      "checked_at": "2026-11-18T01:25:42+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p97207-chodura-videnske-parky-se-syrem-80-masa",
+      "name": "Chodura Vídeňské párky se sýrem (80% masa)",
+      "previous": 99.9,
+      "now": 79.9,
+      "drop_pct": 20.0,
+      "checked_at": "2026-11-18T01:26:06+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p97187-chodura-sunkovy-salam",
+      "name": "Chodura Šunkový salám",
+      "previous": 24.9,
+      "now": 19.9,
+      "drop_pct": 20.1,
+      "checked_at": "2026-11-18T01:26:24+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p794638-citron-1-ks",
+      "name": "Citron, 1 ks",
+      "previous": 6.59,
+      "now": 5.99,
+      "drop_pct": 9.1,
+      "checked_at": "2026-11-18T01:26:47+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p718438-citrony-bio-baleni",
+      "name": "Citrony BIO, balení",
+      "previous": 79.9,
+      "now": 62.9,
+      "drop_pct": 21.3,
+      "checked_at": "2026-11-18T01:26:52+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p98247-hera-classic",
+      "name": "Hera Classic",
+      "previous": 44.9,
+      "now": 17.9,
+      "drop_pct": 60.1,
+      "checked_at": "2026-11-18T01:31:43+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p20137-kostelecke-uzeniny-javoricke-parky-original",
+      "name": "Kostelecké Uzeniny Javořické párky original",
+      "previous": 46.9,
+      "now": 36.9,
+      "drop_pct": 21.3,
+      "checked_at": "2026-11-18T01:32:52+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p812438-lenor-avivaz-amethyst-flower-bouquet-duopack-2x-987-ml",
+      "name": "Lenor Aviváž Amethyst & Flower Bouquet duopack (2x 987 ml)",
+      "previous": 229.9,
+      "now": 169.9,
+      "drop_pct": 26.1,
+      "checked_at": "2026-11-18T01:36:38+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p795300-lenor-avivaz-fresh-pink-blossom-700-ml",
+      "name": "Lenor Aviváž Fresh Pink Blossom, 700 ml",
+      "previous": 179.9,
+      "now": 149.9,
+      "drop_pct": 16.7,
+      "checked_at": "2026-11-18T01:36:42+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p795298-lenor-avivaz-fresh-wind-700-ml",
+      "name": "Lenor Aviváž Fresh Wind, 700 ml",
+      "previous": 229.9,
+      "now": 149.9,
+      "drop_pct": 34.8,
+      "checked_at": "2026-11-18T01:36:47+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p798766-lenor-avivaz-gold-orchid-vanilla-675-ml",
+      "name": "Lenor Aviváž Gold Orchid & Vanilla, 675 ml",
+      "previous": 139.9,
+      "now": 69.9,
+      "drop_pct": 50.0,
+      "checked_at": "2026-11-18T01:36:52+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p795296-lenor-avivaz-gold-orchid-vanilla-duopack-2x-987-ml",
+      "name": "Lenor Aviváž Gold Orchid & Vanilla, duopack 2x 987 ml",
+      "previous": 219.9,
+      "now": 169.9,
+      "drop_pct": 22.7,
+      "checked_at": "2026-11-18T01:36:56+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p814262-lenor-avivaz-gold-orchid-2-640-l",
+      "name": "Lenor Aviváž Gold Orchid 2,640 l",
+      "previous": 249.9,
+      "now": 179.9,
+      "drop_pct": 28.0,
+      "checked_at": "2026-11-18T01:37:01+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p814266-lenor-avivaz-sensitive-base-2-640-l",
+      "name": "Lenor Aviváž Sensitive base 2,640 l",
+      "previous": 249.9,
+      "now": 179.9,
+      "drop_pct": 28.0,
+      "checked_at": "2026-11-18T01:37:06+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p814264-lenor-avivaz-spring-awakening-2-640-l",
+      "name": "Lenor Aviváž Spring Awakening 2,640 l",
+      "previous": 249.9,
+      "now": 179.9,
+      "drop_pct": 28.0,
+      "checked_at": "2026-11-18T01:37:10+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p799386-lenor-avivaz-spring-duopack-2x-1239-ml",
+      "name": "Lenor Aviváž Spring duopack, 2x 1239 ml",
+      "previous": 219.9,
+      "now": 169.9,
+      "drop_pct": 22.7,
+      "checked_at": "2026-11-18T01:37:15+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p798768-lenor-avivaz-spring-798-ml",
+      "name": "Lenor Aviváž Spring, 798 ml",
+      "previous": 139.9,
+      "now": 69.9,
+      "drop_pct": 50.0,
+      "checked_at": "2026-11-18T01:37:19+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p795306-lenor-perlicky-ruby-jasmin-195-g",
+      "name": "Lenor Perličky Ruby Jasmin, 195 g",
+      "previous": 229.9,
+      "now": 119.9,
+      "drop_pct": 47.8,
+      "checked_at": "2026-11-18T01:37:29+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p795302-lenor-perlicky-spring-awakening-195-g",
+      "name": "Lenor Perličky Spring Awakening, 195 g",
+      "previous": 179.9,
+      "now": 119.9,
+      "drop_pct": 33.4,
+      "checked_at": "2026-11-18T01:37:33+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p823564-lenor-perlicky-winter",
+      "name": "Lenor Perličky Winter",
+      "previous": 349.0,
+      "now": 299.0,
+      "drop_pct": 14.3,
+      "checked_at": "2026-11-18T01:37:38+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p816670-lenor-perlicky-do-prani-cotton-fresh-495-g",
+      "name": "Lenor Perličky do praní Cotton Fresh, 495 g",
+      "previous": 384.0,
+      "now": 299.0,
+      "drop_pct": 22.1,
+      "checked_at": "2026-11-18T01:37:42+00:00"
+    }
+  ],
+  "remaining_missing": 19
 }
