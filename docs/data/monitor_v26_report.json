@@ -1,147 +1,129 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-11-19T01:02:58+00:00",
+  "at": "2026-11-19T16:25:52+00:00",
   "processed": 1090,
-  "updated_prices": 768,
+  "updated_prices": 867,
   "requested": 1090,
   "blocked_stores": [],
   "statuses": {
-    "Rohlík|ok": 453,
-    "Košík|title_mismatch": 129,
-    "Košík|ok": 315,
-    "Košík|price_unverified": 96,
-    "Rohlík|price_unverified": 81,
-    "Košík|http_error": 16
+    "Košík|title_mismatch": 16,
+    "Rohlík|ok": 462,
+    "Košík|ok": 405,
+    "Košík|price_unverified": 121,
+    "Rohlík|price_unverified": 72,
+    "Košík|http_error": 14
   },
-  "last_price_monitor_at": "2026-11-19T01:02:58+00:00",
+  "last_price_monitor_at": "2026-11-19T16:25:52+00:00",
   "checked_last_6h": 1090,
-  "verified_price_last_6h": 768,
+  "verified_price_last_6h": 867,
   "new_drops": [
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p805304-paprika-cervena-kapie-1-ks",
-      "name": "Paprika červená kapie, 1 ks",
-      "previous": 8.99,
-      "now": 7.19,
-      "drop_pct": 20.0,
-      "checked_at": "2026-11-19T00:24:35+00:00"
+      "url": "https://www.kosik.cz/p819094-metro-chef-mrkev-karotka-prana-1-ks",
+      "name": "Metro Chef Mrkev karotka praná, 1 ks",
+      "previous": 4.73,
+      "now": 2.49,
+      "drop_pct": 47.4,
+      "checked_at": "2026-11-19T15:43:43+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p741410-persil-color-praci-gel-na-barevne-pradlo",
-      "name": "Persil Color prací gel na barevné prádlo",
-      "previous": 559.0,
-      "now": 529.0,
-      "drop_pct": 5.4,
-      "checked_at": "2026-11-19T00:25:17+00:00"
+      "url": "https://www.kosik.cz/p802840-metro-chef-veprova-panenka-bez-retizku",
+      "name": "Metro Chef Vepřová panenka bez řetízku",
+      "previous": 140.35,
+      "now": 102.55,
+      "drop_pct": 26.9,
+      "checked_at": "2026-11-19T15:44:00+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p770634-persil-color-praci-prasek-na-barevne-pradlo-box",
-      "name": "Persil Color prací prášek na barevné prádlo BOX",
-      "previous": 569.9,
-      "now": 529.0,
-      "drop_pct": 7.2,
-      "checked_at": "2026-11-19T00:25:36+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p813452-persil-expert-freshness-by-silan-praci-prasek",
-      "name": "Persil Expert Freshness by Silan prací prášek",
-      "previous": 589.0,
-      "now": 529.0,
-      "drop_pct": 10.2,
-      "checked_at": "2026-11-19T00:26:13+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p740506-rama-classic",
-      "name": "Rama Classic",
-      "previous": 94.9,
-      "now": 89.9,
-      "drop_pct": 5.3,
-      "checked_at": "2026-11-19T00:31:16+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p99107-savo-wc-cistic-ocean",
-      "name": "Savo WC čistič Oceán",
-      "previous": 89.9,
-      "now": 64.9,
-      "drop_pct": 27.8,
-      "checked_at": "2026-11-19T00:32:52+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p804548-silan-avivaz-aromatherapy-relaxing-maldives-2772-ml",
-      "name": "Silan Aviváž Aromatherapy Relaxing Maldives (2772 ml)",
-      "previous": 219.9,
-      "now": 199.9,
-      "drop_pct": 9.1,
-      "checked_at": "2026-11-19T00:34:50+00:00"
+      "url": "https://www.kosik.cz/p803200-paprika-zluta-1-ks",
+      "name": "Paprika žlutá, 1 ks",
+      "previous": 23.98,
+      "now": 22.78,
+      "drop_pct": 5.0,
+      "checked_at": "2026-11-19T15:47:09+00:00"
     },
     {
       "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1289779-leerdammer-lightlife-syr-platky",
-      "name": "Leerdammer Lightlife sýr plátky",
-      "previous": 52.9,
-      "now": 37.9,
-      "drop_pct": 28.4,
-      "checked_at": "2026-11-19T00:45:35+00:00"
+      "url": "https://www.rohlik.cz/1408924-maso-veprova-krkovice-platky",
+      "name": "MASO! Vepřová krkovice plátky",
+      "previous": 244.3,
+      "now": 222.89,
+      "drop_pct": 8.8,
+      "checked_at": "2026-11-19T15:51:29+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p791112-bio-okurka",
-      "name": "BIO Okurka",
-      "previous": 59.9,
-      "now": 54.9,
-      "drop_pct": 8.3,
-      "checked_at": "2026-11-19T00:45:37+00:00"
+      "url": "https://www.kosik.cz/p740502-rama-maslova-prichut",
+      "name": "Rama máslová příchuť",
+      "previous": 94.9,
+      "now": 89.9,
+      "drop_pct": 5.3,
+      "checked_at": "2026-11-19T15:53:45+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1483988-parodontax-intensive-gum-repair-intense-clean-zubni-pasta",
+      "name": "Parodontax Intensive Gum Repair Intense Clean zubní pasta",
+      "previous": 194.9,
+      "now": 169.9,
+      "drop_pct": 12.8,
+      "checked_at": "2026-11-19T15:56:24+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p297984-veprova-panenka-z-prasnic-bez-retizku",
+      "name": "Vepřová panenka z prasnic bez řetízku",
+      "previous": 348.27,
+      "now": 319.68,
+      "drop_pct": 8.2,
+      "checked_at": "2026-11-19T15:59:13+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p625939-vodnanske-kure-kureci-prsni-rizky",
+      "name": "Vodňanské Kuře Kuřecí prsní řízky",
+      "previous": 129.55,
+      "now": 122.35,
+      "drop_pct": 5.6,
+      "checked_at": "2026-11-19T16:00:13+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p99117-savo-wc-gel-na-vodni-kamen-turbo",
+      "name": "Savo WC gel na vodní kámen Turbo",
+      "previous": 89.9,
+      "now": 64.9,
+      "drop_pct": 27.8,
+      "checked_at": "2026-11-19T16:02:38+00:00"
     },
     {
       "store": "Košík",
       "url": "https://www.kosik.cz/p78217-banan-1-ks",
       "name": "Banán, 1 ks",
-      "previous": 7.98,
-      "now": 7.18,
-      "drop_pct": 10.0,
-      "checked_at": "2026-11-19T00:46:19+00:00"
+      "previous": 7.18,
+      "now": 6.78,
+      "drop_pct": 5.6,
+      "checked_at": "2026-11-19T16:07:53+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p78177-chiquita-banan-1-ks",
-      "name": "Chiquita Banán, 1 ks",
-      "previous": 10.58,
-      "now": 8.46,
+      "url": "https://www.kosik.cz/p787182-emi-food-kureci-prsa-bez-kosti-volny-chov",
+      "name": "EMI Food Kuřecí prsa bez kosti, volný chov",
+      "previous": 199.9,
+      "now": 159.9,
       "drop_pct": 20.0,
-      "checked_at": "2026-11-19T00:48:06+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p740498-flora-light",
-      "name": "Flora Light",
-      "previous": 94.9,
-      "now": 89.9,
-      "drop_pct": 5.3,
-      "checked_at": "2026-11-19T00:54:14+00:00"
+      "checked_at": "2026-11-19T16:14:43+00:00"
     },
     {
       "store": "Rohlík",
-      "url": "https://www.rohlik.cz/761987-leerdammer-original-syr-platky",
-      "name": "Leerdammer Original sýr plátky",
-      "previous": 52.9,
-      "now": 37.9,
-      "drop_pct": 28.4,
-      "checked_at": "2026-11-19T00:54:15+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1466689-kunraticka-stodola-rajcata-cherry-na-vetvicce-odr-red-egg-strapec",
-      "name": "Kunratická stodola – Rajčata cherry na větvičce (odr. Red Egg), střapec",
-      "previous": 149.98,
-      "now": 139.98,
-      "drop_pct": 6.7,
-      "checked_at": "2026-11-19T00:55:30+00:00"
+      "url": "https://www.rohlik.cz/1482665-pirinat-bio-hovezi-svickova-puky",
+      "name": "Pirinat BIO Hovězí svíčková - puky",
+      "previous": 338.9,
+      "now": 307.68,
+      "drop_pct": 9.2,
+      "checked_at": "2026-11-19T16:16:30+00:00"
     }
   ],
   "remaining_missing": 19
