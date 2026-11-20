@@ -1,76 +1,121 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-11-20T01:19:13+00:00",
+  "at": "2026-11-20T16:05:42+00:00",
   "processed": 1090,
-  "updated_prices": 876,
+  "updated_prices": 888,
   "requested": 1090,
   "blocked_stores": [],
   "statuses": {
-    "Košík|ok": 409,
-    "Rohlík|ok": 467,
-    "Košík|price_unverified": 118,
-    "Rohlík|price_unverified": 67,
-    "Košík|http_error": 15,
-    "Košík|title_mismatch": 14
+    "Rohlík|ok": 470,
+    "Košík|title_mismatch": 1,
+    "Košík|ok": 418,
+    "Košík|price_unverified": 122,
+    "Rohlík|price_unverified": 64,
+    "Košík|http_error": 15
   },
-  "last_price_monitor_at": "2026-11-20T01:19:13+00:00",
+  "last_price_monitor_at": "2026-11-20T16:05:42+00:00",
   "checked_last_6h": 1090,
-  "verified_price_last_6h": 876,
+  "verified_price_last_6h": 888,
   "new_drops": [
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p811774-lenor-unstoppables-perlicky-fresh-735-g",
-      "name": "Lenor Unstoppables Perličky Fresh (735 g)",
-      "previous": 499.0,
-      "now": 399.0,
-      "drop_pct": 20.0,
-      "checked_at": "2026-11-20T00:35:00+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p805304-paprika-cervena-kapie-1-ks",
-      "name": "Paprika červená kapie, 1 ks",
-      "previous": 8.99,
-      "now": 8.09,
-      "drop_pct": 10.0,
-      "checked_at": "2026-11-20T00:41:50+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p794752-paprika-cervena-1-ks",
-      "name": "Paprika červená, 1 ks",
-      "previous": 21.58,
-      "now": 17.99,
-      "drop_pct": 16.6,
-      "checked_at": "2026-11-20T00:41:59+00:00"
+      "url": "https://www.kosik.cz/p776516-orion-studentska-pecet-oplatka-s-kakaovou-naplni-macena-v-mlecne-cokolade",
+      "name": "ORION Studentská pečeť Oplatka s kakaovou náplní máčená v mléčné čokoládě",
+      "previous": 19.9,
+      "now": 14.9,
+      "drop_pct": 25.1,
+      "checked_at": "2026-11-20T15:26:20+00:00"
     },
     {
       "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1353081-svetnickove-kure-prsni-rizky",
-      "name": "Světničkové kuře prsní řízky",
-      "previous": 129.95,
-      "now": 119.87,
-      "drop_pct": 7.8,
-      "checked_at": "2026-11-20T00:57:47+00:00"
+      "url": "https://www.rohlik.cz/1353701-farma-rodiny-nemcovy-kureci-prsa",
+      "name": "Farma rodiny Němcovy Kuřecí prsa",
+      "previous": 248.43,
+      "now": 217.38,
+      "drop_pct": 12.5,
+      "checked_at": "2026-11-20T15:26:59+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p803198-paprika-zelena-1-ks",
+      "name": "Paprika zelená, 1 ks",
+      "previous": 21.98,
+      "now": 18.68,
+      "drop_pct": 15.0,
+      "checked_at": "2026-11-20T15:27:42+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1353879-kureci-prsni-rizky-od-ceskeho-vyrobce",
+      "name": "Kuřecí prsní řízky od českého výrobce",
+      "previous": 117.36,
+      "now": 111.18,
+      "drop_pct": 5.3,
+      "checked_at": "2026-11-20T15:30:20+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p681062-rabbit-kureci-stehna-horni",
+      "name": "Rabbit Kuřecí stehna horní",
+      "previous": 68.19,
+      "now": 63.99,
+      "drop_pct": 6.2,
+      "checked_at": "2026-11-20T15:33:01+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1440890-sutcha-veprova-krkovice-v-marinade-pomeranc-a-med-2-ks",
+      "name": "Sutcha Vepřová krkovice v marinádě pomeranč a med, 2 ks",
+      "previous": 262.43,
+      "now": 238.88,
+      "drop_pct": 9.0,
+      "checked_at": "2026-11-20T15:43:48+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1425200-veprova-krkovice-bez-kosti-platky-4-ks",
+      "name": "Vepřová krkovice bez kosti plátky, 4 ks",
+      "previous": 122.94,
+      "now": 109.62,
+      "drop_pct": 10.8,
+      "checked_at": "2026-11-20T15:45:03+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1410323-ceska-veprova-panenka",
+      "name": "Česká Vepřová panenka",
+      "previous": 209.94,
+      "now": 162.32,
+      "drop_pct": 22.7,
+      "checked_at": "2026-11-20T15:46:58+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1413890-amadori-bio-kureci-stehno",
+      "name": "Amadori BIO Kuřecí stehno",
+      "previous": 179.95,
+      "now": 160.95,
+      "drop_pct": 10.6,
+      "checked_at": "2026-11-20T15:47:03+00:00"
     },
     {
       "store": "Košík",
       "url": "https://www.kosik.cz/p78177-chiquita-banan-1-ks",
       "name": "Chiquita Banán, 1 ks",
-      "previous": 12.17,
-      "now": 10.05,
-      "drop_pct": 17.4,
-      "checked_at": "2026-11-20T01:04:24+00:00"
+      "previous": 10.05,
+      "now": 8.99,
+      "drop_pct": 10.5,
+      "checked_at": "2026-11-20T15:50:17+00:00"
     },
     {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p794638-citron-1-ks",
-      "name": "Citron, 1 ks",
-      "previous": 5.04,
-      "now": 4.58,
-      "drop_pct": 9.1,
-      "checked_at": "2026-11-20T01:06:24+00:00"
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1418575-campese-kureci-stehna-z-volneho-chovu",
+      "name": "Campese Kuřecí stehna z volného chovu",
+      "previous": 164.95,
+      "now": 155.56,
+      "drop_pct": 5.7,
+      "checked_at": "2026-11-20T15:54:40+00:00"
     }
   ],
-  "remaining_missing": 19
+  "remaining_missing": 18
 }
