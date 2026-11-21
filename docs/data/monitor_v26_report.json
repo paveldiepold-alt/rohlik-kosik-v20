@@ -1,75 +1,93 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-11-21T00:42:57+00:00",
+  "at": "2026-11-21T07:42:46+00:00",
   "processed": 1090,
-  "updated_prices": 873,
+  "updated_prices": 874,
   "requested": 1090,
   "blocked_stores": [],
   "statuses": {
-    "Rohlík|ok": 469,
-    "Košík|ok": 404,
-    "Košík|price_unverified": 116,
-    "Rohlík|price_unverified": 65,
-    "Košík|http_error": 18,
-    "Košík|title_mismatch": 18
+    "Rohlík|ok": 473,
+    "Košík|title_mismatch": 24,
+    "Rohlík|price_unverified": 61,
+    "Košík|price_unverified": 117,
+    "Košík|ok": 401,
+    "Košík|http_error": 14
   },
-  "last_price_monitor_at": "2026-11-21T00:42:57+00:00",
+  "last_price_monitor_at": "2026-11-21T07:42:46+00:00",
   "checked_last_6h": 1090,
-  "verified_price_last_6h": 873,
+  "verified_price_last_6h": 874,
   "new_drops": [
     {
       "store": "Košík",
       "url": "https://www.kosik.cz/p819094-metro-chef-mrkev-karotka-prana-1-ks",
       "name": "Metro Chef Mrkev karotka praná, 1 ks",
-      "previous": 3.49,
-      "now": 3.24,
-      "drop_pct": 7.2,
-      "checked_at": "2026-11-21T00:01:21+00:00"
+      "previous": 3.24,
+      "now": 2.99,
+      "drop_pct": 7.7,
+      "checked_at": "2026-11-21T07:01:21+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p805304-paprika-cervena-kapie-1-ks",
-      "name": "Paprika červená kapie, 1 ks",
-      "previous": 8.09,
-      "now": 7.19,
-      "drop_pct": 11.1,
-      "checked_at": "2026-11-21T00:04:34+00:00"
+      "url": "https://www.kosik.cz/p809514-paprika-bila-1-ks",
+      "name": "Paprika bílá, 1 ks",
+      "previous": 8.99,
+      "now": 8.09,
+      "drop_pct": 10.0,
+      "checked_at": "2026-11-21T07:04:11+00:00"
     },
     {
       "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1289717-mrkev-prana-cerstva-baleni",
-      "name": "Mrkev praná čerstvá, balení",
-      "previous": 29.9,
-      "now": 24.9,
-      "drop_pct": 16.7,
-      "checked_at": "2026-11-21T00:11:07+00:00"
+      "url": "https://www.rohlik.cz/1416990-iberico-veprova-panenka",
+      "name": "Ibérico Vepřová panenka",
+      "previous": 311.96,
+      "now": 249.18,
+      "drop_pct": 20.1,
+      "checked_at": "2026-11-21T07:05:39+00:00"
     },
     {
       "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1413890-amadori-bio-kureci-stehno",
-      "name": "Amadori BIO Kuřecí stehno",
-      "previous": 160.95,
-      "now": 134.14,
-      "drop_pct": 16.7,
-      "checked_at": "2026-11-21T00:24:07+00:00"
+      "url": "https://www.rohlik.cz/1408923-maso-veprova-krkovice-v-celku",
+      "name": "MASO! Vepřová krkovice v celku",
+      "previous": 328.28,
+      "now": 289.7,
+      "drop_pct": 11.8,
+      "checked_at": "2026-11-21T07:08:52+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p625939-vodnanske-kure-kureci-prsni-rizky",
+      "name": "Vodňanské Kuře Kuřecí prsní řízky",
+      "previous": 122.35,
+      "now": 115.15,
+      "drop_pct": 5.9,
+      "checked_at": "2026-11-21T07:17:52+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p78177-chiquita-banan-1-ks",
+      "name": "Chiquita Banán, 1 ks",
+      "previous": 10.05,
+      "now": 8.46,
+      "drop_pct": 15.8,
+      "checked_at": "2026-11-21T07:27:12+00:00"
     },
     {
       "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1466689-kunraticka-stodola-rajcata-cherry-na-vetvicce-odr-red-egg-strapec",
-      "name": "Kunratická stodola – Rajčata cherry na větvičce (odr. Red Egg), střapec",
-      "previous": 139.98,
-      "now": 126.89,
-      "drop_pct": 9.4,
-      "checked_at": "2026-11-21T00:35:31+00:00"
+      "url": "https://www.rohlik.cz/1482633-campese-kureci-vykostena-stehna-z-volneho-chovu",
+      "name": "Campese Kuřecí vykostěná stehna z volného chovu",
+      "previous": 174.15,
+      "now": 160.13,
+      "drop_pct": 8.1,
+      "checked_at": "2026-11-21T07:33:08+00:00"
     },
     {
       "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1349777-banan-1-ks",
-      "name": "Banán 1 ks",
-      "previous": 729,
-      "now": 7.0,
-      "drop_pct": 99.0,
-      "checked_at": "2026-11-21T00:38:08+00:00"
+      "url": "https://www.rohlik.cz/1413888-amadori-bio-kureci-prso",
+      "name": "Amadori BIO Kuřecí prso",
+      "previous": 202.77,
+      "now": 187.02,
+      "drop_pct": 7.8,
+      "checked_at": "2026-11-21T07:37:27+00:00"
     }
   ],
   "remaining_missing": 16
