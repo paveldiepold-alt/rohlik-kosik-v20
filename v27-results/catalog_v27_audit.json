@@ -15,13 +15,13 @@
   ],
   "unknown_rule_ids": [],
   "schema": "rk-v27-taxonomy-audit",
-  "generated_at": "2026-11-21T10:57:17+00:00",
+  "generated_at": "2026-11-21T19:52:33+00:00",
   "source_generated_at": "2026-10-21T14:12:55+00:00",
   "products_before": 1090,
   "products_after": 1090,
-  "priced_before": 1074,
-  "priced_after": 1074,
-  "missing_prices": 16,
+  "priced_before": 1075,
+  "priced_after": 1075,
+  "missing_prices": 15,
   "category_statuses": {
     "verified": 839,
     "review": 210,
@@ -37,8 +37,8 @@
   "products_with_merchant_category_but_rule_review": 197,
   "products_with_merchant_category_but_rule_mismatch": 41,
   "price_diagnostics": {
-    "ok": 1074,
-    "price_read_unverified": 16
+    "ok": 1075,
+    "price_read_unverified": 15
   },
   "price_by_shop": {
     "Košík": {
@@ -51,11 +51,11 @@
     },
     "Rohlík": {
       "total": 534,
-      "priced": 518,
-      "missing": 16,
+      "priced": 519,
+      "missing": 15,
       "diagnostics": {
-        "ok": 518,
-        "price_read_unverified": 16
+        "ok": 519,
+        "price_read_unverified": 15
       }
     }
   },
