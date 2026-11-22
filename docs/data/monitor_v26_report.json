@@ -1,19 +1,18 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-11-22T07:21:08+00:00",
+  "at": "2026-11-22T20:14:26+00:00",
   "processed": 1090,
   "updated_prices": 893,
   "requested": 1090,
   "blocked_stores": [],
   "statuses": {
-    "Rohlík|ok": 476,
-    "Košík|title_mismatch": 1,
-    "Košík|ok": 417,
-    "Košík|price_unverified": 122,
-    "Rohlík|price_unverified": 58,
+    "Košík|ok": 419,
+    "Rohlík|ok": 474,
+    "Košík|price_unverified": 121,
+    "Rohlík|price_unverified": 60,
     "Košík|http_error": 16
   },
-  "last_price_monitor_at": "2026-11-22T07:21:08+00:00",
+  "last_price_monitor_at": "2026-11-22T20:14:26+00:00",
   "checked_last_6h": 1090,
   "verified_price_last_6h": 893,
   "new_drops": [
@@ -21,19 +20,73 @@
       "store": "Košík",
       "url": "https://www.kosik.cz/p819094-metro-chef-mrkev-karotka-prana-1-ks",
       "name": "Metro Chef Mrkev karotka praná, 1 ks",
-      "previous": 3.49,
-      "now": 3.24,
-      "drop_pct": 7.2,
-      "checked_at": "2026-11-22T06:40:06+00:00"
+      "previous": 3.24,
+      "now": 2.74,
+      "drop_pct": 15.4,
+      "checked_at": "2026-11-22T19:33:37+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p681072-rabbit-kureci-stehna-spodni",
-      "name": "Rabbit Kuřecí stehna spodní",
-      "previous": 59.46,
-      "now": 55.74,
-      "drop_pct": 6.3,
-      "checked_at": "2026-11-22T06:48:29+00:00"
+      "url": "https://www.kosik.cz/p805304-paprika-cervena-kapie-1-ks",
+      "name": "Paprika červená kapie, 1 ks",
+      "previous": 8.99,
+      "now": 8.09,
+      "drop_pct": 10.0,
+      "checked_at": "2026-11-22T19:36:48+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p794752-paprika-cervena-1-ks",
+      "name": "Paprika červená, 1 ks",
+      "previous": 28.78,
+      "now": 19.18,
+      "drop_pct": 33.4,
+      "checked_at": "2026-11-22T19:36:57+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1356399-hrozny-tmave-volne-odr-red-globe-strapec",
+      "name": "Hrozny tmavé volně (odr. Red globe) , střapec",
+      "previous": 193.31,
+      "now": 163.49,
+      "drop_pct": 15.4,
+      "checked_at": "2026-11-22T19:37:50+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p725876-primas-farmarska-krkovice-na-gril-s-bylinkami",
+      "name": "Primas Farmářská krkovice na gril s bylinkami",
+      "previous": 116.06,
+      "now": 92.41,
+      "drop_pct": 20.4,
+      "checked_at": "2026-11-22T19:40:16+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1410323-ceska-veprova-panenka",
+      "name": "Česká Vepřová panenka",
+      "previous": 205.04,
+      "now": 179.22,
+      "drop_pct": 12.6,
+      "checked_at": "2026-11-22T19:55:47+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1413890-amadori-bio-kureci-stehno",
+      "name": "Amadori BIO Kuřecí stehno",
+      "previous": 128.34,
+      "now": 118.3,
+      "drop_pct": 7.8,
+      "checked_at": "2026-11-22T19:55:52+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1476819-amadori-bio-kureci-prsni-platky-innerfilet",
+      "name": "Amadori BIO Kuřecí prsní plátky innerfilet",
+      "previous": 304.52,
+      "now": 268.74,
+      "drop_pct": 11.7,
+      "checked_at": "2026-11-22T20:08:42+00:00"
     }
   ],
   "remaining_missing": 15
