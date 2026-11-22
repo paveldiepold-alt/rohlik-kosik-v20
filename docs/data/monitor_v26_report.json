@@ -1,83 +1,39 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-11-21T19:51:52+00:00",
+  "at": "2026-11-22T07:21:08+00:00",
   "processed": 1090,
-  "updated_prices": 896,
+  "updated_prices": 893,
   "requested": 1090,
   "blocked_stores": [],
   "statuses": {
-    "Košík|ok": 421,
-    "Rohlík|ok": 475,
-    "Košík|price_unverified": 121,
-    "Rohlík|price_unverified": 59,
-    "Košík|http_error": 14
+    "Rohlík|ok": 476,
+    "Košík|title_mismatch": 1,
+    "Košík|ok": 417,
+    "Košík|price_unverified": 122,
+    "Rohlík|price_unverified": 58,
+    "Košík|http_error": 16
   },
-  "last_price_monitor_at": "2026-11-21T19:51:52+00:00",
+  "last_price_monitor_at": "2026-11-22T07:21:08+00:00",
   "checked_last_6h": 1090,
-  "verified_price_last_6h": 896,
+  "verified_price_last_6h": 893,
   "new_drops": [
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p802840-metro-chef-veprova-panenka-bez-retizku",
-      "name": "Metro Chef Vepřová panenka bez řetízku",
-      "previous": 140.35,
-      "now": 107.95,
-      "drop_pct": 23.1,
-      "checked_at": "2026-11-21T19:11:32+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1353701-farma-rodiny-nemcovy-kureci-prsa",
-      "name": "Farma rodiny Němcovy Kuřecí prsa",
-      "previous": 239.03,
-      "now": 216.6,
-      "drop_pct": 9.4,
-      "checked_at": "2026-11-21T19:13:33+00:00"
+      "url": "https://www.kosik.cz/p819094-metro-chef-mrkev-karotka-prana-1-ks",
+      "name": "Metro Chef Mrkev karotka praná, 1 ks",
+      "previous": 3.49,
+      "now": 3.24,
+      "drop_pct": 7.2,
+      "checked_at": "2026-11-22T06:40:06+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p803198-paprika-zelena-1-ks",
-      "name": "Paprika zelená, 1 ks",
-      "previous": 19.78,
-      "now": 17.58,
-      "drop_pct": 11.1,
-      "checked_at": "2026-11-21T19:14:16+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p805304-paprika-cervena-kapie-1-ks",
-      "name": "Paprika červená kapie, 1 ks",
-      "previous": 8.09,
-      "now": 7.19,
-      "drop_pct": 11.1,
-      "checked_at": "2026-11-21T19:14:26+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1413890-amadori-bio-kureci-stehno",
-      "name": "Amadori BIO Kuřecí stehno",
-      "previous": 141.73,
-      "now": 122.15,
-      "drop_pct": 13.8,
-      "checked_at": "2026-11-21T19:33:26+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p78217-banan-1-ks",
-      "name": "Banán, 1 ks",
-      "previous": 9.58,
-      "now": 5.98,
-      "drop_pct": 37.6,
-      "checked_at": "2026-11-21T19:35:06+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1466689-kunraticka-stodola-rajcata-cherry-na-vetvicce-odr-red-egg-strapec",
-      "name": "Kunratická stodola – Rajčata cherry na větvičce (odr. Red Egg), střapec",
-      "previous": 126.61,
-      "now": 109.53,
-      "drop_pct": 13.5,
-      "checked_at": "2026-11-21T19:44:34+00:00"
+      "url": "https://www.kosik.cz/p681072-rabbit-kureci-stehna-spodni",
+      "name": "Rabbit Kuřecí stehna spodní",
+      "previous": 59.46,
+      "now": 55.74,
+      "drop_pct": 6.3,
+      "checked_at": "2026-11-22T06:48:29+00:00"
     }
   ],
   "remaining_missing": 15
