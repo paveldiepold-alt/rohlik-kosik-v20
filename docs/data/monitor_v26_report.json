@@ -1,50 +1,375 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-11-24T23:03:47+00:00",
-  "processed": 558,
-  "updated_prices": 381,
+  "at": "2026-11-25T09:02:32+00:00",
+  "processed": 559,
+  "updated_prices": 420,
   "requested": 1090,
   "blocked_stores": [
     "Rohlík"
   ],
   "statuses": {
+    "Rohlík|price_unverified": 1,
+    "Košík|title_mismatch": 1,
+    "Košík|ok": 419,
     "Rohlík|ok": 1,
-    "Košík|title_mismatch": 52,
     "Rohlík|http_error": 1,
-    "Košík|ok": 380,
-    "Košík|price_unverified": 104,
-    "Košík|http_error": 20
+    "Košík|price_unverified": 119,
+    "Košík|http_error": 17
   },
-  "last_price_monitor_at": "2026-11-24T23:03:47+00:00",
-  "checked_last_6h": 558,
-  "verified_price_last_6h": 381,
+  "last_price_monitor_at": "2026-11-25T09:02:32+00:00",
+  "checked_last_6h": 559,
+  "verified_price_last_6h": 420,
   "new_drops": [
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p819094-metro-chef-mrkev-karotka-prana-1-ks",
-      "name": "Metro Chef Mrkev karotka praná, 1 ks",
-      "previous": 3.24,
-      "now": 2.99,
-      "drop_pct": 7.7,
-      "checked_at": "2026-11-24T22:23:59+00:00"
+      "url": "https://www.kosik.cz/p405234-linteo-baby-aqua-sensitive-vlhcene-ubrousky",
+      "name": "Linteo Baby Aqua Sensitive Vlhčené ubrousky",
+      "previous": 49.9,
+      "now": 42.9,
+      "drop_pct": 14.0,
+      "checked_at": "2026-11-25T08:21:15+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p78217-banan-1-ks",
-      "name": "Banán, 1 ks",
-      "previous": 7.58,
-      "now": 6.38,
-      "drop_pct": 15.8,
-      "checked_at": "2026-11-24T22:48:24+00:00"
+      "url": "https://www.kosik.cz/p3027-linteo-baby-detske-vlhcene-ubrousky-s-mesickem",
+      "name": "Linteo Baby Dětské vlhčené ubrousky s měsíčkem",
+      "previous": 44.9,
+      "now": 29.9,
+      "drop_pct": 33.4,
+      "checked_at": "2026-11-25T08:21:20+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p3297-linteo-baby-detske-vlhcene-ubrousky-s-mesickem",
+      "name": "Linteo Baby Dětské vlhčené ubrousky s měsíčkem",
+      "previous": 52.9,
+      "now": 42.9,
+      "drop_pct": 18.9,
+      "checked_at": "2026-11-25T08:21:24+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p714634-linteo-baby-detske-vlhcene-ubrousky-s-mesickem-lekarskym-xxl-pack-5x72ks",
+      "name": "Linteo Baby Dětské vlhčené ubrousky s měsíčkem lékařským XXL Pack 5x72ks",
+      "previous": 174.9,
+      "now": 154.9,
+      "drop_pct": 11.4,
+      "checked_at": "2026-11-25T08:21:29+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p2897-linteo-baby-vlhcene-detske-ubrousky",
+      "name": "Linteo Baby Vlhčené dětské ubrousky",
+      "previous": 57.9,
+      "now": 37.9,
+      "drop_pct": 34.5,
+      "checked_at": "2026-11-25T08:21:33+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p2907-linteo-baby-vlhcene-ubrousky-s-aloe-vera-4x80-ks",
+      "name": "Linteo Baby Vlhčené ubrousky s Aloe vera 4x80 ks",
+      "previous": 169.9,
+      "now": 134.9,
+      "drop_pct": 20.6,
+      "checked_at": "2026-11-25T08:21:38+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p2857-linteo-baby-detske-vlhcene-ubrousky-aloe-vera",
+      "name": "Linteo Baby dětské vlhčené ubrousky Aloe Vera",
+      "previous": 49.9,
+      "now": 37.9,
+      "drop_pct": 24.0,
+      "checked_at": "2026-11-25T08:21:42+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p3317-linteo-vlhcene-ubrousky-skolni",
+      "name": "Linteo Vlhčené ubrousky školní",
+      "previous": 23.9,
+      "now": 12.9,
+      "drop_pct": 46.0,
+      "checked_at": "2026-11-25T08:22:41+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p327284-metro-chef-veprova-krkovice-bez-kosti",
+      "name": "Metro Chef Vepřová krkovice bez kosti",
+      "previous": 220.24,
+      "now": 186.34,
+      "drop_pct": 15.4,
+      "checked_at": "2026-11-25T08:24:38+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p74817-panzani-farfalle",
+      "name": "Panzani Farfalle",
+      "previous": 57.9,
+      "now": 39.9,
+      "drop_pct": 31.1,
+      "checked_at": "2026-11-25T08:26:45+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p196045-panzani-linguine",
+      "name": "Panzani Linguine",
+      "previous": 57.9,
+      "now": 39.9,
+      "drop_pct": 31.1,
+      "checked_at": "2026-11-25T08:26:54+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p74847-panzani-spaghetti-semolinove-susene-testoviny",
+      "name": "Panzani Spaghetti semolinové sušené těstoviny",
+      "previous": 57.9,
+      "now": 39.9,
+      "drop_pct": 31.1,
+      "checked_at": "2026-11-25T08:27:07+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p809514-paprika-bila-1-ks",
+      "name": "Paprika bílá, 1 ks",
+      "previous": 8.99,
+      "now": 8.09,
+      "drop_pct": 10.0,
+      "checked_at": "2026-11-25T08:27:16+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p805304-paprika-cervena-kapie-1-ks",
+      "name": "Paprika červená kapie, 1 ks",
+      "previous": 8.99,
+      "now": 8.54,
+      "drop_pct": 5.0,
+      "checked_at": "2026-11-25T08:27:39+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p794752-paprika-cervena-1-ks",
+      "name": "Paprika červená, 1 ks",
+      "previous": 20.38,
+      "now": 17.98,
+      "drop_pct": 11.8,
+      "checked_at": "2026-11-25T08:27:48+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p20517-ponnath-debrecinske-parky-85-masa",
+      "name": "Ponnath Debrecínské párky (85% masa)",
+      "previous": 69.9,
+      "now": 49.9,
+      "drop_pct": 28.6,
+      "checked_at": "2026-11-25T08:30:26+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p233474-ponnath-frankfurtske-parky-85-masa",
+      "name": "Ponnath Frankfurtské párky (85% masa)",
+      "previous": 69.9,
+      "now": 49.9,
+      "drop_pct": 28.6,
+      "checked_at": "2026-11-25T08:30:30+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p789214-president-camembert-aromaticky",
+      "name": "Président Camembert Aromatický",
+      "previous": 49.9,
+      "now": 39.9,
+      "drop_pct": 20.0,
+      "checked_at": "2026-11-25T08:31:29+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p789212-president-camembert-kremovy",
+      "name": "Président Camembert Krémový",
+      "previous": 49.9,
+      "now": 39.9,
+      "drop_pct": 20.0,
+      "checked_at": "2026-11-25T08:31:38+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p789216-president-camembert-linea",
+      "name": "Président Camembert Linea",
+      "previous": 49.9,
+      "now": 39.9,
+      "drop_pct": 20.0,
+      "checked_at": "2026-11-25T08:31:47+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p14757-president-cheddar-platkovy-syr",
+      "name": "Président Cheddar plátkový sýr",
+      "previous": 64.9,
+      "now": 41.9,
+      "drop_pct": 35.4,
+      "checked_at": "2026-11-25T08:32:05+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p14767-president-emmental-platkovy-syr",
+      "name": "Président Emmental plátkový sýr",
+      "previous": 52.9,
+      "now": 36.9,
+      "drop_pct": 30.2,
+      "checked_at": "2026-11-25T08:32:10+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p15027-president-gouda-platkovy-syr",
+      "name": "Président Gouda plátkový sýr",
+      "previous": 52.9,
+      "now": 36.9,
+      "drop_pct": 30.2,
+      "checked_at": "2026-11-25T08:32:14+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p14777-president-maasdamer-platkovy-syr",
+      "name": "Président Maasdamer plátkový sýr",
+      "previous": 52.9,
+      "now": 36.9,
+      "drop_pct": 30.2,
+      "checked_at": "2026-11-25T08:32:19+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p794876-ronsard-bio-kureci-prsa-bez-kosti-a-kuze",
+      "name": "Ronsard BIO Kuřecí prsa bez kosti a kůže",
+      "previous": 380.77,
+      "now": 319.97,
+      "drop_pct": 16.0,
+      "checked_at": "2026-11-25T08:34:30+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p809314-vanish-oxi-action-gel-na-odstraneni-skvrn",
+      "name": "Vanish Oxi Action Gel na odstranění skvrn",
+      "previous": 559.0,
+      "now": 439.0,
+      "drop_pct": 21.5,
+      "checked_at": "2026-11-25T08:39:19+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p795796-vanish-oxi-action-gel-na-beleni-a-odstraneni-skvrn",
+      "name": "Vanish Oxi Action gel na bělení a odstranění skvrn",
+      "previous": 229.9,
+      "now": 169.9,
+      "drop_pct": 26.1,
+      "checked_at": "2026-11-25T08:39:23+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p795794-vanish-oxi-action-gel-na-odstraneni-skvrn",
+      "name": "Vanish Oxi Action gel na odstranění skvrn",
+      "previous": 229.9,
+      "now": 169.9,
+      "drop_pct": 26.1,
+      "checked_at": "2026-11-25T08:39:28+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p795690-vanish-oxi-action-prasek-na-beleni-a-odstraneni-skvrn",
+      "name": "Vanish Oxi Action prášek na bělení a odstranění skvrn",
+      "previous": 519.0,
+      "now": 289.0,
+      "drop_pct": 44.3,
+      "checked_at": "2026-11-25T08:39:33+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p795692-vanish-oxi-action-prasek-na-odstraneni-skvrn",
+      "name": "Vanish Oxi Action prášek na odstranění skvrn",
+      "previous": 519.0,
+      "now": 289.0,
+      "drop_pct": 44.3,
+      "checked_at": "2026-11-25T08:39:37+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p85577-vesela-krava-lahodna-xl-taveny-syr-16-ks",
+      "name": "Veselá Kráva Lahodná XL Tavený sýr (16 ks)",
+      "previous": 94.9,
+      "now": 69.9,
+      "drop_pct": 26.3,
+      "checked_at": "2026-11-25T08:40:00+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p793098-vesela-krava-syr-a-krup-s-sunkovou-prichuti-35g-snack",
+      "name": "Veselá Kráva Sýr a Křup s šunkovou příchutí 35g snack",
+      "previous": 19.9,
+      "now": 16.9,
+      "drop_pct": 15.1,
+      "checked_at": "2026-11-25T08:40:18+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p741296-vanish-oxi-action-extra-hygiene-tekuty-odstranovac-skvrn",
+      "name": "Vanish Oxi Action Extra Hygiene - tekutý odstraňovač skvrn",
+      "previous": 199.9,
+      "now": 149.9,
+      "drop_pct": 25.0,
+      "checked_at": "2026-11-25T08:43:13+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p57967-vanish-oxi-action-odstranovac-skvrn-pred-pranim",
+      "name": "Vanish Oxi Action Odstraňovač skvrn před praním",
+      "previous": 199.9,
+      "now": 139.9,
+      "drop_pct": 30.0,
+      "checked_at": "2026-11-25T08:43:17+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p795798-vanish-oxi-action-gel-na-beleni-a-odstraneni-skvrn",
+      "name": "Vanish Oxi Action gel na bělení a odstranění skvrn",
+      "previous": 559.0,
+      "now": 439.0,
+      "drop_pct": 21.5,
+      "checked_at": "2026-11-25T08:43:22+00:00"
     },
     {
       "store": "Košík",
       "url": "https://www.kosik.cz/p78177-chiquita-banan-1-ks",
       "name": "Chiquita Banán, 1 ks",
-      "previous": 9.52,
-      "now": 8.99,
-      "drop_pct": 5.6,
-      "checked_at": "2026-11-24T22:50:05+00:00"
+      "previous": 8.99,
+      "now": 8.46,
+      "drop_pct": 5.9,
+      "checked_at": "2026-11-25T08:49:51+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p20177-kostelecke-uzeniny-poctiva-pecena-sunka-nejvyssi-jakosti-95-masa",
+      "name": "Kostelecké Uzeniny Poctivá pečená šunka nejvyšší jakosti (95% masa)",
+      "previous": 47.9,
+      "now": 34.9,
+      "drop_pct": 27.1,
+      "checked_at": "2026-11-25T08:57:51+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p681042-kureci-stehna",
+      "name": "Kuřecí stehna",
+      "previous": 61.15,
+      "now": 50.95,
+      "drop_pct": 16.7,
+      "checked_at": "2026-11-25T08:58:55+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p725796-le-co-sunka-nejvyssi-jakost-93-masa",
+      "name": "Le & Co Šunka nejvyšší jakost (93% masa)",
+      "previous": 45.9,
+      "now": 19.9,
+      "drop_pct": 56.6,
+      "checked_at": "2026-11-25T09:00:36+00:00"
     }
   ],
   "remaining_missing": 15
