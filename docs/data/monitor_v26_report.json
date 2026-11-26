@@ -1,156 +1,124 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-11-25T22:21:58+00:00",
-  "processed": 1090,
-  "updated_prices": 868,
+  "at": "2026-11-26T08:48:40+00:00",
+  "processed": 952,
+  "updated_prices": 773,
   "requested": 1090,
-  "blocked_stores": [],
+  "blocked_stores": [
+    "Rohlík"
+  ],
   "statuses": {
-    "Rohlík|price_unverified": 62,
-    "Košík|title_mismatch": 36,
-    "Rohlík|ok": 472,
-    "Košík|ok": 396,
+    "Rohlík|price_unverified": 22,
+    "Košík|title_mismatch": 18,
+    "Rohlík|ok": 363,
+    "Košík|ok": 410,
+    "Košík|price_unverified": 111,
     "Košík|http_error": 17,
-    "Košík|price_unverified": 107
+    "Rohlík|http_error": 8,
+    "Rohlík|error": 3
   },
-  "last_price_monitor_at": "2026-11-25T22:21:58+00:00",
-  "checked_last_6h": 1090,
-  "verified_price_last_6h": 868,
+  "last_price_monitor_at": "2026-11-26T08:48:40+00:00",
+  "checked_last_6h": 952,
+  "verified_price_last_6h": 773,
   "new_drops": [
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p819094-metro-chef-mrkev-karotka-prana-1-ks",
-      "name": "Metro Chef Mrkev karotka praná, 1 ks",
-      "previous": 3.24,
-      "now": 2.49,
-      "drop_pct": 23.1,
-      "checked_at": "2026-11-25T21:40:52+00:00"
+      "url": "https://www.kosik.cz/p803198-paprika-zelena-1-ks",
+      "name": "Paprika zelená, 1 ks",
+      "previous": 26.38,
+      "now": 23.98,
+      "drop_pct": 9.1,
+      "checked_at": "2026-11-26T08:12:58+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p214094-mrkev-prana-baleni",
-      "name": "Mrkev praná, balení",
-      "previous": 18.9,
-      "now": 14.9,
-      "drop_pct": 21.2,
-      "checked_at": "2026-11-25T21:41:33+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p776516-orion-studentska-pecet-oplatka-s-kakaovou-naplni-macena-v-mlecne-cokolade",
-      "name": "ORION Studentská pečeť Oplatka s kakaovou náplní máčená v mléčné čokoládě",
-      "previous": 19.9,
-      "now": 14.9,
-      "drop_pct": 25.1,
-      "checked_at": "2026-11-25T21:42:34+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p809514-paprika-bila-1-ks",
-      "name": "Paprika bílá, 1 ks",
-      "previous": 8.09,
-      "now": 7.19,
-      "drop_pct": 11.1,
-      "checked_at": "2026-11-25T21:43:43+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p794752-paprika-cervena-1-ks",
-      "name": "Paprika červená, 1 ks",
-      "previous": 17.98,
-      "now": 16.98,
-      "drop_pct": 5.6,
-      "checked_at": "2026-11-25T21:44:16+00:00"
+      "url": "https://www.kosik.cz/p805304-paprika-cervena-kapie-1-ks",
+      "name": "Paprika červená kapie, 1 ks",
+      "previous": 9.49,
+      "now": 7.59,
+      "drop_pct": 20.0,
+      "checked_at": "2026-11-26T08:13:07+00:00"
     },
     {
       "store": "Rohlík",
       "url": "https://www.rohlik.cz/1356399-hrozny-tmave-volne-odr-red-globe-strapec",
       "name": "Hrozny tmavé volně (odr. Red globe) , střapec",
-      "previous": 177.29,
-      "now": 160.78,
-      "drop_pct": 9.3,
-      "checked_at": "2026-11-25T21:44:37+00:00"
+      "previous": 160.78,
+      "now": 133.59,
+      "drop_pct": 16.9,
+      "checked_at": "2026-11-26T08:13:44+00:00"
     },
     {
       "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1353879-kureci-prsni-rizky-od-ceskeho-vyrobce",
-      "name": "Kuřecí prsní řízky od českého výrobce",
-      "previous": 112.95,
-      "now": 106.24,
-      "drop_pct": 5.9,
-      "checked_at": "2026-11-25T21:46:03+00:00"
+      "url": "https://www.rohlik.cz/1469422-kunraticka-stodola-hrozny-bile-volne-strapec",
+      "name": "Kunratická stodola – Hrozny bílé volné, střapec",
+      "previous": 415.74,
+      "now": 380.54,
+      "drop_pct": 8.5,
+      "checked_at": "2026-11-26T08:15:00+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1408861-maso-veprova-panenka",
+      "name": "MASO! Vepřová panenka",
+      "previous": 222.7,
+      "now": 195.89,
+      "drop_pct": 12.0,
+      "checked_at": "2026-11-26T08:17:05+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1440890-sutcha-veprova-krkovice-v-marinade-pomeranc-a-med-2-ks",
+      "name": "Sutcha Vepřová krkovice v marinádě pomeranč a med, 2 ks",
+      "previous": 185.83,
+      "now": 161.99,
+      "drop_pct": 12.8,
+      "checked_at": "2026-11-26T08:28:40+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p795664-rajcata-brioso-vanicka",
-      "name": "Rajčata Brioso, vanička",
-      "previous": 109.9,
-      "now": 89.9,
-      "drop_pct": 18.2,
-      "checked_at": "2026-11-25T21:49:44+00:00"
+      "url": "https://www.kosik.cz/p78217-banan-1-ks",
+      "name": "Banán, 1 ks",
+      "previous": 8.38,
+      "now": 7.18,
+      "drop_pct": 14.3,
+      "checked_at": "2026-11-26T08:34:05+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p78177-chiquita-banan-1-ks",
+      "name": "Chiquita Banán, 1 ks",
+      "previous": 8.99,
+      "now": 8.46,
+      "drop_pct": 5.9,
+      "checked_at": "2026-11-26T08:35:45+00:00"
     },
     {
       "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1473494-sutcha-spiz-veprova-panenka-a-svestka-se-slaninou",
-      "name": "Sutcha Špíz vepřová panenka a švestka se slaninou",
-      "previous": 219.37,
-      "now": 200.26,
-      "drop_pct": 8.7,
-      "checked_at": "2026-11-25T21:59:42+00:00"
+      "url": "https://www.rohlik.cz/1318145-leerdammer-original-platky",
+      "name": "Leerdammer Original plátky",
+      "previous": 89.9,
+      "now": 59.9,
+      "drop_pct": 33.4,
+      "checked_at": "2026-11-26T08:38:41+00:00"
     },
     {
       "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1410323-ceska-veprova-panenka",
-      "name": "Česká Vepřová panenka",
-      "previous": 174.57,
-      "now": 162.42,
-      "drop_pct": 7.0,
-      "checked_at": "2026-11-25T22:02:44+00:00"
+      "url": "https://www.rohlik.cz/1323575-leerdammer-original-finesse-syr-platky",
+      "name": "Leerdammer Original Finesse sýr plátky",
+      "previous": 52.9,
+      "now": 39.9,
+      "drop_pct": 24.6,
+      "checked_at": "2026-11-26T08:39:21+00:00"
     },
     {
       "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1320523-avokado-hass-male-ready-to-eat-1-ks",
-      "name": "Avokádo Hass malé \"ready to eat\" 1 ks",
-      "previous": 36.9,
-      "now": 34.9,
-      "drop_pct": 5.4,
-      "checked_at": "2026-11-25T22:07:51+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1418575-campese-kureci-stehna-z-volneho-chovu",
-      "name": "Campese Kuřecí stehna z volného chovu",
-      "previous": 165.18,
-      "now": 156.07,
-      "drop_pct": 5.5,
-      "checked_at": "2026-11-25T22:10:27+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1466689-kunraticka-stodola-rajcata-cherry-na-vetvicce-odr-red-egg-strapec",
-      "name": "Kunratická stodola – Rajčata cherry na větvičce (odr. Red Egg), střapec",
-      "previous": 114.78,
-      "now": 108.27,
-      "drop_pct": 5.7,
-      "checked_at": "2026-11-25T22:14:09+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1418577-campese-kureci-palicky-z-volneho-chovu",
-      "name": "Campese Kuřecí paličky z volného chovu",
-      "previous": 150.88,
-      "now": 142.81,
-      "drop_pct": 5.3,
-      "checked_at": "2026-11-25T22:18:51+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1460862-okurkovy-meloun-barattiere",
-      "name": "Okurkový meloun Barattiere",
-      "previous": 119.54,
-      "now": 112.65,
-      "drop_pct": 5.8,
-      "checked_at": "2026-11-25T22:19:56+00:00"
+      "url": "https://www.rohlik.cz/1323577-leerdammer-caractere-finesse-syr-platky",
+      "name": "Leerdammer Caractere Finesse sýr plátky",
+      "previous": 52.9,
+      "now": 39.9,
+      "drop_pct": 24.6,
+      "checked_at": "2026-11-26T08:39:57+00:00"
     }
   ],
   "remaining_missing": 15
