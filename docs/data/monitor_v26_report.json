@@ -1,124 +1,115 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-11-26T08:48:40+00:00",
-  "processed": 952,
-  "updated_prices": 773,
+  "at": "2026-11-26T22:11:33+00:00",
+  "processed": 1089,
+  "updated_prices": 872,
   "requested": 1090,
   "blocked_stores": [
     "Rohlík"
   ],
   "statuses": {
-    "Rohlík|price_unverified": 22,
-    "Košík|title_mismatch": 18,
-    "Rohlík|ok": 363,
-    "Košík|ok": 410,
-    "Košík|price_unverified": 111,
-    "Košík|http_error": 17,
-    "Rohlík|http_error": 8,
-    "Rohlík|error": 3
+    "Košík|title_mismatch": 19,
+    "Rohlík|ok": 464,
+    "Košík|ok": 408,
+    "Rohlík|price_unverified": 65,
+    "Košík|price_unverified": 113,
+    "Košík|http_error": 16,
+    "Rohlík|http_error": 3,
+    "Rohlík|error": 1
   },
-  "last_price_monitor_at": "2026-11-26T08:48:40+00:00",
-  "checked_last_6h": 952,
-  "verified_price_last_6h": 773,
+  "last_price_monitor_at": "2026-11-26T22:11:33+00:00",
+  "checked_last_6h": 1089,
+  "verified_price_last_6h": 872,
   "new_drops": [
     {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p803198-paprika-zelena-1-ks",
-      "name": "Paprika zelená, 1 ks",
-      "previous": 26.38,
-      "now": 23.98,
-      "drop_pct": 9.1,
-      "checked_at": "2026-11-26T08:12:58+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p805304-paprika-cervena-kapie-1-ks",
-      "name": "Paprika červená kapie, 1 ks",
-      "previous": 9.49,
-      "now": 7.59,
-      "drop_pct": 20.0,
-      "checked_at": "2026-11-26T08:13:07+00:00"
-    },
-    {
       "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1356399-hrozny-tmave-volne-odr-red-globe-strapec",
-      "name": "Hrozny tmavé volně (odr. Red globe) , střapec",
-      "previous": 160.78,
-      "now": 133.59,
-      "drop_pct": 16.9,
-      "checked_at": "2026-11-26T08:13:44+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1469422-kunraticka-stodola-hrozny-bile-volne-strapec",
-      "name": "Kunratická stodola – Hrozny bílé volné, střapec",
-      "previous": 415.74,
-      "now": 380.54,
-      "drop_pct": 8.5,
-      "checked_at": "2026-11-26T08:15:00+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1408861-maso-veprova-panenka",
-      "name": "MASO! Vepřová panenka",
-      "previous": 222.7,
-      "now": 195.89,
-      "drop_pct": 12.0,
-      "checked_at": "2026-11-26T08:17:05+00:00"
-    },
-    {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1440890-sutcha-veprova-krkovice-v-marinade-pomeranc-a-med-2-ks",
-      "name": "Sutcha Vepřová krkovice v marinádě pomeranč a med, 2 ks",
-      "previous": 185.83,
-      "now": 161.99,
-      "drop_pct": 12.8,
-      "checked_at": "2026-11-26T08:28:40+00:00"
+      "url": "https://www.rohlik.cz/1474652-president-protein-platky",
+      "name": "Président Protein plátky",
+      "previous": 52.9,
+      "now": 34.9,
+      "drop_pct": 34.0,
+      "checked_at": "2026-11-26T21:27:09+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p78217-banan-1-ks",
-      "name": "Banán, 1 ks",
-      "previous": 8.38,
-      "now": 7.18,
-      "drop_pct": 14.3,
-      "checked_at": "2026-11-26T08:34:05+00:00"
+      "url": "https://www.kosik.cz/p819094-metro-chef-mrkev-karotka-prana-1-ks",
+      "name": "Metro Chef Mrkev karotka praná, 1 ks",
+      "previous": 3.73,
+      "now": 2.74,
+      "drop_pct": 26.5,
+      "checked_at": "2026-11-26T21:29:51+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1353703-farma-rodiny-nemcovy-kureci-stehna",
+      "name": "Farma rodiny Němcovy Kuřecí stehna",
+      "previous": 144.25,
+      "now": 122.05,
+      "drop_pct": 15.4,
+      "checked_at": "2026-11-26T21:32:26+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p78177-chiquita-banan-1-ks",
-      "name": "Chiquita Banán, 1 ks",
-      "previous": 8.99,
-      "now": 8.46,
+      "url": "https://www.kosik.cz/p794752-paprika-cervena-1-ks",
+      "name": "Paprika červená, 1 ks",
+      "previous": 17.98,
+      "now": 15.28,
+      "drop_pct": 15.0,
+      "checked_at": "2026-11-26T21:33:15+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p680992-rabbit-venkovske-prsni-rizky-bez-kuze",
+      "name": "Rabbit Venkovské prsní řízky bez kůže",
+      "previous": 219.92,
+      "now": 208.92,
+      "drop_pct": 5.0,
+      "checked_at": "2026-11-26T21:38:30+00:00"
+    },
+    {
+      "store": "Rohlík",
+      "url": "https://www.rohlik.cz/1326877-hrozny-bezsemenne-mix-baleni",
+      "name": "Hrozny bezsemenné mix, balení",
+      "previous": 85.9,
+      "now": 80.9,
+      "drop_pct": 5.8,
+      "checked_at": "2026-11-26T21:45:04+00:00"
+    },
+    {
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p545786-authentic-farmarska-kureci-stehna",
+      "name": "Authentic Farmářská kuřecí stehna",
+      "previous": 156.33,
+      "now": 147.14,
       "drop_pct": 5.9,
-      "checked_at": "2026-11-26T08:35:45+00:00"
+      "checked_at": "2026-11-26T21:52:05+00:00"
     },
     {
       "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1318145-leerdammer-original-platky",
-      "name": "Leerdammer Original plátky",
-      "previous": 89.9,
-      "now": 59.9,
-      "drop_pct": 33.4,
-      "checked_at": "2026-11-26T08:38:41+00:00"
+      "url": "https://www.rohlik.cz/1353081-svetnickove-kure-prsni-rizky",
+      "name": "Světničkové kuře prsní řízky",
+      "previous": 151.73,
+      "now": 140.37,
+      "drop_pct": 7.5,
+      "checked_at": "2026-11-26T22:00:24+00:00"
     },
     {
       "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1323575-leerdammer-original-finesse-syr-platky",
-      "name": "Leerdammer Original Finesse sýr plátky",
-      "previous": 52.9,
-      "now": 39.9,
-      "drop_pct": 24.6,
-      "checked_at": "2026-11-26T08:39:21+00:00"
+      "url": "https://www.rohlik.cz/1410323-ceska-veprova-panenka",
+      "name": "Česká Vepřová panenka",
+      "previous": 180.48,
+      "now": 162.46,
+      "drop_pct": 10.0,
+      "checked_at": "2026-11-26T22:03:18+00:00"
     },
     {
-      "store": "Rohlík",
-      "url": "https://www.rohlik.cz/1323577-leerdammer-caractere-finesse-syr-platky",
-      "name": "Leerdammer Caractere Finesse sýr plátky",
-      "previous": 52.9,
-      "now": 39.9,
-      "drop_pct": 24.6,
-      "checked_at": "2026-11-26T08:39:57+00:00"
+      "store": "Košík",
+      "url": "https://www.kosik.cz/p681042-kureci-stehna",
+      "name": "Kuřecí stehna",
+      "previous": 50.95,
+      "now": 46.95,
+      "drop_pct": 7.9,
+      "checked_at": "2026-11-26T22:05:06+00:00"
     }
   ],
   "remaining_missing": 15
