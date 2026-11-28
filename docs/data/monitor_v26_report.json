@@ -1,49 +1,39 @@
 {
   "schema": "rk-user-monitor-v26",
-  "at": "2026-11-27T21:49:58+00:00",
+  "at": "2026-11-28T08:19:57+00:00",
   "processed": 557,
-  "updated_prices": 418,
+  "updated_prices": 422,
   "requested": 1090,
   "blocked_stores": [
     "Rohlík"
   ],
   "statuses": {
     "Rohlík|http_error": 1,
-    "Košík|title_mismatch": 4,
-    "Košík|ok": 418,
+    "Košík|ok": 422,
     "Košík|price_unverified": 118,
     "Košík|http_error": 16
   },
-  "last_price_monitor_at": "2026-11-27T21:49:58+00:00",
+  "last_price_monitor_at": "2026-11-28T08:19:57+00:00",
   "checked_last_6h": 557,
-  "verified_price_last_6h": 418,
+  "verified_price_last_6h": 422,
   "new_drops": [
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p106337-masna-rosovice-hovezi-svickova",
-      "name": "Masna Rosovice Hovězí svíčková",
-      "previous": 855.46,
-      "now": 799.67,
-      "drop_pct": 6.5,
-      "checked_at": "2026-11-27T21:11:24+00:00"
+      "url": "https://www.kosik.cz/p771708-maso-klouda-veprova-krkovice-platky",
+      "name": "Maso Klouda Vepřová krkovice - plátky",
+      "previous": 144.94,
+      "now": 137.45,
+      "drop_pct": 5.2,
+      "checked_at": "2026-11-28T07:41:47+00:00"
     },
     {
       "store": "Košík",
-      "url": "https://www.kosik.cz/p803200-paprika-zluta-1-ks",
-      "name": "Paprika žlutá, 1 ks",
-      "previous": 28.78,
-      "now": 14.39,
-      "drop_pct": 50.0,
-      "checked_at": "2026-11-27T21:15:02+00:00"
-    },
-    {
-      "store": "Košík",
-      "url": "https://www.kosik.cz/p78217-banan-1-ks",
-      "name": "Banán, 1 ks",
-      "previous": 8.78,
-      "now": 6.78,
-      "drop_pct": 22.8,
-      "checked_at": "2026-11-27T21:35:32+00:00"
+      "url": "https://www.kosik.cz/p803198-paprika-zelena-1-ks",
+      "name": "Paprika zelená, 1 ks",
+      "previous": 23.98,
+      "now": 20.38,
+      "drop_pct": 15.0,
+      "checked_at": "2026-11-28T07:44:56+00:00"
     }
   ],
   "remaining_missing": 15
